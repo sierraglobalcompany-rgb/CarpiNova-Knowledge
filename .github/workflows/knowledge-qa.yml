@@ -3,7 +3,9 @@ name: Knowledge QA
 on:
   push:
     branches:
-      - feat/knowledge-f0
+      - main
+      - 'feat/knowledge-f1*'
+      - 'knowledge/f1-*'
   pull_request:
     branches:
       - main
