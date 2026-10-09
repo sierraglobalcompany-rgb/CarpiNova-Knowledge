@@ -1,0 +1,46 @@
+name: Synchronize complete F0 tree
+
+on:
+  push:
+    branches:
+      - feat/knowledge-f0
+    paths:
+      - .github/workflows/sync-f0.yml
+      - .sync/f0.tar.gz
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: feat/knowledge-f0
+          fetch-depth: 0
+
+      - name: Replace staged tree with verified F0 archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/carpinova-f0
+          tar -xzf .sync/f0.tar.gz -C /tmp/carpinova-f0
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a /tmp/carpinova-f0/. .
+          git status --short
+
+      - name: Commit synchronized tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No synchronization changes required."
+            exit 0
+          fi
+          git commit -m "chore: synchronize complete CarpiNova Knowledge F0"
+          git push origin HEAD:feat/knowledge-f0
