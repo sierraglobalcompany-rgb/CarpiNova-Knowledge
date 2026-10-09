@@ -1,5 +1,5 @@
 # CarpiNova Knowledge
 
-Canonical private knowledge repository for CarpiNova.
+Canonical structured knowledge base and validation toolchain for CarpiNova.
 
-The source book PDF is intentionally not stored in this repository. Structured knowledge, provenance, validation rules, FigureSpec records, lessons, and deterministic consumer bundles are versioned here.
+The source book PDF is intentionally kept outside Git. The repository stores traceable structured knowledge, schemas, derived review views, validation tooling, and versioned consumer bundles.

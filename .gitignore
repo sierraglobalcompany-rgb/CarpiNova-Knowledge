@@ -1,0 +1,9 @@
+.worktrees/
+source-books/
+*.pdf
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+work/
+*.pyc
