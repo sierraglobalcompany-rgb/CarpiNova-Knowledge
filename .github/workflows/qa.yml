@@ -1,0 +1,41 @@
+name: CarpiNova Knowledge QA
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Install project
+        run: uv sync --dev
+
+      - name: Run tests
+        run: uv run pytest -q
+
+      - name: Run Ruff
+        run: uv run ruff check .
+
+      - name: Validate knowledge repository
+        run: uv run python -m carpinova_knowledge validate --root .
+
+      - name: Build pilot distribution
+        run: uv run python -m carpinova_knowledge build-dist --root . --batch BATCH-000-PILOT --out dist/ci-pilot
+
+      - name: Verify pilot acceptance
+        run: uv run python -m carpinova_knowledge report-pilot --root . --batch BATCH-000-PILOT
