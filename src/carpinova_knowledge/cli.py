@@ -13,6 +13,7 @@ COMMANDS = (
     "build-dist",
     "report-pilot",
     "report-batch",
+    "report-coverage",
 )
 
 
@@ -44,6 +45,9 @@ def build_parser() -> argparse.ArgumentParser:
         elif command in {"report-pilot", "report-batch"}:
             sub.add_argument("--root", type=Path, default=Path("."))
             sub.add_argument("--batch", required=True)
+        elif command == "report-coverage":
+            sub.add_argument("--root", type=Path, default=Path("."))
+            sub.add_argument("--book-id", default="cpnc-2025")
     return parser
 
 
@@ -109,4 +113,12 @@ def main(argv: Sequence[str] | None = None) -> int:
         out.write_text(render_batch_report(report), encoding="utf-8")
         print(report["result"])
         return 0 if report["result"] == "GO" else 1
+    elif args.command == "report-coverage":
+        from .report_coverage import build_coverage_report, render_coverage_report
+
+        report = build_coverage_report(args.root, args.book_id)
+        out = args.root / "audits" / "f1" / "coverage.md"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(render_coverage_report(report), encoding="utf-8")
+        print(f"{report['complete_pages']}/{report['total_pages']} complete")
     return 0
