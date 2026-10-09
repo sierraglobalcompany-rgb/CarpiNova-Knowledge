@@ -12,6 +12,7 @@ COMMANDS = (
     "validate",
     "build-dist",
     "report-pilot",
+    "report-batch",
 )
 
 
@@ -40,7 +41,7 @@ def build_parser() -> argparse.ArgumentParser:
             sub.add_argument("--root", type=Path, default=Path("."))
             sub.add_argument("--batch", required=True)
             sub.add_argument("--out", type=Path, required=True)
-        elif command == "report-pilot":
+        elif command in {"report-pilot", "report-batch"}:
             sub.add_argument("--root", type=Path, default=Path("."))
             sub.add_argument("--batch", required=True)
     return parser
@@ -97,6 +98,15 @@ def main(argv: Sequence[str] | None = None) -> int:
         out = args.root / "audits" / "f0-pilot-acceptance.md"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(render_pilot_report(report), encoding="utf-8")
+        print(report["result"])
+        return 0 if report["result"] == "GO" else 1
+    elif args.command == "report-batch":
+        from .report_batch import build_batch_report, render_batch_report
+
+        report = build_batch_report(args.root, args.batch)
+        out = args.root / "audits" / "f1" / "batches" / f"{args.batch.lower()}.md"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(render_batch_report(report), encoding="utf-8")
         print(report["result"])
         return 0 if report["result"] == "GO" else 1
     return 0
