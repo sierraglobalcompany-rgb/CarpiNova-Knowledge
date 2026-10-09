@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "id": "HW-HINGE-CUP",
+      "term": "bisagra de cazoleta",
+      "aliases": [
+        "bisagra parche"
+      ]
+    },
+    {
+      "id": "HW-SLIDE-TELESCOPIC",
+      "term": "corredera telescópica",
+      "aliases": [
+        "riel telescópico",
+        "riel para gaveta"
+      ]
+    },
+    {
+      "id": "HW-MINIFIX",
+      "term": "minifix",
+      "aliases": []
+    },
+    {
+      "id": "HW-BRACKET-90",
+      "term": "esquinero metálico 90°",
+      "aliases": [
+        "ángulo metálico"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "RULE-CPNC-2025-P0115-001",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 115,
+      "printed_page": 93,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "X se calcula repartiendo el espacio libre entre la cantidad de espacios alrededor de las gavetas.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "system_x_2x",
+      "drawer_layout"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0115-002",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 115,
+      "printed_page": 93,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "2X representa la distancia desde la base del mueble al centro del primer riel.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "system_x_2x",
+      "drawer_slide"
+    ]
+  }
+]

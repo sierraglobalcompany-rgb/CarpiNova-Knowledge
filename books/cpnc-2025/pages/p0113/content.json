@@ -1,0 +1,86 @@
+[
+  {
+    "id": "CONTENT-CPNC-2025-P0113-001",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.06,
+        "y": 0.1,
+        "width": 0.88,
+        "height": 0.16
+      }
+    },
+    "source_transcription": "Para instalar una bisagra de cazoleta se necesita una perforación de 35 milímetros de diámetro, que se realiza con una broca tipo Forstner y taladro. Esta perforación debe ubicarse a 2.2 centímetros del borde de la puerta hacia adentro. En cuanto a la ubicación vertical, se recomienda dejar entre 8 y 10 centímetros desde los extremos hacia el centro.",
+    "normalized_text": "La bisagra de cazoleta requiere una perforación de 35 mm con broca Forstner. La perforación se ubica 2,2 cm desde el borde de la puerta y entre 8 y 10 cm desde los extremos en sentido vertical.",
+    "learning_text": "Para ubicar una bisagra de cazoleta, primero se marca el agujero de 35 mm. La página propone 2,2 cm desde el borde y entre 8 y 10 cm desde los extremos.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0113-001"
+    ]
+  },
+  {
+    "id": "CONTENT-CPNC-2025-P0113-002",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.06,
+        "y": 0.25,
+        "width": 0.88,
+        "height": 0.09
+      }
+    },
+    "source_transcription": "La cantidad de bisagras depende del alto de la puerta. Como regla general: 2 bisagras por cada 80 centímetros de altura. Por ejemplo, una puerta de 160 cm llevaría 4 bisagras.",
+    "normalized_text": "Como regla general del libro, se usan 2 bisagras por cada 80 cm de altura; una puerta de 160 cm usaría 4.",
+    "learning_text": "La cantidad de bisagras aumenta con la altura de la puerta. El ejemplo del libro duplica la cantidad cuando la puerta pasa de 80 a 160 cm.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0113-002"
+    ]
+  },
+  {
+    "id": "CONTENT-CPNC-2025-P0113-003",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.06,
+        "y": 0.36,
+        "width": 0.88,
+        "height": 0.13
+      }
+    },
+    "source_transcription": "Las correderas telescópicas, también conocidas como rieles para gavetas, son elementos esenciales en la carpintería moderna. Su función es permitir la apertura y cierre de un módulo (por ejemplo, una gaveta) que se desliza dentro de otro (el mueble).",
+    "normalized_text": "Las correderas telescópicas permiten que una gaveta se deslice dentro del mueble.",
+    "learning_text": "Una corredera telescópica guía el movimiento del cajón: una parte queda en el mueble y otra acompaña la gaveta.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0113-003"
+    ]
+  },
+  {
+    "id": "CONTENT-CPNC-2025-P0113-004",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.06,
+        "y": 0.48,
+        "width": 0.88,
+        "height": 0.1
+      }
+    },
+    "source_transcription": "Existen correderas de carga liviana, mediana y pesada, y también se clasifican por su tipo de cierre: cierre tradicional, cierre suave (soft-close) y sistema push-open. La ilustración anota 1.3 cm por riel para liviana, 1.4 cm para pesada y 1.5 cm para push o cierre suave.",
+    "normalized_text": "Las correderas se diferencian por capacidad de carga y tipo de cierre. La página muestra descuentos laterales distintos para riel liviano, pesado y de cierre suave/push-open.",
+    "learning_text": "Antes de calcular el ancho del cajón, identifica qué corredera usarás porque cada tipo ocupa un espacio lateral diferente.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0113-004"
+    ]
+  }
+]

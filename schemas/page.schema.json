@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "book_id",
+    "pdf_page",
+    "printed_page",
+    "topics",
+    "contains"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^PAGE-[A-Z0-9-]+-P[0-9]{4}$"
+    },
+    "book_id": {
+      "type": "string"
+    },
+    "pdf_page": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "printed_page": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contains": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,72 @@
+{
+  "id": "FIG-CPNC-2025-P0114-001",
+  "source": {
+    "book_id": "CPNC-2025",
+    "pdf_page": 114,
+    "printed_page": 92,
+    "region": {
+      "x": 0.06,
+      "y": 0.33,
+      "width": 0.88,
+      "height": 0.23
+    }
+  },
+  "type": "table",
+  "purpose": "Comparar el descuento lateral y total de tres tipos de corredera.",
+  "entities": [
+    {
+      "id": "row_light",
+      "type": "table_row",
+      "slide_type": "liviana",
+      "per_unit": 1.3,
+      "pair_total": 2.6,
+      "unit": "cm"
+    },
+    {
+      "id": "row_medium_heavy",
+      "type": "table_row",
+      "slide_type": "mediana/pesada",
+      "per_unit": 1.4,
+      "pair_total": 2.8,
+      "unit": "cm"
+    },
+    {
+      "id": "row_soft_push",
+      "type": "table_row",
+      "slide_type": "cierre suave o push-open",
+      "per_unit": 1.5,
+      "pair_total": 3.0,
+      "unit": "cm"
+    }
+  ],
+  "labels": [
+    "Tipo de corredera",
+    "Descuento por unidad",
+    "Descuento total (par)"
+  ],
+  "relationships": [],
+  "geometry": {
+    "precision": "exact",
+    "dimensions": [
+      {
+        "name": "columns",
+        "value": 3,
+        "unit": "count"
+      },
+      {
+        "name": "rows",
+        "value": 3,
+        "unit": "count"
+      }
+    ]
+  },
+  "preferred_renderer": "html",
+  "deterministic_required": true,
+  "generative_image_allowed": false,
+  "educational_sequence": [
+    "highlight_per_side",
+    "highlight_pair_total",
+    "apply_to_drawer_width"
+  ],
+  "accessibility_summary": "Tabla con descuentos por lado y por par para corredera liviana, mediana/pesada y cierre suave/push-open."
+}

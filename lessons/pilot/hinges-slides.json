@@ -1,0 +1,43 @@
+{
+  "id": "LESSON-HINGES-SLIDES-PILOT-001",
+  "title": "Bisagras de cazoleta y correderas telescópicas",
+  "content_refs": [
+    "CONTENT-CPNC-2025-P0111-001",
+    "CONTENT-CPNC-2025-P0111-005",
+    "CONTENT-CPNC-2025-P0113-001",
+    "CONTENT-CPNC-2025-P0113-004",
+    "CONTENT-CPNC-2025-P0114-002"
+  ],
+  "figure_refs": [
+    "FIG-CPNC-2025-P0112-001",
+    "FIG-CPNC-2025-P0113-001",
+    "FIG-CPNC-2025-P0114-001"
+  ],
+  "steps": [
+    {
+      "type": "explain",
+      "ref": "CONTENT-CPNC-2025-P0111-001",
+      "goal": "Reconocer la bisagra de cazoleta"
+    },
+    {
+      "type": "visual_compare",
+      "ref": "FIG-CPNC-2025-P0112-001",
+      "goal": "Distinguir recta, semirrecta y curva"
+    },
+    {
+      "type": "explain",
+      "ref": "CONTENT-CPNC-2025-P0113-001",
+      "goal": "Ubicar la perforación de la cazoleta"
+    },
+    {
+      "type": "visual_explore",
+      "ref": "FIG-CPNC-2025-P0113-001",
+      "goal": "Relacionar corredera y holgura lateral"
+    },
+    {
+      "type": "calculate",
+      "ref": "CONTENT-CPNC-2025-P0114-002",
+      "goal": "Seleccionar el descuento del par de correderas"
+    }
+  ]
+}

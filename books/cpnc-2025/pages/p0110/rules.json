@@ -1,0 +1,121 @@
+[
+  {
+    "id": "RULE-CPNC-2025-P0110-001",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 110,
+      "printed_page": 88,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "El método de ensamble afecta el resultado estético del mueble.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "assembly"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0110-002",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 110,
+      "printed_page": 88,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "Un tornillo visible puede cubrirse con un tapatornillo adhesivo.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "assembly",
+      "finish"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0110-003",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 110,
+      "printed_page": 88,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "Los sistemas ocultos como tarugo o minifix permiten un acabado más limpio.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "assembly",
+      "finish"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0110-004",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 110,
+      "printed_page": 88,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "El libro presenta tornillos especializados para MDF o aglomerado con avellanado incorporado.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "mdf",
+      "particleboard"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0110-005",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 110,
+      "printed_page": 88,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "La madera sólida puede ensamblarse con adhesivo PVA según la aplicación descrita.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "solid_wood",
+      "adhesive"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0110-006",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 110,
+      "printed_page": 88,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "Esquineros metálicos o grapas pueden utilizarse para uniones a 90 grados.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "assembly",
+      "right_angle_joint"
+    ]
+  }
+]

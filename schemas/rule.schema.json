@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "source",
+    "statement",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^RULE-[A-Z0-9-]+-P[0-9]{4}-[0-9]{3}$"
+    },
+    "source": {
+      "$ref": "source.schema.json"
+    },
+    "statement": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "CANDIDATE",
+        "REVIEWED"
+      ]
+    },
+    "applies_to": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

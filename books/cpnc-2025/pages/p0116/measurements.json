@@ -1,0 +1,24 @@
+[
+  {
+    "id": "MEAS-CPNC-2025-P0116-001",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 116,
+      "printed_page": 94,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 37,
+    "unit": "mm",
+    "meaning": "referencia del riel desde el borde del mueble",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  }
+]

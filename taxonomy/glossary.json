@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "id": "TERM-OVERLAY",
+      "term": "cobertura total",
+      "aliases": [
+        "recta"
+      ]
+    },
+    {
+      "id": "TERM-HALF-OVERLAY",
+      "term": "cobertura parcial",
+      "aliases": [
+        "semi-recta",
+        "semi curva"
+      ]
+    },
+    {
+      "id": "TERM-INSET",
+      "term": "embebida",
+      "aliases": [
+        "curva",
+        "interna"
+      ]
+    }
+  ]
+}

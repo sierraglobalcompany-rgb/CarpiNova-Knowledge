@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "source",
+    "value",
+    "unit",
+    "meaning",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^MEAS-[A-Z0-9-]+-P[0-9]{4}-[0-9]{3}$"
+    },
+    "source": {
+      "$ref": "source.schema.json"
+    },
+    "value": {
+      "type": "number"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "meaning": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "EXTRACTED",
+        "VISUALLY_VERIFIED",
+        "VALIDATED"
+      ]
+    },
+    "visual_verification": {
+      "type": "object",
+      "properties": {
+        "method": {
+          "type": "string"
+        },
+        "verified": {
+          "const": true
+        }
+      },
+      "required": [
+        "verified"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

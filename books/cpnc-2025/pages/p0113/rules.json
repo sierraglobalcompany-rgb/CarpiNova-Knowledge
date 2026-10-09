@@ -1,0 +1,161 @@
+[
+  {
+    "id": "RULE-CPNC-2025-P0113-001",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "La perforación de cazoleta descrita se realiza con broca Forstner de 35 mm.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "cup_hinge",
+      "drilling"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0113-002",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "La perforación se ubica a 2.2 cm del borde de la puerta hacia adentro.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "cup_hinge",
+      "drilling"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0113-003",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "La ubicación vertical recomendada queda entre 8 y 10 cm desde los extremos.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "cup_hinge",
+      "drilling"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0113-004",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "La regla general del libro usa 2 bisagras por cada 80 cm de altura de puerta.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "cup_hinge",
+      "door"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0113-005",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "El ejemplo de una puerta de 160 cm utiliza 4 bisagras.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "cup_hinge",
+      "door"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0113-006",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "Las correderas telescópicas permiten el desplazamiento de una gaveta dentro del mueble.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "drawer_slide",
+      "drawer"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0113-007",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "El tipo de corredera debe distinguir entre cierre tradicional, cierre suave y push-open.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "drawer_slide"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0113-008",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "El ancho de gaveta debe considerar el espacio lateral ocupado por el tipo de corredera.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "drawer_slide",
+      "drawer"
+    ]
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "id": "FIG-CPNC-2025-P0116-001",
+  "source": {
+    "book_id": "CPNC-2025",
+    "pdf_page": 116,
+    "printed_page": 94,
+    "region": {
+      "x": 0.07,
+      "y": 0.48,
+      "width": 0.82,
+      "height": 0.4
+    }
+  },
+  "type": "mixed",
+  "purpose": "Ofrecer cinco recursos de video mediante QR rotulados.",
+  "entities": [
+    {
+      "id": "qr_hardware",
+      "type": "qr_code",
+      "label": "Herrajes",
+      "payload": "https://www.youtube.com/watch?v=VaRf-V4Syww",
+      "position": "top_1"
+    },
+    {
+      "id": "qr_omega",
+      "type": "qr_code",
+      "label": "Bisagra Omega",
+      "payload": "https://www.youtube.com/watch?v=6AWlLxy4fJI&t=49s",
+      "position": "top_2"
+    },
+    {
+      "id": "qr_arms",
+      "type": "qr_code",
+      "label": "Brazos",
+      "payload": "https://www.youtube.com/watch?v=szTGendaKD4&t=8s",
+      "position": "top_3"
+    },
+    {
+      "id": "qr_hinges",
+      "type": "qr_code",
+      "label": "Bisagras",
+      "payload": "https://www.youtube.com/watch?v=XE2KhiE64aU",
+      "position": "top_4"
+    },
+    {
+      "id": "qr_hinge_install",
+      "type": "qr_code",
+      "label": "Instalación bisagras",
+      "payload": "https://www.youtube.com/watch?v=kwj550o_WdM",
+      "position": "bottom_1"
+    }
+  ],
+  "labels": [
+    "Herrajes",
+    "Bisagra Omega",
+    "Brazos",
+    "Bisagras",
+    "Instalación bisagras"
+  ],
+  "relationships": [],
+  "geometry": {
+    "precision": "exact",
+    "composition": {
+      "top_row_items": 4,
+      "bottom_row_items": 1
+    }
+  },
+  "preferred_renderer": "svg",
+  "deterministic_required": true,
+  "generative_image_allowed": false,
+  "educational_sequence": [
+    "show_resource_labels",
+    "open_selected_video"
+  ],
+  "accessibility_summary": "Cinco códigos QR enlazan videos de herrajes, bisagra Omega, brazos, bisagras e instalación de bisagras."
+}

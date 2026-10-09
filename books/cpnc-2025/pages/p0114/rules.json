@@ -1,0 +1,201 @@
+[
+  {
+    "id": "RULE-CPNC-2025-P0114-001",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "Las longitudes estándar descritas para corredera van de 20 a 65 cm en múltiplos de 5 cm.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "drawer_slide"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0114-002",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "El libro recomienda usar el riel inmediatamente menor a la profundidad externa del mueble.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "drawer_slide",
+      "cabinet_depth"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0114-003",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "Para 40 cm de profundidad externa, el ejemplo usa corredera y fondo de gaveta de 35 cm.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "drawer_slide",
+      "drawer"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0114-004",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "El ancho de gaveta se obtiene descontando del espacio interior el espacio ocupado por ambos rieles.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "drawer_slide",
+      "drawer_width"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0114-005",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "Para corredera liviana, el par descuenta 2.6 cm en el ejemplo.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "drawer_slide",
+      "drawer_width"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0114-006",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "Para corredera mediana/pesada, el par descuenta 2.8 cm.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "drawer_slide",
+      "drawer_width"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0114-007",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "Para cierre suave o push-open, el par descuenta 3.0 cm.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "drawer_slide",
+      "drawer_width"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0114-008",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "La corredera de montaje inferior descrita usa un descuento total de 1.5 cm por el par.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "undermount_slide",
+      "drawer_width"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0114-009",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "En el sistema 37/32 para rieles, la primera perforación se referencia a 37 mm.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "system_37_32",
+      "drawer_slide"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0114-010",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "Las perforaciones siguientes del sistema 37/32 se ubican en múltiplos de 32 mm.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "system_37_32",
+      "drawer_slide"
+    ]
+  }
+]

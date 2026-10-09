@@ -1,0 +1,179 @@
+[
+  {
+    "id": "RULE-CPNC-2025-P0111-001",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "La bisagra de cazoleta común descrita utiliza perforación de 35 mm.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "cup_hinge"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0111-002",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "La bisagra recta produce cobertura total del lateral.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "cup_hinge",
+      "door_overlay"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0111-003",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "La bisagra semicurva produce cobertura parcial del lateral.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "cup_hinge",
+      "door_overlay"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0111-004",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "La bisagra curva permite una puerta embebida dentro del mueble.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "cup_hinge",
+      "door_inset"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0111-005",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "En el sistema 37/32, la base de bisagra se referencia a 37 mm desde el borde.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "system_37_32",
+      "cup_hinge"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0111-006",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "Para bisagra interna, el libro indica sumar el espesor de la puerta a la referencia de 37 mm.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "system_37_32",
+      "inset_hinge"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0111-007",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "Las perforaciones de base siguen una separación de 32 mm entre centros.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "system_37_32"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0111-008",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "Las bisagras pueden variar por amortiguación, push-open y sistema clip-on.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "cup_hinge"
+    ]
+  },
+  {
+    "id": "RULE-CPNC-2025-P0111-009",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "El ángulo de apertura de una bisagra debe considerarse al diseñar accesos y esquinas.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "cup_hinge",
+      "corner_cabinet"
+    ]
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "id": "FIG-CPNC-2025-P0110-001",
+  "source": {
+    "book_id": "CPNC-2025",
+    "pdf_page": 110,
+    "printed_page": 88,
+    "region": {
+      "x": 0.06,
+      "y": 0.1,
+      "width": 0.88,
+      "height": 0.44
+    }
+  },
+  "type": "illustration",
+  "purpose": "Comparar herrajes y adhesivos usados para ensamblar piezas de madera/tablero.",
+  "entities": [
+    {
+      "id": "traditional_screw",
+      "type": "fastener",
+      "label": "Tornillo tradicional para madera",
+      "position": "upper_left"
+    },
+    {
+      "id": "dowel_pva",
+      "type": "joint",
+      "label": "Tarugo o espiga con adhesivo PVA",
+      "position": "upper_center"
+    },
+    {
+      "id": "minifix",
+      "type": "connector",
+      "label": "Minifix",
+      "position": "upper_right"
+    },
+    {
+      "id": "pva",
+      "type": "adhesive",
+      "label": "PVA",
+      "position": "lower_left"
+    },
+    {
+      "id": "pu",
+      "type": "adhesive",
+      "label": "PU",
+      "position": "lower_left_center"
+    },
+    {
+      "id": "instant",
+      "type": "adhesive",
+      "label": "Adhesivo instantáneo",
+      "position": "lower_center"
+    },
+    {
+      "id": "metal_bracket",
+      "type": "connector",
+      "label": "Esquinero metálico unión en 90°",
+      "position": "lower_right_center"
+    },
+    {
+      "id": "carpenter",
+      "type": "character",
+      "label": "Carpintero ilustrado",
+      "position": "right"
+    }
+  ],
+  "labels": [
+    "Herrajes para ensamblar",
+    "Tornillo tradicional para madera",
+    "Tarugo o espiga con adhesivo PVA",
+    "Minifix",
+    "PVA",
+    "PU",
+    "Adhesivo instantáneo",
+    "Esquinero metálico unión en 90°"
+  ],
+  "relationships": [
+    {
+      "from": "dowel_pva",
+      "to": "pva",
+      "type": "uses_adhesive"
+    },
+    {
+      "from": "metal_bracket",
+      "to": "joint",
+      "type": "forms_angle",
+      "value": 90,
+      "unit": "deg"
+    }
+  ],
+  "geometry": {
+    "precision": "approximate",
+    "composition": {
+      "layout": "educational_poster",
+      "character_side": "right"
+    }
+  },
+  "preferred_renderer": "image",
+  "deterministic_required": false,
+  "generative_image_allowed": true,
+  "educational_sequence": [
+    "show_joint_types",
+    "highlight_adhesives",
+    "compare_visible_and_hidden_connectors"
+  ],
+  "accessibility_summary": "Póster con tornillo, tarugo con PVA, minifix, adhesivos y un esquinero metálico de 90 grados."
+}

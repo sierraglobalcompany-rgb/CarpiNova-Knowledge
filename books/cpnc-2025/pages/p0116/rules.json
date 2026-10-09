@@ -1,0 +1,22 @@
+[
+  {
+    "id": "RULE-CPNC-2025-P0116-001",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 116,
+      "printed_page": 94,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      }
+    },
+    "statement": "Si el frente de gaveta es interno, su espesor se suma a la referencia inicial de 37 mm.",
+    "status": "CANDIDATE",
+    "applies_to": [
+      "drawer_slide",
+      "inset_drawer_front"
+    ]
+  }
+]

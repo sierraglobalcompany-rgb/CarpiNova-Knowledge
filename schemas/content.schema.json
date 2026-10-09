@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "kind",
+    "source",
+    "source_transcription",
+    "normalized_text",
+    "learning_text"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^CONTENT-[A-Z0-9-]+-P[0-9]{4}-[0-9]{3}$"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "source",
+        "external_enrichment"
+      ]
+    },
+    "source": {
+      "$ref": "source.schema.json"
+    },
+    "source_transcription": {
+      "type": "string"
+    },
+    "normalized_text": {
+      "type": "string"
+    },
+    "learning_text": {
+      "type": "string"
+    },
+    "derived_from_content_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "external_source": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "id": "PROC-HINGE-INSTALL",
+      "term": "instalación de bisagra de cazoleta",
+      "aliases": []
+    },
+    {
+      "id": "PROC-SLIDE-INSTALL",
+      "term": "instalación de corredera telescópica",
+      "aliases": [
+        "instalación de riel"
+      ]
+    }
+  ]
+}

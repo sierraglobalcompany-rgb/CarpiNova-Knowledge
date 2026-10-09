@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "source",
+    "type",
+    "purpose",
+    "entities",
+    "labels",
+    "relationships",
+    "geometry",
+    "preferred_renderer",
+    "deterministic_required",
+    "generative_image_allowed",
+    "educational_sequence",
+    "accessibility_summary"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^FIG-[A-Z0-9-]+-P[0-9]{4}-[0-9]{3}$"
+    },
+    "source": {
+      "$ref": "source.schema.json"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "technical_diagram",
+        "exploded_view",
+        "dimensioned_drawing",
+        "process_diagram",
+        "illustration",
+        "photo",
+        "table",
+        "form",
+        "3d_reference",
+        "mixed",
+        "qr_code"
+      ]
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "entities": {
+      "type": "array"
+    },
+    "labels": {
+      "type": "array"
+    },
+    "relationships": {
+      "type": "array"
+    },
+    "geometry": {
+      "type": "object",
+      "required": [
+        "precision"
+      ],
+      "properties": {
+        "precision": {
+          "enum": [
+            "exact",
+            "approximate",
+            "unknown"
+          ]
+        },
+        "dimensions": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": true
+    },
+    "preferred_renderer": {
+      "enum": [
+        "svg",
+        "3d",
+        "hybrid",
+        "image",
+        "html"
+      ]
+    },
+    "deterministic_required": {
+      "type": "boolean"
+    },
+    "generative_image_allowed": {
+      "type": "boolean"
+    },
+    "educational_sequence": {
+      "type": "array"
+    },
+    "accessibility_summary": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

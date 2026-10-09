@@ -1,0 +1,178 @@
+[
+  {
+    "id": "MEAS-CPNC-2025-P0115-001",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 115,
+      "printed_page": 93,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 60,
+    "unit": "cm",
+    "meaning": "altura interna del mueble del ejemplo X/2X",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0115-002",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 115,
+      "printed_page": 93,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 18,
+    "unit": "cm",
+    "meaning": "altura de cada gaveta del ejemplo",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0115-003",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 115,
+      "printed_page": 93,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 3,
+    "unit": "count",
+    "meaning": "cantidad de gavetas del ejemplo",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0115-004",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 115,
+      "printed_page": 93,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 54,
+    "unit": "cm",
+    "meaning": "suma de alturas de las tres gavetas",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0115-005",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 115,
+      "printed_page": 93,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 6,
+    "unit": "cm",
+    "meaning": "espacio libre restante",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0115-006",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 115,
+      "printed_page": 93,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 4,
+    "unit": "count",
+    "meaning": "cantidad de espacios libres",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0115-007",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 115,
+      "printed_page": 93,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 1.5,
+    "unit": "cm",
+    "meaning": "valor X del ejemplo",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0115-008",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 115,
+      "printed_page": 93,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 3,
+    "unit": "cm",
+    "meaning": "valor 2X del ejemplo",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "id": "SYS-37-32",
+      "term": "sistema 37/32",
+      "aliases": [
+        "37/32"
+      ]
+    },
+    {
+      "id": "SYS-X-2X",
+      "term": "sistema X y 2X",
+      "aliases": [
+        "X y 2X"
+      ]
+    }
+  ]
+}

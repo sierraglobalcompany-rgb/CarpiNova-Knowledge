@@ -1,0 +1,244 @@
+[
+  {
+    "id": "MEAS-CPNC-2025-P0113-001",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 35,
+    "unit": "mm",
+    "meaning": "diámetro de perforación de cazoleta",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0113-002",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 2.2,
+    "unit": "cm",
+    "meaning": "distancia de perforación desde el borde de la puerta",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0113-003",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 8,
+    "unit": "cm",
+    "meaning": "distancia vertical mínima recomendada desde el extremo",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0113-004",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 10,
+    "unit": "cm",
+    "meaning": "distancia vertical máxima recomendada desde el extremo",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0113-005",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 2,
+    "unit": "count",
+    "meaning": "bisagras de la regla general",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0113-006",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 80,
+    "unit": "cm",
+    "meaning": "altura por cada dos bisagras",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0113-007",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 160,
+    "unit": "cm",
+    "meaning": "altura de puerta del ejemplo",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0113-008",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 4,
+    "unit": "count",
+    "meaning": "bisagras del ejemplo de 160 cm",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0113-009",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 1.3,
+    "unit": "cm",
+    "meaning": "espacio por lado de riel liviano",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0113-010",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 1.4,
+    "unit": "cm",
+    "meaning": "espacio por lado de riel pesado",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0113-011",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 1.5,
+    "unit": "cm",
+    "meaning": "espacio por lado de riel push/cierre suave",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  }
+]

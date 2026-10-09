@@ -1,0 +1,82 @@
+{
+  "id": "FIG-CPNC-2025-P0113-001",
+  "source": {
+    "book_id": "CPNC-2025",
+    "pdf_page": 113,
+    "printed_page": 91,
+    "region": {
+      "x": 0.06,
+      "y": 0.58,
+      "width": 0.88,
+      "height": 0.33
+    }
+  },
+  "type": "technical_diagram",
+  "purpose": "Mostrar una corredera telescópica y el espacio lateral asociado a distintos tipos de riel.",
+  "entities": [
+    {
+      "id": "slide",
+      "type": "drawer_slide",
+      "label": "Corredera telescópica",
+      "orientation": "horizontal"
+    },
+    {
+      "id": "drawer_section",
+      "type": "drawer_cross_section",
+      "label": "Interior del cajón"
+    },
+    {
+      "id": "cabinet_interior",
+      "type": "cabinet_space",
+      "label": "Interior del mueble"
+    }
+  ],
+  "labels": [
+    "Interior del mueble",
+    "Interior del cajón",
+    "Riel liviano 1.3 cm por riel",
+    "Riel pesado 1.4 cm por riel",
+    "Riel push o cierre suave 1.5 cm por riel"
+  ],
+  "relationships": [
+    {
+      "from": "slide",
+      "to": "drawer_section",
+      "type": "mounts_between"
+    },
+    {
+      "from": "drawer_section",
+      "to": "cabinet_interior",
+      "type": "slides_inside"
+    }
+  ],
+  "geometry": {
+    "precision": "approximate",
+    "dimensions": [
+      {
+        "name": "light_clearance_each_side",
+        "value": 1.3,
+        "unit": "cm"
+      },
+      {
+        "name": "heavy_clearance_each_side",
+        "value": 1.4,
+        "unit": "cm"
+      },
+      {
+        "name": "soft_push_clearance_each_side",
+        "value": 1.5,
+        "unit": "cm"
+      }
+    ]
+  },
+  "preferred_renderer": "hybrid",
+  "deterministic_required": true,
+  "generative_image_allowed": false,
+  "educational_sequence": [
+    "show_slide_parts",
+    "show_drawer_cross_section",
+    "toggle_clearance_by_slide_type"
+  ],
+  "accessibility_summary": "Ilustración de corredera telescópica con un pequeño corte transversal que muestra el espacio entre gaveta y mueble."
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "CONTENT-CPNC-2025-P0110-001",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 110,
+      "printed_page": 88,
+      "region": {
+        "x": 0.06,
+        "y": 0.58,
+        "width": 0.88,
+        "height": 0.12
+      }
+    },
+    "source_transcription": "El tipo de ensamble también afecta el resultado estético. Por ejemplo, si el tornillo queda a la vista, se puede cubrir con un tapa tornillo adhesivo. En cambio, los tornillos ocultos —como los de agujero diagonal— o los sistemas internos como el tarugo o el minifix, permiten un acabado más limpio.",
+    "normalized_text": "El tipo de ensamble también afecta el resultado estético. Si el tornillo queda visible, puede cubrirse con un tapatornillo adhesivo. Los tornillos ocultos, los tarugos y el minifix permiten un acabado más limpio.",
+    "learning_text": "El sistema de unión no solo sostiene el mueble: también cambia cómo se ve. Si quieres un acabado limpio, conviene evitar tornillos visibles o cubrirlos.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0110-001"
+    ]
+  },
+  {
+    "id": "CONTENT-CPNC-2025-P0110-002",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 110,
+      "printed_page": 88,
+      "region": {
+        "x": 0.06,
+        "y": 0.68,
+        "width": 0.88,
+        "height": 0.1
+      }
+    },
+    "source_transcription": "También hay tornillos especializados para MDF o aglomerado, como los de la marca XPAX, que cuentan con una avellanadora incorporada tanto en la punta como en la cabeza. Esto les permite perforar y avellanar en un solo paso, evitando que se rompan las fibras del material.",
+    "normalized_text": "Existen tornillos especializados para MDF o aglomerado con avellanado incorporado, que permiten perforar y avellanar en un solo paso y reducen el daño en las fibras.",
+    "learning_text": "Para MDF o aglomerado existen tornillos diseñados para entrar y avellanar con menos riesgo de dañar la superficie.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0110-002"
+    ]
+  },
+  {
+    "id": "CONTENT-CPNC-2025-P0110-003",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 110,
+      "printed_page": 88,
+      "region": {
+        "x": 0.06,
+        "y": 0.77,
+        "width": 0.88,
+        "height": 0.12
+      }
+    },
+    "source_transcription": "Respecto a los adhesivos, la madera sólida incluso puede ensamblarse únicamente con colas blancas tipo PVA. Estos adhesivos, conocidos comercialmente como “Colbón” (que en realidad es una marca), se usan para trabajos en interiores. También existen versiones para ambientes húmedos, identificadas como PVA tipo I, II, III o IV, según su resistencia.",
+    "normalized_text": "La madera sólida puede ensamblarse con adhesivos PVA. Existen diferentes clases de PVA según la resistencia requerida, incluidas aplicaciones con humedad.",
+    "learning_text": "El PVA es la cola blanca usada en muchas uniones de madera. La resistencia cambia según el tipo de adhesivo y las condiciones de uso.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0110-003"
+    ]
+  },
+  {
+    "id": "CONTENT-CPNC-2025-P0110-004",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 110,
+      "printed_page": 88,
+      "region": {
+        "x": 0.06,
+        "y": 0.87,
+        "width": 0.88,
+        "height": 0.1
+      }
+    },
+    "source_transcription": "Para los tableros aglomerados también se pueden usar adhesivos instantáneos, como la “superpega infinita”, o adhesivos de poliuretano (PU), que ofrecen una unión fuerte, rápida y confiable. Además de los sistemas mencionados, existen otros herrajes como los esquineros metálicos o las grapas muebles, muy útiles para unir piezas a 90°, especialmente en estructuras como camas.",
+    "normalized_text": "En tableros aglomerados también pueden utilizarse adhesivos instantáneos o de poliuretano. Los esquineros metálicos y grapas para muebles son opciones para unir piezas a 90°.",
+    "learning_text": "Además de tornillos y tarugos, puedes unir piezas con adhesivos o con herrajes de 90°. El método depende de la estructura y del acabado que necesites.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0110-004"
+    ]
+  }
+]

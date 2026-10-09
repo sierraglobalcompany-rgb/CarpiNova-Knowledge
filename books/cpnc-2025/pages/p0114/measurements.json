@@ -1,0 +1,486 @@
+[
+  {
+    "id": "MEAS-CPNC-2025-P0114-001",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 20,
+    "unit": "cm",
+    "meaning": "longitud estándar de corredera 20 cm",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-002",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 25,
+    "unit": "cm",
+    "meaning": "longitud estándar de corredera 25 cm",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-003",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 30,
+    "unit": "cm",
+    "meaning": "longitud estándar de corredera 30 cm",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-004",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 35,
+    "unit": "cm",
+    "meaning": "longitud estándar de corredera 35 cm",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-005",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 40,
+    "unit": "cm",
+    "meaning": "longitud estándar de corredera 40 cm",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-006",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 45,
+    "unit": "cm",
+    "meaning": "longitud estándar de corredera 45 cm",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-007",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 50,
+    "unit": "cm",
+    "meaning": "longitud estándar de corredera 50 cm",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-008",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 55,
+    "unit": "cm",
+    "meaning": "longitud estándar de corredera 55 cm",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-009",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 60,
+    "unit": "cm",
+    "meaning": "longitud estándar de corredera 60 cm",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-010",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 65,
+    "unit": "cm",
+    "meaning": "longitud estándar de corredera 65 cm",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-011",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 40,
+    "unit": "cm",
+    "meaning": "profundidad externa del mueble del ejemplo",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-012",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 35,
+    "unit": "cm",
+    "meaning": "corredera recomendada para profundidad de 40 cm",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-013",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 35,
+    "unit": "cm",
+    "meaning": "fondo de gaveta recomendado en el ejemplo",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-014",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 2.6,
+    "unit": "cm",
+    "meaning": "descuento total para par de correderas livianas",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-015",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 2.8,
+    "unit": "cm",
+    "meaning": "descuento total para par de correderas medianas/pesadas",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-016",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 3.0,
+    "unit": "cm",
+    "meaning": "descuento total para par de cierre suave/push-open",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-017",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 1.5,
+    "unit": "cm",
+    "meaning": "espesor de tablero en el ejemplo",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-018",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 37,
+    "unit": "cm",
+    "meaning": "espacio interior disponible del ejemplo",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-019",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 34.4,
+    "unit": "cm",
+    "meaning": "ancho de gaveta calculado del ejemplo",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-020",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 1.5,
+    "unit": "cm",
+    "meaning": "descuento total del par de correderas inferiores",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-021",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 37,
+    "unit": "mm",
+    "meaning": "primera referencia del sistema 37/32 para riel",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0114-022",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 32,
+    "unit": "mm",
+    "meaning": "módulo de perforación del sistema 37/32",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  }
+]

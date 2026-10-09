@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "id": "FURN-DRAWER",
+      "term": "gaveta",
+      "aliases": [
+        "cajón"
+      ]
+    },
+    {
+      "id": "FURN-CABINET",
+      "term": "gabinete",
+      "aliases": [
+        "mueble modular"
+      ]
+    }
+  ]
+}

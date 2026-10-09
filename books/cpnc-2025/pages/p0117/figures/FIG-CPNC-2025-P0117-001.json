@@ -1,0 +1,53 @@
+{
+  "id": "FIG-CPNC-2025-P0117-001",
+  "source": {
+    "book_id": "CPNC-2025",
+    "pdf_page": 117,
+    "printed_page": 95,
+    "region": {
+      "x": 0.06,
+      "y": 0.04,
+      "width": 0.88,
+      "height": 0.91
+    }
+  },
+  "type": "illustration",
+  "purpose": "Registrar la página comercial de Venetto sin convertirla en regla técnica.",
+  "entities": [
+    {
+      "id": "venetto_logo",
+      "type": "brand_logo",
+      "label": "VENETTO",
+      "position": "center"
+    },
+    {
+      "id": "hardware_pattern",
+      "type": "decorative_pattern",
+      "label": "Herrajes",
+      "position": "background"
+    }
+  ],
+  "labels": [
+    "VENETTO",
+    "HERRAJES Y ACCESORIOS PARA MUEBLES"
+  ],
+  "relationships": [],
+  "geometry": {
+    "precision": "approximate",
+    "composition": {
+      "large_white_circle": "center",
+      "logo": "center",
+      "hardware_pattern": "background"
+    }
+  },
+  "preferred_renderer": "image",
+  "deterministic_required": false,
+  "generative_image_allowed": false,
+  "educational_sequence": [],
+  "accessibility_summary": "Página de marca Venetto con logotipo central y patrón de herrajes al fondo.",
+  "rights": {
+    "usage": "reference_only",
+    "reason": "third_party_branding",
+    "regenerate_brand_assets": false
+  }
+}

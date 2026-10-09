@@ -1,0 +1,102 @@
+{
+  "id": "FIG-CPNC-2025-P0112-001",
+  "source": {
+    "book_id": "CPNC-2025",
+    "pdf_page": 112,
+    "printed_page": 90,
+    "region": {
+      "x": 0.09,
+      "y": 0.1,
+      "width": 0.82,
+      "height": 0.8
+    }
+  },
+  "type": "technical_diagram",
+  "purpose": "Comparar geometría y cobertura de bisagras recta, semirrecta y curva.",
+  "entities": [
+    {
+      "id": "straight",
+      "type": "cup_hinge",
+      "label": "Recta",
+      "coverage": "total",
+      "door_relation": "overlay_total",
+      "column": 1
+    },
+    {
+      "id": "half_overlay",
+      "type": "cup_hinge",
+      "label": "Semi-recta",
+      "coverage": "partial",
+      "door_relation": "half_overlay",
+      "column": 2
+    },
+    {
+      "id": "inset",
+      "type": "cup_hinge",
+      "label": "Curva",
+      "coverage": "inset",
+      "door_relation": "inset",
+      "column": 3
+    },
+    {
+      "id": "cabinet_side",
+      "type": "panel",
+      "label": "Lateral"
+    },
+    {
+      "id": "door",
+      "type": "panel",
+      "label": "Puerta"
+    }
+  ],
+  "labels": [
+    "Recta",
+    "Semi-recta",
+    "Curva",
+    "Cobertura total",
+    "Cobertura parcial",
+    "Embebida",
+    "Lateral",
+    "Puerta"
+  ],
+  "relationships": [
+    {
+      "from": "straight",
+      "to": "door",
+      "type": "positions",
+      "value": "outside_full_overlay"
+    },
+    {
+      "from": "half_overlay",
+      "to": "door",
+      "type": "positions",
+      "value": "partial_overlay"
+    },
+    {
+      "from": "inset",
+      "to": "door",
+      "type": "positions",
+      "value": "inside_opening"
+    }
+  ],
+  "geometry": {
+    "precision": "approximate",
+    "composition": {
+      "columns": 3,
+      "views_per_column": [
+        "hinge_perspective",
+        "side_section",
+        "front_relation"
+      ]
+    }
+  },
+  "preferred_renderer": "svg",
+  "deterministic_required": true,
+  "generative_image_allowed": false,
+  "educational_sequence": [
+    "show_three_columns",
+    "animate_door_relation",
+    "highlight_visible_side"
+  ],
+  "accessibility_summary": "Tres columnas comparan bisagra recta, semirrecta y curva y cómo queda la puerta frente al lateral."
+}

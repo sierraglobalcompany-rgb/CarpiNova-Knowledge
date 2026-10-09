@@ -1,0 +1,23 @@
+[
+  {
+    "id": "CONTENT-CPNC-2025-P0117-001",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 117,
+      "printed_page": 95,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "source_transcription": "VENETTO — Herrajes y accesorios para muebles.",
+    "normalized_text": "Página de marca Venetto, dedicada a herrajes y accesorios para muebles.",
+    "learning_text": "Esta página es una referencia comercial del libro; no agrega una regla técnica de fabricación.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0117-001"
+    ]
+  }
+]

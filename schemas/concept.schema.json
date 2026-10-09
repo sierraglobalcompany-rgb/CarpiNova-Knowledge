@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "canonical_term",
+    "aliases",
+    "source_refs"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^CONCEPT-[A-Z0-9-]+$"
+    },
+    "canonical_term": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

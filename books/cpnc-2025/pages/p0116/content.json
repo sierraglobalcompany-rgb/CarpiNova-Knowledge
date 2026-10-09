@@ -1,0 +1,44 @@
+[
+  {
+    "id": "CONTENT-CPNC-2025-P0116-001",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 116,
+      "printed_page": 94,
+      "region": {
+        "x": 0.06,
+        "y": 0.1,
+        "width": 0.88,
+        "height": 0.35
+      }
+    },
+    "source_transcription": "Consideraciones importantes: el riel se instala a 37 mm del borde del mueble hacia adentro, tomando como referencia el primer orificio de la pestaña flexible del riel. Si el frente de la gaveta es interno, se deben sumar esos milímetros del espesor del frente a los 37 mm iniciales. Una vez instalada la primera gaveta, para la segunda se mide 3 cm (2X) hacia arriba desde la parte superior de la primera gaveta y se marca el centro del siguiente riel.",
+    "normalized_text": "La página recuerda la referencia de 37 mm para el riel. Si el frente de la gaveta es interno, se suma su espesor. Para repetir el ejemplo de X y 2X, se suben 3 cm desde la gaveta anterior para marcar el siguiente riel.",
+    "learning_text": "Antes de perforar, revisa si el frente es exterior o interno. Un frente interno cambia la referencia porque su espesor debe sumarse a los 37 mm.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0116-001"
+    ]
+  },
+  {
+    "id": "CONTENT-CPNC-2025-P0116-002",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 116,
+      "printed_page": 94,
+      "region": {
+        "x": 0.06,
+        "y": 0.43,
+        "width": 0.88,
+        "height": 0.48
+      }
+    },
+    "source_transcription": "X = (Altura interna - Sumatoria de las alturas de las gavetas y golas o separadores) / cantidad de espacios libres. X = medida instalación del centro del riel en la gaveta. 2X = medida instalación del centro del riel en el lateral del mueble. La página incluye códigos QR para Herrajes, Bisagra Omega, Brazos, Bisagras e Instalación bisagras.",
+    "normalized_text": "La fórmula resume el sistema X/2X y la página enlaza videos de apoyo mediante cinco códigos QR.",
+    "learning_text": "Usa la fórmula para obtener X y luego 2X. Los QR funcionan como recursos complementarios para ver herrajes e instalación en video.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0116-002"
+    ]
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "CONTENT-CPNC-2025-P0111-001",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.06,
+        "y": 0.22,
+        "width": 0.88,
+        "height": 0.15
+      }
+    },
+    "source_transcription": "Las bisagras para puertas de gabinete son un elemento fundamental que permite su apertura, ya sea lateral o en posición batiente. Actualmente, las más comunes son las bisagras de cazoleta, especialmente las de 35 milímetros, que es el diámetro de la perforación necesaria en la puerta para incrustarlas correctamente.",
+    "normalized_text": "Las bisagras de gabinete permiten el movimiento de las puertas. Las bisagras de cazoleta de 35 mm son de las más comunes y requieren una perforación de ese diámetro en la puerta.",
+    "learning_text": "La bisagra de cazoleta se instala dentro de un agujero circular en la puerta. Una medida muy común es 35 mm.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0111-001"
+    ]
+  },
+  {
+    "id": "CONTENT-CPNC-2025-P0111-002",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.06,
+        "y": 0.36,
+        "width": 0.88,
+        "height": 0.1
+      }
+    },
+    "source_transcription": "Bisagra recta de cazoleta (también llamada de parche): permite una cobertura total del lateral del mueble. Es decir, la puerta queda completamente por fuera del mueble, cubriendo todo el borde donde se instala.",
+    "normalized_text": "La bisagra recta o de parche produce cobertura total del lateral del mueble.",
+    "learning_text": "Con una bisagra recta, la puerta tapa por completo el canto del lateral.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0111-002"
+    ]
+  },
+  {
+    "id": "CONTENT-CPNC-2025-P0111-003",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.06,
+        "y": 0.45,
+        "width": 0.88,
+        "height": 0.12
+      }
+    },
+    "source_transcription": "Bisagra semi curva o semi parche: tiene un leve codo, lo que hace que la puerta cubra solo la mitad del lateral del mueble. Se usa cuando se instalan dos puertas que abren desde el mismo lateral.",
+    "normalized_text": "La bisagra semicurva o semiparche produce cobertura parcial y permite compartir un lateral entre dos puertas.",
+    "learning_text": "La bisagra semicurva deja visible parte del lateral y se usa cuando dos puertas comparten el mismo costado.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0111-003"
+    ]
+  },
+  {
+    "id": "CONTENT-CPNC-2025-P0111-004",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.06,
+        "y": 0.57,
+        "width": 0.88,
+        "height": 0.08
+      }
+    },
+    "source_transcription": "Bisagra curva o interna: es la que permite que la puerta quede totalmente dentro del mueble, dejando visibles los bordes del gabinete.",
+    "normalized_text": "La bisagra curva o interna deja la puerta embebida dentro del mueble.",
+    "learning_text": "Con una bisagra curva, la puerta queda dentro del vano y los bordes del gabinete permanecen visibles.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0111-004"
+    ]
+  },
+  {
+    "id": "CONTENT-CPNC-2025-P0111-005",
+    "kind": "source",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.06,
+        "y": 0.66,
+        "width": 0.88,
+        "height": 0.28
+      }
+    },
+    "source_transcription": "Sistema 37/32. Todas estas bisagras se instalan siguiendo una medida estandarizada: desde el borde del mueble hacia adentro, los tornillos deben ubicarse a 37 milímetros. En el caso de las bisagras internas, se debe sumar el espesor de la puerta. Las perforaciones para fijar la base de las bisagras siguen una separación de 32 milímetros entre centros. Las bisagras de cazoleta vienen en diversas versiones: con o sin amortiguación, con sistema clip-on, en distintos materiales y con ángulos de apertura de 110, 130 o hasta 170 grados.",
+    "normalized_text": "El sistema 37/32 usa 37 mm como referencia desde el borde y 32 mm entre centros de perforaciones. En bisagras internas se suma el espesor de la puerta. Las bisagras también varían por cierre, montaje, material y ángulo de apertura.",
+    "learning_text": "El sistema 37/32 ayuda a repetir perforaciones con medidas estándar. Antes de aplicarlo, hay que identificar el tipo de bisagra y si la puerta es exterior o interna.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0111-005"
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "id": "MAT-MDP",
+      "term": "MDP",
+      "aliases": [
+        "tablero aglomerado",
+        "aglomerado"
+      ]
+    },
+    {
+      "id": "MAT-MDF",
+      "term": "MDF",
+      "aliases": [
+        "fibrofácil"
+      ]
+    },
+    {
+      "id": "MAT-PVA",
+      "term": "adhesivo PVA",
+      "aliases": [
+        "cola blanca"
+      ]
+    }
+  ]
+}

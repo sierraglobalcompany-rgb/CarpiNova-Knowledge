@@ -1,0 +1,134 @@
+[
+  {
+    "id": "MEAS-CPNC-2025-P0111-001",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 35,
+    "unit": "mm",
+    "meaning": "diámetro común de cazoleta",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0111-002",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 37,
+    "unit": "mm",
+    "meaning": "referencia de tornillos de base desde el borde",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0111-003",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 32,
+    "unit": "mm",
+    "meaning": "separación entre centros del sistema 37/32",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0111-004",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 110,
+    "unit": "deg",
+    "meaning": "ángulo de apertura mencionado",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0111-005",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 130,
+    "unit": "deg",
+    "meaning": "ángulo de apertura mencionado",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  },
+  {
+    "id": "MEAS-CPNC-2025-P0111-006",
+    "source": {
+      "book_id": "CPNC-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.9
+      }
+    },
+    "value": 170,
+    "unit": "deg",
+    "meaning": "ángulo máximo mencionado",
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "verified": true,
+      "method": "page_image"
+    }
+  }
+]
