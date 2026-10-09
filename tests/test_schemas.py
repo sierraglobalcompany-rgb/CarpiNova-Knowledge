@@ -86,3 +86,10 @@ def test_lesson_step_accepts_figure_references_for_visual_reuse() -> None:
     lesson["steps"][0]["figure_ids"] = ["FIG-CPNC-2025-P0091-001"]
     lesson["steps"][0]["interaction"] = {"type": "highlight", "target_entity_ids": ["panel-1"]}
     assert validate_instance("lesson", lesson) == []
+
+
+def test_batch_accepts_physical_pages_without_printed_numbers() -> None:
+    batch = _fixture("batch")
+    batch.pop("printed_pages")
+    batch["pdf_pages"] = [1, 2, 3, 4, 5]
+    assert validate_instance("batch", batch) == []
