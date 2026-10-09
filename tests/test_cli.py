@@ -26,6 +26,7 @@ def test_cli_help_lists_all_commands() -> None:
         "validate",
         "build-dist",
         "report-pilot",
+        "report-batch",
     ):
         assert command in result.stdout
 
