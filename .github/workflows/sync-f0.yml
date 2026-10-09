@@ -1,0 +1,56 @@
+name: Synchronize complete F0 tree
+
+on:
+  push:
+    branches:
+      - feat/knowledge-f0-final
+    paths:
+      - .github/workflows/sync-f0.yml
+      - .sync/parts/**
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: feat/knowledge-f0-final
+          fetch-depth: 0
+
+      - name: Reassemble and verify archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .sync/parts/*.b64 > /tmp/f0.b64
+          base64 -d /tmp/f0.b64 > /tmp/f0.tar.gz
+          echo "addecc1c4f253af8d83abac55f4e305403998f94d67a47fbaf230824b7f30b00  /tmp/f0.tar.gz" | sha256sum -c -
+          mkdir -p /tmp/carpinova-f0
+          tar -xzf /tmp/f0.tar.gz -C /tmp/carpinova-f0
+          test -f /tmp/carpinova-f0/pyproject.toml
+          test -f /tmp/carpinova-f0/src/carpinova_knowledge/cli.py
+          test -f /tmp/carpinova-f0/audits/f0-pilot-acceptance.md
+
+      - name: Replace staged tree with verified F0 archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp .github/workflows/sync-f0.yml /tmp/sync-f0.yml
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a /tmp/carpinova-f0/. .
+          mkdir -p .github/workflows
+          cp /tmp/sync-f0.yml .github/workflows/sync-f0.yml
+          git status --short
+
+      - name: Commit synchronized tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: synchronize complete CarpiNova Knowledge F0"
+          git push origin HEAD:feat/knowledge-f0-final
