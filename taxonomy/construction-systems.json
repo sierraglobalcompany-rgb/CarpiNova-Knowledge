@@ -1,0 +1,55 @@
+{
+  "items": [
+    {
+      "id": "SYS-SCREW-ASSEMBLY",
+      "name": "Ensamble con tornillos",
+      "aliases": [
+        "atornillado"
+      ]
+    },
+    {
+      "id": "SYS-MINIFIX-ASSEMBLY",
+      "name": "Ensamble Minifix",
+      "aliases": [
+        "sistema minifix"
+      ]
+    },
+    {
+      "id": "SYS-ADHESIVE-ASSEMBLY",
+      "name": "Ensamble con adhesivo",
+      "aliases": [
+        "pegado"
+      ]
+    },
+    {
+      "id": "SYS-HINGED-DOOR",
+      "name": "Puerta abatible con bisagras",
+      "aliases": [
+        "puerta con bisagras"
+      ]
+    },
+    {
+      "id": "SYS-DRAWER-SLIDE",
+      "name": "Cajón con correderas",
+      "aliases": [
+        "gaveta con correderas"
+      ]
+    },
+    {
+      "id": "SYS-37-32",
+      "name": "Sistema 37/32",
+      "aliases": [
+        "37/32",
+        "sistema 37 32"
+      ]
+    },
+    {
+      "id": "SYS-X-2X",
+      "name": "Sistema X y 2X",
+      "aliases": [
+        "X y 2X",
+        "X/2X"
+      ]
+    }
+  ]
+}

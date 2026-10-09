@@ -1,0 +1,33 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0117-001",
+    "page_id": "PAGE-CPNC-2025-P0117",
+    "content_type": "reference",
+    "source_transcription": "VENETTO — HERRAJES Y ACCESORIOS PARA MUEBLES.",
+    "normalized_text": "Página gráfica de referencia comercial: VENETTO, herrajes y accesorios para muebles.",
+    "learning_text": "Esta página es una referencia comercial dentro del libro, no una instrucción técnica. Se conserva para mantener la trazabilidad completa del contenido, pero no genera reglas de fabricación.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0117-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 117,
+      "printed_page": 95,
+      "region": {
+        "x": 0.1132,
+        "y": 0.2163,
+        "width": 0.7776,
+        "height": 0.5832
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "referencia comercial",
+      "herrajes"
+    ]
+  }
+]

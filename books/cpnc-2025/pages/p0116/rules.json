@@ -1,0 +1,122 @@
+[
+  {
+    "rule_id": "RULE-CPNC-2025-P0116-001",
+    "page_id": "PAGE-CPNC-2025-P0116",
+    "category": "drawer_slide",
+    "subject": "first_flexible_tab_hole",
+    "predicate": "offset_from_cabinet_front_edge",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 116,
+        "printed_page": 94,
+        "region": {
+          "x": 0.06,
+          "y": 0.11,
+          "width": 0.88,
+          "height": 0.07
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": 37,
+    "unit": "mm"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0116-002",
+    "page_id": "PAGE-CPNC-2025-P0116",
+    "category": "drawer_slide",
+    "subject": "inset_drawer_front",
+    "predicate": "add_to_initial_offset",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 116,
+        "printed_page": 94,
+        "region": {
+          "x": 0.06,
+          "y": 0.16,
+          "width": 0.88,
+          "height": 0.08
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": "front_thickness",
+    "unit": null
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0116-003",
+    "page_id": "PAGE-CPNC-2025-P0116",
+    "category": "drawer_layout",
+    "subject": "next_slide_center",
+    "predicate": "offset_from_previous_drawer_top",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 116,
+        "printed_page": 94,
+        "region": {
+          "x": 0.06,
+          "y": 0.26,
+          "width": 0.88,
+          "height": 0.08
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": "2X",
+    "unit": null
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0116-004",
+    "page_id": "PAGE-CPNC-2025-P0116",
+    "category": "drawer_layout",
+    "subject": "X_spacing",
+    "predicate": "formula",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 116,
+        "printed_page": 94,
+        "region": {
+          "x": 0.06,
+          "y": 0.34,
+          "width": 0.88,
+          "height": 0.1
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": "(internal_height - sum(drawer_heights_and_golas_or_separators)) / free_space_count",
+    "unit": null
+  }
+]

@@ -1,0 +1,222 @@
+{
+  "book_id": "cpnc-2025",
+  "source": "printed index page 1; ranges end immediately before next indexed section",
+  "sections": [
+    {
+      "section_id": "front-index",
+      "title": "Índice y apertura",
+      "printed_range": {
+        "start": 1,
+        "end": 4
+      },
+      "physical_range": {
+        "start": 23,
+        "end": 26
+      }
+    },
+    {
+      "section_id": "carpintero-digital",
+      "title": "Carpintero Digital",
+      "printed_range": {
+        "start": 5,
+        "end": 7
+      },
+      "physical_range": {
+        "start": 27,
+        "end": 29
+      }
+    },
+    {
+      "section_id": "voy-a-ensenar",
+      "title": "Voy a enseñar a hacer muebles",
+      "printed_range": {
+        "start": 8,
+        "end": 10
+      },
+      "physical_range": {
+        "start": 30,
+        "end": 32
+      }
+    },
+    {
+      "section_id": "aprendiendo-y-ensenando",
+      "title": "Aprendiendo y enseñando",
+      "printed_range": {
+        "start": 11,
+        "end": 13
+      },
+      "physical_range": {
+        "start": 33,
+        "end": 35
+      }
+    },
+    {
+      "section_id": "nueva-comunidad",
+      "title": "Nueva comunidad de carpinteros",
+      "printed_range": {
+        "start": 14,
+        "end": 19
+      },
+      "physical_range": {
+        "start": 36,
+        "end": 41
+      }
+    },
+    {
+      "section_id": "nuevo-comienzo",
+      "title": "Un nuevo comienzo",
+      "printed_range": {
+        "start": 20,
+        "end": 23
+      },
+      "physical_range": {
+        "start": 42,
+        "end": 45
+      }
+    },
+    {
+      "section_id": "historia-empresa",
+      "title": "Mi historia la de una empresa",
+      "printed_range": {
+        "start": 24,
+        "end": 33
+      },
+      "physical_range": {
+        "start": 46,
+        "end": 55
+      }
+    },
+    {
+      "section_id": "evolucion-carpinteria",
+      "title": "La evolución de la carpintería",
+      "printed_range": {
+        "start": 34,
+        "end": 36
+      },
+      "physical_range": {
+        "start": 56,
+        "end": 58
+      }
+    },
+    {
+      "section_id": "primer-ensamble",
+      "title": "Mi primer ensamble",
+      "printed_range": {
+        "start": 37,
+        "end": 52
+      },
+      "physical_range": {
+        "start": 59,
+        "end": 74
+      }
+    },
+    {
+      "section_id": "iniciar-primer-proyecto",
+      "title": "¿Cómo iniciar mi primer proyecto?",
+      "printed_range": {
+        "start": 53,
+        "end": 56
+      },
+      "physical_range": {
+        "start": 75,
+        "end": 78
+      }
+    },
+    {
+      "section_id": "cinco-pasos",
+      "title": "5 pasos para lograr el desarrollo de un proyecto de carpintería",
+      "printed_range": {
+        "start": 57,
+        "end": 59
+      },
+      "physical_range": {
+        "start": 79,
+        "end": 81
+      }
+    },
+    {
+      "section_id": "step-1-materials",
+      "title": "Paso 1: Materiales",
+      "printed_range": {
+        "start": 60,
+        "end": 82
+      },
+      "physical_range": {
+        "start": 82,
+        "end": 104
+      }
+    },
+    {
+      "section_id": "step-2-hardware",
+      "title": "Paso 2: Herrajes",
+      "printed_range": {
+        "start": 83,
+        "end": 123
+      },
+      "physical_range": {
+        "start": 105,
+        "end": 145
+      }
+    },
+    {
+      "section_id": "step-3-tools",
+      "title": "Paso 3: Herramientas",
+      "printed_range": {
+        "start": 124,
+        "end": 150
+      },
+      "physical_range": {
+        "start": 146,
+        "end": 172
+      }
+    },
+    {
+      "section_id": "step-4-cut-optimization",
+      "title": "Paso 4: Despiece y optimización",
+      "printed_range": {
+        "start": 151,
+        "end": 210
+      },
+      "physical_range": {
+        "start": 173,
+        "end": 232
+      }
+    },
+    {
+      "section_id": "step-5-project-furniture",
+      "title": "Paso 5: Proyectar mobiliario - Aprende y emprende",
+      "printed_range": {
+        "start": 211,
+        "end": 250
+      },
+      "physical_range": {
+        "start": 233,
+        "end": 272
+      }
+    },
+    {
+      "section_id": "sena-certificate",
+      "title": "Certificado SENA",
+      "printed_range": {
+        "start": 251,
+        "end": 254
+      },
+      "physical_range": {
+        "start": 273,
+        "end": 276
+      }
+    },
+    {
+      "section_id": "glossary",
+      "title": "Glosario",
+      "printed_range": {
+        "start": 255,
+        "end": 272
+      },
+      "physical_range": {
+        "start": 277,
+        "end": 294
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carpinova.local/schemas/content.schema.json",
+  "type": "object",
+  "required": ["content_id", "page_id", "content_type", "source_transcription", "normalized_text", "learning_text", "derived_from_content_ids", "source"],
+  "additionalProperties": false,
+  "properties": {
+    "content_id": {"$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/contentId"},
+    "page_id": {"$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/pageId"},
+    "content_type": {
+      "enum": ["concept", "definition", "material", "hardware", "furniture_pattern", "construction_pattern", "rule", "formula", "dimension", "tolerance", "procedure", "warning", "recommendation", "example", "checklist", "table", "form", "reference", "external_enrichment"]
+    },
+    "source_transcription": {"type": "string"},
+    "normalized_text": {"type": "string"},
+    "learning_text": {"type": "string"},
+    "derived_from_content_ids": {
+      "type": "array",
+      "items": {"$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/contentId"},
+      "uniqueItems": true
+    },
+    "source": {"$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/source"},
+    "external_source": {
+      "type": "object",
+      "required": ["title", "locator"],
+      "additionalProperties": true,
+      "properties": {
+        "title": {"type": "string", "minLength": 1},
+        "locator": {"type": "string", "minLength": 1}
+      }
+    },
+    "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"content_type": {"const": "external_enrichment"}}, "required": ["content_type"]},
+      "then": {"required": ["external_source"]},
+      "else": {"properties": {"derived_from_content_ids": {"minItems": 1}}}
+    }
+  ]
+}

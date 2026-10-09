@@ -1,0 +1,196 @@
+[
+  {
+    "rule_id": "RULE-CPNC-2025-P0113-001",
+    "page_id": "PAGE-CPNC-2025-P0113",
+    "category": "hinge",
+    "subject": "cup_hinge",
+    "predicate": "cup_hole_diameter",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 113,
+        "printed_page": 91,
+        "region": {
+          "x": 0.06,
+          "y": 0.12,
+          "width": 0.88,
+          "height": 0.08
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": 35,
+    "unit": "mm"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0113-002",
+    "page_id": "PAGE-CPNC-2025-P0113",
+    "category": "hinge",
+    "subject": "cup_hinge",
+    "predicate": "cup_hole_offset_from_door_edge",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 113,
+        "printed_page": 91,
+        "region": {
+          "x": 0.06,
+          "y": 0.15,
+          "width": 0.88,
+          "height": 0.08
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": 22,
+    "unit": "mm"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0113-003",
+    "page_id": "PAGE-CPNC-2025-P0113",
+    "category": "hinge",
+    "subject": "cup_hinge",
+    "predicate": "recommended_vertical_offset_range",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 113,
+        "printed_page": 91,
+        "region": {
+          "x": 0.06,
+          "y": 0.18,
+          "width": 0.88,
+          "height": 0.07
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": {
+      "min": 80,
+      "max": 100
+    },
+    "unit": "mm"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0113-004",
+    "page_id": "PAGE-CPNC-2025-P0113",
+    "category": "hinge",
+    "subject": "door_hinge_count",
+    "predicate": "general_ratio",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 113,
+        "printed_page": 91,
+        "region": {
+          "x": 0.06,
+          "y": 0.22,
+          "width": 0.88,
+          "height": 0.07
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": {
+      "hinges": 2,
+      "per_height_mm": 800
+    },
+    "unit": null
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0113-005",
+    "page_id": "PAGE-CPNC-2025-P0113",
+    "category": "drawer_slide",
+    "subject": "telescopic_slide",
+    "predicate": "classification_by_load",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 113,
+        "printed_page": 91,
+        "region": {
+          "x": 0.06,
+          "y": 0.4,
+          "width": 0.88,
+          "height": 0.09
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": [
+      "light",
+      "medium",
+      "heavy"
+    ],
+    "unit": null
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0113-006",
+    "page_id": "PAGE-CPNC-2025-P0113",
+    "category": "drawer_slide",
+    "subject": "telescopic_slide",
+    "predicate": "classification_by_closure",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 113,
+        "printed_page": 91,
+        "region": {
+          "x": 0.06,
+          "y": 0.47,
+          "width": 0.88,
+          "height": 0.09
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": [
+      "traditional",
+      "soft_close",
+      "push_open"
+    ],
+    "unit": null
+  }
+]

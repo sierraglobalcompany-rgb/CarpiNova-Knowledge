@@ -1,0 +1,272 @@
+[
+  {
+    "rule_id": "RULE-CPNC-2025-P0114-001",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "category": "drawer_slide",
+    "subject": "slide_length",
+    "predicate": "standard_increment",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 114,
+        "printed_page": 92,
+        "region": {
+          "x": 0.06,
+          "y": 0.1,
+          "width": 0.88,
+          "height": 0.05
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": 50,
+    "unit": "mm"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0114-002",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "category": "drawer_slide",
+    "subject": "slide_length",
+    "predicate": "select_immediately_shorter_than",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 114,
+        "printed_page": 92,
+        "region": {
+          "x": 0.06,
+          "y": 0.13,
+          "width": 0.88,
+          "height": 0.09
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": "cabinet_external_depth",
+    "unit": null
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0114-003",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "category": "drawer",
+    "subject": "drawer_width",
+    "predicate": "calculation",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 114,
+        "printed_page": 92,
+        "region": {
+          "x": 0.06,
+          "y": 0.565,
+          "width": 0.88,
+          "height": 0.105
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": "internal_width_minus_slide_pair_clearance",
+    "unit": null
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0114-004",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "category": "drawer_slide",
+    "subject": "light_slide_pair",
+    "predicate": "total_width_discount",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 114,
+        "printed_page": 92,
+        "region": {
+          "x": 0.0605,
+          "y": 0.3303,
+          "width": 0.879,
+          "height": 0.2177
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": 26,
+    "unit": "mm"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0114-005",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "category": "drawer_slide",
+    "subject": "medium_heavy_slide_pair",
+    "predicate": "total_width_discount",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 114,
+        "printed_page": 92,
+        "region": {
+          "x": 0.0605,
+          "y": 0.3303,
+          "width": 0.879,
+          "height": 0.2177
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": 28,
+    "unit": "mm"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0114-006",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "category": "drawer_slide",
+    "subject": "soft_close_push_pair",
+    "predicate": "total_width_discount",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 114,
+        "printed_page": 92,
+        "region": {
+          "x": 0.0605,
+          "y": 0.3303,
+          "width": 0.879,
+          "height": 0.2177
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": 30,
+    "unit": "mm"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0114-007",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "category": "drawer_slide",
+    "subject": "undermount_slide_pair",
+    "predicate": "total_width_discount",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 114,
+        "printed_page": 92,
+        "region": {
+          "x": 0.06,
+          "y": 0.69,
+          "width": 0.88,
+          "height": 0.095
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": 15,
+    "unit": "mm"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0114-008",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "category": "drawer_slide",
+    "subject": "first_mounting_hole",
+    "predicate": "offset_from_lower_edge",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 114,
+        "printed_page": 92,
+        "region": {
+          "x": 0.06,
+          "y": 0.8,
+          "width": 0.88,
+          "height": 0.12
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": 37,
+    "unit": "mm"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0114-009",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "category": "drawer_slide",
+    "subject": "mounting_hole_grid",
+    "predicate": "pitch",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 114,
+        "printed_page": 92,
+        "region": {
+          "x": 0.06,
+          "y": 0.8,
+          "width": 0.88,
+          "height": 0.12
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": 32,
+    "unit": "mm"
+  }
+]

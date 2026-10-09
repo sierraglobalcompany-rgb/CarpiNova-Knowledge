@@ -1,0 +1,113 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0114-001",
+  "page_id": "PAGE-CPNC-2025-P0114",
+  "type": "table",
+  "purpose": "Presentar descuentos laterales por tipo de corredera.",
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 114,
+    "printed_page": 92,
+    "region": {
+      "x": 0.0605,
+      "y": 0.3303,
+      "width": 0.879,
+      "height": 0.2177
+    },
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
+  "entities": [
+    {
+      "id": "table",
+      "type": "data_table",
+      "geometry": {
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "row-light",
+      "type": "table_row",
+      "geometry": {
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "row-medium-heavy",
+      "type": "table_row",
+      "geometry": {
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "row-soft-push",
+      "type": "table_row",
+      "geometry": {
+        "precision": "exact"
+      }
+    }
+  ],
+  "relationships": [],
+  "measurements": [
+    "MEAS-CPNC-2025-P0114-006",
+    "MEAS-CPNC-2025-P0114-007",
+    "MEAS-CPNC-2025-P0114-008",
+    "MEAS-CPNC-2025-P0114-009",
+    "MEAS-CPNC-2025-P0114-010",
+    "MEAS-CPNC-2025-P0114-011"
+  ],
+  "annotations": [
+    {
+      "text": "Tipo de corredera",
+      "entity_id": "table"
+    },
+    {
+      "text": "Descuento por unidad",
+      "entity_id": "table"
+    },
+    {
+      "text": "Descuento total (par)",
+      "entity_id": "table"
+    }
+  ],
+  "layers": [],
+  "camera": {},
+  "visual_style": {},
+  "educational_sequence": [
+    {
+      "step": 1,
+      "show": [
+        "row-light"
+      ],
+      "caption": "Corredera liviana."
+    },
+    {
+      "step": 2,
+      "show": [
+        "row-medium-heavy"
+      ],
+      "caption": "Corredera mediana/pesada."
+    },
+    {
+      "step": 3,
+      "show": [
+        "row-soft-push"
+      ],
+      "caption": "Cierre suave o push-open."
+    }
+  ],
+  "reconstruction": {
+    "preferred_renderer": "html",
+    "deterministic_required": true,
+    "generative_image_allowed": false
+  },
+  "accessibility": {
+    "summary": "Tabla con descuento por unidad y total por par para correderas livianas, medianas/pesadas y cierre suave/push-open."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Inventario visual realizado sobre render de la página fuente."
+  }
+}

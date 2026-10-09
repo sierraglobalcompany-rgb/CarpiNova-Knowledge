@@ -1,0 +1,27 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0116",
+  "pdf_page": 116,
+  "printed_page": 94,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0116-001",
+      "kind": "qr_reference_set",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0116-001",
+      "source_region": {
+        "x": 0.0793,
+        "y": 0.541,
+        "width": 0.7946,
+        "height": 0.3331
+      },
+      "reason": "Cinco referencias externas asociadas al contenido de herrajes."
+    },
+    {
+      "inventory_id": "DEC-P0116-001",
+      "kind": "page_branding",
+      "meaningful": false,
+      "reason": "Cabecera editorial."
+    }
+  ]
+}

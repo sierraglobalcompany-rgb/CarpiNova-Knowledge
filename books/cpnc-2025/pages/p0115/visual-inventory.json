@@ -1,0 +1,14 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0115",
+  "pdf_page": 115,
+  "printed_page": 93,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "DEC-P0115-001",
+      "kind": "page_branding",
+      "meaningful": false,
+      "reason": "Página de explicación textual y fórmula; no contiene diagrama técnico independiente."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": "PROC-INSTALL-HINGE",
+      "name": "Instalar bisagras",
+      "aliases": [
+        "instalación de bisagras"
+      ]
+    },
+    {
+      "id": "PROC-INSTALL-SLIDE",
+      "name": "Instalar correderas",
+      "aliases": [
+        "instalación de correderas"
+      ]
+    },
+    {
+      "id": "PROC-ASSEMBLE-CABINET",
+      "name": "Ensamblar un gabinete",
+      "aliases": [
+        "armar gabinete"
+      ]
+    }
+  ]
+}

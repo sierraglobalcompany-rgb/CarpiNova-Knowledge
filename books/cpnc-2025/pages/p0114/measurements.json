@@ -1,0 +1,602 @@
+[
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-001",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "standard_length_increment",
+    "value": 50,
+    "unit": "mm",
+    "applies_to": "drawer_slide.standard_lengths",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.1,
+        "width": 0.88,
+        "height": 0.05
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-002",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "standard_length_min",
+    "value": 200,
+    "unit": "mm",
+    "applies_to": "drawer_slide.standard_length_range",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.1,
+        "width": 0.88,
+        "height": 0.05
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-003",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "standard_length_max",
+    "value": 650,
+    "unit": "mm",
+    "applies_to": "drawer_slide.standard_length_range",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.1,
+        "width": 0.88,
+        "height": 0.05
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-004",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "example_cabinet_depth",
+    "value": 400,
+    "unit": "mm",
+    "applies_to": "drawer_slide.length_selection_example",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.16,
+        "width": 0.88,
+        "height": 0.06
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-005",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "example_slide_length",
+    "value": 350,
+    "unit": "mm",
+    "applies_to": "drawer_slide.length_selection_example",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.16,
+        "width": 0.88,
+        "height": 0.06
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-006",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "side_clearance_per_rail",
+    "value": 13,
+    "unit": "mm",
+    "applies_to": "drawer_slide.light",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.0605,
+        "y": 0.3303,
+        "width": 0.879,
+        "height": 0.2177
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-007",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "pair_clearance",
+    "value": 26,
+    "unit": "mm",
+    "applies_to": "drawer_slide.light_pair",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.0605,
+        "y": 0.3303,
+        "width": 0.879,
+        "height": 0.2177
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-008",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "side_clearance_per_rail",
+    "value": 14,
+    "unit": "mm",
+    "applies_to": "drawer_slide.medium_heavy",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.0605,
+        "y": 0.3303,
+        "width": 0.879,
+        "height": 0.2177
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-009",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "pair_clearance",
+    "value": 28,
+    "unit": "mm",
+    "applies_to": "drawer_slide.medium_heavy_pair",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.0605,
+        "y": 0.3303,
+        "width": 0.879,
+        "height": 0.2177
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-010",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "side_clearance_per_rail",
+    "value": 15,
+    "unit": "mm",
+    "applies_to": "drawer_slide.soft_close_push",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.0605,
+        "y": 0.3303,
+        "width": 0.879,
+        "height": 0.2177
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-011",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "pair_clearance",
+    "value": 30,
+    "unit": "mm",
+    "applies_to": "drawer_slide.soft_close_push_pair",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.0605,
+        "y": 0.3303,
+        "width": 0.879,
+        "height": 0.2177
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-012",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "example_external_width",
+    "value": 400,
+    "unit": "mm",
+    "applies_to": "nightstand.external_width",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.565,
+        "width": 0.88,
+        "height": 0.105
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-013",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "board_thickness",
+    "value": 15,
+    "unit": "mm",
+    "applies_to": "nightstand.side_panels",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.565,
+        "width": 0.88,
+        "height": 0.105
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-014",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "example_internal_width",
+    "value": 370,
+    "unit": "mm",
+    "applies_to": "nightstand.internal_width",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.565,
+        "width": 0.88,
+        "height": 0.105
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-015",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "example_drawer_width",
+    "value": 344,
+    "unit": "mm",
+    "applies_to": "drawer.width_after_light_slides",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.565,
+        "width": 0.88,
+        "height": 0.105
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-016",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "pair_clearance",
+    "value": 15,
+    "unit": "mm",
+    "applies_to": "undermount_slide.pair_total",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.69,
+        "width": 0.88,
+        "height": 0.095
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-017",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "offset",
+    "value": 37,
+    "unit": "mm",
+    "applies_to": "slide.first_hole_from_lower_edge",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.8,
+        "width": 0.88,
+        "height": 0.12
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-018",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "pitch",
+    "value": 32,
+    "unit": "mm",
+    "applies_to": "slide.mounting_hole_grid",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.8,
+        "width": 0.88,
+        "height": 0.12
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-019",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "grid_example",
+    "value": 64,
+    "unit": "mm",
+    "applies_to": "slide.mounting_hole_grid_example",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.8,
+        "width": 0.88,
+        "height": 0.12
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0114-020",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "kind": "grid_example",
+    "value": 96,
+    "unit": "mm",
+    "applies_to": "slide.mounting_hole_grid_example",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.8,
+        "width": 0.88,
+        "height": 0.12
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 92."
+    }
+  }
+]

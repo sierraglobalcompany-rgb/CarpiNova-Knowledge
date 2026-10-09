@@ -1,0 +1,180 @@
+{
+  "aliases": [
+    {
+      "alias": "MDP",
+      "target_id": "MAT-MDP"
+    },
+    {
+      "alias": "MDF",
+      "target_id": "MAT-MDF"
+    },
+    {
+      "alias": "canto",
+      "target_id": "MAT-EDGE-BAND"
+    },
+    {
+      "alias": "tapacantos",
+      "target_id": "MAT-EDGE-BAND"
+    },
+    {
+      "alias": "tornillo para madera",
+      "target_id": "HW-SCREW-WOOD"
+    },
+    {
+      "alias": "tornillo drywall",
+      "target_id": "HW-SCREW-DRYWALL"
+    },
+    {
+      "alias": "espiga",
+      "target_id": "HW-DOWEL-WOOD"
+    },
+    {
+      "alias": "minifix",
+      "target_id": "HW-MINIFIX"
+    },
+    {
+      "alias": "PVA",
+      "target_id": "HW-ADHESIVE-PVA"
+    },
+    {
+      "alias": "PU",
+      "target_id": "HW-ADHESIVE-PU"
+    },
+    {
+      "alias": "pegante instantáneo",
+      "target_id": "HW-ADHESIVE-INSTANT"
+    },
+    {
+      "alias": "escuadra metálica",
+      "target_id": "HW-BRACKET-METAL"
+    },
+    {
+      "alias": "recta",
+      "target_id": "HW-HINGE-STRAIGHT"
+    },
+    {
+      "alias": "semi-recta",
+      "target_id": "HW-HINGE-HALF-OVERLAY"
+    },
+    {
+      "alias": "semirrecta",
+      "target_id": "HW-HINGE-HALF-OVERLAY"
+    },
+    {
+      "alias": "curva",
+      "target_id": "HW-HINGE-INSET"
+    },
+    {
+      "alias": "bisagra de 35 mm",
+      "target_id": "HW-HINGE-CUP-35"
+    },
+    {
+      "alias": "cazoleta 35 mm",
+      "target_id": "HW-HINGE-CUP-35"
+    },
+    {
+      "alias": "corredera liviana",
+      "target_id": "HW-SLIDE-LIGHT"
+    },
+    {
+      "alias": "corredera mediana",
+      "target_id": "HW-SLIDE-MEDIUM"
+    },
+    {
+      "alias": "corredera pesada",
+      "target_id": "HW-SLIDE-HEAVY"
+    },
+    {
+      "alias": "soft-close",
+      "target_id": "HW-SLIDE-SOFTCLOSE"
+    },
+    {
+      "alias": "cierre suave",
+      "target_id": "HW-SLIDE-SOFTCLOSE"
+    },
+    {
+      "alias": "push-open",
+      "target_id": "HW-SLIDE-PUSHOPEN"
+    },
+    {
+      "alias": "módulo",
+      "target_id": "FURN-CABINET"
+    },
+    {
+      "alias": "mueble tipo caja",
+      "target_id": "FURN-CABINET"
+    },
+    {
+      "alias": "cajón",
+      "target_id": "FURN-DRAWER"
+    },
+    {
+      "alias": "gaveta",
+      "target_id": "FURN-DRAWER"
+    },
+    {
+      "alias": "closet",
+      "target_id": "FURN-CLOSET"
+    },
+    {
+      "alias": "armario",
+      "target_id": "FURN-CLOSET"
+    },
+    {
+      "alias": "mueble de cocina",
+      "target_id": "FURN-KITCHEN"
+    },
+    {
+      "alias": "atornillado",
+      "target_id": "SYS-SCREW-ASSEMBLY"
+    },
+    {
+      "alias": "sistema minifix",
+      "target_id": "SYS-MINIFIX-ASSEMBLY"
+    },
+    {
+      "alias": "pegado",
+      "target_id": "SYS-ADHESIVE-ASSEMBLY"
+    },
+    {
+      "alias": "puerta con bisagras",
+      "target_id": "SYS-HINGED-DOOR"
+    },
+    {
+      "alias": "gaveta con correderas",
+      "target_id": "SYS-DRAWER-SLIDE"
+    },
+    {
+      "alias": "instalación de bisagras",
+      "target_id": "PROC-INSTALL-HINGE"
+    },
+    {
+      "alias": "instalación de correderas",
+      "target_id": "PROC-INSTALL-SLIDE"
+    },
+    {
+      "alias": "armar gabinete",
+      "target_id": "PROC-ASSEMBLE-CABINET"
+    },
+    {
+      "alias": "tarugo",
+      "target_id": "HW-DOWEL-WOOD"
+    },
+    {
+      "alias": "corredera inferior",
+      "target_id": "HW-SLIDE-UNDERMOUNT"
+    },
+    {
+      "alias": "corredera oculta",
+      "target_id": "HW-SLIDE-UNDERMOUNT"
+    },
+    {
+      "alias": "37/32",
+      "target_id": "SYS-37-32"
+    },
+    {
+      "alias": "X y 2X",
+      "target_id": "SYS-X-2X"
+    }
+  ]
+}

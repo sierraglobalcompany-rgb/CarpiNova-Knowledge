@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carpinova.local/schemas/lesson.schema.json",
+  "type": "object",
+  "required": [
+    "lesson_id",
+    "title",
+    "source_content_ids",
+    "steps"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "lesson_id": {
+      "type": "string",
+      "pattern": "^LESSON-[A-Z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_content_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/contentId"
+      },
+      "uniqueItems": true
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "order",
+          "title",
+          "content_ids"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "order": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "content_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/contentId"
+            }
+          },
+          "figure_ids": {
+            "type": "array",
+            "items": {
+              "$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/figureId"
+            },
+            "uniqueItems": true
+          },
+          "interaction": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      }
+    }
+  }
+}

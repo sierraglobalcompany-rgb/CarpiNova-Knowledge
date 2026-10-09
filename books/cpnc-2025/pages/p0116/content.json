@@ -1,0 +1,97 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0116-001",
+    "page_id": "PAGE-CPNC-2025-P0116",
+    "content_type": "procedure",
+    "source_transcription": "Consideraciones importantes. El riel se instala a 37 mm del borde del mueble hacia adentro, tomando como referencia el primer orificio de la pestaña flexible del riel. Si el frente de la gaveta es interno (es decir, no sobresale), se deben sumar esos milímetros del espesor del frente a los 37 mm iniciales. Recuerda que la gaveta y el frente no son lo mismo: la gaveta entra y sale, el frente es el acabado visible.",
+    "normalized_text": "La primera referencia del riel es 37 mm desde el borde del mueble, usando el primer orificio de la pestaña flexible. Si el frente es interno, el texto indica sumar el espesor del frente a esos 37 mm. Distingue la caja móvil de la gaveta del frente visible.",
+    "learning_text": "Para ubicar el riel desde el frente del mueble, comienza con 37 mm. Si el frente de la gaveta queda metido dentro del mueble, añade también el espesor de ese frente.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0116-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 116,
+      "printed_page": 94,
+      "region": {
+        "x": 0.06,
+        "y": 0.11,
+        "width": 0.88,
+        "height": 0.145
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "corredera",
+      "37 mm",
+      "frente interno"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0116-002",
+    "page_id": "PAGE-CPNC-2025-P0116",
+    "content_type": "formula",
+    "source_transcription": "Una vez instalada la primera gaveta, para la segunda repites el proceso: Desde la parte superior de la primera gaveta, mide 3 cm (2X) hacia arriba y marca el centro del siguiente riel, y así sucesivamente. X = Altura Interna - Sumatoria de las alturas de las gavetas y golas o separadores / cantidad de espacios libres. X = medida instalación del centro del riel en la gaveta. 2X = medida instalación del centro del riel en el lateral del mueble.",
+    "normalized_text": "Para las gavetas siguientes se repite el patrón 2X desde la parte superior de la gaveta anterior. La fórmula expresa X como el espacio interior restante dividido entre los espacios libres; X ubica el centro del riel en la gaveta y 2X el centro del riel en el lateral del mueble.",
+    "learning_text": "Después de ubicar la primera gaveta, repite la separación calculada. El libro resume: X es la referencia sobre la gaveta y 2X la referencia sobre el lateral del mueble.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0116-002"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 116,
+      "printed_page": 94,
+      "region": {
+        "x": 0.06,
+        "y": 0.26,
+        "width": 0.88,
+        "height": 0.18
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "X",
+      "2X",
+      "fórmula"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0116-003",
+    "page_id": "PAGE-CPNC-2025-P0116",
+    "content_type": "reference",
+    "source_transcription": "Herrajes. Bisagra Omega. Brazos. Bisagras. Instalación bisagras.",
+    "normalized_text": "La página incluye cinco códigos QR rotulados: Herrajes, Bisagra Omega, Brazos, Bisagras e Instalación bisagras.",
+    "learning_text": "Estos códigos QR funcionan como referencias complementarias del libro. Se conservan como recursos visuales de referencia; su destino no se interpreta ni se altera durante esta extracción.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0116-003"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 116,
+      "printed_page": 94,
+      "region": {
+        "x": 0.0793,
+        "y": 0.541,
+        "width": 0.7946,
+        "height": 0.3331
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "QR",
+      "referencias"
+    ]
+  }
+]

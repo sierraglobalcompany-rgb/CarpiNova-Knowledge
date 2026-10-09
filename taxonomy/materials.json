@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "id": "MAT-MDP",
+      "name": "Tablero aglomerado MDP",
+      "aliases": [
+        "MDP"
+      ]
+    },
+    {
+      "id": "MAT-MDF",
+      "name": "Tablero MDF",
+      "aliases": [
+        "MDF"
+      ]
+    },
+    {
+      "id": "MAT-EDGE-BAND",
+      "name": "Tapacanto",
+      "aliases": [
+        "canto",
+        "tapacantos"
+      ]
+    }
+  ]
+}

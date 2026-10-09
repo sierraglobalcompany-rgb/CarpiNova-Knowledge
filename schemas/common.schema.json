@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carpinova.local/schemas/common.schema.json",
+  "title": "CarpiNova Knowledge Common Definitions",
+  "$defs": {
+    "region": {
+      "type": "object",
+      "required": ["x", "y", "width", "height"],
+      "additionalProperties": false,
+      "properties": {
+        "x": {"type": "number", "minimum": 0, "maximum": 1},
+        "y": {"type": "number", "minimum": 0, "maximum": 1},
+        "width": {"type": "number", "minimum": 0, "maximum": 1},
+        "height": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "extraction": {
+      "type": "object",
+      "required": ["method", "confidence", "review_status"],
+      "additionalProperties": false,
+      "properties": {
+        "method": {"enum": ["text", "visual", "ocr", "manual"]},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "review_status": {"enum": ["RAW", "EXTRACTED", "VISUALLY_VERIFIED", "REVIEWED", "VALIDATED", "CONFLICT", "REJECTED"]}
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["book_id", "pdf_page", "printed_page", "region", "extraction"],
+      "additionalProperties": false,
+      "properties": {
+        "book_id": {"type": "string", "minLength": 1},
+        "pdf_page": {"type": "integer", "minimum": 1},
+        "printed_page": {"type": ["integer", "null"], "minimum": 1},
+        "region": {"$ref": "#/$defs/region"},
+        "extraction": {"$ref": "#/$defs/extraction"}
+      }
+    },
+    "pageId": {"type": "string", "pattern": "^PAGE-[A-Z0-9-]+-P[0-9]{4,}$"},
+    "contentId": {"type": "string", "pattern": "^CONTENT-[A-Z0-9-]+-P[0-9]{4,}-[0-9]{3,}$"},
+    "figureId": {"type": "string", "pattern": "^FIG-[A-Z0-9-]+-P[0-9]{4,}-[0-9]{3,}$"},
+    "measurementId": {"type": "string", "pattern": "^MEAS-[A-Z0-9-]+-P[0-9]{4,}-[0-9]{3,}$"},
+    "ruleId": {"type": "string", "pattern": "^RULE-[A-Z0-9-]+-P[0-9]{4,}-[0-9]{3,}$"}
+  }
+}

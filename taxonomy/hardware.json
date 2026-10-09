@@ -1,0 +1,153 @@
+{
+  "items": [
+    {
+      "id": "HW-SCREW-WOOD",
+      "name": "Tornillo tradicional para madera",
+      "aliases": [
+        "tornillo para madera"
+      ]
+    },
+    {
+      "id": "HW-SCREW-DRYWALL",
+      "name": "Tornillo o tarugo espiga",
+      "aliases": [
+        "tornillo drywall",
+        "espiga"
+      ]
+    },
+    {
+      "id": "HW-MINIFIX",
+      "name": "Minifix",
+      "aliases": [
+        "minifix"
+      ]
+    },
+    {
+      "id": "HW-ADHESIVE-PVA",
+      "name": "Adhesivo PVA",
+      "aliases": [
+        "PVA"
+      ]
+    },
+    {
+      "id": "HW-ADHESIVE-PU",
+      "name": "Adhesivo PU",
+      "aliases": [
+        "PU"
+      ]
+    },
+    {
+      "id": "HW-ADHESIVE-INSTANT",
+      "name": "Adhesivo instantáneo",
+      "aliases": [
+        "pegante instantáneo"
+      ]
+    },
+    {
+      "id": "HW-BRACKET-METAL",
+      "name": "Esquinero metálico",
+      "aliases": [
+        "escuadra metálica"
+      ]
+    },
+    {
+      "id": "HW-HINGE-STRAIGHT",
+      "name": "Bisagra recta",
+      "aliases": [
+        "recta"
+      ]
+    },
+    {
+      "id": "HW-HINGE-HALF-OVERLAY",
+      "name": "Bisagra semirrecta",
+      "aliases": [
+        "semi-recta",
+        "semirrecta"
+      ]
+    },
+    {
+      "id": "HW-HINGE-INSET",
+      "name": "Bisagra curva",
+      "aliases": [
+        "curva"
+      ]
+    },
+    {
+      "id": "HW-HINGE-CUP-35",
+      "name": "Bisagra de cazoleta de 35 mm",
+      "aliases": [
+        "bisagra de 35 mm",
+        "cazoleta 35 mm"
+      ]
+    },
+    {
+      "id": "HW-SLIDE-LIGHT",
+      "name": "Corredera liviana",
+      "aliases": [
+        "corredera liviana"
+      ]
+    },
+    {
+      "id": "HW-SLIDE-MEDIUM",
+      "name": "Corredera mediana",
+      "aliases": [
+        "corredera mediana"
+      ]
+    },
+    {
+      "id": "HW-SLIDE-HEAVY",
+      "name": "Corredera pesada",
+      "aliases": [
+        "corredera pesada"
+      ]
+    },
+    {
+      "id": "HW-SLIDE-SOFTCLOSE",
+      "name": "Corredera con cierre suave",
+      "aliases": [
+        "soft-close",
+        "cierre suave"
+      ]
+    },
+    {
+      "id": "HW-SLIDE-PUSHOPEN",
+      "name": "Corredera push-open",
+      "aliases": [
+        "push-open"
+      ]
+    },
+    {
+      "id": "HW-DOWEL-WOOD",
+      "name": "Tarugo o espiga de madera",
+      "aliases": [
+        "tarugo",
+        "espiga",
+        "espiga de madera"
+      ]
+    },
+    {
+      "id": "HW-STAPLE-FURNITURE",
+      "name": "Grapa para muebles",
+      "aliases": [
+        "grapa mueble",
+        "grapa para muebles"
+      ]
+    },
+    {
+      "id": "HW-SLIDE-UNDERMOUNT",
+      "name": "Corredera oculta de montaje inferior",
+      "aliases": [
+        "corredera inferior",
+        "corredera oculta",
+        "undermount"
+      ]
+    },
+    {
+      "id": "HW-HINGE-INTERMEDIATE",
+      "name": "Bisagra intermedia",
+      "aliases": [
+        "bisagra intermedia"
+      ]
+    }
+  ]
+}

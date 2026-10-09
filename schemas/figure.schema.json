@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carpinova.local/schemas/figure.schema.json",
+  "type": "object",
+  "required": ["figure_id", "page_id", "type", "purpose", "source", "entities", "relationships", "measurements", "annotations", "reconstruction"],
+  "additionalProperties": false,
+  "properties": {
+    "figure_id": {"$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/figureId"},
+    "page_id": {"$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/pageId"},
+    "type": {"enum": ["technical_diagram", "dimensioned_drawing", "exploded_view", "process_diagram", "assembly_sequence", "illustration", "photo", "table", "form", "3d_reference", "mixed"]},
+    "purpose": {"type": "string", "minLength": 1},
+    "source": {"$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/source"},
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "geometry"],
+        "additionalProperties": true,
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "type": {"type": "string", "minLength": 1},
+          "geometry": {
+            "type": "object",
+            "required": ["precision"],
+            "additionalProperties": true,
+            "properties": {
+              "primitive": {"type": ["string", "null"]},
+              "precision": {"enum": ["exact", "approximate", "unknown"]},
+              "dimensions": {"type": "object", "minProperties": 1}
+            },
+            "allOf": [
+              {
+                "if": {"properties": {"precision": {"const": "unknown"}}, "required": ["precision"]},
+                "then": {"not": {"required": ["dimensions"]}}
+              }
+            ]
+          }
+        }
+      }
+    },
+    "relationships": {"type": "array", "items": {"type": "object"}},
+    "measurements": {"type": "array", "items": {"$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/measurementId"}},
+    "annotations": {"type": "array", "items": {"type": "object"}},
+    "layers": {"type": "array", "items": {"type": "object"}},
+    "camera": {"type": "object"},
+    "visual_style": {"type": "object"},
+    "educational_sequence": {"type": "array", "items": {"type": "object"}},
+    "reconstruction": {
+      "type": "object",
+      "required": ["preferred_renderer", "deterministic_required", "generative_image_allowed"],
+      "additionalProperties": false,
+      "properties": {
+        "preferred_renderer": {"enum": ["svg", "html", "3d", "image", "hybrid"]},
+        "deterministic_required": {"type": "boolean"},
+        "generative_image_allowed": {"type": "boolean"}
+      }
+    },
+    "accessibility": {"type": "object"},
+    "review": {"type": "object"}
+  }
+}

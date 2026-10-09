@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carpinova.local/schemas/concept.schema.json",
+  "type": "object",
+  "required": ["concept_id", "canonical_term", "aliases", "source_content_ids"],
+  "additionalProperties": false,
+  "properties": {
+    "concept_id": {"type": "string", "pattern": "^CONCEPT-[A-Z0-9-]+$"},
+    "canonical_term": {"type": "string", "minLength": 1},
+    "aliases": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "source_content_ids": {"type": "array", "minItems": 1, "items": {"$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/contentId"}, "uniqueItems": true}
+  }
+}
