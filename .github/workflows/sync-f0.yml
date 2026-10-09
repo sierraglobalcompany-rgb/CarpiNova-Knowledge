@@ -1,5 +1,6 @@
 name: Synchronize complete F0 tree
 
+# Retry marker: all nine verified sync parts are present.
 on:
   push:
     branches:
