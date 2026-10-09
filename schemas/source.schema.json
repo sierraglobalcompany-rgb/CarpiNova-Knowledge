@@ -1,0 +1,5 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carpinova.local/schemas/source.schema.json",
+  "$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/source"
+}

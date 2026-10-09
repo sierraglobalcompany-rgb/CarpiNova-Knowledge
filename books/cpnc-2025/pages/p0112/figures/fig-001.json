@@ -1,0 +1,178 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0112-001",
+  "page_id": "PAGE-CPNC-2025-P0112",
+  "type": "technical_diagram",
+  "purpose": "Comparar geométricamente la posición de la puerta con bisagra recta, semirrecta y curva.",
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 112,
+    "printed_page": 90,
+    "region": {
+      "x": 0.0605,
+      "y": 0.0809,
+      "width": 0.881,
+      "height": 0.8759
+    },
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
+  "entities": [
+    {
+      "id": "straight-hinge",
+      "type": "cup_hinge",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "half-overlay-hinge",
+      "type": "cup_hinge",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "inset-hinge",
+      "type": "cup_hinge",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "side-straight",
+      "type": "cabinet_side",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "door-straight",
+      "type": "door",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "side-half",
+      "type": "cabinet_side",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "door-half",
+      "type": "door",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "side-inset",
+      "type": "cabinet_side",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "door-inset",
+      "type": "door",
+      "geometry": {
+        "precision": "approximate"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "from": "door-straight",
+      "to": "side-straight",
+      "type": "full_overlay"
+    },
+    {
+      "from": "door-half",
+      "to": "side-half",
+      "type": "partial_overlay"
+    },
+    {
+      "from": "door-inset",
+      "to": "side-inset",
+      "type": "inset_inside"
+    }
+  ],
+  "measurements": [],
+  "annotations": [
+    {
+      "text": "Recta",
+      "entity_id": "straight-hinge"
+    },
+    {
+      "text": "Cobertura total",
+      "entity_id": "door-straight"
+    },
+    {
+      "text": "Semi-recta",
+      "entity_id": "half-overlay-hinge"
+    },
+    {
+      "text": "Cobertura parcial",
+      "entity_id": "door-half"
+    },
+    {
+      "text": "Curva",
+      "entity_id": "inset-hinge"
+    },
+    {
+      "text": "Embebida",
+      "entity_id": "door-inset"
+    }
+  ],
+  "layers": [],
+  "camera": {},
+  "visual_style": {
+    "source_style": "hand_drawn_black_line",
+    "layout": "three_columns"
+  },
+  "educational_sequence": [
+    {
+      "step": 1,
+      "show": [
+        "side-straight",
+        "door-straight",
+        "straight-hinge"
+      ],
+      "caption": "Cobertura total."
+    },
+    {
+      "step": 2,
+      "show": [
+        "side-half",
+        "door-half",
+        "half-overlay-hinge"
+      ],
+      "caption": "Cobertura parcial."
+    },
+    {
+      "step": 3,
+      "show": [
+        "side-inset",
+        "door-inset",
+        "inset-hinge"
+      ],
+      "caption": "Puerta embebida."
+    }
+  ],
+  "reconstruction": {
+    "preferred_renderer": "svg",
+    "deterministic_required": true,
+    "generative_image_allowed": false
+  },
+  "accessibility": {
+    "summary": "Tres columnas comparan bisagra recta, semirrecta y curva y la posición resultante de la puerta respecto al lateral."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Inventario visual realizado sobre render de la página fuente."
+  }
+}

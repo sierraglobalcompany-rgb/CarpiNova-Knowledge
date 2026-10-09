@@ -1,0 +1,157 @@
+[
+  {
+    "rule_id": "RULE-CPNC-2025-P0115-001",
+    "page_id": "PAGE-CPNC-2025-P0115",
+    "category": "drawer_layout",
+    "subject": "X_spacing",
+    "predicate": "formula",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 115,
+        "printed_page": 93,
+        "region": {
+          "x": 0.06,
+          "y": 0.25,
+          "width": 0.88,
+          "height": 0.36
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": "(internal_height - sum(drawer_heights)) / free_space_count",
+    "unit": null
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0115-002",
+    "page_id": "PAGE-CPNC-2025-P0115",
+    "category": "drawer_layout",
+    "subject": "free_space_count",
+    "predicate": "for_n_drawers",
+    "applicability": {
+      "layout": "stacked_drawers_as_described"
+    },
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 115,
+        "printed_page": 93,
+        "region": {
+          "x": 0.06,
+          "y": 0.47,
+          "width": 0.88,
+          "height": 0.1
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": "n+1",
+    "unit": null
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0115-003",
+    "page_id": "PAGE-CPNC-2025-P0115",
+    "category": "drawer_slide",
+    "subject": "thin_slide_member",
+    "predicate": "mount_location",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 115,
+        "printed_page": 93,
+        "region": {
+          "x": 0.06,
+          "y": 0.72,
+          "width": 0.88,
+          "height": 0.105
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": "drawer_side",
+    "unit": null
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0115-004",
+    "page_id": "PAGE-CPNC-2025-P0115",
+    "category": "drawer_slide",
+    "subject": "thick_slide_member",
+    "predicate": "mount_location",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 115,
+        "printed_page": 93,
+        "region": {
+          "x": 0.06,
+          "y": 0.72,
+          "width": 0.88,
+          "height": 0.105
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": "cabinet_inside_side",
+    "unit": null
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0115-005",
+    "page_id": "PAGE-CPNC-2025-P0115",
+    "category": "drawer_slide",
+    "subject": "slide_center_positions",
+    "predicate": "reference",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 115,
+        "printed_page": 93,
+        "region": {
+          "x": 0.06,
+          "y": 0.84,
+          "width": 0.88,
+          "height": 0.095
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": {
+      "drawer": "X_from_drawer_base",
+      "cabinet": "2X_from_cabinet_base"
+    },
+    "unit": null
+  }
+]

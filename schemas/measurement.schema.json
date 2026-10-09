@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carpinova.local/schemas/measurement.schema.json",
+  "type": "object",
+  "required": ["measurement_id", "page_id", "kind", "value", "unit", "applies_to", "status", "source"],
+  "additionalProperties": false,
+  "properties": {
+    "measurement_id": {"$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/measurementId"},
+    "page_id": {"$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/pageId"},
+    "kind": {"type": "string", "minLength": 1},
+    "value": {"type": "number"},
+    "unit": {"type": "string", "minLength": 1},
+    "applies_to": {"type": "string", "minLength": 1},
+    "source": {"$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/source"},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "status": {"enum": ["EXTRACTED", "VISUALLY_VERIFIED", "REVIEWED", "VALIDATED", "CONFLICT", "REJECTED"]},
+    "visual_verification": {
+      "type": "object",
+      "required": ["method", "evidence"],
+      "additionalProperties": false,
+      "properties": {
+        "method": {"enum": ["visual_source_page", "manual_double_check"]},
+        "evidence": {"type": "string", "minLength": 1}
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"const": "VALIDATED"}}, "required": ["status"]},
+      "then": {"required": ["visual_verification"]}
+    }
+  ]
+}

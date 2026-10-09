@@ -1,0 +1,128 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0115-001",
+    "page_id": "PAGE-CPNC-2025-P0115",
+    "content_type": "procedure",
+    "source_transcription": "Para entender mejor el proceso, te recomiendo ver el video de la clase “X y 2X”, donde se explica cómo despiezar correctamente las correderas y cómo calcular con precisión la posición del riel en el mueble y en la gaveta, sin necesidad de tomar medidas aleatorias. Recuerda: utiliza el sistema X y 2X para una instalación precisa y eficiente de tus correderas telescópicas.",
+    "normalized_text": "El texto introduce el sistema X y 2X para calcular la separación entre gavetas y la posición de las correderas, evitando medidas aleatorias.",
+    "learning_text": "X y 2X es un método para repartir el espacio de forma repetible. Primero se calcula X y luego se usa X o 2X como referencia para ubicar los centros de los rieles.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0115-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 115,
+      "printed_page": 93,
+      "region": {
+        "x": 0.06,
+        "y": 0.1,
+        "width": 0.88,
+        "height": 0.13
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "X y 2X",
+      "correderas"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0115-002",
+    "page_id": "PAGE-CPNC-2025-P0115",
+    "content_type": "formula",
+    "source_transcription": "Sistema X y 2X. Para despiezar e instalar correderas telescópicas en gavetas, lo primero que debemos hacer es medir la altura interna del mueble. A esta altura le restamos la suma total de las alturas de las gavetas. Vamos a ver un ejemplo con tres gavetas. Supongamos que la altura interna del mueble es de 60 cm, y hemos decidido fabricar tres gavetas, todas de 18 cm de alto. 18 cm × 3 gavetas = 54 cm. 60 cm - 54 cm = 6 cm. Si hay tres gavetas, habrá cuatro espacios libres. 6 cm ÷ 4 espacios libres = 1.5 cm. Ese resultado es lo que llamamos X.",
+    "normalized_text": "Para calcular X: resta a la altura interna la suma de alturas de gavetas y divide el espacio restante entre la cantidad de espacios libres. En el ejemplo: 60 cm − (18 cm × 3) = 6 cm; 6 cm ÷ 4 = 1,5 cm, por tanto X = 1,5 cm.",
+    "learning_text": "Ejemplo: un mueble tiene 60 cm interiores y tres gavetas de 18 cm. Las gavetas ocupan 54 cm y quedan 6 cm libres. Como tres gavetas forman cuatro separaciones, divide 6 entre 4: X = 1,5 cm.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0115-002"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 115,
+      "printed_page": 93,
+      "region": {
+        "x": 0.06,
+        "y": 0.25,
+        "width": 0.88,
+        "height": 0.36
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "fórmula",
+      "X",
+      "espacios libres"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0115-003",
+    "page_id": "PAGE-CPNC-2025-P0115",
+    "content_type": "procedure",
+    "source_transcription": "Las correderas telescópicas se componen de dos cuerpos. Al presionar la pestaña negra que traen, podemos separarlas: - La parte delgada se instala en el lateral de la gaveta. - La parte gruesa se instala en el costado interno del mueble.",
+    "normalized_text": "La corredera telescópica puede separarse en dos cuerpos usando su pestaña negra: la pieza delgada va en la gaveta y la pieza gruesa en el costado interno del mueble.",
+    "learning_text": "Antes de instalar, separa la corredera. Identifica qué parte va con la gaveta y cuál queda fija en el mueble.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0115-003"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 115,
+      "printed_page": 93,
+      "region": {
+        "x": 0.06,
+        "y": 0.72,
+        "width": 0.88,
+        "height": 0.105
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "corredera telescópica",
+      "desmontaje"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0115-004",
+    "page_id": "PAGE-CPNC-2025-P0115",
+    "content_type": "procedure",
+    "source_transcription": "Para instalar el riel en la gaveta, mide desde la base de la gaveta hacia arriba 1.5 cm (X) y allí marca el centro del riel. Para instalar el riel en el lateral del mueble, mide desde la base del mueble hacia arriba 3 cm (2X) y marca allí el centro del riel.",
+    "normalized_text": "En el ejemplo, el centro del riel sobre la gaveta se marca a X = 1,5 cm desde su base; el centro del riel en el lateral del mueble se marca a 2X = 3 cm desde la base del mueble.",
+    "learning_text": "Usa el valor calculado de X para la gaveta y el doble, 2X, para el lateral del mueble. En este ejemplo: 1,5 cm y 3 cm.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0115-004"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 115,
+      "printed_page": 93,
+      "region": {
+        "x": 0.06,
+        "y": 0.84,
+        "width": 0.88,
+        "height": 0.095
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "instalación",
+      "X",
+      "2X"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0110-001",
+    "page_id": "PAGE-CPNC-2025-P0110",
+    "kind": "angle",
+    "value": 90,
+    "unit": "deg",
+    "applies_to": "metal_corner_bracket.union_angle",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 110,
+      "printed_page": 88,
+      "region": {
+        "x": 0.42,
+        "y": 0.33,
+        "width": 0.25,
+        "height": 0.22
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "La figura y el texto indican una unión en 90°."
+    }
+  }
+]

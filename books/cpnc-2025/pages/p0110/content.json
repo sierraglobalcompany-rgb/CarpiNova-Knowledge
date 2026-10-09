@@ -1,0 +1,129 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0110-001",
+    "page_id": "PAGE-CPNC-2025-P0110",
+    "content_type": "concept",
+    "source_transcription": "El tipo de ensamble también afecta el resultado estético. Por ejemplo, si el tornillo queda a la vista, se puede cubrir con un tapa tornillo adhesivo. En cambio, los tornillos ocultos —como los de agujero diagonal— o los sistemas internos como el tarugo o el minifix, permiten un acabado más limpio.",
+    "normalized_text": "El tipo de ensamble también afecta el resultado estético. Si un tornillo queda visible, puede cubrirse con un tapatornillo adhesivo. Los tornillos ocultos, los tarugos y los sistemas Minifix permiten un acabado más limpio.",
+    "learning_text": "La unión no solo debe ser resistente: también cambia cómo se ve el mueble. Si no quieres ver tornillos, puedes usar uniones ocultas, tarugos o Minifix; si el tornillo queda visible, puede cubrirse con un tapatornillo.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0110-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 110,
+      "printed_page": 88,
+      "region": {
+        "x": 0.06,
+        "y": 0.575,
+        "width": 0.88,
+        "height": 0.09
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "ensamble",
+      "acabado"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0110-002",
+    "page_id": "PAGE-CPNC-2025-P0110",
+    "content_type": "hardware",
+    "source_transcription": "También hay tornillos especializados para MDF o aglomerado, como los de la marca XPAX, que cuentan con una avellanadora incorporada tanto en la punta como en la cabeza. Esto les permite perforar y avellanar en un solo paso, evitando que se rompan las fibras del material.",
+    "normalized_text": "Existen tornillos especializados para MDF o aglomerado, como los XPAX, con elementos de avellanado en la punta y la cabeza. Permiten perforar y avellanar en un solo paso y ayudan a evitar la rotura de fibras del material.",
+    "learning_text": "Para MDF o aglomerado existen tornillos diseñados para perforar y avellanar en una sola operación. La ventaja indicada en el libro es reducir el daño en las fibras alrededor del tornillo.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0110-002"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 110,
+      "printed_page": 88,
+      "region": {
+        "x": 0.06,
+        "y": 0.66,
+        "width": 0.88,
+        "height": 0.09
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "tornillos",
+      "MDF",
+      "aglomerado"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0110-003",
+    "page_id": "PAGE-CPNC-2025-P0110",
+    "content_type": "material",
+    "source_transcription": "Respecto a los adhesivos, la madera sólida incluso puede ensamblarse únicamente con colas blancas tipo PVA. Estos adhesivos, conocidos comercialmente como “Colbón” (que en realidad es una marca), se usan para trabajos en interiores. También existen versiones para ambientes húmedos, identificadas como PVA tipo I, II, III o IV, según su resistencia. Para los tableros aglomerados también se pueden usar adhesivos instantáneos, como la “superpega infinita”, o adhesivos de poliuretano (PU), que ofrecen una unión fuerte, rápida y confiable. Muchas veces, estos son más eficientes que los tornillos en términos de tiempo y resistencia.",
+    "normalized_text": "La madera sólida puede ensamblarse con adhesivos blancos tipo PVA. “Colbón” es una marca comercial. El texto distingue PVA tipo I, II, III y IV según resistencia, incluyendo opciones para ambientes húmedos. Para tableros aglomerados también menciona adhesivos instantáneos y adhesivos de poliuretano (PU).",
+    "learning_text": "El libro presenta tres familias de adhesivos para este contexto: PVA, adhesivo instantáneo y PU. El PVA se asocia a madera sólida y existen distintos tipos según resistencia; para aglomerados también se mencionan adhesivos instantáneos y PU.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0110-003"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 110,
+      "printed_page": 88,
+      "region": {
+        "x": 0.06,
+        "y": 0.745,
+        "width": 0.88,
+        "height": 0.145
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "PVA",
+      "PU",
+      "adhesivo instantáneo"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0110-004",
+    "page_id": "PAGE-CPNC-2025-P0110",
+    "content_type": "hardware",
+    "source_transcription": "Además de los sistemas mencionados, existen otros herrajes como los esquineros metálicos o las grapas muebles, muy útiles para unir piezas a 90°, especialmente en estructuras como camas. Estos elementos permiten realizar uniones sin necesidad de tornillos visibles o guías especializadas.",
+    "normalized_text": "También se mencionan esquineros metálicos y grapas para muebles, útiles para uniones de piezas a 90°, especialmente en estructuras como camas. Permiten resolver uniones sin tornillos visibles o guías especializadas.",
+    "learning_text": "Para unir dos piezas formando un ángulo recto, el libro propone herrajes como esquineros metálicos o grapas para muebles. Son otra alternativa cuando se busca evitar tornillos visibles.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0110-004"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 110,
+      "printed_page": 88,
+      "region": {
+        "x": 0.06,
+        "y": 0.885,
+        "width": 0.88,
+        "height": 0.075
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "esquinero",
+      "grapa",
+      "90 grados"
+    ]
+  }
+]

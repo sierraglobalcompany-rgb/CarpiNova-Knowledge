@@ -1,0 +1,144 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0113-001",
+  "page_id": "PAGE-CPNC-2025-P0113",
+  "type": "technical_diagram",
+  "purpose": "Mostrar una corredera telescópica y las holguras laterales anotadas para distintos tipos de riel.",
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 113,
+    "printed_page": 91,
+    "region": {
+      "x": 0.0605,
+      "y": 0.577,
+      "width": 0.88,
+      "height": 0.3815
+    },
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
+  "entities": [
+    {
+      "id": "telescopic-slide",
+      "type": "drawer_slide",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "drawer",
+      "type": "drawer",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "cabinet-left",
+      "type": "cabinet_side",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "cabinet-right",
+      "type": "cabinet_side",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "cross-section",
+      "type": "inset_cross_section",
+      "geometry": {
+        "precision": "unknown"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "from": "drawer",
+      "to": "cabinet-left",
+      "type": "slides_along"
+    },
+    {
+      "from": "drawer",
+      "to": "cabinet-right",
+      "type": "slides_along"
+    },
+    {
+      "from": "telescopic-slide",
+      "to": "drawer",
+      "type": "mounted_on"
+    }
+  ],
+  "measurements": [
+    "MEAS-CPNC-2025-P0113-009",
+    "MEAS-CPNC-2025-P0113-010",
+    "MEAS-CPNC-2025-P0113-011"
+  ],
+  "annotations": [
+    {
+      "text": "Riel liviano 1.3cm por riel",
+      "measurement_id": "MEAS-CPNC-2025-P0113-009"
+    },
+    {
+      "text": "Riel pesado 1.4cm por riel",
+      "measurement_id": "MEAS-CPNC-2025-P0113-010"
+    },
+    {
+      "text": "Riel push o cierre suave 1.5cm por riel",
+      "measurement_id": "MEAS-CPNC-2025-P0113-011"
+    },
+    {
+      "text": "Interior del mueble",
+      "entity_id": "cross-section"
+    },
+    {
+      "text": "Exterior del cajón",
+      "entity_id": "cross-section"
+    }
+  ],
+  "layers": [],
+  "camera": {},
+  "visual_style": {
+    "source_style": "technical_render_plus_handwritten_notes"
+  },
+  "educational_sequence": [
+    {
+      "step": 1,
+      "show": [
+        "telescopic-slide"
+      ],
+      "caption": "Identificar la corredera telescópica."
+    },
+    {
+      "step": 2,
+      "show": [
+        "cross-section",
+        "drawer",
+        "cabinet-left",
+        "cabinet-right"
+      ],
+      "caption": "Ver dónde se aloja la corredera."
+    },
+    {
+      "step": 3,
+      "highlight_measurement": "MEAS-CPNC-2025-P0113-009",
+      "caption": "Comparar la holgura según el tipo de riel."
+    }
+  ],
+  "reconstruction": {
+    "preferred_renderer": "hybrid",
+    "deterministic_required": true,
+    "generative_image_allowed": false
+  },
+  "accessibility": {
+    "summary": "Render de una corredera telescópica con un esquema de sección del cajón y notas manuscritas de holgura lateral por tipo de riel."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Inventario visual realizado sobre render de la página fuente."
+  }
+}

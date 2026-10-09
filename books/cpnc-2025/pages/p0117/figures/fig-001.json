@@ -1,0 +1,69 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0117-001",
+  "page_id": "PAGE-CPNC-2025-P0117",
+  "type": "illustration",
+  "purpose": "Conservar la página gráfica de referencia comercial VENETTO sin convertirla en conocimiento técnico.",
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 117,
+    "printed_page": 95,
+    "region": {
+      "x": 0.1132,
+      "y": 0.2163,
+      "width": 0.7776,
+      "height": 0.5832
+    },
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
+  "entities": [
+    {
+      "id": "venetto-mark",
+      "type": "brand_mark",
+      "geometry": {
+        "precision": "unknown"
+      }
+    },
+    {
+      "id": "hardware-pattern",
+      "type": "hardware_icon_pattern",
+      "geometry": {
+        "precision": "unknown"
+      }
+    }
+  ],
+  "relationships": [],
+  "measurements": [],
+  "annotations": [
+    {
+      "text": "VENETTO",
+      "entity_id": "venetto-mark"
+    },
+    {
+      "text": "HERRAJES Y ACCESORIOS PARA MUEBLES",
+      "entity_id": "venetto-mark"
+    }
+  ],
+  "layers": [],
+  "camera": {},
+  "visual_style": {
+    "source_style": "brand_advertisement",
+    "instructional": false
+  },
+  "educational_sequence": [],
+  "reconstruction": {
+    "preferred_renderer": "image",
+    "deterministic_required": false,
+    "generative_image_allowed": false
+  },
+  "accessibility": {
+    "summary": "Gráfico comercial con la marca VENETTO y el texto “Herrajes y accesorios para muebles”, sobre un patrón de herrajes."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Inventario visual realizado sobre render de la página fuente."
+  }
+}

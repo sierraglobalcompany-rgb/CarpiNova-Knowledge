@@ -1,0 +1,62 @@
+[
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0116-001",
+    "page_id": "PAGE-CPNC-2025-P0116",
+    "kind": "offset",
+    "value": 37,
+    "unit": "mm",
+    "applies_to": "slide.first_hole_from_front_edge",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 116,
+      "printed_page": 94,
+      "region": {
+        "x": 0.06,
+        "y": 0.11,
+        "width": 0.88,
+        "height": 0.07
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 94."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0116-002",
+    "page_id": "PAGE-CPNC-2025-P0116",
+    "kind": "example_2X",
+    "value": 30,
+    "unit": "mm",
+    "applies_to": "next_drawer.slide_center_spacing",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 116,
+      "printed_page": 94,
+      "region": {
+        "x": 0.06,
+        "y": 0.26,
+        "width": 0.88,
+        "height": 0.08
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 94."
+    }
+  }
+]

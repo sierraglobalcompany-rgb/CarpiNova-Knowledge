@@ -1,0 +1,159 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0114-001",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "content_type": "rule",
+    "source_transcription": "Medidas y compatibilidad. Las correderas vienen en medidas estándar, en múltiplos de 5 centímetros, desde 20 cm hasta 65 cm. Por ejemplo: 25, 30, 35, 40, 45, 50, 55, 60 cm. Para elegir el largo adecuado del riel, se debe tener en cuenta la profundidad del mueble. Siempre se utiliza el riel inmediatamente menor a la profundidad externa del mueble. Ejemplo: si un mueble tiene una profundidad externa de 40 cm, se recomienda usar correderas de 35 cm y diseñar la gaveta con la misma medida de fondo.",
+    "normalized_text": "Las correderas se presentan en largos estándar, en incrementos de 5 cm, desde 20 hasta 65 cm. El texto recomienda elegir el riel inmediatamente menor que la profundidad externa del mueble. Para un mueble de 40 cm de profundidad, propone un riel de 35 cm y una gaveta de 35 cm de fondo.",
+    "learning_text": "Primero mide la profundidad exterior del mueble. Después elige, según la regla del libro, la corredera estándar inmediatamente más corta. El ejemplo 40 cm → 35 cm muestra cómo se aplica.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0114-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.1,
+        "width": 0.88,
+        "height": 0.135
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "corredera",
+      "largo",
+      "profundidad"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0114-002",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "content_type": "table",
+    "source_transcription": "Tipo de corredera — Descuento por unidad — Descuento total (par): Corredera liviana 1.3 cm — 2.6 cm; Corredera mediana/pesada 1.4 cm — 2.8 cm; Corredera cierre suave o push-open 1.5 cm — 3.0 cm.",
+    "normalized_text": "Tabla de descuentos laterales: liviana 1,3 cm por riel / 2,6 cm el par; mediana o pesada 1,4 cm / 2,8 cm; cierre suave o push-open 1,5 cm / 3,0 cm.",
+    "learning_text": "Para calcular el ancho de la gaveta, resta del espacio interior el ancho total ocupado por las dos correderas. La tabla da el descuento por lado y por par para cada tipo.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0114-002"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.0605,
+        "y": 0.3303,
+        "width": 0.879,
+        "height": 0.2177
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "tabla",
+      "descuento",
+      "correderas"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0114-003",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "content_type": "example",
+    "source_transcription": "Ejemplo práctico: Si una mesa de noche tiene 40 cm de ancho externo y está hecha con tableros de 1.5 cm de espesor, entonces el espacio interno disponible es de 37 cm (40 - 1.5 - 1.5). Si se usan correderas livianas, se deben descontar 2.6 cm (1.3 por cada lado), por lo tanto, la gaveta deberá tener 34.4 cm de ancho interno.",
+    "normalized_text": "Ejemplo: ancho exterior 40 cm, laterales de 1,5 cm → espacio interior 37 cm. Con correderas livianas se descuentan 2,6 cm en total, obteniendo 34,4 cm para el ancho de la gaveta.",
+    "learning_text": "Ejemplo paso a paso: resta primero los dos laterales al ancho exterior; al espacio interior resultante réstale el par de correderas. Así llegas al ancho de la gaveta.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0114-003"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.565,
+        "width": 0.88,
+        "height": 0.105
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "ejemplo",
+      "ancho de gaveta"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0114-004",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "content_type": "hardware",
+    "source_transcription": "Correderas de montaje inferior. También existen correderas ocultas o de montaje bajo, que no son visibles en los laterales de la gaveta. Estas no requieren descontar el espesor por cada lado, sino un solo descuento total de 1.5 cm por el par, ya que se montan en la parte inferior del cajón.",
+    "normalized_text": "Las correderas ocultas o de montaje inferior se ubican bajo la gaveta. El texto indica un descuento total de 1,5 cm por el par, no un descuento por cada lateral.",
+    "learning_text": "Una corredera inferior cambia el cálculo: el libro indica descontar 1,5 cm en total por el par, porque el sistema va debajo de la gaveta.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0114-004"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.69,
+        "width": 0.88,
+        "height": 0.095
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "corredera inferior",
+      "oculta"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0114-005",
+    "page_id": "PAGE-CPNC-2025-P0114",
+    "content_type": "rule",
+    "source_transcription": "Sistema 37/32. Las correderas también se instalan utilizando el sistema 37/32: la primera perforación para fijar el riel al mueble debe ubicarse a 37 mm del borde inferior hacia adentro. Las siguientes perforaciones deben ubicarse a múltiplos de 32 mm (por ejemplo: 64 mm, 96 mm, etc.). Esto permite estandarizar el montaje y garantiza que los rieles queden perfectamente alineados, tanto en el mueble como en la gaveta.",
+    "normalized_text": "Para correderas, el texto aplica el sistema 37/32: primera perforación a 37 mm desde el borde inferior hacia adentro y perforaciones siguientes en múltiplos de 32 mm, como 64 y 96 mm.",
+    "learning_text": "El sistema 37/32 crea una referencia repetible para montar los rieles: una línea inicial a 37 mm y una retícula con paso de 32 mm.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0114-005"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 114,
+      "printed_page": 92,
+      "region": {
+        "x": 0.06,
+        "y": 0.8,
+        "width": 0.88,
+        "height": 0.12
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "sistema 37/32",
+      "corredera"
+    ]
+  }
+]

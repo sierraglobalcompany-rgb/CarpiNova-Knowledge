@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "id": "FURN-CABINET",
+      "name": "Gabinete",
+      "aliases": [
+        "módulo",
+        "mueble tipo caja"
+      ]
+    },
+    {
+      "id": "FURN-DRAWER",
+      "name": "Cajón o gaveta",
+      "aliases": [
+        "cajón",
+        "gaveta"
+      ]
+    },
+    {
+      "id": "FURN-CLOSET",
+      "name": "Clóset",
+      "aliases": [
+        "closet",
+        "armario"
+      ]
+    },
+    {
+      "id": "FURN-KITCHEN",
+      "name": "Cocina",
+      "aliases": [
+        "mueble de cocina"
+      ]
+    }
+  ]
+}

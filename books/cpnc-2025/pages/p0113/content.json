@@ -1,0 +1,98 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0113-001",
+    "page_id": "PAGE-CPNC-2025-P0113",
+    "content_type": "procedure",
+    "source_transcription": "Instalación. Para instalar una bisagra de cazoleta se necesita una perforación de 35 milímetros de diámetro, que se realiza con una broca tipo Forstner y taladro. Esta perforación debe ubicarse a 2.2 centímetros del borde de la puerta hacia adentro. En cuanto a la ubicación vertical, se recomienda dejar entre 8 y 10 centímetros desde los extremos hacia el centro. La cantidad de bisagras depende del alto de la puerta. Como regla general: - 2 bisagras por cada 80 centímetros de altura. - Por ejemplo, una puerta de 160 cm llevaría 4 bisagras.",
+    "normalized_text": "Para instalar una bisagra de cazoleta se realiza una perforación de 35 mm con broca Forstner. El centro de esa perforación se ubica a 2,2 cm del borde de la puerta hacia adentro. En sentido vertical, el texto recomienda entre 8 y 10 cm desde los extremos. Como regla general propone 2 bisagras por cada 80 cm de altura; una puerta de 160 cm usaría 4.",
+    "learning_text": "Para ubicar una bisagra de cazoleta, el libro da tres referencias: diámetro del hueco, distancia desde el borde y distancia desde los extremos. Después, la cantidad de bisagras se estima según la altura de la puerta.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0113-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.06,
+        "y": 0.1,
+        "width": 0.88,
+        "height": 0.225
+      },
+      "extraction": {
+        "method": "text",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "bisagra",
+      "instalación",
+      "Forstner"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0113-002",
+    "page_id": "PAGE-CPNC-2025-P0113",
+    "content_type": "hardware",
+    "source_transcription": "Rieles o correderas para muebles. Las correderas telescópicas, también conocidas como rieles para gavetas, son elementos esenciales en la carpintería moderna. Su función es permitir la apertura y cierre de un módulo (por ejemplo, una gaveta) que se desliza dentro de otro (el mueble). Existen correderas de carga liviana, mediana y pesada, y también se clasifican por su tipo de cierre: cierre tradicional, cierre suave (soft-close) y sistema push-open (empuje para abrir).",
+    "normalized_text": "Las correderas telescópicas permiten que una gaveta se deslice dentro del mueble. El texto las clasifica por capacidad de carga —liviana, mediana y pesada— y por tipo de cierre: tradicional, soft-close y push-open.",
+    "learning_text": "Una corredera telescópica guía el movimiento del cajón. Para elegirla, el libro distingue tanto la capacidad de carga como la forma de cierre.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0113-002"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.06,
+        "y": 0.35,
+        "width": 0.88,
+        "height": 0.21
+      },
+      "extraction": {
+        "method": "text",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "corredera",
+      "gaveta",
+      "soft-close",
+      "push-open"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0113-003",
+    "page_id": "PAGE-CPNC-2025-P0113",
+    "content_type": "dimension",
+    "source_transcription": "Riel liviano 1.3cm por riel. Riel pesado 1.4cm por riel. Riel push o cierre suave 1.5cm por riel.",
+    "normalized_text": "Holgura indicada por cada riel: liviano 1,3 cm; pesado 1,4 cm; push-open o cierre suave 1,5 cm.",
+    "learning_text": "El ancho de la gaveta debe dejar espacio para las correderas a ambos lados. La figura anota cuánto ocupa cada riel según su tipo.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0113-003"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 113,
+      "printed_page": 91,
+      "region": {
+        "x": 0.35,
+        "y": 0.8,
+        "width": 0.53,
+        "height": 0.105
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "corredera",
+      "descuento lateral"
+    ]
+  }
+]

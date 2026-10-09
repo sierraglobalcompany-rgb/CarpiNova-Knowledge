@@ -1,0 +1,102 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0116-001",
+  "page_id": "PAGE-CPNC-2025-P0116",
+  "type": "mixed",
+  "purpose": "Conservar el conjunto de cinco códigos QR y sus rótulos como referencias visuales externas del libro.",
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 116,
+    "printed_page": 94,
+    "region": {
+      "x": 0.0793,
+      "y": 0.541,
+      "width": 0.7946,
+      "height": 0.3331
+    },
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
+  "entities": [
+    {
+      "id": "qr-hardware",
+      "type": "qr_code",
+      "geometry": {
+        "precision": "unknown"
+      }
+    },
+    {
+      "id": "qr-omega-hinge",
+      "type": "qr_code",
+      "geometry": {
+        "precision": "unknown"
+      }
+    },
+    {
+      "id": "qr-arms",
+      "type": "qr_code",
+      "geometry": {
+        "precision": "unknown"
+      }
+    },
+    {
+      "id": "qr-hinges",
+      "type": "qr_code",
+      "geometry": {
+        "precision": "unknown"
+      }
+    },
+    {
+      "id": "qr-hinge-installation",
+      "type": "qr_code",
+      "geometry": {
+        "precision": "unknown"
+      }
+    }
+  ],
+  "relationships": [],
+  "measurements": [],
+  "annotations": [
+    {
+      "text": "Herrajes",
+      "entity_id": "qr-hardware"
+    },
+    {
+      "text": "Bisagra Omega",
+      "entity_id": "qr-omega-hinge"
+    },
+    {
+      "text": "Brazos",
+      "entity_id": "qr-arms"
+    },
+    {
+      "text": "Bisagras",
+      "entity_id": "qr-hinges"
+    },
+    {
+      "text": "Instalación bisagras",
+      "entity_id": "qr-hinge-installation"
+    }
+  ],
+  "layers": [],
+  "camera": {},
+  "visual_style": {
+    "source_style": "qr_reference_set",
+    "preserve_exact_pixels": true
+  },
+  "educational_sequence": [],
+  "reconstruction": {
+    "preferred_renderer": "image",
+    "deterministic_required": true,
+    "generative_image_allowed": false
+  },
+  "accessibility": {
+    "summary": "Cinco códigos QR rotulados como Herrajes, Bisagra Omega, Brazos, Bisagras e Instalación bisagras."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Inventario visual realizado sobre render de la página fuente."
+  }
+}

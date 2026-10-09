@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carpinova.local/schemas/page.schema.json",
+  "type": "object",
+  "required": ["page_id", "book_id", "pdf_page", "printed_page", "mapping_status"],
+  "additionalProperties": false,
+  "properties": {
+    "page_id": {"$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/pageId"},
+    "book_id": {"type": "string", "minLength": 1},
+    "pdf_page": {"type": "integer", "minimum": 1},
+    "printed_page": {"type": ["integer", "null"], "minimum": 1},
+    "mapping_status": {"enum": ["candidate", "verified", "unresolved", "not_printed"]},
+    "chapter": {"type": ["string", "null"]},
+    "section": {"type": ["string", "null"]}
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0117",
+  "pdf_page": 117,
+  "printed_page": 95,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0117-001",
+      "kind": "commercial_reference_page",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0117-001",
+      "source_region": {
+        "x": 0.1132,
+        "y": 0.2163,
+        "width": 0.7776,
+        "height": 0.5832
+      },
+      "reason": "Página completa de referencia comercial; se conserva pero no alimenta reglas."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0112-001",
+    "page_id": "PAGE-CPNC-2025-P0112",
+    "content_type": "hardware",
+    "source_transcription": "Recta — Cobertura total — Lateral — Puerta. Semi-recta — Cobertura parcial — Lateral — Puerta. Curva — Embebida — Puerta.",
+    "normalized_text": "Comparación visual de tres bisagras de cazoleta: recta para cobertura total, semirrecta para cobertura parcial y curva para puerta embebida.",
+    "learning_text": "Esta lámina compara de frente y en sección cómo queda la puerta con cada bisagra: recta = cubre el lateral; semirrecta = cubre parcialmente; curva = queda dentro del gabinete.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0112-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 112,
+      "printed_page": 90,
+      "region": {
+        "x": 0.0605,
+        "y": 0.0809,
+        "width": 0.881,
+        "height": 0.8759
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "bisagras",
+      "comparación"
+    ]
+  }
+]
