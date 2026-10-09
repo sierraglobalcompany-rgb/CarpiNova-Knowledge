@@ -28,3 +28,15 @@ def test_cli_help_lists_all_commands() -> None:
         "report-pilot",
     ):
         assert command in result.stdout
+
+
+def test_ci_pushes_validate_main_and_f1() -> None:
+    root = Path(__file__).resolve().parents[1]
+    workflow = (root / ".github" / "workflows" / "knowledge-qa.yml").read_text(
+        encoding="utf-8"
+    )
+
+    assert "      - main\n" in workflow
+    assert "      - 'feat/knowledge-f1*'\n" in workflow
+    assert "      - 'knowledge/f1-*'\n" in workflow
+    assert "  pull_request:\n    branches:\n      - main\n" in workflow
