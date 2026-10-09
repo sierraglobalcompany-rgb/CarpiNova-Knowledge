@@ -8,7 +8,6 @@ from typing import Any
 
 import pymupdf
 
-
 BookAudit = dict[str, Any]
 
 _VECTOR_PAINT_OP = re.compile(rb"(?<!\S)(?:S|s|f\*?|F|B\*?|b\*?)(?!\S)")

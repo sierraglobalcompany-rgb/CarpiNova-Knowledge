@@ -4,11 +4,8 @@ import copy
 import json
 from pathlib import Path
 
-import pytest
-
 from carpinova_knowledge.render_docs import render_page_docs
 from carpinova_knowledge.validate_repo import validate_repository
-
 
 FIX = Path(__file__).parent / "fixtures" / "schemas" / "valid"
 

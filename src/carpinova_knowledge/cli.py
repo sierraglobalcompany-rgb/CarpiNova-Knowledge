@@ -1,9 +1,8 @@
 from __future__ import annotations
 
 import argparse
-from pathlib import Path
 from collections.abc import Sequence
-
+from pathlib import Path
 
 COMMANDS = (
     "audit-book",

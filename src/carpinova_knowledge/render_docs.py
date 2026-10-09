@@ -18,7 +18,7 @@ def render_page_docs(page_dir: Path) -> None:
     page_dir = Path(page_dir)
     records = json.loads((page_dir / "content.json").read_text(encoding="utf-8"))
     if not isinstance(records, list):
-        raise ValueError("content.json must contain a list of ContentSpec records")
+        raise TypeError("content.json must contain a list of ContentSpec records")
     outputs = {
         "source.md": ("source_transcription", "Source transcription"),
         "normalized.md": ("normalized_text", "Normalized text"),

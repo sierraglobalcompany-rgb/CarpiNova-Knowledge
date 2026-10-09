@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 from collections.abc import Mapping
-from functools import lru_cache
+from functools import cache, lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -13,7 +13,7 @@ SCHEMA_DIR = Path(__file__).resolve().parents[2] / "schemas"
 BASE_URI = "https://carpinova.local/schemas/"
 
 
-@lru_cache(maxsize=None)
+@cache
 def load_schema(name: str) -> dict[str, Any]:
     path = SCHEMA_DIR / f"{name}.schema.json"
     if not path.is_file():

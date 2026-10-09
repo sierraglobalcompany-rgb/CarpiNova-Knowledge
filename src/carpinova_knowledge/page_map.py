@@ -7,7 +7,6 @@ from typing import Any
 
 from .ids import page_id
 
-
 _PAGE_NUMBER = re.compile(r"^\s*(\d{1,4})\s*$")
 
 
@@ -48,9 +47,7 @@ def build_page_map(
             status = "not_printed" if printed is None else "verified"
         else:
             printed = candidate
-            if candidate is None:
-                status = "unresolved"
-            elif counts[candidate] > 1:
+            if candidate is None or counts[candidate] > 1:
                 status = "unresolved"
             else:
                 status = "candidate"

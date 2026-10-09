@@ -8,7 +8,6 @@ import pymupdf
 
 from carpinova_knowledge.audit_book import audit_book
 
-
 PPM_1X1 = b"P6\n1 1\n255\n\xff\x00\x00"
 
 

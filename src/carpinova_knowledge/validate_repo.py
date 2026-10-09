@@ -1,8 +1,9 @@
 from __future__ import annotations
 
 import json
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any
 
 from .ids import page_id as canonical_page_id
 from .render_docs import _render
@@ -82,7 +83,7 @@ def validate_repository(root: Path) -> dict[str, Any]:
             expected_pid = canonical_page_id(str(page["book_id"]), int(page["pdf_page"]))
             if pid != expected_pid:
                 _error(errors, "page_identity_mismatch", page_path, pid, f"expected {expected_pid}")
-        except Exception as exc:
+        except (KeyError, TypeError, ValueError) as exc:
             _error(errors, "page_identity_mismatch", page_path, pid, str(exc))
 
         if pid in ids:
