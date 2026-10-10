@@ -33,14 +33,12 @@ jobs:
       - name: Install dependencies
         run: uv sync --all-groups
 
-      - name: Run tests
-        run: uv run pytest -q
-
-      - name: Run Ruff
-        run: uv run ruff check .
-
-      - name: Validate repository
-        run: uv run python -m carpinova_knowledge validate --root .
-
-      - name: Verify F0 pilot acceptance
-        run: uv run python -m carpinova_knowledge report-pilot --root . --batch batch-000-pilot
+      - name: Diagnose F0 pilot
+        run: |
+          uv run python - <<'PY'
+          import json
+          from pathlib import Path
+          from carpinova_knowledge.report_pilot import build_pilot_report
+          print(json.dumps(build_pilot_report(Path('.'), 'batch-000-pilot'), ensure_ascii=False, indent=2))
+          PY
+          exit 1
