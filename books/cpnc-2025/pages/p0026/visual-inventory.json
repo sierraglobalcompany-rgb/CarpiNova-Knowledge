@@ -1,0 +1,9 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0026",
+  "pdf_page": 26,
+  "printed_page": 4,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"DEC-P0026-001","kind":"page_branding","meaningful":false,"reason":"Cabecera, línea editorial y número de página; no añaden conocimiento técnico."}
+  ]
+}

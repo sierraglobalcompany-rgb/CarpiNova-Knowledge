@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0025-001",
+    "page_id": "PAGE-CPNC-2025-P0025",
+    "content_type": "reference",
+    "source_transcription": "Escaneando este código QR podrás acceder a un grupo de apoyo en WhatsApp, creado especialmente para lectores de este libro.",
+    "normalized_text": "El libro ofrece mediante un código QR un grupo de apoyo en WhatsApp creado para sus lectores.",
+    "learning_text": "Esta página invita a los lectores a acceder, mediante el QR, a un grupo de apoyo en WhatsApp.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0025-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":25,"printed_page":3,"region":{"x":0.06,"y":0.2,"width":0.87,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["grupo-de-apoyo", "WhatsApp", "QR"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0025-002",
+    "page_id": "PAGE-CPNC-2025-P0025",
+    "content_type": "concept",
+    "source_transcription": "Allí podrás resolver dudas, compartir tu proceso de aprendizaje, mostrar tus avances y conectarte con otras personas que, como tú, están aprendiendo y disfrutando del mundo de la carpintería.",
+    "normalized_text": "El grupo se plantea como un espacio para resolver dudas, compartir el proceso de aprendizaje, mostrar avances y conectar con otras personas que aprenden carpintería.",
+    "learning_text": "El grupo de apoyo sirve para compartir avances, resolver dudas y conectarse con otras personas que están aprendiendo carpintería.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0025-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":25,"printed_page":3,"region":{"x":0.55,"y":0.28,"width":0.38,"height":0.22},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["comunidad", "aprendizaje", "grupo-de-apoyo"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0025-003",
+    "page_id": "PAGE-CPNC-2025-P0025",
+    "content_type": "reference",
+    "source_transcription": "GRUPO DE APOYO",
+    "normalized_text": "Destino decodificado del código QR del grupo de apoyo: https://chat.whatsapp.com/CivNKpbO9RMKg8KMYEAvfP",
+    "learning_text": "El QR de esta página dirige al grupo de apoyo de WhatsApp indicado por el libro.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0025-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":25,"printed_page":3,"region":{"x":0.58,"y":0.52,"width":0.31,"height":0.23},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["WhatsApp", "QR", "enlace"]
+  }
+]

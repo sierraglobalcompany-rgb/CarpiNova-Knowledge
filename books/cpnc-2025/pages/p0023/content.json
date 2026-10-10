@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0023-001",
+    "page_id": "PAGE-CPNC-2025-P0023",
+    "content_type": "table",
+    "source_transcription": "INDICE\npágina\nCarpintero Digital — 5\nVoy a enseñar a hacer muebles — 8\nAprendiendo y enseñando — 11\nNueva comunidad de carpinteros — 14\nUn nuevo comienza — 20\nMi historia la de una empresa — 24\nLa evolución de la carpintería — 34\nMi primer ensa,ble — 37\n¿Cómo iniciar mi primer proyecto? — 53\n5 pasos para lograr el desarrollo de un proyecto de carpintería — 57\nPaso 1 Materiales — 60\nPaso 2: Herrajes — 83\npaso 3: Herramientas — 124\nPaso 4: Despiece y optimización — 151\npaso 5: Proyectar mobiliario - Aprende y emprende — 211\nCertificado SENA — 251\nGlosario — 255",
+    "normalized_text": "Índice: Carpintero Digital (5); Voy a enseñar a hacer muebles (8); Aprendiendo y enseñando (11); Nueva comunidad de carpinteros (14); Un nuevo comienzo (20); Mi historia la de una empresa (24); La evolución de la carpintería (34); Mi primer ensamble (37); ¿Cómo iniciar mi primer proyecto? (53); 5 pasos para lograr el desarrollo de un proyecto de carpintería (57); Paso 1: Materiales (60); Paso 2: Herrajes (83); Paso 3: Herramientas (124); Paso 4: Despiece y optimización (151); Paso 5: Proyectar mobiliario - Aprende y emprende (211); Certificado SENA (251); Glosario (255).",
+    "learning_text": "El índice organiza el libro desde la introducción y la experiencia del autor hasta los cinco pasos técnicos: materiales, herrajes, herramientas, despiece/optimización y proyección de mobiliario. También incluye certificado SENA y glosario.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0023-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":23,"printed_page":1,"region":{"x":0.12,"y":0.11,"width":0.71,"height":0.72},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["índice","capítulos","estructura-del-libro"]
+  }
+]
