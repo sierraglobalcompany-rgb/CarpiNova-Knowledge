@@ -1,0 +1,38 @@
+[
+  {
+    "rule_id": "RULE-CPNC-2025-P0141-001",
+    "page_id": "PAGE-CPNC-2025-P0141",
+    "category": "wall_mounting",
+    "subject": "DIRECT_REAR_BRACE",
+    "predicate": "source_method_uses_rear_brace_crossed_by_wall_fastener",
+    "value": {"example_rear_brace_height_cm":10,"position":"upper_or_lower"},
+    "applicability": {"source_scope":"method 1 on printed page 119"},
+    "exceptions": ["The 10 cm value is approximate in the source and is not validated as a universal design dimension."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":141,"printed_page":119,"region":{"x":0.03,"y":0.18,"width":0.93,"height":0.34},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0141-002",
+    "page_id": "PAGE-CPNC-2025-P0141",
+    "category": "wall_mounting",
+    "subject": "FRENCH_CLEAT",
+    "predicate": "source_method_uses_two_complementary_45_degree_pieces",
+    "value": {"cut_angle_deg":45,"pieces":2,"removable":true},
+    "applicability": {"source_scope":"method 2 on printed page 119"},
+    "exceptions": ["No load capacity, stock thickness or fastener schedule is specified on this page."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":141,"printed_page":119,"region":{"x":0.03,"y":0.52,"width":0.58,"height":0.29},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0141-003",
+    "page_id": "PAGE-CPNC-2025-P0141",
+    "category": "wall_mounting",
+    "subject": "MULTIPURPOSE_METAL_SUPPORT",
+    "predicate": "source_method_uses_two_interlocking_metal_pieces",
+    "value": {"pieces":2,"removable":true,"toothed_interlock":true},
+    "applicability": {"source_scope":"method 3 on printed page 119"},
+    "exceptions": ["The page states that versions exist for different loads and sizes but does not quantify them."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":141,"printed_page":119,"region":{"x":0.52,"y":0.66,"width":0.44,"height":0.29},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  }
+]

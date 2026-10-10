@@ -1,0 +1,4 @@
+[
+  {"measurement_id":"MEAS-CPNC-2025-P0141-001","page_id":"PAGE-CPNC-2025-P0141","kind":"rear_brace_approx_height","value":10,"unit":"cm","applies_to":"direct_rear_brace.source_example","status":"VISUALLY_VERIFIED","source":{"book_id":"cpnc-2025","pdf_page":141,"printed_page":119,"region":{"x":0.03,"y":0.18,"width":0.93,"height":0.34},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},"confidence":0.98},
+  {"measurement_id":"MEAS-CPNC-2025-P0141-002","page_id":"PAGE-CPNC-2025-P0141","kind":"french_cleat_cut_angle","value":45,"unit":"deg","applies_to":"french_cleat.complementary_cut","status":"VISUALLY_VERIFIED","source":{"book_id":"cpnc-2025","pdf_page":141,"printed_page":119,"region":{"x":0.03,"y":0.52,"width":0.58,"height":0.29},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"confidence":0.99}
+]
