@@ -1,0 +1,21 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0122",
+  "pdf_page": 122,
+  "printed_page": 100,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0122-001",
+      "kind": "technical_product_manual",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0122-001",
+      "source_region": {
+        "x": 0.03,
+        "y": 0.03,
+        "width": 0.94,
+        "height": 0.91
+      },
+      "reason": "La página es esencialmente una ficha técnica visual con tablas y diagramas que deben poder reconstruirse de forma determinista."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0123-001",
+    "page_id": "PAGE-CPNC-2025-P0123",
+    "content_type": "hardware",
+    "source_transcription": "Cerraduras tipo pomo o manija. La instalación de cerraduras cilíndricas se realiza comúnmente en puertas de paso, como las de los baños, habitaciones o incluso puertas principales. Para este tipo de instalación se utilizan dos herramientas principales: la broca espada y la broca copa (también conocida como broca de chapa). La broca espada debe ser de 7/8 de pulgada, y la broca copa, de 54 milímetros. Ambas se adaptan fácilmente al taladro. Es importante regular la velocidad del taladro a menor velocidad, mayor fuerza de torque, lo cual facilita el trabajo sobre la madera.",
+    "normalized_text": "La fuente explica la instalación de cerraduras cilíndricas tipo pomo o manija y señala como herramientas principales una broca espada de 7/8\" y una broca copa de 54 mm. También recomienda trabajar el taladro a menor velocidad para obtener mayor torque sobre la madera.",
+    "learning_text": "Para este montaje la guía usa dos perforadores principales: 7/8\" para la perforación del canto y 54 mm para la perforación de la cara. La recomendación de la fuente es reducir la velocidad del taladro para disponer de más torque.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0123-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":123,"printed_page":101,"region":{"x":0.02,"y":0.08,"width":0.94,"height":0.2},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cerradura-cilindrica","pomo","manija","broca-espada","broca-copa","54-mm","7-8-pulgada"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0123-002",
+    "page_id": "PAGE-CPNC-2025-P0123",
+    "content_type": "procedure",
+    "source_transcription": "Paso 1: Trazado de las medidas de instalación. Desde la parte inferior de la puerta se mide 90 centímetros hacia arriba. Sobre esa línea, se marca una segunda medida horizontal con ayuda de una escuadra: 6 o 7 centímetros desde el borde de la puerta hacia el interior, según el tipo de cerradura (estas son medidas estandarizadas). En el canto de la puerta (su borde), se traza también el centro del espesor. La mayoría de puertas tiene un espesor promedio de 36 milímetros.",
+    "normalized_text": "El trazado parte de una altura de 90 cm desde la base de la puerta; desde el borde se marca hacia el interior una distancia de 6 o 7 cm según el tipo de cerradura. En el canto también se marca el centro del espesor; la fuente menciona 36 mm como espesor promedio.",
+    "learning_text": "Primero se define la altura del centro de la cerradura y luego su distancia desde el borde. En el canto se marca el centro del espesor para alinear la perforación lateral.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0123-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":123,"printed_page":101,"region":{"x":0.02,"y":0.28,"width":0.94,"height":0.19},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["trazado","90-cm","6-cm","7-cm","36-mm","centro-espesor"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0123-003",
+    "page_id": "PAGE-CPNC-2025-P0123",
+    "content_type": "procedure",
+    "source_transcription": "Paso 2: Perforaciones. En el canto de la puerta, se realiza la perforación con la broca espada de 7/8 de pulgada. En la cara de la puerta, se perfora con la broca copa de 54 milímetros, centrada a 6 o 7 centímetros del borde.",
+    "normalized_text": "La perforación lateral del canto se realiza con broca espada de 7/8\" y la perforación principal de la cara con broca copa de 54 mm, centrada a 6 o 7 cm del borde.",
+    "learning_text": "La guía separa dos perforaciones: una lateral en el canto y otra frontal en la cara. Cada una usa una broca distinta y ambas deben coincidir con el trazado previo.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0123-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":123,"printed_page":101,"region":{"x":0.02,"y":0.47,"width":0.94,"height":0.11},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["perforacion","canto","cara-puerta","7-8-pulgada","54-mm"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0123-004",
+    "page_id": "PAGE-CPNC-2025-P0123",
+    "content_type": "procedure",
+    "source_transcription": "Paso 3: Instalación del recibidor y la cantonera. Una vez hechas las perforaciones, se instala el recibidor y la cantonera tanto en el marco como en el canto de la puerta. Para que el acabado sea preciso, se recomienda marcar estas piezas sobre la superficie y crear una pequeña caja (calado) en la madera, de modo que las platinas queden a ras, sin sobresalir.",
+    "normalized_text": "Después de perforar se presentan el recibidor y la cantonera, se marcan sobre la madera y se hace un calado para que las platinas queden a ras de la superficie.",
+    "learning_text": "El calado permite que las platinas del recibidor y de la cantonera no sobresalgan. Primero se marca su contorno y luego se rebaja únicamente el espacio necesario.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0123-004"],
+    "source": {"book_id":"cpnc-2025","pdf_page":123,"printed_page":101,"region":{"x":0.02,"y":0.58,"width":0.38,"height":0.22},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["recibidor","cantonera","calado","a-ras","platina"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0123-005",
+    "page_id": "PAGE-CPNC-2025-P0123",
+    "content_type": "procedure",
+    "source_transcription": "Paso 4: Ensamble del pomo o manija. Retira el tornillo interior presionando un pequeño pulsador que se encuentra en el cuello de la pieza (incluido en el juego de la cerradura). Luego se introduce el cilindro y se acopla la cerradura, haciendo coincidir perfectamente ambas piezas con",
+    "normalized_text": "El paso 4 comienza retirando el tornillo interior mediante el pulsador del cuello de la pieza; después se introduce el cilindro y se acopla la cerradura. La frase continúa en la página siguiente y no se completa por inferencia.",
+    "learning_text": "El ensamble empieza liberando la pieza interior con su pulsador e introduciendo el cilindro. La instrucción queda deliberadamente abierta porque el texto continúa fuera de esta página.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0123-005"],
+    "source": {"book_id":"cpnc-2025","pdf_page":123,"printed_page":101,"region":{"x":0.02,"y":0.8,"width":0.38,"height":0.17},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["ensamble","pomo","manija","cilindro","continua-pagina-siguiente"]
+  }
+]
