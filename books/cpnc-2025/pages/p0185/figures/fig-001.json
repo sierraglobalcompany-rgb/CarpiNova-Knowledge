@@ -1,7 +1,7 @@
 {
   "figure_id": "FIG-CPNC-2025-P0185-001",
   "page_id": "PAGE-CPNC-2025-P0185",
-  "type": "infographic",
+  "type": "illustration",
   "purpose": "Recrear la infografía que presenta visualmente las funciones atribuidas a Cortecloud.",
   "source": {"book_id":"cpnc-2025","pdf_page":185,"printed_page":163,"region":{"x":0.05,"y":0.10,"width":0.90,"height":0.48},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}},
   "entities": [
