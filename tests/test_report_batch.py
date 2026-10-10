@@ -25,6 +25,12 @@ def test_batch_002_onboarding_is_accepted() -> None:
     assert report["counts"]["pages"] == 2
 
 
+def test_batch_003_duratex_reference_is_accepted() -> None:
+    report = build_batch_report(ROOT, "batch-003")
+    assert report["result"] == "GO"
+    assert report["counts"]["pages"] == 4
+
+
 def test_generic_batch_report_accepts_physical_page_batch(tmp_path: Path) -> None:
     root = tmp_path / "repo"
     shutil.copytree(
