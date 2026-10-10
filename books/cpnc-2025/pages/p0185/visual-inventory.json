@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0185",
+  "pdf_page": 185,
+  "printed_page": 163,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0185-001",
+      "kind": "software_feature_infographic",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0185-001",
+      "source_region": {"x":0.05,"y":0.10,"width":0.90,"height":0.48},
+      "reason": "Infografía que resume las funciones atribuidas a Cortecloud mediante personaje, iconos y rótulos de diseño/despiece/cotización, visualización 3D y armado/instalación."
+    }
+  ]
+}

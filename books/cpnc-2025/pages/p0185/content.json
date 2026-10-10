@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0185-001",
+    "page_id": "PAGE-CPNC-2025-P0185",
+    "content_type": "reference",
+    "source_transcription": "¿Qué es Cortecloud? Diseño, despiece y cotización. Visualización 3D. Armado e instalación. CORTECLOUD. Es gratis!! Descárgala en tu celular o úsala en tu PC www.cortecloud.com. ¿Qué es Cortecloud? ¿Qué beneficios me ofrece como carpintero? ¿Qué le aporta al distribuidor? Cortecloud es una plataforma que organiza todo el proceso productivo de un proyecto de carpintería, conectando al carpintero con el distribuidor de tableros. Integra el proceso comercial, la cotización, el diseño y la producción en un solo sistema. Gracias a esto, carpintero y distribuidor hablan el mismo idioma. Cortecloud es una herramienta para diseñar, despiezar, optimizar y cotizar muebles. Como carpintero, me permite gestionar las cotizaciones de mis clientes de forma rápida y eficiente. Y como plataforma, también coordina todo el proceso de producción: desde el ingreso del diseño, pasando por el corte, los servicios y perforaciones, hasta la salida del material del almacén. Es una solución completa para la gestión de proyectos de carpintería. Con Cortecloud vendo más y produzco más rápido. Total, efectividad.",
+    "normalized_text": "La fuente presenta Cortecloud como una plataforma para conectar al carpintero con el distribuidor de tableros y coordinar cotización, diseño, despiece, optimización y producción. También menciona visualización 3D, armado e instalación y describe un flujo que va desde el diseño hasta corte, servicios, perforaciones y salida del material del almacén. Las afirmaciones comerciales sobre gratuidad, ventas, rapidez y efectividad se conservan como claims de la fuente.",
+    "learning_text": "Esta página introduce una plataforma digital orientada a integrar diseño, cotización, despiece y producción. Úsala como referencia del flujo digital descrito por el libro, sin convertir sus afirmaciones promocionales en métricas verificadas de productividad o ventas.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0185-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":185,"printed_page":163,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cortecloud","software","diseno","despiece","cotizacion","visualizacion-3d","produccion"]
+  }
+]

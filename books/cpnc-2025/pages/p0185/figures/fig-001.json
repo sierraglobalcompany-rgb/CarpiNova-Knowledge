@@ -1,0 +1,43 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0185-001",
+  "page_id": "PAGE-CPNC-2025-P0185",
+  "type": "infographic",
+  "purpose": "Recrear la infografía que presenta visualmente las funciones atribuidas a Cortecloud.",
+  "source": {"book_id":"cpnc-2025","pdf_page":185,"printed_page":163,"region":{"x":0.05,"y":0.10,"width":0.90,"height":0.48},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"person","type":"illustrated_person","description":"Personaje ilustrado azul con gorra amarilla, apoyando una mano en el mentón.","geometry":{"precision":"approximate","bbox":{"x":0.00,"y":0.05,"width":0.28,"height":0.88}}},
+    {"id":"headline","type":"display_text","description":"Título ‘¿Qué es Cortecloud?’ en azul verdoso.","geometry":{"precision":"approximate","bbox":{"x":0.29,"y":0.03,"width":0.55,"height":0.12}}},
+    {"id":"design-icon","type":"circular_saw_blade_icon","description":"Icono amarillo asociado al rótulo Diseño, despiece y cotización.","geometry":{"precision":"approximate","bbox":{"x":0.31,"y":0.20,"width":0.12,"height":0.15}}},
+    {"id":"qr-icon","type":"qr_like_icon","description":"Icono cuadrado amarillo asociado a la visualización 3D.","geometry":{"precision":"approximate","bbox":{"x":0.32,"y":0.39,"width":0.09,"height":0.13}}},
+    {"id":"assembly-icon","type":"drill_icon","description":"Icono amarillo de taladro asociado a Armado e instalación.","geometry":{"precision":"approximate","bbox":{"x":0.69,"y":0.54,"width":0.18,"height":0.14}}},
+    {"id":"display-icon","type":"monitor_cabinet_icon","description":"Monitor amarillo con representación de un mueble, asociado a visualización 3D.","geometry":{"precision":"approximate","bbox":{"x":0.70,"y":0.33,"width":0.17,"height":0.16}}},
+    {"id":"labels","type":"feature_labels","description":"Rótulos Diseño, despiece y cotización; Visualización 3D; Armado e instalación.","geometry":{"precision":"approximate","bbox":{"x":0.48,"y":0.19,"width":0.38,"height":0.51}}},
+    {"id":"brand","type":"brand_mark","description":"Marca CORTECLOUD en la parte inferior del bloque gráfico.","geometry":{"precision":"approximate","bbox":{"x":0.43,"y":0.73,"width":0.29,"height":0.12}}}
+  ],
+  "relationships": [
+    {"from":"design-icon","to":"labels","type":"supports_feature_label"},
+    {"from":"qr-icon","to":"labels","type":"supports_feature_label"},
+    {"from":"display-icon","to":"labels","type":"supports_feature_label"},
+    {"from":"assembly-icon","to":"labels","type":"supports_feature_label"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"headline","text":"¿Qué es Cortecloud?"},
+    {"target_entity_id":"labels","text":"Diseño, despiece y cotización · Visualización 3D · Armado e instalación"},
+    {"target_entity_id":"brand","text":"CORTECLOUD"}
+  ],
+  "layers": [
+    {"id":"character","description":"Personaje ilustrado a la izquierda."},
+    {"id":"icons","description":"Iconos amarillos de funciones."},
+    {"id":"feature-text","description":"Título, rótulos de funciones y marca."}
+  ],
+  "camera": {"view":"front","projection":"flat_page_reference"},
+  "visual_style": {"background":"white","palette":"blue teal and yellow","illustration":"flat vector-like software infographic","labels":"bold blue feature text"},
+  "educational_sequence": [
+    {"step":1,"show_entity_ids":["headline","person"],"instruction":"Presentar el concepto general de la plataforma."},
+    {"step":2,"show_entity_ids":["design-icon","qr-icon","display-icon","assembly-icon","labels"],"instruction":"Mostrar las tres áreas funcionales que la fuente destaca."}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Infografía de Cortecloud con un personaje y tres grupos funcionales: diseño/despiece/cotización, visualización 3D y armado/instalación."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La geometría es aproximada a partir de la previsualización indexada de la fuente 2025; no reconstruir detalles pequeños no legibles."}
+}
