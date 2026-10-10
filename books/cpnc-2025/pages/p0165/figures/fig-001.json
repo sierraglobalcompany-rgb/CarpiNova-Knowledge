@@ -1,0 +1,43 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0165-001",
+  "page_id": "PAGE-CPNC-2025-P0165",
+  "type": "mixed",
+  "purpose": "Representar la cuadrícula de seis recursos QR y sus rótulos sin inventar los destinos de los códigos.",
+  "source": {"book_id":"cpnc-2025","pdf_page":165,"printed_page":143,"region":{"x":0.04,"y":0.35,"width":0.92,"height":0.48},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"qr-taladros","type":"qr_resource","label":"Taladros","payload_status":"not_decoded","geometry":{"precision":"approximate","bbox":{"x":0.02,"y":0.04,"width":0.27,"height":0.42}}},
+    {"id":"qr-sierra-ingleteadora","type":"qr_resource","label":"Sierra circular e ingleteadora","payload_status":"not_decoded","geometry":{"precision":"approximate","bbox":{"x":0.36,"y":0.04,"width":0.27,"height":0.42}}},
+    {"id":"qr-ruteadora","type":"qr_resource","label":"Ruteadora","payload_status":"not_decoded","geometry":{"precision":"approximate","bbox":{"x":0.70,"y":0.04,"width":0.27,"height":0.42}}},
+    {"id":"qr-cepillo-canteador","type":"qr_resource","label":"Cepillo canteador","payload_status":"not_decoded","geometry":{"precision":"approximate","bbox":{"x":0.02,"y":0.54,"width":0.27,"height":0.42}}},
+    {"id":"qr-cepillo-lijadora","type":"qr_resource","label":"Cepillo de mano y lijadora","payload_status":"not_decoded","geometry":{"precision":"approximate","bbox":{"x":0.36,"y":0.54,"width":0.27,"height":0.42}}},
+    {"id":"qr-ensamble","type":"qr_resource","label":"Método básico de ensamble","payload_status":"not_decoded","geometry":{"precision":"approximate","bbox":{"x":0.70,"y":0.54,"width":0.27,"height":0.42}}}
+  ],
+  "relationships": [
+    {"from":"qr-taladros","to":"qr-sierra-ingleteadora","type":"same_resource_index"},
+    {"from":"qr-ruteadora","to":"qr-cepillo-canteador","type":"same_resource_index"},
+    {"from":"qr-cepillo-lijadora","to":"qr-ensamble","type":"same_resource_index"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"qr-taladros","text":"Taladros"},
+    {"target_entity_id":"qr-sierra-ingleteadora","text":"Sierra circular e ingleteadora"},
+    {"target_entity_id":"qr-ruteadora","text":"Ruteadora"},
+    {"target_entity_id":"qr-cepillo-canteador","text":"Cepillo canteador"},
+    {"target_entity_id":"qr-cepillo-lijadora","text":"Cepillo de mano y lijadora"},
+    {"target_entity_id":"qr-ensamble","text":"Método básico de ensamble"}
+  ],
+  "layers": [
+    {"id":"row-1","description":"Tres recursos QR de la fila superior."},
+    {"id":"row-2","description":"Tres recursos QR de la fila inferior."},
+    {"id":"labels","description":"Rótulos temáticos sobre cada código."}
+  ],
+  "camera": {"view":"front","projection":"flat_page_reference"},
+  "visual_style": {"background":"white","layout":"two rows by three columns","labels":"black text","codes":"black-and-white QR blocks"},
+  "educational_sequence": [
+    {"step":1,"show_entity_ids":["qr-taladros","qr-sierra-ingleteadora","qr-ruteadora"],"instruction":"Mostrar los tres recursos de la fila superior con sus rótulos."},
+    {"step":2,"show_entity_ids":["qr-cepillo-canteador","qr-cepillo-lijadora","qr-ensamble"],"instruction":"Mostrar los tres recursos de la fila inferior con sus rótulos."}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":false},
+  "accessibility": {"summary":"Cuadrícula de seis códigos QR: taladros, sierra circular e ingleteadora, ruteadora, cepillo canteador, cepillo de mano y lijadora, y método básico de ensamble."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"No generar ni sustituir los QR. Los destinos son desconocidos hasta una decodificación y verificación posterior. Puede reconstruirse la composición y los rótulos, pero no los patrones QR exactos."}
+}

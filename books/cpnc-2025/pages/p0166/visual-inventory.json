@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0166",
+  "pdf_page": 166,
+  "printed_page": 144,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0166-001",
+      "kind": "manual_installation_tools_reference_grid",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0166-001",
+      "source_region": {"x":0.18,"y":0.03,"width":0.67,"height":0.94},
+      "reason": "Lámina rotulada con imágenes de herramientas manuales, brocas y elementos de protección o instalación."
+    }
+  ]
+}

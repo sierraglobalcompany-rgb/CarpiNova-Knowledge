@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0165-001",
+    "page_id": "PAGE-CPNC-2025-P0165",
+    "content_type": "reference",
+    "source_transcription": "CORTE. HERRAMIENTA ELÉCTRICA E INALÁMBRICA. Taladros. Sierra circular e ingleteadora. Ruteadora. Cepillo canteador. Cepillo de mano y lijadora. Método básico de ensamble.",
+    "normalized_text": "La página funciona como un índice visual de recursos para corte y herramientas eléctricas o inalámbricas. Presenta seis referencias mediante códigos QR: taladros; sierra circular e ingleteadora; ruteadora; cepillo canteador; cepillo de mano y lijadora; y método básico de ensamble.",
+    "learning_text": "Usa esta página como índice de seis temas relacionados con herramientas y ensamble. Los códigos QR se conservan como elementos visuales de la fuente, pero sus destinos no se consideran conocidos mientras no se decodifiquen y verifiquen.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0165-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":165,"printed_page":143,"region":{"x":0.02,"y":0.05,"width":0.96,"height":0.82},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["corte","herramienta-electrica","herramienta-inalambrica","taladros","sierra-circular","ingleteadora","ruteadora","cepillo-canteador","lijadora","ensamble","qr"]
+  }
+]
