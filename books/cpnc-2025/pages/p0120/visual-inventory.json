@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0120",
+  "pdf_page": 120,
+  "printed_page": 98,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0120-001",
+      "kind": "mixed_instructional_diagram",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0120-001",
+      "source_region": {"x": 0.05, "y": 0.21, "width": 0.88, "height": 0.72},
+      "reason": "La página combina una ilustración de gabinete con brazo elevable, fórmulas de peso/volumen y una tabla de densidad que son parte del aprendizaje técnico."
+    }
+  ]
+}
