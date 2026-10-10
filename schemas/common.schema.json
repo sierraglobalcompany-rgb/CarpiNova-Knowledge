@@ -19,7 +19,7 @@
       "required": ["method", "confidence", "review_status"],
       "additionalProperties": false,
       "properties": {
-        "method": {"enum": ["text", "visual", "ocr", "manual"]},
+        "method": {"enum": ["text", "visual", "ocr", "manual", "visual+qr_decode"]},
         "confidence": {"type": "number", "minimum": 0, "maximum": 1},
         "review_status": {"enum": ["RAW", "EXTRACTED", "VISUALLY_VERIFIED", "REVIEWED", "VALIDATED", "CONFLICT", "REJECTED"]}
       }

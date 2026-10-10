@@ -121,6 +121,12 @@ def test_batch_018_first_project_overview_is_accepted() -> None:
     assert report["counts"]["pages"] == 6
 
 
+def test_batch_019_materials_particle_board_and_edge_band_is_accepted() -> None:
+    report = build_batch_report(ROOT, "batch-019")
+    assert report["result"] == "GO"
+    assert report["counts"]["pages"] == 7
+
+
 def test_generic_batch_report_accepts_physical_page_batch(tmp_path: Path) -> None:
     root = tmp_path / "repo"
     shutil.copytree(
@@ -135,7 +141,7 @@ def test_generic_batch_report_accepts_physical_page_batch(tmp_path: Path) -> Non
         "book_id": "cpnc-2025",
         "purpose": "f1-extraction-test",
         "pdf_pages": [110],
-        "status": "EXTRACTED",
+        "status": "PLANNED",
     }
     path = root / "books" / "cpnc-2025" / "batches" / "batch-test-physical.json"
     path.write_text(json.dumps(batch, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
