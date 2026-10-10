@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0144-001",
+    "page_id": "PAGE-CPNC-2025-P0144",
+    "content_type": "reference",
+    "source_transcription": "SEPARADOR. Hágalo en casa.",
+    "normalized_text": "Página separadora editorial con patrón gráfico de herramientas y la marca ‘Hágalo en casa’. No contiene instrucciones ni especificaciones técnicas.",
+    "learning_text": "Esta página marca una transición editorial del libro y no genera conocimiento técnico.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0144-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":144,"printed_page":122,"region":{"x":0.01,"y":0.01,"width":0.98,"height":0.98},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["separador","editorial","hagalo-en-casa","no-tecnico"]
+  }
+]
