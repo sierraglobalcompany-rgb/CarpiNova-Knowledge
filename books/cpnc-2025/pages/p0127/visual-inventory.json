@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0127",
+  "pdf_page": 127,
+  "printed_page": 105,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0127-001",
+      "kind": "manufacturer_installation_manual",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0127-001",
+      "source_region": {"x": 0.04, "y": 0.07, "width": 0.92, "height": 0.86},
+      "reason": "El manual combina tabla de selección, accesorios, secuencia de fijación y cotas de referencia necesarias para reconstrucción didáctica."
+    }
+  ]
+}

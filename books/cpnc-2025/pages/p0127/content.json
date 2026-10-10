@@ -1,0 +1,46 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0127-001",
+    "page_id": "PAGE-CPNC-2025-P0127",
+    "content_type": "hardware",
+    "source_transcription": "KIT ESCURREPLATOS - MANUAL DE INSTALACIÓN. Espesor chapa 0.35mm. Carga 7kg. Material acero inox 201.",
+    "normalized_text": "La ficha del kit escurreplatos indica chapa de 0,35 mm, carga de 7 kg y material acero inoxidable 201.",
+    "learning_text": "Antes de instalar un kit comercial conviene revisar su material, espesor y carga declarada por el fabricante, además del ancho del gabinete compatible.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0127-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":127,"printed_page":105,"region":{"x":0.05,"y":0.08,"width":0.9,"height":0.27},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["kit-escurreplatos","acero-inox-201","0-35-mm","7-kg","venetto"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0127-002",
+    "page_id": "PAGE-CPNC-2025-P0127",
+    "content_type": "table",
+    "source_transcription": "Tabla de Referencias. Especificaciones D x W x H / Ancho del Armario: 280x465x65mm / 500mm; 280x565x65mm / 600mm; 280x665x65mm / 700mm; 280x765x65mm / 800mm.",
+    "normalized_text": "La tabla vincula cuatro dimensiones del kit con cuatro anchos de armario: 280×465×65 mm para 500 mm; 280×565×65 mm para 600 mm; 280×665×65 mm para 700 mm; y 280×765×65 mm para 800 mm.",
+    "learning_text": "Selecciona el kit a partir del ancho del armario y verifica que coincida con la fila correspondiente de la ficha técnica.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0127-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":127,"printed_page":105,"region":{"x":0.51,"y":0.2,"width":0.42,"height":0.21},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["tabla-referencia","ancho-armario","500-mm","600-mm","700-mm","800-mm"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0127-003",
+    "page_id": "PAGE-CPNC-2025-P0127",
+    "content_type": "procedure",
+    "source_transcription": "Paso de Fijación. 1 Elija el mueble adecuado según las especificaciones de cada producto (consulte el dibujo 1). 2 Taladre el aparador del gabinete y luego fije los accesorios \"A\", \"B\" uno por uno como se muestra en los siguientes dibujos.",
+    "normalized_text": "El procedimiento indica elegir primero el mueble según la ficha del producto y después taladrar el panel del gabinete para fijar los accesorios A y B en la secuencia mostrada.",
+    "learning_text": "Primero confirma que el gabinete corresponda al tamaño del kit. Después realiza las perforaciones y monta los accesorios A y B siguiendo el esquema del fabricante.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0127-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":127,"printed_page":105,"region":{"x":0.05,"y":0.4,"width":0.9,"height":0.25},"extraction":{"method":"visual","confidence":0.96,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["paso-fijacion","accesorio-a","accesorio-b","taladrado","gabinete"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0127-004",
+    "page_id": "PAGE-CPNC-2025-P0127",
+    "content_type": "dimension",
+    "source_transcription": "Especificaciones y ancho del gabinete. A El tamaño \"A\" y el tamaño \"B\" se basan en la altura del gabinete. El siguiente tamaño es para su referencia. A=275mm, B=300mm (Ambos tamaños solo como referencia). Observaciones: B La profundidad de sujeción es de 7~9 mm, tenga cuidado de no perforar el aparador del armario.",
+    "normalized_text": "La ficha da A=275 mm y B=300 mm como dimensiones de referencia dependientes de la altura del gabinete. También indica una profundidad de sujeción entre 7 y 9 mm y advierte no atravesar el panel del armario.",
+    "learning_text": "Las cotas A y B son referencias del fabricante y deben adaptarse a la altura del gabinete. Controla especialmente la profundidad de perforación: la ficha indica 7–9 mm para evitar atravesar el panel.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0127-004"],
+    "source": {"book_id":"cpnc-2025","pdf_page":127,"printed_page":105,"region":{"x":0.05,"y":0.64,"width":0.9,"height":0.28},"extraction":{"method":"visual","confidence":0.96,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["a-275-mm","b-300-mm","profundidad-sujecion","7-9-mm","no-atravesar-panel"]
+  }
+]
