@@ -73,6 +73,12 @@ def test_batch_010_new_carpenter_community_is_accepted() -> None:
     assert report["counts"]["pages"] == 6
 
 
+def test_batch_011_new_beginning_is_accepted() -> None:
+    report = build_batch_report(ROOT, "batch-011")
+    assert report["result"] == "GO"
+    assert report["counts"]["pages"] == 4
+
+
 def test_generic_batch_report_accepts_physical_page_batch(tmp_path: Path) -> None:
     root = tmp_path / "repo"
     shutil.copytree(

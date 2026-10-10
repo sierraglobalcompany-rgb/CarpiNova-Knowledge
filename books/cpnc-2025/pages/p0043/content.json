@@ -1,0 +1,30 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0043-001","page_id":"PAGE-CPNC-2025-P0043","content_type":"reference",
+    "source_transcription":"Y empezaron los lives. Una locura. Todos en sus casas, sin plan, empezaron a esperar las clases: sábado, domingo, lunes por la noche. El curso era la mejor programación. Grabábamos en casa, con Gloria y mi hijo participando. Hacíamos escritorios, reformábamos muebles, instalábamos cocinas, explicábamos paso a paso.\n\nJonathan, un amigo clave en esta etapa, me impulsó a formalizar el curso virtual. Ya habíamos grabado algunos capítulos, pero empezamos a dar clases en vivo por varias plataformas, asesorías por Zoom y Meet.\n\nLa pandemia disparó el proyecto. Nos veían desde toda Colombia: Cali, Barranquilla, Bogotá, Villavicencio, y también desde Perú, Ecuador, México, Estados Unidos. Yo adopté un estilo auténtico, sin edición ni guion. ¡Iba a ser yo!",
+    "normalized_text":"El autor describe la transición desde transmisiones caseras hacia un curso virtual más formal con clases en vivo y asesorías por plataformas de videollamada, y señala que la audiencia se amplió dentro y fuera de Colombia.",
+    "learning_text":"La enseñanza remota evolucionó de transmisiones improvisadas a un formato más estructurado con clases y asesorías en línea. La tecnología permitió ampliar el alcance sin depender de un taller presencial.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0043-001"],"source":{"book_id":"cpnc-2025","pdf_page":43,"printed_page":21,"region":{"x":0.06,"y":0.08,"width":0.88,"height":0.29},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["curso-virtual","clases-en-vivo","Zoom","Meet","pandemia"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0043-002","page_id":"PAGE-CPNC-2025-P0043","content_type":"example",
+    "source_transcription":"Claro, había errores. Una vez medí mal un centro de entretenimiento en vivo y quedó cinco centímetros más alto -risas-. En otra clase, no encontraba las gafas mientras todos gritaban: ‘¡Profe, están en la cabeza!’. Y la ruteadora... ¡qué escándalo! El administrador de mi edificio ya no sabía qué hacer. Pero yo argumentaba: ‘este es mi teletrabajo’.\n\nY eso era lo más real de Hágalo en Casa: estábamos todos haciéndolo, literalmente, desde casa.",
+    "normalized_text":"El autor relata errores y dificultades prácticas de enseñar carpintería desde casa, incluyendo una medición equivocada de cinco centímetros y el ruido de una ruteadora.",
+    "learning_text":"La enseñanza remota también expuso errores reales del proceso. El ejemplo recuerda que una medición incorrecta se traduce directamente en una pieza o mueble con dimensiones equivocadas.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0043-002"],"source":{"book_id":"cpnc-2025","pdf_page":43,"printed_page":21,"region":{"x":0.06,"y":0.39,"width":0.88,"height":0.18},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["error-de-medicion","5-centimetros","ruteadora","teletrabajo"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0043-003","page_id":"PAGE-CPNC-2025-P0043","content_type":"concept",
+    "source_transcription":"Muchos de ustedes saben que el proyecto no nació para fomentar emprendimientos, pero la pandemia lo transformó. Personas sin empleo comenzaron a vender sus cocinas, clósets y centros de entretenimiento. Me preguntaban cómo hacer para vender, y yo les daba tips de redes sociales, imagen, fotografía.\n\nMientras tanto, Ditecno seguía, ahora enfocado en instalaciones menores. Pero necesitábamos ingresos, así que hice un video de una mesa plegable con materiales reciclados. Se viralizó. Con eso, alimentamos las rutas de instalaciones de Ditecno Soportes durante toda la pandemia.\n\nVi que el mercado estaba en escritorios. Contacté a dos chicas emprendedoras (MadeMara) y les dije: ‘¡Hagan escritorios!’. Así nació un colectivo de emprendimientos. Creamos grupos de WhatsApp y empezamos a ayudarnos mutuamente. Muchos hoy son grandes carpinteros, profesionales, que iniciaron haciendo escritorios en pandemia.",
+    "normalized_text":"El autor describe cómo la pandemia impulsó emprendimientos de cocinas, clósets, centros de entretenimiento y escritorios. También relata el uso de redes sociales, grupos de WhatsApp y una colaboración con MadeMara para responder a la demanda de escritorios.",
+    "learning_text":"La comunidad no solo compartía conocimiento técnico: también intercambiaba información comercial y se coordinaba para responder a nuevas necesidades del mercado.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0043-003"],"source":{"book_id":"cpnc-2025","pdf_page":43,"printed_page":21,"region":{"x":0.06,"y":0.59,"width":0.88,"height":0.28},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["emprendimiento","escritorios","redes-sociales","WhatsApp","MadeMara"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0043-004","page_id":"PAGE-CPNC-2025-P0043","content_type":"reference",
+    "source_transcription":"Antes no vendía herramienta, pero como usaba las mías para las clases, me empezaron a preguntar. Contacté proveedores, y ¡boom!, la venta de herramientas fue brutal. Estábamos todos en casa, sin taladro ni destornillador, queriendo practicar lo aprendido. Fue una nueva línea de negocio.",
+    "normalized_text":"El autor relata que las preguntas de los alumnos sobre las herramientas utilizadas en clase dieron origen a una nueva línea de venta de herramientas durante la pandemia.",
+    "learning_text":"La formación generó una necesidad complementaria: además de aprender, los participantes necesitaban acceso a herramientas para practicar.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0043-004"],"source":{"book_id":"cpnc-2025","pdf_page":43,"printed_page":21,"region":{"x":0.06,"y":0.90,"width":0.88,"height":0.09},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["herramientas","venta","pandemia","linea-de-negocio"]
+  }
+]

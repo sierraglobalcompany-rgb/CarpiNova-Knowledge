@@ -1,0 +1,30 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0044-001","page_id":"PAGE-CPNC-2025-P0044","content_type":"reference",
+    "source_transcription":"Algo que me marcó fue ver cómo las mujeres impulsaron el proyecto. Cuando volvimos al Mall del Carpintero, me di cuenta que la mayoría de herramientas vendidas durante la pandemia las habían comprado mujeres. Al preguntarles, algunas ni las habían abierto. Les dije: ‘¿Entonces para qué compraron?’. Respondieron: ‘Para ayudar a Hágalo en Casa’.\n\nEso me tocó. Por eso creé el grupo Mujeres Hágalo en Casa. Mujeres emprendedoras, detallistas, apasionadas, que salvaban el proyecto con sus compras, con su impulso. Empezaron a llegar en masa. Hoy, la mitad de los grupos son mujeres. Hoy, es normal que una mujer llegue a instalar carpintería en tu casa.\n\nNatalia, Francia Prada, Doña Marta, Lorenza, María Alejandra, Stefania, Doris Janeth (la mamá de las pollitas), Lida, Ana María González... son muchas más, y cada una sabe cuánto significan para esta comunidad.\n¡La pandemia nos hizo famosos!",
+    "normalized_text":"El autor destaca el apoyo de mujeres durante la pandemia y relata la creación del grupo Mujeres Hágalo en Casa. También afirma que posteriormente aproximadamente la mitad de los grupos eran mujeres y menciona varias integrantes de la comunidad.",
+    "learning_text":"La comunidad se amplió e incorporó una participación femenina visible tanto en aprendizaje como en ejecución de proyectos. Se conserva como parte de la historia social del programa.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0044-001"],"source":{"book_id":"cpnc-2025","pdf_page":44,"printed_page":22,"region":{"x":0.06,"y":0.08,"width":0.88,"height":0.35},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["Mujeres-Hagalo-en-Casa","comunidad","pandemia","participacion"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0044-002","page_id":"PAGE-CPNC-2025-P0044","content_type":"concept",
+    "source_transcription":"Las redes nos posicionaron. Las empresas que antes dudaban, comenzaron a buscar patrocinarnos. Consolidamos el Mall del Carpintero en un centro comercial, con aliados, pero sin perder el rumbo: enseñar en comunidad, sin convertir esto en un negocio comercial puro. Por eso, incluso dejé de vender herramienta directamente. Delegué esa parte para mantener la esencia: enseñar, ayudar, compartir.",
+    "normalized_text":"El autor atribuye a las redes sociales un mayor posicionamiento y patrocinio, describe la consolidación del Mall del Carpintero y explica que delegó la venta directa de herramientas para mantener el foco en enseñanza y comunidad.",
+    "learning_text":"El programa diferencia entre su propósito educativo y las actividades comerciales que lo rodean. La decisión descrita es delegar operaciones que distraen del objetivo principal.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0044-002"],"source":{"book_id":"cpnc-2025","pdf_page":44,"printed_page":22,"region":{"x":0.06,"y":0.46,"width":0.88,"height":0.16},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["redes-sociales","Mall-del-Carpintero","patrocinios","enseñanza"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0044-003","page_id":"PAGE-CPNC-2025-P0044","content_type":"reference",
+    "source_transcription":"Siempre les digo a los asistentes entre risas: ‘No se dejen vender de mí, porque los pelo y los dejo sin plata’. Y es verdad: soy muy bueno vendiendo, pero mejor enseñando.",
+    "normalized_text":"El autor usa una expresión humorística para reforzar que prefiere concentrarse en enseñar antes que vender.",
+    "learning_text":"Contexto de tono y propósito del programa; no constituye una regla comercial.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0044-003"],"source":{"book_id":"cpnc-2025","pdf_page":44,"printed_page":22,"region":{"x":0.06,"y":0.64,"width":0.88,"height":0.09},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["enseñanza","historia-del-programa"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0044-004","page_id":"PAGE-CPNC-2025-P0044","content_type":"concept",
+    "source_transcription":"Para cerrar: esta pandemia, tan difícil para muchos, también nos dejó lecciones. Sirvió para reinventarse, para encontrar oportunidades. Ustedes pueden vivir de la carpintería sin hacer carpintería. Yo vivo de enseñar el oficio. Y alrededor del gremio hay miles de oportunidades: softwares de diseño, apps de despiece, herramientas para gestionar costos. La informalidad actual es una oportunidad para quienes quieran profesionalizar este arte.",
+    "normalized_text":"El autor identifica oportunidades alrededor de la carpintería que no dependen únicamente de fabricar muebles: enseñanza, software de diseño, aplicaciones de despiece y herramientas de gestión de costos. Relaciona estas oportunidades con la profesionalización del oficio.",
+    "learning_text":"El ecosistema de carpintería incluye también trabajo digital y de soporte: diseño, despiece, gestión de costos, formación y herramientas. Esta idea es especialmente relevante para los módulos futuros de CarpiNova, pero se conserva aquí como contenido derivado de la fuente, no como requisito técnico automático.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0044-004"],"source":{"book_id":"cpnc-2025","pdf_page":44,"printed_page":22,"region":{"x":0.06,"y":0.76,"width":0.88,"height":0.16},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["software-de-diseño","apps-de-despiece","costos","profesionalizacion","oportunidades"]
+  }
+]
