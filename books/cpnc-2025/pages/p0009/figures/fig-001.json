@@ -1,0 +1,42 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0009-001",
+  "page_id": "PAGE-CPNC-2025-P0009",
+  "type": "illustration",
+  "purpose": "Representar visualmente la bienvenida y el recorrido de aprendizaje del libro en seis paneles consecutivos.",
+  "source": {"book_id":"cpnc-2025","pdf_page":9,"printed_page":null,"region":{"x":0.055,"y":0.025,"width":0.89,"height":0.95},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"panel-1","type":"welcome_panel","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.085,"y":0.085,"width":0.43,"height":0.29}},"description":"Instructor con equipo de protección saluda a tres personas en un taller."},
+    {"id":"panel-2","type":"step_by_step_panel","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.52,"y":0.085,"width":0.4,"height":0.29}},"description":"Persona revisa una hoja con dibujos de muebles bajo el mensaje “PASO A PASO, SIN PRISA”."},
+    {"id":"panel-3","type":"virtual_course_panel","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.085,"y":0.39,"width":0.43,"height":0.28}},"description":"Teléfono muestra “CURSO VIRTUAL” y un código QR mientras una persona lo señala."},
+    {"id":"panel-4","type":"community_panel","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.52,"y":0.39,"width":0.4,"height":0.28}},"description":"Grupo aprende frente a una pantalla con instructor y rótulo “Hágalo en Casa”."},
+    {"id":"panel-5","type":"plans_panel","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.085,"y":0.68,"width":0.43,"height":0.28}},"description":"Persona consulta libro y láminas con dibujos de muebles y códigos QR."},
+    {"id":"panel-6","type":"five_step_path_panel","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.52,"y":0.68,"width":0.4,"height":0.28}},"description":"Grupo recorre un camino guiado por instructor y señales numeradas que representan la ruta de pasos."}
+  ],
+  "relationships": [
+    {"from":"panel-1","to":"panel-2","type":"next_in_reading_order"},
+    {"from":"panel-2","to":"panel-3","type":"next_in_reading_order"},
+    {"from":"panel-3","to":"panel-4","type":"next_in_reading_order"},
+    {"from":"panel-4","to":"panel-5","type":"next_in_reading_order"},
+    {"from":"panel-5","to":"panel-6","type":"next_in_reading_order"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"panel-1","text":"¡Bienvenidos!"},
+    {"target_entity_id":"panel-2","text":"PASO A PASO, SIN PRISA"},
+    {"target_entity_id":"panel-3","text":"CURSO VIRTUAL"},
+    {"target_entity_id":"panel-4","text":"Hágalo en Casa"}
+  ],
+  "camera": {"view":"front","projection":"orthographic"},
+  "visual_style": {"format":"comic educativo","layout":"cuadrícula 2x3","palette":"cálida con amarillo, naranja, verde y azul","linework":"contornos oscuros limpios","background":"crema","character_style":"ilustración amigable y simplificada"},
+  "educational_sequence": [
+    {"step":1,"show_entity_ids":["panel-1"],"instruction":"Instructor con equipo de protección saluda a tres personas en un taller."},
+    {"step":2,"show_entity_ids":["panel-2"],"instruction":"Persona revisa una hoja con dibujos de muebles bajo el mensaje “PASO A PASO, SIN PRISA”."},
+    {"step":3,"show_entity_ids":["panel-3"],"instruction":"Teléfono muestra “CURSO VIRTUAL” y un código QR mientras una persona lo señala."},
+    {"step":4,"show_entity_ids":["panel-4"],"instruction":"Grupo aprende frente a una pantalla con instructor y rótulo “Hágalo en Casa”."},
+    {"step":5,"show_entity_ids":["panel-5"],"instruction":"Persona consulta libro y láminas con dibujos de muebles y códigos QR."},
+    {"step":6,"show_entity_ids":["panel-6"],"instruction":"Grupo recorre un camino guiado por instructor y señales numeradas que representan la ruta de pasos."}
+  ],
+  "reconstruction": {"preferred_renderer":"image","deterministic_required":false,"generative_image_allowed":true},
+  "accessibility": {"summary":"Seis viñetas muestran: bienvenida; lectura paso a paso; acceso a curso virtual por QR; acompañamiento de Hágalo en Casa; consulta de planos/material gráfico; y recorrido por una ruta de cinco pasos."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La geometría de personajes y objetos es ilustrativa, no técnica."}
+}

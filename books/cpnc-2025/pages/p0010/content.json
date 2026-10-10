@@ -1,0 +1,90 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0010-001",
+    "page_id": "PAGE-CPNC-2025-P0010",
+    "content_type": "concept",
+    "source_transcription": "Bienvenido a este maravilloso mundo de la carpintería.\nEstás a punto de sumergirte en un mar de conocimiento, por eso mi primera recomendación es sencilla pero poderosa: aborda cada tema de manera específica y sin prisa.",
+    "normalized_text": "Bienvenido a este maravilloso mundo de la carpintería. Estás a punto de sumergirte en un mar de conocimiento; por eso, mi primera recomendación es sencilla pero poderosa: aborda cada tema de manera específica y sin prisa.",
+    "learning_text": "El autor recomienda estudiar un tema a la vez y avanzar sin prisa.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0010-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":10,"printed_page":null,"region":{"x":0.06,"y":0.13,"width":0.88,"height":0.1},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["introducción","metodología"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0010-002",
+    "page_id": "PAGE-CPNC-2025-P0010",
+    "content_type": "recommendation",
+    "source_transcription": "No necesitas adelantarte. Ve paso a paso.\nEn este libro te presentaré los cinco pasos fundamentales para desarrollar correctamente un proyecto de carpintería. Contamos con muchas herramientas de apoyo para acompañarte en este proceso.",
+    "normalized_text": "No necesitas adelantarte: ve paso a paso. El libro presenta cinco pasos fundamentales para desarrollar un proyecto de carpintería y ofrece herramientas de apoyo durante el proceso.",
+    "learning_text": "La idea central es avanzar en orden: el libro organiza el aprendizaje en cinco pasos y añade recursos de apoyo.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0010-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":10,"printed_page":null,"region":{"x":0.06,"y":0.25,"width":0.88,"height":0.1},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cinco-pasos","metodología"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0010-003",
+    "page_id": "PAGE-CPNC-2025-P0010",
+    "content_type": "reference",
+    "source_transcription": "La primera es un curso virtual en el que aprenderás los conceptos básicos para elaborar un centro de entretenimiento, una cocina, y otros aspectos esenciales como el manejo de plataformas de diseño y despiece. El acceso a este contenido está disponible a través de enlaces que encontrarás en el libro. Solo debes escanear los códigos QR correspondientes para comenzar. Será una excelente introducción a este apasionante mundo.",
+    "normalized_text": "La primera herramienta de apoyo es un curso virtual sobre conceptos básicos para elaborar un centro de entretenimiento, una cocina y otros temas, como plataformas de diseño y despiece. El contenido se accede mediante enlaces y códigos QR incluidos en el libro.",
+    "learning_text": "El libro enlaza un curso virtual mediante códigos QR. El curso introduce proyectos como centros de entretenimiento y cocinas, además de herramientas de diseño y despiece.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0010-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":10,"printed_page":null,"region":{"x":0.06,"y":0.36,"width":0.88,"height":0.14},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["curso-virtual","qr","diseño","despiece"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0010-004",
+    "page_id": "PAGE-CPNC-2025-P0010",
+    "content_type": "reference",
+    "source_transcription": "Más adelante, también encontrarás un QR que te llevará al grupo de asesoría y apoyo. Allí podrás plantear tus dudas, compartir tus inquietudes y recibir ayuda de toda la comunidad de Hágalo en casa. Estamos aquí para acompañarte.",
+    "normalized_text": "Más adelante encontrarás un código QR para acceder a un grupo de asesoría y apoyo, donde podrás plantear dudas, compartir inquietudes y recibir ayuda de la comunidad de Hágalo en casa.",
+    "learning_text": "También hay un QR para entrar a un grupo de asesoría y apoyo de la comunidad de Hágalo en casa.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0010-004"],
+    "source": {"book_id":"cpnc-2025","pdf_page":10,"printed_page":null,"region":{"x":0.06,"y":0.51,"width":0.88,"height":0.1},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["qr","asesoría","comunidad"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0010-005",
+    "page_id": "PAGE-CPNC-2025-P0010",
+    "content_type": "reference",
+    "source_transcription": "Además, he incluido un QR que te dará acceso a los planos que desarrollo diariamente tanto para mis proyectos personales como para el contenido en redes sociales. Encontrarás más de 100 diseños, cada uno con su respectivo despiece y listado de materiales. Una fuente invaluable de ideas que seguramente te inspirará a desarrollar tus propios proyectos.",
+    "normalized_text": "Además, el libro incluye un código QR para acceder a planos desarrollados por el autor para proyectos personales y contenido en redes sociales. El texto indica que hay más de 100 diseños, cada uno con su despiece y listado de materiales.",
+    "learning_text": "El libro enlaza una colección de más de 100 diseños mediante QR. Según la fuente, cada diseño incluye despiece y listado de materiales.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0010-005"],
+    "source": {"book_id":"cpnc-2025","pdf_page":10,"printed_page":null,"region":{"x":0.06,"y":0.62,"width":0.88,"height":0.13},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["qr","planos","despiece","materiales"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0010-006",
+    "page_id": "PAGE-CPNC-2025-P0010",
+    "content_type": "concept",
+    "source_transcription": "Este libro comienza con mi historia: una mirada personal a lo que he aprendido durante estos 15 años de trayectoria en la carpintería. A partir de ahí, te guiaré por los cinco pasos esenciales para adquirir los conocimientos necesarios y comenzar con tus propias prácticas.",
+    "normalized_text": "El libro comienza con la historia del autor y lo aprendido durante 15 años de trayectoria en carpintería. Después guía al lector por cinco pasos esenciales para adquirir conocimientos y comenzar sus propias prácticas.",
+    "learning_text": "La ruta empieza con la experiencia del autor y continúa con cinco pasos de aprendizaje antes de pasar a la práctica.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0010-006"],
+    "source": {"book_id":"cpnc-2025","pdf_page":10,"printed_page":null,"region":{"x":0.06,"y":0.75,"width":0.88,"height":0.1},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["historia","cinco-pasos","aprendizaje"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0010-007",
+    "page_id": "PAGE-CPNC-2025-P0010",
+    "content_type": "reference",
+    "source_transcription": "Cada uno de estos pasos está respaldado por material gráfico, texto y clases en video.",
+    "normalized_text": "Cada paso está respaldado por material gráfico, texto y clases en video.",
+    "learning_text": "Cada paso combina material gráfico, texto y clases en video.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0010-007"],
+    "source": {"book_id":"cpnc-2025","pdf_page":10,"printed_page":null,"region":{"x":0.06,"y":0.86,"width":0.88,"height":0.05},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["material-gráfico","video","texto"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0010-008",
+    "page_id": "PAGE-CPNC-2025-P0010",
+    "content_type": "recommendation",
+    "source_transcription": "Espero que disfrutes cada página de este recorrido. Y recuerda: no te adelantes. Ve paso a paso.",
+    "normalized_text": "Espero que disfrutes cada página de este recorrido. Recuerda: no te adelantes; ve paso a paso.",
+    "learning_text": "La recomendación final vuelve a insistir en avanzar paso a paso.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0010-008"],
+    "source": {"book_id":"cpnc-2025","pdf_page":10,"printed_page":null,"region":{"x":0.06,"y":0.92,"width":0.88,"height":0.06},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["metodología","paso-a-paso"]
+  }
+]

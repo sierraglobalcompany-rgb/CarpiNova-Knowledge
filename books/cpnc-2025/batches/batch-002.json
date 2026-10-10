@@ -1,0 +1,10 @@
+{
+  "batch_id": "BATCH-002",
+  "book_id": "cpnc-2025",
+  "purpose": "f1-book-onboarding",
+  "pdf_pages": [
+    9,
+    10
+  ],
+  "status": "EXTRACTED"
+}
