@@ -1,0 +1,37 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0215-001",
+  "page_id": "PAGE-CPNC-2025-P0215",
+  "type": "assembly_sequence",
+  "purpose": "Recrear los herrajes de cama mostrados: chapetas, tornillos con tuercas y esquineros metálicos.",
+  "source": {"book_id":"cpnc-2025","pdf_page":215,"printed_page":193,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"chapeta-small","type":"bed_connector_plate_small","geometry":{"precision":"approximate"}},
+    {"id":"chapeta-large","type":"bed_connector_plate_large","geometry":{"precision":"approximate"}},
+    {"id":"bed-corner","type":"bed_internal_corner","geometry":{"precision":"approximate"}},
+    {"id":"assembly-screw","type":"assembly_screw","geometry":{"precision":"approximate"}},
+    {"id":"nut","type":"nut","geometry":{"precision":"approximate"}},
+    {"id":"metal-corner","type":"metal_corner_bracket","geometry":{"precision":"approximate"}},
+    {"id":"rail","type":"bed_rail","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [
+    {"from":"chapeta-small","to":"bed-corner","type":"joins_corner"},
+    {"from":"chapeta-large","to":"bed-corner","type":"joins_corner_for_tall_bed"},
+    {"from":"nut","to":"assembly-screw","type":"unscrewed_for_disassembly"},
+    {"from":"assembly-screw","to":"bed-corner","type":"remains_anchored"},
+    {"from":"metal-corner","to":"rail","type":"supports_installation"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"chapeta-large","text":"La fuente indica usar la grande si la cama es muy alta"},
+    {"target_entity_id":"assembly-screw","text":"No retirar del aglomerado durante un traslado"},
+    {"target_entity_id":"nut","text":"Desenroscar la tuerca para desarmar"}
+  ],
+  "educational_sequence": [
+    {"step":1,"action":"Unir internamente las cuatro esquinas con chapetas"},
+    {"step":2,"action":"Para desmontar, desenroscar tuercas sin retirar los tornillos de ensamble"},
+    {"step":3,"action":"Usar esquineros metálicos para la instalación de largueros"}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Secuencia visual de herrajes para cama, con chapetas de dos tamaños, unión de esquinas y desmontaje conservando los tornillos anclados."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La frase final de la fuente sobre largueros se conserva en content.json y la figura solo representa el uso visible del esquinero."}
+}
