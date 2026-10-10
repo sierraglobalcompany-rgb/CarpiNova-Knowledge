@@ -1,3 +1,37 @@
 [
-  {"content_id":"CONTENT-CPNC-2025-P0112-001","page_id":"PAGE-CPNC-2025-P0112","content_type":"technical_diagram","source_transcription":"Recta — Cobertura total\nSemi-recta — Cobertura parcial\nCurva — Embebida\nLateral / Puerta","normalized_text":"El diagrama compara tres configuraciones de bisagra: recta con cobertura total del lateral, semi-recta con cobertura parcial y curva con la puerta embebida dentro del gabinete.","learning_text":"La geometría de la bisagra cambia la posición final de la puerta: por fuera cubriendo el lateral, compartiendo parte del lateral o quedando dentro del mueble.","derived_from_content_ids":["CONTENT-CPNC-2025-P0112-001"],"source":{"book_id":"cpnc-2025","pdf_page":112,"printed_page":90,"region":{"x":0.08,"y":0.08,"width":0.84,"height":0.84},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["bisagra-recta","bisagra-semi-recta","bisagra-curva","cobertura-total","cobertura-parcial","embebida"]}
+  {
+    "content_id": "CONTENT-CPNC-2025-P0112-001",
+    "page_id": "PAGE-CPNC-2025-P0112",
+    "content_type": "concept",
+    "source_transcription": "Recta — Cobertura total\nSemi-recta — Cobertura parcial\nCurva — Embebida\nLateral / Puerta",
+    "normalized_text": "El diagrama compara tres configuraciones de bisagra: recta con cobertura total del lateral, semi-recta con cobertura parcial y curva con la puerta embebida dentro del gabinete.",
+    "learning_text": "La geometría de la bisagra cambia la posición final de la puerta: por fuera cubriendo el lateral, compartiendo parte del lateral o quedando dentro del mueble.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0112-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 112,
+      "printed_page": 90,
+      "region": {
+        "x": 0.08,
+        "y": 0.08,
+        "width": 0.84,
+        "height": 0.84
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "bisagra-recta",
+      "bisagra-semi-recta",
+      "bisagra-curva",
+      "cobertura-total",
+      "cobertura-parcial",
+      "embebida"
+    ]
+  }
 ]
