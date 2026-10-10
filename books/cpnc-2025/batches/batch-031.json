@@ -1,0 +1,10 @@
+{
+  "batch_id": "BATCH-031",
+  "book_id": "cpnc-2025",
+  "purpose": "f1-blank-transition-pages",
+  "pdf_pages": [
+    130,
+    131
+  ],
+  "status": "EXTRACTED"
+}
