@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0171-001",
+    "page_id": "PAGE-CPNC-2025-P0171",
+    "content_type": "reference",
+    "source_transcription": "SEPARADOR. Hágalo en casa.",
+    "normalized_text": "Página separadora visual de la edición 2025. Presenta un patrón de herramientas de taller y, en el centro, un círculo blanco con un martillo rojo y la marca gráfica ‘Hágalo en casa’.",
+    "learning_text": "Esta página funciona como transición visual entre secciones. No contiene una instrucción técnica que deba convertirse en regla o procedimiento.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0171-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":171,"printed_page":149,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["separador","hagalo-en-casa","transicion","herramientas"]
+  }
+]
