@@ -133,6 +133,12 @@ def test_batch_020_solid_wood_strip_boards_is_accepted() -> None:
     assert report["counts"]["pages"] == 4
 
 
+def test_batch_021_preflex_advertising_is_accepted() -> None:
+    report = build_batch_report(ROOT, "batch-021")
+    assert report["result"] == "GO"
+    assert report["counts"]["pages"] == 2
+
+
 def test_generic_batch_report_accepts_physical_page_batch(tmp_path: Path) -> None:
     root = tmp_path / "repo"
     shutil.copytree(
