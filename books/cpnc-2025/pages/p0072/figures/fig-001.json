@@ -1,0 +1,14 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0072-001","page_id":"PAGE-CPNC-2025-P0072","type":"assembly_sequence","purpose":"Representar el paso 8: instalación de la tapa superior de 400×320 mm sobre el módulo.",
+  "source":{"book_id":"cpnc-2025","pdf_page":72,"printed_page":50,"region":{"x":0.14,"y":0.24,"width":0.72,"height":0.59},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[{"id":"cabinet-shell","type":"nightstand_shell","geometry":{"primitive":"box_assembly","precision":"approximate"}},{"id":"top","type":"top_panel","geometry":{"primitive":"panel","precision":"exact","dimensions":{"length_mm":400,"width_mm":320}}}],
+  "relationships":[{"from":"top","to":"cabinet-shell","type":"mounted_on_top"}],
+  "measurements":["MEAS-CPNC-2025-P0072-001","MEAS-CPNC-2025-P0072-002"],
+  "annotations":[{"target_entity_id":"top","text":"400×320 mm"},{"target_entity_id":"top","text":"Fuente: 4 tornillos como método principiante; alternativas L metálicas o espigas."}],
+  "camera":{"view":"isometric","projection":"perspective"},
+  "visual_style":{"format":"dibujo técnico 3D","materials":"tablero claro","dimensions":"400 y 320 mm visibles"},
+  "educational_sequence":[{"step":8,"show_entity_ids":["cabinet-shell","top"],"instruction":"Colocar y fijar la tapa superior usando el método seleccionado de la fuente."}],
+  "reconstruction":{"preferred_renderer":"3d","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility":{"summary":"Mesa de noche con una tapa superior rectangular de 400×320 mm ya posicionada."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"No inferir longitud de tornillos; p72 solo especifica cantidad cuatro para el método principal."}
+}

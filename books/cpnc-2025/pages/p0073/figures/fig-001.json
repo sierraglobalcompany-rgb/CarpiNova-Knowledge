@@ -1,0 +1,14 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0073-001","page_id":"PAGE-CPNC-2025-P0073","type":"assembly_sequence","purpose":"Representar la instalación final del frente de gaveta/TAPA MDF de 400×115 mm.",
+  "source":{"book_id":"cpnc-2025","pdf_page":73,"printed_page":51,"region":{"x":0.16,"y":0.25,"width":0.68,"height":0.57},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[{"id":"nightstand","type":"nightstand_assembly","geometry":{"primitive":"box_assembly","precision":"approximate"}},{"id":"drawer-front-cover","type":"drawer_front_cover","geometry":{"primitive":"panel","precision":"exact","dimensions":{"length_mm":400,"width_mm":115}}}],
+  "relationships":[{"from":"drawer-front-cover","to":"nightstand","type":"mounted_on_drawer_front"}],
+  "measurements":["MEAS-CPNC-2025-P0073-001","MEAS-CPNC-2025-P0073-002","MEAS-CPNC-2025-P0073-003","MEAS-CPNC-2025-P0073-004"],
+  "annotations":[{"target_entity_id":"drawer-front-cover","text":"400×115 mm"},{"target_entity_id":"drawer-front-cover","text":"2 tornillos de 1 pulgada desde el interior según la fuente"}],
+  "camera":{"view":"isometric","projection":"perspective"},
+  "visual_style":{"format":"dibujo técnico 3D","drawer_front":"resaltado en tono marrón","dimensions":"400 y 115 mm visibles"},
+  "educational_sequence":[{"step":8,"show_entity_ids":["nightstand","drawer-front-cover"],"instruction":"Medir las holguras reales, posicionar el frente y fijarlo desde el interior según el método de la fuente."}],
+  "reconstruction":{"preferred_renderer":"3d","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility":{"summary":"Mesa de noche terminada con frente superior de gaveta resaltado, de 400×115 mm."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"La fuente repite el número de paso 8 de la página anterior; conservar la duplicidad editorial."}
+}

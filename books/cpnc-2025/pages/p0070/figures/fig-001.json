@@ -1,0 +1,14 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0070-001","page_id":"PAGE-CPNC-2025-P0070","type":"dimensioned_drawing","purpose":"Representar el paso 6: puerta batiente inferior con dos perforaciones de bisagra y montaje en el módulo.",
+  "source":{"book_id":"cpnc-2025","pdf_page":70,"printed_page":48,"region":{"x":0.14,"y":0.30,"width":0.75,"height":0.58},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[{"id":"cabinet-shell","type":"nightstand_shell","geometry":{"primitive":"box_assembly","precision":"approximate"}},{"id":"door","type":"hinged_door","geometry":{"primitive":"panel","precision":"exact","dimensions":{"length_mm":400,"width_mm":255}}},{"id":"hinge-hole-1","type":"hinge_cup_hole","geometry":{"primitive":"circle","precision":"approximate"}},{"id":"hinge-hole-2","type":"hinge_cup_hole","geometry":{"primitive":"circle","precision":"approximate"}}],
+  "relationships":[{"from":"door","to":"cabinet-shell","type":"hinged_to"},{"from":"hinge-hole-1","to":"door","type":"machined_in"},{"from":"hinge-hole-2","to":"door","type":"machined_in"}],
+  "measurements":["MEAS-CPNC-2025-P0070-001","MEAS-CPNC-2025-P0070-002","MEAS-CPNC-2025-P0070-003","MEAS-CPNC-2025-P0070-004","MEAS-CPNC-2025-P0070-005","MEAS-CPNC-2025-P0070-006","MEAS-CPNC-2025-P0070-007"],
+  "annotations":[{"target_entity_id":"door","text":"400×255 mm"},{"target_entity_id":"hinge-hole-1","text":"Perforación de bisagra 35 mm"},{"target_entity_id":"hinge-hole-2","text":"Perforación de bisagra 35 mm"}],
+  "camera":{"view":"isometric","projection":"perspective"},
+  "visual_style":{"format":"dibujo técnico 3D","door_state":"abierta hacia el frente","dimensions":"cotas en mm"},
+  "educational_sequence":[{"step":6,"show_entity_ids":["cabinet-shell","door","hinge-hole-1","hinge-hole-2"],"instruction":"Instalar bisagras en las perforaciones y usar la secuencia de ajuste indicada por la fuente."}],
+  "reconstruction":{"preferred_renderer":"3d","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility":{"summary":"Módulo de mesa de noche con puerta inferior abierta de 400×255 mm y dos perforaciones circulares para bisagras."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"Conservar 8 o 10 cm como alternativas de fuente; no seleccionar una automáticamente."}
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0072-001","page_id":"PAGE-CPNC-2025-P0072","content_type":"procedure",
+    "source_transcription":"8\nProcedemos a realizar el ensamble de la tapa superior de nuestra mesa de noche, la cual se puede ensamblar igual que la base con cuatro tornillos de ensamble, sin embargo, también hay otro método, esquineros “L” metálicos o espigas de madera, las cuales permiten realizar el ensamble sin tornillos a la vista para la parte superior, este ejercicio es principiante por lo tanto se toma como ensamble principal el tornillo, al cual le pueden poner un tapa tornillo adhesivo que cubra las cabezas y quede estéticamente aceptable.",
+    "normalized_text":"Paso 8: ensamblar la tapa superior. Para el ejercicio principiante la fuente toma como método principal cuatro tornillos de ensamble, de forma análoga a la base. Como alternativas menciona esquineros metálicos en L o espigas de madera para evitar tornillos visibles; también propone tapas adhesivas para cubrir las cabezas de tornillo.",
+    "learning_text":"La fuente distingue un método principal sencillo y dos alternativas de acabado más ocultas. En CarpiNova estas opciones se conservan como métodos candidatos y no se asumen equivalentes sin validación posterior.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0072-001"],"source":{"book_id":"cpnc-2025","pdf_page":72,"printed_page":50,"region":{"x":0.08,"y":0.06,"width":0.84,"height":0.18},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["paso-8","tapa-superior","cuatro-tornillos","esquinero-L","espiga-de-madera","tapa-tornillo"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0072-002","page_id":"PAGE-CPNC-2025-P0072","content_type":"table",
+    "source_transcription":"Descripción | Mat | Cant | Largo | Ancho | L1 | L2 | A1 | A2\nTAPA | CH15 | 1 | 400 | 320 | D | - | D | D",
+    "normalized_text":"La tabla registra una TAPA CH15, cantidad 1, de 400×320 mm, con tapacanto D en L1, A1 y A2.",
+    "learning_text":"La tapa superior tiene las mismas dimensiones planas 400×320 mm que la base usada en el módulo.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0072-002"],"source":{"book_id":"cpnc-2025","pdf_page":72,"printed_page":50,"region":{"x":0.19,"y":0.76,"width":0.61,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["tapa","CH15","400x320-mm","tapacanto"]
+  }
+]
