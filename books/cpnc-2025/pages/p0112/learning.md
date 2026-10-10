@@ -4,4 +4,4 @@
 
 ## CONTENT-CPNC-2025-P0112-001
 
-La bisagra determina si la puerta cubre el lateral, lo comparte parcialmente o queda dentro del gabinete.
+La geometría de la bisagra cambia la posición final de la puerta: por fuera cubriendo el lateral, compartiendo parte del lateral o quedando dentro del mueble.
