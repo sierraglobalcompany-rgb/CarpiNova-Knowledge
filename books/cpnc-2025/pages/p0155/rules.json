@@ -1,0 +1,3 @@
+[
+  {"rule_id":"RULE-CPNC-2025-P0155-001","page_id":"PAGE-CPNC-2025-P0155","category":"tool_operation","subject":"ROUTER_PATH_CONTROL","predicate":"source_requires_guide_or_bearing_for_unguided_router_bit_path","value":{"accepted_controls":["guide","bearing_supported_on_guide_template_or_edge"]},"applicability":{"source_scope":"router operation guidance on printed page 133"},"exceptions":["Follow manufacturer instructions and use tooling compatible with the specific router and operation."],"sources":[{"book_id":"cpnc-2025","pdf_page":155,"printed_page":133,"region":{"x":0.03,"y":0.44,"width":0.55,"height":0.40},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],"status":"CANDIDATE"}
+]
