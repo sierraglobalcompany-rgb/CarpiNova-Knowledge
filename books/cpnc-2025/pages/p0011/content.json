@@ -1,0 +1,46 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0011-001",
+    "page_id": "PAGE-CPNC-2025-P0011",
+    "content_type": "material",
+    "source_transcription": "Duratex es sinónimo de innovación y calidad en la fabricación de tableros laminados para mobiliario y diseño interior. Con una amplia variedad de opciones, nuestros productos ofrecen resistencia, versatilidad y acabados que se adaptan a cualquier proyecto.",
+    "normalized_text": "Duratex presenta sus tableros laminados para mobiliario y diseño interior como productos con variedad de opciones, resistencia, versatilidad y distintos acabados.",
+    "learning_text": "La página presenta la oferta de tableros laminados Duratex para muebles e interiores y destaca variedad, resistencia, versatilidad y acabados.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0011-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":11,"printed_page":null,"region":{"x":0.56,"y":0.46,"width":0.41,"height":0.25},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["Duratex","tableros-laminados","mobiliario","diseño-interior"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0011-002",
+    "page_id": "PAGE-CPNC-2025-P0011",
+    "content_type": "material",
+    "source_transcription": "Características principales:\n• 47 diseños en MDP y MDF, con acabados en unicolores, maderas, textiles y piedras.\n• Superficies con acabados mate, brillantes y texturizados para un diseño único.\n• Diseñados para múltiples aplicaciones en carpintería y mobiliario.\n• Tableros RH resistentes a la humedad o para ambientes secos.\n• Tableros MDF RH con protección antitermitas.",
+    "normalized_text": "Características indicadas por la página: 47 diseños en MDP y MDF; acabados unicolores, maderas, textiles y piedras; superficies mate, brillantes y texturizadas; aplicaciones en carpintería y mobiliario; tableros RH; y MDF RH con protección antitermitas.",
+    "learning_text": "La página resume la línea con 47 diseños en MDP/MDF, varias familias de acabado y superficies, opciones RH y una referencia a MDF RH con protección antitermitas. Estas son características declaradas por la fuente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0011-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":11,"printed_page":null,"region":{"x":0.13,"y":0.71,"width":0.83,"height":0.23},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["MDP","MDF","RH","acabados","antitermitas"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0011-003",
+    "page_id": "PAGE-CPNC-2025-P0011",
+    "content_type": "reference",
+    "source_transcription": "Sagano\nViena",
+    "normalized_text": "Los ambientes fotográficos identifican los diseños “Sagano” y “Viena”.",
+    "learning_text": "La página muestra dos ejemplos visuales etiquetados como Sagano y Viena.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0011-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":11,"printed_page":null,"region":{"x":0.13,"y":0.12,"width":0.62,"height":0.59},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["Sagano","Viena","referencia-visual"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0011-004",
+    "page_id": "PAGE-CPNC-2025-P0011",
+    "content_type": "reference",
+    "source_transcription": "CONOCE MÁS AQUÍ",
+    "normalized_text": "Código QR con la indicación “Conoce más aquí”.",
+    "learning_text": "El QR de la página se decodificó como https://duratex.com.co/catalogo/ficha-tecnica-duralam-2/ . Se conserva como referencia externa; su contenido no se incorpora automáticamente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0011-004"],
+    "source": {"book_id":"cpnc-2025","pdf_page":11,"printed_page":null,"region":{"x":0.78,"y":0.13,"width":0.14,"height":0.15},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["QR","Duratex","referencia-externa"]
+  }
+]

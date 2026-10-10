@@ -1,0 +1,11 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0012",
+  "pdf_page": 12,
+  "printed_page": null,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0012-001","kind":"material_reference_photo","meaningful":true,"source_region":{"x":0.05,"y":0.19,"width":0.93,"height":0.32},"exclusion_reason":"Fotografía de ambiente identificada como Vienés. El nombre y contexto se preservan en ContentSpec; regenerar la imagen podría falsear el acabado exacto del producto."},
+    {"inventory_id":"VIS-P0012-002","kind":"qr_reference","meaningful":true,"source_region":{"x":0.84,"y":0.2,"width":0.13,"height":0.13},"exclusion_reason":"El QR se preserva mediante su URL decodificada; no necesita FigureSpec."},
+    {"inventory_id":"DEC-P0012-001","kind":"benefit_icons","meaningful":false,"reason":"Iconos decorativos que acompañan beneficios ya preservados como texto."}
+  ]
+}

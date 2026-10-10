@@ -1,0 +1,10 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0013",
+  "pdf_page": 13,
+  "printed_page": null,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0013-001","kind":"corporate_sustainability_photos","meaningful":true,"source_region":{"x":0.02,"y":0.11,"width":0.95,"height":0.82},"exclusion_reason":"Fotografías de bosque, vivero y personal apoyan el contexto de las declaraciones de sostenibilidad, pero no contienen geometría, proceso o medida que justifique FigureSpec. Las afirmaciones quedan preservadas como texto de fuente."},
+    {"inventory_id":"DEC-P0013-001","kind":"brand_mark","meaningful":false,"reason":"Identidad gráfica “Innovación renovable”."}
+  ]
+}

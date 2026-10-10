@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0013-001",
+    "page_id": "PAGE-CPNC-2025-P0013",
+    "content_type": "reference",
+    "source_transcription": "EN DURATEX TRANSFORMAMOS ESPACIOS Y CUIDAMOS EL PLANETA.\nDuratex INNOVACIÓN RENOVABLE",
+    "normalized_text": "Duratex presenta esta sección bajo el mensaje “Transformamos espacios y cuidamos el planeta” y la identificación “Innovación renovable”.",
+    "learning_text": "Esta página reúne las afirmaciones de sostenibilidad que Duratex presenta sobre sus operaciones.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0013-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":13,"printed_page":null,"region":{"x":0.02,"y":0.01,"width":0.95,"height":0.25},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["Duratex","sostenibilidad","innovación-renovable"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0013-002",
+    "page_id": "PAGE-CPNC-2025-P0013",
+    "content_type": "reference",
+    "source_transcription": "En Duratex, diseñamos con responsabilidad, apostando por prácticas sostenibles que protegen el medio ambiente y benefician a las comunidades.\n• No deforestamos, reforestamos. Protegemos el 30% de nuestros bosques.\n• Optimizamos y recirculamos el agua en nuestros procesos.\n• Generamos energía con Biomasa, reutilizando residuos de madera.\n• Priorizamos la contratación local y desarrollamos comunidades.\n• Garantizamos manejo forestal responsable.",
+    "normalized_text": "La página atribuye a Duratex prácticas de reforestación y protección de bosques, recirculación de agua, generación de energía con biomasa a partir de residuos de madera, contratación local y manejo forestal responsable.",
+    "learning_text": "Como afirmaciones de la propia marca, la página menciona reforestación, protección del 30 % de sus bosques, recirculación de agua, uso de biomasa, contratación local y manejo forestal responsable. Se registran como declaraciones de la fuente, no como verificación externa.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0013-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":13,"printed_page":null,"region":{"x":0.55,"y":0.45,"width":0.42,"height":0.36},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["sostenibilidad","reforestación","agua","biomasa","comunidad","manejo-forestal"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0013-003",
+    "page_id": "PAGE-CPNC-2025-P0013",
+    "content_type": "reference",
+    "source_transcription": "¡Los carpinteros expertos eligen y utilizan Duratex para sus proyectos!",
+    "normalized_text": "La página cierra con el mensaje promocional: “Los carpinteros expertos eligen y utilizan Duratex para sus proyectos”.",
+    "learning_text": "El cierre es un mensaje promocional de Duratex y no una regla técnica.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0013-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":13,"printed_page":null,"region":{"x":0.55,"y":0.82,"width":0.42,"height":0.12},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["Duratex","mensaje-promocional"]
+  }
+]

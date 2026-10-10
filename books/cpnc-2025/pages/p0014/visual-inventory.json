@@ -1,0 +1,11 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0014",
+  "pdf_page": 14,
+  "printed_page": null,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0014-001","kind":"promotional_portrait","meaningful":true,"source_region":{"x":0.48,"y":0.11,"width":0.5,"height":0.82},"exclusion_reason":"Retrato promocional de un carpintero con indumentaria Club Duratex. No contiene proceso, medida ni geometría técnica y no necesita FigureSpec."},
+    {"inventory_id":"VIS-P0014-002","kind":"qr_reference","meaningful":true,"source_region":{"x":0.13,"y":0.64,"width":0.17,"height":0.13},"exclusion_reason":"El QR se conserva mediante la URL decodificada en ContentSpec; no necesita FigureSpec."},
+    {"inventory_id":"DEC-P0014-001","kind":"brand_logo","meaningful":false,"reason":"Logotipo de Club Duratex."}
+  ]
+}
