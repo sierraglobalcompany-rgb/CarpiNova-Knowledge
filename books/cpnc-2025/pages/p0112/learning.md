@@ -4,4 +4,4 @@
 
 ## CONTENT-CPNC-2025-P0112-001
 
-La geometría de la bisagra cambia la posición final de la puerta: por fuera cubriendo el lateral, compartiendo parte del lateral o quedando dentro del mueble.
+Esta lámina compara de frente y en sección cómo queda la puerta con cada bisagra: recta = cubre el lateral; semirrecta = cubre parcialmente; curva = queda dentro del gabinete.

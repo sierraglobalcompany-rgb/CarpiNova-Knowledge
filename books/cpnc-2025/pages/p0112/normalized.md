@@ -4,4 +4,4 @@
 
 ## CONTENT-CPNC-2025-P0112-001
 
-El diagrama compara tres configuraciones de bisagra: recta con cobertura total del lateral, semi-recta con cobertura parcial y curva con la puerta embebida dentro del gabinete.
+Comparación visual de tres bisagras de cazoleta: recta para cobertura total, semirrecta para cobertura parcial y curva para puerta embebida.

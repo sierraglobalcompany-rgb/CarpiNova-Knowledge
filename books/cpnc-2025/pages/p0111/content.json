@@ -2,10 +2,10 @@
   {
     "content_id": "CONTENT-CPNC-2025-P0111-001",
     "page_id": "PAGE-CPNC-2025-P0111",
-    "content_type": "hardware",
-    "source_transcription": "Las bisagras para puertas de gabinete son un elemento fundamental que permite su apertura. Actualmente, las más comunes son las bisagras de cazoleta, especialmente las de 35 milímetros, que es el diámetro de la perforación necesaria en la puerta para incrustarlas correctamente. Estas bisagras tienen tres presentaciones básicas: bisagra recta o parche, bisagra semi curva o semi parche y bisagra curva o interna.",
-    "normalized_text": "La fuente presenta bisagras de cazoleta de 35 mm y tres configuraciones básicas: recta/parche, semi curva/semi parche y curva/interna.",
-    "learning_text": "La forma de la bisagra determina cómo queda la puerta respecto al lateral del gabinete: cubriendo, compartiendo o quedando embebida dentro del mueble.",
+    "content_type": "recommendation",
+    "source_transcription": "En conclusión, muchachos, existen muchas formas de ensamblar. Lo importante es conocer las opciones disponibles y, según tus herramientas, presupuesto y objetivos de producción, escoger el método que más se ajuste a tu proyecto. Todos los métodos son válidos, siempre que se apliquen de forma correcta.",
+    "normalized_text": "Existen muchas formas de ensamblar. La elección debe considerar herramientas, presupuesto y objetivos de producción. Los métodos son válidos cuando se aplican correctamente.",
+    "learning_text": "No hay un único sistema de ensamble para todos los proyectos. Elige según las herramientas que tienes, tu presupuesto y el resultado que necesitas.",
     "derived_from_content_ids": [
       "CONTENT-CPNC-2025-P0111-001"
     ],
@@ -17,7 +17,7 @@
         "x": 0.06,
         "y": 0.1,
         "width": 0.88,
-        "height": 0.34
+        "height": 0.095
       },
       "extraction": {
         "method": "visual",
@@ -26,20 +26,17 @@
       }
     },
     "tags": [
-      "bisagra-de-cazoleta",
-      "35-mm",
-      "recta",
-      "semi-curva",
-      "curva"
+      "ensamble",
+      "selección"
     ]
   },
   {
     "content_id": "CONTENT-CPNC-2025-P0111-002",
     "page_id": "PAGE-CPNC-2025-P0111",
-    "content_type": "dimension",
-    "source_transcription": "Sistema 37/32. Todas estas bisagras se instalan siguiendo una medida estandarizada: desde el borde del mueble hacia adentro, los tornillos deben ubicarse a 37 milímetros. En el caso de las bisagras internas, se debe sumar el espesor de la puerta. Las perforaciones para fijar la base de las bisagras siguen una separación de 32 milímetros entre centros.",
-    "normalized_text": "Para la base de bisagras, la fuente aplica 37 mm desde el borde y 32 mm entre centros; en bisagras internas indica sumar el espesor de la puerta.",
-    "learning_text": "La bisagra reutiliza el sistema 37/32: 37 mm como referencia de borde y 32 mm entre centros. La excepción indicada para bisagra interna queda como regla candidata.",
+    "content_type": "hardware",
+    "source_transcription": "Las bisagras para puertas de gabinete son un elemento fundamental que permite su apertura, ya sea lateral o en posición batiente. Actualmente, las más comunes son las bisagras de cazoleta, especialmente las de 35 milímetros, que es el diámetro de la perforación necesaria en la puerta para incrustarlas correctamente.",
+    "normalized_text": "Las bisagras permiten la apertura de puertas de gabinete. El texto destaca las bisagras de cazoleta de 35 mm, valor que corresponde al diámetro de la perforación en la puerta.",
+    "learning_text": "Una bisagra de cazoleta necesita un alojamiento circular en la puerta. En este libro se trabaja especialmente con la cazoleta de 35 mm.",
     "derived_from_content_ids": [
       "CONTENT-CPNC-2025-P0111-002"
     ],
@@ -49,7 +46,102 @@
       "printed_page": 89,
       "region": {
         "x": 0.06,
-        "y": 0.53,
+        "y": 0.21,
+        "width": 0.88,
+        "height": 0.135
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "bisagra",
+      "cazoleta",
+      "35 mm"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0111-003",
+    "page_id": "PAGE-CPNC-2025-P0111",
+    "content_type": "hardware",
+    "source_transcription": "Estas bisagras tienen tres presentaciones básicas: 1. Bisagra recta de cazoleta (también llamada de parche): permite una cobertura total del lateral del mueble. 2. Bisagra semi curva o semi parche: tiene un leve codo, lo que hace que la puerta cubra solo la mitad del lateral del mueble. Se usa cuando se instalan dos puertas que abren desde el mismo lateral. 3. Bisagra curva o interna: es la que permite que la puerta quede totalmente dentro del mueble, dejando visibles los bordes del gabinete.",
+    "normalized_text": "Hay tres configuraciones básicas: recta o de parche para cobertura total; semicurva o semiparche para cobertura parcial y compartir lateral; curva o interna para una puerta embebida dentro del mueble.",
+    "learning_text": "Piensa en la posición de la puerta respecto al lateral: la recta cubre todo el canto, la semicurva cubre parte y la curva deja la puerta metida dentro del gabinete.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0111-003"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.06,
+        "y": 0.345,
+        "width": 0.88,
+        "height": 0.205
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "bisagra recta",
+      "bisagra semicurva",
+      "bisagra interna"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0111-004",
+    "page_id": "PAGE-CPNC-2025-P0111",
+    "content_type": "rule",
+    "source_transcription": "Sistema 37/32. Todas estas bisagras se instalan siguiendo una medida estandarizada: desde el borde del mueble hacia adentro, los tornillos deben ubicarse a 37 milímetros. En el caso de las bisagras internas, se debe sumar el espesor de la puerta, ya que esta también quedará dentro del mueble. Las perforaciones para fijar la base de las bisagras siguen una separación de 32 milímetros entre centros.",
+    "normalized_text": "En el sistema 37/32, los tornillos se ubican a 37 mm desde el borde hacia adentro y las perforaciones de la base se separan 32 mm entre centros. Para una bisagra interna, el texto indica sumar el espesor de la puerta al desplazamiento inicial.",
+    "learning_text": "El sistema 37/32 da dos referencias para repetir instalaciones: 37 mm desde el borde para ubicar la línea de fijación y 32 mm entre centros de perforaciones. Si la puerta es interna, el libro indica añadir su espesor al desplazamiento.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0111-004"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.06,
+        "y": 0.555,
+        "width": 0.88,
+        "height": 0.16
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "sistema 37/32",
+      "bisagras"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0111-005",
+    "page_id": "PAGE-CPNC-2025-P0111",
+    "content_type": "hardware",
+    "source_transcription": "Las bisagras de cazoleta vienen en diversas versiones: con o sin amortiguación (soft close o push to open), con sistema clip-on para fácil instalación y desmontaje, y en materiales como acero inoxidable o aleaciones de alta resistencia. También varían según su ángulo de apertura: se encuentran de 110, 130 o hasta 170.",
+    "normalized_text": "Las bisagras de cazoleta pueden incluir amortiguación, push-to-open o clip-on, usar distintos materiales y ofrecer diferentes ángulos de apertura, como 110°, 130° y hasta 170°.",
+    "learning_text": "Además del tipo recta/semicurva/curva, una bisagra puede cambiar por su sistema de cierre, montaje, material y ángulo de apertura. El ángulo disponible importa cuando necesitas mayor acceso.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0111-005"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.06,
+        "y": 0.745,
         "width": 0.88,
         "height": 0.18
       },
@@ -60,45 +152,10 @@
       }
     },
     "tags": [
-      "sistema-37-32",
-      "bisagras",
-      "37-mm",
-      "32-mm"
-    ]
-  },
-  {
-    "content_id": "CONTENT-CPNC-2025-P0111-003",
-    "page_id": "PAGE-CPNC-2025-P0111",
-    "content_type": "hardware",
-    "source_transcription": "Las bisagras de cazoleta vienen en diversas versiones: con o sin amortiguación (soft close o push to open), con sistema clip-on para fácil instalación y desmontaje, y en materiales como acero inoxidable o aleaciones de alta resistencia. También varían según su ángulo de apertura: se encuentran de 110, 130 o hasta 170.",
-    "normalized_text": "La fuente menciona variantes con amortiguación, push to open, clip-on, diferentes materiales y ángulos de apertura de 110°, 130° y hasta 170°.",
-    "learning_text": "Además del tipo geométrico, una bisagra puede variar por mecanismo, montaje, material y ángulo de apertura.",
-    "derived_from_content_ids": [
-      "CONTENT-CPNC-2025-P0111-003"
-    ],
-    "source": {
-      "book_id": "cpnc-2025",
-      "pdf_page": 111,
-      "printed_page": 89,
-      "region": {
-        "x": 0.06,
-        "y": 0.75,
-        "width": 0.88,
-        "height": 0.2
-      },
-      "extraction": {
-        "method": "visual",
-        "confidence": 0.99,
-        "review_status": "VISUALLY_VERIFIED"
-      }
-    },
-    "tags": [
-      "soft-close",
-      "push-to-open",
-      "clip-on",
-      "110-deg",
-      "130-deg",
-      "170-deg"
+      "ángulo de apertura",
+      "soft close",
+      "push to open",
+      "clip-on"
     ]
   }
 ]

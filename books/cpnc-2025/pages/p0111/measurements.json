@@ -1,8 +1,182 @@
 [
-  {"measurement_id":"MEAS-CPNC-2025-P0111-001","page_id":"PAGE-CPNC-2025-P0111","kind":"cup_hinge_bore_diameter","value":35,"unit":"mm","applies_to":"perforación de cazoleta en puerta","status":"VISUALLY_VERIFIED","source":{"book_id":"cpnc-2025","pdf_page":111,"printed_page":89,"region":{"x":0.08,"y":0.18,"width":0.84,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"confidence":0.99},
-  {"measurement_id":"MEAS-CPNC-2025-P0111-002","page_id":"PAGE-CPNC-2025-P0111","kind":"hinge_base_edge_offset","value":37,"unit":"mm","applies_to":"tornillos/base de bisagra desde borde según la fuente","status":"VISUALLY_VERIFIED","source":{"book_id":"cpnc-2025","pdf_page":111,"printed_page":89,"region":{"x":0.08,"y":0.56,"width":0.84,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"confidence":0.99},
-  {"measurement_id":"MEAS-CPNC-2025-P0111-003","page_id":"PAGE-CPNC-2025-P0111","kind":"hinge_base_hole_spacing","value":32,"unit":"mm","applies_to":"separación entre centros de perforaciones de base de bisagra","status":"VISUALLY_VERIFIED","source":{"book_id":"cpnc-2025","pdf_page":111,"printed_page":89,"region":{"x":0.08,"y":0.64,"width":0.84,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"confidence":0.99},
-  {"measurement_id":"MEAS-CPNC-2025-P0111-004","page_id":"PAGE-CPNC-2025-P0111","kind":"hinge_opening_angle_example","value":110,"unit":"deg","applies_to":"bisagra de cazoleta","status":"VISUALLY_VERIFIED","source":{"book_id":"cpnc-2025","pdf_page":111,"printed_page":89,"region":{"x":0.08,"y":0.85,"width":0.84,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"confidence":0.99},
-  {"measurement_id":"MEAS-CPNC-2025-P0111-005","page_id":"PAGE-CPNC-2025-P0111","kind":"hinge_opening_angle_example","value":130,"unit":"deg","applies_to":"bisagra de cazoleta","status":"VISUALLY_VERIFIED","source":{"book_id":"cpnc-2025","pdf_page":111,"printed_page":89,"region":{"x":0.08,"y":0.85,"width":0.84,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"confidence":0.99},
-  {"measurement_id":"MEAS-CPNC-2025-P0111-006","page_id":"PAGE-CPNC-2025-P0111","kind":"hinge_opening_angle_example","value":170,"unit":"deg","applies_to":"bisagra de cazoleta","status":"VISUALLY_VERIFIED","source":{"book_id":"cpnc-2025","pdf_page":111,"printed_page":89,"region":{"x":0.08,"y":0.85,"width":0.84,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"confidence":0.99}
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0111-001",
+    "page_id": "PAGE-CPNC-2025-P0111",
+    "kind": "diameter",
+    "value": 35,
+    "unit": "mm",
+    "applies_to": "hinge.cup_hole",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.06,
+        "y": 0.25,
+        "width": 0.88,
+        "height": 0.09
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 89."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0111-002",
+    "page_id": "PAGE-CPNC-2025-P0111",
+    "kind": "offset",
+    "value": 37,
+    "unit": "mm",
+    "applies_to": "hinge.base_fastener_from_cabinet_edge",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.06,
+        "y": 0.575,
+        "width": 0.88,
+        "height": 0.1
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 89."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0111-003",
+    "page_id": "PAGE-CPNC-2025-P0111",
+    "kind": "center_spacing",
+    "value": 32,
+    "unit": "mm",
+    "applies_to": "hinge.base_holes",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.06,
+        "y": 0.64,
+        "width": 0.88,
+        "height": 0.075
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 89."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0111-004",
+    "page_id": "PAGE-CPNC-2025-P0111",
+    "kind": "opening_angle",
+    "value": 110,
+    "unit": "deg",
+    "applies_to": "hinge.opening_angle_option",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.06,
+        "y": 0.83,
+        "width": 0.88,
+        "height": 0.07
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 89."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0111-005",
+    "page_id": "PAGE-CPNC-2025-P0111",
+    "kind": "opening_angle",
+    "value": 130,
+    "unit": "deg",
+    "applies_to": "hinge.opening_angle_option",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.06,
+        "y": 0.83,
+        "width": 0.88,
+        "height": 0.07
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 89."
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0111-006",
+    "page_id": "PAGE-CPNC-2025-P0111",
+    "kind": "opening_angle",
+    "value": 170,
+    "unit": "deg",
+    "applies_to": "hinge.opening_angle_option_max_example",
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 111,
+      "printed_page": 89,
+      "region": {
+        "x": 0.06,
+        "y": 0.83,
+        "width": 0.88,
+        "height": 0.07
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "confidence": 0.99,
+    "status": "VISUALLY_VERIFIED",
+    "visual_verification": {
+      "method": "visual_source_page",
+      "evidence": "Verificación visual directa en la página impresa 89."
+    }
+  }
 ]
