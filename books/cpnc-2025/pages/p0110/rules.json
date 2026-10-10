@@ -1,4 +1,155 @@
 [
-  {"rule_id":"RULE-CPNC-2025-P0110-001","page_id":"PAGE-CPNC-2025-P0110","category":"joint_selection","subject":"hidden_joinery","predicate":"improves_visible_finish","value":true,"unit":null,"applicability":{"systems":["pocket_hole","dowel","minifix"]},"exceptions":[],"sources":[{"book_id":"cpnc-2025","pdf_page":110,"printed_page":88,"region":{"x":0.06,"y":0.56,"width":0.88,"height":0.16},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],"status":"CANDIDATE"},
-  {"rule_id":"RULE-CPNC-2025-P0110-002","page_id":"PAGE-CPNC-2025-P0110","category":"joint_geometry","subject":"corner_bracket_or_furniture_staple","predicate":"joins_at_angle","value":90,"unit":"deg","applicability":{},"exceptions":[],"sources":[{"book_id":"cpnc-2025","pdf_page":110,"printed_page":88,"region":{"x":0.06,"y":0.91,"width":0.88,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],"status":"CANDIDATE"}
+  {
+    "rule_id": "RULE-CPNC-2025-P0110-001",
+    "page_id": "PAGE-CPNC-2025-P0110",
+    "category": "assembly",
+    "subject": "visible_screw",
+    "predicate": "may_be_covered_with",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 110,
+        "printed_page": 88,
+        "region": {
+          "x": 0.06,
+          "y": 0.575,
+          "width": 0.88,
+          "height": 0.09
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": "adhesive_screw_cap",
+    "unit": null
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0110-002",
+    "page_id": "PAGE-CPNC-2025-P0110",
+    "category": "assembly",
+    "subject": "hidden_fasteners",
+    "predicate": "improve_visual_finish",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 110,
+        "printed_page": 88,
+        "region": {
+          "x": 0.06,
+          "y": 0.575,
+          "width": 0.88,
+          "height": 0.09
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": true,
+    "unit": null
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0110-003",
+    "page_id": "PAGE-CPNC-2025-P0110",
+    "category": "adhesive",
+    "subject": "solid_wood",
+    "predicate": "can_be_assembled_with",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 110,
+        "printed_page": 88,
+        "region": {
+          "x": 0.06,
+          "y": 0.745,
+          "width": 0.88,
+          "height": 0.145
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": "PVA",
+    "unit": null
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0110-004",
+    "page_id": "PAGE-CPNC-2025-P0110",
+    "category": "adhesive",
+    "subject": "particle_board",
+    "predicate": "supported_adhesive_types",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 110,
+        "printed_page": 88,
+        "region": {
+          "x": 0.06,
+          "y": 0.745,
+          "width": 0.88,
+          "height": 0.145
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": [
+      "instant",
+      "PU"
+    ],
+    "unit": null
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0110-005",
+    "page_id": "PAGE-CPNC-2025-P0110",
+    "category": "assembly",
+    "subject": "metal_corner_or_furniture_staple",
+    "predicate": "joins_at_angle",
+    "applicability": {},
+    "exceptions": [],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 110,
+        "printed_page": 88,
+        "region": {
+          "x": 0.06,
+          "y": 0.885,
+          "width": 0.88,
+          "height": 0.075
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE",
+    "value": 90,
+    "unit": "deg"
+  }
 ]

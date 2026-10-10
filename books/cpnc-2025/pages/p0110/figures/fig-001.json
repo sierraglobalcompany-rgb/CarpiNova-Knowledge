@@ -1,1 +1,178 @@
-{"figure_id":"FIG-CPNC-2025-P0110-001","page_id":"PAGE-CPNC-2025-P0110","type":"technical_diagram","purpose":"Recrear la comparación visual de sistemas de ensamble y adhesivos.","source":{"book_id":"cpnc-2025","pdf_page":110,"printed_page":88,"region":{"x":0.05,"y":0.08,"width":0.90,"height":0.45},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"entities":[{"id":"screw","type":"joint_system","description":"Tornillo tradicional para madera.","geometry":{"precision":"unknown"}},{"id":"dowel","type":"joint_system","description":"Tarugo o espiga con adhesivo PVA.","geometry":{"precision":"unknown"}},{"id":"minifix","type":"joint_system","description":"Minifix interno.","geometry":{"precision":"unknown"}},{"id":"pva","type":"adhesive","description":"PVA.","geometry":{"precision":"unknown"}},{"id":"pu","type":"adhesive","description":"PU.","geometry":{"precision":"unknown"}},{"id":"instant","type":"adhesive","description":"Adhesivo instantáneo.","geometry":{"precision":"unknown"}},{"id":"corner","type":"joint_system","description":"Esquinero metálico para unión en 90°.","geometry":{"precision":"unknown"}}],"relationships":[{"from":"dowel","to":"pva","type":"uses"},{"from":"corner","to":"screw","type":"alternative_joint_system"}],"measurements":["MEAS-CPNC-2025-P0110-001"],"annotations":[{"target_entity_id":"screw","text":"Tornillo tradicional para madera"},{"target_entity_id":"dowel","text":"Tarugo o espiga con adhesivo PVA"},{"target_entity_id":"minifix","text":"Minifix"},{"target_entity_id":"pva","text":"PVA"},{"target_entity_id":"pu","text":"PU"},{"target_entity_id":"instant","text":"Adhesivo instantáneo"},{"target_entity_id":"corner","text":"Esquinero metálico unión en 90°"}],"camera":{"view":"front","projection":"orthographic"},"visual_style":{"format":"infografía técnica","layout":"sistemas distribuidos alrededor de personaje instructor","background":"crema","illustration":"dibujos simplificados de madera y herrajes"},"educational_sequence":[{"step":1,"show_entity_ids":["screw","dowel","minifix"],"instruction":"Comparar tres sistemas mecánicos/ocultos."},{"step":2,"show_entity_ids":["pva","pu","instant"],"instruction":"Introducir adhesivos."},{"step":3,"show_entity_ids":["corner"],"instruction":"Mostrar unión a 90° con esquinero."}],"reconstruction":{"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},"accessibility":{"summary":"Infografía con tornillo, tarugo con PVA, minifix, adhesivos PVA/PU/instantáneo y esquinero metálico a 90°."},"review":{"status":"VISUALLY_VERIFIED","notes":"Conservar etiquetas; ilustración puede reinterpretarse."}}
+{
+  "figure_id": "FIG-CPNC-2025-P0110-001",
+  "page_id": "PAGE-CPNC-2025-P0110",
+  "type": "illustration",
+  "purpose": "Comparar sistemas y productos usados para ensamblar muebles.",
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 110,
+    "printed_page": 88,
+    "region": {
+      "x": 0.0612,
+      "y": 0.0984,
+      "width": 0.8783,
+      "height": 0.4457
+    },
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
+  "entities": [
+    {
+      "id": "wood-screw",
+      "type": "wood_screw",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "wood-dowel",
+      "type": "wood_dowel",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "pva-glue",
+      "type": "adhesive",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "minifix",
+      "type": "minifix_connector",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "pu-glue",
+      "type": "adhesive",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "instant-glue",
+      "type": "adhesive",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "metal-corner",
+      "type": "metal_bracket",
+      "geometry": {
+        "precision": "approximate"
+      }
+    },
+    {
+      "id": "instructor",
+      "type": "illustrated_person",
+      "geometry": {
+        "precision": "unknown"
+      }
+    },
+    {
+      "id": "panel-joint",
+      "type": "right_angle_panel_joint",
+      "geometry": {
+        "precision": "approximate"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "from": "wood-dowel",
+      "to": "pva-glue",
+      "type": "used_with"
+    },
+    {
+      "from": "metal-corner",
+      "to": "panel-joint",
+      "type": "supports_90_degree_joint"
+    }
+  ],
+  "measurements": [
+    "MEAS-CPNC-2025-P0110-001"
+  ],
+  "annotations": [
+    {
+      "text": "Tornillo tradicional para madera",
+      "entity_id": "wood-screw"
+    },
+    {
+      "text": "Tarugo o espiga con adhesivo PVA",
+      "entity_id": "wood-dowel"
+    },
+    {
+      "text": "Minifix",
+      "entity_id": "minifix"
+    },
+    {
+      "text": "PVA",
+      "entity_id": "pva-glue"
+    },
+    {
+      "text": "PU",
+      "entity_id": "pu-glue"
+    },
+    {
+      "text": "Adhesivo instantáneo",
+      "entity_id": "instant-glue"
+    },
+    {
+      "text": "Esquinero metálico unión en 90°",
+      "entity_id": "metal-corner"
+    }
+  ],
+  "layers": [],
+  "camera": {},
+  "visual_style": {
+    "source_style": "educational_cartoon",
+    "background": "warm_beige",
+    "labels": "black"
+  },
+  "educational_sequence": [
+    {
+      "step": 1,
+      "show": [
+        "wood-screw",
+        "wood-dowel",
+        "minifix"
+      ],
+      "caption": "Comparar ensambles mecánicos."
+    },
+    {
+      "step": 2,
+      "show": [
+        "pva-glue",
+        "pu-glue",
+        "instant-glue"
+      ],
+      "caption": "Comparar adhesivos."
+    },
+    {
+      "step": 3,
+      "show": [
+        "metal-corner"
+      ],
+      "highlight_measurement": "MEAS-CPNC-2025-P0110-001"
+    }
+  ],
+  "reconstruction": {
+    "preferred_renderer": "hybrid",
+    "deterministic_required": true,
+    "generative_image_allowed": true
+  },
+  "accessibility": {
+    "summary": "Infografía con tornillo, tarugo con PVA, Minifix, adhesivos PVA/PU/instantáneo y esquinero metálico a 90°."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Inventario visual realizado sobre render de la página fuente."
+  }
+}

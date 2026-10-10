@@ -4,16 +4,16 @@
 
 ## CONTENT-CPNC-2025-P0110-001
 
-La infografía compara tornillo, tarugo con PVA, minifix, adhesivos y esquinero metálico.
+El tipo de ensamble también afecta el resultado estético. Si un tornillo queda visible, puede cubrirse con un tapatornillo adhesivo. Los tornillos ocultos, los tarugos y los sistemas Minifix permiten un acabado más limpio.
 
 ## CONTENT-CPNC-2025-P0110-002
 
-La fuente relaciona el sistema de unión con el acabado visible.
+Existen tornillos especializados para MDF o aglomerado, como los XPAX, con elementos de avellanado en la punta y la cabeza. Permiten perforar y avellanar en un solo paso y ayudan a evitar la rotura de fibras del material.
 
 ## CONTENT-CPNC-2025-P0110-003
 
-La fuente distingue PVA, adhesivos instantáneos y PU.
+La madera sólida puede ensamblarse con adhesivos blancos tipo PVA. “Colbón” es una marca comercial. El texto distingue PVA tipo I, II, III y IV según resistencia, incluyendo opciones para ambientes húmedos. Para tableros aglomerados también menciona adhesivos instantáneos y adhesivos de poliuretano (PU).
 
 ## CONTENT-CPNC-2025-P0110-004
 
-Esquineros y grapas aparecen como alternativas para uniones a 90°.
+También se mencionan esquineros metálicos y grapas para muebles, útiles para uniones de piezas a 90°, especialmente en estructuras como camas. Permiten resolver uniones sin tornillos visibles o guías especializadas.
