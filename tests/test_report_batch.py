@@ -85,6 +85,12 @@ def test_batch_012_company_origin_story_is_accepted() -> None:
     assert report["counts"]["pages"] == 6
 
 
+def test_batch_013_carpentry_definition_is_accepted() -> None:
+    report = build_batch_report(ROOT, "batch-013")
+    assert report["result"] == "GO"
+    assert report["counts"]["pages"] == 4
+
+
 def test_generic_batch_report_accepts_physical_page_batch(tmp_path: Path) -> None:
     root = tmp_path / "repo"
     shutil.copytree(

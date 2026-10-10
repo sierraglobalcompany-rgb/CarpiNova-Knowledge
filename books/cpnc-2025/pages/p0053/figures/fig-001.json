@@ -1,0 +1,36 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0053-001",
+  "page_id":"PAGE-CPNC-2025-P0053",
+  "type":"process_diagram",
+  "purpose":"Recrear la infografía de cuatro hitos de la historia del autor como una secuencia reutilizable en módulos educativos.",
+  "source":{"book_id":"cpnc-2025","pdf_page":53,"printed_page":31,"region":{"x":0.05,"y":0.17,"width":0.90,"height":0.68},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"panel-1","type":"food_sales_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.00,"y":0.00,"width":0.49,"height":0.49}},"description":"Dos personas atendiendo una ventana de venta de empanadas; una sostiene producto y hay un recipiente de cocina."},
+    {"id":"panel-2","type":"textile_printing_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.51,"y":0.00,"width":0.49,"height":0.49}},"description":"Dos adultos y un niño junto a una prensa o equipo de estampación y prendas dobladas."},
+    {"id":"panel-3","type":"tv_mount_installation_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.00,"y":0.51,"width":0.49,"height":0.49}},"description":"El autor y su tío Martín con taladro, martillo y soporte de televisor; al fondo aparecen cajas rotuladas HECHO EN CHINA."},
+    {"id":"panel-4","type":"remote_carpentry_class_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.51,"y":0.51,"width":0.49,"height":0.49}},"description":"Instructor frente a un portátil con videollamada y herramientas de carpintería en la pared."}
+  ],
+  "relationships":[
+    {"from":"panel-1","to":"panel-2","type":"precedes"},
+    {"from":"panel-2","to":"panel-3","type":"precedes"},
+    {"from":"panel-3","to":"panel-4","type":"precedes"}
+  ],
+  "measurements":[],
+  "annotations":[
+    {"target_entity_id":"panel-1","text":"Vendiendo empanadas"},
+    {"target_entity_id":"panel-2","text":"Estampando camisetas"},
+    {"target_entity_id":"panel-3","text":"Instalando soportes con mi tío Martín"},
+    {"target_entity_id":"panel-4","text":"Clases de carpintería desde casa durante la pandemia"}
+  ],
+  "camera":{"view":"front","projection":"orthographic"},
+  "visual_style":{"format":"historieta educativa","layout":"cuadrícula 2 columnas x 2 filas","palette":"tonos cálidos naranja, crema y marrón","linework":"contornos oscuros","caption_style":"rótulos grandes sobre cada escena"},
+  "educational_sequence":[
+    {"step":1,"show_entity_ids":["panel-1"],"instruction":"Mostrar el primer negocio de venta de empanadas."},
+    {"step":2,"show_entity_ids":["panel-2"],"instruction":"Mostrar la etapa de estampación textil."},
+    {"step":3,"show_entity_ids":["panel-3"],"instruction":"Mostrar la transición hacia instalaciones con el tío Martín."},
+    {"step":4,"show_entity_ids":["panel-4"],"instruction":"Cerrar con las clases de carpintería remotas durante la pandemia."}
+  ],
+  "reconstruction":{"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
+  "accessibility":{"summary":"Cuatro escenas: venta de empanadas, estampación de camisetas, instalación de soportes con el tío Martín y clases de carpintería desde casa durante la pandemia."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"Los cuatro rótulos y el orden cronológico son obligatorios; personajes y ambientación pueden reinterpretarse."}
+}
