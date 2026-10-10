@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0121",
+  "pdf_page": 121,
+  "printed_page": 99,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0121-001",
+      "kind": "technical_installation_guide",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0121-001",
+      "source_region": {"x": 0.13, "y": 0.25, "width": 0.72, "height": 0.67},
+      "reason": "La página contiene la guía gráfica de instalación para brazo grande y brazo mini; la disposición y las relaciones geométricas son necesarias para una futura recreación didáctica."
+    }
+  ]
+}
