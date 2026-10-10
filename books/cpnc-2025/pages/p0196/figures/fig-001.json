@@ -1,0 +1,20 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0196-001",
+  "page_id": "PAGE-CPNC-2025-P0196",
+  "type": "dimensioned_drawing",
+  "purpose": "Recrear la referencia visual de alturas, separaciones y espacio de tránsito de una cocina.",
+  "source": {"book_id":"cpnc-2025","pdf_page":196,"printed_page":174,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"island","type":"kitchen_island","geometry":{"precision":"approximate"}},
+    {"id":"pendant","type":"pendant_light","geometry":{"precision":"approximate"}},
+    {"id":"base-cabinet","type":"base_cabinet","geometry":{"precision":"approximate"}},
+    {"id":"upper-cabinet","type":"upper_cabinet","geometry":{"precision":"approximate"}},
+    {"id":"person","type":"human_scale_reference","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"pendant","to":"island","type":"clearance_dimension"},{"from":"island","to":"base-cabinet","type":"transit_space"},{"from":"upper-cabinet","to":"base-cabinet","type":"vertical_clearance"}],
+  "measurements": ["MEAS-CPNC-2025-P0196-001","MEAS-CPNC-2025-P0196-002","MEAS-CPNC-2025-P0196-003","MEAS-CPNC-2025-P0196-004","MEAS-CPNC-2025-P0196-005","MEAS-CPNC-2025-P0196-006","MEAS-CPNC-2025-P0196-007"],
+  "annotations": [{"target_entity_id":"island","text":"Isla"},{"target_entity_id":"base-cabinet","text":"Mueble Bajo"}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Referencia ilustrada con isla, luminaria, mueble bajo y mueble alto, acompañada de cotas estándar de cocina."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La cota de 25 cm se conserva en la transcripción pero no se estructura por ambigüedad visual de su aplicación exacta."}
+}

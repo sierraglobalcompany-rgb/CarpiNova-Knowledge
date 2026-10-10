@@ -1,0 +1,19 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0197-001",
+  "page_id": "PAGE-CPNC-2025-P0197",
+  "type": "dimensioned_drawing",
+  "purpose": "Recrear la perspectiva acotada de una cocina en L y sus dimensiones estándar visibles.",
+  "source": {"book_id":"cpnc-2025","pdf_page":197,"printed_page":175,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"upper-cabinet-run","type":"upper_cabinet_run","geometry":{"precision":"approximate"}},
+    {"id":"base-cabinet-run","type":"base_cabinet_run","geometry":{"precision":"approximate"}},
+    {"id":"worktop","type":"worktop","geometry":{"precision":"approximate"}},
+    {"id":"rebanco","type":"toe_kick_or_rebanco","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"upper-cabinet-run","to":"worktop","type":"vertical_clearance"},{"from":"worktop","to":"base-cabinet-run","type":"supported_by"},{"from":"base-cabinet-run","to":"rebanco","type":"rests_on"}],
+  "measurements": ["MEAS-CPNC-2025-P0197-001","MEAS-CPNC-2025-P0197-002","MEAS-CPNC-2025-P0197-003","MEAS-CPNC-2025-P0197-004","MEAS-CPNC-2025-P0197-005","MEAS-CPNC-2025-P0197-006","MEAS-CPNC-2025-P0197-007"],
+  "annotations": [{"target_entity_id":"upper-cabinet-run","text":"Mueble alto"},{"target_entity_id":"base-cabinet-run","text":"Mueble bajo"},{"target_entity_id":"worktop","text":"Mesón"},{"target_entity_id":"rebanco","text":"Rebanco"}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Perspectiva de cocina en L con cotas del mueble alto, separación sobre el mesón, profundidad y altura del mueble bajo y rebanco."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La cota de 2 cm se conserva en la transcripción pero no se estructura porque su aplicación exacta no es inequívoca en la lámina."}
+}
