@@ -4,4 +4,4 @@
 
 ## CONTENT-CPNC-2025-P0109-001
 
-Contenido comercial/editorial; no se interpreta como conocimiento técnico.
+Contenido comercial/editorial de la fuente. Se conserva por trazabilidad del libro, pero no se interpreta como conocimiento técnico ni recomendación independiente.
