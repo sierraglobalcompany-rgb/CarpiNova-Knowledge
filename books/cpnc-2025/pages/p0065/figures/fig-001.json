@@ -1,0 +1,18 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0065-001","page_id":"PAGE-CPNC-2025-P0065","type":"assembly_sequence","purpose":"Representar el paso 1: unión de una base con dos laterales y orientación frontal de tapacantos.",
+  "source":{"book_id":"cpnc-2025","pdf_page":65,"printed_page":43,"region":{"x":0.14,"y":0.30,"width":0.72,"height":0.55},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"base","type":"base_panel","geometry":{"primitive":"panel","precision":"exact","dimensions":{"length_mm":400,"width_mm":320}}},
+    {"id":"left-side","type":"side_panel","geometry":{"primitive":"panel","precision":"exact","dimensions":{"length_mm":370,"width_mm":320}}},
+    {"id":"right-side","type":"side_panel","geometry":{"primitive":"panel","precision":"exact","dimensions":{"length_mm":370,"width_mm":320}}}
+  ],
+  "relationships":[{"from":"left-side","to":"base","type":"joined_to"},{"from":"right-side","to":"base","type":"joined_to"}],
+  "measurements":["MEAS-CPNC-2025-P0065-001","MEAS-CPNC-2025-P0065-002","MEAS-CPNC-2025-P0065-003","MEAS-CPNC-2025-P0065-004","MEAS-CPNC-2025-P0065-005"],
+  "annotations":[{"target_entity_id":"base","text":"BASE"},{"target_entity_id":"right-side","text":"LATERAL"},{"target_entity_id":"base","text":"La tabla de p65 usa BASE Cant=1; p64 usa Cant=2."}],
+  "camera":{"view":"isometric","projection":"perspective"},
+  "visual_style":{"format":"dibujo técnico 3D","materials":"tablero claro","dimensions":"cotas lineales en mm"},
+  "educational_sequence":[{"step":1,"show_entity_ids":["base","left-side","right-side"],"instruction":"Orientar los tapacantos hacia el frente, prensar cada lateral con la base, marcar/avellanar y fijar dos tornillos de 1½ pulgada por lado."}],
+  "reconstruction":{"preferred_renderer":"3d","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility":{"summary":"Base horizontal de 400×320 mm con dos laterales de 370×320 mm formando un módulo abierto por frente y parte posterior."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"Conservar la discrepancia de cantidad de BASE entre p64 y p65; no resolverla automáticamente."}
+}

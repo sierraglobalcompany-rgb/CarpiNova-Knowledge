@@ -1,0 +1,16 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0067-001","page_id":"PAGE-CPNC-2025-P0067","content_type":"procedure",
+    "source_transcription":"3\nLo que ven en la ilustración es la corredera telescópica, posicionada en el lateral de nuestro módulo mesa de noche, vamos a realizar una toma de medidas desde la parte superior hacia abajo de 10 cm, trazamos una línea con la escuadra y ahí vamos a posicionar la base de la corredera telescópica, procedemos a instalar cada uno de los tornillos que lleva nuestro riel, teniendo en cuenta que el primer tornillo de la pestaña flexible de este debe ir instalado del borde del mueble hacia adentro a 37 mm 3.7 cm y los siguientes tornillos irán a 64 mm esto para cumplir con la norma de instalación de herrajes sistema 37 y 32.",
+    "normalized_text":"Paso 3: posicionar la corredera telescópica sobre el lateral. La fuente indica medir 10 cm desde la parte superior hacia abajo, trazar una línea con escuadra y apoyar allí la base de la corredera. El primer tornillo de la pestaña flexible se coloca a 37 mm (3,7 cm) desde el borde frontal hacia adentro y los tornillos siguientes a 64 mm. El texto denomina esta pauta “sistema 37 y 32”.",
+    "learning_text":"La fuente define una referencia vertical de 10 cm y una referencia frontal de 37 mm para iniciar el montaje de la corredera. También escribe 64 mm para los tornillos siguientes mientras la nombra “sistema 37 y 32”; CarpiNova conserva ambas afirmaciones sin corregirlas hasta una validación posterior.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0067-001"],"source":{"book_id":"cpnc-2025","pdf_page":67,"printed_page":45,"region":{"x":0.08,"y":0.06,"width":0.84,"height":0.17},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["paso-3","corredera-telescopica","10-cm","37-mm","64-mm","sistema-37-32","conflicto-fuente"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0067-002","page_id":"PAGE-CPNC-2025-P0067","content_type":"warning",
+    "source_transcription":"los siguientes tornillos irán a 64 mm esto para cumplir con la norma de instalación de herrajes sistema 37 y 32.",
+    "normalized_text":"La misma frase combina una separación de 64 mm con la denominación “sistema 37 y 32”. No se modifica ni reconcilia en esta fase.",
+    "learning_text":"Trata esta combinación como una discrepancia interna de la fuente que requiere revisión técnica antes de convertirla en una regla ejecutable.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0067-002"],"source":{"book_id":"cpnc-2025","pdf_page":67,"printed_page":45,"region":{"x":0.08,"y":0.16,"width":0.84,"height":0.07},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["conflicto-fuente","64-mm","sistema-37-32","pendiente-validacion"]
+  }
+]

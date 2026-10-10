@@ -1,0 +1,16 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0065-001","page_id":"PAGE-CPNC-2025-P0065","content_type":"procedure",
+    "source_transcription":"1\nProcedemos a realizar el ensamble de la base de la mesa de noche con los 2 laterales, revisar que la posición de los tapacantos coincida toda en el frente de la mesa de noche, para esto debemos ensamblar los 2 laterales.\n\nLa unión de la base con los laterales se realizará con 2 tornillos de ensamble de 1\" 1/2 y en cada uno de los lados prensamos los laterales de la base hacemos la marcación donde vamos a realizar el avellanado e ingresamos los cuatro tornillos de ensamble para madera.",
+    "normalized_text":"Paso 1: unir la base con los dos laterales, verificando que los tapacantos queden orientados hacia el frente. La fuente indica dos tornillos de ensamble de 1½ pulgada por lado: se prensan las piezas, se marca el avellanado y se colocan cuatro tornillos en total.",
+    "learning_text":"Antes de atornillar, orienta los cantos frontales y sujeta las piezas. El procedimiento de la fuente usa dos tornillos por unión lateral, cuatro en total para fijar ambos laterales a la base.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0065-001"],"source":{"book_id":"cpnc-2025","pdf_page":65,"printed_page":43,"region":{"x":0.08,"y":0.06,"width":0.84,"height":0.18},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["paso-1","base","laterales","tapacanto","prensado","avellanado","tornillo-1-1-2"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0065-002","page_id":"PAGE-CPNC-2025-P0065","content_type":"table",
+    "source_transcription":"Descripción | Mat | Cant | Largo | Ancho | L1 | L2 | A1 | A2\nBASE | CH15 | 1 | 400 | 320 | D | - | D | D\nLATERAL | CH15 | 2 | 370 | 320 | D | - | - | -",
+    "normalized_text":"La tabla parcial del paso 1 registra una BASE CH15 de 400×320 mm con cantidad 1 y dos LATERALES CH15 de 370×320 mm. La cantidad de BASE contradice la tabla de p64, donde figura cantidad 2; el conflicto queda preservado.",
+    "learning_text":"Para este paso, la ilustración trabaja con una base y dos laterales. Antes de convertir el despiece global en una lista de corte definitiva debe resolverse la diferencia entre p64 y p65 sobre la cantidad de BASE.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0065-002"],"source":{"book_id":"cpnc-2025","pdf_page":65,"printed_page":43,"region":{"x":0.16,"y":0.72,"width":0.68,"height":0.12},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["tabla","base","lateral","CH15","conflicto-base-cantidad"]
+  }
+]

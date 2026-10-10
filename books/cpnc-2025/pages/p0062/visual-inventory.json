@@ -1,0 +1,3 @@
+{
+  "page_id":"PAGE-CPNC-2025-P0062","pdf_page":62,"printed_page":40,"inspection_status":"VISUALLY_VERIFIED","visuals":[{"inventory_id":"REF-P0062-001","kind":"qr_support_videos","meaningful":false,"source_region":{"x":0.39,"y":0.27,"width":0.22,"height":0.20},"reason":"QR asociado a videos de apoyo del ensamble. Se preserva su función en contenido, pero no se reconstruye como FigureSpec ni se ingiere automáticamente el recurso externo."}]
+}

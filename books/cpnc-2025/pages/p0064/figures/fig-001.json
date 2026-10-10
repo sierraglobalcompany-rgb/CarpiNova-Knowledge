@@ -1,0 +1,18 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0064-001","page_id":"PAGE-CPNC-2025-P0064","type":"mixed","purpose":"Representar la mesa de noche terminada junto con su tabla de despiece, tapacantos y lista de herrajes.",
+  "source":{"book_id":"cpnc-2025","pdf_page":64,"printed_page":42,"region":{"x":0.17,"y":0.07,"width":0.67,"height":0.72},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"nightstand","type":"nightstand_3d_reference","geometry":{"primitive":"box_assembly","precision":"approximate"},"description":"Mesa de noche con gaveta superior y puerta inferior; vista isométrica."},
+    {"id":"drawer-front","type":"drawer_front","geometry":{"primitive":"panel","precision":"approximate"},"description":"Frente superior resaltado en tono marrón."},
+    {"id":"door","type":"lower_door","geometry":{"primitive":"panel","precision":"approximate"},"description":"Puerta batiente inferior."},
+    {"id":"cutlist-table","type":"cutlist_table","geometry":{"primitive":"table","precision":"exact"},"description":"Tabla con descripción, material, cantidad, largo, ancho y posiciones L1/L2/A1/A2 de tapacanto."}
+  ],
+  "relationships":[{"from":"cutlist-table","to":"nightstand","type":"defines_parts_for"}],
+  "measurements":["MEAS-CPNC-2025-P0064-001","MEAS-CPNC-2025-P0064-002","MEAS-CPNC-2025-P0064-003","MEAS-CPNC-2025-P0064-004","MEAS-CPNC-2025-P0064-005","MEAS-CPNC-2025-P0064-006","MEAS-CPNC-2025-P0064-007","MEAS-CPNC-2025-P0064-008","MEAS-CPNC-2025-P0064-009","MEAS-CPNC-2025-P0064-010","MEAS-CPNC-2025-P0064-011","MEAS-CPNC-2025-P0064-012","MEAS-CPNC-2025-P0064-013","MEAS-CPNC-2025-P0064-014","MEAS-CPNC-2025-P0064-015","MEAS-CPNC-2025-P0064-016","MEAS-CPNC-2025-P0064-017","MEAS-CPNC-2025-P0064-018","MEAS-CPNC-2025-P0064-019","MEAS-CPNC-2025-P0064-020","MEAS-CPNC-2025-P0064-021","MEAS-CPNC-2025-P0064-022","MEAS-CPNC-2025-P0064-023"],
+  "annotations":[{"target_entity_id":"cutlist-table","text":"La fila BASE muestra Cant=2 en p64; p65 muestra Cant=1."}],
+  "camera":{"view":"isometric","projection":"perspective"},
+  "visual_style":{"format":"modelo 3D con tabla técnica","materials":"tablero claro con frente superior marrón"},
+  "reconstruction":{"preferred_renderer":"hybrid","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility":{"summary":"Vista isométrica de una mesa de noche con gaveta y puerta, seguida de tabla de despiece y lista de herrajes."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"La tabla debe reconstruirse exactamente como fuente; no resolver automáticamente la discrepancia de cantidad de BASE."}
+}
