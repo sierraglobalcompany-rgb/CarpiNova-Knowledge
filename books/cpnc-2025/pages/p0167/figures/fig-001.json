@@ -1,0 +1,27 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0167-001",
+  "page_id": "PAGE-CPNC-2025-P0167",
+  "type": "mixed",
+  "purpose": "Representar la composición de la referencia publicitaria POWER FIX sin convertir sus afirmaciones comerciales en reglas técnicas ni inventar el destino del QR.",
+  "source": {"book_id":"cpnc-2025","pdf_page":167,"printed_page":145,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"brand-header","type":"brand_header","description":"Franja superior con referencia a INFINITA como representante oficial y marca Quilosa.","geometry":{"precision":"approximate","bbox":{"x":0.0,"y":0.0,"width":1.0,"height":0.12}}},
+    {"id":"application-photo","type":"installation_photo","description":"Persona aplicando adhesivo con pistola de cartucho junto a una superficie de instalación.","geometry":{"precision":"approximate","bbox":{"x":0.0,"y":0.12,"width":0.67,"height":0.35}}},
+    {"id":"hero-cartridge","type":"product_package","description":"Cartucho vertical POWER FIX destacado en el sector derecho.","geometry":{"precision":"approximate","bbox":{"x":0.69,"y":0.12,"width":0.26,"height":0.38}}},
+    {"id":"product-title","type":"display_text","description":"Título grande POWER FIX.","geometry":{"precision":"approximate","bbox":{"x":0.02,"y":0.47,"width":0.56,"height":0.1}}},
+    {"id":"claim-list","type":"advertising_claim_list","description":"Lista de claims comerciales sobre carga, golpes, vibraciones, sellado, moho, agarre y curado.","geometry":{"precision":"approximate","bbox":{"x":0.02,"y":0.59,"width":0.55,"height":0.22}}},
+    {"id":"package-row","type":"product_variants","description":"Fila de envases en varios colores o variantes.","geometry":{"precision":"approximate","bbox":{"x":0.55,"y":0.57,"width":0.4,"height":0.16}}},
+    {"id":"materials-strip","type":"material_compatibility_icons","description":"Iconos rotulados para metal, madera, concreto, cerámica, vidrio, poliestireno, plástico y piedra.","geometry":{"precision":"approximate","bbox":{"x":0.02,"y":0.84,"width":0.72,"height":0.12}}},
+    {"id":"qr-advice","type":"qr_resource","description":"Código QR junto al texto Asesoría Personalizada; payload no decodificado.","payload_status":"not_decoded","geometry":{"precision":"approximate","bbox":{"x":0.76,"y":0.83,"width":0.21,"height":0.14}}}
+  ],
+  "relationships": [{"from":"claim-list","to":"hero-cartridge","type":"advertises"},{"from":"materials-strip","to":"hero-cartridge","type":"advertised_compatibility_for"},{"from":"package-row","to":"hero-cartridge","type":"same_product_family"}],
+  "measurements": [],
+  "annotations": [{"target_entity_id":"product-title","text":"POWER FIX"},{"target_entity_id":"qr-advice","text":"Asesoría Personalizada"}],
+  "layers": [{"id":"header","description":"Marca y representación comercial."},{"id":"application","description":"Fotografía de aplicación y producto destacado."},{"id":"claims","description":"Título, descripción y claims comerciales."},{"id":"variants-materials","description":"Variantes, colores y materiales anunciados."},{"id":"qr","description":"Bloque de asesoría con QR no decodificado."}],
+  "camera": {"view":"front","projection":"flat_page_reference"},
+  "visual_style": {"background":"dark blue promotional composition","accent":"red and white","photography":"installation lifestyle plus product packshots","labels":"white promotional text and pictograms"},
+  "educational_sequence": [{"step":1,"show_entity_ids":["application-photo","hero-cartridge","product-title"],"instruction":"Identificar que se trata de una referencia publicitaria de producto."},{"step":2,"show_entity_ids":["claim-list","materials-strip","package-row"],"instruction":"Mostrar claims, variantes y materiales como información atribuida al anuncio."},{"step":3,"show_entity_ids":["qr-advice"],"instruction":"Conservar la presencia del QR sin inventar ni regenerar su payload."}],
+  "reconstruction": {"preferred_renderer":"hybrid","deterministic_required":false,"generative_image_allowed":false},
+  "accessibility": {"summary":"Anuncio de POWER FIX de Quilosa con persona aplicando adhesivo, cartucho destacado, claims, variantes, materiales y QR de asesoría."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Los claims pertenecen al anuncio. No inferir la unidad o significado de ‘400 /10 cm²’ ni el contenido del QR."}
+}

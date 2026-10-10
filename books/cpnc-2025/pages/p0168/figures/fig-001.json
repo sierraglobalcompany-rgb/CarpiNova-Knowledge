@@ -1,0 +1,28 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0168-001",
+  "page_id": "PAGE-CPNC-2025-P0168",
+  "type": "mixed",
+  "purpose": "Representar la referencia publicitaria FIX PU y separar visualmente las versiones tubo y líquido con sus datos anunciados.",
+  "source": {"book_id":"cpnc-2025","pdf_page":168,"printed_page":146,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"brand-header","type":"brand_header","description":"Franja superior INFINITA/Quilosa.","geometry":{"precision":"approximate","bbox":{"x":0.0,"y":0.0,"width":1.0,"height":0.11}}},
+    {"id":"roof-background","type":"wood_structure_photo","description":"Fondo fotográfico de estructura de madera.","geometry":{"precision":"approximate","bbox":{"x":0.0,"y":0.1,"width":1.0,"height":0.36}}},
+    {"id":"tube-package","type":"product_package","description":"Envase vertical FIX PU en tubo destacado a la izquierda.","geometry":{"precision":"approximate","bbox":{"x":0.0,"y":0.16,"width":0.28,"height":0.66}}},
+    {"id":"liquid-package","type":"product_package","description":"Envase FIX PU líquido destacado a la derecha inferior.","geometry":{"precision":"approximate","bbox":{"x":0.8,"y":0.55,"width":0.17,"height":0.37}}},
+    {"id":"headline","type":"display_text","description":"Titular FIX PU MÁS FUERTE QUE LA MADERA.","geometry":{"precision":"approximate","bbox":{"x":0.32,"y":0.43,"width":0.62,"height":0.13}}},
+    {"id":"claim-list","type":"advertising_claim_list","description":"Claims sobre fuerza, D4, disolventes, lijado, interior/exterior y curado.","geometry":{"precision":"approximate","bbox":{"x":0.28,"y":0.62,"width":0.55,"height":0.16}}},
+    {"id":"tube-specs","type":"advertised_specification_block","description":"Bloque FIX PU EXTREM TUBO con consistencia, aplicador, agarre, curado y presentación.","geometry":{"precision":"approximate","bbox":{"x":0.22,"y":0.8,"width":0.36,"height":0.16}}},
+    {"id":"liquid-specs","type":"advertised_specification_block","description":"Bloque FIX PU EXTREM LÍQUIDO con consistencia, aplicación, agarre, curado y presentación.","geometry":{"precision":"approximate","bbox":{"x":0.56,"y":0.8,"width":0.32,"height":0.16}}},
+    {"id":"qr-advice","type":"qr_resource","description":"QR de Asesoría Personalizada; payload no decodificado.","payload_status":"not_decoded","geometry":{"precision":"approximate","bbox":{"x":0.72,"y":0.16,"width":0.24,"height":0.16}}}
+  ],
+  "relationships": [{"from":"tube-specs","to":"tube-package","type":"advertised_specs_for"},{"from":"liquid-specs","to":"liquid-package","type":"advertised_specs_for"},{"from":"claim-list","to":"tube-package","type":"advertises_product_family"}],
+  "measurements": ["MEAS-CPNC-2025-P0168-001","MEAS-CPNC-2025-P0168-002","MEAS-CPNC-2025-P0168-003","MEAS-CPNC-2025-P0168-004","MEAS-CPNC-2025-P0168-005","MEAS-CPNC-2025-P0168-006","MEAS-CPNC-2025-P0168-007","MEAS-CPNC-2025-P0168-008"],
+  "annotations": [{"target_entity_id":"headline","text":"FIX PU — MÁS FUERTE QUE LA MADERA"},{"target_entity_id":"tube-specs","text":"FIX PU EXTREM TUBO"},{"target_entity_id":"liquid-specs","text":"FIX PU EXTREM LÍQUIDO"},{"target_entity_id":"qr-advice","text":"Asesoría Personalizada"}],
+  "layers": [{"id":"brand-background","description":"Marca y fondo estructural de madera."},{"id":"product-hero","description":"Envases y titular central."},{"id":"claims","description":"Claims comerciales."},{"id":"specifications","description":"Dos bloques de datos anunciados por versión."},{"id":"qr","description":"QR no decodificado."}],
+  "camera": {"view":"front","projection":"flat_page_reference"},
+  "visual_style": {"background":"dark blue with timber roof photo","accent":"red white orange","photography":"product packshots","labels":"promotional white text"},
+  "educational_sequence": [{"step":1,"show_entity_ids":["tube-package","liquid-package","headline"],"instruction":"Identificar las dos presentaciones anunciadas."},{"step":2,"show_entity_ids":["tube-specs","liquid-specs","claim-list"],"instruction":"Mantener separados los datos de tubo y líquido y atribuirlos al anuncio."},{"step":3,"show_entity_ids":["qr-advice"],"instruction":"Conservar el QR solo como referencia visual sin inventar su destino."}],
+  "reconstruction": {"preferred_renderer":"hybrid","deterministic_required":false,"generative_image_allowed":false},
+  "accessibility": {"summary":"Anuncio FIX PU de Quilosa con versiones tubo y líquido, claims comerciales, tiempos anunciados, presentaciones y QR."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"No usar los claims como reglas técnicas. La expresión ‘1000 /10 cm²’ permanece sin interpretación y el QR no está decodificado."}
+}

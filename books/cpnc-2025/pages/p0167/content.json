@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0167-001",
+    "page_id": "PAGE-CPNC-2025-P0167",
+    "content_type": "reference",
+    "source_transcription": "400 /10 cm². POWER FIX. INSTALACIONES Y MONTAJES EXTRA FUERTES, FACIL, RAPIDAS Y RENTABLES. Gran capacidad de carga. Resistente a golpes y vibraciones. Fija, sella en interior y exterior. Resistente al moho. Agarre inmediato y curado extrarápido. POWER FIX de Quilosa es un adhesivo de alto rendimiento para una fijación rápida, segura y duradera en múltiples materiales. Ideal para carpinteros, instaladores y profesionales. Blanco Gris Crema Marrón Negro TRANSPARENTE*. Ideal para espejos y vidrios*. METAL. MADERA CONCRETO CERÁMICA VIDRIO. POLIESTIRENO PLÁSTICO PIEDRA. Asesoría Personalizada.",
+    "normalized_text": "La página es una referencia publicitaria de POWER FIX de Quilosa. El anuncio atribuye al producto capacidad de carga, resistencia a golpes, vibraciones y moho, uso interior/exterior, agarre inmediato y curado extrarrápido; también enumera colores y materiales. La expresión aislada ‘400 /10 cm²’ se conserva como aparece en la fuente y no se interpreta porque su unidad o significado completo no queda establecido en el contenido recuperado.",
+    "learning_text": "Trata esta página como material comercial de referencia, no como una regla técnica validada. Antes de aplicar el producto, contrasta compatibilidad, carga, curado y condiciones de uso con la ficha técnica vigente. No completes por inferencia la expresión ambigua ‘400 /10 cm²’.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0167-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":167,"printed_page":145,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"text","confidence":0.99,"review_status":"EXTRACTED"}},
+    "tags": ["power-fix","quilosa","adhesivo","publicidad","instalacion","materiales"]
+  }
+]

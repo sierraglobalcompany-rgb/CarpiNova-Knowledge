@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0170-001",
+    "page_id": "PAGE-CPNC-2025-P0170",
+    "content_type": "reference",
+    "source_transcription": "Pintable y barnizable. Elasticidad 1000%. Fácil de aplicar y alisar. Sin olor. Sin solventes. Colores: Nogal. Roble. Pino. Blanco. Sellador en base acuosa, diseñado para juntas entre piezas de madera y otras superficies, ofrece una elasticidad de hasta 1000%, adaptándose a los movimientos naturales de la madera sin agrietarse ni cambiar de color. SELLADOR ESPECIAL PARA MADERA, ACABADOS PERFECTOS Y FLEXIBLES. 300ml - 125ml (en roble). Cerezo. Haya. Wengue. SINTESEL MADERA. Asesoría Personalizada.",
+    "normalized_text": "La página publicita SINTESEL MADERA como sellador en base acuosa para juntas entre piezas de madera y otras superficies. El anuncio atribuye elasticidad de hasta 1000%, aptitud para pintar y barnizar, facilidad de aplicación y alisado, ausencia de olor y solventes, y adaptación a movimientos de la madera. Enumera colores Nogal, Roble, Pino, Blanco, Cerezo, Haya y Wengue; muestra 300 ml y 125 ml, indicando 125 ml en roble.",
+    "learning_text": "Registra la elasticidad, presentaciones y colores como especificaciones anunciadas por la fuente. No conviertas los claims en reglas de diseño o desempeño sin verificar la ficha técnica vigente y las condiciones de la aplicación.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0170-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":170,"printed_page":148,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"text","confidence":0.99,"review_status":"EXTRACTED"}},
+    "tags": ["sintesel-madera","quilosa","sellador","publicidad","elasticidad","juntas","colores"]
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0170-001",
+  "page_id": "PAGE-CPNC-2025-P0170",
+  "type": "mixed",
+  "purpose": "Representar la referencia publicitaria SINTESEL MADERA con sus colores, presentaciones y claims claramente atribuidos al anuncio.",
+  "source": {"book_id":"cpnc-2025","pdf_page":170,"printed_page":148,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"brand-header","type":"brand_header","description":"Franja superior INFINITA/Quilosa.","geometry":{"precision":"approximate","bbox":{"x":0.0,"y":0.0,"width":1.0,"height":0.12}}},
+    {"id":"wood-finish-photo","type":"wood_finish_photo","description":"Fotografía de encuentro y acabado de piezas de madera en la parte superior.","geometry":{"precision":"approximate","bbox":{"x":0.0,"y":0.12,"width":1.0,"height":0.27}}},
+    {"id":"cartridge-row","type":"product_packages","description":"Fila de cartuchos SINTESEL MADERA en diferentes tonos.","geometry":{"precision":"approximate","bbox":{"x":0.03,"y":0.16,"width":0.5,"height":0.24}}},
+    {"id":"headline","type":"display_text","description":"Titular grande SINTESEL MADERA y subtítulo SELLADOR ESPECIAL PARA MADERA, ACABADOS PERFECTOS Y FLEXIBLES.","geometry":{"precision":"approximate","bbox":{"x":0.02,"y":0.4,"width":0.95,"height":0.19}}},
+    {"id":"description","type":"advertising_description","description":"Texto sobre sellador base acuosa, juntas y elasticidad anunciada.","geometry":{"precision":"approximate","bbox":{"x":0.03,"y":0.59,"width":0.93,"height":0.14}}},
+    {"id":"color-list","type":"color_reference_list","description":"Muestras Nogal, Roble, Pino, Blanco, Cerezo, Haya y Wengue.","geometry":{"precision":"approximate","bbox":{"x":0.03,"y":0.74,"width":0.48,"height":0.17}}},
+    {"id":"claim-list","type":"advertising_claim_list","description":"Claims: pintable y barnizable, elasticidad 1000%, fácil de aplicar y alisar, sin olor y sin solventes.","geometry":{"precision":"approximate","bbox":{"x":0.57,"y":0.72,"width":0.39,"height":0.2}}},
+    {"id":"qr-advice","type":"qr_resource","description":"QR de Asesoría Personalizada; payload no decodificado.","payload_status":"not_decoded","geometry":{"precision":"approximate","bbox":{"x":0.02,"y":0.91,"width":0.29,"height":0.08}}}
+  ],
+  "relationships": [{"from":"color-list","to":"cartridge-row","type":"advertised_variants"},{"from":"claim-list","to":"cartridge-row","type":"advertises"},{"from":"description","to":"cartridge-row","type":"describes_advertised_product"}],
+  "measurements": ["MEAS-CPNC-2025-P0170-001","MEAS-CPNC-2025-P0170-002","MEAS-CPNC-2025-P0170-003"],
+  "annotations": [{"target_entity_id":"headline","text":"SINTESEL MADERA — SELLADOR ESPECIAL PARA MADERA, ACABADOS PERFECTOS Y FLEXIBLES"},{"target_entity_id":"qr-advice","text":"Asesoría Personalizada"}],
+  "layers": [{"id":"brand-product","description":"Marca, fotografía de madera y cartuchos."},{"id":"headline-description","description":"Titular y descripción comercial."},{"id":"colors-claims","description":"Colores y claims."},{"id":"qr","description":"QR no decodificado."}],
+  "camera": {"view":"front","projection":"flat_page_reference"},
+  "visual_style": {"background":"dark blue promotional layout","accent":"white red","photography":"wood finish and product cartridges","labels":"large white promotional text"},
+  "educational_sequence": [{"step":1,"show_entity_ids":["wood-finish-photo","cartridge-row","headline"],"instruction":"Identificar la referencia comercial y su contexto de acabado de madera."},{"step":2,"show_entity_ids":["description","color-list","claim-list"],"instruction":"Mostrar descripción, colores y claims como información del anuncio."},{"step":3,"show_entity_ids":["qr-advice"],"instruction":"Conservar la presencia del QR sin inventar su contenido."}],
+  "reconstruction": {"preferred_renderer":"hybrid","deterministic_required":false,"generative_image_allowed":false},
+  "accessibility": {"summary":"Anuncio SINTESEL MADERA con cartuchos, acabado de madera, descripción, siete colores, claims de elasticidad y QR."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La elasticidad y demás claims se atribuyen al anuncio. No inferir desempeño adicional ni contenido del QR."}
+}
