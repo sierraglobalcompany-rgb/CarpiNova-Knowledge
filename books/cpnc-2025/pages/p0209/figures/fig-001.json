@@ -1,0 +1,19 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0209-001",
+  "page_id": "PAGE-CPNC-2025-P0209",
+  "type": "dimensioned_drawing",
+  "purpose": "Recrear la referencia del marco de puerta, la carga y la moldura o tapaluz.",
+  "source": {"book_id":"cpnc-2025","pdf_page":209,"printed_page":187,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"frame","type":"door_frame","geometry":{"precision":"approximate"}},
+    {"id":"stop","type":"door_frame_stop_carga","geometry":{"precision":"approximate"}},
+    {"id":"trim","type":"door_trim_tapaluz","geometry":{"precision":"approximate"}},
+    {"id":"door-leaf","type":"door_leaf","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"stop","to":"frame","type":"part_of"},{"from":"trim","to":"frame","type":"covers_perimeter_gap"},{"from":"door-leaf","to":"stop","type":"closes_against"}],
+  "measurements": ["MEAS-CPNC-2025-P0209-001","MEAS-CPNC-2025-P0209-002","MEAS-CPNC-2025-P0209-003","MEAS-CPNC-2025-P0209-004","MEAS-CPNC-2025-P0209-005","MEAS-CPNC-2025-P0209-006","MEAS-CPNC-2025-P0209-007"],
+  "annotations": [{"target_entity_id":"frame","text":"Anchos listados: 8, 10, 12 o 14 cm"},{"target_entity_id":"stop","text":"Carga: 4 cm"},{"target_entity_id":"trim","text":"Moldura/tapaluz: normalmente 3 cm"}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Esquema de marco de puerta con hoja, carga y moldura, acompañado por anchos y relaciones de armado."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La reducción de 4 cm del servicio de sanduche se conserva como relación dimensional expresada por la fuente."}
+}

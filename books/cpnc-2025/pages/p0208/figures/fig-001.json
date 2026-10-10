@@ -1,0 +1,19 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0208-001",
+  "page_id": "PAGE-CPNC-2025-P0208",
+  "type": "dimensioned_drawing",
+  "purpose": "Recrear la referencia de una hoja de puerta entamborada y la ubicación estándar de la chapa.",
+  "source": {"book_id":"cpnc-2025","pdf_page":208,"printed_page":186,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"door-leaf","type":"door_leaf","geometry":{"precision":"approximate"}},
+    {"id":"internal-frame","type":"internal_batten_frame","geometry":{"precision":"approximate"}},
+    {"id":"door-skin","type":"door_skin_sheet","geometry":{"precision":"approximate"}},
+    {"id":"lock","type":"door_lock","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"internal-frame","to":"door-leaf","type":"inside"},{"from":"door-skin","to":"internal-frame","type":"covers"},{"from":"lock","to":"door-leaf","type":"installed_on"}],
+  "measurements": ["MEAS-CPNC-2025-P0208-001","MEAS-CPNC-2025-P0208-002","MEAS-CPNC-2025-P0208-003","MEAS-CPNC-2025-P0208-004","MEAS-CPNC-2025-P0208-005"],
+  "annotations": [{"target_entity_id":"door-leaf","text":"Espesor puerta estándar 36 mm"},{"target_entity_id":"lock","text":"90 cm desde piso; 6 cm desde canto"}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Esquema de una hoja de puerta con bastidor interno, caras de lámina y cotas para espesor total y ubicación de chapa."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Se conservan 4 mm y 5.5 mm como opciones de espesor de lámina y 36 mm como espesor total indicado por la fuente."}
+}
