@@ -1,0 +1,9 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0205",
+  "pdf_page": 205,
+  "printed_page": 183,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0205-001","kind":"closet_standard_depth_height_and_sliding_door_reference","meaningful":true,"figure_id":"FIG-CPNC-2025-P0205-001","source_region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"reason":"Lámina ilustrada con profundidad interna, altura, medida externa y referencia de puertas corredizas."}
+  ]
+}
