@@ -1,0 +1,10 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0015",
+  "pdf_page": 15,
+  "printed_page": null,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0015-001","kind":"qr_resource_index","meaningful":true,"source_region":{"x":0.055,"y":0.16,"width":0.88,"height":0.81},"exclusion_reason":"La función de la página es un índice de 14 recursos. Cada tema, capítulo y destino QR se preserva como ContentSpec individual, por lo que un FigureSpec duplicaría la misma información sin aportar geometría técnica."},
+    {"inventory_id":"DEC-P0015-001","kind":"page_branding","meaningful":false,"reason":"Cabecera y marca Hágalo en casa."}
+  ]
+}
