@@ -1,7 +1,13 @@
 {
-  "batch_id":"BATCH-024",
-  "book_id":"cpnc-2025",
-  "purpose":"f1-hardware-introduction-and-hinges",
-  "pdf_pages":[105,106,107,108,109,110,111,112],
-  "status":"EXTRACTED"
+  "batch_id": "BATCH-024",
+  "book_id": "cpnc-2025",
+  "purpose": "f1-hardware-introduction",
+  "pdf_pages": [
+    105,
+    106,
+    107,
+    108,
+    109
+  ],
+  "status": "EXTRACTED"
 }
