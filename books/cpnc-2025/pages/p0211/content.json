@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0211-001",
+    "page_id": "PAGE-CPNC-2025-P0211",
+    "content_type": "procedure",
+    "source_transcription": "CHAPAS DE PUERTAS. Comúnmente cuando compramos una puerta ya viene con las perforaciones hechas, hasta con la chapa instalada. pero es bueno saber como es el funcionamiento e instalación de esta. 1 MEDIMOS. Con el flexometro del piso hacia arriba 95cm y marcamos con un lápiz. Luego del canto hacia a dentro 6cm. 2 DEBEMOS PERFORAR con un juego de broca chapa. Con un juego de brocas: brica sierra de 54mm y broca espada de 7/8 realizamos las perforaciones.",
+    "normalized_text": "La fuente presenta la instalación de una chapa empezando por marcar 95 cm desde el piso y 6 cm desde el canto hacia el interior. Luego indica perforar con un juego para chapa, incluyendo una broca sierra de 54 mm y una broca espada identificada como 7/8.",
+    "learning_text": "Marca primero la altura y el retiro desde el canto antes de perforar. Conserva 95 cm, 6 cm y 54 mm como referencias explícitas de esta página; verifica el juego de brocas y la chapa concreta antes de mecanizar.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0211-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":211,"printed_page":189,"region":{"x":0.05,"y":0.05,"width":0.90,"height":0.63},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["puerta","chapa","medicion","perforacion","brocas"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0211-002",
+    "page_id": "PAGE-CPNC-2025-P0211",
+    "content_type": "procedure",
+    "source_transcription": "3 IDENTIFICAR LA CHAPA. la parte de la llave va para el interior. Aquí tiene llave para desarmar la perilla. Cuando voy a instalar la chapa, puedo sacar la parte que va hacia dentro. La chapa trae una especie de llave simplemente la introducimos y zafamos el pomo.",
+    "normalized_text": "Para identificar y preparar la chapa, la fuente indica que la parte de la llave queda hacia el interior. También muestra una llave o liberador para desmontar la perilla o pomo antes de instalar el conjunto.",
+    "learning_text": "Antes del montaje, identifica qué lado de la chapa debe quedar hacia el interior y localiza el mecanismo de liberación de la perilla. Desmonta solo las piezas necesarias para insertar e instalar el conjunto.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0211-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":211,"printed_page":189,"region":{"x":0.05,"y":0.67,"width":0.90,"height":0.28},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["puerta","chapa","perilla","pomo","instalacion"]
+  }
+]

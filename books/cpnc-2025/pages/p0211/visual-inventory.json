@@ -1,0 +1,9 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0211",
+  "pdf_page": 211,
+  "printed_page": 189,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0211-001","kind":"door_lock_measure_drill_and_identify_sequence","meaningful":true,"figure_id":"FIG-CPNC-2025-P0211-001","source_region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"reason":"Secuencia ilustrada de tres pasos para medir, perforar e identificar una chapa de puerta."}
+  ]
+}
