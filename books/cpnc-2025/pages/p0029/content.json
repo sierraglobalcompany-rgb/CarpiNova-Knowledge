@@ -1,0 +1,8 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0029-001","page_id":"PAGE-CPNC-2025-P0029","content_type":"definition","source_transcription":"CARPINTERO DIGITAL\nHágalo desde cualquier parte del mundo","normalized_text":"Carpintero Digital: enfoque para desarrollar un proyecto de carpintería desde cualquier lugar, separando el desarrollo técnico de la ejecución física cuando sea necesario.","learning_text":"El Carpintero Digital organiza el proyecto para que gran parte del trabajo técnico pueda prepararse desde cualquier lugar.","derived_from_content_ids":["CONTENT-CPNC-2025-P0029-001"],"source":{"book_id":"cpnc-2025","pdf_page":29,"printed_page":7,"region":{"x":0.09,"y":0.02,"width":0.80,"height":0.18},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["carpintero-digital","trabajo-remoto"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0029-002","page_id":"PAGE-CPNC-2025-P0029","content_type":"concept","source_transcription":"1. Medición\n2. Diseño\n3. Selección de materiales\n4. Armado / instalación\n5. Solución","normalized_text":"Los cinco pasos mostrados son: 1) Medición, 2) Diseño, 3) Selección de materiales, 4) Armado / instalación y 5) Solución.","learning_text":"La infografía resume el flujo en cinco etapas: medir, diseñar, seleccionar materiales, resolver el armado o la instalación y cerrar con la solución del proyecto.","derived_from_content_ids":["CONTENT-CPNC-2025-P0029-002"],"source":{"book_id":"cpnc-2025","pdf_page":29,"printed_page":7,"region":{"x":0.03,"y":0.18,"width":0.94,"height":0.62},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["cinco-pasos","medicion","diseño","materiales","armado","instalacion","solucion"]
+  }
+]

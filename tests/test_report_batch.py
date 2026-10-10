@@ -49,6 +49,12 @@ def test_batch_006_index_and_support_group_is_accepted() -> None:
     assert report["counts"]["pages"] == 4
 
 
+def test_batch_007_carpintero_digital_is_accepted() -> None:
+    report = build_batch_report(ROOT, "batch-007")
+    assert report["result"] == "GO"
+    assert report["counts"]["pages"] == 3
+
+
 def test_generic_batch_report_accepts_physical_page_batch(tmp_path: Path) -> None:
     root = tmp_path / "repo"
     shutil.copytree(
