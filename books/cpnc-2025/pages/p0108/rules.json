@@ -1,0 +1,4 @@
+[
+  {"rule_id":"RULE-CPNC-2025-P0108-001","page_id":"PAGE-CPNC-2025-P0108","category":"fastener_selection","subject":"wood_screw","predicate":"example_length_for_15mm_material","value":0.625,"unit":"in","applicability":{"material_thickness_mm":15},"exceptions":[],"sources":[{"book_id":"cpnc-2025","pdf_page":108,"printed_page":86,"region":{"x":0.08,"y":0.40,"width":0.84,"height":0.18},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],"status":"CANDIDATE"},
+  {"rule_id":"RULE-CPNC-2025-P0108-002","page_id":"PAGE-CPNC-2025-P0108","category":"dowel_joinery","subject":"wood_dowel","predicate":"use_with","value":"PVA adhesive and precise drilling","unit":null,"applicability":{},"exceptions":[],"sources":[{"book_id":"cpnc-2025","pdf_page":108,"printed_page":86,"region":{"x":0.08,"y":0.72,"width":0.84,"height":0.14},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],"status":"CANDIDATE"}
+]

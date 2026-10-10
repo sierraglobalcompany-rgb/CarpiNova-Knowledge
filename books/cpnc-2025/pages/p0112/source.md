@@ -4,4 +4,7 @@
 
 ## CONTENT-CPNC-2025-P0112-001
 
-Recta — Cobertura total — Lateral — Puerta. Semi-recta — Cobertura parcial — Lateral — Puerta. Curva — Embebida — Puerta.
+Recta — Cobertura total
+Semi-recta — Cobertura parcial
+Curva — Embebida
+Lateral / Puerta

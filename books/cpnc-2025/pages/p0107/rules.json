@@ -1,0 +1,4 @@
+[
+  {"rule_id":"RULE-CPNC-2025-P0107-001","page_id":"PAGE-CPNC-2025-P0107","category":"hardware_layout","subject":"system37_initial_hole","predicate":"offset_from_furniture_edge","value":37,"unit":"mm","applicability":{"hardware":"general"},"exceptions":[],"sources":[{"book_id":"cpnc-2025","pdf_page":107,"printed_page":85,"region":{"x":0.08,"y":0.40,"width":0.84,"height":0.10},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],"status":"CANDIDATE"},
+  {"rule_id":"RULE-CPNC-2025-P0107-002","page_id":"PAGE-CPNC-2025-P0107","category":"hardware_layout","subject":"system32_holes","predicate":"spacing","value":32,"unit":"mm","applicability":{"hardware":"linearly fixed hardware"},"exceptions":[],"sources":[{"book_id":"cpnc-2025","pdf_page":107,"printed_page":85,"region":{"x":0.08,"y":0.50,"width":0.84,"height":0.10},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],"status":"CANDIDATE"}
+]

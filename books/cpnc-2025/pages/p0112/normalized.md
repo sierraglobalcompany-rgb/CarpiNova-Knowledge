@@ -4,4 +4,4 @@
 
 ## CONTENT-CPNC-2025-P0112-001
 
-Comparación visual de tres bisagras de cazoleta: recta para cobertura total, semirrecta para cobertura parcial y curva para puerta embebida.
+El diagrama compara bisagra recta con cobertura total, semi-recta con cobertura parcial y curva con puerta embebida.
