@@ -1,0 +1,9 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0041-001","page_id":"PAGE-CPNC-2025-P0041","content_type":"concept",
+    "source_transcription":"NUEVA COMUNIDAD DE CARPINTEROS\nCARPINTERÍA\nMALL DEL CARPINTERO\nMADERA\nHERRAJES\nHERRAMIENTAS\nHÁGALO EN CASA\nMALL DEL CARPINTERO",
+    "normalized_text":"La infografía representa una nueva comunidad de carpinteros alrededor del Mall del Carpintero: atención a principiantes, espacios de práctica y aprendizaje, locales de madera, herrajes y herramientas, y una comunidad que comparte el mismo entorno.",
+    "learning_text":"La idea visual es reunir en un solo ecosistema orientación, práctica, materiales, herrajes, herramientas y comunidad para que una persona pueda pasar de tener una duda a ejecutar su proyecto.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0041-001"],"source":{"book_id":"cpnc-2025","pdf_page":41,"printed_page":19,"region":{"x":0.12,"y":0.04,"width":0.76,"height":0.91},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["Nueva-comunidad-de-carpinteros","Mall-del-Carpintero","madera","herrajes","herramientas","formacion"]
+  }
+]
