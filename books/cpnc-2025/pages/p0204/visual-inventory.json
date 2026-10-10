@@ -1,0 +1,9 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0204",
+  "pdf_page": 204,
+  "printed_page": 182,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0204-001","kind":"closet_breakdown_and_overhead_compartment_reference","meaningful":true,"figure_id":"FIG-CPNC-2025-P0204-001","source_region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"reason":"Lámina ilustrada del paral y variantes de maletero con dimensiones de referencia."}
+  ]
+}
