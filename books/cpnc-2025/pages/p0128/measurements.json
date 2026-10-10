@@ -1,1 +1,1 @@
-[{"measurement_id":"MEAS-CPNC-2025-P0128-001","page_id":"PAGE-CPNC-2025-P0128","kind":"source_height_reduction","value":5,"unit":"cm","applies_to":"sliding_system.cut_diagram_ALTURA_minus_5cm.context_requires_review","status":"VISUALLY_VERIFIED","source":{"book_id":"cpnc-2025","pdf_page":128,"printed_page":106,"region":{"x":0.37,"y":0.65,"width":0.3,"height":0.24},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"confidence":0.99}]
+[]

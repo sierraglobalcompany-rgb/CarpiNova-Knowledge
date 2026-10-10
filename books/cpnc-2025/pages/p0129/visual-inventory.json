@@ -1,16 +1,1 @@
-{
-  "page_id": "PAGE-CPNC-2025-P0129",
-  "pdf_page": 129,
-  "printed_page": 107,
-  "inspection_status": "VISUALLY_VERIFIED",
-  "visuals": [
-    {
-      "inventory_id": "VIS-P0129-001",
-      "kind": "product_comparison_grid",
-      "meaningful": true,
-      "figure_id": "FIG-CPNC-2025-P0129-001",
-      "source_region": {"x": 0.04, "y": 0.08, "width": 0.92, "height": 0.8},
-      "reason": "La cuadrícula 2x2 permite comparar cuatro sistemas corredizos y sus especificaciones de fabricante."
-    }
-  ]
-}
+{"page_id":"PAGE-CPNC-2025-P0129","pdf_page":129,"printed_page":107,"inspection_status":"SOURCE_INDEX_VERIFIED","visuals":[{"inventory_id":"DEC-P0129-001","kind":"page_branding","meaningful":false,"reason":"El índice de la fuente registra la página impresa 107 antes de las páginas 108 y 109; el contenido comparativo aparece después del marcador 110, por lo que 107 se conserva como transición editorial sin contenido informativo recuperado."}]}
