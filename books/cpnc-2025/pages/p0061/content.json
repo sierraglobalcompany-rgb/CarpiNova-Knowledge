@@ -1,0 +1,9 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0061-001","page_id":"PAGE-CPNC-2025-P0061","content_type":"reference",
+    "source_transcription":"Mi primer Ensamble",
+    "normalized_text":"Mi primer ensamble.",
+    "learning_text":"La página abre la sección “Mi primer Ensamble”, que inicia el siguiente bloque práctico del libro.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0061-001"],"source":{"book_id":"cpnc-2025","pdf_page":61,"printed_page":39,"region":{"x":0.18,"y":0.40,"width":0.64,"height":0.18},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["mi-primer-ensamble","portada-de-seccion"]
+  }
+]
