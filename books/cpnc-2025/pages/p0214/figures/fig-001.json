@@ -1,0 +1,26 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0214-001",
+  "page_id": "PAGE-CPNC-2025-P0214",
+  "type": "mixed",
+  "purpose": "Recrear la lámina de referencias dimensionales para cama, colchón, altura relativa y calibre mínimo.",
+  "source": {"book_id":"cpnc-2025","pdf_page":214,"printed_page":192,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"mattress","type":"mattress_reference","geometry":{"precision":"approximate"}},
+    {"id":"bed","type":"bed_frame","geometry":{"precision":"approximate"}},
+    {"id":"nightstands","type":"nightstands","geometry":{"precision":"approximate"}},
+    {"id":"bed-section","type":"bed_material_section","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [
+    {"from":"mattress","to":"bed","type":"defines_bed_size"},
+    {"from":"mattress","to":"nightstands","type":"top_height_aligned"}
+  ],
+  "measurements": ["MEAS-CPNC-2025-P0214-001","MEAS-CPNC-2025-P0214-002","MEAS-CPNC-2025-P0214-003","MEAS-CPNC-2025-P0214-004","MEAS-CPNC-2025-P0214-005","MEAS-CPNC-2025-P0214-006","MEAS-CPNC-2025-P0214-007","MEAS-CPNC-2025-P0214-008"],
+  "annotations": [
+    {"target_entity_id":"mattress","text":"Anchos: 90, 140, 160 y 180 cm; largo: 190 cm; opción 200 × 200 cm"},
+    {"target_entity_id":"nightstands","text":"La medida del nochero es libre; la fuente recomienda alinear su altura con el colchón"},
+    {"target_entity_id":"bed-section","text":"Calibre mínimo recomendado: 30 mm"}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Infografía con referencias de tamaño de colchón, relación de altura entre cama y nocheros y calibre mínimo de la cama."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Se conservan las medidas y recomendaciones tal como aparecen en la fuente."}
+}
