@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0208-001",
+    "page_id": "PAGE-CPNC-2025-P0208",
+    "content_type": "reference",
+    "source_transcription": "MEDIDAS ESTÁNDAR. La realización de puertas es poco rentable, ya que las ganancias son bajas. sin embargo es importante saber hacerlas. No es nuestro trabajo prensarlas, se compran las láminas de 5.5mm y el maquilador las prensa.",
+    "normalized_text": "La fuente introduce la fabricación de puertas como un proceso que conviene conocer aunque el prensado se delegue a un maquilador; menciona láminas de 5.5 mm para ese trabajo.",
+    "learning_text": "Distingue entre fabricar o dimensionar una puerta y realizar el prensado industrial. Si el prensado se terceriza, define previamente el material y el espesor de las láminas según la referencia del libro.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0208-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":208,"printed_page":186,"region":{"x":0.05,"y":0.05,"width":0.90,"height":0.24},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["puertas","medidas-estandar","prensado","laminas"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0208-002",
+    "page_id": "PAGE-CPNC-2025-P0208",
+    "content_type": "construction_pattern",
+    "source_transcription": "EL ALA. esta compuesta por un bastidor interno, suele ser vacía por dentro. también puede ser maciza pero se prefiere no utilizarlas así por el peso. Se utilizan láminas de 4mm o 5.5mm y por dentro llevan bastidor por lo tanto son entamboradas. Espesor Puerta estándar 36mm. Todas las puertas deben tener este espesor. Si la puerta se va a realizar maciza se compra la lámina directamente de ese espesor.",
+    "normalized_text": "La hoja o ala de puerta mostrada se resuelve normalmente con un bastidor interno y láminas de 4 mm o 5.5 mm, formando una puerta entamborada. La fuente fija 36 mm como espesor estándar y señala que, si se hace maciza, se adquiere la lámina directamente con ese espesor.",
+    "learning_text": "Para una puerta entamborada, plantea primero el bastidor interno y reviste ambas caras con el espesor de lámina indicado. Conserva 36 mm como espesor total de referencia del libro; si se opta por una hoja maciza, parte de una lámina del espesor final.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0208-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":208,"printed_page":186,"region":{"x":0.05,"y":0.27,"width":0.90,"height":0.48},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["puerta","ala","bastidor","entamborada","espesor"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0208-003",
+    "page_id": "PAGE-CPNC-2025-P0208",
+    "content_type": "reference",
+    "source_transcription": "LA CHAPA. Se instala a 90cm del piso hacia arriba y a 6cm del canto hacia adentro. Recuerda el Módulo de Herrajes, las páginas de chapas!",
+    "normalized_text": "Para ubicar la chapa, la fuente usa como referencia 90 cm desde el piso y 6 cm desde el canto hacia el interior de la hoja.",
+    "learning_text": "Marca la posición de la chapa usando las dos referencias del libro: altura desde el piso y retiro desde el canto. Verifica además el herraje específico antes de mecanizar.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0208-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":208,"printed_page":186,"region":{"x":0.05,"y":0.72,"width":0.90,"height":0.23},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["puerta","chapa","herrajes","ubicacion"]
+  }
+]

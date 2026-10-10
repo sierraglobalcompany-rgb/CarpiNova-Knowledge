@@ -1,0 +1,9 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0209",
+  "pdf_page": 209,
+  "printed_page": 187,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0209-001","kind":"door_frame_stop_and_trim_reference","meaningful":true,"figure_id":"FIG-CPNC-2025-P0209-001","source_region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"reason":"Lámina ilustrada del marco, carga y moldura con medidas de referencia y esquema de ensamble."}
+  ]
+}
