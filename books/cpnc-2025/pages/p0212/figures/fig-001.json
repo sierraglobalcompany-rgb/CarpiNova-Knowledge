@@ -1,0 +1,21 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0212-001",
+  "page_id": "PAGE-CPNC-2025-P0212",
+  "type": "process_diagram",
+  "purpose": "Recrear los pasos finales de instalación de una chapa de puerta mostrados por la fuente.",
+  "source": {"book_id":"cpnc-2025","pdf_page":212,"printed_page":190,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"interior-knob","type":"interior_knob","geometry":{"precision":"approximate"}},
+    {"id":"tapaluz","type":"lock_tapaluz","geometry":{"precision":"approximate"}},
+    {"id":"latch","type":"door_latch","geometry":{"precision":"approximate"}},
+    {"id":"security-screws","type":"security_screws","geometry":{"precision":"approximate"}},
+    {"id":"door","type":"door_leaf","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"tapaluz","to":"interior-knob","type":"removed_after_knob"},{"from":"latch","to":"door","type":"inserted_into"},{"from":"security-screws","to":"interior-knob","type":"secure"},{"from":"tapaluz","to":"interior-knob","type":"reinstalled_before_knob"}],
+  "measurements": [],
+  "annotations": [{"target_entity_id":"interior-knob","text":"Paso 4: sacar el pomo y retirar el tapaluz"},{"target_entity_id":"latch","text":"Insertar el pestillo en la puerta"},{"target_entity_id":"security-screws","text":"Paso 5: instalar tornillos de seguridad"},{"target_entity_id":"tapaluz","text":"Volver a poner el tapaluz y finalmente el pomo"}],
+  "educational_sequence": [{"step":4,"action":"Retirar el tapaluz e insertar el pestillo"},{"step":5,"action":"Fijar tornillos de seguridad, reponer tapaluz y pomo"}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Diagrama de los pasos 4 y 5 para completar el montaje de una chapa: retirar tapaluz, insertar pestillo, fijar tornillos y reinstalar piezas."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Se conserva el término 'tapaluz' exactamente como lo usa la fuente, sin reemplazarlo por una denominación externa."}
+}
