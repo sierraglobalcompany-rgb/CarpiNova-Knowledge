@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0128",
+  "pdf_page": 128,
+  "printed_page": 106,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0128-001",
+      "kind": "sliding_systems_overview_diagram",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0128-001",
+      "source_region": {"x": 0.06, "y": 0.07, "width": 0.88, "height": 0.87},
+      "reason": "La página es principalmente gráfica y compara configuraciones de clóset y puerta de paso, además de esquemas de despiece y cotas."
+    }
+  ]
+}

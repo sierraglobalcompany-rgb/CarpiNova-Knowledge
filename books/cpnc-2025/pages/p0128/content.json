@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0128-001",
+    "page_id": "PAGE-CPNC-2025-P0128",
+    "content_type": "reference",
+    "source_transcription": "SISTEMAS CORREDIZOS PARA CLÓSETS Y PUERTAS DE PASO. PARA CLÓSETS. SISTEMA SD SIMPLE. TRASLAPE. SISTEMA SD50 GUÍA SUPERIOR. PUERTA CORREDIZA DE HABITACIÓN. PERFIL EN U. CHAPA PICO DE LORO. DESPIECE Y MEDIDAS.",
+    "normalized_text": "La lámina presenta dos familias de aplicación: sistemas corredizos para clósets y una puerta corrediza de habitación. Identifica el sistema SD Simple, el sistema SD50 con guía superior, traslape, perfil en U y chapa pico de loro, y añade esquemas de despiece y medidas.",
+    "learning_text": "La página funciona como mapa visual: antes de calcular o instalar una puerta corrediza hay que identificar si se trata de un clóset o una puerta de paso y reconocer el tipo de guía, perfil, cierre y traslape representado.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0128-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":128,"printed_page":106,"region":{"x":0.06,"y":0.07,"width":0.88,"height":0.87},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["sistemas-corredizos","closet","puerta-paso","sd-simple","sd50","perfil-u","chapa-pico-de-loro"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0128-002",
+    "page_id": "PAGE-CPNC-2025-P0128",
+    "content_type": "dimension",
+    "source_transcription": "ALTURA -5cm.",
+    "normalized_text": "En el esquema de despiece aparece explícitamente la indicación ALTURA - 5 cm.",
+    "learning_text": "La fuente muestra una deducción de 5 cm asociada a la altura en el esquema. Se conserva como regla candidata del dibujo y debe vincularse al sistema exacto antes de automatizar un cálculo de corte.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0128-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":128,"printed_page":106,"region":{"x":0.37,"y":0.65,"width":0.3,"height":0.24},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["altura-menos-5-cm","despiece","cota","requiere-contexto-sistema"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0128-003",
+    "page_id": "PAGE-CPNC-2025-P0128",
+    "content_type": "reference",
+    "source_transcription": "En el esquema inferior derecho se observan llamadas de medida: -5cm, -1cm y -8cm.",
+    "normalized_text": "El esquema inferior derecho contiene tres llamadas visibles de 5, 1 y 8 cm con signo de resta. La relación exacta de cada llamada con la geometría no queda inequívoca en la imagen recuperada.",
+    "learning_text": "Estas tres cotas se conservan como evidencia visual, pero no deben convertirse todavía en fórmulas automáticas porque su aplicación exacta no está resuelta con suficiente certeza.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0128-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":128,"printed_page":106,"region":{"x":0.63,"y":0.65,"width":0.31,"height":0.25},"extraction":{"method":"visual","confidence":0.9,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cotas-no-resueltas","5-cm","1-cm","8-cm","no-automatizar"]
+  }
+]
