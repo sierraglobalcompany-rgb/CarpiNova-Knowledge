@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0003-001",
+    "page_id": "PAGE-CPNC-2025-P0003",
+    "content_type": "reference",
+    "source_transcription": "CARPINTERÍA PARA NO CARPINTER@S\nCAMILO CALLE",
+    "normalized_text": "Carpintería para no Carpinter@s — Camilo Calle.",
+    "learning_text": "La página identifica nuevamente el título del libro y a Camilo Calle.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0003-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":3,"printed_page":null,"region":{"x":0.2,"y":0.09,"width":0.6,"height":0.18},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["título","autor"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0003-002",
+    "page_id": "PAGE-CPNC-2025-P0003",
+    "content_type": "reference",
+    "source_transcription": "APOYAN:\nDuratex\nINDUMA — Siempre en tu Casa!\nINFINITA — Productos con Satisfacción\nCORTECLOUD\nVENETTO — Herrajes y Accesorios para Muebles\nPreflex\nMADEPÁTULA — Los especialistas en madera\nimpra\nKL CERRADURAS",
+    "normalized_text": "Apoyan: Duratex; Induma — “Siempre en tu Casa!”; Infinita — “Productos con Satisfacción”; Cortecloud; Venetto — “Herrajes y Accesorios para Muebles”; Preflex; Madepátula — “Los especialistas en madera”; Impra; KL Cerraduras.",
+    "learning_text": "Esta página enumera las entidades que aparecen como apoyo del libro: Duratex, Induma, Infinita, Cortecloud, Venetto, Preflex, Madepátula, Impra y KL Cerraduras.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0003-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":3,"printed_page":null,"region":{"x":0.3,"y":0.25,"width":0.4,"height":0.69},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["apoyos","marcas","referencia-editorial"]
+  }
+]

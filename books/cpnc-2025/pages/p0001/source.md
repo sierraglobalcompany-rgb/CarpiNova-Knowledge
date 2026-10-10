@@ -1,0 +1,12 @@
+<!-- GENERATED FROM content.json; DO NOT EDIT DIRECTLY -->
+
+# Source transcription
+
+## CONTENT-CPNC-2025-P0001-001
+
+CARPINTERÍA PARA NO CARPINTEROS
+Camilo Calle
+
+## CONTENT-CPNC-2025-P0001-002
+
+Hágalo en casa

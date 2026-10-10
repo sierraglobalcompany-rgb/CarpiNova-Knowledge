@@ -1,0 +1,10 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0003",
+  "pdf_page": 3,
+  "printed_page": null,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"DEC-P0003-001","kind":"sponsor_branding","meaningful":false,"source_region":{"x":0.3,"y":0.25,"width":0.4,"height":0.69},"reason":"Logotipos de entidades de apoyo; se conservan sus nombres en ContentSpec, pero su forma gráfica no es necesaria para módulos técnicos o educativos."},
+    {"inventory_id":"DEC-P0003-002","kind":"page_branding","meaningful":false,"source_region":{"x":0.05,"y":0.02,"width":0.9,"height":0.08},"reason":"Cabecera editorial repetida."}
+  ]
+}
