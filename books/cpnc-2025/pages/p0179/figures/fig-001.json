@@ -1,0 +1,54 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0179-001",
+  "page_id": "PAGE-CPNC-2025-P0179",
+  "type": "illustration",
+  "purpose": "Recrear la cuadrícula de nueve ejemplos visuales de servicios especiales conservando los rótulos de la fuente.",
+  "source": {"book_id":"cpnc-2025","pdf_page":179,"printed_page":157,"region":{"x":0.06,"y":0.34,"width":0.88,"height":0.60},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"chaflan","type":"special_service_example","label":"Chaflán","description":"Pieza de canto biselado mostrada bajo el rótulo Chaflán.","geometry":{"precision":"approximate","bbox":{"x":0.00,"y":0.00,"width":0.30,"height":0.30}}},
+    {"id":"nariz","type":"special_service_example","label":"Nariz","description":"Pieza con perfil saliente mostrada bajo el rótulo Nariz.","geometry":{"precision":"approximate","bbox":{"x":0.35,"y":0.00,"width":0.30,"height":0.30}}},
+    {"id":"curva","type":"special_service_example","label":"Curva","description":"Pieza curva mostrada bajo el rótulo Curva.","geometry":{"precision":"approximate","bbox":{"x":0.70,"y":0.00,"width":0.30,"height":0.30}}},
+    {"id":"pb-bisagras","type":"special_service_example","label":"Pb Bisagras","description":"Pieza rotulada Pb Bisagras.","geometry":{"precision":"approximate","bbox":{"x":0.00,"y":0.34,"width":0.30,"height":0.30}}},
+    {"id":"sanduche","type":"special_service_example","label":"Sanduche","description":"Pieza de mayor espesor o composición mostrada bajo el rótulo Sanduche.","geometry":{"precision":"approximate","bbox":{"x":0.35,"y":0.34,"width":0.30,"height":0.30}}},
+    {"id":"ranura","type":"special_service_example","label":"Ranura","description":"Pieza ranurada mostrada bajo el rótulo Ranura.","geometry":{"precision":"approximate","bbox":{"x":0.70,"y":0.34,"width":0.30,"height":0.30}}},
+    {"id":"marco","type":"special_service_example","label":"Marco","description":"Perfil o marco mostrado bajo el rótulo Marco.","geometry":{"precision":"approximate","bbox":{"x":0.00,"y":0.68,"width":0.30,"height":0.30}}},
+    {"id":"circulo","type":"special_service_example","label":"Circulo","description":"Pieza circular mostrada bajo el rótulo Circulo.","geometry":{"precision":"approximate","bbox":{"x":0.35,"y":0.68,"width":0.30,"height":0.30}}},
+    {"id":"vaciado","type":"special_service_example","label":"Vaciado","description":"Pieza rectangular con abertura interior mostrada bajo el rótulo Vaciado.","geometry":{"precision":"approximate","bbox":{"x":0.70,"y":0.68,"width":0.30,"height":0.30}}}
+  ],
+  "relationships": [
+    {"from":"chaflan","to":"nariz","type":"same_reference_grid"},
+    {"from":"nariz","to":"curva","type":"same_reference_grid"},
+    {"from":"pb-bisagras","to":"sanduche","type":"same_reference_grid"},
+    {"from":"sanduche","to":"ranura","type":"same_reference_grid"},
+    {"from":"marco","to":"circulo","type":"same_reference_grid"},
+    {"from":"circulo","to":"vaciado","type":"same_reference_grid"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"chaflan","text":"Chaflán"},
+    {"target_entity_id":"nariz","text":"Nariz"},
+    {"target_entity_id":"curva","text":"Curva"},
+    {"target_entity_id":"pb-bisagras","text":"Pb Bisagras"},
+    {"target_entity_id":"sanduche","text":"Sanduche"},
+    {"target_entity_id":"ranura","text":"Ranura"},
+    {"target_entity_id":"marco","text":"Marco"},
+    {"target_entity_id":"circulo","text":"Circulo"},
+    {"target_entity_id":"vaciado","text":"Vaciado"}
+  ],
+  "layers": [
+    {"id":"row-1","description":"Chaflán, Nariz y Curva."},
+    {"id":"row-2","description":"Pb Bisagras, Sanduche y Ranura."},
+    {"id":"row-3","description":"Marco, Circulo y Vaciado."},
+    {"id":"labels","description":"Rótulos oscuros con texto blanco sobre cada ejemplo."}
+  ],
+  "camera": {"view":"front","projection":"flat_page_reference"},
+  "visual_style": {"background":"white","illustration":"dark wood product-style special-service examples","labels":"dark blue boxes with white text"},
+  "educational_sequence": [
+    {"step":1,"show_entity_ids":["chaflan","nariz","curva"],"instruction":"Mostrar la primera fila con sus rótulos."},
+    {"step":2,"show_entity_ids":["pb-bisagras","sanduche","ranura"],"instruction":"Mostrar la segunda fila con sus rótulos."},
+    {"step":3,"show_entity_ids":["marco","circulo","vaciado"],"instruction":"Mostrar la tercera fila con sus rótulos."}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Cuadrícula de nueve ejemplos de servicios especiales: Chaflán, Nariz, Curva, Pb Bisagras, Sanduche, Ranura, Marco, Circulo y Vaciado."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Conservar literalmente los rótulos de la fuente. No inferir tolerancias, dimensiones ni definiciones técnicas que esta página no proporciona."}
+}

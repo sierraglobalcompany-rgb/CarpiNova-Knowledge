@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0179",
+  "pdf_page": 179,
+  "printed_page": 157,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0179-001",
+      "kind": "special_services_reference_grid",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0179-001",
+      "source_region": {"x":0.06,"y":0.34,"width":0.88,"height":0.60},
+      "reason": "Cuadrícula 3×3 de nueve piezas o mecanizados rotulados como ejemplos de servicios especiales."
+    }
+  ]
+}

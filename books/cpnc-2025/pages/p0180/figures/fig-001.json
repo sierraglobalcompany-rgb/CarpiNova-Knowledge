@@ -1,0 +1,44 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0180-001",
+  "page_id": "PAGE-CPNC-2025-P0180",
+  "type": "form",
+  "purpose": "Recrear de forma determinista el formulario de despiece y servicios especiales de la página 158.",
+  "source": {"book_id":"cpnc-2025","pdf_page":180,"printed_page":158,"region":{"x":0.08,"y":0.06,"width":0.88,"height":0.90},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"project-settings","type":"project_and_board_settings_table","description":"Bloque pequeño para Proyecto y parámetros de tablero/corte; conserva los rótulos visibles de la fuente sin completar campos ambiguos por inferencia.","geometry":{"precision":"approximate","bbox":{"x":0.66,"y":0.02,"width":0.32,"height":0.38}}},
+    {"id":"edge-band-legend","type":"edge_band_code_legend","description":"Leyenda: 0 Sin Tapacanto, 1 Delgado, 2 Grueso.","geometry":{"precision":"approximate","bbox":{"x":0.66,"y":0.43,"width":0.32,"height":0.22}}},
+    {"id":"cut-grid","type":"piece_entry_grid","description":"Tabla de doce filas, Corte 1 a Corte 12, con columnas Cantidad, Lado 1, Lado 2, Girar, cuatro columnas de tapacanto y Servicio Especial.","geometry":{"precision":"approximate","bbox":{"x":0.02,"y":0.02,"width":0.60,"height":0.94}}},
+    {"id":"edge-band-l1-a","type":"form_column","label":"Tapacanto L1","geometry":{"precision":"approximate"}},
+    {"id":"edge-band-l1-b","type":"form_column","label":"Tapacanto L1","geometry":{"precision":"approximate"}},
+    {"id":"edge-band-l2-a","type":"form_column","label":"Tapacanto L2","geometry":{"precision":"approximate"}},
+    {"id":"edge-band-l2-b","type":"form_column","label":"Tapacanto L2","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [
+    {"from":"project-settings","to":"cut-grid","type":"configures"},
+    {"from":"edge-band-legend","to":"cut-grid","type":"defines_codes_for"},
+    {"from":"edge-band-l1-a","to":"cut-grid","type":"column_of"},
+    {"from":"edge-band-l1-b","to":"cut-grid","type":"column_of"},
+    {"from":"edge-band-l2-a","to":"cut-grid","type":"column_of"},
+    {"from":"edge-band-l2-b","to":"cut-grid","type":"column_of"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"cut-grid","text":"Cantidad · Lado 1 · Lado 2 · Girar · Tapacanto L1 · Tapacanto L1 · Tapacanto L2 · Tapacanto L2 · Servicio Especial"},
+    {"target_entity_id":"edge-band-legend","text":"0 Sin Tapacanto · 1 Delgado · 2 Grueso"},
+    {"target_entity_id":"project-settings","text":"Proyecto · Medida tablero (cm/mm) · parámetros de corte/tablero"}
+  ],
+  "layers": [
+    {"id":"settings","description":"Bloque de parámetros generales del proyecto, tablero y corte."},
+    {"id":"legend","description":"Leyenda de códigos de tapacanto."},
+    {"id":"grid","description":"Doce filas de captura Corte 1–12 y sus columnas."}
+  ],
+  "camera": {"view":"front","projection":"flat_page_reference"},
+  "visual_style": {"background":"white","form":"thin black grid lines","labels":"black condensed table text","page_orientation":"source content appears rotated relative to portrait page"},
+  "educational_sequence": [
+    {"step":1,"show_entity_ids":["project-settings","edge-band-legend"],"instruction":"Mostrar primero parámetros generales y la leyenda de tapacantos."},
+    {"step":2,"show_entity_ids":["cut-grid","edge-band-l1-a","edge-band-l1-b","edge-band-l2-a","edge-band-l2-b"],"instruction":"Mostrar la grilla de doce cortes conservando las columnas duplicadas L1 y L2 de la fuente."}
+  ],
+  "reconstruction": {"preferred_renderer":"html","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Formulario para proyecto y despiece con doce filas de piezas, dimensiones, giro, cuatro columnas de tapacanto, servicio especial y leyenda 0–2."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La extracción textual de algunos rótulos del bloque de parámetros está fragmentada por la orientación de la página. Preservar los rótulos verificables y no inventar emparejamientos de campos ambiguos. Las columnas Tapacanto L1/L1/L2/L2 se conservan literalmente."}
+}
