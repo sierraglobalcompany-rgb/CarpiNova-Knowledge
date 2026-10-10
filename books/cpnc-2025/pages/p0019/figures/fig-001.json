@@ -1,0 +1,33 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0019-001",
+  "page_id": "PAGE-CPNC-2025-P0019",
+  "type": "illustration",
+  "purpose": "Representar el afiche de ejemplo de la biblioteca de planos, con dos vistas de un armario giratorio y dos vistas de una cocina modular.",
+  "source": {"book_id":"cpnc-2025","pdf_page":19,"printed_page":null,"region":{"x":0.07,"y":0.19,"width":0.43,"height":0.5},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"poster-title","type":"title","geometry":{"primitive":"text_block","precision":"approximate","bounding_box":{"x":0.05,"y":0.04,"width":0.9,"height":0.09}},"description":"Título PLANOS DE MUEBLES."},
+    {"id":"wardrobe-view-a","type":"wardrobe_drawing","geometry":{"primitive":"line_drawing","precision":"approximate","bounding_box":{"x":0.06,"y":0.18,"width":0.34,"height":0.31}},"description":"Primera vista del armario giratorio abierto, con barra, entrepaños y zona inferior."},
+    {"id":"kitchen-view-a","type":"kitchen_drawing","geometry":{"primitive":"line_drawing","precision":"approximate","bounding_box":{"x":0.46,"y":0.18,"width":0.48,"height":0.31}},"description":"Primera vista frontal/perspectiva de cocina modular con gabinetes superiores e inferiores."},
+    {"id":"wardrobe-view-b","type":"wardrobe_drawing","geometry":{"primitive":"line_drawing","precision":"approximate","bounding_box":{"x":0.06,"y":0.53,"width":0.34,"height":0.33}},"description":"Segunda vista del armario giratorio mostrando otra cara/configuración."},
+    {"id":"kitchen-view-b","type":"kitchen_drawing","geometry":{"primitive":"line_drawing","precision":"approximate","bounding_box":{"x":0.43,"y":0.53,"width":0.51,"height":0.35}},"description":"Segunda vista de cocina modular con módulos altos, bajos, cajones y piso sugerido."}
+  ],
+  "relationships": [
+    {"from":"wardrobe-view-a","to":"wardrobe-view-b","type":"alternate_view_of_same_furniture"},
+    {"from":"kitchen-view-a","to":"kitchen-view-b","type":"alternate_view_of_same_furniture"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"poster-title","text":"PLANOS DE MUEBLES"},
+    {"target_entity_id":"wardrobe-view-a","text":"ARMARIO GIRATORIO"},
+    {"target_entity_id":"kitchen-view-b","text":"COCINA MODULAR"}
+  ],
+  "camera": {"view":"front","projection":"orthographic"},
+  "visual_style": {"format":"afiche ilustrado","background":"crema","linework":"líneas oscuras limpias","furniture_fill":"beige claro","layout":"cuadrícula aproximada 2x2"},
+  "educational_sequence": [
+    {"step":1,"show_entity_ids":["wardrobe-view-a","wardrobe-view-b"],"instruction":"Mostrar las dos vistas del ejemplo de armario giratorio."},
+    {"step":2,"show_entity_ids":["kitchen-view-a","kitchen-view-b"],"instruction":"Mostrar las dos vistas del ejemplo de cocina modular."}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
+  "accessibility": {"summary":"Afiche con cuatro dibujos de mobiliario: dos vistas de un armario giratorio y dos vistas de una cocina modular. No contiene cotas ni dimensiones legibles."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La geometría es ilustrativa; no debe utilizarse para fabricación sin los planos externos enlazados."}
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0020-001",
+    "page_id": "PAGE-CPNC-2025-P0020",
+    "content_type": "reference",
+    "source_transcription": "Carpintería para no carpinter@s\nCamilo Calle\n\nDigitalización de contenido\nSilvia Gutierrez Bedoya\n\nAporte Técnico\nAdministración para Carpinteros\nLina Mejía - Legnoarte SAS\nPalmira - Valle del Cauca\n315 8481875\n\nSegunda edición\nPrimera Impresión 2021\nISBN 978-958-49-3371-3",
+    "normalized_text": "Créditos editoriales: “Carpintería para no carpinter@s”, Camilo Calle. Digitalización de contenido: Silvia Gutierrez Bedoya. Aporte técnico: Administración para Carpinteros; Lina Mejía - Legnoarte SAS, Palmira - Valle del Cauca; teléfono 315 8481875. Segunda edición; primera impresión 2021; ISBN 978-958-49-3371-3.",
+    "learning_text": "Esta página conserva los créditos editoriales, responsables indicados por la fuente y datos de edición del libro.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0020-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":20,"printed_page":null,"region":{"x":0.07,"y":0.49,"width":0.55,"height":0.36},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["créditos","edición","ISBN","referencia-editorial"]
+  }
+]

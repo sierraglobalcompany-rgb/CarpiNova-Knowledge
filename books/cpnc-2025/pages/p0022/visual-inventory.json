@@ -1,0 +1,10 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0022",
+  "pdf_page": 22,
+  "printed_page": null,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"DEC-P0022-001","kind":"page_branding","meaningful":false,"source_region":{"x":0.055,"y":0.02,"width":0.9,"height":0.06},"reason":"Página separadora con cabecera editorial."},
+    {"inventory_id":"OBS-P0022-001","kind":"visible_footer_number","meaningful":false,"source_region":{"x":0.01,"y":0.94,"width":0.05,"height":0.04},"reason":"La página muestra visualmente el número “22” en el pie, pero el page-map F0 mantiene printed_page=null porque la paginación principal reinicia en la página física 23. Se conserva esta observación sin modificar silenciosamente el mapa canónico."}
+  ]
+}
