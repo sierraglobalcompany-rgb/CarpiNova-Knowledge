@@ -1,8 +1,7 @@
-# Fuente — PDF 192 / impresa 170
+<!-- GENERATED FROM content.json; DO NOT EDIT DIRECTLY -->
 
-**Libro:** Carpintería para no Carpinter@s, versión 2025  
-**Página PDF:** 192  
-**Página impresa:** 170  
-**Método:** inspección visual directa de la fuente exacta 2025.
+# Source transcription
 
-La página es un formulario de toma de medidas. Incluye encabezado para fecha, cliente, dirección, teléfono y logo; un área amplia titulada **ESQUEMA MEDIDAS** con campo **NOMBRE**; y una lista inferior de comprobación para accesos, materiales de cielos/muros/piso, medidas de vano y bases, ubicación de puntos eléctricos e hidrosanitarios, buitrones/columnas/descolgados, ventanas/puertas, guardaescobas, molduras-curvas, enchapes y medidas o referencias de electrodomésticos. También incluye un campo de observaciones.
+## CONTENT-CPNC-2025-P0192-001
+
+Formato de toma de medidas. Campos de encabezado: FECHA, CLIENTE, DIRECCION, TELEFONO, LOGO. Área principal: ESQUEMA MEDIDAS; NOMBRE. Lista inferior de control: 1. ACCESOS; 2. MATERIAL DE CIELOS, MUROS, PISO; 3. MEDIDAS VANO; 4. MEDIDAS DE BASES; 5. UBICACIÓN PUNTOS ELECTRICOS, HIDROSANITARIOS; 6. UBICACIONES BUITRONES, COLUMNAS, DESCOLGADOS; 7. UBICACIÓN VENTANAS, PUERTAS; 8. GUARDAESCOBAS; 9. MOLDURAS-CURVAS; 10. MEDIDA ENCHAPES; 11. MEDIDAS ELECTRODOMESTICOS O REFERENCIAS; OBSERVACIONES.
