@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0205-001",
+    "page_id": "PAGE-CPNC-2025-P0205",
+    "content_type": "reference",
+    "source_transcription": "PROFUNDIDAD INTERNA. Esta medida me la da el gancho colgadero. 45cm a 50cm. Es importante tener la medida estándar para que al poner el gancho las puertas cierren bien. ALTURA 230cm hasta 243cm. Máximo de la altura del clóset. MEDIDA EXTERNA 60cm. Esta medida es importante porque las puertas corredizas van a necesitar un espacio para que puedan funcionar las 2 y que no choquen con el espacio interno.",
+    "normalized_text": "La fuente muestra para el clóset una profundidad interna de 45 a 50 cm, una altura de 230 a 243 cm y una medida externa de 60 cm. Relaciona la profundidad interna con el espacio del gancho colgadero y la medida externa con el funcionamiento de las puertas corredizas.",
+    "learning_text": "Usa las cotas del libro como punto de partida para reservar espacio de colgado y recorrido de puertas. Antes de cortar, verifica el herraje real y el espacio disponible en obra.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0205-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":205,"printed_page":183,"region":{"x":0.05,"y":0.05,"width":0.90,"height":0.57},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["closet","profundidad","altura","puertas-corredizas","medidas-estandar"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0205-002",
+    "page_id": "PAGE-CPNC-2025-P0205",
+    "content_type": "recommendation",
+    "source_transcription": "Un clóset de puertas corredizas si llega hasta 2m de ancho lleva 2 puertas. Si se pasa de 2m se deben poner 3 puertas o hacer un clóset de 2 cuerpos independientes. El mejor clóset es el que va entre muros. No lleva ni techo, ni laterales, ni fondo.",
+    "normalized_text": "Para puertas corredizas, la fuente recomienda dos puertas cuando el clóset llega hasta 2 m de ancho; por encima de 2 m propone tres puertas o dividirlo en dos cuerpos independientes. También presenta como configuración preferida el clóset instalado entre muros, sin techo, laterales ni fondo.",
+    "learning_text": "Define el número de puertas a partir del ancho total según la referencia del libro. Si el espacio está entre muros, evalúa la configuración sin carcasa completa que propone la fuente y confirma las condiciones reales del sitio antes de fabricar.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0205-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":205,"printed_page":183,"region":{"x":0.05,"y":0.57,"width":0.90,"height":0.38},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["closet","puertas-corredizas","ancho","entre-muros","configuracion"]
+  }
+]
