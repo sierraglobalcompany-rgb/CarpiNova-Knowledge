@@ -1,0 +1,41 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0191-001",
+  "page_id": "PAGE-CPNC-2025-P0191",
+  "type": "table",
+  "purpose": "Recrear de forma determinista la tabla del albañil para escuadras de 90° basada en múltiplos 3-4-5.",
+  "source": {"book_id":"cpnc-2025","pdf_page":191,"printed_page":169,"region":{"x":0.08,"y":0.10,"width":0.84,"height":0.82},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {
+      "id": "pythagorean-table",
+      "type": "numeric_reference_table",
+      "geometry": {"precision":"exact","primitive":"table"},
+      "title": "tabla del albañil para escuadras 90°",
+      "subtitle": "medidas especiales con el teorema de pitágoras",
+      "rows": [
+        {"factor":"x1","a":30,"b":40,"c":50},
+        {"factor":"x2","a":60,"b":80,"c":100},
+        {"factor":"x3","a":90,"b":120,"c":150},
+        {"factor":"x4","a":120,"b":160,"c":200},
+        {"factor":"x5","a":150,"b":200,"c":250},
+        {"factor":"x6","a":180,"b":240,"c":300},
+        {"factor":"x7","a":210,"b":280,"c":350},
+        {"factor":"x8","a":240,"b":320,"c":400},
+        {"factor":"x9","a":270,"b":360,"c":450},
+        {"factor":"x10","a":300,"b":400,"c":500}
+      ]
+    }
+  ],
+  "relationships": [],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"pythagorean-table","text":"La fuente no especifica unidades; conservar los valores como proporciones numéricas."}
+  ],
+  "layers": [
+    {"id":"header","description":"Título y subtítulo de la tabla."},
+    {"id":"grid","description":"Cuadrícula con diez filas de múltiplos 3-4-5."}
+  ],
+  "visual_style": {"background":"light yellow","text":"black bold rounded sans-serif","grid":"black thick strokes"},
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Tabla de diez filas que escala la relación 30-40-50 hasta 300-400-500 para comprobar ángulos rectos."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar exactamente los diez valores; no añadir unidades ausentes en la fuente."}
+}

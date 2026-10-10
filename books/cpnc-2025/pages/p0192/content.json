@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0192-001",
+    "page_id": "PAGE-CPNC-2025-P0192",
+    "content_type": "reference",
+    "source_transcription": "Formato de toma de medidas. Campos de encabezado: FECHA, CLIENTE, DIRECCION, TELEFONO, LOGO. Área principal: ESQUEMA MEDIDAS; NOMBRE. Lista inferior de control: 1. ACCESOS; 2. MATERIAL DE CIELOS, MUROS, PISO; 3. MEDIDAS VANO; 4. MEDIDAS DE BASES; 5. UBICACIÓN PUNTOS ELECTRICOS, HIDROSANITARIOS; 6. UBICACIONES BUITRONES, COLUMNAS, DESCOLGADOS; 7. UBICACIÓN VENTANAS, PUERTAS; 8. GUARDAESCOBAS; 9. MOLDURAS-CURVAS; 10. MEDIDA ENCHAPES; 11. MEDIDAS ELECTRODOMESTICOS O REFERENCIAS; OBSERVACIONES.",
+    "normalized_text": "La página es una plantilla de levantamiento en obra. Organiza datos de cliente, un área grande para dibujar el esquema de medidas y una lista de comprobación de condiciones físicas, instalaciones, aberturas, acabados y referencias de electrodomésticos.",
+    "learning_text": "Usa un formato de levantamiento para que la visita de medición deje trazabilidad: identifica el proyecto, dibuja el ambiente y revisa sistemáticamente accesos, vanos, bases, puntos eléctricos e hidrosanitarios, columnas, puertas, ventanas, zócalos, molduras, enchapes y electrodomésticos.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0192-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":192,"printed_page":170,"region":{"x":0.06,"y":0.05,"width":0.90,"height":0.91},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["toma-de-medidas","formato","levantamiento","obra","checklist","esquema-medidas"]
+  }
+]
