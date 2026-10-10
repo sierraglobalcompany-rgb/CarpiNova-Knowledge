@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0146-001",
+    "page_id": "PAGE-CPNC-2025-P0146",
+    "content_type": "reference",
+    "source_transcription": "PASO 3. HÁGALO EN CASA. HERRAMIENTAS.",
+    "normalized_text": "Portada editorial que inicia el Paso 3 del libro, dedicado a herramientas.",
+    "learning_text": "Inicio del bloque de herramientas. Esta portada organiza el capítulo, pero no contiene todavía instrucciones técnicas.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0146-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":146,"printed_page":124,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["paso-3","herramientas","portada","editorial"]
+  }
+]
