@@ -115,6 +115,12 @@ def test_batch_017_first_assembly_part2_is_accepted() -> None:
     assert report["counts"]["pages"] == 6
 
 
+def test_batch_018_first_project_overview_is_accepted() -> None:
+    report = build_batch_report(ROOT, "batch-018")
+    assert report["result"] == "GO"
+    assert report["counts"]["pages"] == 6
+
+
 def test_generic_batch_report_accepts_physical_page_batch(tmp_path: Path) -> None:
     root = tmp_path / "repo"
     shutil.copytree(

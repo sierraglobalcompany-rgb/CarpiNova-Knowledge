@@ -1,0 +1,9 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0075-001","page_id":"PAGE-CPNC-2025-P0075","content_type":"reference",
+    "source_transcription":"¿Cómo iniciar mi primer proyecto?",
+    "normalized_text":"¿Cómo iniciar mi primer proyecto?",
+    "learning_text":"Inicio del bloque dedicado a planear y desarrollar un proyecto de carpintería desde cero.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0075-001"],"source":{"book_id":"cpnc-2025","pdf_page":75,"printed_page":53,"region":{"x":0.14,"y":0.40,"width":0.72,"height":0.20},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["inicio-de-proyecto","seccion"]
+  }
+]
