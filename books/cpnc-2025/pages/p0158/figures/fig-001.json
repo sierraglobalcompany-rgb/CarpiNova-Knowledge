@@ -1,0 +1,38 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0158-001",
+  "page_id": "PAGE-CPNC-2025-P0158",
+  "type": "process_diagram",
+  "purpose": "Recrear la secuencia visual de seguridad que muestra el uso del empujador y la conservación de la guarda y el separador de corte.",
+  "source": {"book_id":"cpnc-2025","pdf_page":158,"printed_page":136,"region":{"x":0.12,"y":0.45,"width":0.5,"height":0.26},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"table-saw","type":"stationary_circular_saw","description":"Mesa de corte con disco circular, guarda y separador representados en la secuencia.","geometry":{"precision":"approximate","bbox":{"x":0.02,"y":0.02,"width":0.48,"height":0.96}}},
+    {"id":"workpiece","type":"wood_board","description":"Tabla guiada a través de la zona de corte.","geometry":{"precision":"approximate","bbox":{"x":0.02,"y":0.18,"width":0.46,"height":0.64}}},
+    {"id":"push-stick","type":"push_device","description":"Empujador usado para continuar desplazando la pieza sin acercar la mano al disco.","geometry":{"precision":"approximate","bbox":{"x":0.22,"y":0.1,"width":0.2,"height":0.3}}},
+    {"id":"blade-guard","type":"safety_device","description":"Guarda o protector del disco que la fuente indica no retirar.","geometry":{"precision":"approximate","bbox":{"x":0.17,"y":0.57,"width":0.18,"height":0.2}}},
+    {"id":"splitter","type":"safety_device","description":"Separador de corte ubicado detrás del disco que la fuente indica no retirar.","geometry":{"precision":"approximate","bbox":{"x":0.27,"y":0.58,"width":0.1,"height":0.2}}}
+  ],
+  "relationships": [
+    {"from":"push-stick","to":"workpiece","type":"pushes"},
+    {"from":"blade-guard","to":"table-saw","type":"installed_on"},
+    {"from":"splitter","to":"table-saw","type":"installed_behind_blade"}
+  ],
+  "measurements": ["MEAS-CPNC-2025-P0158-001"],
+  "annotations": [
+    {"target_entity_id":"push-stick","text":"Se usa el empujador"},
+    {"target_entity_id":"blade-guard","text":"No se retira la guarda, ni el separador de corte"}
+  ],
+  "layers": [
+    {"id":"safe-push","description":"Escena superior: uso del empujador."},
+    {"id":"safety-devices","description":"Escena inferior: guarda y separador permanecen instalados."},
+    {"id":"labels","description":"Rótulos de seguridad impresos junto a cada escena."}
+  ],
+  "camera": {"view":"three_quarter","projection":"instructional_reference"},
+  "visual_style": {"background":"white","illustration":"instructional table-saw safety reference","labels":"dark blue boxes with white text"},
+  "educational_sequence": [
+    {"step":1,"show_entity_ids":["workpiece","push-stick"],"instruction":"Mostrar cómo el empujador mantiene la mano alejada de la zona del disco."},
+    {"step":2,"show_entity_ids":["blade-guard","splitter"],"instruction":"Mostrar que ambos dispositivos permanecen instalados durante la operación."}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Dos escenas de seguridad de sierra de mesa: uso de empujador y conservación de guarda y separador."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La reconstrucción debe preservar la relación espacial de los elementos de seguridad; no inferir dimensiones no mostradas."}
+}

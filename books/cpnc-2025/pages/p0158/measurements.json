@@ -1,0 +1,13 @@
+[
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0158-001",
+    "page_id": "PAGE-CPNC-2025-P0158",
+    "kind": "minimum_hand_distance_from_table_saw_blade_stated_by_source",
+    "value": 5,
+    "unit": "cm",
+    "applies_to": "minimum hand distance from the table-saw blade stated by the source",
+    "status": "VISUALLY_VERIFIED",
+    "confidence": 0.99,
+    "source": {"book_id":"cpnc-2025","pdf_page":158,"printed_page":136,"region":{"x":0.02,"y":0.08,"width":0.96,"height":0.14},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}
+  }
+]

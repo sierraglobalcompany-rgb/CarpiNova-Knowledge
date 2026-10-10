@@ -1,0 +1,103 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0157-001",
+  "page_id": "PAGE-CPNC-2025-P0157",
+  "type": "illustration",
+  "purpose": "Comparar visualmente las dos configuraciones de sierra circular presentadas por la fuente: de mesa y manual.",
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 157,
+    "printed_page": 135,
+    "region": {
+      "x": 0.02,
+      "y": 0.09,
+      "width": 0.96,
+      "height": 0.46
+    },
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
+  "entities": [
+    {
+      "id": "table-saw",
+      "type": "stationary_circular_saw",
+      "description": "Sierra circular montada bajo una mesa con el disco sobresaliendo por la superficie.",
+      "geometry": {
+        "precision": "approximate",
+        "bbox": {
+          "x": 0.02,
+          "y": 0.12,
+          "width": 0.47,
+          "height": 0.8
+        }
+      }
+    },
+    {
+      "id": "handheld-circular-saw",
+      "type": "handheld_circular_saw",
+      "description": "Sierra circular manual con carcasa, empuñadura, base y disco.",
+      "geometry": {
+        "precision": "approximate",
+        "bbox": {
+          "x": 0.52,
+          "y": 0.1,
+          "width": 0.45,
+          "height": 0.82
+        }
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "from": "table-saw",
+      "to": "handheld-circular-saw",
+      "type": "compared_with"
+    }
+  ],
+  "measurements": [],
+  "annotations": [],
+  "layers": [
+    {
+      "id": "tool-comparison",
+      "description": "Dos herramientas mostradas lado a lado sobre fondo claro."
+    }
+  ],
+  "camera": {
+    "view": "three_quarter",
+    "projection": "editorial_illustration"
+  },
+  "visual_style": {
+    "background": "light cream",
+    "illustration": "simplified orange-and-gray tool drawings"
+  },
+  "educational_sequence": [
+    {
+      "step": 1,
+      "show_entity_ids": [
+        "table-saw"
+      ],
+      "instruction": "Identificar que la máquina permanece fija y la pieza se desplaza sobre la mesa."
+    },
+    {
+      "step": 2,
+      "show_entity_ids": [
+        "handheld-circular-saw"
+      ],
+      "instruction": "Identificar que la pieza permanece fija y la herramienta se desplaza manualmente."
+    }
+  ],
+  "reconstruction": {
+    "preferred_renderer": "image",
+    "deterministic_required": false,
+    "generative_image_allowed": true
+  },
+  "accessibility": {
+    "summary": "Ilustración comparativa de una sierra circular de mesa y una sierra circular manual."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "La figura no aporta cotas; se conserva como comparación conceptual de configuraciones."
+  }
+}
