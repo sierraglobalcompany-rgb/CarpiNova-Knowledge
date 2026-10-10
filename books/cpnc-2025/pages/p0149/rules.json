@@ -1,0 +1,5 @@
+[
+  {
+    "rule_id":"RULE-CPNC-2025-P0149-001","page_id":"PAGE-CPNC-2025-P0149","category":"tool_selection","subject":"WORK_PROFILE","predicate":"source_recommends_defining_profile_before_tool_selection","value":{"occasional":"trabajos en casa","professional":"instalaciones","industrial":"trabajo continuo en taller"},"applicability":{"source_scope":"introductory tool-selection guidance from printed page 127"},"exceptions":["The page does not define quantitative duty cycles or tool specifications for each profile."],"sources":[{"book_id":"cpnc-2025","pdf_page":149,"printed_page":127,"region":{"x":0.04,"y":0.07,"width":0.92,"height":0.58},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],"status":"CANDIDATE"
+  }
+]
