@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0118",
+  "pdf_page": 118,
+  "printed_page": 96,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0118-001",
+      "kind": "technical_commercial_sheet",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0118-001",
+      "source_region": {"x": 0.03, "y": 0.04, "width": 0.94, "height": 0.92},
+      "reason": "La página concentra especificaciones, tablas y diagramas de instalación necesarios para entender y reconstruir la referencia de correderas."
+    }
+  ]
+}
