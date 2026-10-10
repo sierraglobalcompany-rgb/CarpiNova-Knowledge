@@ -145,6 +145,12 @@ def test_batch_022_solid_wood_product_sheets_is_accepted() -> None:
     assert report["counts"]["pages"] == 4
 
 
+def test_batch_023_materials_close_is_accepted() -> None:
+    report = build_batch_report(ROOT, "batch-023")
+    assert report["result"] == "GO"
+    assert report["counts"]["pages"] == 8
+
+
 def test_generic_batch_report_accepts_physical_page_batch(tmp_path: Path) -> None:
     root = tmp_path / "repo"
     shutil.copytree(
