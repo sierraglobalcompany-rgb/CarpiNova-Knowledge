@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0182-001",
+    "page_id": "PAGE-CPNC-2025-P0182",
+    "content_type": "reference",
+    "source_transcription": "Super Pega Industrial es el adhesivo que te permite avanzar rápido y con confianza: seca en segundos, ofrece una adhesión potente y duradera, y funciona perfecto sobre madera y otros materiales. Ideal para grandes proyectos que exigen fuerza y acabado profesional. Pegado inmediato. Uniones extra-fuertes. Mayor duración. Mayor consistencia y precisión, no se riega. Secado trasparente. Especial para: madera, cuero, metal, caucho, vidrio, acrílicos y PVC. Presentaciones: 1000g, 500g, 250g, 120g. Asesoría Personalizada.",
+    "normalized_text": "Página publicitaria de Super Pega Industrial. La fuente presenta el adhesivo como producto de secado rápido y alta consistencia, indica uso promocionado en madera, cuero, metal, caucho, vidrio, acrílicos y PVC, y muestra presentaciones de 1000 g, 500 g, 250 g y 120 g. Las afirmaciones de fuerza, duración, precisión y secado se registran como claims comerciales, no como especificaciones verificadas.",
+    "learning_text": "Conserva esta página como referencia comercial. Para decisiones de aplicación, compatibilidad, tiempos de curado o seguridad química, usa la ficha técnica y la hoja de seguridad del producto en lugar de asumir que el texto publicitario es una especificación de proceso.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0182-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":182,"printed_page":160,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["publicidad","adhesivo","super-pega-industrial","madera","metal","vidrio","acrilico","pvc"]
+  }
+]

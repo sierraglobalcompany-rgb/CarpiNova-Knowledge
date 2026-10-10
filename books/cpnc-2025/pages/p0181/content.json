@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0181-001",
+    "page_id": "PAGE-CPNC-2025-P0181",
+    "content_type": "reference",
+    "source_transcription": "ACTIVADOR + SUPER PEGA. Activador 200ml + Super pega 50gr. Activador 400ml + Super pega 100gr. Kit con activador y adhesivo instantáneo de cianoacrilato de alta viscosidad para uniones rápidas, firmes y resistentes. Ideal para madera, metal, acrílicos, PVC y más. Su fórmula precisa reduce tiempos de secado sin afectar el acabado. Pegado inmediato. Uniones extra-fuertes. Mayor duración. Multimaterial ideal para: madera, vidrio, metal, acrílico y caucho. Asesoría Personalizada.",
+    "normalized_text": "Página publicitaria de un kit de activador y adhesivo instantáneo de cianoacrilato. Presenta combinaciones de 200 ml + 50 g y 400 ml + 100 g, y enumera como materiales de uso madera, vidrio, metal, acrílico y caucho. Las expresiones sobre rapidez, resistencia, duración y acabado son afirmaciones promocionales de la fuente, no validaciones técnicas independientes.",
+    "learning_text": "Conserva esta página como referencia comercial del material citado por el libro. No conviertas las afirmaciones publicitarias en reglas de proceso, tiempos de curado ni especificaciones técnicas sin una ficha técnica independiente del fabricante.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0181-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":181,"printed_page":159,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["publicidad","adhesivo","cianoacrilato","activador","madera","metal","acrilico","caucho"]
+  }
+]
