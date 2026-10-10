@@ -1,0 +1,37 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0163-001",
+  "page_id": "PAGE-CPNC-2025-P0163",
+  "type": "tool_reference_diagram",
+  "purpose": "Recrear la lámina de referencia que identifica tres tipos de escuadra y un nivel de burbuja.",
+  "source": {"book_id":"cpnc-2025","pdf_page":163,"printed_page":141,"region":{"x":0.02,"y":0.15,"width":0.96,"height":0.60},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"rafter-square","type":"rafter_square","description":"Escuadra triangular rotulada 'Escuadra Rafter'.","geometry":{"precision":"approximate","bbox":{"x":0.05,"y":0.05,"width":0.42,"height":0.28}}},
+    {"id":"combination-square","type":"combination_square","description":"Escuadra combinada con regla y cabezal rotulada 'Escuadra combinada'.","geometry":{"precision":"approximate","bbox":{"x":0.56,"y":0.04,"width":0.39,"height":0.31}}},
+    {"id":"carpenter-square","type":"carpenter_square","description":"Escuadra de carpintero en L rotulada 'Escuadra carpintero'.","geometry":{"precision":"approximate","bbox":{"x":0.05,"y":0.40,"width":0.47,"height":0.30}}},
+    {"id":"bubble-level","type":"bubble_level","description":"Nivel rectangular con varias ampollas rotulado 'Nivel de burbuja'.","geometry":{"precision":"approximate","bbox":{"x":0.38,"y":0.72,"width":0.43,"height":0.20}}}
+  ],
+  "relationships": [
+    {"from":"rafter-square","to":"carpenter-square","type":"same_reference_group"},
+    {"from":"combination-square","to":"carpenter-square","type":"same_reference_group"},
+    {"from":"bubble-level","to":"carpenter-square","type":"same_reference_group"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"rafter-square","text":"Escuadra Rafter"},
+    {"target_entity_id":"combination-square","text":"Escuadra combinada"},
+    {"target_entity_id":"carpenter-square","text":"Escuadra carpintero"},
+    {"target_entity_id":"bubble-level","text":"Nivel de burbuja"}
+  ],
+  "layers": [
+    {"id":"tools","description":"Cuatro ilustraciones de herramientas sobre fondo claro."},
+    {"id":"labels","description":"Rótulos impresos asociados a cada herramienta."}
+  ],
+  "camera": {"view":"orthographic_reference","projection":"instructional_reference"},
+  "visual_style": {"background":"light beige","illustration":"simplified instructional tool illustrations","labels":"large outlined display text"},
+  "educational_sequence": [
+    {"step":1,"show_entity_ids":["rafter-square","combination-square","carpenter-square","bubble-level"],"instruction":"Mostrar las cuatro herramientas en una sola lámina y conservar los rótulos de la fuente."}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Lámina con escuadra Rafter, escuadra combinada, escuadra de carpintero y nivel de burbuja."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar los cuatro rótulos y la disposición general; no inferir dimensiones físicas no mostradas."}
+}

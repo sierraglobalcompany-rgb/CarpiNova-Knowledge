@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0163",
+  "pdf_page": 163,
+  "printed_page": 141,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0163-001",
+      "kind": "layout_and_level_tools_reference",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0163-001",
+      "source_region": {"x":0.02,"y":0.15,"width":0.96,"height":0.60},
+      "reason": "Ilustración compuesta con cuatro herramientas rotuladas: escuadra Rafter, escuadra combinada, escuadra de carpintero y nivel de burbuja."
+    }
+  ]
+}

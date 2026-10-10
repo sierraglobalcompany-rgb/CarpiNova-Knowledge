@@ -1,0 +1,14 @@
+[
+  {
+    "rule_id": "RULE-CPNC-2025-P0163-001",
+    "page_id": "PAGE-CPNC-2025-P0163",
+    "category": "installation_preparation",
+    "subject": "PRE_CUT_IRREGULARITY_CHECK",
+    "predicate": "source_recommends_detecting_and_resolving_irregularities_with_squares_and_level_before_breakdown_and_cutting",
+    "value": {"tools_mentioned":["escuadra","escuadra combinada","falsa escuadra","nivel"],"stage":"before breakdown and cutting"},
+    "applicability": {"source_scope":"conclusion on printed page 141"},
+    "exceptions": ["The source does not provide a complete procedure or tolerances on this page; use project-specific measurements and requirements."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":163,"printed_page":141,"region":{"x":0.02,"y":0.77,"width":0.96,"height":0.20},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  }
+]
