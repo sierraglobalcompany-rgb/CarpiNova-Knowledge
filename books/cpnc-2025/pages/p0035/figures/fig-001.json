@@ -1,0 +1,39 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0035-001",
+  "page_id":"PAGE-CPNC-2025-P0035",
+  "type":"process_diagram",
+  "purpose":"Recrear la historieta educativa que resume el flujo de levantamiento, acuerdo, documentación, control de errores y aprendizaje continuo.",
+  "source":{"book_id":"cpnc-2025","pdf_page":35,"printed_page":13,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.92},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"panel-1","type":"measurement_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.00,"y":0.00,"width":0.49,"height":0.31}},"description":"Carpintero midiendo verticalmente un espacio junto a un muro o mueble con cinta métrica."},
+    {"id":"panel-2","type":"design_review_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.51,"y":0.00,"width":0.49,"height":0.31}},"description":"Carpintero conversando con una clienta; sobre ellos aparecen esquemas de formas y un vano con flecha horizontal, como apoyo para revisar geometría o diseño."},
+    {"id":"panel-3","type":"specification_review_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.00,"y":0.34,"width":0.49,"height":0.31}},"description":"Carpintero y clienta revisando un plano o formulario mientras observan muestras de acabados o colores."},
+    {"id":"panel-4","type":"installation_problem_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.51,"y":0.34,"width":0.49,"height":0.31}},"description":"Persona preocupada frente a un mueble con cajones o frentes desalineados, representando un problema de ejecución o instalación."},
+    {"id":"panel-5","type":"work_order_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.00,"y":0.68,"width":0.49,"height":0.32}},"description":"Carpintero mostrando un documento titulado ORDEN DE TRABAJO con una lista de ítems."},
+    {"id":"panel-6","type":"learning_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.51,"y":0.68,"width":0.49,"height":0.32}},"description":"Dos instructores frente a un grupo, con el texto APRENDER A DESAPRENDER."}
+  ],
+  "relationships":[
+    {"from":"panel-1","to":"panel-2","type":"precedes"},
+    {"from":"panel-2","to":"panel-3","type":"precedes"},
+    {"from":"panel-3","to":"panel-4","type":"precedes"},
+    {"from":"panel-4","to":"panel-5","type":"leads_to_process_control"},
+    {"from":"panel-5","to":"panel-6","type":"supports_continuous_learning"}
+  ],
+  "measurements":[],
+  "annotations":[
+    {"target_entity_id":"panel-5","text":"ORDEN DE TRABAJO"},
+    {"target_entity_id":"panel-6","text":"APRENDER A DESAPRENDER"}
+  ],
+  "camera":{"view":"front","projection":"orthographic"},
+  "visual_style":{"format":"historieta educativa","layout":"cuadrícula 2 columnas x 3 filas","background":"crema","linework":"líneas oscuras","illustration":"personajes y mobiliario simplificados en tonos cálidos"},
+  "educational_sequence":[
+    {"step":1,"show_entity_ids":["panel-1"],"instruction":"Mostrar el levantamiento del espacio."},
+    {"step":2,"show_entity_ids":["panel-2","panel-3"],"instruction":"Mostrar la revisión del diseño, geometría y especificaciones con el cliente."},
+    {"step":3,"show_entity_ids":["panel-4"],"instruction":"Mostrar la consecuencia de una ejecución deficiente."},
+    {"step":4,"show_entity_ids":["panel-5"],"instruction":"Introducir la orden de trabajo como mecanismo de control."},
+    {"step":5,"show_entity_ids":["panel-6"],"instruction":"Cerrar con la idea de aprender de los errores y reemplazar malas prácticas."}
+  ],
+  "reconstruction":{"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
+  "accessibility":{"summary":"Historieta de seis paneles: medición del espacio, revisión con cliente, especificaciones y muestras, problema de instalación, orden de trabajo y cierre con el mensaje aprender a desaprender."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"Los paneles primero a cuarto no tienen rótulos grandes legibles; sus descripciones provienen de la inspección visual. Los textos ORDEN DE TRABAJO y APRENDER A DESAPRENDER sí son explícitos y deben conservarse."}
+}
