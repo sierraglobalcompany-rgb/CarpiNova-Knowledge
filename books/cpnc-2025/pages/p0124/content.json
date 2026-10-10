@@ -1,0 +1,57 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0124-001",
+    "page_id": "PAGE-CPNC-2025-P0124",
+    "content_type": "procedure",
+    "source_transcription": "las perforaciones realizadas. Finalmente, se coloca de nuevo el pomo o manija en la parte inferior. ¡Y listo! Tendrás una cerradura completamente instalada, alineada y funcional.",
+    "normalized_text": "La página completa el Paso 4 de la instalación de la cerradura: después de hacer coincidir las piezas con las perforaciones, se vuelve a colocar el pomo o manija interior para terminar el montaje.",
+    "learning_text": "El último paso es volver a montar la pieza interior del pomo o manija y comprobar que la cerradura quede alineada y funcional.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0124-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":124,"printed_page":102,"region":{"x":0.02,"y":0.08,"width":0.95,"height":0.1},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cerradura-cilindrica","pomo","manija","ensamble","continuacion-paso-4"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0124-002",
+    "page_id": "PAGE-CPNC-2025-P0124",
+    "content_type": "dimension",
+    "source_transcription": "Diámetro 25mm (1 Pulgada). También 7/8. Diámetro 54mm (2 ⅛ pulgadas). Del piso hacia arriba 90cm. Medida de entrada \"Backset\" 60mm o 70mm. (2 ⅜ o 2 ¾).",
+    "normalized_text": "El diagrama resume cotas de referencia para la cerradura: perforación lateral de 25 mm con alternativa indicada de 7/8\", perforación principal de 54 mm (2 1/8\"), altura de 90 cm desde el piso y backset de 60 o 70 mm (2 3/8\" o 2 3/4\").",
+    "learning_text": "Estas cotas funcionan como una plantilla de referencia visual. La perforación de la cara y la del canto deben quedar alineadas con el backset y la altura definidos antes de perforar.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0124-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":124,"printed_page":102,"region":{"x":0.08,"y":0.18,"width":0.82,"height":0.29},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cerradura","25-mm","54-mm","90-cm","backset","60-mm","70-mm"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0124-003",
+    "page_id": "PAGE-CPNC-2025-P0124",
+    "content_type": "hardware",
+    "source_transcription": "Manijas o jaladeras de puertas. Las manijas o jaladeras son accesorios que se utilizan para abrir puertas batientes. Algunas personas las prefieren, otras no, dependiendo del estilo o la tendencia del diseño. En ciertos casos no se recomiendan, por ejemplo, en muebles bajos, ya que sobresalen de la superficie y pueden interferir con el tránsito o el desplazamiento. Es común que, al pasar cerca de un mueble, la ropa —como el pantalón— se enganche con una jaladera. Para evitar esto, existen jaladeras curvas que reducen ese riesgo, permitiendo un tránsito más cómodo. Sin embargo, su uso dependerá siempre del gusto personal y del diseño del mueble.",
+    "normalized_text": "Las manijas o jaladeras permiten abrir puertas batientes. La fuente advierte que los modelos sobresalientes pueden interferir con el paso en muebles bajos y menciona jaladeras curvas como alternativa para reducir enganches.",
+    "learning_text": "Al elegir una jaladera no solo importa la apariencia: también conviene revisar cuánto sobresale y si puede estorbar el paso alrededor del mueble.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0124-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":124,"printed_page":102,"region":{"x":0.02,"y":0.49,"width":0.95,"height":0.2},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["manija","jaladera","puerta-batiente","ergonomia","mueble-bajo"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0124-004",
+    "page_id": "PAGE-CPNC-2025-P0124",
+    "content_type": "recommendation",
+    "source_transcription": "Alternativas a las jaladeras: Perfiles gola: Se instalan en la parte interna del mueble y dejan un espacio libre para introducir los dedos y abrir la puerta. Puertas más largas: En muebles altos de cocina, se puede fabricar la puerta 15 cm más larga que el cuerpo del mueble para abrirla fácilmente sin necesidad de jaladera. Sistema gola en madera: Utilizando el mismo tablero aglomerado, se puede fabricar una especie de \"T\" invertida que se posiciona en la parte superior del mueble. Esta deja un espacio útil para introducir la mano y abrir la puerta.",
+    "normalized_text": "La fuente propone tres alternativas a la jaladera exterior: perfil Gola, puerta alargada 15 cm respecto del cuerpo en muebles altos y un sistema Gola fabricado en madera con forma de T invertida.",
+    "learning_text": "Una puerta puede abrirse sin jaladera exterior si el diseño deja un espacio accesible para los dedos o la mano. La fuente muestra opciones con perfil Gola, puerta extendida y una solución Gola hecha con tablero.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0124-004"],
+    "source": {"book_id":"cpnc-2025","pdf_page":124,"printed_page":102,"region":{"x":0.02,"y":0.7,"width":0.95,"height":0.2},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["gola","perfil-gola","puerta-alargada","15-cm","gola-madera"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0124-005",
+    "page_id": "PAGE-CPNC-2025-P0124",
+    "content_type": "procedure",
+    "source_transcription": "Ahora bien, si decides instalar jaladeras, ten en cuenta lo siguiente: Herramientas necesarias: Broca para madera de 3/16\" (4.8 mm aproximadamente). Esta broca permite realizar las perforaciones para insertar los tornillos que fijan la jaladera.",
+    "normalized_text": "Para instalar jaladeras, la fuente indica una broca para madera de 3/16\" (aprox. 4,8 mm) para perforar los pasos de los tornillos de fijación.",
+    "learning_text": "Antes de fijar la jaladera se perforan los puntos de paso de los tornillos con la broca indicada por la fuente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0124-005"],
+    "source": {"book_id":"cpnc-2025","pdf_page":124,"printed_page":102,"region":{"x":0.02,"y":0.9,"width":0.95,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["jaladera","broca-madera","3-16-pulgada","4-8-mm","tornillos"]
+  }
+]
