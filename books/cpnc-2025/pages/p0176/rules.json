@@ -1,0 +1,26 @@
+[
+  {
+    "rule_id":"RULE-CPNC-2025-P0176-001",
+    "page_id":"PAGE-CPNC-2025-P0176",
+    "category":"optimization",
+    "subject":"BOARD_LAYOUT_OPTIMIZATION",
+    "predicate":"source_describes_optimizer_as_placing_breakdown_pieces_on_general_boards_to_improve_material_use_and_account_for_edge_banding",
+    "value":{"inputs":["piece breakdown","edge banding"],"outputs":["board usage","material consumption"]},
+    "applicability":{"source_scope":"definition of optimization on printed page 154"},
+    "exceptions":["The source does not define a specific optimization algorithm."],
+    "sources":[{"book_id":"cpnc-2025","pdf_page":176,"printed_page":154,"region":{"x":0.02,"y":0.20,"width":0.96,"height":0.25},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}}],
+    "status":"CANDIDATE"
+  },
+  {
+    "rule_id":"RULE-CPNC-2025-P0176-002",
+    "page_id":"PAGE-CPNC-2025-P0176",
+    "category":"pricing_source_recommendation",
+    "subject":"AUTHOR_SUGGESTED_PROJECT_PRICE",
+    "predicate":"author_suggests_dividing_total_material_cost_by_0_4_and_describes_result_as_60_percent_profitability_margin",
+    "value":{"divisor":0.4,"source_stated_margin_percent":60},
+    "applicability":{"source_scope":"author recommendation on printed page 154"},
+    "exceptions":["This is a recommendation from the source, not a universal accounting or pricing rule.","Labor, overhead, taxes, risk and other costs may require separate treatment; they are not resolved by this source statement."],
+    "sources":[{"book_id":"cpnc-2025","pdf_page":176,"printed_page":154,"region":{"x":0.02,"y":0.44,"width":0.96,"height":0.31},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}}],
+    "status":"CANDIDATE"
+  }
+]

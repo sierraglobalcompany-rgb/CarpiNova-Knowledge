@@ -1,0 +1,46 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0177-001",
+    "page_id":"PAGE-CPNC-2025-P0177",
+    "content_type":"reference",
+    "source_transcription":"el desperdicio. En resumen, optimizar significa aprovechar al máximo cada tablero, reduciendo costos y aumentando la eficiencia del proyecto. Tapacantos y servicios especiales. Cuando hacemos el despiece de un proyecto en tableros aglomerados o MDF, debemos tener en cuenta la aplicación de tapacantos. Los cantos expuestos muestran las partículas o fibras del tablero y es necesario cubrirlos por estética y protección.",
+    "normalized_text":"La página cierra la idea de optimización y abre la sección de tapacantos. La fuente explica que los cantos de aglomerados o MDF quedan expuestos y deben cubrirse por razones estéticas y de protección.",
+    "learning_text":"Después de optimizar, revisa qué bordes quedarán visibles o expuestos. El tapacanto forma parte del despiece porque afecta acabado, protección y costo.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0177-001"],
+    "source":{"book_id":"cpnc-2025","pdf_page":177,"printed_page":155,"region":{"x":0.02,"y":0.04,"width":0.96,"height":0.26},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}},
+    "tags":["tapacanto","aglomerado","mdf","proteccion","acabado","optimizacion"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0177-002",
+    "page_id":"PAGE-CPNC-2025-P0177",
+    "content_type":"reference",
+    "source_transcription":"El tapacanto cubre el borde y no solo mejora la apariencia, también protege el canto de la humedad. Esta humedad puede venir del ambiente, de limpiezas frecuentes o del contacto con el suelo, provocando deterioro del tablero.",
+    "normalized_text":"La fuente atribuye al tapacanto una función estética y una función de protección frente a humedad ambiental, limpieza y contacto con el suelo.",
+    "learning_text":"No trates el tapacanto únicamente como decoración: la fuente lo vincula con la protección del borde frente a humedad y deterioro.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0177-002"],
+    "source":{"book_id":"cpnc-2025","pdf_page":177,"printed_page":155,"region":{"x":0.02,"y":0.28,"width":0.96,"height":0.19},"extraction":{"method":"visual","confidence":0.96,"review_status":"VISUALLY_VERIFIED"}},
+    "tags":["tapacanto","humedad","proteccion","deterioro"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0177-003",
+    "page_id":"PAGE-CPNC-2025-P0177",
+    "content_type":"reference",
+    "source_transcription":"¿Qué lados deben llevar tapacanto? El tablero tiene cuatro lados: dos lados largos, correspondientes a la medida mayor, y dos lados anchos o cortos, correspondientes a la medida menor. Por convención los llamamos largo y ancho, incluso cuando la pieza es cuadrada. En el despiece debemos indicar cuáles lados requieren tapacanto. Existen diferentes tipos: tapacanto delgado o flexible de 0.45 mm; tapacanto semi-rígido de 1 mm o 1.5 mm; tapacanto rígido de 2 mm.",
+    "normalized_text":"La fuente propone identificar los cuatro bordes de una pieza como dos lados de largo y dos de ancho, y registrar cuáles reciben tapacanto. Clasifica tres grupos por espesor: flexible 0,45 mm, semi-rígido 1 o 1,5 mm y rígido 2 mm.",
+    "learning_text":"En cada pieza identifica por separado sus cuatro bordes y marca dónde va el tapacanto. Mantén el espesor de tapacanto como un dato explícito del despiece.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0177-003"],
+    "source":{"book_id":"cpnc-2025","pdf_page":177,"printed_page":155,"region":{"x":0.02,"y":0.47,"width":0.96,"height":0.27},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags":["largo","ancho","tapacanto-flexible","tapacanto-semirigido","tapacanto-rigido"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0177-004",
+    "page_id":"PAGE-CPNC-2025-P0177",
+    "content_type":"reference",
+    "source_transcription":"Entre más grueso el tapacanto, mejora la estética y la protección, pero aumenta el costo de aplicación. Se recomienda usar tapacanto flexible en partes estructurales o interiores y tapacanto rígido de 2 mm en frentes visibles como puertas, frentes de cocina o escritorios. Ejemplo: en una pieza de 40 cm x 30 cm, hay dos lados largos de 40 cm y dos lados cortos de 30 cm. Si se requiere tapacanto en un lado largo y en ambos lados cortos, debe indicarse en el despiece.",
+    "normalized_text":"La fuente relaciona un mayor espesor de tapacanto con más protección y costo. Recomienda flexible para zonas estructurales o interiores y rígido de 2 mm para frentes visibles. El ejemplo de 40 × 30 cm muestra cómo registrar los bordes requeridos.",
+    "learning_text":"Selecciona el tapacanto según visibilidad y función siguiendo la recomendación de la fuente, y registra exactamente qué bordes se enchaparán para que el optimizador y el servicio de corte reciban la instrucción completa.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0177-004"],
+    "source":{"book_id":"cpnc-2025","pdf_page":177,"printed_page":155,"region":{"x":0.02,"y":0.73,"width":0.96,"height":0.24},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}},
+    "tags":["tapacanto","recomendacion","2mm","frentes-visibles","estructural","ejemplo"]
+  }
+]

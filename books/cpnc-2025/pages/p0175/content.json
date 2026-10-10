@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0175-001",
+    "page_id": "PAGE-CPNC-2025-P0175",
+    "content_type": "reference",
+    "source_transcription": "¿Qué es despiezar muebles? Cuando observamos una cocina, un closet, un centro de entretenimiento o cualquier proyecto de carpintería, podemos ver que el trabajo está compuesto por muchos elementos como tableros, cajones, entrepaños, puertas y gavetas. Para desarrollar un proyecto de carpintería es necesario realizar un proceso que llamamos despiece. Esto consiste en identificar cada una de las piezas que conforman el mueble y desglosar sus medidas. Si vamos a utilizar un optimizador, es necesario ingresar las dimensiones de cada pieza.",
+    "normalized_text": "El despiece consiste en identificar cada componente del mueble y registrar sus dimensiones de forma individual. La fuente relaciona este listado con el uso posterior de un software optimizador.",
+    "learning_text": "Antes de cortar, convierte el diseño general en una lista explícita de piezas. Cada componente debe quedar identificado y dimensionado para poder fabricarlo y, si aplica, enviarlo a un optimizador.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0175-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":175,"printed_page":153,"region":{"x":0.02,"y":0.05,"width":0.96,"height":0.30},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["despiece","piezas","medidas","optimizador","carpinteria-modular"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0175-002",
+    "page_id": "PAGE-CPNC-2025-P0175",
+    "content_type": "reference",
+    "source_transcription": "Por ejemplo, si vamos a fabricar un módulo de 40 cm de alto, 40 cm de ancho y 40 cm de profundidad, necesitamos dos laterales, una base y una tapa: cuatro piezas. Para hacer el despiece debemos considerar tres medidas: alto, ancho y profundidad. Si usamos tablero de 15 mm y queremos una medida exterior de 40 cm, las piezas interiores deben descontar el espesor de los laterales y quedar en 37 cm.",
+    "normalized_text": "La fuente usa un módulo cúbico de 40 cm como ejemplo y explica que el espesor del tablero modifica las dimensiones de las piezas interiores. En el ejemplo, con tablero de 15 mm, una dimensión exterior de 40 cm se traduce en 37 cm interiores al descontar ambos laterales.",
+    "learning_text": "Distingue siempre entre medidas exteriores del mueble y medidas de cada pieza. Cuando una pieza queda entre dos laterales, el ejemplo muestra que deben descontarse los espesores correspondientes antes de cortar.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0175-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":175,"printed_page":153,"region":{"x":0.02,"y":0.32,"width":0.96,"height":0.31},"extraction":{"method":"visual","confidence":0.96,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["despiece","alto","ancho","profundidad","espesor","tablero","ejemplo"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0175-003",
+    "page_id": "PAGE-CPNC-2025-P0175",
+    "content_type": "reference",
+    "source_transcription": "La información del despiece debe organizarse indicando: 1. Cantidad de piezas. 2. Descripción. 3. Largo (la medida mayor). 4. Ancho (la medida menor). 5. Orientación de la beta del tablero. 6. Tapacantos: como el aglomerado tiene cantos expuestos, es necesario",
+    "normalized_text": "La fuente propone registrar cantidad, descripción, largo, ancho, orientación de la ‘beta’ del tablero y tapacantos. La frase sobre tapacantos continúa en la página siguiente.",
+    "learning_text": "Convierte cada pieza en un registro estructurado. Mantén cantidad, nombre, dimensiones, orientación indicada por la fuente y requisitos de tapacanto; la continuidad del punto seis se completa en la página siguiente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0175-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":175,"printed_page":153,"region":{"x":0.02,"y":0.64,"width":0.96,"height":0.33},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["lista-de-despiece","cantidad","descripcion","largo","ancho","beta","tapacantos"]
+  }
+]

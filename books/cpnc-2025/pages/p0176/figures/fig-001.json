@@ -1,0 +1,23 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0176-001",
+  "page_id":"PAGE-CPNC-2025-P0176",
+  "type":"process_diagram",
+  "purpose":"Recrear el flujo visual DESPIECE → OPTIMIZACIÓN → CONSUMO DE MATERIALES y el ejemplo numérico de la fuente.",
+  "source":{"book_id":"cpnc-2025","pdf_page":176,"printed_page":154,"region":{"x":0.04,"y":0.46,"width":0.92,"height":0.49},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"breakdown","type":"breakdown_stage","description":"Bloque DESPIECE con lista de piezas.","geometry":{"precision":"approximate","bbox":{"x":0.02,"y":0.12,"width":0.26,"height":0.38}}},
+    {"id":"optimizer","type":"optimization_stage","description":"Bloque OPTIMIZACIÓN que representa la distribución de piezas sobre tableros.","geometry":{"precision":"approximate","bbox":{"x":0.36,"y":0.12,"width":0.28,"height":0.38}}},
+    {"id":"consumption","type":"material_consumption_stage","description":"Bloque CONSUMO DE MATERIALES con ejemplo de tableros y tapacanto.","geometry":{"precision":"approximate","bbox":{"x":0.71,"y":0.12,"width":0.27,"height":0.38}}},
+    {"id":"profitability","type":"pricing_example","description":"Calculadora o bloque asociado a la recomendación de divisor 0,4 y texto de rentabilidad 60%.","geometry":{"precision":"approximate","bbox":{"x":0.55,"y":0.58,"width":0.4,"height":0.30}}}
+  ],
+  "relationships":[{"from":"breakdown","to":"optimizer","type":"feeds"},{"from":"optimizer","to":"consumption","type":"calculates"},{"from":"consumption","to":"profitability","type":"informs_example_pricing"}],
+  "measurements":["MEAS-CPNC-2025-P0176-001","MEAS-CPNC-2025-P0176-002","MEAS-CPNC-2025-P0176-003","MEAS-CPNC-2025-P0176-004","MEAS-CPNC-2025-P0176-005","MEAS-CPNC-2025-P0176-006","MEAS-CPNC-2025-P0176-007","MEAS-CPNC-2025-P0176-008","MEAS-CPNC-2025-P0176-009"],
+  "annotations":[{"target_entity_id":"breakdown","text":"DESPIECE"},{"target_entity_id":"optimizer","text":"OPTIMIZACIÓN"},{"target_entity_id":"consumption","text":"CONSUMO DE MATERIALES"},{"target_entity_id":"profitability","text":"0,4 · RENTABILIDAD 60%"}],
+  "layers":[{"id":"main-flow","description":"Tres etapas principales del flujo."},{"id":"cost-example","description":"Valores de consumo y costo del ejemplo."},{"id":"pricing-example","description":"Recomendación de rentabilidad de la fuente."}],
+  "camera":{"view":"front","projection":"flat_page_reference"},
+  "visual_style":{"background":"white","illustration":"instructional flowchart","accent":"orange and dark text"},
+  "educational_sequence":[{"step":1,"show_entity_ids":["breakdown","optimizer","consumption"],"instruction":"Mostrar el flujo desde la lista de piezas hasta el consumo de materiales."},{"step":2,"show_entity_ids":["profitability"],"instruction":"Presentar la fórmula únicamente como recomendación atribuida a la fuente."}],
+  "reconstruction":{"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility":{"summary":"Flujo despiece, optimización y consumo de materiales con ejemplo de costos y recomendación de rentabilidad."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"No presentar el divisor 0,4 o el 60% como regla contable universal; son una recomendación de la fuente."}
+}

@@ -1,0 +1,23 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0175-001",
+  "page_id":"PAGE-CPNC-2025-P0175",
+  "type":"process_diagram",
+  "purpose":"Recrear la explicación visual del despiece: pasar de un mueble o módulo a piezas individuales y medidas organizadas.",
+  "source":{"book_id":"cpnc-2025","pdf_page":175,"printed_page":153,"region":{"x":0.02,"y":0.08,"width":0.96,"height":0.88},"extraction":{"method":"visual","confidence":0.95,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"general-board","type":"sheet_board","description":"Tablero general representado como superficie rectangular de referencia.","geometry":{"precision":"approximate","bbox":{"x":0.05,"y":0.12,"width":0.35,"height":0.34}}},
+    {"id":"piece-layout","type":"cut_pieces","description":"Conjunto de piezas rectangulares identificadas como partes del mueble.","geometry":{"precision":"approximate","bbox":{"x":0.42,"y":0.12,"width":0.52,"height":0.34}}},
+    {"id":"example-module","type":"cabinet_module","description":"Módulo cúbico usado para explicar alto, ancho, profundidad y descuento de espesores.","geometry":{"precision":"approximate","bbox":{"x":0.15,"y":0.53,"width":0.37,"height":0.37}}},
+    {"id":"field-list","type":"breakdown_fields","description":"Listado de campos del despiece: cantidad, descripción, largo, ancho, orientación de la beta y tapacantos.","geometry":{"precision":"approximate","bbox":{"x":0.56,"y":0.53,"width":0.39,"height":0.38}}}
+  ],
+  "relationships":[{"from":"general-board","to":"piece-layout","type":"is_decomposed_into"},{"from":"example-module","to":"field-list","type":"documented_with"}],
+  "measurements":["MEAS-CPNC-2025-P0175-001","MEAS-CPNC-2025-P0175-002","MEAS-CPNC-2025-P0175-003","MEAS-CPNC-2025-P0175-004","MEAS-CPNC-2025-P0175-005"],
+  "annotations":[{"target_entity_id":"example-module","text":"alto, ancho y profundidad"},{"target_entity_id":"field-list","text":"cantidad · descripción · largo · ancho · beta · tapacantos"}],
+  "layers":[{"id":"board-pieces","description":"Tablero y piezas resultantes."},{"id":"module-example","description":"Módulo del ejemplo dimensional."},{"id":"fields","description":"Campos que se registran en el despiece."}],
+  "camera":{"view":"front","projection":"instructional_reference"},
+  "visual_style":{"background":"white","illustration":"instructional woodworking diagram","labels":"dark text with highlighted headings"},
+  "educational_sequence":[{"step":1,"show_entity_ids":["general-board","piece-layout"],"instruction":"Mostrar que el proyecto se separa en piezas individuales."},{"step":2,"show_entity_ids":["example-module","field-list"],"instruction":"Relacionar el ejemplo dimensional con los datos que deben registrarse."}],
+  "reconstruction":{"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility":{"summary":"Diagrama de despiece con tablero, piezas, módulo de ejemplo y lista de campos."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"No reconstruir pequeñas cotas de la ilustración que no sean legibles con suficiente certeza; usar solo las medidas extraídas de forma confiable en measurements.json."}
+}

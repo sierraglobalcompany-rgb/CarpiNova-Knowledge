@@ -1,0 +1,26 @@
+[
+  {
+    "rule_id":"RULE-CPNC-2025-P0175-001",
+    "page_id":"PAGE-CPNC-2025-P0175",
+    "category":"breakdown",
+    "subject":"PIECE_DIMENSIONS",
+    "predicate":"source_example_subtracts_both_side_thicknesses_from_external_dimension_for_an_interior_piece",
+    "value":{"external_dimension_cm":40,"side_thickness_mm":15,"resulting_internal_dimension_cm":37},
+    "applicability":{"source_scope":"specific 40 cm module example on printed page 153"},
+    "exceptions":["This is a source example, not a universal deduction rule for every joint or construction method."],
+    "sources":[{"book_id":"cpnc-2025","pdf_page":175,"printed_page":153,"region":{"x":0.02,"y":0.32,"width":0.96,"height":0.31},"extraction":{"method":"visual","confidence":0.96,"review_status":"VISUALLY_VERIFIED"}}],
+    "status":"CANDIDATE"
+  },
+  {
+    "rule_id":"RULE-CPNC-2025-P0175-002",
+    "page_id":"PAGE-CPNC-2025-P0175",
+    "category":"breakdown",
+    "subject":"BREAKDOWN_RECORD_FIELDS",
+    "predicate":"source_recommends_recording_quantity_description_length_width_grain_orientation_and_edge_banding_for_each_piece",
+    "value":{"fields":["cantidad","descripcion","largo","ancho","orientacion de la beta","tapacantos"]},
+    "applicability":{"source_scope":"despiece list on printed page 153; tapacanto explanation continues on next page"},
+    "exceptions":[],
+    "sources":[{"book_id":"cpnc-2025","pdf_page":175,"printed_page":153,"region":{"x":0.02,"y":0.64,"width":0.96,"height":0.33},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}}],
+    "status":"CANDIDATE"
+  }
+]
