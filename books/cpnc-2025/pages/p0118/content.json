@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0118-001",
+    "page_id": "PAGE-CPNC-2025-P0118",
+    "content_type": "hardware",
+    "source_transcription": "CORREDERAS TELESCÓPICAS - MANUAL DE INSTALACIÓN. Soporte del peso (Kgs en pos. fija): 45 kg/18”. Velocidad de Apertura: 8-12 CICLOS/MIN. Garantia ciclos de apuertura: 30.000.",
+    "normalized_text": "La página presenta una ficha/manual de correderas telescópicas. La fuente imprime una referencia de soporte de peso de 45 kg asociada a 18 pulgadas, velocidad de apertura de 8 a 12 ciclos por minuto y una garantía indicada de 30.000 ciclos de apertura.",
+    "learning_text": "La corredera telescópica se presenta con datos de capacidad, tamaño de referencia, velocidad y ciclos. Estos valores se conservan como especificaciones de la fuente comercial y no se generalizan a todas las correderas.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0118-001"],
+    "source": {"book_id": "cpnc-2025", "pdf_page": 118, "printed_page": 96, "region": {"x": 0.04, "y": 0.08, "width": 0.48, "height": 0.22}, "extraction": {"method": "visual", "confidence": 0.99, "review_status": "VISUALLY_VERIFIED"}},
+    "tags": ["corredera-telescopica", "capacidad", "ciclos", "velocidad", "venetto"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0118-002",
+    "page_id": "PAGE-CPNC-2025-P0118",
+    "content_type": "table",
+    "source_transcription": "Medidas Disponibles. Descripcion: 250mm, 300mm, 350mm, 400mm, 450mm, 500mm. ESPESOR: Nº 1 = 0.8 mm; Nº 2 = 0.8 mm; Nº 3 = 0.8 mm.",
+    "normalized_text": "La tabla comercial lista seis longitudes disponibles, de 250 a 500 mm en incrementos de 50 mm, y muestra tres componentes o perfiles numerados 1, 2 y 3 con espesor impreso de 0,8 mm cada uno.",
+    "learning_text": "Antes de elegir una corredera hay que distinguir longitud disponible y construcción del perfil. Esta página documenta seis longitudes y tres perfiles de 0,8 mm según la ficha mostrada.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0118-002"],
+    "source": {"book_id": "cpnc-2025", "pdf_page": 118, "printed_page": 96, "region": {"x": 0.53, "y": 0.16, "width": 0.4, "height": 0.3}, "extraction": {"method": "visual", "confidence": 0.99, "review_status": "VISUALLY_VERIFIED"}},
+    "tags": ["corredera-telescopica", "longitudes", "espesor", "tabla"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0118-003",
+    "page_id": "PAGE-CPNC-2025-P0118",
+    "content_type": "dimension",
+    "source_transcription": "DIAGRAMA DE PRODUCTO E INSTALACION (SISTEMA 32 - 37). El gráfico muestra los perfiles de la corredera, posiciones de instalación y etiquetas numéricas visibles como 12.5, 42, 26, 192, 160, 128, 120, 96, 64 y 35.",
+    "normalized_text": "La parte inferior de la página es un diagrama técnico de producto e instalación rotulado como sistema 32-37. Se conservan las etiquetas numéricas tal como aparecen, sin asignar unidad a las cotas cuyo gráfico no la explicita de forma legible.",
+    "learning_text": "El diagrama sirve como referencia visual de montaje. Las cotas legibles se guardan para reconstrucción, pero las que no muestran unidad clara no deben convertirse automáticamente en medidas de instalación validadas.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0118-003"],
+    "source": {"book_id": "cpnc-2025", "pdf_page": 118, "printed_page": 96, "region": {"x": 0.05, "y": 0.31, "width": 0.9, "height": 0.62}, "extraction": {"method": "visual", "confidence": 0.97, "review_status": "VISUALLY_VERIFIED"}},
+    "tags": ["corredera-telescopica", "sistema-32-37", "diagrama-instalacion", "cotas"]
+  }
+]
