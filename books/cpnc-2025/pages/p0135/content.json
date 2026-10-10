@@ -1,0 +1,46 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0135-001",
+    "page_id": "PAGE-CPNC-2025-P0135",
+    "content_type": "hardware",
+    "source_transcription": "SD 25 - MANUAL DE INSTALACIÓN. CANTIDAD DE PUERTAS 2P. ESPESOR DE PUERTA mm 15. DENTRO DEL VANO DV. PESO MAX. DE PUERTA Kg 25.",
+    "normalized_text": "El manual corresponde al sistema SD 25: 2 puertas, espesor de 15 mm, instalación dentro del vano (DV) y peso máximo indicado de 25 kg.",
+    "learning_text": "Antes de seguir la secuencia gráfica, confirma que el sistema sea SD 25 y que la configuración coincida con la ficha: dos puertas de 15 mm dentro del vano y hasta 25 kg según el fabricante.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0135-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":135,"printed_page":113,"region":{"x":0.04,"y":0.06,"width":0.42,"height":0.38},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["sd25","manual-instalacion","2-puertas","15-mm","dv","25-kg"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0135-002",
+    "page_id": "PAGE-CPNC-2025-P0135",
+    "content_type": "procedure",
+    "source_transcription": "Paso 1. Paso 2. Paso 3. Paso 4.",
+    "normalized_text": "La ficha organiza la instalación del SD 25 en cuatro pasos gráficos consecutivos.",
+    "learning_text": "Recorre el montaje en el orden visual Paso 1 → Paso 4. Las cotas pequeñas y llamadas de detalle no se convierten todavía en instrucciones automáticas porque no están resueltas con suficiente certeza.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0135-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":135,"printed_page":113,"region":{"x":0.42,"y":0.1,"width":0.53,"height":0.78},"extraction":{"method":"visual","confidence":0.95,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["paso-1","paso-2","paso-3","paso-4","secuencia-instalacion"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0135-003",
+    "page_id": "PAGE-CPNC-2025-P0135",
+    "content_type": "reference",
+    "source_transcription": "COMPONENTES. TENER EN CUENTA.",
+    "normalized_text": "El panel izquierdo muestra componentes del SD 25 y una sección de consideraciones previas con esquemas del vano y las puertas.",
+    "learning_text": "Identifica primero los componentes y revisa las condiciones indicadas en 'Tener en cuenta' antes de comenzar el montaje.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0135-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":135,"printed_page":113,"region":{"x":0.05,"y":0.12,"width":0.38,"height":0.45},"extraction":{"method":"visual","confidence":0.95,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["componentes","tener-en-cuenta","preinstalacion","sd25"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0135-004",
+    "page_id": "PAGE-CPNC-2025-P0135",
+    "content_type": "reference",
+    "source_transcription": "En el detalle inferior izquierdo se observa una llamada circular con el texto Ø 28.",
+    "normalized_text": "El dibujo contiene una llamada Ø 28, pero la unidad y la relación exacta con la pieza no quedan inequívocamente resueltas en la fuente recuperada.",
+    "learning_text": "La llamada Ø 28 queda conservada como evidencia visual pendiente; no debe convertirse en una perforación o cota automática hasta confirmar su unidad y su aplicación exacta.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0135-004"],
+    "source": {"book_id":"cpnc-2025","pdf_page":135,"printed_page":113,"region":{"x":0.22,"y":0.58,"width":0.18,"height":0.18},"extraction":{"method":"visual","confidence":0.9,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["diametro-28","cota-no-resuelta","no-automatizar"]
+  }
+]
