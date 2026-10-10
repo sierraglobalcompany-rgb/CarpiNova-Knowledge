@@ -6,10 +6,10 @@
   "visuals": [
     {
       "inventory_id": "VIS-P0181-001",
-      "kind": "promotional_product_layout",
-      "meaningful": false,
+      "kind": "advertisement",
+      "meaningful": true,
       "source_region": {"x":0.0,"y":0.0,"width":1.0,"height":1.0},
-      "reason": "Composición publicitaria con fotografías de producto, materiales de referencia, logotipo y QR. No contiene un diagrama o proceso técnico que requiera FigureSpec educativo."
+      "exclusion_reason": "Página publicitaria con fotografías de producto, materiales de referencia, logotipo y QR. El contenido comercial se preserva como ContentSpec; recrear el arte publicitario no aporta conocimiento técnico reutilizable."
     }
   ]
 }
