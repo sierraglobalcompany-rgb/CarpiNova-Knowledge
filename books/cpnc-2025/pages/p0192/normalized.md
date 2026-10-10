@@ -1,5 +1,7 @@
-# Formato de toma de medidas en obra
+<!-- GENERATED FROM content.json; DO NOT EDIT DIRECTLY -->
 
-La página organiza el levantamiento en tres zonas: identificación del trabajo, un área central para dibujar el esquema de medidas y una lista de control de condiciones que pueden afectar el diseño o la instalación.
+# Normalized text
 
-La lista incluye accesos, acabados del ambiente, vanos, bases, instalaciones, elementos estructurales, puertas y ventanas, guardaescobas, molduras, enchapes y referencias de electrodomésticos.
+## CONTENT-CPNC-2025-P0192-001
+
+La página es una plantilla de levantamiento en obra. Organiza datos de cliente, un área grande para dibujar el esquema de medidas y una lista de comprobación de condiciones físicas, instalaciones, aberturas, acabados y referencias de electrodomésticos.
