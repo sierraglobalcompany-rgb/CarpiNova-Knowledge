@@ -1,7 +1,7 @@
 {
   "figure_id": "FIG-CPNC-2025-P0163-001",
   "page_id": "PAGE-CPNC-2025-P0163",
-  "type": "tool_reference_diagram",
+  "type": "illustration",
   "purpose": "Recrear la lámina de referencia que identifica tres tipos de escuadra y un nivel de burbuja.",
   "source": {"book_id":"cpnc-2025","pdf_page":163,"printed_page":141,"region":{"x":0.02,"y":0.15,"width":0.96,"height":0.60},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
   "entities": [
