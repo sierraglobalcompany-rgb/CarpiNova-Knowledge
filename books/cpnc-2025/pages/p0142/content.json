@@ -1,0 +1,46 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0142-001",
+    "page_id": "PAGE-CPNC-2025-P0142",
+    "content_type": "hardware",
+    "source_transcription": "4. Grapa mueble de Induma. La grapa mueble es un sistema más estructural, diseñado para soportar mayores cargas. Está compuesta por dos piezas metálicas en ángulo de 90. Una se instala en el mueble y la otra en el muro. A diferencia del sistema Francés o del soporte multiusos, la unión se realiza mediante tornillo y tuerca, lo que otorga mayor estabilidad y resistencia.",
+    "normalized_text": "Método 4: grapa mueble de Induma. La fuente la describe como dos piezas metálicas en ángulo de 90°, una en el mueble y otra en el muro, unidas mediante tornillo y tuerca.",
+    "learning_text": "El cuarto método anunciado en la página anterior es una grapa metálica de dos piezas. Su unión usa tornillo y tuerca, a diferencia del encaje directo del chaflán o soporte multiusos.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0142-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":142,"printed_page":120,"region":{"x":0.47,"y":0.08,"width":0.49,"height":0.28},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["grapa-mueble","induma","anclaje-muro","tornillo-tuerca","90-grados"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0142-002",
+    "page_id": "PAGE-CPNC-2025-P0142",
+    "content_type": "recommendation",
+    "source_transcription": "Consideraciones finales. Los sistemas como el chaflán Francés, el soporte multiusos y la grapa mueble ofrecen una gran versatilidad, ya que permiten montar y desmontar los muebles fácilmente. Por el contrario, el sistema de amarre directo al muro es más permanente: una vez instalado, no se puede desmontar sin retirar los tornillos del muro.",
+    "normalized_text": "La fuente compara los sistemas desmontables —chaflán francés, soporte multiusos y grapa mueble— con el amarre directo, que considera más permanente porque exige retirar los tornillos del muro para desmontar.",
+    "learning_text": "Distingue entre fijaciones pensadas para desmontaje y el amarre directo, que la fuente presenta como una solución más permanente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0142-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":142,"printed_page":120,"region":{"x":0.47,"y":0.34,"width":0.49,"height":0.16},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["comparacion","desmontable","amarre-directo","chaflan","soporte-multiusos"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0142-003",
+    "page_id": "PAGE-CPNC-2025-P0142",
+    "content_type": "concept",
+    "source_transcription": "¿Cómo instalar repisas flotantes? Existen dos formas comunes de construir e instalar repisas flotantes, es decir, estantes sin que se vea el sistema de anclaje a la pared.",
+    "normalized_text": "La fuente introduce dos formas de construir e instalar repisas flotantes con el sistema de anclaje oculto.",
+    "learning_text": "Una repisa flotante busca ocultar el sistema de fijación. El libro presenta dos formas distintas de lograrlo.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0142-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":142,"printed_page":120,"region":{"x":0.50,"y":0.50,"width":0.46,"height":0.10},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["repisa-flotante","anclaje-oculto"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0142-004",
+    "page_id": "PAGE-CPNC-2025-P0142",
+    "content_type": "procedure",
+    "source_transcription": "Primera forma: con soporte invisible (varilla). Consiste en tomar dos tableros aglomerados de 15 mm o 18 mm de espesor y unirlos con Súper Pega Infinita. Luego se aplica tapacanto en todo el contorno, lo que nos da como resultado una repisa de doble grosor o ‘sandwichada’. Para su instalación se utilizan varillas conocidas como soportes invisibles, disponibles en diferentes tamaños según la profundidad de la repisa. Estas varillas se insertan por el canto trasero de la repisa, para lo cual se deben hacer perforaciones con una broca de 3/8 de pulgada. Es fundamental que estas perforaciones queden perfectamente alineadas, por lo que se recomienda utilizar una guía o plantilla que mantenga el taladro nivelado durante el proceso. Como estas varillas traen una platina con tornillos, adicional, es necesario hacer un pequeño cajeo con formón o ruteadora, de forma que la platina quede al ras del canto trasero de la repisa.",
+    "normalized_text": "Primera forma: fabricar una repisa de doble tablero de 15 o 18 mm, perforar el canto trasero con broca de 3/8” para las varillas de soporte invisible, mantener las perforaciones alineadas y hacer un cajeo para que la platina quede al ras.",
+    "learning_text": "En la variante con varillas invisibles, la precisión de las perforaciones es crítica: las varillas deben coincidir con los orificios traseros y la platina debe quedar embutida al ras.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0142-004"],
+    "source": {"book_id":"cpnc-2025","pdf_page":142,"printed_page":120,"region":{"x":0.50,"y":0.59,"width":0.46,"height":0.36},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["repisa-flotante","soporte-invisible","varilla","15-mm","18-mm","broca-3-8","cajeo"]
+  }
+]
