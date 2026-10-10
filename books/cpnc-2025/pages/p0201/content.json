@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0201-001",
+    "page_id": "PAGE-CPNC-2025-P0201",
+    "content_type": "definition",
+    "source_transcription": "BASE O PISO. Es la tabla inferior donde empieza el mueble, ya sea mueble alto o bajo de la cocina, ambos llevan base con diferentes medidas. El largo depende del espacio y el diseño de la cocina. Este ejemplo será con 180cm de largo.",
+    "normalized_text": "La base o piso es la tabla inferior desde la que comienza el mueble de cocina, tanto alto como bajo. Sus medidas cambian según el tipo de mueble y el largo depende del espacio y del diseño; el ejemplo de la página usa 180 cm de largo.",
+    "learning_text": "Define primero la base del mueble y adapta su largo al espacio real. Distingue las medidas del mueble alto y del mueble bajo antes de preparar el despiece.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0201-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":201,"printed_page":179,"region":{"x":0.08,"y":0.07,"width":0.84,"height":0.35},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cocina","base","piso","mueble-alto","mueble-bajo"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0201-002",
+    "page_id": "PAGE-CPNC-2025-P0201",
+    "content_type": "table",
+    "source_transcription": "Ancho / Alto. Base o piso (mueble alto): 30/35cm x 180cm. Base o piso (mueble bajo): 57/58cm x 180cm. Parales (mueble alto): 30/35cm x 57cm. Parale (mueble bajo): 57/58cm x 76.5cm. Amarres (delanteros): 8cm x 177cm. Amarres (traseros): 10cm x 177cm.",
+    "normalized_text": "La tabla de despiece de ejemplo diferencia bases, parales y amarres. Para mueble alto muestra base de 30-35 cm por 180 cm y parales de 30-35 cm por 57 cm. Para mueble bajo muestra base de 57-58 cm por 180 cm y parales de 57-58 cm por 76,5 cm. Los amarres delanteros son de 8 cm por 177 cm y los traseros de 10 cm por 177 cm.",
+    "learning_text": "Usa la tabla como referencia del ejemplo de 180 cm, conservando por separado las piezas de mueble alto y bajo. Verifica el ancho y la altura de cada pieza antes de cortar.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0201-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":201,"printed_page":179,"region":{"x":0.08,"y":0.34,"width":0.58,"height":0.34},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cocina","despiece","base","parales","amarres","medidas"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0201-003",
+    "page_id": "PAGE-CPNC-2025-P0201",
+    "content_type": "construction_pattern",
+    "source_transcription": "Chaflán. Es un corte a 45° donde se ancla el mueble alto, amarra al muro. Los parales son las piezas que van de manera vertical, los cuales se ensamblan desde la base y llegan hasta la parte superior. Recuerda: los muebles bajos de cocina NO tienen fondo por temas de humedad. El fondo solo lo llevan los muebles altos.",
+    "normalized_text": "El chaflán se describe como un corte a 45° usado para anclar el mueble alto al muro. Los parales son piezas verticales que se ensamblan desde la base hasta la parte superior. La fuente indica que los muebles bajos de cocina no llevan fondo por humedad y que el fondo se usa en los muebles altos.",
+    "learning_text": "Diferencia las funciones de cada pieza: los parales forman los laterales verticales, el chaflán ayuda a fijar el mueble alto al muro y el fondo se reserva, según esta fuente, para los muebles altos.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0201-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":201,"printed_page":179,"region":{"x":0.06,"y":0.63,"width":0.90,"height":0.33},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cocina","chaflan","parales","fondo","humedad","anclaje"]
+  }
+]

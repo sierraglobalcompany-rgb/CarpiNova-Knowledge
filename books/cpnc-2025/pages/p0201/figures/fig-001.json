@@ -1,0 +1,22 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0201-001",
+  "page_id": "PAGE-CPNC-2025-P0201",
+  "type": "dimensioned_drawing",
+  "purpose": "Recrear la referencia de despiece de base, parales, amarres y chaflán para muebles de cocina.",
+  "source": {"book_id":"cpnc-2025","pdf_page":201,"printed_page":179,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"base-upper","type":"upper_cabinet_base","geometry":{"precision":"approximate"}},
+    {"id":"base-lower","type":"lower_cabinet_base","geometry":{"precision":"approximate"}},
+    {"id":"stile-upper","type":"upper_cabinet_stile","geometry":{"precision":"approximate"}},
+    {"id":"stile-lower","type":"lower_cabinet_stile","geometry":{"precision":"approximate"}},
+    {"id":"front-tie","type":"front_tie","geometry":{"precision":"approximate"}},
+    {"id":"rear-tie","type":"rear_tie","geometry":{"precision":"approximate"}},
+    {"id":"chamfer","type":"wall_anchor_chamfer","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"stile-upper","to":"base-upper","type":"assembled_vertically_from_base"},{"from":"stile-lower","to":"base-lower","type":"assembled_vertically_from_base"},{"from":"chamfer","to":"base-upper","type":"upper_cabinet_wall_anchor_component"}],
+  "measurements": ["MEAS-CPNC-2025-P0201-001","MEAS-CPNC-2025-P0201-002","MEAS-CPNC-2025-P0201-003","MEAS-CPNC-2025-P0201-004","MEAS-CPNC-2025-P0201-005","MEAS-CPNC-2025-P0201-006","MEAS-CPNC-2025-P0201-007","MEAS-CPNC-2025-P0201-008","MEAS-CPNC-2025-P0201-009","MEAS-CPNC-2025-P0201-010","MEAS-CPNC-2025-P0201-011","MEAS-CPNC-2025-P0201-012","MEAS-CPNC-2025-P0201-013","MEAS-CPNC-2025-P0201-014","MEAS-CPNC-2025-P0201-015","MEAS-CPNC-2025-P0201-016","MEAS-CPNC-2025-P0201-017"],
+  "annotations": [{"target_entity_id":"base-upper","text":"Base o piso (mueble alto)"},{"target_entity_id":"base-lower","text":"Base o piso (mueble bajo)"},{"target_entity_id":"chamfer","text":"Chaflán 45°"}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Tabla y esquema de piezas de cocina con bases, parales, amarres y chaflán de anclaje."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Las denominaciones Ancho y Alto se preservan tal como aparecen en la tabla fuente, sin reinterpretar su orientación geométrica."}
+}

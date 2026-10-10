@@ -1,0 +1,9 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0200",
+  "pdf_page": 200,
+  "printed_page": 178,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0200-001","kind":"kitchen_modulation_diagram","meaningful":true,"figure_id":"FIG-CPNC-2025-P0200-001","source_region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"reason":"Lámina ilustrada que combina electrodomésticos, pozuelo y un esquema dimensionado de modulación con cajonera y nevera."}
+  ]
+}
