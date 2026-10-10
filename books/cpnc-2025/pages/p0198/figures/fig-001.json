@@ -1,0 +1,19 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0198-001",
+  "page_id": "PAGE-CPNC-2025-P0198",
+  "type": "dimensioned_drawing",
+  "purpose": "Recrear la referencia visual de componentes y cotas básicas de una cocina.",
+  "source": {"book_id":"cpnc-2025","pdf_page":198,"printed_page":176,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"upper-cabinet","type":"upper_cabinet","geometry":{"precision":"approximate"}},
+    {"id":"base-cabinet","type":"base_cabinet","geometry":{"precision":"approximate"}},
+    {"id":"countertop","type":"countertop","geometry":{"precision":"approximate"}},
+    {"id":"rebanco","type":"base_plinth","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"countertop","to":"base-cabinet","type":"supported_by"},{"from":"base-cabinet","to":"rebanco","type":"rests_on"}],
+  "measurements": ["MEAS-CPNC-2025-P0198-001","MEAS-CPNC-2025-P0198-002","MEAS-CPNC-2025-P0198-003","MEAS-CPNC-2025-P0198-004","MEAS-CPNC-2025-P0198-005","MEAS-CPNC-2025-P0198-006","MEAS-CPNC-2025-P0198-007"],
+  "annotations": [{"target_entity_id":"upper-cabinet","text":"MUEBLE ALTO"},{"target_entity_id":"base-cabinet","text":"MUEBLE BAJO"},{"target_entity_id":"countertop","text":"MESÓN"}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Referencia ilustrada de mueble alto, mueble bajo y mesón con dimensiones y notas de apoyo."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Se conserva la etiqueta de 60 cm del mesón como dimensión declarada por la fuente sin reinterpretar su eje más allá del texto 'ancho'."}
+}

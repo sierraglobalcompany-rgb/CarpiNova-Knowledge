@@ -1,0 +1,3 @@
+[
+  {"rule_id":"RULE-CPNC-2025-P0199-001","page_id":"PAGE-CPNC-2025-P0199","category":"planning","subject":"nevera","predicate":"recommended_reserved_space","value":1,"unit":"m","applicability":{"context":"kitchen modulation according to the source"},"exceptions":[],"sources":[{"book_id":"cpnc-2025","pdf_page":199,"printed_page":177,"region":{"x":0.16,"y":0.72,"width":0.79,"height":0.22},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],"status":"CANDIDATE"}
+]

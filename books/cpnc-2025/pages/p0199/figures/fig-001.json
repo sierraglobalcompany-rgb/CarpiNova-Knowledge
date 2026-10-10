@@ -1,0 +1,18 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0199-001",
+  "page_id": "PAGE-CPNC-2025-P0199",
+  "type": "process_diagram",
+  "purpose": "Recrear la explicación visual de modulación de cocina comenzando por el espacio de la nevera.",
+  "source": {"book_id":"cpnc-2025","pdf_page":199,"printed_page":177,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"kitchen-space","type":"available_kitchen_space","geometry":{"precision":"approximate"}},
+    {"id":"refrigerator","type":"refrigerator","geometry":{"precision":"approximate"}},
+    {"id":"module-sketch","type":"cabinet_module_sketch","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"refrigerator","to":"kitchen-space","type":"occupies_space"},{"from":"module-sketch","to":"kitchen-space","type":"planning_representation"}],
+  "measurements": ["MEAS-CPNC-2025-P0199-001","MEAS-CPNC-2025-P0199-002"],
+  "annotations": [{"target_entity_id":"refrigerator","text":"1 NEVERA"},{"target_entity_id":"kitchen-space","text":"¿QUÉ ES MODULAR?"}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Diagrama didáctico de modulación que muestra una nevera, un espacio de cocina y la recomendación de reservar un metro."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Los 80 cm se conservan como ejemplo de una nevera concreta; la recomendación explícita de la fuente es reservar 1 metro."}
+}
