@@ -1,0 +1,24 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0159-002",
+  "page_id":"PAGE-CPNC-2025-P0159",
+  "type":"technical_diagram",
+  "purpose":"Recrear el diagrama 'Partes de una sierra circular' conservando la forma general del disco y sus llamadas numeradas sin inventar rótulos pequeños que no son legibles con suficiente confianza.",
+  "source":{"book_id":"cpnc-2025","pdf_page":159,"printed_page":137,"region":{"x":0.03,"y":0.68,"width":0.49,"height":0.29},"extraction":{"method":"visual","confidence":0.96,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"blade-body","type":"circular_saw_blade","description":"Cuerpo circular del disco representado en vista frontal.","geometry":{"precision":"approximate","primitive":"circle"}},
+    {"id":"perimeter-teeth","type":"saw_teeth","description":"Dentado distribuido alrededor del perímetro del disco.","geometry":{"precision":"approximate"}},
+    {"id":"central-bore","type":"mounting_hole","description":"Agujero central de fijación visible en el disco.","geometry":{"precision":"approximate","primitive":"circle"}},
+    {"id":"blade-slots","type":"blade_slot_features","description":"Ranuras o alivios dibujados en el cuerpo del disco y señalados mediante llamadas.","geometry":{"precision":"approximate"}},
+    {"id":"numbered-callouts","type":"annotation_set","description":"Conjunto de llamadas numeradas que apuntan a distintas partes del disco.","geometry":{"precision":"approximate"}}
+  ],
+  "relationships":[{"from":"perimeter-teeth","to":"blade-body","type":"located_on_perimeter"},{"from":"central-bore","to":"blade-body","type":"centered_in"},{"from":"blade-slots","to":"blade-body","type":"cut_into"},{"from":"numbered-callouts","to":"blade-body","type":"annotates"}],
+  "measurements":[],
+  "annotations":[{"target_entity_id":"blade-body","text":"Partes de una sierra circular"}],
+  "layers":[{"id":"blade-geometry","description":"Cuerpo, dentado, agujero central y ranuras."},{"id":"callouts","description":"Líneas y números que identifican partes del disco."}],
+  "camera":{"view":"front","projection":"technical_reference"},
+  "visual_style":{"background":"white","illustration":"technical circular-saw-blade diagram","labels":"numbered callouts around the blade"},
+  "educational_sequence":[{"step":1,"show_entity_ids":["blade-body","perimeter-teeth","central-bore","blade-slots"],"instruction":"Mostrar la geometría general del disco."},{"step":2,"show_entity_ids":["numbered-callouts"],"instruction":"Superponer las llamadas numeradas sin completar rótulos ilegibles por inferencia."}],
+  "reconstruction":{"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility":{"summary":"Diagrama frontal de un disco de sierra circular con dentado, agujero central, ranuras y llamadas numeradas a sus partes."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"El título y la estructura del diagrama son legibles. Los rótulos pequeños de varias llamadas no se transcriben porque la fuente renderizada disponible no permite verificarlos con suficiente confianza."}
+}

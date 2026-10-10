@@ -1,0 +1,10 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0159",
+  "pdf_page": 159,
+  "printed_page": 137,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0159-001","kind":"cut_type_reference_pair","meaningful":true,"figure_id":"FIG-CPNC-2025-P0159-001","source_region":{"x":0.02,"y":0.08,"width":0.75,"height":0.29},"reason":"Dos escenas rotuladas comparan visualmente corte longitudinal y corte transversal como continuación de la explicación de la página anterior."},
+    {"inventory_id":"VIS-P0159-002","kind":"circular_saw_blade_parts_diagram","meaningful":true,"figure_id":"FIG-CPNC-2025-P0159-002","source_region":{"x":0.03,"y":0.68,"width":0.49,"height":0.29},"reason":"Diagrama técnico titulado 'Partes de una sierra circular' con llamadas numeradas sobre la anatomía del disco."}
+  ]
+}
