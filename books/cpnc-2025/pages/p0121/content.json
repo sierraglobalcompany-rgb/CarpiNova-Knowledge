@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0121-001",
+    "page_id": "PAGE-CPNC-2025-P0121",
+    "content_type": "reference",
+    "source_transcription": "etc. En esta sección te comparto: una tabla con las densidades promedio de los materiales aglomerados de 15 mm y 18 mm; una guía gráfica con las medidas de instalación para brazos elevables medianos y grandes; la fórmula detallada para calcular el peso de la puerta.",
+    "normalized_text": "La página continúa la explicación anterior e indica que la sección incluye referencias de densidad, una guía gráfica de instalación para brazos elevables medianos y grandes y la fórmula para calcular el peso de la puerta.",
+    "learning_text": "La selección del brazo combina tres tipos de información: peso estimado de la puerta, propiedades del material y geometría de instalación. Ninguno de estos elementos debe usarse de forma aislada.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0121-001"],
+    "source": {"book_id": "cpnc-2025", "pdf_page": 121, "printed_page": 99, "region": {"x": 0.04, "y": 0.08, "width": 0.9, "height": 0.18}, "extraction": {"method": "visual", "confidence": 0.98, "review_status": "VISUALLY_VERIFIED"}},
+    "tags": ["brazos-elevables", "densidad", "instalacion", "peso-puerta"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0121-002",
+    "page_id": "PAGE-CPNC-2025-P0121",
+    "content_type": "procedure",
+    "source_transcription": "Medidas para Instalación. Brazo Grande. Brazo mini. Plano técnico. Instrucciones de instalación.",
+    "normalized_text": "La página presenta una guía visual de instalación con varios esquemas para brazo grande y brazo mini, incluyendo un plano técnico del brazo mini y una secuencia inferior de posiciones de montaje.",
+    "learning_text": "La geometría de montaje debe seguir la guía correspondiente al modelo del brazo. Las cotas pequeñas del gráfico requieren revisión de la página fuente en alta resolución antes de convertirse en medidas estructuradas o instrucciones automáticas.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0121-002"],
+    "source": {"book_id": "cpnc-2025", "pdf_page": 121, "printed_page": 99, "region": {"x": 0.13, "y": 0.25, "width": 0.72, "height": 0.67}, "extraction": {"method": "visual", "confidence": 0.9, "review_status": "VISUALLY_VERIFIED"}},
+    "tags": ["brazo-grande", "brazo-mini", "plano-tecnico", "medidas-instalacion", "revision-alta-resolucion"]
+  }
+]
