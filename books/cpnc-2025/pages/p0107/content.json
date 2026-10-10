@@ -1,5 +1,104 @@
 [
-  {"content_id":"CONTENT-CPNC-2025-P0107-001","page_id":"PAGE-CPNC-2025-P0107","content_type":"concept","source_transcription":"Un proyecto de carpintería comienza con un material base, que ya hemos conocido: la madera en forma de tableros. Sin embargo, el tablero por sí solo no cumple ninguna función estructural o mecánica. Es ahí donde entran los herrajes, elementos fundamentales que permiten unir, mover o articular las piezas de un mueble. Los herrajes permiten, por ejemplo, sujetar componentes mediante tornillos, platinas, esquineros metálicos o sistemas como el minifix. También hacen posible el movimiento, ya sea a través de una bisagra para una puerta batiente, un riel para una gaveta o un sistema corredizo para puertas de clóset o de paso.","normalized_text":"Los herrajes complementan los tableros permitiendo unir, sujetar, mover o articular piezas. La fuente menciona tornillos, platinas, esquineros, minifix, bisagras, rieles y sistemas corredizos.","learning_text":"El tablero forma las piezas; los herrajes hacen posible que esas piezas se unan o se muevan. Por eso el diseño del mueble debe considerar ambos desde el principio.","derived_from_content_ids":["CONTENT-CPNC-2025-P0107-001"],"source":{"book_id":"cpnc-2025","pdf_page":107,"printed_page":85,"region":{"x":0.06,"y":0.10,"width":0.88,"height":0.20},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["herrajes","union","movimiento","minifix","bisagras","rieles"]},
-  {"content_id":"CONTENT-CPNC-2025-P0107-002","page_id":"PAGE-CPNC-2025-P0107","content_type":"standard_measurement","source_transcription":"Aunque a primera vista los herrajes parecen ser la parte más compleja del proyecto, su instalación se vuelve más sencilla si comprendemos el sistema de estandarización 37/32, base del diseño moderno de muebles. Este sistema define las medidas para instalar herrajes de forma precisa: Sistema 37: La perforación inicial se realiza a 37 mm desde el borde del mueble hacia adentro. Sistema 32: Se refiere a la separación entre las perforaciones, como los dos tornillos que sujetan la bisagra al lateral. También aplica a correderas telescópicas y otros herrajes que requieren múltiples fijaciones en línea recta, espaciadas cada 32 mm.","normalized_text":"La fuente describe el sistema 37/32: primera línea o perforación a 37 mm desde el borde y separaciones sucesivas de 32 mm para perforaciones de herrajes.","learning_text":"El sistema 37/32 usa dos referencias: 37 mm desde el borde para iniciar y una modulación de 32 mm entre perforaciones. Se conserva como regla candidata hasta validación técnica posterior.","derived_from_content_ids":["CONTENT-CPNC-2025-P0107-002"],"source":{"book_id":"cpnc-2025","pdf_page":107,"printed_page":85,"region":{"x":0.06,"y":0.31,"width":0.88,"height":0.34},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["sistema-37-32","37-mm","32-mm","estandarizacion"]},
-  {"content_id":"CONTENT-CPNC-2025-P0107-003","page_id":"PAGE-CPNC-2025-P0107","content_type":"example","source_transcription":"Otro ejemplo lo vemos en las manijas o jaladeras, cuyas perforaciones también respetan múltiplos de 32 mm: 64 mm, 96 mm, 128 mm, etc. Cuando comprendemos que los herrajes no se colocan ‘a ojo’, sino mediante un sistema estandarizado, logramos una instalación precisa, reducimos errores, evitamos reclamos y alargamos la vida útil del mueble.","normalized_text":"La fuente relaciona las distancias de perforación de algunas manijas con múltiplos de 32 mm y da como ejemplos 64, 96 y 128 mm.","learning_text":"Las distancias de algunas jaladeras siguen módulos repetibles. Diseñar con referencias estandarizadas facilita que perforaciones y herrajes coincidan.","derived_from_content_ids":["CONTENT-CPNC-2025-P0107-003"],"source":{"book_id":"cpnc-2025","pdf_page":107,"printed_page":85,"region":{"x":0.06,"y":0.68,"width":0.88,"height":0.20},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["jaladeras","manijas","64-mm","96-mm","128-mm"]}
+  {
+    "content_id": "CONTENT-CPNC-2025-P0107-001",
+    "page_id": "PAGE-CPNC-2025-P0107",
+    "content_type": "concept",
+    "source_transcription": "Un proyecto de carpintería comienza con un material base, que ya hemos conocido: la madera en forma de tableros. Sin embargo, el tablero por sí solo no cumple ninguna función estructural o mecánica. Es ahí donde entran los herrajes, elementos fundamentales que permiten unir, mover o articular las piezas de un mueble. Los herrajes permiten, por ejemplo, sujetar componentes mediante tornillos, platinas, esquineros metálicos o sistemas como el minifix. También hacen posible el movimiento, ya sea a través de una bisagra para una puerta batiente, un riel para una gaveta o un sistema corredizo para puertas de clóset o de paso.",
+    "normalized_text": "Los herrajes complementan los tableros permitiendo unir, sujetar, mover o articular piezas. La fuente menciona tornillos, platinas, esquineros, minifix, bisagras, rieles y sistemas corredizos.",
+    "learning_text": "El tablero forma las piezas; los herrajes hacen posible que esas piezas se unan o se muevan. Por eso el diseño del mueble debe considerar ambos desde el principio.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0107-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 107,
+      "printed_page": 85,
+      "region": {
+        "x": 0.06,
+        "y": 0.1,
+        "width": 0.88,
+        "height": 0.2
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "herrajes",
+      "union",
+      "movimiento",
+      "minifix",
+      "bisagras",
+      "rieles"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0107-002",
+    "page_id": "PAGE-CPNC-2025-P0107",
+    "content_type": "dimension",
+    "source_transcription": "Aunque a primera vista los herrajes parecen ser la parte más compleja del proyecto, su instalación se vuelve más sencilla si comprendemos el sistema de estandarización 37/32, base del diseño moderno de muebles. Este sistema define las medidas para instalar herrajes de forma precisa: Sistema 37: La perforación inicial se realiza a 37 mm desde el borde del mueble hacia adentro. Sistema 32: Se refiere a la separación entre las perforaciones, como los dos tornillos que sujetan la bisagra al lateral. También aplica a correderas telescópicas y otros herrajes que requieren múltiples fijaciones en línea recta, espaciadas cada 32 mm.",
+    "normalized_text": "La fuente describe el sistema 37/32: primera línea o perforación a 37 mm desde el borde y separaciones sucesivas de 32 mm para perforaciones de herrajes.",
+    "learning_text": "El sistema 37/32 usa dos referencias: 37 mm desde el borde para iniciar y una modulación de 32 mm entre perforaciones. Se conserva como regla candidata hasta validación técnica posterior.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0107-002"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 107,
+      "printed_page": 85,
+      "region": {
+        "x": 0.06,
+        "y": 0.31,
+        "width": 0.88,
+        "height": 0.34
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "sistema-37-32",
+      "37-mm",
+      "32-mm",
+      "estandarizacion"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0107-003",
+    "page_id": "PAGE-CPNC-2025-P0107",
+    "content_type": "example",
+    "source_transcription": "Otro ejemplo lo vemos en las manijas o jaladeras, cuyas perforaciones también respetan múltiplos de 32 mm: 64 mm, 96 mm, 128 mm, etc. Cuando comprendemos que los herrajes no se colocan ‘a ojo’, sino mediante un sistema estandarizado, logramos una instalación precisa, reducimos errores, evitamos reclamos y alargamos la vida útil del mueble.",
+    "normalized_text": "La fuente relaciona las distancias de perforación de algunas manijas con múltiplos de 32 mm y da como ejemplos 64, 96 y 128 mm.",
+    "learning_text": "Las distancias de algunas jaladeras siguen módulos repetibles. Diseñar con referencias estandarizadas facilita que perforaciones y herrajes coincidan.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0107-003"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 107,
+      "printed_page": 85,
+      "region": {
+        "x": 0.06,
+        "y": 0.68,
+        "width": 0.88,
+        "height": 0.2
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "jaladeras",
+      "manijas",
+      "64-mm",
+      "96-mm",
+      "128-mm"
+    ]
+  }
 ]
