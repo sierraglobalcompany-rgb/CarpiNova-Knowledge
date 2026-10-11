@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0242-001",
+    "page_id": "PAGE-CPNC-2025-P0242",
+    "content_type": "formula",
+    "source_transcription": "¿Cómo cotizar un trabajo de carpintería?\n\n1. Consumo de material\nCalcular el costo de los materiales y dividir por 0.4 si se desea una rentabilidad del 60 %\nInsumos 40%\nMano de obra 15%\nAdministración, Imprevistos y Utilidades 45%\nAdministración,Imprevistos y Utilidades\n\n2. Por metro lineal\nAplicable a ambientes estandarizados (p. ej., cocinas, clósets) diferenciar por tipo de tablero\nDividir por 0,6 / 0,5/ 0,4 según la rentabilidad deseada\n\n3. Consumo de tableros\nContar los tableros utilizados en cada mueble (p. ej., camas, escritorios)\nCalcular el costo por tablero y dividir\n\n4. Mano de obra\nCorresponde al 15 % del valor comercial (por metro lineal o tablero consumido)\n\nTodo trabajo de carpintería cuenta con tres elementos:",
+    "normalized_text": "La infografía resume cuatro referencias para cotizar trabajos de carpintería: consumo de material, metro lineal, consumo de tableros y mano de obra. Para consumo de material indica dividir el costo de materiales por 0.4 si se desea una rentabilidad del 60 %, y muestra una distribución visible de 40 % insumos, 15 % mano de obra y 45 % administración, imprevistos y utilidades. Para ambientes estandarizados propone trabajar por metro lineal y dividir por 0,6, 0,5 o 0,4 según la rentabilidad deseada. Para consumo de tableros indica contar tableros por mueble y calcular costo por tablero; la frase visible termina en «y dividir» sin especificar allí el divisor. La mano de obra se presenta como 15 % del valor comercial.",
+    "learning_text": "La página funciona como resumen visual de los métodos de cotización explicados en las páginas anteriores. Conserva como referencias visibles los porcentajes 40 % / 15 % / 45 %, los divisores 0,6 / 0,5 / 0,4 y el 15 % de mano de obra. No completes la frase «Calcular el costo por tablero y dividir» con información que no aparece en esta infografía.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0242-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":242,"printed_page":220,"region":{"x":0.05,"y":0.02,"width":0.90,"height":0.96},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["paso-5","cotizacion","infografia","consumo-de-material","metro-lineal","consumo-de-tableros","mano-de-obra","rentabilidad"]
+  }
+]
