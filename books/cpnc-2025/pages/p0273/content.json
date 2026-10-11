@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0273-001",
+    "page_id": "PAGE-CPNC-2025-P0273",
+    "content_type": "reference",
+    "source_transcription": "Certificación del SENA\n\n¿Por qué es importante certificarse?\n• Dignifica nuestro oficio\n• Nos profesionaliza\n• Otorga aval del SENA\n\nQuién puede aplicar?\nCualquier persona con al menos seis meses de experiencia\n\nCertificados en cuatro competencias específicas\nArmar muebles\nInstalar obra\nOperación de maquinaria\n\n¿Cómo es el proceso?\n1. Solicitud\n2. Grupo de WhatsApp\n3. Examen virtual\n4. Prueba práctica\n5. Video demostrativo\n6 Certificado\n\nDetalles importantes\n• Validez de 3 años\n• Nivel según desempeño\n\nMi papá es carpintero profesional\nMi papá es carpintero profesional.\n\nInscripciones:\nacardonor@sena.edu.co",
+    "normalized_text": "Infografía de certificación del SENA que resume por qué certificarse, quién puede aplicar, competencias mostradas, seis pasos del proceso, vigencia, nivel según desempeño y el correo de inscripción.",
+    "learning_text": "Usa esta infografía como resumen visual del proceso descrito en las páginas anteriores: identifica requisitos, pasos, vigencia y el canal de inscripción exactamente como aparecen en la fuente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0273-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":273,"printed_page":251,"region":{"x":0.05,"y":0.01,"width":0.90,"height":0.97},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["sena","certificacion","infografia","competencias","proceso","inscripciones"]
+  }
+]
