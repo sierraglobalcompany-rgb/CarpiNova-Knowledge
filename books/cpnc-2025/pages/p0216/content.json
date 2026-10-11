@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0216-001",
+    "page_id": "PAGE-CPNC-2025-P0216",
+    "content_type": "reference",
+    "source_transcription": "CAMA ABATIBLE. INSTRUCCIONES DE CONSTRUCCIÓN.",
+    "normalized_text": "La página abre el proyecto de construcción de una cama abatible y lo identifica como una secuencia de instrucciones de construcción.",
+    "learning_text": "Usa esta página como portada y referencia visual del proyecto de cama abatible antes de revisar herramientas, mecanismo, despiece y pasos de montaje.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0216-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":216,"printed_page":194,"region":{"x":0.05,"y":0.03,"width":0.9,"height":0.94},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cama-abatible","proyecto","instrucciones-construccion"]
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0217-001",
+    "page_id": "PAGE-CPNC-2025-P0217",
+    "content_type": "reference",
+    "source_transcription": "Herramientas: Cinta métrica; Taladros; Caja de herramienta y tornillería; Juego de brocas; Martillo de goma; Brocas Forster; Juego de llaves Allen; Juego de puntas destornilladores; Juego brocas de pala; Escuadra metálica; Nivelador de burbuja; Destornilladores.",
+    "normalized_text": "La fuente enumera las herramientas previstas para el proyecto: cinta métrica, taladros, caja de herramientas y tornillería, brocas convencionales, martillo de goma, brocas Forster, llaves Allen, puntas de destornillador, brocas de pala, escuadra metálica, nivel de burbuja y destornilladores.",
+    "learning_text": "Prepara las herramientas antes del montaje de la cama abatible y verifica que cuentas tanto con útiles de medición y nivelación como con perforación, atornillado y ajuste.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0217-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":217,"printed_page":195,"region":{"x":0.04,"y":0.03,"width":0.92,"height":0.44},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cama-abatible","herramientas","taladro","brocas","escuadra","nivel"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0217-002",
+    "page_id": "PAGE-CPNC-2025-P0217",
+    "content_type": "reference",
+    "source_transcription": "Partes del mecanismo: 2 platinas superiores con rotulas; 2 platinas inferiores con ejes para pin candado; 12 tuercas T #10 y tornillos cabeza cónica; 8 tornillos #6 de 3/4”; 2 gatos (Pistones) gas springs; Pata de madera (Longitud acorde a la cama); 2 pares de platinas de metal para pivote de cama; 2 pines candado tipo E; 4 tuercas T #10 y tornillos cabeza cónica; 4 tornillos cabeza cónica; 2 tiras elásticas para sujetar el colchón; 2 topes media luna para cama; Bisagras mignon para soportar la Pata de Madera.",
+    "normalized_text": "La lámina identifica los componentes del mecanismo de cama abatible, incluyendo platinas superiores e inferiores, tornillería y tuercas T, dos pistones de gas, una pata de madera de longitud acorde a la cama, platinas de pivote, pines tipo E, tiras elásticas, topes media luna y bisagras mignon.",
+    "learning_text": "Antes del montaje, separa y verifica cada grupo de piezas del mecanismo exactamente como aparece en la lista. Mantén independientes los grupos de tornillería repetidos, porque la fuente los presenta en posiciones y cantidades distintas.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0217-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":217,"printed_page":195,"region":{"x":0.04,"y":0.48,"width":0.92,"height":0.48},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cama-abatible","mecanismo","pistones-gas","platinas","tornilleria","pivote"]
+  }
+]

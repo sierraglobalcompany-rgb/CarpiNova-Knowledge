@@ -1,0 +1,35 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0217-001",
+  "page_id": "PAGE-CPNC-2025-P0217",
+  "type": "mixed",
+  "purpose": "Recrear la lámina de herramientas y componentes del mecanismo necesarios para construir la cama abatible.",
+  "source": {"book_id":"cpnc-2025","pdf_page":217,"printed_page":195,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"tools-grid","type":"tools_inventory_grid","geometry":{"precision":"approximate"}},
+    {"id":"upper-plates","type":"upper_pivot_plates","geometry":{"precision":"approximate"}},
+    {"id":"lower-plates","type":"lower_lock_pin_plates","geometry":{"precision":"approximate"}},
+    {"id":"gas-springs","type":"gas_springs","geometry":{"precision":"approximate"}},
+    {"id":"wood-leg","type":"wood_leg","geometry":{"precision":"approximate"}},
+    {"id":"pivot-plates","type":"bed_pivot_plates","geometry":{"precision":"approximate"}},
+    {"id":"lock-pins","type":"e_type_lock_pins","geometry":{"precision":"approximate"}},
+    {"id":"elastic-straps","type":"mattress_elastic_straps","geometry":{"precision":"approximate"}},
+    {"id":"half-moon-stops","type":"half_moon_bed_stops","geometry":{"precision":"approximate"}},
+    {"id":"mignon-hinges","type":"mignon_hinges","geometry":{"precision":"approximate"}},
+    {"id":"mattress","type":"mattress","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [
+    {"from":"gas-springs","to":"pivot-plates","type":"part_of_mechanism"},
+    {"from":"mignon-hinges","to":"wood-leg","type":"supports"},
+    {"from":"elastic-straps","to":"mattress","type":"retains"}
+  ],
+  "measurements": ["MEAS-CPNC-2025-P0217-001"],
+  "annotations": [
+    {"target_entity_id":"tools-grid","text":"Herramientas de medición, perforación, nivelación, corte y ajuste"},
+    {"target_entity_id":"gas-springs","text":"2 gatos (pistones) gas springs"},
+    {"target_entity_id":"wood-leg","text":"Longitud acorde a la cama"},
+    {"target_entity_id":"elastic-straps","text":"2 tiras elásticas para sujetar el colchón"}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Lámina dividida en una cuadrícula de herramientas y una sección con componentes del mecanismo de cama abatible."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Los grupos y cantidades se mantienen separados como aparecen en la fuente; solo 3/4 de pulgada se normaliza como medida."}
+}

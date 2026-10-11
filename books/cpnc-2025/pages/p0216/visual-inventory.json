@@ -1,0 +1,9 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0216",
+  "pdf_page": 216,
+  "printed_page": 194,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0216-001","kind":"murphy_bed_project_intro","meaningful":true,"figure_id":"FIG-CPNC-2025-P0216-001","source_region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"reason":"Portada ilustrada del proyecto de cama abatible y referencia visual del movimiento de apertura."}
+  ]
+}
