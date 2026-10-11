@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0240-001",
+    "page_id": "PAGE-CPNC-2025-P0240",
+    "content_type": "formula",
+    "source_transcription": "Clóset de 1,20 metros lineales\nCalcular los costos para tres tipos de tablero:\nBlanco (económico)\nPromocional (media gama)\nDiseño (alta gama)\n\nEstándares a considerar:\nEn una cocina de 1,80 m a 2,40 m, el cliente tiene derecho a:\nUn mueble bajo con entrepaños y puertas\nUna sola cajonera con tres gavetas (joyero, cubiertero y cucharero)\nTodo lo adicional (más cajones, bisagras especiales, etc.) se cobra por aparte\nEn un clóset de 1,20 m, el cliente tiene derecho a:\nDos cajones o gavetas\nSi desea más, se cobran como adicionales\n\nOtros factores:\nSi el clóset va entre muros, no requiere laterales, piso ni techo completos\nmenor costo.\nSi va aislado, debe incluir más piezas   mayor consumo de material.\n\nCon estos datos puedes sacar el costo por metro lineal, diferenciando:\nCocina baja / Cocina alta\nClóset con o sin laterales\nTipo de tablero\n\nLuego, aplicas la rentabilidad deseada:\n40%   divide por 0.6\n50%   divide por 0.5\n60%   divide por 0.4",
+    "normalized_text": "La continuación del método por costos unitarios propone calcular referencias distintas según tipo de tablero, configuración y ambiente. Para cocinas entre 1,80 m y 2,40 m define un mueble bajo con entrepaños y puertas y una cajonera de tres gavetas como estándar; los adicionales se cobran aparte. Para un clóset de 1,20 m contempla dos cajones o gavetas y diferencia entre clósets entre muros y aislados por su consumo de piezas. La fuente indica dividir por 0.6, 0.5 o 0.4 para rentabilidades del 40%, 50% o 60%, respectivamente.",
+    "learning_text": "Para construir un valor de referencia por metro lineal, separa el tipo de ambiente, el tipo de tablero y qué elementos están incluidos en el estándar. Cobra por aparte los adicionales. La fuente propone divisores de 0.6, 0.5 y 0.4 para rentabilidades de 40%, 50% y 60%.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0240-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":240,"printed_page":218,"region":{"x":0.05,"y":0.08,"width":0.90,"height":0.57},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["paso-5","cotizacion","costos-unitarios","metro-lineal","cocina","closet","tipo-de-tablero","rentabilidad"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0240-002",
+    "page_id": "PAGE-CPNC-2025-P0240",
+    "content_type": "formula",
+    "source_transcription": "3. Cotización por consumo de tablero\n\nEste método se aplica a muebles no estandarizados, como:\nCentros de entretenimiento\nCamas\nCabeceras\nNochero\nEscritorios\nSe basa en el número de tableros que se consumen por mueble.\n\nEjemplo:\nUn centro de entretenimiento tiene un costo de materiales de $800.000 y consume 2 tableros.\nEso da $400.000 por tablero consumido.\nSi se desea una rentabilidad del 60%   divide $400.000 por 0.4 = $1.000.000 por tablero.",
+    "normalized_text": "El método por consumo de tablero se aplica a muebles no estandarizados y basa la cotización en cuántos tableros consume cada mueble. El ejemplo usa $800.000 en materiales para dos tableros, equivalentes a $400.000 por tablero, y luego divide ese valor por 0.4 para obtener $1.000.000 por tablero bajo la rentabilidad del 60% indicada en la fuente.",
+    "learning_text": "Para muebles no estandarizados, calcula primero el costo de materiales por tablero consumido. En el ejemplo de la fuente: $800.000 ÷ 2 = $400.000 por tablero; luego $400.000 ÷ 0.4 = $1.000.000 por tablero.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0240-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":240,"printed_page":218,"region":{"x":0.05,"y":0.66,"width":0.90,"height":0.30},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["paso-5","cotizacion","consumo-de-tablero","muebles-no-estandarizados","rentabilidad","formula"]
+  }
+]
