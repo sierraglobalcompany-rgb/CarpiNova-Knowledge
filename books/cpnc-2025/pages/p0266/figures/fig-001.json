@@ -1,0 +1,31 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0266-001",
+  "page_id": "PAGE-CPNC-2025-P0266",
+  "type": "form",
+  "purpose": "Recrear de forma determinista el formulario del Anexo 12 para chequeo de entrega de clóset, vestier y muebles de entretenimiento, preservando campos, 16 renglones, columnas, área de observaciones y líneas de responsables.",
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 266,
+    "printed_page": 244,
+    "region": {"x": 0.1, "y": 0.13, "width": 0.8, "height": 0.77},
+    "extraction": {"method": "visual", "confidence": 0.98, "review_status": "VISUALLY_VERIFIED"}
+  },
+  "entities": [
+    {"id":"anexo-title","type":"title_block","geometry":{"primitive":"text","precision":"approximate"},"text":"ANEXO 12. LISTA DE CHEQUEO ENTREGA CLOSET-VESTIER-MUEBLES DE ENTRETENIMIENTO"},
+    {"id":"form-header","type":"form_title","geometry":{"primitive":"text","precision":"approximate"},"text":"LISTADO CHEQUEO ENTREGA CLOSET-VESTIER-MUEBLES DE ENTRETENIMIENTO"},
+    {"id":"brand-mark","type":"brand_mark","geometry":{"primitive":"image","precision":"approximate"},"text":"LegnoArte S.A.S"},
+    {"id":"project-fields","type":"form_fields","geometry":{"primitive":"lines","precision":"approximate"},"fields":["OBRA:","FECHA DE REVISION:"]},
+    {"id":"checklist-table","type":"checklist_table","geometry":{"primitive":"table_rows","precision":"approximate"},"headers":["Item","ASPECTO A REVISAR","OK (✔ X)","OBSERVACIONES"],"rows":["1 | El mueble se encuentran totalmente instalado.","2 | Al cerrar las puertas deben ajustar suavemente, sin ruidos, sin golpear entre ellas, las luces entre puertas deben ser parejas de arriba hasta abajo.","3 | La línea horizontal y vertical de las puertas debe coincidir.","4 | Los cajones deben cerrar y abrir fácilmente. Las tapas de cajón deben estar niveladas, bien aseguradas (con tornillo y colbón). Al abrirlas no deben golpear con otra estructura del mueble.","5 | La separación entre Tapas de cajón, debe ser pareja.","6 | Manijas bien instaladas, niveladas y bien aseguradas.","7 | Los entrepaños, maleteros, tubos ropero deben estar completamente horizontales, nivelados. La madera no debe estar pandeada.","8 | Las carteras están empatadas en las esquinas, con cortes perfectos, y van hasta el piso, a plomo y no están viradas. No están sueltas del marco en ninguna parte.","9 | Los marcos están bien empalmados en las esquinas, con cortes perfectos y van hasta el piso. A plomo y no están virados.","10 | La lámina, se observa sin rayones, ni manchas. (se hace supervisión visual).","11 | Los madecantos se encuentran completos y bien pegados (se hace supervisión manual).","12 | Los bordes deben estar bien terminados, al tacto se siente liso y no se observan detalles del corte de la lámina.","13 | Las dilataciones (si aplica) estan niveladas, con un mismo espesor y pintura pareja.","14 | Las bisagras y rieles tienen los tornillos completos.","15 | Están instalados los tapatornillos, la carpintería está limpia, resanada y detallada","16 | El área de trabajo está limpia (barrida y sin escombro)."]},
+    {"id":"observations-box","type":"multiline_field","geometry":{"primitive":"rectangle","precision":"approximate"},"label":"OBSERVACIONES:"},
+    {"id":"signatures","type":"signature_lines","geometry":{"primitive":"lines","precision":"approximate"},"labels":["NOMBRE CARPINTERO","NOMBRE QUIEN RECIBE"]}
+  ],
+  "relationships": [{"from":"anexo-title","to":"form-header","type":"introduces"},{"from":"form-header","to":"project-fields","type":"followed_by"},{"from":"project-fields","to":"checklist-table","type":"followed_by"},{"from":"checklist-table","to":"observations-box","type":"followed_by"},{"from":"observations-box","to":"signatures","type":"followed_by"}],
+  "measurements": [],
+  "annotations": [{"target_entity_id":"checklist-table","text":"La columna OK muestra dos marcas de referencia visual: visto y X."},{"target_entity_id":"observations-box","text":"El cuadro queda vacío para consignar pendientes o correcciones durante la revisión."}],
+  "camera": {"view":"front","projection":"orthographic"},
+  "visual_style": {"format":"formulario de control","layout":"encabezado superior, campos obra/fecha, tabla de cuatro columnas, cuadro amplio de observaciones y dos líneas inferiores de responsables","palette":"blanco, negro, gris; logotipo con verde y rojo","linework":"rejilla rectangular fina","caption_style":"encabezados en mayúsculas y tabla compacta"},
+  "educational_sequence": [{"step":1,"show_entity_ids":["project-fields"],"instruction":"Identificar obra y fecha de revisión."},{"step":2,"show_entity_ids":["checklist-table"],"instruction":"Revisar los 16 aspectos y marcar el estado, registrando observaciones cuando corresponda."},{"step":3,"show_entity_ids":["observations-box","signatures"],"instruction":"Consignar observaciones generales y completar los nombres de carpintero y quien recibe al finalizar."}],
+  "reconstruction": {"preferred_renderer":"html","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Formulario de entrega de clóset, vestier y muebles de entretenimiento con obra, fecha, 16 puntos de control, columna OK, observaciones generales y líneas para nombre del carpintero y de quien recibe."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar literalmente la redacción del formulario, incluidos errores gramaticales, mayúsculas y puntuación visibles. Mantener vacíos los campos de obra, fecha, OK y observaciones; no inferir datos de una entrega real."}
+}
