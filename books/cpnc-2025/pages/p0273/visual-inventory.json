@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0273",
+  "pdf_page": 273,
+  "printed_page": 251,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0273-001",
+      "kind": "sena_certification_infographic",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0273-001",
+      "source_region": {"x":0.05,"y":0.01,"width":0.90,"height":0.97},
+      "reason": "Infografía que sintetiza requisitos, beneficios, competencias, proceso, vigencia e inscripción para certificación del SENA."
+    }
+  ]
+}

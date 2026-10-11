@@ -1,0 +1,43 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0273-001",
+  "page_id": "PAGE-CPNC-2025-P0273",
+  "type": "mixed",
+  "purpose": "Recrear de forma determinista la infografía de certificación del SENA conservando su estructura por bloques y el texto visible.",
+  "source": {"book_id":"cpnc-2025","pdf_page":273,"printed_page":251,"region":{"x":0.05,"y":0.01,"width":0.90,"height":0.97},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"title","type":"title_block","geometry":{"primitive":"text","precision":"approximate"},"text":"Certificación del SENA"},
+    {"id":"benefits","type":"info_panel","geometry":{"primitive":"rectangle","precision":"approximate"},"text":"¿Por qué es importante certificarse? / Dignifica nuestro oficio / Nos profesionaliza / Otorga aval del SENA"},
+    {"id":"applicant","type":"info_panel","geometry":{"primitive":"rectangle","precision":"approximate"},"text":"Quién puede aplicar? / Cualquier persona con al menos seis meses de experiencia"},
+    {"id":"competencies","type":"info_panel","geometry":{"primitive":"rectangle","precision":"approximate"},"text":"Certificados en cuatro competencias específicas / Armar muebles / Instalar obra / Operación de maquinaria"},
+    {"id":"process","type":"process_panel","geometry":{"primitive":"numbered_list","precision":"approximate"},"text":"1. Solicitud / 2. Grupo de WhatsApp / 3. Examen virtual / 4. Prueba práctica / 5. Video demostrativo / 6 Certificado"},
+    {"id":"details","type":"info_panel","geometry":{"primitive":"rectangle","precision":"approximate"},"text":"Detalles importantes / Validez de 3 años / Nivel según desempeño"},
+    {"id":"slogan","type":"callout","geometry":{"primitive":"rectangle","precision":"approximate"},"text":"Mi papá es carpintero profesional / Mi papá es carpintero profesional."},
+    {"id":"contact","type":"contact_block","geometry":{"primitive":"text","precision":"approximate"},"text":"Inscripciones: / acardonor@sena.edu.co"},
+    {"id":"sena-logo","type":"brand_mark","geometry":{"primitive":"image","precision":"approximate"},"description":"Logotipo del SENA visible en el bloque inferior izquierdo."}
+  ],
+  "relationships": [
+    {"from":"title","to":"benefits","type":"introduces"},
+    {"from":"title","to":"applicant","type":"introduces"},
+    {"from":"benefits","to":"competencies","type":"visually_followed_by"},
+    {"from":"applicant","to":"process","type":"visually_followed_by"},
+    {"from":"process","to":"details","type":"visually_followed_by"},
+    {"from":"details","to":"slogan","type":"visually_followed_by"},
+    {"from":"competencies","to":"sena-logo","type":"visually_followed_by"},
+    {"from":"sena-logo","to":"contact","type":"visually_followed_by"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"competencies","text":"El encabezado afirma cuatro competencias, pero en esta infografía solo se leen tres etiquetas de competencia; no añadir una cuarta etiqueta no visible."},
+    {"target_entity_id":"contact","text":"Conservar literalmente el correo visible en la fuente."}
+  ],
+  "camera": {"view":"front","projection":"orthographic"},
+  "visual_style": {"format":"infografía educativa","layout":"cabecera azul y bloques rectangulares en dos columnas con ilustraciones","palette":"azul, beige, gris, naranja y negro","linework":"ilustraciones de contorno suave","caption_style":"títulos grandes y listas breves"},
+  "educational_sequence": [
+    {"step":1,"show_entity_ids":["benefits","applicant"],"instruction":"Presentar beneficios y requisito de experiencia."},
+    {"step":2,"show_entity_ids":["competencies","process"],"instruction":"Mostrar competencias visibles y secuencia del proceso."},
+    {"step":3,"show_entity_ids":["details","slogan","contact"],"instruction":"Cerrar con vigencia, mensaje profesional y contacto de inscripción."}
+  ],
+  "reconstruction": {"preferred_renderer":"html","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Infografía del SENA con beneficios de certificarse, requisito de experiencia, competencias visibles, proceso de seis pasos, vigencia, nivel según desempeño y correo de inscripción."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar únicamente el texto visible; no completar la cuarta competencia que el encabezado anuncia pero la infografía no etiqueta de forma legible."}
+}
