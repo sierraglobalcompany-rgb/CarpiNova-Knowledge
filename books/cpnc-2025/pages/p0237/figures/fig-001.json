@@ -1,0 +1,44 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0237-001",
+  "page_id":"PAGE-CPNC-2025-P0237",
+  "type":"process_diagram",
+  "purpose":"Recrear la infografía de estudio de mercado para iniciar un negocio de carpintería conservando los textos, iconos y la numeración irregular visibles en la fuente.",
+  "source":{"book_id":"cpnc-2025","pdf_page":237,"printed_page":215,"region":{"x":0.04,"y":0.01,"width":0.92,"height":0.98},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"title","type":"title_block","geometry":{"primitive":"text","precision":"approximate","bounding_box":{"x":0.19,"y":0.00,"width":0.65,"height":0.23}},"description":"Título grande CÓMO INICIAR MI NEGOCIO DE CARPINTERÍA."},
+    {"id":"carpenter-location","type":"carpenter_and_location","geometry":{"primitive":"illustration_and_pin","precision":"approximate","bounding_box":{"x":0.14,"y":0.23,"width":0.34,"height":0.28}},"description":"Carpintero ilustrado junto a un pin de ubicación y el encabezado ESTUDIO DE MERCADO."},
+    {"id":"step-1","type":"visible_step_1","geometry":{"primitive":"number_and_text","precision":"approximate","bounding_box":{"x":0.44,"y":0.35,"width":0.45,"height":0.16}},"description":"Número 1 con el texto Identifica el sector maderero de tu ciudad."},
+    {"id":"visit-present","type":"visit_and_present","geometry":{"primitive":"map_and_walking_icons","precision":"approximate","bounding_box":{"x":0.17,"y":0.50,"width":0.66,"height":0.17}},"description":"Mapa y persona caminando acompañan los textos Visítalo físicamente y Preséntate personalmentte."},
+    {"id":"step-2","type":"visible_step_2","geometry":{"primitive":"whatsapp_icon_and_text","precision":"approximate","bounding_box":{"x":0.17,"y":0.67,"width":0.65,"height":0.14}},"description":"Número 2 con icono de WhatsApp y texto Establece contacto por WhatsApp."},
+    {"id":"price-catalog-first","type":"price_catalog_text","geometry":{"primitive":"handshake_and_invoice_icons","precision":"approximate","bounding_box":{"x":0.17,"y":0.79,"width":0.67,"height":0.12}},"description":"Texto Obtén listas de precios y catálogos, acompañado por iconos de apretón de manos y documento de precios."},
+    {"id":"step-5","type":"visible_step_5","geometry":{"primitive":"number_and_text","precision":"approximate","bounding_box":{"x":0.31,"y":0.90,"width":0.56,"height":0.10}},"description":"Número 5 seguido nuevamente por Obtén listas de precios y catálogos."}
+  ],
+  "relationships":[
+    {"from":"carpenter-location","to":"step-1","type":"introduces"},
+    {"from":"step-1","to":"visit-present","type":"visually_followed_by"},
+    {"from":"visit-present","to":"step-2","type":"visually_followed_by"},
+    {"from":"step-2","to":"price-catalog-first","type":"visually_followed_by"},
+    {"from":"price-catalog-first","to":"step-5","type":"visually_followed_by"}
+  ],
+  "measurements":[],
+  "annotations":[
+    {"target_entity_id":"title","text":"CÓMO INICIAR MI NEGOCIO DE CARPINTERÍA"},
+    {"target_entity_id":"carpenter-location","text":"ESTUDIO DE MERCADO"},
+    {"target_entity_id":"step-1","text":"1 Identifica el sector maderero de tu ciudad"},
+    {"target_entity_id":"visit-present","text":"Visítalo físicamente / Preséntate personalmentte"},
+    {"target_entity_id":"step-2","text":"2 Establece contacto por WhatsApp"},
+    {"target_entity_id":"price-catalog-first","text":"Obtén listas de precios y catálogos"},
+    {"target_entity_id":"step-5","text":"5 Obtén listas de precios y catálogos"}
+  ],
+  "camera":{"view":"front","projection":"orthographic"},
+  "visual_style":{"format":"infografía educativa","layout":"vertical","palette":"beige y marrón","linework":"iconos y personaje con contorno oscuro","caption_style":"tipografía grande y bloques de pasos"},
+  "educational_sequence":[
+    {"step":1,"show_entity_ids":["title","carpenter-location","step-1"],"instruction":"Presentar el estudio de mercado e identificación del sector maderero."},
+    {"step":2,"show_entity_ids":["visit-present"],"instruction":"Mostrar la visita física y la presentación personal usando exactamente el texto visible de la fuente."},
+    {"step":3,"show_entity_ids":["step-2"],"instruction":"Mostrar el contacto por WhatsApp."},
+    {"step":4,"show_entity_ids":["price-catalog-first","step-5"],"instruction":"Mostrar las dos apariciones visibles de listas de precios y catálogos sin inferir numeración ausente."}
+  ],
+  "reconstruction":{"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
+  "accessibility":{"summary":"Infografía vertical sobre estudio de mercado: identificar el sector maderero, visitarlo, presentarse, establecer contacto por WhatsApp y obtener listas de precios y catálogos. La numeración visible es 1, 2 y 5 y la última frase se repite."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"La fuente muestra «Preséntate personalmentte», numeración visible 1, 2 y 5 y dos apariciones de «Obtén listas de precios y catálogos». Preservar esas anomalías; no completar ni renumerar desde la página anterior dentro de la capa fuente."}
+}

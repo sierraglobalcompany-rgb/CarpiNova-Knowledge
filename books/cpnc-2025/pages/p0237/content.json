@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0237-001",
+    "page_id": "PAGE-CPNC-2025-P0237",
+    "content_type": "reference",
+    "source_transcription": "CÓMO INICIAR MI NEGOCIO DE CARPINTERÍA\nESTUDIO DE MERCADO\n1 Identifica el sector maderero de tu ciudad\nVisítalo físicamente\nPreséntate personalmentte\n2 Establece contacto por WhatsApp\nObtén listas de precios y catálogos\n5 Obtén listas de precios y catálogos",
+    "normalized_text": "Infografía de apoyo sobre el estudio de mercado para iniciar un negocio de carpintería. Visualmente propone identificar el sector maderero local, visitarlo, presentarse personalmente, establecer contacto por WhatsApp y obtener listas de precios y catálogos. La fuente visible presenta una numeración irregular (1, 2 y 5), repite la frase sobre listas de precios y catálogos y escribe «personalmentte»; esas anomalías se preservan en la transcripción sin reconstruir pasos ausentes.",
+    "learning_text": "La infografía refuerza la necesidad de conocer presencialmente el sector maderero, crear contactos directos y reunir información comercial. Para la secuencia completa de siete pasos debe consultarse la página anterior; esta página se conserva como resumen visual tal como está impreso, sin completar su numeración por inferencia.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0237-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":237,"printed_page":215,"region":{"x":0.04,"y":0.01,"width":0.92,"height":0.98},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["paso-5","negocio-de-carpinteria","estudio-de-mercado","infografia","whatsapp","precios","catalogos","source-anomaly"]
+  }
+]
