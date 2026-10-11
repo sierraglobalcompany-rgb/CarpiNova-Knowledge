@@ -1,0 +1,27 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0225-001",
+  "page_id": "PAGE-CPNC-2025-P0225",
+  "type": "mixed",
+  "purpose": "Recrear la infografía de medidas estándar para centros de entretenimiento y las dos referencias de altura del televisor.",
+  "source": {"book_id":"cpnc-2025","pdf_page":225,"printed_page":203,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"planning-checklist","type":"entertainment_center_planning_checklist","geometry":{"precision":"approximate"}},
+    {"id":"living-room-tv","type":"tv_viewed_from_sofa","geometry":{"precision":"approximate"}},
+    {"id":"bedroom-tv","type":"tv_viewed_from_bed","geometry":{"precision":"approximate"}},
+    {"id":"sofa-viewer","type":"seated_viewer","geometry":{"precision":"approximate"}},
+    {"id":"bed-viewer","type":"reclined_viewer","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [
+    {"from":"sofa-viewer","to":"living-room-tv","type":"views"},
+    {"from":"bed-viewer","to":"bedroom-tv","type":"views"}
+  ],
+  "measurements": ["MEAS-CPNC-2025-P0225-001","MEAS-CPNC-2025-P0225-002"],
+  "annotations": [
+    {"target_entity_id":"planning-checklist","text":"Medir pared; considerar zócalos; ubicar conexiones eléctricas"},
+    {"target_entity_id":"living-room-tv","text":"150 cm → altura cuando se ve desde el sofá"},
+    {"target_entity_id":"bedroom-tv","text":"120 cm → altura cuando se ve desde la cama"}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Infografía de centro de entretenimiento con planificación previa y dos escenas: TV en sala vista desde sofá a 150 cm y TV en cuarto vista desde cama a 120 cm."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Las alturas se registran como referencias expresas de la fuente y no como una recomendación universal fuera de los dos escenarios ilustrados."}
+}

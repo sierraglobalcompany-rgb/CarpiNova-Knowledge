@@ -1,0 +1,28 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0224-001",
+  "page_id": "PAGE-CPNC-2025-P0224",
+  "type": "mixed",
+  "purpose": "Recrear la infografía de medidas estándar de estudios con sus referencias de altura, profundidad y ejemplos de distribución.",
+  "source": {"book_id":"cpnc-2025","pdf_page":224,"printed_page":202,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"desk","type":"study_desk","geometry":{"precision":"approximate"}},
+    {"id":"chair","type":"office_chair","geometry":{"precision":"approximate"}},
+    {"id":"height-arrow","type":"desk_height_dimension","geometry":{"precision":"approximate"}},
+    {"id":"depth-arrow","type":"recommended_depth_dimension","geometry":{"precision":"approximate"}},
+    {"id":"study-examples","type":"study_layout_examples","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [
+    {"from":"height-arrow","to":"desk","type":"dimensions"},
+    {"from":"depth-arrow","to":"desk","type":"dimensions"},
+    {"from":"chair","to":"desk","type":"used_with"}
+  ],
+  "measurements": ["MEAS-CPNC-2025-P0224-001","MEAS-CPNC-2025-P0224-002","MEAS-CPNC-2025-P0224-003"],
+  "annotations": [
+    {"target_entity_id":"height-arrow","text":"75 cm; la fuente también imprime (29.5–31.4 in)"},
+    {"target_entity_id":"depth-arrow","text":"50–70 cm; la fuente también imprime (19–27 in)"},
+    {"target_entity_id":"study-examples","text":"Ejemplos de estudios, incluido escritorio doble"}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Infografía de un escritorio con silla que indica 75 cm de altura, profundidad recomendada de 50 a 70 cm y ejemplos de estudios."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Las equivalencias en pulgadas se conservan como texto de fuente; no se corrigen ni se convierten en medidas normalizadas."}
+}

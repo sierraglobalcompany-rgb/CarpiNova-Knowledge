@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0225-001",
+    "page_id": "PAGE-CPNC-2025-P0225",
+    "content_type": "procedure",
+    "source_transcription": "MEDIDAS ESTÁNDAR centros de ENTRETENIMIENTO; A TENER EN CUENTA... Medir la pared en su largo, y en su ancho para empezar. Debes tener en cuenta los zócalos. La ubicación de las conexiones eléctricas (T.V, play, dvd).",
+    "normalized_text": "Antes de definir un centro de entretenimiento, la fuente indica medir largo y ancho de la pared, considerar los zócalos y registrar la ubicación de las conexiones eléctricas para TV y otros equipos.",
+    "learning_text": "Empieza el diseño levantando las dimensiones reales de la pared y marcando obstáculos y conexiones. Así puedes ubicar el mueble sin ocultar ni interferir con elementos existentes.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0225-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":225,"printed_page":203,"region":{"x":0.04,"y":0.04,"width":0.92,"height":0.37},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["centro-entretenimiento","medicion","pared","zocalos","conexiones-electricas"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0225-002",
+    "page_id": "PAGE-CPNC-2025-P0225",
+    "content_type": "reference",
+    "source_transcription": "Empecemos por saber con nuestro T.V tiene una altura, etc... estándar que depende de la ubicación del T.V. Cuando el T.V está en la sala y veremos desde el sofá 150cm → altura. Cuando el T.V está en el cuarto y veremos desde la cama 120cm → altura. Recuerda, es importante mantener estas medidas, para que el usuario mantenga una postura adecuada mientras ve T.V. COMODIDAD.",
+    "normalized_text": "La fuente distingue dos alturas de referencia según el lugar de visualización: 150 cm cuando el televisor está en la sala y se ve desde el sofá, y 120 cm cuando está en el cuarto y se ve desde la cama. Presenta estas cifras como referencias orientadas a la comodidad y postura del usuario.",
+    "learning_text": "Selecciona la altura según la situación de uso indicada por la fuente: sala con sofá o dormitorio con cama. No mezcles ambas referencias; corresponden a escenarios distintos de visualización.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0225-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":225,"printed_page":203,"region":{"x":0.04,"y":0.37,"width":0.92,"height":0.59},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["centro-entretenimiento","televisor","altura","sala","dormitorio","comodidad"]
+  }
+]
