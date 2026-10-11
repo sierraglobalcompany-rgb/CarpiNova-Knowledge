@@ -1,0 +1,24 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0263-001",
+  "page_id": "PAGE-CPNC-2025-P0263",
+  "type": "table",
+  "purpose": "Recrear de forma determinista la lista de chequeo del Anexo 10 para guardaescoba, preservando bloques, encabezados, renglones y nota final.",
+  "source": {"book_id": "cpnc-2025", "pdf_page": 263, "printed_page": 241, "region": {"x": 0.08, "y": 0.11, "width": 0.84, "height": 0.68}, "extraction": {"method": "visual", "confidence": 0.99, "review_status": "VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id": "title", "type": "title_block", "geometry": {"primitive": "text", "precision": "approximate"}, "text": "ANEXO 10. GUARDAESCOBA."},
+    {"id": "table-title", "type": "table_title", "geometry": {"primitive": "text", "precision": "approximate"}, "text": "GUARDAESCOBA"},
+    {"id": "workshop-materials", "type": "checklist_section", "geometry": {"primitive": "table_rows", "precision": "approximate"}, "headers": ["MATERIALES ARMADO", "*APLICA (REFERENCIA) NO APLICA (NA)", "CANTIDAD PRODUCCION"], "rows": ["Enchape blanco-color (19,22,33,44mm)", "Lámina blanco-color (15-18mm)", "Pegante para canto", "Trapos limpieza-varsol-thiner", "Vinipel-cartón"]},
+    {"id": "site-materials", "type": "checklist_section", "geometry": {"primitive": "table_rows", "precision": "approximate"}, "headers": ["MATERIALES INSTALACION", "*APLICA (REFERENCIA) NO APLICA (NA)", "CANTIDAD DESPACHO"], "rows": ["Guardaescoba", "Enchape (en caso de alguna reparación)", "Masilla resane-lija", "Pegante para canto y Colbón", "Pintura Resane", "Puntillas sin cabeza 1\"-3/4\"", "Silicona", "Tapatornillos blanco-color", "Tornillos 5/8\"-1\"-1 1/2\"-2\"-3\"", "Trapos limpieza-varsol-thiner"]},
+    {"id": "tools-equipment", "type": "checklist_section", "geometry": {"primitive": "table_rows", "precision": "approximate"}, "headers": ["HERRAMIENTAS Y EQUIPO", "*APLICA (REFERENCIA) NO APLICA (NA)", "CANTIDAD DESPACHO"], "rows": ["Bisturí", "Caladora-Ruteadora-Rotomartillo-sierra circular-Ingleteadora", "Cepillo canteador", "Cinta de enmascarar y cinta aislante", "Costal para recoger sobrantes", "Cuchilla para retestear el canto", "Elementos de protección", "Escoba y recogedor", "Espátula y estuco plástico", "Extensión de energía", "Flexómetro, nivel, escuadra", "Martillo,lápiz, formón, Destornilladores, Alicate, pelador cables", "Pistola de calafateo", "Segueta con marco", "Taladro para ensamblar e instalar (Puntas, brocas, avellanador)"]},
+    {"id": "footnote", "type": "instruction_note", "geometry": {"primitive": "text", "precision": "approximate"}, "text": "* En esta columna escribir la referencia que aplica. Sino aplica escribir NA."}
+  ],
+  "relationships": [{"from": "title", "to": "table-title", "type": "introduces"}, {"from": "table-title", "to": "workshop-materials", "type": "labels"}, {"from": "workshop-materials", "to": "site-materials", "type": "followed_by"}, {"from": "site-materials", "to": "tools-equipment", "type": "followed_by"}, {"from": "tools-equipment", "to": "footnote", "type": "qualified_by"}],
+  "measurements": [],
+  "annotations": [{"target_entity_id": "workshop-materials", "text": "CANTIDAD PRODUCCION"}, {"target_entity_id": "site-materials", "text": "CANTIDAD DESPACHO"}, {"target_entity_id": "tools-equipment", "text": "CANTIDAD DESPACHO"}],
+  "camera": {"view": "front", "projection": "orthographic"},
+  "visual_style": {"format": "tabla de chequeo", "layout": "tres columnas y tres bloques verticales", "palette": "gris, amarillo pálido, blanco y negro", "linework": "rejilla rectangular fina", "caption_style": "encabezados en negrita y filas compactas"},
+  "educational_sequence": [{"step": 1, "show_entity_ids": ["workshop-materials"], "instruction": "Verificar materiales de armado."}, {"step": 2, "show_entity_ids": ["site-materials"], "instruction": "Verificar materiales de instalación."}, {"step": 3, "show_entity_ids": ["tools-equipment", "footnote"], "instruction": "Verificar herramientas/equipo y aplicar la nota de referencia o NA."}],
+  "reconstruction": {"preferred_renderer": "html", "deterministic_required": true, "generative_image_allowed": false},
+  "accessibility": {"summary": "Lista de chequeo de guardaescoba con materiales de armado, instalación y herramientas/equipo."},
+  "review": {"status": "VISUALLY_VERIFIED", "notes": "Preservar texto, guiones, unidades y nota final tal como aparecen. No completar cantidades ni referencias ausentes."}
+}

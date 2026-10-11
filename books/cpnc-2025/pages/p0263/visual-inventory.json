@@ -1,0 +1,7 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0263",
+  "pdf_page": 263,
+  "printed_page": 241,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [{"inventory_id": "VIS-P0263-001", "kind": "baseboard_checklist_table", "meaningful": true, "figure_id": "FIG-CPNC-2025-P0263-001", "source_region": {"x": 0.08, "y": 0.11, "width": 0.84, "height": 0.68}, "reason": "Tabla-formulario reutilizable para controlar materiales de armado, materiales de instalación y herramientas/equipo de guardaescoba."}]
+}
