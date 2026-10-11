@@ -1,0 +1,19 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0259-001",
+    "page_id": "PAGE-CPNC-2025-P0259",
+    "content_type": "checklist",
+    "source_transcription": "ANEXO 6. LISTA DE CHEQUEO PARA PUERTAS\n\nPUERTAS\n\nMATERIALES ARMADO EN TALLER | *APLICA (REFERENCIA) NO APLICA (NA) | CANTIDAD PRODUCCION\nBastidor 3x3 - 3x2.5\nClavillos (Para usar con pistola)\nEnchape canto (19-22-33-44mm)\nGrapas\nHoney comb\nLámina color (3-5.5-6-36MM)\nPegante colbon y pegante para canto\nPintura dilataciones\nPuntillas sin cabeza\nMasilla resane-lija\nTrapos limpieza-varsol-thiner\nVinipel-cartón\n\nMATERIALES EN SITIO DE INSTALACIÓN | *APLICA (REFERENCIA) NO APLICA (NA) | CANTIDAD DESPACHO\nCarteras-marcos-puertas\nBisagras Omega\nCerradura bola-palanca\nchazos-palillos madera\nEnchape (en caso de alguna reparación)\nMasilla resane-lija\nPegante para canto y Colbón\nPintura Resane\nPuntillas sin cabeza 1\" -3/4\"\nRiel para 1 puerta corredera (si aplica)\nSilicona\nSistema riel 1 puerta corredera (si aplica)\nTapatornillos\nTopepuerta\nTornillos 5/8\" -1\"-1 1/2\"-2\"-3\"\nTrapos limpieza-varsol-thiner\n\nHERRAMIENTAS Y EQUIPO | *APLICA (REFERENCIA) NO APLICA (NA) | CANTIDAD\nBisturí\nBolsas (perforación con taladro)\nBroca sierra y broca espada\nCaladora-Ruteadora-Rotomartillo-sierra circular-Ingleteadora\nCepillo canteador\nCinta de enmascarar y cinta aislante\nCompresor-Pistola con clavos\nCostal para recoger sobrantes\nCuchilla para retestear el canto\nElementos de protección\nEscoba y recogedor\nEspátula y estuco plástico\nExtensión de energía\nFlexómetro, nivel, escuadra\nMartillo,lápiz, formón, Destornilladores, Alicate, pelador cables\nPistola de calafateo\nSegueta con marco\nTaladro para ensamblar e instalar (Puntas, brocas, avellanador)\n\n* En esta columna escribir la referencia que aplica. Sino aplica escribir NA.",
+    "normalized_text": "El Anexo 6 presenta una lista de chequeo para puertas organizada en tres bloques. El primero reúne materiales para armado en taller y columnas para indicar si aplica, registrar la referencia y definir la cantidad de producción. El segundo reúne materiales para instalación en sitio y cantidad de despacho. El tercero reúne herramientas y equipo con su referencia o NA y cantidad. La nota inferior indica escribir la referencia aplicable en la columna correspondiente y escribir NA cuando no aplique.",
+    "learning_text": "Usa la lista por bloques: primero verifica materiales de taller, después materiales que deben despacharse a la instalación y finalmente herramientas y equipo. Para cada elemento marca la referencia cuando aplique o NA cuando no aplique y completa la cantidad correspondiente. No asumas que todos los renglones son necesarios para cada puerta; la página anterior indica que la selección depende de las especificaciones del producto.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0259-001"],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 259,
+      "printed_page": 237,
+      "region": {"x": 0.12, "y": 0.10, "width": 0.76, "height": 0.80},
+      "extraction": {"method": "visual", "confidence": 0.99, "review_status": "VISUALLY_VERIFIED"}
+    },
+    "tags": ["anexo-6", "lista-de-chequeo", "puertas", "materiales", "instalacion", "herramientas", "equipo"]
+  }
+]
