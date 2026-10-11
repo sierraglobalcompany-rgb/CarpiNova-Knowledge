@@ -1,0 +1,15 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0254",
+  "pdf_page": 254,
+  "printed_page": 232,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0254-001",
+      "kind": "page_branding",
+      "meaningful": false,
+      "source_region": {"x": 0.05, "y": 0.02, "width": 0.9, "height": 0.96},
+      "reason": "Página principalmente textual; fuera del contenido estructurado solo presenta encabezado editorial, línea roja y numeración de página."
+    }
+  ]
+}

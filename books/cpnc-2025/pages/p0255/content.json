@@ -1,0 +1,19 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0255-001",
+    "page_id": "PAGE-CPNC-2025-P0255",
+    "content_type": "procedure",
+    "source_transcription": "Ejemplos:\nA los 6 meses, la silicona del fregadero puede deteriorarse. Hay que removerla y aplicar nuevamente.\nA los 3 años, las bisagras o brazos elevables pueden perder su ciclo de apertura y requerir cambio.\nAlgunos tableros pueden necesitar ajustes o reposición de herrajes.\n\nTodos estos son servicios posventa que se cobran.\nSon una excelente oportunidad de ingresos adicionales y de mantener al cliente satisfecho a largo plazo.\n\n4. Programa alertas para seguimiento\nCrea un cronograma de alertas o una base de datos donde registres:\nFecha de entrega del proyecto.\nFecha sugerida para primer mantenimiento.\nTipo de mueble entregado.\n\nAsí podrás contactar proactivamente al cliente y ofrecerle el servicio posventa en el momento justo.\n\nImagina esto:\nSi has atendido 10.000 clientes en tu carrera como carpintero,\ny todos ellos requieren mantenimiento cada 1 o 2 años...\n¡Podrías generar más ingresos con posventa que con proyectos nuevos!\n\nEn resumen:\nEntrega siempre un manual de uso con recomendaciones claras.\nHaz registro visual del proyecto terminado y súbelo a redes.\nEntrevista al cliente y que te recomiende en video.\nEntrega una carta de garantía.\nOfrece y cobra un servicio posventa planificado.\nLleva un seguimiento sistemático con alertas por cliente.\n\nAhí les dejo el dato, muchachos, y el consejo:\nSi hacen bien su trabajo, entregan correctamente, y estructuran su servicio posventa,\nel oficio de la carpintería les va a facturar toda la vida.",
+    "normalized_text": "La página continúa el servicio posventa con ejemplos de mantenimiento —silicona del fregadero a los 6 meses, bisagras o brazos elevables a los 3 años y posibles ajustes o reposición de herrajes— y propone cobrar estos servicios. Después recomienda programar alertas o una base de datos con fecha de entrega, fecha sugerida de primer mantenimiento y tipo de mueble. El ejemplo de 10.000 clientes y mantenimiento cada 1 o 2 años se presenta como una proyección ilustrativa de la fuente, no como una cifra validada externamente. El resumen reúne manual de uso, registro visual, recomendación en video, carta de garantía, posventa planificada y seguimiento sistemático.",
+    "learning_text": "Convierte la posventa en un proceso trazable: registra cuándo se entregó cada proyecto, cuándo conviene revisar el mueble y qué tipo de mueble es. Usa alertas para contactar al cliente en el momento previsto y ofrecer mantenimiento, ajustes o revisiones. Conserva los intervalos temporales de la página como ejemplos de la fuente, no como reglas universales de mantenimiento.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0255-001"],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 255,
+      "printed_page": 233,
+      "region": {"x": 0.05, "y": 0.09, "width": 0.9, "height": 0.72},
+      "extraction": {"method": "visual", "confidence": 0.99, "review_status": "VISUALLY_VERIFIED"}
+    },
+    "tags": ["paso-5", "entrega-de-proyecto", "posventa", "mantenimiento", "alertas", "seguimiento", "garantia", "ingresos"]
+  }
+]
