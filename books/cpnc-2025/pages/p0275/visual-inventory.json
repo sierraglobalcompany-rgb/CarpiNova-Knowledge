@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0275",
+  "pdf_page": 275,
+  "printed_page": 253,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0275-001",
+      "kind": "section_separator_graphic",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0275-001",
+      "source_region": {"x":0.0,"y":0.0,"width":1.0,"height":1.0},
+      "reason": "Separador a página completa con patrón repetido de herramientas y emblema central ‘Hágalo en casa’."
+    }
+  ]
+}
