@@ -1,0 +1,30 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0219-001",
+  "page_id": "PAGE-CPNC-2025-P0219",
+  "type": "table",
+  "purpose": "Recrear de forma determinista la lista de corte de la cama abatible con sus secciones, símbolos, espesores, dimensiones, cantidades y tornillos.",
+  "source": {"book_id":"cpnc-2025","pdf_page":219,"printed_page":197,"region":{"x":0.04,"y":0.03,"width":0.92,"height":0.95},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"bastidor-table","type":"cut_list_section","geometry":{"precision":"approximate"}},
+    {"id":"bed-frame-table","type":"cut_list_section","geometry":{"precision":"approximate"}},
+    {"id":"mattress-base-table","type":"cut_list_section","geometry":{"precision":"approximate"}},
+    {"id":"bed-front-table","type":"cut_list_section","geometry":{"precision":"approximate"}},
+    {"id":"cabinet-table","type":"cut_list_section","geometry":{"precision":"approximate"}},
+    {"id":"assembly-screws","type":"hardware_list","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [
+    {"from":"bastidor-table","to":"bed-frame-table","type":"same_project_cut_list"},
+    {"from":"mattress-base-table","to":"bed-front-table","type":"same_project_cut_list"},
+    {"from":"cabinet-table","to":"assembly-screws","type":"followed_by"}
+  ],
+  "measurements": ["MEAS-CPNC-2025-P0219-001","MEAS-CPNC-2025-P0219-002","MEAS-CPNC-2025-P0219-003","MEAS-CPNC-2025-P0219-004","MEAS-CPNC-2025-P0219-005","MEAS-CPNC-2025-P0219-006","MEAS-CPNC-2025-P0219-007","MEAS-CPNC-2025-P0219-008","MEAS-CPNC-2025-P0219-009","MEAS-CPNC-2025-P0219-010","MEAS-CPNC-2025-P0219-011","MEAS-CPNC-2025-P0219-012","MEAS-CPNC-2025-P0219-013","MEAS-CPNC-2025-P0219-014","MEAS-CPNC-2025-P0219-015","MEAS-CPNC-2025-P0219-016","MEAS-CPNC-2025-P0219-017","MEAS-CPNC-2025-P0219-018","MEAS-CPNC-2025-P0219-019","MEAS-CPNC-2025-P0219-020","MEAS-CPNC-2025-P0219-021","MEAS-CPNC-2025-P0219-022","MEAS-CPNC-2025-P0219-023","MEAS-CPNC-2025-P0219-024","MEAS-CPNC-2025-P0219-025","MEAS-CPNC-2025-P0219-026","MEAS-CPNC-2025-P0219-027","MEAS-CPNC-2025-P0219-028","MEAS-CPNC-2025-P0219-029","MEAS-CPNC-2025-P0219-030","MEAS-CPNC-2025-P0219-031","MEAS-CPNC-2025-P0219-032","MEAS-CPNC-2025-P0219-033","MEAS-CPNC-2025-P0219-034","MEAS-CPNC-2025-P0219-035","MEAS-CPNC-2025-P0219-036","MEAS-CPNC-2025-P0219-037","MEAS-CPNC-2025-P0219-038","MEAS-CPNC-2025-P0219-039","MEAS-CPNC-2025-P0219-040","MEAS-CPNC-2025-P0219-041","MEAS-CPNC-2025-P0219-042","MEAS-CPNC-2025-P0219-043","MEAS-CPNC-2025-P0219-044"],
+  "annotations": [
+    {"target_entity_id":"bastidor-table","text":"A1 y A2: sección 2 × 4 cm; la unidad de la columna MEDIDA no está explícita"},
+    {"target_entity_id":"bed-front-table","text":"Encabezado: 18 mm; filas E e I: 15 mm"},
+    {"target_entity_id":"cabinet-table","text":"Encabezado: 18 mm; filas F, H1, Z1 y Z2: 15 mm"},
+    {"target_entity_id":"assembly-screws","text":"Tornillos #6: 1 1/4, 1 1/2, 2 y 3/4 pulgadas"}
+  ],
+  "reconstruction": {"preferred_renderer":"html","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Lista tabular de corte para bastidor, marco, base del colchón, frente y gabinete, seguida por tornillos de ensamble."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Se preservan sin reconciliar las discrepancias de espesor entre encabezados de sección y filas individuales."}
+}

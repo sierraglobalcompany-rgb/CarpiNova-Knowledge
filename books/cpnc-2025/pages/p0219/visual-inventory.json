@@ -1,0 +1,9 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0219",
+  "pdf_page": 219,
+  "printed_page": 197,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0219-001","kind":"murphy_bed_cut_list_tables","meaningful":true,"figure_id":"FIG-CPNC-2025-P0219-001","source_region":{"x":0.04,"y":0.03,"width":0.92,"height":0.95},"reason":"Tabla de corte con símbolos, materiales, espesores, dimensiones, cantidades y tornillos de ensamble."}
+  ]
+}
