@@ -1,0 +1,14 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0280",
+  "pdf_page": 280,
+  "printed_page": 258,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "DEC-P0280-001",
+      "kind": "page_branding",
+      "meaningful": false,
+      "reason": "Página tipográfica del glosario con cabecera editorial, línea roja y cambio de sección de B a C. Todo el contenido significativo son definiciones textuales transcritas en content.json; no hay diagrama, proceso ni ilustración técnica que requiera FigureSpec."
+    }
+  ]
+}
