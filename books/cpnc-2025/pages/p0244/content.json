@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0244-001",
+    "page_id": "PAGE-CPNC-2025-P0244",
+    "content_type": "procedure",
+    "source_transcription": "sean visualmente impactantes o llamativos.\n\n6. Muestra el paso a paso\nDocumenta el proceso completo del proyecto: desde la toma de medidas, pasando por el ensamble, hasta la instalación y entrega al cliente.\n\nAsí que ánimo, muchachos.\nEs hora de abrir redes sociales, perder el miedo a exponerse y pagar pauta con estrategia.\nHoy, más que nunca, el carpintero que quiere crecer necesita visibilidad digital.",
+    "normalized_text": "La página completa la recomendación anterior indicando que los primeros segundos del contenido deben ser visualmente impactantes o llamativos. Añade un sexto punto: mostrar el paso a paso y documentar todo el proyecto, desde la toma de medidas y el ensamble hasta la instalación y entrega. Cierra animando a abrir redes sociales, exponerse y pagar pauta con estrategia para ganar visibilidad digital.",
+    "learning_text": "Completa la estrategia de captación digital mostrando el proceso real del proyecto. La fuente recomienda documentar medidas, ensamble, instalación y entrega, y combinar esa visibilidad con pauta publicitaria estratégica.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0244-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":244,"printed_page":222,"region":{"x":0.05,"y":0.09,"width":0.90,"height":0.24},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["paso-5","captacion-de-clientes","redes-sociales","paso-a-paso","documentacion-de-proceso","pauta","visibilidad-digital"]
+  }
+]
