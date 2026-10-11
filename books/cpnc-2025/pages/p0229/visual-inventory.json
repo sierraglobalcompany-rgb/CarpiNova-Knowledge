@@ -1,0 +1,9 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0229",
+  "pdf_page": 229,
+  "printed_page": 207,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0229-001","kind":"kitchen_and_closet_qr_resource_index","meaningful":true,"figure_id":"FIG-CPNC-2025-P0229-001","source_region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"reason":"Cuadrícula de doce códigos QR con títulos temáticos de cocina y closet."}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0229-001",
+  "page_id": "PAGE-CPNC-2025-P0229",
+  "type": "mixed",
+  "purpose": "Recrear la estructura visual del índice de recursos QR de cocina y closet sin fabricar códigos QR funcionales ni destinos no verificados.",
+  "source": {"book_id":"cpnc-2025","pdf_page":229,"printed_page":207,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"qr-01","type":"qr_resource_placeholder","label":"¿Cómo estructurar una cocina?","geometry":{"precision":"approximate"}},
+    {"id":"qr-02","type":"qr_resource_placeholder","label":"¿Cómo hacer una cocina?","geometry":{"precision":"approximate"}},
+    {"id":"qr-03","type":"qr_resource_placeholder","label":"Cocina y bisagras","geometry":{"precision":"approximate"}},
+    {"id":"qr-04","type":"qr_resource_placeholder","label":"Sistema T en frontal de cocina","geometry":{"precision":"approximate"}},
+    {"id":"qr-05","type":"qr_resource_placeholder","label":"Medidas estándar de cocina","geometry":{"precision":"approximate"}},
+    {"id":"qr-06","type":"qr_resource_placeholder","label":"Sistema chaflan cocinas","geometry":{"precision":"approximate"}},
+    {"id":"qr-07","type":"qr_resource_placeholder","label":"Elementos fundamentales para realizar tu cocina","geometry":{"precision":"approximate"}},
+    {"id":"qr-08","type":"qr_resource_placeholder","label":"¿Cómo cotizar una cocina?","geometry":{"precision":"approximate"}},
+    {"id":"qr-09","type":"qr_resource_placeholder","label":"¿Cómo va estructurado un closet?","geometry":{"precision":"approximate"}},
+    {"id":"qr-10","type":"qr_resource_placeholder","label":"¿Cómo hacer un closet?","geometry":{"precision":"approximate"}},
+    {"id":"qr-11","type":"qr_resource_placeholder","label":"Sistema corredizo SD Simple y doble","geometry":{"precision":"approximate"}},
+    {"id":"qr-12","type":"qr_resource_placeholder","label":"Sistema corredizo SD 50","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"qr-01","text":"Los patrones QR y sus payloads no fueron decodificados; recrear solo como marcador visual no funcional."}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Cuadrícula de doce recursos QR titulados sobre cocina, herrajes, cotización, closet y sistemas corredizos."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"No se debe generar ningún QR funcional hasta decodificar y verificar cada payload contra la fuente exacta."}
+}
