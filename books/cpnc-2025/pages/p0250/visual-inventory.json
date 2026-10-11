@@ -1,0 +1,21 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0250",
+  "pdf_page": 250,
+  "printed_page": 228,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0250-001",
+      "kind": "measurement_register_infographic",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0250-001",
+      "source_region": {
+        "x": 0.05,
+        "y": 0.02,
+        "width": 0.9,
+        "height": 0.96
+      },
+      "reason": "Infografía educativa reutilizable que resume accesos, tamaño de piezas, conexiones, guardas o zócalos, molduras y tipo de anclajes mediante texto e iconografía."
+    }
+  ]
+}

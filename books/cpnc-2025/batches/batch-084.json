@@ -1,0 +1,10 @@
+{
+  "batch_id": "BATCH-084",
+  "book_id": "cpnc-2025",
+  "purpose": "f1-measurement-register-and-production-order",
+  "pdf_pages": [
+    250,
+    251
+  ],
+  "status": "EXTRACTED"
+}

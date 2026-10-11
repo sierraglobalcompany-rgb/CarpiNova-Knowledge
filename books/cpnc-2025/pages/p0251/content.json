@@ -1,0 +1,39 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0251-001",
+    "page_id": "PAGE-CPNC-2025-P0251",
+    "content_type": "procedure",
+    "source_transcription": "¿Para qué sirve la orden de producción?\n\nLa orden de producción es una herramienta clave antes de realizar el ensamble e instalación de un mueble en casa del cliente. Es, en esencia, la cartilla de comunicación entre el carpintero y el cliente final.\nPor un lado, le da al carpintero una guía clara de qué debe hacer; por otro, le da al cliente la tranquilidad de saber qué va a recibir.\n\n¿Qué debe contener una orden de producción?\n\n1. Diseño del ambiente\nDebe incluir:\nUna imagen del ambiente antes de la intervención.\nUna imagen del ambiente con el diseño sobrepuesto, para que el cliente visualice exactamente dónde y cómo irá el mueble.\n\n2. Lista de materiales\nEs fundamental para que los carpinteros encargados del ensamble no se sientan desorientados ni piensen que falta algo.\nEsta lista funciona como una hoja de ruta para seleccionar y organizar las piezas correctamente.\n\n3. Observaciones y características de instalación\nDebe especificar aspectos técnicos como:\nTipo de muro (yeso, drywall, concreto, ladrillo)\nTipo de anclajes a utilizar\nProcedimientos especiales: cortes en sitio, aplicación de tapacanto, armado en obra, entre otros\nAnécdota:\nEn una ocasión, un cliente se molestó porque, durante la instalación, se aplicó cemento de contacto para el tapacanto. Este producto tiene un olor fuerte, y el cliente tenía un bebé recién nacido en casa. La situación se volvió incómoda, aunque el procedimiento era totalmente normal.\nConclusión: Todo esto debe estar informado previamente para que el cliente pueda tomar precauciones.\n\n4. Lista de chequeo de entrega (Check-list)\nEste documento debe ser firmado por el cliente, confirmando que:\nSe instalaron todos los módulos\nTodo quedó en buen estado\nSe cumplió lo acordado en el diseño\n\nEste check-list funciona como:\nGarantía de pago: El cliente firma que todo está conforme, y procede a pagar el saldo restante.\nSoporte para el instalador: Recuerda que la garantía del proyecto la asume",
+    "normalized_text": "La orden de producción se presenta como la cartilla de comunicación entre carpintero y cliente antes del ensamble e instalación. La página enumera cuatro componentes: diseño del ambiente, lista de materiales, observaciones y características de instalación, y lista de chequeo de entrega. También explica que las condiciones técnicas y procedimientos especiales deben informarse previamente al cliente. El último apartado queda cortado por el límite físico de la página después de «Recuerda que la garantía del proyecto la asume» y no se completa por inferencia.",
+    "learning_text": "Documenta antes de instalar qué se va a entregar y cómo: imágenes del ambiente y del diseño, materiales, condiciones técnicas, anclajes, procedimientos especiales y una lista de chequeo firmada. Usa el documento para alinear expectativas, anticipar precauciones y dejar evidencia de la entrega. La frase final continúa en la página siguiente y debe mantenerse incompleta en esta página.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0251-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 251,
+      "printed_page": 229,
+      "region": {
+        "x": 0.05,
+        "y": 0.07,
+        "width": 0.9,
+        "height": 0.9
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "paso-5",
+      "orden-de-produccion",
+      "diseno-del-ambiente",
+      "lista-de-materiales",
+      "instalacion",
+      "check-list",
+      "cliente",
+      "garantia"
+    ]
+  }
+]
