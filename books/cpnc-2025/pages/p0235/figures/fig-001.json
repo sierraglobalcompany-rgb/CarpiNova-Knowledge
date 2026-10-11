@@ -1,0 +1,48 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0235-001",
+  "page_id":"PAGE-CPNC-2025-P0235",
+  "type":"process_diagram",
+  "purpose":"Recrear la infografía conceptual que explica qué significa proyectar mobiliario desde la venta de carpintería, los problemas de incumplimiento y las prácticas asociadas a un carpintero profesional y confiable.",
+  "source":{"book_id":"cpnc-2025","pdf_page":235,"printed_page":213,"region":{"x":0.05,"y":0.04,"width":0.90,"height":0.90},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"meaning-prompt","type":"carpenter_question","geometry":{"primitive":"illustrated_portrait","precision":"approximate","bounding_box":{"x":0.04,"y":0.14,"width":0.36,"height":0.23}},"description":"Carpintero ilustrado junto al rótulo ¿Qué significa?."},
+    {"id":"selling-carpentry","type":"selling_carpentry","geometry":{"primitive":"cabinet_and_coins","precision":"approximate","bounding_box":{"x":0.46,"y":0.15,"width":0.43,"height":0.18}},"description":"Mueble con flecha hacia monedas y el texto Vender carpintería."},
+    {"id":"work-scene","type":"carpentry_work","geometry":{"primitive":"illustration","precision":"approximate","bounding_box":{"x":0.08,"y":0.40,"width":0.34,"height":0.20}},"description":"Persona trabajando sobre un mueble; una flecha conduce al bloque de problemas."},
+    {"id":"problems","type":"execution_problems","geometry":{"primitive":"text_box","precision":"approximate","bounding_box":{"x":0.52,"y":0.36,"width":0.40,"height":0.24}},"description":"Bloque Problemas con cuatro ítems: sin garantía, sin cumplir plazos, trabajo abandonado y contratos sin ejecutar."},
+    {"id":"client-scene","type":"client_relationship","geometry":{"primitive":"handshake_and_checklist","precision":"approximate","bounding_box":{"x":0.05,"y":0.62,"width":0.48,"height":0.24}},"description":"Carpintero y cliente se estrechan la mano; el carpintero muestra una lista con marca de verificación."},
+    {"id":"customer-service","type":"good_customer_service","geometry":{"primitive":"text_box","precision":"approximate","bounding_box":{"x":0.59,"y":0.61,"width":0.34,"height":0.09}},"description":"Rótulo Buena atención al cliente."},
+    {"id":"after-sales","type":"warranty_after_sales","geometry":{"primitive":"text_box","precision":"approximate","bounding_box":{"x":0.59,"y":0.71,"width":0.34,"height":0.09}},"description":"Rótulo Garantía y posventa."},
+    {"id":"technical-knowledge","type":"technical_knowledge","geometry":{"primitive":"text_box","precision":"approximate","bounding_box":{"x":0.59,"y":0.81,"width":0.34,"height":0.09}},"description":"Rótulo Conocimiento técnico."},
+    {"id":"professional-outcome","type":"professional_carpenter_outcome","geometry":{"primitive":"caption","precision":"approximate","bounding_box":{"x":0.18,"y":0.90,"width":0.70,"height":0.07}},"description":"Cierre: ¡Carpintero profesional, confiable y preparado!."}
+  ],
+  "relationships":[
+    {"from":"meaning-prompt","to":"selling-carpentry","type":"frames_meaning_as"},
+    {"from":"work-scene","to":"problems","type":"can_result_in"},
+    {"from":"client-scene","to":"customer-service","type":"associated_with"},
+    {"from":"client-scene","to":"after-sales","type":"associated_with"},
+    {"from":"client-scene","to":"technical-knowledge","type":"associated_with"},
+    {"from":"customer-service","to":"professional-outcome","type":"supports"},
+    {"from":"after-sales","to":"professional-outcome","type":"supports"},
+    {"from":"technical-knowledge","to":"professional-outcome","type":"supports"}
+  ],
+  "measurements":[],
+  "annotations":[
+    {"target_entity_id":"selling-carpentry","text":"Vender carpintería"},
+    {"target_entity_id":"problems","text":"Problemas: Sin garantía / Sin cumplir plazos / Trabajo abandonado / Contratos sin ejecutar"},
+    {"target_entity_id":"customer-service","text":"Buena atención al cliente"},
+    {"target_entity_id":"after-sales","text":"Garantía y posventa"},
+    {"target_entity_id":"technical-knowledge","text":"Conocimiento técnico"},
+    {"target_entity_id":"professional-outcome","text":"¡Carpintero profesional, confiable y preparado!"}
+  ],
+  "camera":{"view":"front","projection":"orthographic"},
+  "visual_style":{"format":"infografía educativa","layout":"flujo vertical con escenas a la izquierda y conceptos a la derecha","palette":"crema, marrón, naranja y azul","linework":"ilustración plana con contornos oscuros","caption_style":"títulos y cajas de texto grandes"},
+  "educational_sequence":[
+    {"step":1,"show_entity_ids":["meaning-prompt","selling-carpentry"],"instruction":"Plantear qué significa proyectar mobiliario y relacionarlo con vender carpintería."},
+    {"step":2,"show_entity_ids":["work-scene","problems"],"instruction":"Mostrar los problemas de incumplimiento listados por la fuente."},
+    {"step":3,"show_entity_ids":["client-scene","customer-service","after-sales","technical-knowledge"],"instruction":"Presentar atención al cliente, garantía y posventa, y conocimiento técnico como atributos positivos."},
+    {"step":4,"show_entity_ids":["professional-outcome"],"instruction":"Cerrar con el perfil de carpintero profesional, confiable y preparado."}
+  ],
+  "reconstruction":{"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
+  "accessibility":{"summary":"Infografía de proyectar mobiliario: vender carpintería; problemas de falta de garantía, incumplimiento, abandono y contratos sin ejecutar; y atributos positivos de atención al cliente, garantía/posventa y conocimiento técnico."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"Conservar literalmente los cuatro problemas y los tres atributos positivos. La ilustración puede reinterpretarse, pero debe mantenerse la relación visual entre problemas, relación con el cliente y resultado profesional."}
+}

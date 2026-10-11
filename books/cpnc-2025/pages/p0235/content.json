@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0235-001",
+    "page_id": "PAGE-CPNC-2025-P0235",
+    "content_type": "concept",
+    "source_transcription": "PROYECTAR MOBILIARIO\n¿Qué significa?\nVender carpintería\nProblemas:\n• Sin garantía\n• Sin cumplir plazos\n• Trabajo abandonado\n• Contratos sin ejecutar\nBuena atención al cliente\nGarantía y posventa\nConocimiento técnico\n¡Carpintero profesional, confiable y preparado!",
+    "normalized_text": "La infografía presenta proyectar mobiliario como una actividad profesional vinculada a vender trabajos de carpintería. Contrasta problemas como no ofrecer garantía, incumplir plazos, abandonar trabajos o dejar contratos sin ejecutar con buena atención al cliente, garantía y posventa, y conocimiento técnico. El cierre resume el perfil esperado como un carpintero profesional, confiable y preparado.",
+    "learning_text": "Proyectar mobiliario no se limita a fabricar: la relación con el cliente también exige cumplir lo acordado, atender bien, responder con garantía y posventa y contar con conocimiento técnico. Estas prácticas construyen un servicio profesional y confiable.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0235-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":235,"printed_page":213,"region":{"x":0.05,"y":0.04,"width":0.90,"height":0.90},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["paso-5","proyectar-mobiliario","venta-de-carpinteria","atencion-al-cliente","garantia","posventa","conocimiento-tecnico","profesionalizacion"]
+  }
+]
