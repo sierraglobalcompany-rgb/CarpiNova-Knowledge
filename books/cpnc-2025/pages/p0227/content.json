@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0227-001",
+    "page_id": "PAGE-CPNC-2025-P0227",
+    "content_type": "reference",
+    "source_transcription": "SOPORTE en TABLÓN centro de T.V. El tablón de aglomerado puede perfectamente cargar el soporte de T.V. manteniendo el T.V seguro. No hay por que tener miedo. Para sacar un solo tornillo del aglomerado necesita 120 Kgf (Kilogramos fuerza). Se instala con tornillo de 1 pulgada x8. También se puede poner un tornillo pasante, que atraviesa el aglomerado y atrás se asegura con arandela y luego se corta el sobrante.",
+    "normalized_text": "La fuente presenta el tablón de aglomerado como soporte para el televisor. Indica una fuerza de extracción de 120 kgf para un tornillo, propone un tornillo de 1 pulgada con designación x8 y ofrece como alternativa un tornillo pasante asegurado por detrás con arandela, recortando después el sobrante.",
+    "learning_text": "La lámina propone dos formas de fijar el soporte al tablón: tornillo directo en el aglomerado o tornillo pasante con arandela. Mantén separadas ambas alternativas y aplica únicamente las especificaciones que la fuente imprime para cada una.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0227-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":227,"printed_page":205,"region":{"x":0.03,"y":0.03,"width":0.94,"height":0.62},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["centro-tv","tablon","aglomerado","soporte-tv","tornillo","arandela"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0227-002",
+    "page_id": "PAGE-CPNC-2025-P0227",
+    "content_type": "reference",
+    "source_transcription": "Unión a la pared. ENCAJE. Unión al tablero. Recuerda el sistema de chaflán, que son 2 piezas por medio de un corte de 45°.",
+    "normalized_text": "La fuente recuerda el sistema de chaflán para unir pared y tablero: utiliza dos piezas que encajan entre sí mediante un corte de 45 grados.",
+    "learning_text": "Para reproducir el encaje mostrado, prepara dos piezas complementarias con corte de 45 grados: una se fija a la pared y la otra al tablero.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0227-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":227,"printed_page":205,"region":{"x":0.05,"y":0.58,"width":0.90,"height":0.36},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["chaflan","encaje","pared","tablero","45-grados"]
+  }
+]

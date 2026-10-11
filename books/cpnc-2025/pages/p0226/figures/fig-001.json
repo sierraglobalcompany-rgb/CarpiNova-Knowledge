@@ -1,0 +1,30 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0226-001",
+  "page_id": "PAGE-CPNC-2025-P0226",
+  "type": "mixed",
+  "purpose": "Recrear la infografía de configuración e instalación de un centro de T.V. sin dimensiones estándar de modulación o largo.",
+  "source": {"book_id":"cpnc-2025","pdf_page":226,"printed_page":204,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"tv-board","type":"tv_support_board","geometry":{"precision":"approximate"}},
+    {"id":"upper-cabinet","type":"entertainment_center_upper_module","geometry":{"precision":"approximate"}},
+    {"id":"tv","type":"television","geometry":{"precision":"approximate"}},
+    {"id":"cable-holes","type":"connection_holes","geometry":{"precision":"approximate"}},
+    {"id":"electrical-box","type":"electrical_box","geometry":{"precision":"approximate"}},
+    {"id":"cleat","type":"chamfer_cleat","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [
+    {"from":"tv","to":"tv-board","type":"mounted_on"},
+    {"from":"cable-holes","to":"tv-board","type":"passes_through"},
+    {"from":"electrical-box","to":"tv-board","type":"relocated_into"},
+    {"from":"cleat","to":"upper-cabinet","type":"supports"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"tv-board","text":"El tablón recibe el peso del T.V. y opcionalmente alguna repisa"},
+    {"target_entity_id":"cable-holes","text":"Conexiones mediante perforaciones hechas con broca"},
+    {"target_entity_id":"electrical-box","text":"Caja eléctrica trasladada del muro al mueble"}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Centro de T.V. ilustrado con tablón de soporte, módulo superior, paso de cables y caja eléctrica integrada al mueble."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Se conserva la afirmación de la fuente de que modulación y largo no tienen medida estándar; no se añaden cotas inferidas."}
+}
