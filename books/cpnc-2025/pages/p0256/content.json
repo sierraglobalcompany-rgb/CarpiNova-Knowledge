@@ -1,0 +1,40 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0256-001",
+    "page_id": "PAGE-CPNC-2025-P0256",
+    "content_type": "checklist",
+    "source_transcription": "¿Cómo se entrega un proyecto de carpintería?\n\n1 Entrega con manual de uso\nMANUAL DE USO\nLimpiar con producto adecuado\n\n2 Registro fotográfico y para redes sociales\n\n3 Carta de garantía y servicio posventa\nGARANTÍA 1 AÑO\nJUN\n\n4 Programa alertas para seguimiento\nFecha\nTipo...\n\nEntrega un manual, registro visual, carta de garantía y ofrece servicio posventa",
+    "normalized_text": "La infografía resume cuatro acciones para la entrega de un proyecto de carpintería: entregar un manual de uso, hacer registro fotográfico y para redes sociales, entregar una carta de garantía con servicio posventa y programar alertas para seguimiento. Los textos integrados en las ilustraciones refuerzan el manual de uso, la garantía y el registro por fecha y tipo.",
+    "learning_text": "Usa la entrega como un cierre documentado: acompaña el mueble con instrucciones de uso, registra visualmente el proyecto, formaliza la garantía y organiza alertas de seguimiento posventa. La página funciona como síntesis visual de las recomendaciones desarrolladas en las páginas anteriores.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0256-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 256,
+      "printed_page": 234,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "paso-5",
+      "entrega-de-proyecto",
+      "manual-de-uso",
+      "registro-fotografico",
+      "redes-sociales",
+      "garantia",
+      "posventa",
+      "seguimiento",
+      "infografia"
+    ]
+  }
+]

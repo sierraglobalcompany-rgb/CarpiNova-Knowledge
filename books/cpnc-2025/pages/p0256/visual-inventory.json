@@ -1,0 +1,21 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0256",
+  "pdf_page": 256,
+  "printed_page": 234,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0256-001",
+      "kind": "project_delivery_infographic",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0256-001",
+      "source_region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      },
+      "reason": "Infografía educativa que sintetiza cuatro acciones de entrega: manual de uso, registro fotográfico y para redes sociales, garantía con posventa y alertas de seguimiento."
+    }
+  ]
+}

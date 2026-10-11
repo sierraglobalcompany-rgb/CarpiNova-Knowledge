@@ -1,0 +1,50 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0257-001",
+  "page_id": "PAGE-CPNC-2025-P0257",
+  "type": "form",
+  "purpose": "Recrear la plantilla PROGRAMACION OBRAS preservando la leyenda de etapas, cuatro secuencias semanales, seis filas de obra y la observación de planificación.",
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 257,
+    "printed_page": 235,
+    "region": {
+      "x": 0.03,
+      "y": 0.04,
+      "width": 0.94,
+      "height": 0.92
+    },
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
+  "entities": [
+    {"id":"title","type":"title_block","geometry":{"primitive":"text","precision":"approximate","bounding_box":{"x":0.04,"y":0.03,"width":0.92,"height":0.05}},"description":"Encabezado PROGRAMACION OBRAS."},
+    {"id":"legend","type":"stage_legend","geometry":{"primitive":"table","precision":"approximate","bounding_box":{"x":0.04,"y":0.10,"width":0.26,"height":0.17}},"description":"Leyenda: DESPIECE D, CORTE Y ENCHAPE C, ARMADO A, INSTALACION I, ENTREGA E, con celdas de color."},
+    {"id":"logo","type":"logo_placeholder","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.61,"y":0.10,"width":0.31,"height":0.17}},"description":"Recuadro LOGO."},
+    {"id":"schedule","type":"calendar_grid","geometry":{"primitive":"table","precision":"approximate","bounding_box":{"x":0.04,"y":0.31,"width":0.92,"height":0.51}},"description":"Campo MES, columna NOMBRE DE LA OBRA, cuatro secuencias L M M J V S D y filas OBRA 1 a OBRA 6."},
+    {"id":"observations","type":"instruction_block","geometry":{"primitive":"text_box","precision":"approximate","bounding_box":{"x":0.04,"y":0.86,"width":0.92,"height":0.07}},"description":"Observación para diligenciar primero la FECHA DE ENTREGA y planificar hacia atrás hasta la fecha límite de inicio de producción."}
+  ],
+  "relationships": [
+    {"from":"legend","to":"schedule","type":"provides_codes_for"},
+    {"from":"logo","to":"schedule","type":"document_header_for"},
+    {"from":"observations","to":"schedule","type":"instructs_how_to_fill"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"legend","text":"DESPIECE D / CORTE Y ENCHAPE C / ARMADO A / INSTALACION I / ENTREGA E"},
+    {"target_entity_id":"schedule","text":"MES / NOMBRE DE LA OBRA / cuatro secuencias L M M J V S D / OBRA 1 a OBRA 6"},
+    {"target_entity_id":"observations","text":"Diligenciar primero la FECHA DE ENTREGA pactada con el cliente, se definen los otros tiempos y se van diligenciando de adelante para atrás y se identifica la fecha límite para iniciar producción."}
+  ],
+  "camera": {"view":"front","projection":"orthographic"},
+  "visual_style": {"format":"formulario técnico","layout":"horizontal con leyenda superior y cuadrícula de programación","palette":"blanco y negro con cinco celdas de color para las etapas","linework":"retícula rectangular","caption_style":"mayúsculas y etiquetas en negrita"},
+  "educational_sequence": [
+    {"step":1,"show_entity_ids":["legend","logo"],"instruction":"Identificar los códigos de etapa y el encabezado de la plantilla."},
+    {"step":2,"show_entity_ids":["schedule"],"instruction":"Registrar mes y nombres de las obras en la cuadrícula."},
+    {"step":3,"show_entity_ids":["observations"],"instruction":"Planificar de la fecha de entrega hacia atrás hasta identificar el inicio de producción."}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Formulario de programación de obras con códigos D, C, A, I y E, cuatro semanas de lunes a domingo, seis obras y una instrucción para planificar hacia atrás desde la fecha de entrega."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar exactamente cuatro secuencias semanales y seis filas de obra. No agregar días, filas ni etapas que no aparecen en la fuente."}
+}
