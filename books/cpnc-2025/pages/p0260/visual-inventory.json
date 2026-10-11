@@ -1,0 +1,21 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0260",
+  "pdf_page": 260,
+  "printed_page": 238,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0260-001",
+      "kind": "closet_vestier_entertainment_checklist_table",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0260-001",
+      "source_region": {
+        "x": 0.1,
+        "y": 0.1,
+        "width": 0.79,
+        "height": 0.83
+      },
+      "reason": "Tabla-formulario reutilizable para controlar materiales de taller, materiales de instalación y herramientas/equipo en closet, vestier y muebles de TV."
+    }
+  ]
+}
