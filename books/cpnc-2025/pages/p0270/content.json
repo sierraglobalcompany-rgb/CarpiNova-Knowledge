@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0270-001",
+    "page_id": "PAGE-CPNC-2025-P0270",
+    "content_type": "concept",
+    "source_transcription": "Una vez tenemos claridad del porcentaje de nuestros gastos de operación, debemos aumentar este porcentaje al costo de cada producto. En el anexo 14, tenemos un cuadro ejemplo para hacer el costeo de nuestros productos.",
+    "normalized_text": "Una vez identificado el porcentaje de gastos de operación, la página indica incorporarlo al costo de cada producto y presenta el Anexo 14 como ejemplo para realizar el costeo.",
+    "learning_text": "Antes de definir el precio de un producto, identifica cuánto representan los gastos de operación y considera ese porcentaje dentro del análisis de costos. El Anexo 14 sirve como formato para organizar ese cálculo.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0270-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":270,"printed_page":248,"region":{"x":0.11,"y":0.11,"width":0.77,"height":0.07},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["presupuesto","costeo","gastos-de-operacion","analisis-unitario"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0270-002",
+    "page_id": "PAGE-CPNC-2025-P0270",
+    "content_type": "form",
+    "source_transcription": "ANEXO 14. ANALISIS UNITARIO\n\nEJEMPLO:CLOSET ALCOBAS 1,80ML\n\nUNID | CANT | VR. UNIT | VR. TOTAL\n\nLAMINA Y ENCHAPE\nLAMINA RH 15MM | UNID |  |  | \nENCHAPE DE 19MM | ML |  |  | \nSUBTOTAL |  |  |  | $ -\n\nHERRAJES\nFLANCHES | UNID |  |  | \nMANIJAS | UNID |  |  | \nRIEL FULL EXTENSION 45CM | UNID |  |  | \nSISTEMA CORREDERA | UNID |  |  | \nSISTEMA RIEL DUCLOSET | UNID |  |  | \nTUBO | UNID |  |  | \nSUBTOTAL |  |  |  | $ -\n\nFERRETERIA\nPUNTILLA | CJ |  |  | \nTAPATORNILLO | UNID |  |  | \nTORNILLOS No.6 DE 1\" | UNID |  |  | \nTORNILLOS No.6 DE 1\" 1/2 | UNID |  |  | \nTORNILLOS No.6 DE 2\" | UNID |  |  | \nTORNILLOS No.8 DE 3\" | UNID |  |  | \nZUNCHO | UNID |  |  | \nPEGANTE | ML |  |  | \nVINIPEL | UNID |  |  | \nSUBTOTAL |  |  |  | $ -\n\nHERRAMIENTA\nAFILADA DE DISCOS Y COSTO DISCO | UNID |  |  | \nSUBTOTAL |  |  |  | $ -\n\nMANO DE OBRA\nARMADO E INSTALACION | UNID |  |  | \nDETALLADO | UNID |  |  | \nSUBTOTAL |  |  |  | $ -\n\nTOTAL COSTO DIRECTO | $ -\nADMON | $ -\nUTILIDAD | $ -\nTRANSPORTE | $ -\nTOTAL | $ -\n\nML | 1,8\nDIVIDO EL TOTAL POR LOS ML, EN ESTE EJEMPLO 1,8M\nVALOR/ML | $ -",
+    "normalized_text": "El Anexo 14 es un formato de análisis unitario para un ejemplo de clóset de alcobas de 1,80 ml. Organiza lámina y enchape, herrajes, ferretería, herramienta y mano de obra; deja campos para unidad, cantidad, valor unitario y valor total; y termina con costo directo, administración, utilidad, transporte, total y valor por metro lineal.",
+    "learning_text": "Usa el formato para listar cada insumo o actividad por grupo, registrar su unidad, cantidad, valor unitario y valor total, obtener subtotales y luego consolidar costo directo, administración, utilidad y transporte. Conserva en blanco los campos que aún no tengan datos y calcula el valor por metro lineal a partir del total y los metros del ejemplo.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0270-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":270,"printed_page":248,"region":{"x":0.14,"y":0.19,"width":0.73,"height":0.75},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["anexo-14","analisis-unitario","costeo","formato","materiales","herrajes","ferreteria","mano-de-obra","valor-por-ml"]
+  }
+]
