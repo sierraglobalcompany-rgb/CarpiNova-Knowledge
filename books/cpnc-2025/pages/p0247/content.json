@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0247-001",
+    "page_id": "PAGE-CPNC-2025-P0247",
+    "content_type": "procedure",
+    "source_transcription": "decisión informada.\n\nEl cierre: diseño y despiece\nUna vez tomada la medida y hecha la asesoría, debes generar un diseño y su respectivo despiece. Esto le permite al cliente previsualizar el mueble que va a recibir. Vender carpintería es vender una idea. Si no es clara, puede terminar en frases como:\n\n“¡No era lo que me imaginaba!”\n\nPor eso, sé específico:\nDefine qué serán gavetas, puertas, entrepaños, etc.\nDibuja el mueble con cinta de enmascarar sobre la pared, en tamaño real: profundidad, altura, ancho. Esto ayuda a que el cliente se georreferencie y no diga después que “quedó muy alto” o “muy bajito”.\n\nEn resumen:\nCobra la visita y ofrece redención si se cierra la venta\nSé puntual y profesional en tu presentación\nLleva las herramientas adecuadas\nAsesora con claridad y muestra opciones reales\nDiseña y despieza para que el cliente entienda lo que está comprando\n\nUna visita bien hecha no solo te ayuda a cerrar la venta, sino que garantiza una buena experiencia de entrega.",
+    "normalized_text": "La página completa la idea de ayudar al cliente a tomar una decisión informada y desarrolla el cierre de la visita mediante diseño y despiece. Recomienda generar un diseño que permita previsualizar el mueble, especificar gavetas, puertas y entrepaños, y representar el volumen en tamaño real sobre la pared con cinta de enmascarar. El resumen reúne cinco prácticas: cobrar la visita con posibilidad de redención, ser puntual y profesional, llevar herramientas adecuadas, asesorar con claridad y diseñar/despiezar para que el cliente comprenda lo que compra.",
+    "learning_text": "Cierra la visita convirtiendo la asesoría en una propuesta concreta: diseño, despiece y especificación clara de los componentes. La fuente propone incluso marcar el volumen del mueble en tamaño real sobre la pared para alinear expectativas antes de fabricar.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0247-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":247,"printed_page":225,"region":{"x":0.06,"y":0.10,"width":0.88,"height":0.55},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["paso-5","visita-de-cotizacion","diseno","despiece","previsualizacion","cierre-de-venta","asesoria","expectativas-del-cliente"]
+  }
+]
