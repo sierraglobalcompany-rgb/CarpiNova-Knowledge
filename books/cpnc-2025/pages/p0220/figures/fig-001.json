@@ -1,0 +1,22 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0220-001",
+  "page_id": "PAGE-CPNC-2025-P0220",
+  "type": "dimensioned_drawing",
+  "purpose": "Recrear la referencia dimensional del colchón y hacer visible el conflicto 36 cm/31 cm sin reconciliarlo.",
+  "source": {"book_id":"cpnc-2025","pdf_page":220,"printed_page":198,"region":{"x":0.04,"y":0.03,"width":0.92,"height":0.42},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"mattress","type":"mattress","geometry":{"precision":"approximate"}},
+    {"id":"dimension-lines","type":"dimension_lines","geometry":{"precision":"approximate"}},
+    {"id":"weight-blanks","type":"unfilled_weight_fields","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"dimension-lines","to":"mattress","type":"dimensions"}],
+  "measurements": ["MEAS-CPNC-2025-P0220-001","MEAS-CPNC-2025-P0220-002","MEAS-CPNC-2025-P0220-003","MEAS-CPNC-2025-P0220-004"],
+  "annotations": [
+    {"target_entity_id":"mattress","text":"Texto: ancho 100 cm × largo 190 cm, altura máxima 36 cm"},
+    {"target_entity_id":"dimension-lines","text":"El dibujo incluye cota vertical 31 cm"},
+    {"target_entity_id":"weight-blanks","text":"Peso entre __ kg y __ kg: valores no diligenciados en la fuente"}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Colchón en perspectiva con cotas 190 cm, 100 cm y 31 cm, acompañado por texto que declara altura máxima de 36 cm y pesos en blanco."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Conservar ambas alturas como conflicto de fuente; no completar pesos."}
+}

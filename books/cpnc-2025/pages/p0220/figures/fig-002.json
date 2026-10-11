@@ -1,0 +1,30 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0220-002",
+  "page_id": "PAGE-CPNC-2025-P0220",
+  "type": "assembly_sequence",
+  "purpose": "Recrear los pasos 1 y 2 del bastidor interno, incluida la sección en L y el reparto de puntales.",
+  "source": {"book_id":"cpnc-2025","pdf_page":220,"printed_page":198,"region":{"x":0.04,"y":0.50,"width":0.92,"height":0.46},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"A1-left","type":"frame_side_A1","geometry":{"precision":"approximate"}},
+    {"id":"A1-right","type":"frame_side_A1","geometry":{"precision":"approximate"}},
+    {"id":"A2-studs","type":"studs_A2","geometry":{"precision":"approximate"}},
+    {"id":"L-profile","type":"L_shaped_stud_detail","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [
+    {"from":"A2-studs","to":"A1-left","type":"assembled_between"},
+    {"from":"A2-studs","to":"A1-right","type":"assembled_between"},
+    {"from":"L-profile","to":"A2-studs","type":"detail_of"}
+  ],
+  "measurements": ["MEAS-CPNC-2025-P0220-005","MEAS-CPNC-2025-P0220-006","MEAS-CPNC-2025-P0220-007"],
+  "annotations": [
+    {"target_entity_id":"A2-studs","text":"Seis puntales A2 distribuidos a distancias iguales"},
+    {"target_entity_id":"L-profile","text":"Figura en L para tabique; perforación 1/8 in en paso 2"}
+  ],
+  "educational_sequence": [
+    {"step":1,"text":"Formar puntales A2 en L, aplicar pegante y perforar aproximadamente cada 20 cm"},
+    {"step":2,"text":"Repartir y ensamblar A2 entre A1, perforar 1/8 in y fijar con #6 de 1 1/2 in"}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Secuencia con bastidor rectangular, seis puntales internos y detalle de la sección en L usada para cada puntal."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Se mantiene el orden y las medidas de los pasos 1 y 2."}
+}

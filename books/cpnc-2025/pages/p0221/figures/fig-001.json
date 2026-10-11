@@ -1,0 +1,27 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0221-001",
+  "page_id": "PAGE-CPNC-2025-P0221",
+  "type": "technical_diagram",
+  "purpose": "Recrear la posición relativa de los herrajes principales sobre el lateral B del marco de cama.",
+  "source": {"book_id":"cpnc-2025","pdf_page":221,"printed_page":199,"region":{"x":0.04,"y":0.03,"width":0.92,"height":0.43},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"lateral-B","type":"bed_frame_side_B","geometry":{"precision":"approximate"}},
+    {"id":"female-pivot","type":"female_pivot","geometry":{"precision":"approximate"}},
+    {"id":"lower-gas-plate","type":"lower_ball_joint_plate_for_gas_spring","geometry":{"precision":"approximate"}},
+    {"id":"wood-leg-support","type":"wood_leg_support","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [
+    {"from":"female-pivot","to":"lateral-B","type":"mounted_on"},
+    {"from":"lower-gas-plate","to":"lateral-B","type":"mounted_on"},
+    {"from":"wood-leg-support","to":"lateral-B","type":"positioned_on"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"female-pivot","text":"Posición de pivote hembra"},
+    {"target_entity_id":"lower-gas-plate","text":"Platina inferior con rótula para el gato (pistón)"},
+    {"target_entity_id":"wood-leg-support","text":"Soporte pata de madera"}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Marco de cama en perspectiva con tres zonas de herraje señaladas sobre el lateral B."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La lámina superior comunica posición relativa, no cotas numéricas."}
+}
