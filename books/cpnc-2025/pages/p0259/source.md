@@ -31,13 +31,13 @@ Enchape (en caso de alguna reparación)
 Masilla resane-lija
 Pegante para canto y Colbón
 Pintura Resane
-Puntillas sin cabeza 1\" -3/4\"
+Puntillas sin cabeza 1" -3/4"
 Riel para 1 puerta corredera (si aplica)
 Silicona
 Sistema riel 1 puerta corredera (si aplica)
 Tapatornillos
 Topepuerta
-Tornillos 5/8\" -1\"-1 1/2\"-2\"-3\"
+Tornillos 5/8" -1"-1 1/2"-2"-3"
 Trapos limpieza-varsol-thiner
 
 HERRAMIENTAS Y EQUIPO | *APLICA (REFERENCIA) NO APLICA (NA) | CANTIDAD
