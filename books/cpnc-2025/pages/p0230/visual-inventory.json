@@ -1,0 +1,21 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0230",
+  "pdf_page": 230,
+  "printed_page": 208,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0230-001",
+      "kind": "closet_tv_doors_and_beds_qr_resource_index",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0230-001",
+      "source_region": {
+        "x": 0.02,
+        "y": 0.02,
+        "width": 0.96,
+        "height": 0.96
+      },
+      "reason": "Cuadrícula de ocho códigos QR con títulos sobre closet, centro de TV, repisas, puertas y camas."
+    }
+  ]
+}

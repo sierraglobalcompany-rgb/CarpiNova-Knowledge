@@ -1,0 +1,23 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0231-001",
+  "page_id": "PAGE-CPNC-2025-P0231",
+  "type": "illustration",
+  "purpose": "Recrear el separador visual con patrón de herramientas y emblema central Hágalo en casa.",
+  "source": {"book_id":"cpnc-2025","pdf_page":231,"printed_page":209,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"tool-pattern","type":"repeating_tool_pattern","description":"Patrón denso sobre fondo blanco con herramientas de taller en gris, negro y amarillo.","geometry":{"precision":"approximate","bbox":{"x":0.0,"y":0.0,"width":1.0,"height":1.0}}},
+    {"id":"center-disc","type":"white_circular_badge","description":"Círculo blanco grande centrado con sombra suave que tapa el patrón de fondo.","geometry":{"precision":"approximate","bbox":{"x":0.23,"y":0.31,"width":0.54,"height":0.39}}},
+    {"id":"red-hammer","type":"hammer_icon","description":"Icono simplificado de martillo rojo en el emblema central.","geometry":{"precision":"approximate","bbox":{"x":0.45,"y":0.40,"width":0.12,"height":0.10}}},
+    {"id":"brand-script","type":"display_text","description":"Texto ‘Hágalo en casa’ centrado bajo el martillo.","geometry":{"precision":"approximate","bbox":{"x":0.31,"y":0.53,"width":0.38,"height":0.08}}}
+  ],
+  "relationships": [{"from":"red-hammer","to":"center-disc","type":"inside"},{"from":"brand-script","to":"center-disc","type":"inside"},{"from":"center-disc","to":"tool-pattern","type":"overlays"}],
+  "measurements": [],
+  "annotations": [{"target_entity_id":"brand-script","text":"Hágalo en casa"}],
+  "layers": [{"id":"background","description":"Patrón de herramientas repetidas."},{"id":"badge","description":"Círculo central blanco con sombra."},{"id":"brand","description":"Martillo rojo y texto Hágalo en casa."}],
+  "camera": {"view":"front","projection":"flat_page_reference"},
+  "visual_style": {"background":"white with dense tool pattern","palette":"yellow black gray with red central icon","illustration":"flat vector-like workshop icons","center_badge":"white circle with soft drop shadow"},
+  "educational_sequence": [{"step":1,"show_entity_ids":["tool-pattern"],"instruction":"Construir el patrón general de herramientas de fondo."},{"step":2,"show_entity_ids":["center-disc","red-hammer","brand-script"],"instruction":"Superponer el emblema central manteniendo la jerarquía visual del separador."}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Separador con fondo de herramientas y emblema circular central Hágalo en casa con un martillo rojo."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar composición y paleta general; la posición exacta de cada icono repetido del patrón es aproximada."}
+}
