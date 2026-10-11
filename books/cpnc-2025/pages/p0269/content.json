@@ -1,0 +1,39 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0269-001",
+    "page_id": "PAGE-CPNC-2025-P0269",
+    "content_type": "table",
+    "source_transcription": "ANEXO 13. PRESUPUESTO Y FLUJO DE CAJA.\n\nCONCEPTO | SEMANA 1 INGRESOS | SEMANA 1 EGRESOS | SEMANA 2 INGRESOS | SEMANA 2 EGRESOS | SEMANA 3 INGRESOS | SEMANA 3 EGRESOS | SEMANA 4 INGRESOS | SEMANA 4 EGRESOS\n\nVENTAS\nPROYECCION VENTAS | $ 3.200.000 |  | $ 6.000.000 |  | $ 1.500.000 |  | $ 1.500.000 | \nENTREGAS SEGÚN PROGRAMACION | $ 800.000 |  | $ 500.000 |  | $ 700.000 |  | $ 1.500.000 | \nTOTAL VENTAS | $ 4.000.000 |  | $ 6.500.000 |  | $ 2.200.000 |  | $ 3.000.000 | \n\nGASTOS OPERACIONALES (COSTOS FIJOS)\nAGUA TALLER |  | $ 120.000 |  |  |  |  |  | \nARRIENDO TALLER |  |  |  | $ 800.000 |  |  |  | \nASEO |  | $ 40.000 |  |  |  | $ 40.000 |  | \nBANCO (4 X 1000, TRANSFERENCIAS) |  | $ 50.000 |  | $ 50.000 |  | $ 50.000 |  | $ 50.000\nCAFETERIA, PAPELERIA |  | $ 30.000 |  | $ 30.000 |  | $ 30.000 |  | $ 30.000\nCELULAR |  |  |  |  |  | $ 60.000 |  | \nDOTACION Y ELEMENTOS SEGURIDAD |  | $ 80.000 |  |  |  |  |  | \nENERGIA TALLER |  |  |  |  |  |  |  | $ 250.000\nGASOLINA |  | $ 25.000 |  | $ 25.000 |  | $ 25.000 |  | $ 25.000\nGASTOS LEGALES (PROVISION MENSUAL) |  |  |  |  |  |  |  | $ 100.000\nIMPUESTOS |  |  |  | $ 250.000 |  |  |  | \nINTERNET TALLER |  |  |  | $ 120.000 |  |  |  | \nMANTENIMIENTO Y REPARACIONES |  | $ 80.000 |  | $ 80.000 |  | $ 80.000 |  | $ 80.000\nHONORARIOS |  |  |  | $ 700.000 |  |  |  | $ 700.000\nPUBLICIDAD Y MERCADEO |  | $ 80.000 |  |  |  | $ 80.000 |  | \nSEGURIDAD SOCIAL |  | $ 560.000 |  |  |  |  |  | \nSERVICIOS CONTADOR |  | $ 250.000 |  |  |  |  |  | \nOTROS |  |  |  | $ 100.000 |  |  |  | $ 100.000\nTOTAL GASTOS OPERACIONALES |  | $ 1.315.000 |  | $ 2.155.000 |  | $ 365.000 |  | $ 1.335.000\n\nCOSTO DE LA VENTA (PRODUCCION)\nCOMPRAS MATERIALES (APROX 40% VENTA) |  | $ 1.280.000 |  | $ 2.400.000 |  | $ 600.000 |  | $ 600.000\nCOMPRA EQUIPO |  | $ 150.000 |  |  |  | $ 150.000 |  | \nALIMENTACION OBRA |  | $ 40.000 |  | $ 40.000 |  | $ 40.000 |  | $ 40.000\nHERRAMIENTAS (BROCA, DISCO) |  | $ 25.000 |  | $ 25.000 |  | $ 25.000 |  | $ 25.000\nMANO DE OBRA ARMADO - INSTALACION (APROX 20% VENTAS) |  | $ 640.000 |  | $ 1.200.000 |  | $ 300.000 |  | $ 300.000\nTRANSPORTE DE MATERIAL |  | $ 150.000 |  | $ 150.000 |  | $ 150.000 |  | $ 150.000\nOTROS |  | $ 200.000 |  | $ 200.000 |  | $ 200.000 |  | $ 200.000\nTOTAL COSTOS DE PRODUCCION |  | $ 2.485.000 |  | $ 4.015.000 |  | $ 1.465.000 |  | $ 1.315.000\n\nTOTAL INGRESOS | $ 4.000.000 |  | $ 6.500.000 |  | $ 2.200.000 |  | $ 3.000.000 | \nTOTAL EGRESOS |  | $ 3.800.000 |  | $ 6.170.000 |  | $ 1.830.000 |  | $ 2.650.000\n\nTOTAL VENTAS MENSUALES | $ 15.700.000 | 100%\nTOTAL GASTOS OPERACIÓN | $ 5.170.000 | 33%\nTOTAL COSTOS | $ 9.280.000 | 59%\nUTILIDAD | $ 1.250.000 | 8%",
+    "normalized_text": "El Anexo 13 muestra un ejemplo diligenciado de presupuesto y flujo de caja para cuatro semanas. Separa ingresos de ventas y egresos por gastos operacionales y costos de producción, calcula totales semanales y resume el mes con ventas por $ 15.700.000, gastos de operación por $ 5.170.000, costos por $ 9.280.000 y utilidad por $ 1.250.000.",
+    "learning_text": "Usa la tabla semanal para registrar primero las ventas proyectadas y entregas programadas; después anota gastos operacionales y costos de producción en la semana en que se esperan. Compara los totales de ingresos y egresos por semana y revisa al final del mes qué porcentaje representan gastos, costos y utilidad sobre las ventas.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0269-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 269,
+      "printed_page": 247,
+      "region": {
+        "x": 0.09,
+        "y": 0.16,
+        "width": 0.82,
+        "height": 0.78
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "anexo-13",
+      "presupuesto",
+      "flujo-de-caja",
+      "tabla",
+      "ventas",
+      "gastos-operacionales",
+      "costos-de-produccion",
+      "utilidad"
+    ]
+  }
+]

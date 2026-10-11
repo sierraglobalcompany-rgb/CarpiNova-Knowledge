@@ -1,0 +1,39 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0268-001",
+    "page_id": "PAGE-CPNC-2025-P0268",
+    "content_type": "concept",
+    "source_transcription": "3. PRESUPUESTO Y FLUJO DE CAJA\n\nEn este capítulo vamos analizar el tema de presupuesto y flujo de caja, pues es otro tema que golpea mucho a los carpinteros. Se propone una herramienta que nos ayudará a determinar en un proceso sencillo, cuanto son nuestros egresos y por lo tanto definir cuanto deben ser nuestras ventas mensuales y semanales.\n\nUn taller de carpintería, es una empresa, pequeña o grande, pero es una empresa, y se debe manejar como tal. Por eso, debemos tener nociones básicas administrativas para garantizar una organización sostenible, estable y rentable.\n\nEl primer concepto básico es que los ingresos (ventas) deben ser mayores que los egresos (costos y gastos). Tener claro este concepto es sencillo, lo difícil es identificar cuáles deben ser nuestras ventas (ingresos), para cubrir nuestros compras y gastos (egresos) y que nos quede una utilidad al final del ejercicio.\n\nComo propuesta se hace un formato de fácil diligenciamiento, donde se consignarán en la parte superior, una proyección de ventas y los ingresos de las ventas que ya están contratadas y que tenemos la fecha estimada de entrega en la programación (capítulo 1). En la segunda parte son los costos fijos, que son los que se repiten mes a mes, como su nombre lo indica “son los fijos”. Y por último se estiman las compras y los costos que van relacionados directamente con los proyectos, tener en cuenta que son proporcionales a las ventas, a mayores ventas, mayores costos de producción.\n\nLos valores a diligenciar, valores que conocemos, no necesitamos de un contador para hacer el diligenciamiento, porque es información que la tenemos a la mano pues es de manejo diario. Importante discriminarlos semanalmente, para tener claridad de cuanto serán nuestros compromisos semanales, y así reservamos si es del caso, de una semana los excedentes para cubrir los compromisos de la otra.\n\nEn el anexo 13, está diligenciado el cuadro con un ejemplo, en la parte superior solo se hizo el ingreso de la información y en la parte inferior se calcula, las ventas mensuales, los gastos de operación y los costos de venta. La resta de los Ingresos-Egresos son arroja como resultado la utilidad, si queremos que nuestra utilidad aumente, las ventas deben incrementarse.",
+    "normalized_text": "El capítulo presenta el presupuesto y el flujo de caja como herramientas básicas de administración para un taller de carpintería. Plantea que los ingresos deben superar los egresos y propone organizar semanalmente ventas proyectadas y contratadas, gastos fijos, compras y costos ligados a los proyectos para anticipar compromisos y estimar la utilidad.",
+    "learning_text": "Trata el taller como una empresa y registra cada semana ingresos y egresos. Proyecta ventas, identifica gastos fijos y estima los costos directamente relacionados con los proyectos. Usa el resultado ingresos menos egresos para revisar si la operación deja utilidad y cuánto deben crecer las ventas.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0268-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 268,
+      "printed_page": 246,
+      "region": {
+        "x": 0.1,
+        "y": 0.14,
+        "width": 0.78,
+        "height": 0.69
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "presupuesto",
+      "flujo-de-caja",
+      "ingresos",
+      "egresos",
+      "ventas",
+      "gastos-operacionales",
+      "costos-de-produccion",
+      "utilidad"
+    ]
+  }
+]
