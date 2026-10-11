@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0265",
+  "pdf_page": 265,
+  "printed_page": 243,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0265-001",
+      "kind": "door_delivery_checklist_form",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0265-001",
+      "source_region": {"x":0.1,"y":0.13,"width":0.8,"height":0.77},
+      "reason": "Formulario reutilizable de entrega de puertas con campos, lista de 14 revisiones, casilla OK, observaciones y nombres de responsables."
+    }
+  ]
+}
