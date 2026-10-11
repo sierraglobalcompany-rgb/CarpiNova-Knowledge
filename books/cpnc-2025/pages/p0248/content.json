@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0248-001",
+    "page_id": "PAGE-CPNC-2025-P0248",
+    "content_type": "procedure",
+    "source_transcription": "CÓMO SE REALIZA UNA VISITA DE COTIZACIÓN\n\nCOBRA LA VISITA\nOfrece redención del valor si obtiene el contrato\n\nSÉ PUNTUAL Y PROFESIONAL\n• Buena presentación\n• Flexómetro\n• Libreta y lápiz\n\nASESORA CON CLARIDAD\n• Evita tecnicismos\n• Explica qué ofreces\n• Muestra opciones\n\nDISEÑA Y DESPIEZA\n• Permite previsualizar el mueble\n• Dibuja sus dimensiones en la pared\n\n• Permite previsualizar el mueble\n• Dibuja sus dimensiones en la pared",
+    "normalized_text": "La infografía resume una visita de cotización en cuatro bloques: cobrar la visita con posibilidad de redimir su valor si se obtiene el contrato; ser puntual y profesional llevando buena presentación, flexómetro, libreta y lápiz; asesorar con claridad evitando tecnicismos, explicando lo ofrecido y mostrando opciones; y diseñar/despiezar para previsualizar el mueble y dibujar sus dimensiones en la pared. La fuente repite visualmente al final las dos indicaciones de previsualización y dimensiones; esa repetición se conserva y no se elimina por inferencia.",
+    "learning_text": "Usa esta página como lista de preparación para una visita de cotización: política de cobro, presencia profesional, herramientas básicas, explicación clara y apoyo de diseño/despiece. La repetición final de dos viñetas pertenece a la fuente impresa y debe conservarse en la capa fuente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0248-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":248,"printed_page":226,"region":{"x":0.05,"y":0.03,"width":0.90,"height":0.94},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["paso-5","visita-de-cotizacion","cobro-de-visita","puntualidad","profesionalismo","asesoria","diseno","despiece","infografia","source-anomaly"]
+  }
+]
