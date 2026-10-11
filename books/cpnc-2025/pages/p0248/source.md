@@ -10,18 +10,18 @@ COBRA LA VISITA
 Ofrece redención del valor si obtiene el contrato
 
 SÉ PUNTUAL Y PROFESIONAL
-- Buena presentación
-- Flexómetro
-- Libreta y lápiz
+• Buena presentación
+• Flexómetro
+• Libreta y lápiz
 
 ASESORA CON CLARIDAD
-- Evita tecnicismos
-- Explica qué ofreces
-- Muestra opciones
+• Evita tecnicismos
+• Explica qué ofreces
+• Muestra opciones
 
 DISEÑA Y DESPIEZA
-- Permite previsualizar el mueble
-- Dibuja sus dimensiones en la pared
+• Permite previsualizar el mueble
+• Dibuja sus dimensiones en la pared
 
-- Permite previsualizar el mueble
-- Dibuja sus dimensiones en la pared
+• Permite previsualizar el mueble
+• Dibuja sus dimensiones en la pared
