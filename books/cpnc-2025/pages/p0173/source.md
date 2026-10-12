@@ -1,0 +1,10 @@
+<!-- GENERATED FROM content.json; DO NOT EDIT DIRECTLY -->
+
+# Source transcription
+
+## CONTENT-CPNC-2025-P0173-001
+
+PASO 4
+DESPIECE &
+OPTIMIZACIÓN
+HÁGALO EN CASA

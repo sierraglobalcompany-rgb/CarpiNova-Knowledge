@@ -2,9 +2,8 @@
 
 - Book: `cpnc-2025` / edición 2025.
 - Canonical mapping: PDF `173` -> printed `151` (`verified` in `page-map.json`).
-- Status: **PENDING — SOURCE_IMAGE_UNAVAILABLE**.
-- The exact 2025 source was re-audited after BATCH-048. The page reader returns no readable content for PDF 171–174, while indexed search exposes a rendered preview for printed page 149 and resumes explicit textual/visual content at printed page 153.
-- Indexed search did not expose page-specific content or a renderable preview for printed page 151.
-- This absence is not treated as proof that the page is blank.
-- Therefore P0173 remains pending and has no canonical page folder yet.
-- Recovery rule: complete P0173 only from the exact 2025 page when it can be rendered/read; do not infer contents from adjacent pages.
+- Status: **RESOLVED — EXACT 2025 SOURCE VISUALLY VERIFIED**.
+- The exact 2025 page was rendered and visually inspected.
+- Printed page `151` is a section-title graphic with the source text `PASO 4`, `DESPIECE &`, `OPTIMIZACIÓN` and `HÁGALO EN CASA`.
+- A single FigureSpec preserves the meaningful visual composition, including the beige poster field, title hierarchy and computer-mouse illustration.
+- P0173 is recovered in `BATCH-110`; no technical measurements or rules are inferred from this title page.

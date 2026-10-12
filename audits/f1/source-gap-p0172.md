@@ -2,9 +2,8 @@
 
 - Book: `cpnc-2025` / edición 2025.
 - Canonical mapping: PDF `172` -> printed `150` (`verified` in `page-map.json`).
-- Status: **PENDING — SOURCE_IMAGE_UNAVAILABLE**.
-- The exact 2025 source was re-audited after BATCH-048. The page reader returns no readable content for PDF 171–174, while indexed search exposes a rendered preview for printed page 149 and resumes explicit textual/visual content at printed page 153.
-- Indexed search did not expose page-specific content or a renderable preview for printed page 150.
-- This absence is not treated as proof that the page is blank.
-- Therefore P0172 remains pending and has no canonical page folder yet.
-- Recovery rule: complete P0172 only from the exact 2025 page when it can be rendered/read; do not infer contents from adjacent pages.
+- Status: **RESOLVED — EXACT 2025 SOURCE VISUALLY VERIFIED**.
+- The exact 2025 page was rendered and visually inspected.
+- Printed page `150` is intentionally body-blank: it contains only the repeated editorial header/branding and the printed page number.
+- This blank-page classification is based on the exact rendered page, not on parser absence or inference from adjacent pages.
+- P0172 is recovered in `BATCH-110` with an empty canonical `content.json` and a visual inventory that records the non-technical editorial elements.
