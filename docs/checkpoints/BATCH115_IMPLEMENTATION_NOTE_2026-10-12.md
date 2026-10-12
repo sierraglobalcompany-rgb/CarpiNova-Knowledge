@@ -1,0 +1,1 @@
+BATCH-115 implementation uses exact 2025 visual source for P0194/P0195. This note will be removed from the final candidate tree before promotion.
