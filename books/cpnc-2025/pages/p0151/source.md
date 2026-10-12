@@ -4,6 +4,8 @@
 
 ## CONTENT-CPNC-2025-P0151-001
 
+que vayas a realizar:
+
 Más abajo está el gatillo, que en los taladros inalámbricos es sensible. A diferencia de los modelos con cable, estos se activan con precisión: si presionas suavemente, giran despacio, y al soltarlo se detienen de inmediato. Esta precisión los hace ideales para trabajos delicados. Detrás del gatillo encontramos el selector de dirección: hacia adelante para atornillar o perforar, y hacia atrás para desatornillar o sacar brocas.
 
 ## CONTENT-CPNC-2025-P0151-002
