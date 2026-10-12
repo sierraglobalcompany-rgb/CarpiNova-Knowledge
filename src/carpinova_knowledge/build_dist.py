@@ -9,7 +9,7 @@ from .validate_repo import validate_repository
 
 SCHEMA_VERSION = "0.1.0"
 KNOWLEDGE_VERSION = "0.1.0"
-F1_CANDIDATE_VERSION = "1.0.0-rc.1"
+BOOK_KNOWLEDGE_VERSION = "1.0.0"
 
 
 def _load(path: Path) -> Any:
@@ -72,7 +72,17 @@ def _resolve_book_page_dirs(root: Path, book_id: str) -> list[Path]:
     missing = [path.name for path in page_dirs if not (path / "page.json").exists()]
     if missing:
         raise ValueError(f"book has missing canonical pages: {', '.join(missing)}")
-    return page_dirs
+
+    distribution_path = book_dir / "distribution.json"
+    if not distribution_path.exists():
+        return page_dirs
+
+    distribution = _load(distribution_path)
+    excluded = {int(page) for page in distribution.get("exclude_pdf_pages", [])}
+    invalid = sorted(page for page in excluded if page < 1 or page > total_pages)
+    if invalid:
+        raise ValueError(f"book distribution has invalid excluded pages: {invalid}")
+    return [path for page, path in enumerate(page_dirs, start=1) if page not in excluded]
 
 
 def _collect_records(
@@ -178,6 +188,10 @@ def _write_distribution(
     }
     if scope is not None:
         manifest["scope"] = scope
+    if scope == "BOOK":
+        source_page_count = int(source_manifest["pdf_page_count"])
+        manifest["source_page_count"] = source_page_count
+        manifest["excluded_page_count"] = source_page_count - len(pages)
     _write_stable(out_dir / "manifest.json", manifest)
     return manifest
 
@@ -212,6 +226,6 @@ def build_book_distribution(root: Path, book_id: str, out_dir: Path) -> dict[str
         book_id,
         _resolve_book_page_dirs(root, book_id),
         out_dir,
-        F1_CANDIDATE_VERSION,
+        BOOK_KNOWLEDGE_VERSION,
         scope="BOOK",
     )

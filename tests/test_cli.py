@@ -62,8 +62,10 @@ def test_cli_build_book_dist_builds_full_f1_bundle(tmp_path: Path) -> None:
     assert result.returncode == 0, result.stderr
     manifest = json.loads((out / "manifest.json").read_text(encoding="utf-8"))
     assert manifest["scope"] == "BOOK"
-    assert manifest["counts"]["pages"] == 295
-    assert manifest["knowledge_version"] == "1.0.0-rc.1"
+    assert manifest["source_page_count"] == 295
+    assert manifest["excluded_page_count"] == 43
+    assert manifest["counts"]["pages"] == 252
+    assert manifest["knowledge_version"] == "1.0.0"
 
 
 def test_ci_pushes_validate_main_and_f1() -> None:
