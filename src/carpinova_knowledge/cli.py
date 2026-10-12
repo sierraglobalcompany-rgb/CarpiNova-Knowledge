@@ -11,6 +11,7 @@ COMMANDS = (
     "render-docs",
     "validate",
     "build-dist",
+    "build-book-dist",
     "report-pilot",
     "report-batch",
     "report-coverage",
@@ -41,6 +42,10 @@ def build_parser() -> argparse.ArgumentParser:
         elif command == "build-dist":
             sub.add_argument("--root", type=Path, default=Path("."))
             sub.add_argument("--batch", required=True)
+            sub.add_argument("--out", type=Path, required=True)
+        elif command == "build-book-dist":
+            sub.add_argument("--root", type=Path, default=Path("."))
+            sub.add_argument("--book-id", default="cpnc-2025")
             sub.add_argument("--out", type=Path, required=True)
         elif command in {"report-pilot", "report-batch"}:
             sub.add_argument("--root", type=Path, default=Path("."))
@@ -94,6 +99,13 @@ def main(argv: Sequence[str] | None = None) -> int:
         from .build_dist import build_distribution
 
         manifest = build_distribution(args.root, args.batch, args.out)
+        print(json.dumps(manifest, ensure_ascii=False, indent=2))
+    elif args.command == "build-book-dist":
+        import json
+
+        from .build_dist import build_book_distribution
+
+        manifest = build_book_distribution(args.root, args.book_id, args.out)
         print(json.dumps(manifest, ensure_ascii=False, indent=2))
     elif args.command == "report-pilot":
         from .report_pilot import build_pilot_report, render_pilot_report

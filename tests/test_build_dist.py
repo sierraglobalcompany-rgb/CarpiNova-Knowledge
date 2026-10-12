@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pytest
 
-from carpinova_knowledge.build_dist import build_distribution
+from carpinova_knowledge.build_dist import build_book_distribution, build_distribution
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -39,6 +39,38 @@ def test_build_distribution_is_deterministic_and_scoped_to_pilot(tmp_path: Path)
     assert manifest_a["batch_id"] == "BATCH-000-PILOT"
     assert manifest_a["knowledge_version"] == "0.1.0"
     assert manifest_a["source_manifest_sha256"] == "318ceb94569608bfe062e3e50c7032edee79febf06102f7eec760769a6dfd90c"
+    assert manifest_a == manifest_b
+
+    combined = b"".join((out_a / name).read_bytes() for name in expected_files)
+    assert b"/mnt/" not in combined
+    assert b"source-books" not in combined
+    assert b".pdf" not in combined.lower()
+
+
+def test_build_book_distribution_is_deterministic_and_covers_f1(tmp_path: Path) -> None:
+    out_a = tmp_path / "book-a"
+    out_b = tmp_path / "book-b"
+
+    manifest_a = build_book_distribution(ROOT, "cpnc-2025", out_a)
+    manifest_b = build_book_distribution(ROOT, "cpnc-2025", out_b)
+
+    expected_files = ["knowledge.bundle.json", "figures.bundle.json", "lessons.bundle.json", "manifest.json"]
+    assert sorted(p.name for p in out_a.iterdir()) == sorted(expected_files)
+    assert sorted(p.name for p in out_b.iterdir()) == sorted(expected_files)
+    for name in expected_files:
+        assert _sha(out_a / name) == _sha(out_b / name)
+
+    knowledge = json.loads((out_a / "knowledge.bundle.json").read_text(encoding="utf-8"))
+    assert len(knowledge["pages"]) == 295
+    assert knowledge["pages"][0]["page_id"] == "PAGE-CPNC-2025-P0001"
+    assert knowledge["pages"][-1]["page_id"] == "PAGE-CPNC-2025-P0295"
+    assert all(rule["status"] != "EXECUTABLE" for rule in knowledge["rules"])
+
+    assert manifest_a["scope"] == "BOOK"
+    assert manifest_a["book_id"] == "cpnc-2025"
+    assert manifest_a["knowledge_version"] == "1.0.0-rc.1"
+    assert manifest_a["source_manifest_sha256"] == "318ceb94569608bfe062e3e50c7032edee79febf06102f7eec760769a6dfd90c"
+    assert manifest_a["counts"]["pages"] == 295
     assert manifest_a == manifest_b
 
     combined = b"".join((out_a / name).read_bytes() for name in expected_files)
