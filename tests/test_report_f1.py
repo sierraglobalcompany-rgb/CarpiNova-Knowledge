@@ -3,8 +3,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from carpinova_knowledge.report_f1 import classify_source_gaps, find_visual_findings
 from carpinova_knowledge.report_batch import REQUIRED_PAGE_FILES
+from carpinova_knowledge.report_f1 import classify_source_gaps, find_visual_findings
 
 
 def _complete_page(root: Path, pdf_page: int) -> Path:
