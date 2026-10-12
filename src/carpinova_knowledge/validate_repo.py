@@ -68,6 +68,12 @@ def validate_repository(root: Path) -> dict[str, Any]:
                     f"printed page {printed_page} has {len(matches)} verified physical mappings",
                 )
 
+    for path in sorted(root.glob("books/*/batches/*.json")):
+        batch = _load(path)
+        oid = batch.get("batch_id")
+        for message in validate_instance("batch", batch):
+            _error(errors, "schema_error", path, oid, message)
+
     for page_dir in sorted(root.glob("books/*/pages/p*")):
         if not page_dir.is_dir():
             continue
