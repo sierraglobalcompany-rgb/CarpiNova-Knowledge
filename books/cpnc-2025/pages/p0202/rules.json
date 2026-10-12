@@ -1,0 +1,62 @@
+[
+  {
+    "rule_id": "RULE-CPNC-2025-P0202-001",
+    "page_id": "PAGE-CPNC-2025-P0202",
+    "category": "closet_modulation",
+    "subject": "SHELF_TOWER_AND_DRAWERS",
+    "predicate": "source_recommends_shelf_tower_with_two_drawers_with_slides_per_linear_meter",
+    "value": {"shelf_tower":true,"drawers":2,"basis_m":1,"drawer_hardware":"slides"},
+    "applicability": {"source_scope":"closet modulation guidance on printed page 180"},
+    "exceptions": ["Presented as source-specific ergonomic guidance, not a universal mandatory module."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":202,"printed_page":180,"region":{"x":0.05,"y":0.10,"width":0.9,"height":0.17},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0202-002",
+    "page_id": "PAGE-CPNC-2025-P0202",
+    "category": "closet_modulation",
+    "subject": "DOUBLE_HANGING_RAIL",
+    "predicate": "source_recommends_double_hanging_with_vertical_separation",
+    "value": {"hanger_count":2,"vertical_separation_cm":90},
+    "applicability": {"source_scope":"closet modulation guidance on printed page 180"},
+    "exceptions": ["The source does not define garment-specific clearance exceptions."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":202,"printed_page":180,"region":{"x":0.05,"y":0.10,"width":0.9,"height":0.17},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0202-003",
+    "page_id": "PAGE-CPNC-2025-P0202",
+    "category": "closet_dimension",
+    "subject": "LUGGAGE_COMPARTMENT_POSITION",
+    "predicate": "source_places_luggage_compartment_above_hangers_starting_at_190_cm_with_40_cm_height",
+    "value": {"start_height_cm":190,"height_cm":40,"purpose":"store luggage"},
+    "applicability": {"source_scope":"luggage compartment guidance on printed page 180"},
+    "exceptions": ["Treat dimensions as source references; ceiling height and project conditions can vary."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":202,"printed_page":180,"region":{"x":0.05,"y":0.27,"width":0.9,"height":0.13},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0202-004",
+    "page_id": "PAGE-CPNC-2025-P0202",
+    "category": "closet_dimension",
+    "subject": "IDEAL_TOTAL_HEIGHT",
+    "predicate": "source_expresses_ideal_total_closet_height_as_useful_structure_plus_luggage_compartment",
+    "value": {"total_cm":230,"useful_structure_cm":190,"luggage_compartment_cm":40},
+    "applicability": {"source_scope":"ideal closet height reference on printed page 180"},
+    "exceptions": ["The source calls this an ideal height; it is not represented as a universal requirement."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":202,"printed_page":180,"region":{"x":0.05,"y":0.27,"width":0.9,"height":0.13},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0202-005",
+    "page_id": "PAGE-CPNC-2025-P0202",
+    "category": "closet_dimension",
+    "subject": "INTERNAL_AND_EXTERNAL_DEPTH",
+    "predicate": "source_sets_internal_and_external_depth_and_attributes_difference_to_sliding_systems",
+    "value": {"internal_depth_cm":50,"external_depth_cm":60,"extra_for_sliding_cm":10},
+    "applicability": {"source_scope":"closet depth guidance on printed page 180"},
+    "exceptions": ["Verify the real sliding system before applying the 10 cm difference to a project."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":202,"printed_page":180,"region":{"x":0.05,"y":0.40,"width":0.9,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  }
+]

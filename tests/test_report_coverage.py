@@ -10,10 +10,9 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_current_coverage_is_derived_from_canonical_files() -> None:
     report = build_coverage_report(ROOT, "cpnc-2025")
     assert report["total_pages"] == 295
-    assert report["complete_pages"] == 291
-    assert report["pending_pages"] == 4
+    assert report["complete_pages"] == 292
+    assert report["pending_pages"] == 3
     assert report["pending_pdf_pages"] == [
-        202,
         207,
         213,
         223,
