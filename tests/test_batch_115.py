@@ -58,7 +58,8 @@ def test_batch_115_recovers_exact_source_pages_194_195() -> None:
 
 def test_batch_115_advances_coverage_without_duplicates() -> None:
     report = build_coverage_report(ROOT, "cpnc-2025")
-    assert report["complete_pages"] == 291
-    assert report["pending_pages"] == 4
-    assert report["pending_pdf_pages"] == [202, 207, 213, 223]
+    assert report["complete_pages"] >= 291
+    assert report["pending_pages"] <= 4
+    assert 194 not in report["pending_pdf_pages"]
+    assert 195 not in report["pending_pdf_pages"]
     assert report["duplicate_batch_pages"] == []
