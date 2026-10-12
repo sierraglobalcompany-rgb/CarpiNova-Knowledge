@@ -2,10 +2,12 @@
   "exclude_pdf_pages": [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
     16, 17, 18, 20, 21, 22,
-    59, 97, 102, 103, 144,
-    167, 168, 169, 170, 171, 172,
+    57, 58, 59,
+    97, 102, 103, 144,
+    167, 168, 169, 170, 171, 172, 173,
     181, 182, 183,
-    193, 231, 275
+    193, 231,
+    273, 274, 275, 295
   ],
-  "reason": "Exclude confirmed non-technical front matter, blank/editorial pages, decorative separators and purely promotional pages from the final user-facing Knowledge distribution. Canonical page extraction remains preserved for provenance."
+  "reason": "Exclude confirmed non-technical front matter, narrative/editorial pages, blank pages, decorative separators, administrative/promotional material and pure branding from the final user-facing Knowledge distribution. Canonical page extraction remains preserved for provenance."
 }
