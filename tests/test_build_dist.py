@@ -10,6 +10,33 @@ from carpinova_knowledge.build_dist import build_book_distribution, build_distri
 
 ROOT = Path(__file__).resolve().parents[1]
 
+USEFUL_BOOK_EXCLUDED_PDF_PAGES = {
+    *range(1, 15),
+    16,
+    17,
+    18,
+    20,
+    21,
+    22,
+    59,
+    97,
+    102,
+    103,
+    144,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    181,
+    182,
+    183,
+    193,
+    231,
+    275,
+}
+
 
 def _sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -61,16 +88,26 @@ def test_build_book_distribution_is_deterministic_and_covers_f1(tmp_path: Path) 
         assert _sha(out_a / name) == _sha(out_b / name)
 
     knowledge = json.loads((out_a / "knowledge.bundle.json").read_text(encoding="utf-8"))
-    assert len(knowledge["pages"]) == 295
-    assert knowledge["pages"][0]["page_id"] == "PAGE-CPNC-2025-P0001"
-    assert knowledge["pages"][-1]["page_id"] == "PAGE-CPNC-2025-P0295"
+    page_ids = {page["page_id"] for page in knowledge["pages"]}
+    excluded_page_ids = {
+        f"PAGE-CPNC-2025-P{page:04d}" for page in USEFUL_BOOK_EXCLUDED_PDF_PAGES
+    }
+
+    assert excluded_page_ids.isdisjoint(page_ids)
+    assert "PAGE-CPNC-2025-P0015" in page_ids
+    assert "PAGE-CPNC-2025-P0019" in page_ids
+    assert "PAGE-CPNC-2025-P0093" in page_ids
+    assert "PAGE-CPNC-2025-P0165" in page_ids
+    assert "PAGE-CPNC-2025-P0175" in page_ids
     assert all(rule["status"] != "EXECUTABLE" for rule in knowledge["rules"])
 
     assert manifest_a["scope"] == "BOOK"
     assert manifest_a["book_id"] == "cpnc-2025"
-    assert manifest_a["knowledge_version"] == "1.0.0-rc.1"
+    assert manifest_a["knowledge_version"] == "1.0.0"
     assert manifest_a["source_manifest_sha256"] == "318ceb94569608bfe062e3e50c7032edee79febf06102f7eec760769a6dfd90c"
-    assert manifest_a["counts"]["pages"] == 295
+    assert manifest_a["source_page_count"] == 295
+    assert manifest_a["excluded_page_count"] == len(USEFUL_BOOK_EXCLUDED_PDF_PAGES)
+    assert manifest_a["counts"]["pages"] == 295 - len(USEFUL_BOOK_EXCLUDED_PDF_PAGES)
     assert manifest_a == manifest_b
 
     combined = b"".join((out_a / name).read_bytes() for name in expected_files)
