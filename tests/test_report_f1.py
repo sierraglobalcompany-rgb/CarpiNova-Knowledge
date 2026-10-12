@@ -6,6 +6,7 @@ from pathlib import Path
 from carpinova_knowledge.report_batch import REQUIRED_PAGE_FILES
 from carpinova_knowledge.report_f1 import (
     build_f1_report,
+    build_qr_inventory,
     classify_source_gaps,
     find_qr_findings,
     find_security_candidates,
@@ -83,82 +84,98 @@ def test_meaningful_visual_without_figure_or_exclusion_is_reported(tmp_path: Pat
     ]
 
 
-def test_qr_visual_without_explicit_status_is_reported(tmp_path: Path) -> None:
+def test_qr_content_with_url_is_inventoried_as_decoded(tmp_path: Path) -> None:
     page_dir = _complete_page(tmp_path, 4)
-    inventory = {
-        "page_id": "PAGE-CPNC-2025-P0004",
-        "pdf_page": 4,
-        "visuals": [
-            {
-                "inventory_id": "REF-P0004-001",
-                "kind": "qr_store",
-                "meaningful": False,
-            }
-        ],
-    }
-    (page_dir / "visual-inventory.json").write_text(
-        json.dumps(inventory) + "\n", encoding="utf-8"
-    )
-
-    findings = find_qr_findings(tmp_path, "cpnc-2025")
-
-    assert findings == [
+    source = {"book_id": "cpnc-2025", "pdf_page": 4, "printed_page": None}
+    content = [
         {
-            "code": "unclassified_qr",
-            "file": str(page_dir / "visual-inventory.json"),
-            "qr_id": "REF-P0004-001",
+            "content_id": "CONTENT-CPNC-2025-P0004-001",
+            "source_transcription": "Código QR de referencia.",
+            "normalized_text": "Código QR externo.",
+            "learning_text": "QR decodificado: https://example.com/resource",
+            "source": source,
         }
     ]
+    (page_dir / "content.json").write_text(json.dumps(content) + "\n", encoding="utf-8")
 
+    inventory = build_qr_inventory(tmp_path, "cpnc-2025")
 
-def test_decoded_qr_visual_requires_payload(tmp_path: Path) -> None:
-    page_dir = _complete_page(tmp_path, 5)
-    inventory = {
-        "page_id": "PAGE-CPNC-2025-P0005",
-        "pdf_page": 5,
-        "visuals": [
-            {
-                "inventory_id": "REF-P0005-001",
-                "kind": "qr_store",
-                "meaningful": False,
-                "qr_status": "DECODED",
-            }
-        ],
-    }
-    (page_dir / "visual-inventory.json").write_text(
-        json.dumps(inventory) + "\n", encoding="utf-8"
-    )
-
-    findings = find_qr_findings(tmp_path, "cpnc-2025")
-
-    assert findings[0]["code"] == "decoded_qr_without_payload"
-
-
-def test_unresolved_qr_entity_is_classified_without_invented_payload(tmp_path: Path) -> None:
-    page_dir = _complete_page(tmp_path, 6)
-    figures_dir = page_dir / "figures"
-    figures_dir.mkdir()
-    figure = {
-        "figure_id": "FIG-CPNC-2025-P0006-001",
-        "entities": [
-            {
-                "id": "qr-reference",
-                "type": "qr_code",
-                "geometry": {"precision": "unknown"},
-                "qr_status": "UNRESOLVED",
-            }
-        ],
-    }
-    (figures_dir / "fig-001.json").write_text(json.dumps(figure) + "\n", encoding="utf-8")
-
+    assert inventory == [
+        {
+            "file": str(page_dir / "content.json"),
+            "qr_id": "CONTENT-CPNC-2025-P0004-001",
+            "status": "DECODED",
+            "destinations": ["https://example.com/resource"],
+            "provenance": source,
+        }
+    ]
     assert find_qr_findings(tmp_path, "cpnc-2025") == []
 
 
-def test_security_candidate_is_reported_when_safety_meaning_disappears(tmp_path: Path) -> None:
+def test_qr_content_without_payload_is_inventoried_as_unresolved(tmp_path: Path) -> None:
+    page_dir = _complete_page(tmp_path, 5)
+    source = {"book_id": "cpnc-2025", "pdf_page": 5, "printed_page": None}
+    content = [
+        {
+            "content_id": "CONTENT-CPNC-2025-P0005-001",
+            "source_transcription": "Código QR para video de apoyo.",
+            "normalized_text": "Recurso QR de apoyo.",
+            "learning_text": "El destino no se considera conocido.",
+            "source": source,
+        }
+    ]
+    (page_dir / "content.json").write_text(json.dumps(content) + "\n", encoding="utf-8")
+
+    inventory = build_qr_inventory(tmp_path, "cpnc-2025")
+
+    assert inventory[0]["status"] == "UNRESOLVED"
+    assert inventory[0]["destinations"] == []
+    assert find_qr_findings(tmp_path, "cpnc-2025") == []
+
+
+def test_qr_visual_without_content_falls_back_to_unresolved(tmp_path: Path) -> None:
+    page_dir = _complete_page(tmp_path, 6)
+    visual = {
+        "inventory_id": "REF-P0006-001",
+        "kind": "qr_store",
+        "meaningful": False,
+        "source_region": {"x": 0.1, "y": 0.1, "width": 0.2, "height": 0.2},
+    }
+    (page_dir / "visual-inventory.json").write_text(
+        json.dumps({"visuals": [visual]}) + "\n", encoding="utf-8"
+    )
+
+    inventory = build_qr_inventory(tmp_path, "cpnc-2025")
+
+    assert inventory[0]["qr_id"] == "REF-P0006-001"
+    assert inventory[0]["status"] == "UNRESOLVED"
+    assert inventory[0]["destinations"] == []
+    assert inventory[0]["provenance"] == visual["source_region"]
+
+
+def test_decoded_claim_without_destination_is_reported(tmp_path: Path) -> None:
     page_dir = _complete_page(tmp_path, 7)
     content = [
         {
             "content_id": "CONTENT-CPNC-2025-P0007-001",
+            "source_transcription": "Código QR.",
+            "normalized_text": "Recurso QR.",
+            "learning_text": "QR decodificado correctamente.",
+            "source": {"book_id": "cpnc-2025", "pdf_page": 7, "printed_page": None},
+        }
+    ]
+    (page_dir / "content.json").write_text(json.dumps(content) + "\n", encoding="utf-8")
+
+    findings = find_qr_findings(tmp_path, "cpnc-2025")
+
+    assert findings[0]["code"] == "decoded_qr_without_destination"
+
+
+def test_security_candidate_is_reported_when_safety_meaning_disappears(tmp_path: Path) -> None:
+    page_dir = _complete_page(tmp_path, 8)
+    content = [
+        {
+            "content_id": "CONTENT-CPNC-2025-P0008-001",
             "source_transcription": "Advertencia: desconectar la herramienta antes de ajustar.",
             "normalized_text": "Ajuste la herramienta antes del trabajo.",
             "learning_text": "Prepare la herramienta para el trabajo.",
@@ -172,17 +189,17 @@ def test_security_candidate_is_reported_when_safety_meaning_disappears(tmp_path:
         {
             "code": "security_meaning_review",
             "file": str(page_dir / "content.json"),
-            "content_id": "CONTENT-CPNC-2025-P0007-001",
+            "content_id": "CONTENT-CPNC-2025-P0008-001",
             "source_terms": ["advertencia", "desconectar"],
         }
     ]
 
 
 def test_security_candidate_is_not_reported_when_safety_term_is_preserved(tmp_path: Path) -> None:
-    page_dir = _complete_page(tmp_path, 8)
+    page_dir = _complete_page(tmp_path, 9)
     content = [
         {
-            "content_id": "CONTENT-CPNC-2025-P0008-001",
+            "content_id": "CONTENT-CPNC-2025-P0009-001",
             "source_transcription": "Advertencia: desconectar la herramienta antes de ajustar.",
             "normalized_text": "Advertencia: desconectar la herramienta antes de ajustarla.",
             "learning_text": "Prepare el ajuste de forma segura.",
