@@ -2,10 +2,10 @@
 
 - Book: `cpnc-2025` / edición 2025.
 - Canonical mapping: PDF `186` -> printed `164` (`verified` in `page-map.json`).
-- Status: **PENDING — SOURCE_IMAGE_UNAVAILABLE**.
-- The exact 2025 source was re-audited after BATCH-053. Direct page reads for PDF 185–192 returned no readable page images.
-- Indexed search exposed a legible preview for printed page 163 and later resumed with printed page 165, but did not expose page-specific content or a renderable preview sufficient for printed page 164.
-- This absence is not treated as proof that the page is blank.
-- Therefore P0186 remains pending and has no canonical page folder yet.
-- BATCH-054 uses a source-boundary exception and covers PDF `185` only.
-- Recovery rule: complete P0186 only when the exact 2025 page can be rendered/read; do not infer contents from adjacent pages.
+- Status: **RESOLVED — EXACT 2025 SOURCE VISUALLY VERIFIED**.
+- The exact 2025 page was rendered and visually inspected.
+- Printed page `164` contains the Cortecloud workflow for carpenters: distributor connection, module design, manual cutting-list entry, real-time quotation, 3D visualization/error control, QR-assisted assembly and special assembly perforations.
+- Recovery is based on the exact rendered 2025 page, not on parser absence, another edition, adjacent-page inference or reconstruction.
+- P0186 is recovered in `BATCH-113` with six canonical content records.
+- No MeasurementSpec or RuleSpec is created: the references to `24 horas` and `más de 300 piezas` are contextual/source claims, not dimensional specifications or normative rules.
+- No technical FigureSpec is created because the page contains body text only; repeated branding and page number are recorded as non-meaningful visual elements.
