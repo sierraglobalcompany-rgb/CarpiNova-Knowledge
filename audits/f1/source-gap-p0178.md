@@ -2,10 +2,9 @@
 
 - Book: `cpnc-2025` / edición 2025.
 - Canonical mapping: PDF `178` -> printed `156` (`verified` in `page-map.json`).
-- Status: **PENDING — SOURCE_IMAGE_UNAVAILABLE**.
-- During preparation of BATCH-050, exact-edition indexed search exposed printed pages `153`, `154`, `155` and resumed explicit page-specific content at printed page `157`.
-- The page reader did not provide a renderable/readable body for PDF `178`, and indexed search exposed only the printed page number `156` adjacent to the next readable page.
-- This is insufficient evidence to classify P0178 as blank or to reconstruct its contents from neighboring pages.
-- Therefore P0178 remains pending and has no canonical page folder.
-- BATCH-050 deliberately covers PDF `175–177` only.
-- Recovery rule: complete P0178 only from the exact 2025 page when its body can be rendered/read; do not infer it from printed pages 155 or 157.
+- Status: **RESOLVED — EXACT 2025 SOURCE VISUALLY VERIFIED**.
+- The exact 2025 page was rendered and visually inspected; the previous `SOURCE_IMAGE_UNAVAILABLE` blocker no longer applies.
+- Printed page `156` contains the section `Servicios especiales` and five source-defined service groups: `Engruese`, `Ensanduchado`, `Ranuras`, `Curvas` and `Perforaciones para herrajes`.
+- The canonical extraction preserves the source examples and numeric values exactly, including `40 x 50 cm`, `15 mm`, `5 a 7 cm`, `45°` and `4 mm`; no missing unit, radius, hardware dimension or process parameter is inferred.
+- The page contains no meaningful technical diagram or illustration requiring a FigureSpec. Only repeated editorial branding and the printed page number are recorded as non-technical visual elements.
+- P0178 is recovered in `BATCH-111` with canonical source, normalized and learning layers, seven extracted measurements and five candidate rules grounded only in the visible page.

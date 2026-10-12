@@ -1,0 +1,62 @@
+[
+  {
+    "rule_id":"RULE-CPNC-2025-P0178-001",
+    "page_id":"PAGE-CPNC-2025-P0178",
+    "category":"special_services",
+    "subject":"ENGRUESE",
+    "predicate":"source_describes_using_an_additional_strip_to_simulate_greater_visible_thickness",
+    "value":{"example_piece":"40 x 50 cm","real_thickness":"15 mm","additional_strip_width":"5 to 7 cm","compatible_finish":"45 deg chamfer"},
+    "applicability":{"source_scope":"engruese explanation and examples on printed page 156"},
+    "exceptions":["The dimensions belong to the source example and are not universal project requirements."],
+    "sources":[{"book_id":"cpnc-2025","pdf_page":178,"printed_page":156,"region":{"x":0.04,"y":0.22,"width":0.92,"height":0.29},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status":"CANDIDATE"
+  },
+  {
+    "rule_id":"RULE-CPNC-2025-P0178-002",
+    "page_id":"PAGE-CPNC-2025-P0178",
+    "category":"special_services",
+    "subject":"ENSANDUCHADO",
+    "predicate":"source_describes_joining_two_complete_same_size_pieces_to_obtain_greater_real_thickness",
+    "value":{"piece_count":2,"same_size":true,"examples":["floating shelves","visible shelves"]},
+    "applicability":{"source_scope":"ensanduchado explanation on printed page 156"},
+    "exceptions":["Adhesive and support selection must follow the actual project and manufacturer requirements; preserve the source wording when teaching this example."],
+    "sources":[{"book_id":"cpnc-2025","pdf_page":178,"printed_page":156,"region":{"x":0.04,"y":0.51,"width":0.92,"height":0.12},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status":"CANDIDATE"
+  },
+  {
+    "rule_id":"RULE-CPNC-2025-P0178-003",
+    "page_id":"PAGE-CPNC-2025-P0178",
+    "category":"special_services",
+    "subject":"RANURAS_FOR_BACK_PANEL",
+    "predicate":"source_describes_grooving_the_four_carcass_pieces_to_insert_a_thin_back_panel_instead_of_nailing_it_from_outside",
+    "value":{"grooved_carcass_pieces":4,"usual_back_panel_thickness":"4 mm"},
+    "applicability":{"source_scope":"ranuras explanation on printed page 156"},
+    "exceptions":["The source says 4 mm is usual, not mandatory; use the actual back-panel specification for a project."],
+    "sources":[{"book_id":"cpnc-2025","pdf_page":178,"printed_page":156,"region":{"x":0.04,"y":0.63,"width":0.92,"height":0.11},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status":"CANDIDATE"
+  },
+  {
+    "rule_id":"RULE-CPNC-2025-P0178-004",
+    "page_id":"PAGE-CPNC-2025-P0178",
+    "category":"special_services",
+    "subject":"CURVAS_ON_VISIBLE_CORNERS",
+    "predicate":"source_recommends_curves_on_visible_corners_to_avoid_dangerous_edges",
+    "value":{"examples":["shelves over ovens or microwaves","desk or table edges"]},
+    "applicability":{"source_scope":"curvas recommendation on printed page 156"},
+    "exceptions":["The source gives examples rather than a universal radius or geometry; no radius is inferred."],
+    "sources":[{"book_id":"cpnc-2025","pdf_page":178,"printed_page":156,"region":{"x":0.04,"y":0.74,"width":0.92,"height":0.1},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status":"CANDIDATE"
+  },
+  {
+    "rule_id":"RULE-CPNC-2025-P0178-005",
+    "page_id":"PAGE-CPNC-2025-P0178",
+    "category":"special_services",
+    "subject":"HARDWARE_PERFORATION_AND_MARKING",
+    "predicate":"source_lists_distributor_perforation_and_marking_services_for_assembly_hardware",
+    "value":{"examples":["minifix or dowel holes","position marks for hinges, slides or gola systems","door lock holes"],"platform_example":"Corte Cloud"},
+    "applicability":{"source_scope":"hardware perforation service list on printed page 156"},
+    "exceptions":["The listed services are examples from the source and depend on distributor capabilities and project hardware."],
+    "sources":[{"book_id":"cpnc-2025","pdf_page":178,"printed_page":156,"region":{"x":0.04,"y":0.84,"width":0.92,"height":0.13},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status":"CANDIDATE"
+  }
+]
