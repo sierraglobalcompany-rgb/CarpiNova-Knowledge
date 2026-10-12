@@ -1,0 +1,90 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0162-001",
+    "page_id": "PAGE-CPNC-2025-P0162",
+    "content_type": "reference",
+    "source_transcription": "Escuadra de carpintero: es una de las más utilizadas. Tiene un tope, generalmente plástico, y una regla metálica, ideal para trazar líneas rectas. Se consigue usualmente en longitudes de hasta 30 cm.",
+    "normalized_text": "La escuadra de carpintero se describe con un tope, normalmente plástico, y una regla metálica para trazar líneas rectas; la fuente indica longitudes usuales de hasta 30 cm.",
+    "learning_text": "Reconoce la escuadra de carpintero por su tope y regla metálica, y úsala como referencia para trazos rectos.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0162-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":162,"printed_page":140,"region":{"x":0.05,"y":0.09,"width":0.9,"height":0.09},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["escuadra-carpintero","trazado","30-cm"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0162-002",
+    "page_id": "PAGE-CPNC-2025-P0162",
+    "content_type": "reference",
+    "source_transcription": "Escuadra combinada: permite mover el tope a lo largo de la regla. Es muy útil para marcar profundidades constantes. Por ejemplo, si necesito marcar una línea a 2 cm del borde, puedo ajustar el tope a esa distancia y marcar fácilmente, como si tuviera un gramil. Es muy funcional para trabajos de ensamble.",
+    "normalized_text": "La escuadra combinada tiene un tope móvil que permite repetir una profundidad constante. La fuente ejemplifica un trazo a 2 cm del borde y compara su uso con un gramil.",
+    "learning_text": "Ajusta el tope móvil a la distancia necesaria y úsalo como referencia repetible para marcar profundidades constantes.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0162-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":162,"printed_page":140,"region":{"x":0.05,"y":0.16,"width":0.9,"height":0.1},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["escuadra-combinada","tope-movil","2-cm","ensamble"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0162-003",
+    "page_id": "PAGE-CPNC-2025-P0162",
+    "content_type": "procedure",
+    "source_transcription": "Por otro lado, tenemos la falsa escuadra, que cumple una función opuesta: en lugar de verificar escuadras, permite copiar y transferir cualquier tipo de ángulo. Esto es útil cuando una esquina no está a escuadra. Por ejemplo, si vas a instalar una repisa entre dos muros que no forman un ángulo recto, necesitas copiar ese ángulo con la falsa escuadra. Esta herramienta cuenta con una tuerca tipo mariposa que ajusta dos piezas móviles (una plástica y una metálica). Al posicionarla sobre la esquina y apretar la tuerca, se fija el ángulo exacto que luego puedes trazar sobre la tabla para realizar un corte perfecto que se adapte a la forma real del muro.",
+    "normalized_text": "La falsa escuadra sirve para copiar y transferir el ángulo real de una esquina. La fuente describe fijar sus dos piezas móviles con una tuerca tipo mariposa y trasladar ese ángulo a la tabla.",
+    "learning_text": "Cuando una esquina no sea de 90 grados, copia el ángulo con la falsa escuadra, bloquea la herramienta y transfiere esa referencia a la pieza antes de cortar.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0162-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":162,"printed_page":140,"region":{"x":0.05,"y":0.27,"width":0.9,"height":0.18},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["falsa-escuadra","angulo","tuerca-mariposa","corte"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0162-004",
+    "page_id": "PAGE-CPNC-2025-P0162",
+    "content_type": "concept",
+    "source_transcription": "Otra herramienta fundamental es el nivel de burbuja.\nEs crucial tener en cuenta que tanto los pisos como los muros pueden tener inclinaciones. Por eso, no es suficiente medir desde el piso con un flexómetro, ya que puede haber pendientes. El nivel de burbuja permite verificar si una superficie está completamente horizontal o vertical (nivel o plomo). Puede colocarse de forma horizontal para nivelar repisas o superficies, o de forma vertical para verificar si un muro o listón está bien aplomado.",
+    "normalized_text": "El nivel de burbuja permite comprobar horizontalidad y verticalidad porque pisos y muros pueden presentar inclinaciones que una medición con flexómetro por sí sola no revela.",
+    "learning_text": "Comprueba nivel y plomo además de medir distancias: una superficie puede tener pendiente o inclinación aunque la medida lineal sea correcta.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0162-004"],
+    "source": {"book_id":"cpnc-2025","pdf_page":162,"printed_page":140,"region":{"x":0.05,"y":0.45,"width":0.9,"height":0.17},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["nivel-burbuja","horizontal","vertical","plomo","pendiente"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0162-005",
+    "page_id": "PAGE-CPNC-2025-P0162",
+    "content_type": "recommendation",
+    "source_transcription": "Una buena toma de medidas es clave para el éxito de cualquier proyecto. Por eso, debemos verificar si los muros y pisos están a escuadra o no. Si encontramos irregularidades, debemos registrarlas y adaptar el diseño del mueble a dichas condiciones.",
+    "normalized_text": "La fuente recomienda verificar escuadra de muros y pisos, registrar irregularidades y adaptar el diseño del mueble a las condiciones reales.",
+    "learning_text": "Registra las irregularidades del espacio antes del despiece y adapta el diseño en lugar de asumir que muros y pisos están perfectamente a escuadra.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0162-005"],
+    "source": {"book_id":"cpnc-2025","pdf_page":162,"printed_page":140,"region":{"x":0.05,"y":0.61,"width":0.9,"height":0.09},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["medicion","irregularidades","diseno","escuadra"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0162-006",
+    "page_id": "PAGE-CPNC-2025-P0162",
+    "content_type": "example",
+    "source_transcription": "Ejemplo práctico:\nImagina que tienes un muro inclinado (es decir, que no está a plomo). Al poner el nivel verticalmente, la burbuja te mostrará esta inclinación. Si el muro está recostado (inclinado hacia atrás), al instalar un lateral de clóset, verás que abajo la madera toca el muro, pero arriba queda una separación que se ve antiestética.",
+    "normalized_text": "La fuente plantea un muro fuera de plomo: el nivel colocado verticalmente revela la inclinación y un lateral de clóset puede tocar el muro abajo pero dejar una separación arriba.",
+    "learning_text": "Usa el nivel vertical para detectar un muro fuera de plomo antes de fabricar el lateral; así podrás anticipar separaciones visibles.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0162-006"],
+    "source": {"book_id":"cpnc-2025","pdf_page":162,"printed_page":140,"region":{"x":0.05,"y":0.69,"width":0.9,"height":0.11},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["ejemplo","muro-inclinado","closet","nivel"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0162-007",
+    "page_id": "PAGE-CPNC-2025-P0162",
+    "content_type": "example",
+    "source_transcription": "La solución es adaptar el lateral del clóset al muro, respetando la medida mínima estandarizada. Por ejemplo, si el fondo mínimo del clóset es de 60 cm y detectas una separación de 2 cm en la parte superior, debes cortar la pieza de forma que tenga 62 cm arriba y 60 cm abajo. Así, el lateral se adapta al muro sin perder funcionalidad ni estética.",
+    "normalized_text": "En el ejemplo, una profundidad mínima de 60 cm y una separación superior de 2 cm llevan a cortar el lateral con 62 cm arriba y 60 cm abajo para adaptarlo al muro.",
+    "learning_text": "Trata estas cifras como el ejemplo concreto de la fuente: conserva la medida mínima y añade la corrección necesaria donde el muro se separa.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0162-007"],
+    "source": {"book_id":"cpnc-2025","pdf_page":162,"printed_page":140,"region":{"x":0.05,"y":0.79,"width":0.9,"height":0.1},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["ejemplo","closet","60-cm","62-cm","2-cm"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0162-008",
+    "page_id": "PAGE-CPNC-2025-P0162",
+    "content_type": "reference",
+    "source_transcription": "Este tipo de ajustes nos muestran que la carpintería no consiste solo en armar muebles para que “encajen” directamente en el espacio. Muchas veces hay que sobredimensionar piezas y hacer cortes a medida. También existen otros recursos para cubrir las irregularidades, como los tapaluces o molduras. Por ejemplo, en el caso de una puerta, no se puede ajustar el marco al muro si este no está a escuadra, ya que la puerta debe abrir correctamente en un ángulo perfecto. En estos casos, se toma la medida menor",
+    "normalized_text": "La fuente explica que las irregularidades pueden requerir sobredimensionar piezas, hacer cortes a medida y usar tapaluces o molduras. En el ejemplo de una puerta, la explicación queda abierta al final de la página y continúa en P0163.",
+    "learning_text": "No completes la instrucción de la puerta solo con esta página: conserva el corte al final de P0162 y únelo con el comienzo de P0163.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0162-008"],
+    "source": {"book_id":"cpnc-2025","pdf_page":162,"printed_page":140,"region":{"x":0.05,"y":0.89,"width":0.9,"height":0.1},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["ajustes","sobredimensionado","tapaluces","molduras","continuidad"]
+  }
+]

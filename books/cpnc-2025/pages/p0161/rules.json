@@ -1,0 +1,111 @@
+[
+  {
+    "rule_id": "RULE-CPNC-2025-P0161-001",
+    "page_id": "PAGE-CPNC-2025-P0161",
+    "category": "unit_conversion",
+    "subject": "INCH_TO_MILLIMETER",
+    "predicate": "source_states_inches_are_multiplied_by_25_4_to_convert_to_millimeters",
+    "value": {
+      "operation": "multiply",
+      "factor": 25.4
+    },
+    "unit": "mm/in",
+    "applicability": {
+      "source_scope": "unit conversion explanation on printed page 139"
+    },
+    "exceptions": [
+      "The source presents the conventional conversion factor; preserve project-specific rounding requirements separately."
+    ],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 161,
+        "printed_page": 139,
+        "region": {
+          "x": 0.05,
+          "y": 0.14,
+          "width": 0.9,
+          "height": 0.16
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0161-002",
+    "page_id": "PAGE-CPNC-2025-P0161",
+    "category": "unit_conversion",
+    "subject": "MILLIMETER_TO_INCH",
+    "predicate": "source_states_millimeters_are_divided_by_25_4_to_convert_to_inches",
+    "value": {
+      "operation": "divide",
+      "divisor": 25.4
+    },
+    "applicability": {
+      "source_scope": "inverse unit conversion explanation on printed page 139"
+    },
+    "exceptions": [
+      "Fractional-inch rounding is not specified by the source."
+    ],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 161,
+        "printed_page": 139,
+        "region": {
+          "x": 0.05,
+          "y": 0.3,
+          "width": 0.9,
+          "height": 0.24
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0161-003",
+    "page_id": "PAGE-CPNC-2025-P0161",
+    "category": "marking",
+    "subject": "SQUARE_EDGE_REFERENCE",
+    "predicate": "source_instructs_supporting_square_guard_against_board_edge_before_tracing",
+    "value": {
+      "primary_angle_deg": 90,
+      "secondary_angle_deg": 45
+    },
+    "applicability": {
+      "source_scope": "square use explanation on printed page 139"
+    },
+    "exceptions": [
+      "The 45-degree capability is stated for some squares, not all models."
+    ],
+    "sources": [
+      {
+        "book_id": "cpnc-2025",
+        "pdf_page": 161,
+        "printed_page": 139,
+        "region": {
+          "x": 0.05,
+          "y": 0.64,
+          "width": 0.9,
+          "height": 0.22
+        },
+        "extraction": {
+          "method": "visual",
+          "confidence": 0.99,
+          "review_status": "VISUALLY_VERIFIED"
+        }
+      }
+    ],
+    "status": "CANDIDATE"
+  }
+]

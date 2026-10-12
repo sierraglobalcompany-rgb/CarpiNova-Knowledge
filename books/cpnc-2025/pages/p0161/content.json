@@ -1,0 +1,202 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0161-001",
+    "page_id": "PAGE-CPNC-2025-P0161",
+    "content_type": "reference",
+    "source_transcription": "facilitar la construcción de muros.",
+    "normalized_text": "La página completa la frase iniciada en P0160: los rombos de algunas cintas métricas se relacionan con posiciones de parales en wood frame para facilitar la construcción de muros.",
+    "learning_text": "Une este fragmento con el final de P0160; no lo interpretes como una frase aislada.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0161-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 161,
+      "printed_page": 139,
+      "region": {
+        "x": 0.05,
+        "y": 0.09,
+        "width": 0.9,
+        "height": 0.05
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "continuidad",
+      "flexometro",
+      "wood-frame",
+      "parales"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0161-002",
+    "page_id": "PAGE-CPNC-2025-P0161",
+    "content_type": "formula",
+    "source_transcription": "Respecto a la conversión de unidades, hay una fórmula sencilla que puede ayudarte a trabajar tanto con el sistema métrico como con el sistema imperial. Para convertir pulgadas a milímetros, multiplica el valor en pulgadas por 25.4. Por ejemplo:\n\nde pulgada = (1 ÷ 4) × 25.4 = 6.35 mm",
+    "normalized_text": "Para convertir pulgadas a milímetros, la fuente indica multiplicar el valor en pulgadas por 25.4. El ejemplo impreso muestra la operación (1 ÷ 4) × 25.4 y el resultado 6.35 mm.",
+    "learning_text": "Convierte pulgadas a milímetros multiplicando por 25.4. En el ejemplo de la fuente, un cuarto de pulgada se obtiene como 1 ÷ 4 y produce 6.35 mm.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0161-002"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 161,
+      "printed_page": 139,
+      "region": {
+        "x": 0.05,
+        "y": 0.14,
+        "width": 0.9,
+        "height": 0.16
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "conversion",
+      "pulgadas",
+      "milimetros",
+      "sistema-imperial",
+      "sistema-metrico"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0161-003",
+    "page_id": "PAGE-CPNC-2025-P0161",
+    "content_type": "formula",
+    "source_transcription": "De forma inversa, para convertir milímetros a pulgadas, divide el valor en milímetros entre 25.4. Así podrás interpretar medidas como:\n\n1/8”\n1/4”\n5/16”\n3/8”\n1/2”\n5/8”\n3/4”\n7/8”\n1”\n\nNo es un tema complejo; basta con entender cómo se realiza la conversión y podrás trabajar sin dificultad con ambas unidades: milímetros o pulgadas, dependiendo del contexto de tu proyecto.",
+    "normalized_text": "Para convertir milímetros a pulgadas, la fuente indica dividir entre 25.4 y muestra fracciones usuales de pulgada desde 1/8 hasta 1 pulgada.",
+    "learning_text": "Convierte milímetros a pulgadas dividiendo entre 25.4 y familiarízate con fracciones de pulgada frecuentes para poder leer ambas escalas.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0161-003"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 161,
+      "printed_page": 139,
+      "region": {
+        "x": 0.05,
+        "y": 0.3,
+        "width": 0.9,
+        "height": 0.24
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "conversion",
+      "milimetros",
+      "pulgadas",
+      "fracciones"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0161-004",
+    "page_id": "PAGE-CPNC-2025-P0161",
+    "content_type": "concept",
+    "source_transcription": "Tipos de escuadras y nivel\n\nPara realizar una correcta medición en carpintería es indispensable contar con herramientas que nos permitan registrar escuadras, falsas escuadras, desniveles y verificar si los muros están aplomados o no. A continuación, vamos a conocerlas.",
+    "normalized_text": "La fuente introduce escuadras, falsas escuadras y nivel como herramientas para registrar ángulos, desniveles y verificar el aplomado de los muros.",
+    "learning_text": "Antes de diseñar o cortar, usa herramientas de comprobación para conocer escuadra, ángulos, nivel y plomo del espacio real.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0161-004"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 161,
+      "printed_page": 139,
+      "region": {
+        "x": 0.05,
+        "y": 0.55,
+        "width": 0.9,
+        "height": 0.1
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "escuadras",
+      "nivel",
+      "plomo",
+      "medicion"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0161-005",
+    "page_id": "PAGE-CPNC-2025-P0161",
+    "content_type": "procedure",
+    "source_transcription": "La primera herramienta es la escuadra, que nos proporciona un ángulo recto de 90 grados, y en algunos casos también permite realizar trazos a 45 grados. Esta herramienta es esencial para identificar si una esquina o muro tiene una escuadra perfecta (aunque esto rara vez sucede en obra), y también para trazar líneas completamente rectas sobre las piezas de madera. Para hacerlo, apoyamos la guarda o tope de la escuadra sobre el canto de la tabla y realizamos el trazo asegurándonos de que mantenemos el ángulo recto perfecto. Luego, trasladamos el trazo al otro lado del canto para asegurar la precisión.",
+    "normalized_text": "La escuadra se usa para comprobar ángulos rectos y trazar líneas rectas. La fuente también menciona trazos a 45 grados en algunos casos y describe apoyar la guarda o tope sobre el canto antes de trasladar el trazo al otro lado.",
+    "learning_text": "Apoya firmemente la guarda o tope de la escuadra en el canto, realiza el trazo y trasládalo al otro lado para conservar la referencia y mejorar la precisión.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0161-005"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 161,
+      "printed_page": 139,
+      "region": {
+        "x": 0.05,
+        "y": 0.64,
+        "width": 0.9,
+        "height": 0.22
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "escuadra",
+      "90-grados",
+      "45-grados",
+      "trazado",
+      "precision"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0161-006",
+    "page_id": "PAGE-CPNC-2025-P0161",
+    "content_type": "reference",
+    "source_transcription": "Existen varios tipos de escuadras:\n\nEscuadra de construcción: utilizada comúnmente en obras, es totalmente metálica, sin tope, y suele emplearse en la construcción de techos y escaleras.\n\nEscuadra Rafter: además de dar ángulos rectos, permite trazar cualquier ángulo entre 0 y 90 grados, siendo muy útil para techos. Incluye referencias importantes para ese tipo de construcción.",
+    "normalized_text": "La fuente distingue una escuadra de construcción metálica sin tope y una escuadra Rafter que permite trazar ángulos entre 0 y 90 grados y contiene referencias útiles para techos.",
+    "learning_text": "Diferencia los tipos de escuadra por su forma y función: la de construcción es metálica y sin tope; la Rafter incorpora referencias y permite trazar distintos ángulos.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0161-006"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 161,
+      "printed_page": 139,
+      "region": {
+        "x": 0.05,
+        "y": 0.86,
+        "width": 0.9,
+        "height": 0.12
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "escuadra-construccion",
+      "escuadra-rafter",
+      "techos",
+      "escaleras"
+    ]
+  }
+]
