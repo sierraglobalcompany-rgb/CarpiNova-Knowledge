@@ -8,7 +8,7 @@
 - Classified historical source-gap reports without erasing their provenance.
 - Reviewed current safety-term candidates and restored explicit protection-language meaning where it had been weakened in P0259–P0263.
 - Preserved known source conflicts instead of choosing a winner by inference.
-- Added deterministic full-book consumer bundles for `knowledge`, `figures`, and `lessons`, plus a manifest with hashes and record counts.
+- Added deterministic full-book consumer bundle generation for `knowledge`, `figures`, and `lessons`, plus a manifest with hashes and record counts.
 - Added `build-book-dist` as the reproducible full-book build command.
 - Kept all current rules non-executable; the candidate is not fabrication authority.
 
