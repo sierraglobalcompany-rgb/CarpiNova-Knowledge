@@ -16,9 +16,9 @@
     "content_type": "procedure",
     "source_transcription": "Medidas para Instalación. Brazo Grande. Brazo mini. Plano técnico. Instrucciones de instalación.",
     "normalized_text": "La página presenta una guía visual de instalación con varios esquemas para brazo grande y brazo mini, incluyendo un plano técnico del brazo mini y una secuencia inferior de posiciones de montaje.",
-    "learning_text": "La geometría de montaje debe seguir la guía correspondiente al modelo del brazo. Las cotas pequeñas del gráfico requieren revisión de la página fuente en alta resolución antes de convertirse en medidas estructuradas o instrucciones automáticas.",
+    "learning_text": "La geometría de montaje debe seguir la guía correspondiente al modelo del brazo. La revisión visual de la fuente exacta confirmó la presencia de cotas pequeñas, pero sus valores no quedaron inequívocamente legibles; por eso permanecen unresolved y no se convierten en medidas estructuradas ni instrucciones automáticas.",
     "derived_from_content_ids": ["CONTENT-CPNC-2025-P0121-002"],
     "source": {"book_id": "cpnc-2025", "pdf_page": 121, "printed_page": 99, "region": {"x": 0.13, "y": 0.25, "width": 0.72, "height": 0.67}, "extraction": {"method": "visual", "confidence": 0.9, "review_status": "VISUALLY_VERIFIED"}},
-    "tags": ["brazo-grande", "brazo-mini", "plano-tecnico", "medidas-instalacion", "revision-alta-resolucion"]
+    "tags": ["brazo-grande", "brazo-mini", "plano-tecnico", "medidas-instalacion", "cotas-unresolved"]
   }
 ]
