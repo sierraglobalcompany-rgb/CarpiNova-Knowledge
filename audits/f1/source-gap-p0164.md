@@ -2,10 +2,10 @@
 
 - Book: `cpnc-2025` / edición 2025.
 - Canonical mapping: PDF `164` -> printed `142` (`verified` in `page-map.json`).
-- Status: **PENDING — SOURCE_IMAGE_UNAVAILABLE**.
-- During the BATCH-046 source audit, PDF 163 and PDFs 165–166 render from the exact 2025 source, but PDF 164 exposes only the book header and printed page number `142`; its rendered page image is unavailable.
-- Raw-byte materialization of the Library PDF is not authorized in the current project runtime, so the page cannot be rendered independently in the container.
-- The readable content on surrounding pages is not sufficient evidence to infer the missing page.
-- Therefore P0164 is deliberately left without canonical page files and remains pending in coverage.
-- BATCH-046 uses an explicit source-boundary exception and covers PDF `163` only.
-- Recovery rule: complete P0164 only when the exact 2025 source page can be rendered/read; do not reconstruct its text from another edition, adjacent pages, or inference.
+- Status: **RESOLVED — EXACT 2025 SOURCE VISUALLY VERIFIED**.
+- The exact 2025 source page was recovered and visually verified in the current project workflow.
+- The page is a text-only preparation sheet headed `LISTADO HERRAMIENTAS` with a second section headed `INSTALACIÓN`.
+- The source includes an installation line rendered as `Brocas  x 2` with no size visible. That omission is preserved in canonical data and is not completed by inference.
+- P0164 is recovered in `BATCH-109` with canonical page files under `books/cpnc-2025/pages/p0164/`.
+- No technical dimensions are promoted from ambiguous fractional entries because the page does not explicitly state their unit.
+- This resolves the prior `SOURCE_IMAGE_UNAVAILABLE` blocker without changing the physical/printed page mapping.
