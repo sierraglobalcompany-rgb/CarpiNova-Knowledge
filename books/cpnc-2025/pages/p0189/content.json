@@ -1,0 +1,68 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0189-001",
+    "page_id": "PAGE-CPNC-2025-P0189",
+    "content_type": "procedure",
+    "source_transcription": "Además, se debe verificar:\nSi las esquinas están a escuadra, abiertas o cerradas\nSi los muros están inclinados (hacia adelante o recostados hacia atrás)\nPara esto usamos herramientas como la escuadra, la falsa escuadra y el nivel de burbuja. También puedes aplicar el Teorema de pitágoras para comprobar que las esquinas tengan 90 grados.",
+    "normalized_text": "La fuente indica verificar si las esquinas están a escuadra, abiertas o cerradas y si los muros están inclinados. Propone usar escuadra, falsa escuadra, nivel de burbuja y el teorema de Pitágoras para comprobar ángulos de 90°.",
+    "learning_text": "Antes de diseñar, comprueba la geometría real del ambiente. No asumas que esquinas y muros son perfectamente rectos; registra su condición con herramientas de medición.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0189-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":189,"printed_page":167,"region":{"x":0.05,"y":0.09,"width":0.38,"height":0.2},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["toma-de-medidas","escuadra","nivel","pitagoras","geometria"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0189-002",
+    "page_id": "PAGE-CPNC-2025-P0189",
+    "content_type": "recommendation",
+    "source_transcription": "¿Por qué es importante?\nRegistrar estas irregularidades es fundamental. Si mides bien, el despiece será correcto y el mueble se ajustará perfectamente al espacio.\nDe lo contrario, al momento de la instalación, podrías tener que hacer reprocesos y cortes innecesarios para que el mueble encaje en las irregularidades del muro o del piso.",
+    "normalized_text": "La fuente recomienda registrar las irregularidades del espacio porque pueden afectar el despiece y el ajuste del mueble durante la instalación.",
+    "learning_text": "Documenta las irregularidades antes del despiece para reducir ajustes y cortes correctivos durante la instalación.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0189-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":189,"printed_page":167,"region":{"x":0.05,"y":0.31,"width":0.9,"height":0.11},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["irregularidades","despiece","instalacion","ajuste"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0189-003",
+    "page_id": "PAGE-CPNC-2025-P0189",
+    "content_type": "checklist",
+    "source_transcription": "Toma de medidas en cocinas\nCuando se trata de cocinas, hay que tener en cuenta:\nLa posición de las salidas de gas, las conexiones eléctricas, las salidas hidrosanitarias\n\nEstas conexiones determinan la posición de cada módulo, la ubicación del lavaplatos, la zona del horno, y hasta la posición de la nevera.",
+    "normalized_text": "Para cocinas, la fuente indica registrar salidas de gas, conexiones eléctricas y salidas hidrosanitarias porque condicionan la ubicación de módulos y equipos.",
+    "learning_text": "Levanta primero las conexiones existentes y úsalas como restricción del diseño de la cocina; no ubiques módulos o equipos ignorando estos puntos.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0189-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":189,"printed_page":167,"region":{"x":0.05,"y":0.43,"width":0.9,"height":0.11},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cocinas","gas","electricidad","hidrosanitario","modulos"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0189-004",
+    "page_id": "PAGE-CPNC-2025-P0189",
+    "content_type": "dimension",
+    "source_transcription": "También es indispensable medir la altura, ya que:\nEl mueble bajo llega hasta 90 cm incluyendo el mesón\nDesde el mesón hasta el inicio del mueble alto se recomienda dejar 61 cm\nEsto define hasta dónde puedes llevar el mueble superior o si, en algunos casos, es viable instalarlo",
+    "normalized_text": "La fuente presenta como referencia un mueble bajo de 90 cm incluyendo el mesón y recomienda 61 cm desde el mesón hasta el inicio del mueble alto.",
+    "learning_text": "Conserva estas dimensiones como recomendaciones específicas de la fuente. Verifica el proyecto y el espacio real antes de convertirlas en una regla universal.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0189-004"],
+    "source": {"book_id":"cpnc-2025","pdf_page":189,"printed_page":167,"region":{"x":0.05,"y":0.55,"width":0.9,"height":0.1},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cocinas","altura","mueble-bajo","mueble-alto","meson"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0189-005",
+    "page_id": "PAGE-CPNC-2025-P0189",
+    "content_type": "example",
+    "source_transcription": "Toma de medidas en clósets\nEn clósets que van entre muros, hay que medir en:\nLa parte trasera, central y frontal\nA lo largo de la parte inferior, media y superior\n\nPor ejemplo, si en la parte trasera mide 100 cm y en la delantera 98 cm, se debe tomar la medida mayor (100 cm) para el corte, y luego hacer un rebaje para que la tabla se adapte a la irregularidad de los muros.",
+    "normalized_text": "Para clósets entre muros, la fuente indica medir atrás, centro y frente y repetir el levantamiento en las zonas inferior, media y superior. En el ejemplo de 100 cm atrás y 98 cm adelante, usa 100 cm para el corte y luego rebaja para adaptar la tabla.",
+    "learning_text": "Toma varias medidas en un vano irregular. El ejemplo del libro usa la mayor medida para cortar y después ajustar mediante rebaje; trátalo como ejemplo contextual, no como regla automática para cualquier instalación.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0189-005"],
+    "source": {"book_id":"cpnc-2025","pdf_page":189,"printed_page":167,"region":{"x":0.05,"y":0.67,"width":0.9,"height":0.17},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["closets","entre-muros","medicion","rebaje","irregularidad"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0189-006",
+    "page_id": "PAGE-CPNC-2025-P0189",
+    "content_type": "procedure",
+    "source_transcription": "Medidas para puertas\nCon las puertas (de clósets, habitaciones o paso), la lógica es opuesta:\nDebes trabajar con la medida menor.\nMide:\nAncho en la parte superior, media e inferior\nAltura en el lado izquierdo y derecho",
+    "normalized_text": "Para puertas, la fuente indica trabajar con la medida menor y medir el ancho en la parte superior, media e inferior y la altura en los lados izquierdo y derecho.",
+    "learning_text": "Mide el vano de puerta en varios puntos y conserva la menor dimensión como referencia inicial. La instrucción continúa en la página siguiente con mediciones desde ambos lados del vano.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0189-006"],
+    "source": {"book_id":"cpnc-2025","pdf_page":189,"printed_page":167,"region":{"x":0.05,"y":0.85,"width":0.9,"height":0.11},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["puertas","vano","medida-menor","ancho","altura","continuidad"]
+  }
+]
