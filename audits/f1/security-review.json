@@ -1,0 +1,21 @@
+{
+  "book_id": "cpnc-2025",
+  "review_date": "2026-10-12",
+  "reviewed_candidates": [
+    {"content_id":"CONTENT-CPNC-2025-P0038-003","status":"FALSE_POSITIVE_CONTEXT","reason":"La coincidencia 'cuidado' proviene de 'unidad de cuidados intensivos' dentro de un relato biográfico; no es una instrucción de seguridad."},
+    {"content_id":"CONTENT-CPNC-2025-P0127-004","status":"MEANING_PRESERVED","reason":"La fuente dice tener cuidado de no perforar el panel; normalized conserva 'advierte no atravesar' y learning conserva 'evitar atravesar el panel'."},
+    {"content_id":"CONTENT-CPNC-2025-P0158-001","status":"MEANING_PRESERVED","reason":"La advertencia de peligro, distancia a la hoja, kickback y elementos de protección se conserva explícitamente en normalized y learning mediante advertencia, seguridad y riesgo."},
+    {"content_id":"CONTENT-CPNC-2025-P0158-002","status":"MEANING_PRESERVED","reason":"El peligro de aprisionamiento/rebote se conserva como instrucción de evitar aprisionamiento, retroceso y atrapamiento entre disco y guía."},
+    {"content_id":"CONTENT-CPNC-2025-P0160-005","status":"FALSE_POSITIVE_CONTEXT","reason":"'Distancia' describe una medición interna con flexómetro; no es una distancia de seguridad."},
+    {"content_id":"CONTENT-CPNC-2025-P0188-002","status":"FALSE_POSITIVE_CONTEXT","reason":"'Condición' describe condiciones funcionales y geométricas del ambiente a medir; no constituye una advertencia de seguridad."},
+    {"content_id":"CONTENT-CPNC-2025-P0203-001","status":"FALSE_POSITIVE_CONTEXT","reason":"'Distancia' describe separación geométrica entre tubos de clóset; no es una distancia de seguridad."},
+    {"content_id":"CONTENT-CPNC-2025-P0220-002","status":"FALSE_POSITIVE_CONTEXT","reason":"'Distancias iguales' describe distribución geométrica de puntales; no es una distancia de seguridad."}
+  ],
+  "fixed_findings": [
+    {"content_id":"CONTENT-CPNC-2025-P0259-001","status":"FIXED_SAFETY_PRESERVATION","reason":"Normalized y learning ahora preservan explícitamente los elementos de protección incluidos por la fuente."},
+    {"content_id":"CONTENT-CPNC-2025-P0260-001","status":"FIXED_SAFETY_PRESERVATION","reason":"Normalized y learning ahora preservan explícitamente los elementos de protección incluidos por la fuente."},
+    {"content_id":"CONTENT-CPNC-2025-P0261-001","status":"FIXED_SAFETY_PRESERVATION","reason":"Normalized y learning ahora preservan explícitamente los elementos de protección incluidos por la fuente."},
+    {"content_id":"CONTENT-CPNC-2025-P0262-001","status":"FIXED_SAFETY_PRESERVATION","reason":"Normalized y learning ahora preservan explícitamente los elementos de protección incluidos por la fuente."},
+    {"content_id":"CONTENT-CPNC-2025-P0263-001","status":"FIXED_SAFETY_PRESERVATION","reason":"Normalized y learning ahora preservan explícitamente los elementos de protección incluidos por la fuente."}
+  ]
+}

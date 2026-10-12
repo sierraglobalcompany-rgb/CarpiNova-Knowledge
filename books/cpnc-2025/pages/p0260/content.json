@@ -4,36 +4,10 @@
     "page_id": "PAGE-CPNC-2025-P0260",
     "content_type": "checklist",
     "source_transcription": "ANEXO 7. CLOSET-VESTIER-MUEBLE DE ENTRETENIMIENTO\n\nCLOSET - VESTIER-MUEBLES TV\n\nMATERIALES ARMADO EN TALLER | *APLICA (REFERENCIA) NO APLICA (NA) | CANTIDAD PRODUCCION\nClavillos (Para usar con pistola)\nEnchape blanco-color (19,22,33,44mm)\nDeslizador plástico\nFondo blanco-color 3 mm\nLámina blanco-color (15-18mm)\nMasilla resane-lija\nPegante colbon y pegante para canto\nPintura dilataciones\nPuntillas sin cabeza 1\"-3/4\"\nRiel full extensión (normal-cierre lento)\nSistema iluminación (cableado-luces led-tomas etc)\nSoporte para entrepaño\nSoporte escuadra\nTornillos (5/8\"-1\"-1 1/2\"-2\"-3\")\nTrapos limpieza-varsol-thiner\nVinipel-cartón\n\nMATERIALES EN SITIO DE INSTALACIÓN | *APLICA (REFERENCIA) NO APLICA (NA) | CANTIDAD DESPACHO\nTorres (zurrones) armados en taller\nMaletero-Marcos-puertas-carteras\nSi aplica: Zapatero (base)-costado(si no va muro)-tapa (si no va hasta el cielo)\nBisagra parche- semiparche (normal, cierre lento, para push)\nBrazo hidráulico (60-80-100-120 N)\nCerradura closet si aplica\nChazos-palillos madera\nEnchape (en caso de alguna reparación)\nFlanches\nManijas si aplica\nMasilla resane-lija\nPegante para canto y Colbón\nPintura Resane\nPuntillas sin cabeza 1\"-3/4\"\nRiel puerta doble corredera\nSilicona\nSistema riel corredera\nSoporte de entrepaño**\nSoporte escuadra**\nSoporte para tubo\nTapatornillos blanco-color\nTornillos 5/8\"-1\"-1 1/2\"-2\"-3\"\nTrapos limpieza-varsol-thiner\nTubo cortinero\n\nHERRAMIENTAS Y EQUIPO | *APLICA (REFERENCIA) NO APLICA (NA) | CANTIDAD\nBisturí\nBolsas (perforación con taladro)\nBroca sierra y broca espada\nCaladora-Ruteadora-Rotomartillo-sierra circular-Ingleteadora\nCepillo canteador\nCinta de enmascarar y cinta aislante\nCompresor-Pistola con clavos\nCostal para recoger sobrantes\nCuchilla para retestear el canto\nElementos de protección\nEscoba y recogedor\nEspátula y estuco plástico\nExtensión de energía\nFlexómetro, nivel, escuadra\nMartillo,lápiz, formón, Destornilladores, Alicate, pelador cables\nPistola de calafateo\nSegueta con marco\nTaladro para ensamblar e instalar (Puntas, brocas, avellanador)\n\n* En esta columna escribir la referencia que aplica. Sino aplica escribir NA.",
-    "normalized_text": "El Anexo 7 presenta una lista de chequeo para closet, vestier y muebles de TV. Organiza materiales de armado en taller, materiales para instalación en sitio y herramientas/equipo. Cada bloque incluye una columna para registrar referencia o NA y otra para cantidad de producción, despacho o cantidad.",
-    "learning_text": "Usa esta lista como control previo para closet, vestier y muebles de entretenimiento: verifica primero los materiales de taller, luego lo que debe despacharse al sitio y finalmente las herramientas y el equipo. Registra la referencia cuando aplique o NA cuando no aplique y completa las cantidades sin asumir elementos que no correspondan al proyecto.",
-    "derived_from_content_ids": [
-      "CONTENT-CPNC-2025-P0260-001"
-    ],
-    "source": {
-      "book_id": "cpnc-2025",
-      "pdf_page": 260,
-      "printed_page": 238,
-      "region": {
-        "x": 0.1,
-        "y": 0.1,
-        "width": 0.79,
-        "height": 0.83
-      },
-      "extraction": {
-        "method": "visual",
-        "confidence": 0.99,
-        "review_status": "VISUALLY_VERIFIED"
-      }
-    },
-    "tags": [
-      "anexo-7",
-      "lista-de-chequeo",
-      "closet",
-      "vestier",
-      "mueble-de-entretenimiento",
-      "materiales",
-      "instalacion",
-      "herramientas"
-    ]
+    "normalized_text": "El Anexo 7 presenta una lista de chequeo para closet, vestier y muebles de TV. Organiza materiales de armado en taller, materiales para instalación en sitio y herramientas/equipo. El bloque de herramientas y equipo incluye explícitamente elementos de protección. Cada bloque incluye una columna para registrar referencia o NA y otra para cantidad de producción, despacho o cantidad.",
+    "learning_text": "Usa esta lista como control previo para closet, vestier y muebles de entretenimiento: verifica primero los materiales de taller, luego lo que debe despacharse al sitio y finalmente las herramientas y el equipo. Verifica también los elementos de protección incluidos en ese bloque. Registra la referencia cuando aplique o NA cuando no aplique y completa las cantidades sin asumir elementos que no correspondan al proyecto.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0260-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":260,"printed_page":238,"region":{"x":0.1,"y":0.1,"width":0.79,"height":0.83},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["anexo-7", "lista-de-chequeo", "closet", "vestier", "mueble-de-entretenimiento", "materiales", "instalacion", "herramientas"]
   }
 ]
