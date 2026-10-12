@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0202-001",
+    "page_id": "PAGE-CPNC-2025-P0202",
+    "content_type": "construction_pattern",
+    "source_transcription": "Clósets\nLa modulación de clósets también se basa en ergonomía. Un clóset bien distribuido debe tener:\nTorre con entrepaños, incluyendo dos gavetas con correderas por cada metro lineal.\nDoble colgadero, con una separación vertical de 90 cm entre cada uno.",
+    "normalized_text": "La fuente propone una modulación ergonómica del clóset con torre de entrepaños, dos gavetas con correderas por cada metro lineal y doble colgadero separado verticalmente 90 cm.",
+    "learning_text": "Distribuye primero las funciones del clóset y usa las cotas del libro como referencias explícitas; valida el espacio, los herrajes y las necesidades reales antes de fabricar.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0202-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":202,"printed_page":180,"region":{"x":0.05,"y":0.10,"width":0.9,"height":0.17},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["closets","modulacion","ergonomia","gavetas","colgaderos"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0202-002",
+    "page_id": "PAGE-CPNC-2025-P0202",
+    "content_type": "dimension",
+    "source_transcription": "Sobre los colgaderos se deja el maletero, que empieza a los 190 cm y tiene una altura de 40 cm, para almacenar maletas.\n\nEn total, el clóset ideal tendría 230 cm de altura: 190 cm de estructura útil más 40 cm de maletero.",
+    "normalized_text": "La fuente ubica el inicio del maletero a 190 cm, le asigna 40 cm de altura y expresa un clóset ideal de 230 cm totales, compuesto por 190 cm de estructura útil más 40 cm de maletero.",
+    "learning_text": "Separa la altura útil de la altura del maletero para comprobar el total. Estas medidas son referencias de la fuente, no una obligación universal para todos los proyectos.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0202-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":202,"printed_page":180,"region":{"x":0.05,"y":0.27,"width":0.9,"height":0.13},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["closets","maletero","altura","estructura-util"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0202-003",
+    "page_id": "PAGE-CPNC-2025-P0202",
+    "content_type": "dimension",
+    "source_transcription": "Profundidad interna: 50 cm\nProfundidad externa: 60 cm (los 10 cm extra son para permitir el uso de sistemas corredizos)",
+    "normalized_text": "La fuente da 50 cm de profundidad interna y 60 cm de profundidad externa; atribuye los 10 cm adicionales al espacio necesario para sistemas corredizos.",
+    "learning_text": "Distingue profundidad interna y externa. Verifica el sistema corredizo real antes de trasladar estos 10 cm a un diseño concreto.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0202-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":202,"printed_page":180,"region":{"x":0.05,"y":0.40,"width":0.9,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["closets","profundidad","sistemas-corredizos"]
+  }
+]
