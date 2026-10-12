@@ -1,0 +1,86 @@
+[
+  {
+    "rule_id": "RULE-CPNC-2025-P0223-001",
+    "page_id": "PAGE-CPNC-2025-P0223",
+    "category": "study_furniture_ergonomics",
+    "subject": "STUDY_FURNITURE_DIMENSIONS",
+    "predicate": "source_sets_height_range_minimum_depth_seat_height_and_rounded_edges",
+    "value": {"height_min_cm":75,"height_max_cm":78,"minimum_depth_cm":60,"seat_height_cm":45,"edges":"rounded"},
+    "applicability": {"source_scope":"study furniture guidance on printed page 201"},
+    "exceptions": ["The source mentions workplace-safety regulations for the 60 cm minimum depth but does not identify a jurisdiction or standard; verify applicable regulations independently."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":223,"printed_page":201,"region":{"x":0.05,"y":0.10,"width":0.9,"height":0.16},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0223-002",
+    "page_id": "PAGE-CPNC-2025-P0223",
+    "category": "dining_ergonomics",
+    "subject": "DINING_TABLE_AND_SEAT_HEIGHTS",
+    "predicate": "source_sets_dining_table_and_seat_heights",
+    "value": {"table_height_cm":78,"seat_height_cm":45},
+    "applicability": {"source_scope":"dining guidance on printed page 201"},
+    "exceptions": ["Treat these dimensions as source references and verify the actual furniture set and users."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":223,"printed_page":201,"region":{"x":0.05,"y":0.26,"width":0.9,"height":0.07},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0223-003",
+    "page_id": "PAGE-CPNC-2025-P0223",
+    "category": "entertainment_center_ergonomics",
+    "subject": "TV_SOFA_SCREEN_CENTER_HEIGHT",
+    "predicate": "source_places_screen_center_at_height_for_sofa_viewing",
+    "value": {"screen_center_height_cm":120,"reference":"floor"},
+    "applicability": {"source_scope":"TV viewing from a sofa on printed page 201"},
+    "exceptions": ["The source gives a reference height; actual eye height, screen size and viewing geometry may vary."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":223,"printed_page":201,"region":{"x":0.05,"y":0.34,"width":0.9,"height":0.24},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0223-004",
+    "page_id": "PAGE-CPNC-2025-P0223",
+    "category": "entertainment_center_ergonomics",
+    "subject": "TV_LYING_LOWER_EDGE_HEIGHT",
+    "predicate": "source_places_tv_lower_edge_at_height_for_lying_viewing",
+    "value": {"tv_lower_edge_height_cm":80,"reference":"floor"},
+    "applicability": {"source_scope":"TV viewing while lying down on printed page 201"},
+    "exceptions": ["The source gives a reference height; actual bed height, posture and screen geometry may vary."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":223,"printed_page":201,"region":{"x":0.05,"y":0.34,"width":0.9,"height":0.24},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0223-005",
+    "page_id": "PAGE-CPNC-2025-P0223",
+    "category": "entertainment_center_ergonomics",
+    "subject": "TV_VIEWING_DISTANCE_BY_SIZE",
+    "predicate": "source_states_viewing_distance_depends_on_tv_size_in_inches",
+    "value": {"depends_on":"television_size_inches"},
+    "applicability": {"source_scope":"TV viewing distance guidance on printed page 201"},
+    "exceptions": ["The source gives no formula or numeric distance table on this page."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":223,"printed_page":201,"region":{"x":0.05,"y":0.34,"width":0.9,"height":0.24},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0223-006",
+    "page_id": "PAGE-CPNC-2025-P0223",
+    "category": "entertainment_center_mounting",
+    "subject": "TV_SUPPORT_AND_VESA",
+    "predicate": "source_allows_support_on_wall_or_wood_panel_and_identifies_vesa_as_rear_screw_spacing_standard",
+    "value": {"support_locations":["wall","wood_panel"],"mounting_standard":"VESA","defines":"rear_screw_spacing"},
+    "applicability": {"source_scope":"TV support guidance on printed page 201"},
+    "exceptions": ["The page does not provide a specific VESA pattern; verify the television and mount specifications before drilling."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":223,"printed_page":201,"region":{"x":0.05,"y":0.34,"width":0.9,"height":0.24},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0223-007",
+    "page_id": "PAGE-CPNC-2025-P0223",
+    "category": "ergonomic_recommendation",
+    "subject": "CONSIDER_ERGONOMIC_AND_FUNCTIONAL_MEASURES",
+    "predicate": "source_recommends_considering_ergonomic_and_functional_measures_for_furniture_projects",
+    "value": {"consider":["ergonomic_measures","functional_measures"]},
+    "applicability": {"source_scope":"final recommendation on printed page 201"},
+    "exceptions": ["The source phrase about a successful result is recorded as a recommendation, not a universal guarantee."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":223,"printed_page":201,"region":{"x":0.05,"y":0.58,"width":0.9,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  }
+]
