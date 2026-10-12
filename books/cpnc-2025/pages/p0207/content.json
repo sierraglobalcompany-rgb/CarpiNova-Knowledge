@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0207-001",
+    "page_id": "PAGE-CPNC-2025-P0207",
+    "content_type": "dimension",
+    "source_transcription": "Puertas\nLas puertas estándar deben instalarse a escuadra. La medida ideal del vano es de 80 cm de ancho por 210 cm de alto, lo cual permite el paso de una silla de ruedas.",
+    "normalized_text": "Las puertas estándar deben instalarse a escuadra. La fuente propone como medida ideal del vano 80 cm de ancho por 210 cm de alto y señala que esa abertura permite el paso de una silla de ruedas.",
+    "learning_text": "Antes de instalar una puerta, verifica que el vano esté a escuadra y compara sus dimensiones reales con la referencia de 80 × 210 cm indicada por la fuente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0207-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":207,"printed_page":185,"region":{"x":0.05,"y":0.10,"width":0.90,"height":0.12},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["puertas","vano","escuadra","accesibilidad","dimensiones"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0207-002",
+    "page_id": "PAGE-CPNC-2025-P0207",
+    "content_type": "procedure",
+    "source_transcription": "Para una correcta instalación:\nMide la altura del vano a la izquierda y a la derecha.\nMide el ancho en tres puntos: superior, medio e inferior.\nToma siempre la medida menor y réstale 1 cm para tolerancia.",
+    "normalized_text": "Para instalar correctamente, la fuente indica medir la altura del vano en ambos lados, medir el ancho en tres puntos y usar la menor medida restándole 1 cm de tolerancia.",
+    "learning_text": "Registra varias mediciones del vano antes de cortar o fabricar. Trabaja con la menor medida y aplica la tolerancia explícita de 1 cm indicada por la fuente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0207-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":207,"printed_page":185,"region":{"x":0.05,"y":0.21,"width":0.90,"height":0.10},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["puertas","instalacion","medicion","tolerancia"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0207-003",
+    "page_id": "PAGE-CPNC-2025-P0207",
+    "content_type": "recommendation",
+    "source_transcription": "Las posibles diferencias entre muro y madera se tapan con tapaluz o molduras.",
+    "normalized_text": "La fuente indica que las diferencias visibles entre el muro y la madera pueden cubrirse con tapaluz o molduras.",
+    "learning_text": "Después de ajustar la puerta, resuelve las diferencias de encuentro entre muro y madera con el acabado indicado por la fuente: tapaluz o molduras.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0207-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":207,"printed_page":185,"region":{"x":0.05,"y":0.30,"width":0.90,"height":0.05},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["puertas","tapaluz","molduras","acabado"]
+  }
+]

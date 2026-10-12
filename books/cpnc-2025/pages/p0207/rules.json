@@ -1,0 +1,62 @@
+[
+  {
+    "rule_id": "RULE-CPNC-2025-P0207-001",
+    "page_id": "PAGE-CPNC-2025-P0207",
+    "category": "door_installation",
+    "subject": "STANDARD_DOOR_SQUARENESS",
+    "predicate": "source_requires_standard_doors_to_be_installed_square",
+    "value": {"installed_square": true},
+    "applicability": {"source_scope":"standard door installation guidance on printed page 185"},
+    "exceptions": ["The source states the requirement without project-specific exceptions."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":207,"printed_page":185,"region":{"x":0.05,"y":0.10,"width":0.90,"height":0.12},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0207-002",
+    "page_id": "PAGE-CPNC-2025-P0207",
+    "category": "door_installation",
+    "subject": "OPENING_HEIGHT_MEASUREMENT",
+    "predicate": "source_instructs_measuring_opening_height_on_left_and_right",
+    "value": {"sides":["left","right"]},
+    "applicability": {"source_scope":"door opening measurement procedure on printed page 185"},
+    "exceptions": ["Use the source procedure as written; project conditions may require additional verification."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":207,"printed_page":185,"region":{"x":0.05,"y":0.21,"width":0.90,"height":0.10},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0207-003",
+    "page_id": "PAGE-CPNC-2025-P0207",
+    "category": "door_installation",
+    "subject": "OPENING_WIDTH_MEASUREMENT",
+    "predicate": "source_instructs_measuring_opening_width_at_three_points",
+    "value": {"points":["upper","middle","lower"],"count":3},
+    "applicability": {"source_scope":"door opening measurement procedure on printed page 185"},
+    "exceptions": ["The source specifies three points and does not define alternative sampling patterns."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":207,"printed_page":185,"region":{"x":0.05,"y":0.21,"width":0.90,"height":0.10},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0207-004",
+    "page_id": "PAGE-CPNC-2025-P0207",
+    "category": "door_installation",
+    "subject": "INSTALLATION_TOLERANCE",
+    "predicate": "source_uses_smallest_measurement_and_subtracts_one_centimeter_for_tolerance",
+    "value": {"basis":"smallest_measurement","subtract_cm":1},
+    "applicability": {"source_scope":"door opening tolerance procedure on printed page 185"},
+    "exceptions": ["The source gives 1 cm as its stated tolerance; do not generalize it beyond this source without project verification."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":207,"printed_page":185,"region":{"x":0.05,"y":0.21,"width":0.90,"height":0.10},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0207-005",
+    "page_id": "PAGE-CPNC-2025-P0207",
+    "category": "door_finishing",
+    "subject": "WALL_WOOD_DIFFERENCES",
+    "predicate": "source_covers_differences_between_wall_and_wood_with_tapaluz_or_moldings",
+    "value": {"covering_options":["tapaluz","molduras"]},
+    "applicability": {"source_scope":"door finishing guidance on printed page 185"},
+    "exceptions": ["The source names two finishing options and does not rank them."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":207,"printed_page":185,"region":{"x":0.05,"y":0.30,"width":0.90,"height":0.05},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  }
+]

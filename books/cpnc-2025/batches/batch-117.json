@@ -1,0 +1,9 @@
+{
+  "batch_id": "BATCH-117",
+  "book_id": "cpnc-2025",
+  "purpose": "recover exact-source PDF page 207 / printed 185: standard door opening and installation guidance",
+  "pdf_pages": [
+    207
+  ],
+  "status": "READY_FOR_REVIEW"
+}
