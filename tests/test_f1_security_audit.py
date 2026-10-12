@@ -3,7 +3,6 @@ from pathlib import Path
 
 from carpinova_knowledge.report_f1 import find_security_candidates
 
-
 ROOT = Path(__file__).resolve().parents[1]
 
 
