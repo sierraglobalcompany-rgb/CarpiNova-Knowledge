@@ -4,7 +4,12 @@ import json
 from pathlib import Path
 
 from carpinova_knowledge.report_batch import REQUIRED_PAGE_FILES
-from carpinova_knowledge.report_f1 import classify_source_gaps, find_visual_findings
+from carpinova_knowledge.report_f1 import (
+    classify_source_gaps,
+    find_qr_findings,
+    find_security_candidates,
+    find_visual_findings,
+)
 
 
 def _complete_page(root: Path, pdf_page: int) -> Path:
@@ -73,3 +78,113 @@ def test_meaningful_visual_without_figure_or_exclusion_is_reported(tmp_path: Pat
             "inventory_id": "VIS-P0003-001",
         }
     ]
+
+
+def test_qr_visual_without_explicit_status_is_reported(tmp_path: Path) -> None:
+    page_dir = _complete_page(tmp_path, 4)
+    inventory = {
+        "page_id": "PAGE-CPNC-2025-P0004",
+        "pdf_page": 4,
+        "visuals": [
+            {
+                "inventory_id": "REF-P0004-001",
+                "kind": "qr_store",
+                "meaningful": False,
+            }
+        ],
+    }
+    (page_dir / "visual-inventory.json").write_text(
+        json.dumps(inventory) + "\n", encoding="utf-8"
+    )
+
+    findings = find_qr_findings(tmp_path, "cpnc-2025")
+
+    assert findings == [
+        {
+            "code": "unclassified_qr",
+            "file": str(page_dir / "visual-inventory.json"),
+            "qr_id": "REF-P0004-001",
+        }
+    ]
+
+
+def test_decoded_qr_visual_requires_payload(tmp_path: Path) -> None:
+    page_dir = _complete_page(tmp_path, 5)
+    inventory = {
+        "page_id": "PAGE-CPNC-2025-P0005",
+        "pdf_page": 5,
+        "visuals": [
+            {
+                "inventory_id": "REF-P0005-001",
+                "kind": "qr_store",
+                "meaningful": False,
+                "qr_status": "DECODED",
+            }
+        ],
+    }
+    (page_dir / "visual-inventory.json").write_text(
+        json.dumps(inventory) + "\n", encoding="utf-8"
+    )
+
+    findings = find_qr_findings(tmp_path, "cpnc-2025")
+
+    assert findings[0]["code"] == "decoded_qr_without_payload"
+
+
+def test_unresolved_qr_entity_is_classified_without_invented_payload(tmp_path: Path) -> None:
+    page_dir = _complete_page(tmp_path, 6)
+    figures_dir = page_dir / "figures"
+    figures_dir.mkdir()
+    figure = {
+        "figure_id": "FIG-CPNC-2025-P0006-001",
+        "entities": [
+            {
+                "id": "qr-reference",
+                "type": "qr_code",
+                "geometry": {"precision": "unknown"},
+                "qr_status": "UNRESOLVED",
+            }
+        ],
+    }
+    (figures_dir / "fig-001.json").write_text(json.dumps(figure) + "\n", encoding="utf-8")
+
+    assert find_qr_findings(tmp_path, "cpnc-2025") == []
+
+
+def test_security_candidate_is_reported_when_safety_meaning_disappears(tmp_path: Path) -> None:
+    page_dir = _complete_page(tmp_path, 7)
+    content = [
+        {
+            "content_id": "CONTENT-CPNC-2025-P0007-001",
+            "source_transcription": "Advertencia: desconectar la herramienta antes de ajustar.",
+            "normalized_text": "Ajuste la herramienta antes del trabajo.",
+            "learning_text": "Prepare la herramienta para el trabajo.",
+        }
+    ]
+    (page_dir / "content.json").write_text(json.dumps(content) + "\n", encoding="utf-8")
+
+    findings = find_security_candidates(tmp_path, "cpnc-2025")
+
+    assert findings == [
+        {
+            "code": "security_meaning_review",
+            "file": str(page_dir / "content.json"),
+            "content_id": "CONTENT-CPNC-2025-P0007-001",
+            "source_terms": ["advertencia", "desconectar"],
+        }
+    ]
+
+
+def test_security_candidate_is_not_reported_when_safety_term_is_preserved(tmp_path: Path) -> None:
+    page_dir = _complete_page(tmp_path, 8)
+    content = [
+        {
+            "content_id": "CONTENT-CPNC-2025-P0008-001",
+            "source_transcription": "Advertencia: desconectar la herramienta antes de ajustar.",
+            "normalized_text": "Advertencia: desconectar la herramienta antes de ajustarla.",
+            "learning_text": "Prepare el ajuste de forma segura.",
+        }
+    ]
+    (page_dir / "content.json").write_text(json.dumps(content) + "\n", encoding="utf-8")
+
+    assert find_security_candidates(tmp_path, "cpnc-2025") == []
