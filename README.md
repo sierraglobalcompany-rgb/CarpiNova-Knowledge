@@ -37,7 +37,7 @@ The build produces four deterministic consumer artifacts:
 
 `manifest.json` identifies the bundle with `scope=BOOK`, `book_id=cpnc-2025`, `knowledge_version=1.0.0-rc.1`, the canonical source SHA-256, record counts, and hashes of the generated bundle files.
 
-`work/` is local scratch space and is not committed. The source PDF is also excluded from Git.
+`work/` is local scratch space and is not committed. The source PDF is also excluded from Git. Generated bundle outputs are reproducible artifacts, not source-of-truth inputs.
 
 ## Governance
 
