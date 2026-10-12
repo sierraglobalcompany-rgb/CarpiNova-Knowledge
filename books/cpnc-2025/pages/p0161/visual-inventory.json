@@ -1,0 +1,21 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0161",
+  "pdf_page": 161,
+  "printed_page": 139,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0161-001",
+      "kind": "dual_scale_ruler_reference",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0161-001",
+      "source_region": {
+        "x": 0.14,
+        "y": 0.33,
+        "width": 0.3,
+        "height": 0.2
+      },
+      "reason": "Ilustración de regla con referencias de pulgadas y centímetros, acompañada por fracciones de pulgada; apoya la explicación de conversión y lectura de escalas."
+    }
+  ]
+}

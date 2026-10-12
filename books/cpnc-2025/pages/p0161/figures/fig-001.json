@@ -1,0 +1,157 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0161-001",
+  "page_id": "PAGE-CPNC-2025-P0161",
+  "type": "illustration",
+  "purpose": "Recrear la referencia visual que relaciona una regla de doble escala con fracciones usuales de pulgada y marcas métricas.",
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 161,
+    "printed_page": 139,
+    "region": {
+      "x": 0.14,
+      "y": 0.33,
+      "width": 0.3,
+      "height": 0.2
+    },
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
+  "entities": [
+    {
+      "id": "ruler-body",
+      "type": "dual_scale_ruler",
+      "description": "Regla amarilla rectangular con escala imperial en la zona superior y escala métrica en la inferior.",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rectangle",
+        "bbox": {
+          "x": 0.12,
+          "y": 0.08,
+          "width": 0.78,
+          "height": 0.8
+        }
+      }
+    },
+    {
+      "id": "imperial-scale",
+      "type": "inch_scale",
+      "description": "Escala superior con subdivisiones fraccionarias de pulgada y rótulo 'in'.",
+      "geometry": {
+        "precision": "approximate",
+        "bbox": {
+          "x": 0.15,
+          "y": 0.08,
+          "width": 0.75,
+          "height": 0.42
+        }
+      }
+    },
+    {
+      "id": "metric-scale",
+      "type": "centimeter_scale",
+      "description": "Escala inferior con marcas métricas y rótulo 'cm'.",
+      "geometry": {
+        "precision": "approximate",
+        "bbox": {
+          "x": 0.15,
+          "y": 0.5,
+          "width": 0.75,
+          "height": 0.38
+        }
+      }
+    },
+    {
+      "id": "fraction-list",
+      "type": "fraction_reference_list",
+      "description": "Lista lateral de fracciones: 1/8, 1/4, 5/16, 3/8, 1/2, 5/8, 3/4, 7/8 y 1 pulgada.",
+      "geometry": {
+        "precision": "approximate",
+        "bbox": {
+          "x": 0.0,
+          "y": 0.05,
+          "width": 0.22,
+          "height": 0.9
+        }
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "from": "fraction-list",
+      "to": "imperial-scale",
+      "type": "explains_markings"
+    },
+    {
+      "from": "imperial-scale",
+      "to": "metric-scale",
+      "type": "same_physical_ruler"
+    }
+  ],
+  "measurements": [],
+  "annotations": [
+    {
+      "target_entity_id": "imperial-scale",
+      "text": "in"
+    },
+    {
+      "target_entity_id": "metric-scale",
+      "text": "cm"
+    },
+    {
+      "target_entity_id": "fraction-list",
+      "text": "1/8”, 1/4”, 5/16”, 3/8”, 1/2”, 5/8”, 3/4”, 7/8”, 1”"
+    }
+  ],
+  "layers": [
+    {
+      "id": "ruler",
+      "description": "Cuerpo de regla y marcas de ambas escalas."
+    },
+    {
+      "id": "labels",
+      "description": "Rótulos y lista de fracciones visibles en la fuente."
+    }
+  ],
+  "camera": {
+    "view": "orthographic_reference",
+    "projection": "instructional_reference"
+  },
+  "visual_style": {
+    "background": "white page",
+    "ruler": "yellow reference image",
+    "labels": "black/red printed scale markings"
+  },
+  "educational_sequence": [
+    {
+      "step": 1,
+      "show_entity_ids": [
+        "fraction-list",
+        "imperial-scale"
+      ],
+      "instruction": "Relacionar las fracciones de pulgada con las subdivisiones de la escala imperial."
+    },
+    {
+      "step": 2,
+      "show_entity_ids": [
+        "imperial-scale",
+        "metric-scale"
+      ],
+      "instruction": "Mostrar que la misma referencia visual contiene escala imperial y métrica."
+    }
+  ],
+  "reconstruction": {
+    "preferred_renderer": "svg",
+    "deterministic_required": true,
+    "generative_image_allowed": false
+  },
+  "accessibility": {
+    "summary": "Regla de doble escala con fracciones usuales de pulgada y referencias en pulgadas y centímetros."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Preservar la función didáctica de doble escala y las fracciones; no inferir dimensiones físicas de la regla."
+  }
+}

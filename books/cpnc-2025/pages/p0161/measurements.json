@@ -1,0 +1,158 @@
+[
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0161-001",
+    "page_id": "PAGE-CPNC-2025-P0161",
+    "kind": "inch_to_mm_factor",
+    "value": 25.4,
+    "unit": "mm/in",
+    "applies_to": "conversion factor stated by source for inches to millimeters",
+    "status": "VISUALLY_VERIFIED",
+    "confidence": 0.99,
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 161,
+      "printed_page": 139,
+      "region": {
+        "x": 0.05,
+        "y": 0.14,
+        "width": 0.9,
+        "height": 0.16
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0161-002",
+    "page_id": "PAGE-CPNC-2025-P0161",
+    "kind": "conversion_example_result",
+    "value": 6.35,
+    "unit": "mm",
+    "applies_to": "displayed example (1 ÷ 4) × 25.4",
+    "status": "VISUALLY_VERIFIED",
+    "confidence": 0.99,
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 161,
+      "printed_page": 139,
+      "region": {
+        "x": 0.05,
+        "y": 0.2,
+        "width": 0.9,
+        "height": 0.1
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0161-003",
+    "page_id": "PAGE-CPNC-2025-P0161",
+    "kind": "square_right_angle",
+    "value": 90,
+    "unit": "deg",
+    "applies_to": "right angle provided by square according to source",
+    "status": "VISUALLY_VERIFIED",
+    "confidence": 0.99,
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 161,
+      "printed_page": 139,
+      "region": {
+        "x": 0.05,
+        "y": 0.64,
+        "width": 0.9,
+        "height": 0.22
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0161-004",
+    "page_id": "PAGE-CPNC-2025-P0161",
+    "kind": "square_secondary_trace_angle",
+    "value": 45,
+    "unit": "deg",
+    "applies_to": "angle the source says some squares can trace",
+    "status": "VISUALLY_VERIFIED",
+    "confidence": 0.99,
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 161,
+      "printed_page": 139,
+      "region": {
+        "x": 0.05,
+        "y": 0.64,
+        "width": 0.9,
+        "height": 0.22
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0161-005",
+    "page_id": "PAGE-CPNC-2025-P0161",
+    "kind": "rafter_square_angle_range_min",
+    "value": 0,
+    "unit": "deg",
+    "applies_to": "lower bound of Rafter square tracing range stated by source",
+    "status": "VISUALLY_VERIFIED",
+    "confidence": 0.99,
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 161,
+      "printed_page": 139,
+      "region": {
+        "x": 0.05,
+        "y": 0.86,
+        "width": 0.9,
+        "height": 0.12
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    }
+  },
+  {
+    "measurement_id": "MEAS-CPNC-2025-P0161-006",
+    "page_id": "PAGE-CPNC-2025-P0161",
+    "kind": "rafter_square_angle_range_max",
+    "value": 90,
+    "unit": "deg",
+    "applies_to": "upper bound of Rafter square tracing range stated by source",
+    "status": "VISUALLY_VERIFIED",
+    "confidence": 0.99,
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 161,
+      "printed_page": 139,
+      "region": {
+        "x": 0.05,
+        "y": 0.86,
+        "width": 0.9,
+        "height": 0.12
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    }
+  }
+]

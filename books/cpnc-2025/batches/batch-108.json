@@ -1,0 +1,10 @@
+{
+  "batch_id": "BATCH-108",
+  "book_id": "cpnc-2025",
+  "purpose": "f1-recover-missing-pages-161-162-conversion-squares-level",
+  "pdf_pages": [
+    161,
+    162
+  ],
+  "status": "EXTRACTED"
+}
