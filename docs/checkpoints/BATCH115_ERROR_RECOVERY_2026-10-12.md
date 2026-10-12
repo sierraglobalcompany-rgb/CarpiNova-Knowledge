@@ -1,0 +1,1 @@
+This temporary recovery marker is part of an interrupted implementation sequence and must be absent from the final BATCH-115 candidate tree.
