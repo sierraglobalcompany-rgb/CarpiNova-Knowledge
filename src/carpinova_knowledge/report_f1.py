@@ -6,6 +6,8 @@ from pathlib import Path
 from typing import Any
 
 from .report_batch import REQUIRED_PAGE_FILES
+from .report_coverage import build_coverage_report
+from .validate_repo import validate_repository
 
 _SOURCE_GAP_RE = re.compile(r"source-gap-p(\d{4})\.md$")
 _SECURITY_TERMS = (
@@ -166,3 +168,49 @@ def find_security_candidates(root: Path, book_id: str) -> list[dict[str, Any]]:
             )
 
     return findings
+
+
+def build_f1_report(root: Path, book_id: str) -> dict[str, Any]:
+    root = Path(root)
+    coverage = build_coverage_report(root, book_id)
+    validation = validate_repository(root)
+    source_gaps = classify_source_gaps(root, book_id)
+    visual_findings = find_visual_findings(root, book_id)
+    qr_findings = find_qr_findings(root, book_id)
+    security_candidates = find_security_candidates(root, book_id)
+
+    automatic_blockers: list[dict[str, Any]] = []
+    if not coverage["complete"]:
+        automatic_blockers.append(
+            {
+                "code": "coverage_incomplete",
+                "pending_pdf_pages": coverage["pending_pdf_pages"],
+                "duplicate_batch_pages": coverage["duplicate_batch_pages"],
+            }
+        )
+    if not validation["valid"]:
+        automatic_blockers.append(
+            {
+                "code": "repository_validation_failed",
+                "error_count": validation["error_count"],
+            }
+        )
+    automatic_blockers.extend(
+        {"code": "open_source_gap", **gap}
+        for gap in source_gaps
+        if gap["status"] == "OPEN"
+    )
+    automatic_blockers.extend(visual_findings)
+    automatic_blockers.extend(qr_findings)
+
+    return {
+        "book_id": book_id,
+        "coverage": coverage,
+        "validation": validation,
+        "source_gaps": source_gaps,
+        "visual_findings": visual_findings,
+        "qr_findings": qr_findings,
+        "security_candidates": security_candidates,
+        "automatic_blockers": automatic_blockers,
+        "automatic_gate": "GO" if not automatic_blockers else "NO_GO",
+    }
