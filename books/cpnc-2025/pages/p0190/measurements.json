@@ -1,0 +1,3 @@
+[
+  {"measurement_id":"MEAS-CPNC-2025-P0190-001","page_id":"PAGE-CPNC-2025-P0190","kind":"door_frame_and_leaf_deduction","value":1,"unit":"cm","applies_to":"amount the source instructs subtracting from the smallest vane measurement before sizing frame and door","status":"VISUALLY_VERIFIED","confidence":0.99,"source":{"book_id":"cpnc-2025","pdf_page":190,"printed_page":168,"region":{"x":0.05,"y":0.1,"width":0.9,"height":0.22},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}}
+]
