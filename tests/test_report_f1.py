@@ -5,11 +5,14 @@ from pathlib import Path
 
 from carpinova_knowledge.report_batch import REQUIRED_PAGE_FILES
 from carpinova_knowledge.report_f1 import (
+    build_f1_report,
     classify_source_gaps,
     find_qr_findings,
     find_security_candidates,
     find_visual_findings,
 )
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def _complete_page(root: Path, pdf_page: int) -> Path:
@@ -188,3 +191,12 @@ def test_security_candidate_is_not_reported_when_safety_term_is_preserved(tmp_pa
     (page_dir / "content.json").write_text(json.dumps(content) + "\n", encoding="utf-8")
 
     assert find_security_candidates(tmp_path, "cpnc-2025") == []
+
+
+def test_current_f1_has_no_automatic_audit_blockers() -> None:
+    report = build_f1_report(ROOT, "cpnc-2025")
+
+    assert report["coverage"]["total_pages"] == 295
+    assert report["coverage"]["complete"] is True
+    assert report["validation"]["valid"] is True
+    assert report["automatic_blockers"] == []
