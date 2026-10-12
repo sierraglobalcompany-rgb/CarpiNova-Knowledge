@@ -1,0 +1,11 @@
+[
+  {
+    "rule_id":"RULE-CPNC-2025-P0158-001","page_id":"PAGE-CPNC-2025-P0158","category":"safety","subject":"TABLE_SAW_HAND_DISTANCE","predicate":"source_requires_minimum_hand_distance_from_blade","value":5,"unit":"cm","applicability":{"source_scope":"table-saw safe-use guidance on printed page 136"},"exceptions":[],"sources":[{"book_id":"cpnc-2025","pdf_page":158,"printed_page":136,"region":{"x":0.02,"y":0.08,"width":0.96,"height":0.14},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],"status":"CANDIDATE"
+  },
+  {
+    "rule_id":"RULE-CPNC-2025-P0158-002","page_id":"PAGE-CPNC-2025-P0158","category":"safety","subject":"TABLE_SAW_SAFETY_DEVICES","predicate":"source_requires_guard_and_splitter_to_remain_installed","value":{"devices":["blade_guard","splitter"]},"unit":null,"applicability":{"source_scope":"table-saw kickback and guarding guidance on printed page 136"},"exceptions":[],"sources":[{"book_id":"cpnc-2025","pdf_page":158,"printed_page":136,"region":{"x":0.02,"y":0.2,"width":0.96,"height":0.28},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],"status":"CANDIDATE"
+  },
+  {
+    "rule_id":"RULE-CPNC-2025-P0158-003","page_id":"PAGE-CPNC-2025-P0158","category":"safety","subject":"TABLE_SAW_CROSSCUT","predicate":"source_forbids_using_lateral_rip_guide_as_support_during_crosscut","value":{"use":"miter_guide","avoid":"lateral_rip_guide_support"},"unit":null,"applicability":{"source_scope":"crosscut guidance on printed page 136"},"exceptions":[],"sources":[{"book_id":"cpnc-2025","pdf_page":158,"printed_page":136,"region":{"x":0.02,"y":0.72,"width":0.96,"height":0.25},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],"status":"CANDIDATE"
+  }
+]

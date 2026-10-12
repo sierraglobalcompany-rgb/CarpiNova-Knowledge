@@ -1,0 +1,41 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0253-001",
+    "page_id": "PAGE-CPNC-2025-P0253",
+    "content_type": "checklist",
+    "source_transcription": "¿PARA QUÉ SIRVE LA ORDEN DE PRODUCCIÓN?\n\nDISEÑO DEL AMBIENTE\nANTES\nDESPUÉS\n\nLISTA DE MATERIALES\n\nOBSERVACIONES Y CARACTERÍSTICAS DE INSTALACIÓN\n\nOBSERVACIONES Y CARACTERÍSTICAS DE INSTALACIÓN\nMURO\n\nLISTA DE CHEQUEO DE ENTREGA\nANTICIPO\nAVANCES\n\nENCUESTA DE SATISFACCIÓN\nPUNTUALIDAD\nLIMPIEZA\nINSTALACIÓN\n\nDATOS DE LOS OPERARIOS\n\nLa orden de producción evita confusiones y garantiza una experiencia profesional.",
+    "normalized_text": "La infografía resume para qué sirve una orden de producción mediante bloques visuales: diseño del ambiente con comparación antes/después, lista de materiales, observaciones y características de instalación, lista de chequeo de entrega con anticipo y avances, encuesta de satisfacción con puntualidad, limpieza e instalación, y datos de los operarios. La fuente muestra dos veces el encabezado «OBSERVACIONES Y CARACTERÍSTICAS DE INSTALACIÓN»; la duplicación se conserva como evidencia visual y no se corrige por inferencia.",
+    "learning_text": "Usa la orden de producción como una ficha única que reúna diseño, materiales, condiciones de instalación, control de entrega, seguimiento del pago/avance, satisfacción del cliente y datos del personal. La infografía refuerza que documentar estos elementos reduce confusiones y hace más profesional la experiencia.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0253-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 253,
+      "printed_page": 231,
+      "region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "paso-5",
+      "orden-de-produccion",
+      "diseno-del-ambiente",
+      "lista-de-materiales",
+      "instalacion",
+      "check-list",
+      "encuesta-de-satisfaccion",
+      "operarios",
+      "infografia",
+      "source-anomaly"
+    ]
+  }
+]

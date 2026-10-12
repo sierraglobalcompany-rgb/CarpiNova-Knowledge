@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0226-001",
+    "page_id": "PAGE-CPNC-2025-P0226",
+    "content_type": "reference",
+    "source_transcription": "CONTINUACIÓN... MEDIDAS ESTÁNDAR CENTRO T.V. Normalmente no hay medidas estándar en la modulación y largo del centro de entretenimiento además de la altura que ya vimos. Se ubica con chaflán. El tablón solo carga el peso T.V y alguna repisa si desea. El T.V se conecta por medio de perforaciones hechas con broca. Se saca la caja eléctrica del muro y se ubica en el mueble. Los muebles que acompañan el centro de T.V no tienen medida estándar tampoco, las ubicación van según la necesidad del usuario.",
+    "normalized_text": "La fuente aclara que la modulación y el largo del centro de entretenimiento no tienen una medida estándar y dependen de la necesidad del usuario. El tablón recibe el televisor y, si se desea, alguna repisa; el cableado se conduce mediante perforaciones y la caja eléctrica puede trasladarse desde el muro al mueble. También muestra una fijación mediante chaflán.",
+    "learning_text": "Diseña el largo y la modulación según el espacio y la necesidad del usuario. Prevé antes del montaje el paso del cableado, la ubicación de la caja eléctrica y la forma de fijación del tablón.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0226-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":226,"printed_page":204,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["centro-tv","modulacion","tablon","cableado","caja-electrica","chaflan"]
+  }
+]

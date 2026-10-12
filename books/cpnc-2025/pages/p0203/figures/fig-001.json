@@ -1,0 +1,20 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0203-001",
+  "page_id": "PAGE-CPNC-2025-P0203",
+  "type": "dimensioned_drawing",
+  "purpose": "Recrear la referencia visual de distribución vertical de entrepaños y tubos colgaderos de un clóset.",
+  "source": {"book_id":"cpnc-2025","pdf_page":203,"printed_page":181,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"closet","type":"closet","geometry":{"precision":"approximate"}},
+    {"id":"overhead-shelf","type":"maletero_shelf","geometry":{"precision":"approximate"}},
+    {"id":"upper-rod","type":"hanger_rod","geometry":{"precision":"approximate"}},
+    {"id":"lower-rod","type":"hanger_rod","geometry":{"precision":"approximate"}},
+    {"id":"continuous-shelf","type":"continuous_shelf","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"upper-rod","to":"lower-rod","type":"vertical_spacing"},{"from":"lower-rod","to":"closet","type":"floor_clearance_reference"},{"from":"overhead-shelf","to":"closet","type":"defines_upper_storage_zone"}],
+  "measurements": ["MEAS-CPNC-2025-P0203-001","MEAS-CPNC-2025-P0203-002","MEAS-CPNC-2025-P0203-003"],
+  "annotations": [{"target_entity_id":"overhead-shelf","text":"Entrepaño del maletero"},{"target_entity_id":"continuous-shelf","text":"Entrepaño continuo para ropa doblada"}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Referencia ilustrada de clóset con entrepaños y dos tubos colgaderos, acompañada de cotas verticales."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Las cotas se estructuran según el texto y las marcas visibles de la fuente; se conserva la mezcla original de unidades cm y m."}
+}

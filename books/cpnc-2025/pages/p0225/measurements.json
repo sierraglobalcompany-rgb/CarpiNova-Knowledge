@@ -1,0 +1,4 @@
+[
+  {"measurement_id":"MEAS-CPNC-2025-P0225-001","page_id":"PAGE-CPNC-2025-P0225","kind":"tv_height_living_room_sofa_source_reference","value":150,"unit":"cm","applies_to":"televisor en sala visto desde el sofá","status":"VISUALLY_VERIFIED","confidence":0.99,"source":{"book_id":"cpnc-2025","pdf_page":225,"printed_page":203,"region":{"x":0.04,"y":0.37,"width":0.92,"height":0.59},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}},
+  {"measurement_id":"MEAS-CPNC-2025-P0225-002","page_id":"PAGE-CPNC-2025-P0225","kind":"tv_height_bedroom_bed_source_reference","value":120,"unit":"cm","applies_to":"televisor en cuarto visto desde la cama","status":"VISUALLY_VERIFIED","confidence":0.99,"source":{"book_id":"cpnc-2025","pdf_page":225,"printed_page":203,"region":{"x":0.04,"y":0.37,"width":0.92,"height":0.59},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}}
+]

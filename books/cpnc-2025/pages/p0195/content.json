@@ -1,0 +1,172 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0195-001",
+    "page_id": "PAGE-CPNC-2025-P0195",
+    "content_type": "reference",
+    "source_transcription": "Medidas estándar del mobiliario\nEl mobiliario también tiene medidas estandarizadas que permiten un correcto funcionamiento tanto desde el punto de vista ergonómico como funcional. La ergonomía garantiza la adecuada posición del cuerpo humano al utilizar el mueble, mientras que la funcionalidad asegura que cumpla correctamente con su propósito.",
+    "normalized_text": "La fuente introduce medidas estandarizadas del mobiliario como referencias para funcionamiento ergonómico y funcional.",
+    "learning_text": "Usa las medidas del libro como referencias de diseño y contrástalas con el proyecto real, los herrajes y las especificaciones del fabricante.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0195-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 195,
+      "printed_page": 173,
+      "region": {
+        "x": 0.05,
+        "y": 0.08,
+        "width": 0.9,
+        "height": 0.12
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "medidas-estandar",
+      "ergonomia",
+      "funcionalidad"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0195-002",
+    "page_id": "PAGE-CPNC-2025-P0195",
+    "content_type": "construction_pattern",
+    "source_transcription": "Cocina\nEmpezamos con la cocina, que se construye de abajo hacia arriba. En la parte inferior necesita un apoyo, el cual puede ser un zócalo construido en obra (también llamado rebanco, mortero o pollo), o puede utilizar patas niveladoras, según la elección del fabricante. Este apoyo tiene una altura estándar de 10 cm y una profundidad de 54 cm.\nSobre este apoyo se monta el mueble bajo, compuesto por un piso de tablero aglomerado RH, laterales, un amarre trasero y un amarre delantero. La estructura interna es variable, dependiendo de los módulos: puede tener entrepaños, gavetas con correderas o puertas batientes.",
+    "normalized_text": "La cocina se plantea de abajo hacia arriba. El apoyo inferior puede ser un zócalo construido en obra o patas niveladoras; la fuente da 10 cm de altura y 54 cm de profundidad para ese apoyo y describe la composición básica del mueble bajo.",
+    "learning_text": "Define primero el sistema de apoyo y después arma el módulo bajo. Conserva 10 × 54 cm como referencia de esta fuente y verifica la solución constructiva elegida.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0195-002"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 195,
+      "printed_page": 173,
+      "region": {
+        "x": 0.05,
+        "y": 0.2,
+        "width": 0.9,
+        "height": 0.2
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "cocina",
+      "apoyo",
+      "zocalo",
+      "patas-niveladoras",
+      "mueble-bajo"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0195-003",
+    "page_id": "PAGE-CPNC-2025-P0195",
+    "content_type": "dimension",
+    "source_transcription": "La altura estándar del mueble bajo es de 78 cm. Sumando los 10 cm del apoyo, tenemos 88 cm, a los que se le agregan 2 cm de espesor del mesón o encimera, para un total de 90 cm de altura desde el suelo hasta la superficie del mesón.\nLa profundidad del mueble bajo debe ser de 57 cm más el espesor de la puerta (1.5 cm), para un total de 58.5 cm. Por lo tanto, el mesón debe tener una profundidad total de 60 cm.",
+    "normalized_text": "La fuente descompone la altura total de trabajo en 78 cm de mueble bajo, 10 cm de apoyo y 2 cm de mesón para totalizar 90 cm. Para profundidad indica 57 cm de cuerpo más 1.5 cm de puerta, total 58.5 cm, y un mesón de 60 cm.",
+    "learning_text": "Mantén separados cuerpo, apoyo, frente y mesón para no mezclar cotas. Antes de fabricar, valida espesores reales y accesorios del proyecto.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0195-003"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 195,
+      "printed_page": 173,
+      "region": {
+        "x": 0.05,
+        "y": 0.4,
+        "width": 0.9,
+        "height": 0.14
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "cocina",
+      "mueble-bajo",
+      "altura",
+      "profundidad",
+      "meson"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0195-004",
+    "page_id": "PAGE-CPNC-2025-P0195",
+    "content_type": "dimension",
+    "source_transcription": "A continuación, viene el salpicadero, que es el espacio entre el mueble bajo y el mueble alto. Este tiene una altura estándar de 61 cm.\nEl mueble alto debe tener una altura mínima de 60 cm, siendo 70 cm lo ideal. Puede incluso llegar hasta el techo, para evitar espacios donde se acumulen insectos, grasa o polvo. La profundidad del mueble alto debe ser de 35 cm como máximo. Aunque existen loceros que requieren mínimo 30 cm, no se recomienda exceder los 35 cm, ya que el mueble quedaría muy cerca del rostro de quien trabaja en la cocina.",
+    "normalized_text": "La fuente presenta 61 cm para el salpicadero, 60 cm como altura mínima y 70 cm como altura ideal del mueble alto, y limita su profundidad a 35 cm; menciona loceros que requieren al menos 30 cm.",
+    "learning_text": "Verifica la ergonomía y el equipo real antes de fijar el mueble alto. Las cotas son referencias explícitas del libro, no tolerancias universales.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0195-004"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 195,
+      "printed_page": 173,
+      "region": {
+        "x": 0.05,
+        "y": 0.54,
+        "width": 0.9,
+        "height": 0.14
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "cocina",
+      "salpicadero",
+      "mueble-alto",
+      "altura",
+      "profundidad",
+      "locero"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0195-005",
+    "page_id": "PAGE-CPNC-2025-P0195",
+    "content_type": "example",
+    "source_transcription": "Modulación en cocinas\nAdemás de las medidas, se debe tener en cuenta la modulación, es decir, la distribución funcional del espacio de la cocina:\nZona de refrigeración: 100 cm (1 metro)\nZona de cocción: 61 cm\nZona de lavado: 65 cm\n\nTambién debe incluirse una zona de almacenamiento, como una gavetera con tres cajones: cubertero, cucharero y Ollero. Si el espacio lo permite, se pueden agregar alacenas (de 45 cm) o torres para hornos (de 80 cm).\nEjemplo de modulación:\nSupongamos que tienes un espacio de 2.80 m. Si destinas 100 cm para refrigeración, te quedan 180 cm. De estos, 65 cm para lavado y 65 cm para cocción suman 130 cm. Te quedan 50 cm disponibles, espacio ideal para una cajonera de utensilios.",
+    "normalized_text": "La fuente propone modular la cocina por zonas: 100 cm para refrigeración, 61 cm para cocción y 65 cm para lavado. También menciona alacenas de 45 cm y torres de horno de 80 cm. Su ejemplo parte de 2.80 m y deja 50 cm para una cajonera después de asignar las zonas descritas.",
+    "learning_text": "Distribuye primero las funciones principales y comprueba que la suma cierre dentro del espacio real. El ejemplo sirve para entender la lógica de modulación, no como plantilla obligatoria.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0195-005"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 195,
+      "printed_page": 173,
+      "region": {
+        "x": 0.05,
+        "y": 0.69,
+        "width": 0.9,
+        "height": 0.27
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "cocina",
+      "modulacion",
+      "refrigeracion",
+      "coccion",
+      "lavado",
+      "almacenamiento"
+    ]
+  }
+]

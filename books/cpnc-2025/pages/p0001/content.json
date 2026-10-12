@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0001-001",
+    "page_id": "PAGE-CPNC-2025-P0001",
+    "content_type": "reference",
+    "source_transcription": "CARPINTERÍA PARA NO CARPINTEROS\nCamilo Calle",
+    "normalized_text": "Carpintería para no Carpinteros — Camilo Calle.",
+    "learning_text": "El libro se titula “Carpintería para no Carpinteros” y su autor es Camilo Calle.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0001-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":1,"printed_page":null,"region":{"x":0.09,"y":0.06,"width":0.65,"height":0.35},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["portada","título","autor"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0001-002",
+    "page_id": "PAGE-CPNC-2025-P0001",
+    "content_type": "reference",
+    "source_transcription": "Hágalo en casa",
+    "normalized_text": "Hágalo en casa.",
+    "learning_text": "La portada también muestra la identificación “Hágalo en casa”.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0001-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":1,"printed_page":null,"region":{"x":0.08,"y":0.89,"width":0.37,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["portada","hágalo-en-casa"]
+  }
+]

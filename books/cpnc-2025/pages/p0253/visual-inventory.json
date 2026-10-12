@@ -1,0 +1,21 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0253",
+  "pdf_page": 253,
+  "printed_page": 231,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0253-001",
+      "kind": "production_order_summary_infographic",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0253-001",
+      "source_region": {
+        "x": 0.04,
+        "y": 0.05,
+        "width": 0.92,
+        "height": 0.9
+      },
+      "reason": "Infografía educativa que resume visualmente los componentes y usos de una orden de producción: diseño, materiales, instalación, entrega, satisfacción y operarios."
+    }
+  ]
+}

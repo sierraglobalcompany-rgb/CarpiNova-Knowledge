@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0167",
+  "pdf_page": 167,
+  "printed_page": 145,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0167-001",
+      "kind": "full_page_product_advertisement",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0167-001",
+      "source_region": {"x":0.0,"y":0.0,"width":1.0,"height":1.0},
+      "reason": "Página publicitaria completa de POWER FIX con aplicación del producto, envases, claims, materiales, colores y bloque QR de asesoría."
+    }
+  ]
+}

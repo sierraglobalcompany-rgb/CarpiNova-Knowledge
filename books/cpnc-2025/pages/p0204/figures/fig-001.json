@@ -1,0 +1,19 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0204-001",
+  "page_id": "PAGE-CPNC-2025-P0204",
+  "type": "dimensioned_drawing",
+  "purpose": "Recrear la referencia del paral y las configuraciones de maletero interno e independiente de un clóset.",
+  "source": {"book_id":"cpnc-2025","pdf_page":204,"printed_page":182,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"stile","type":"closet_stile_paral","geometry":{"precision":"approximate"}},
+    {"id":"closet-internal-overhead","type":"internal_overhead_compartment","geometry":{"precision":"approximate"}},
+    {"id":"closet-external-overhead","type":"independent_overhead_compartment","geometry":{"precision":"approximate"}},
+    {"id":"closet-body","type":"closet","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"stile","to":"closet-internal-overhead","type":"supports"},{"from":"closet-internal-overhead","to":"closet-body","type":"integrated_configuration"},{"from":"closet-external-overhead","to":"closet-body","type":"independent_configuration"}],
+  "measurements": ["MEAS-CPNC-2025-P0204-001","MEAS-CPNC-2025-P0204-002","MEAS-CPNC-2025-P0204-003","MEAS-CPNC-2025-P0204-004"],
+  "annotations": [{"target_entity_id":"stile","text":"PARAL 190 cm x 45 cm"},{"target_entity_id":"closet-internal-overhead","text":"maletero interno"},{"target_entity_id":"closet-external-overhead","text":"maletero independiente (externo)"}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Referencia ilustrada de un paral y dos configuraciones de maletero, interno e independiente."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La fuente presenta 190 cm x 45 cm junto a PARAL sin etiquetar orientación; se conservan como dimensión 1 y dimensión 2 para no reinterpretar la geometría."}
+}

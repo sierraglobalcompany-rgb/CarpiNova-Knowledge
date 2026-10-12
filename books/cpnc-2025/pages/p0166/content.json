@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0166-001",
+    "page_id": "PAGE-CPNC-2025-P0166",
+    "content_type": "reference",
+    "source_transcription": "IMÁGENES DE REFERENCIA HERRAMIENTA MANUAL PARA INSTALACION. BROCA 1/8 MURO. BROCA 1/4 MURO. BROCA 5/16 MURO. BROCAS SDS ROTO MARTILLO. NIVEL. PISTOLA CALAFATEO. MARTILLO. MANGO DE SIERRA. BISTURI. CINTA AISLANTE. CINTA ENMASCARAR. ESPATULA. ESTUCO PLASTICO. ALICATE PELA CABLE. SET DE FORMONES. TIJERAS. FALSA ESCUADRA. JUEGO DE LLAVES. LIMA. GAFAS DE PROTECCION. CINTURON. TAPAOIDOS. CARETA.",
+    "normalized_text": "La página reúne imágenes de referencia de herramientas y elementos para instalación: brocas de muro de 1/8, 1/4 y 5/16; brocas SDS para roto martillo; nivel; pistola de calafateo; martillo; el elemento rotulado por la extracción como 'MANGO DE SIERRA'; bisturí; cinta aislante; cinta de enmascarar; espátula; estuco plástico; alicate pelacable; formones; tijeras; falsa escuadra; juego de llaves; lima; gafas de protección; cinturón; tapaoídos y careta.",
+    "learning_text": "Usa esta lámina como inventario visual de referencia para reconocer herramientas y elementos habituales de instalación. Se conserva literalmente el rótulo 'MANGO DE SIERRA' de la extracción disponible y no se corrige por inferencia.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0166-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":166,"printed_page":144,"region":{"x":0.18,"y":0.03,"width":0.67,"height":0.94},"extraction":{"method":"visual","confidence":0.96,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["instalacion","herramienta-manual","brocas","nivel","martillo","calafateo","bisturi","cintas","espatula","alicate","formones","tijeras","falsa-escuadra","llaves","lima","epp"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0166-002",
+    "page_id": "PAGE-CPNC-2025-P0166",
+    "content_type": "reference",
+    "source_transcription": "POWER FIX. INSTALACIONES Y MONTAJES EXTRA FUERTES, FACIL, RAPIDAS Y RENTABLES. Gran capacidad de carga. Resistente a golpes y vibraciones. Fija, sella en interior y exterior. Resistente al moho. Agarre inmediato y curado extrarápido. POWER FIX de Quilosa es un adhesivo de alto rendimiento para una fijación rápida, segura y duradera en múltiples materiales. Ideal para carpinteros, instaladores y profesionales. Blanco Gris Crema Marrón Negro TRANSPARENTE*. Ideal para espejos y vidrios*. METAL. MADERA CONCRETO CERÁMICA VIDRIO. POLIESTIRENO PLÁSTICO PIEDRA. Asesoría Personalizada.",
+    "normalized_text": "La fuente incluye una referencia publicitaria de POWER FIX de Quilosa. El anuncio atribuye al producto capacidad de carga, resistencia a golpes, vibraciones y moho, uso interior/exterior, agarre inmediato y curado extrarrápido; además enumera colores y materiales de aplicación. Estas son afirmaciones publicitarias de la fuente y no constituyen una verificación independiente de desempeño.",
+    "learning_text": "Separa la información comercial de las reglas técnicas: esta página presenta afirmaciones promocionales del fabricante o anunciante. Antes de usar el producto en un proyecto, la aplicación y compatibilidad deben comprobarse con la ficha técnica vigente correspondiente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0166-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":166,"printed_page":144,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"text","confidence":0.97,"review_status":"EXTRACTED"}},
+    "tags": ["power-fix","quilosa","adhesivo","publicidad","instalacion","materiales"]
+  }
+]

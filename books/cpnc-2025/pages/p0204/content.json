@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0204-001",
+    "page_id": "PAGE-CPNC-2025-P0204",
+    "content_type": "construction_pattern",
+    "source_transcription": "MEDIDAS para el DESPIECE DE CLOSET. La clave para despiezar es reconocer cada pieza que compone por estandarización el mobiliario y su medida principal. PARAL 190 cm x45cm. Es por lo primero que se empieza, es necesario en los closet, ya que sostiene el maletero.",
+    "normalized_text": "Para iniciar el despiece del clóset, la fuente propone reconocer cada pieza y su medida principal. Presenta el paral como una de las primeras piezas y muestra para el ejemplo una dimensión de 190 cm × 45 cm; además indica que el paral sostiene el maletero.",
+    "learning_text": "Antes de cortar, identifica cada pieza del clóset y registra su medida principal. Comienza por los elementos estructurales del ejemplo, como los parales, y relaciona cada pieza con la función que cumple.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0204-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":204,"printed_page":182,"region":{"x":0.04,"y":0.05,"width":0.92,"height":0.48},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["closet","despiece","paral","estructura"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0204-002",
+    "page_id": "PAGE-CPNC-2025-P0204",
+    "content_type": "reference",
+    "source_transcription": "MALETERO. El maletero puede ser independiente, es decir, las puertas del closet pueden ir de piso a techo, pero también pueden llegar hasta el maletero y este tener puertas independientes. El largo del maletero, dependerá del largo del que se realice el closet. maletero interno. maletero independiente (externo). Maletero interno: profundidad 45cm. Maletero externo 60cm.",
+    "normalized_text": "El maletero puede integrarse al clóset con puertas de piso a techo o resolverse como un módulo independiente con puertas propias. Su largo depende del largo del clóset. La fuente muestra 45 cm de profundidad para el maletero interno y 60 cm para el maletero externo.",
+    "learning_text": "Decide si el maletero será interno o independiente antes de definir las puertas. Ajusta su largo al clóset y conserva la profundidad correspondiente al tipo mostrado por la fuente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0204-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":204,"printed_page":182,"region":{"x":0.04,"y":0.44,"width":0.92,"height":0.51},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["closet","maletero","maletero-interno","maletero-externo","profundidad"]
+  }
+]

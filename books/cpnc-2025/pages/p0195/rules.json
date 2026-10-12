@@ -1,0 +1,98 @@
+[
+  {
+    "rule_id": "RULE-CPNC-2025-P0195-001",
+    "page_id": "PAGE-CPNC-2025-P0195",
+    "category": "kitchen_construction",
+    "subject": "LOWER_SUPPORT_OPTIONS",
+    "predicate": "source_states_kitchen_is_built_bottom_up_and_lower_support_may_be_masonry_plinth_or_leveling_legs",
+    "value": {"sequence":"bottom_up","support_options":["built masonry plinth/rebanco/mortero/pollo","leveling legs"]},
+    "applicability": {"source_scope":"kitchen construction guidance on printed page 173"},
+    "exceptions": ["Support system depends on manufacturer choice; the source does not define structural design criteria."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":195,"printed_page":173,"region":{"x":0.05,"y":0.2,"width":0.9,"height":0.2},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0195-002",
+    "page_id": "PAGE-CPNC-2025-P0195",
+    "category": "kitchen_dimension",
+    "subject": "LOWER_SUPPORT_REFERENCE",
+    "predicate": "source_gives_standard_reference_dimensions_for_lower_support",
+    "value": {"height_cm":10,"depth_cm":54},
+    "applicability": {"source_scope":"kitchen support on printed page 173"},
+    "exceptions": ["Treat as source-specific standard reference, not a universal requirement."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":195,"printed_page":173,"region":{"x":0.05,"y":0.2,"width":0.9,"height":0.2},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0195-003",
+    "page_id": "PAGE-CPNC-2025-P0195",
+    "category": "kitchen_dimension",
+    "subject": "LOWER_CABINET_AND_COUNTER_HEIGHT",
+    "predicate": "source_builds_floor_to_counter_height_from_base_cabinet_support_and_countertop_thickness",
+    "value": {"base_cabinet_cm":78,"support_cm":10,"subtotal_cm":88,"countertop_thickness_cm":2,"total_cm":90},
+    "applicability": {"source_scope":"lower kitchen height arithmetic on printed page 173"},
+    "exceptions": ["Values are source references; verify actual countertop and project conditions."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":195,"printed_page":173,"region":{"x":0.05,"y":0.4,"width":0.9,"height":0.14},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0195-004",
+    "page_id": "PAGE-CPNC-2025-P0195",
+    "category": "kitchen_dimension",
+    "subject": "LOWER_CABINET_AND_COUNTER_DEPTH",
+    "predicate": "source_sets_lower_body_depth_plus_door_thickness_and_countertop_total_depth",
+    "value": {"base_depth_cm":57,"door_thickness_cm":1.5,"base_plus_door_cm":58.5,"countertop_depth_cm":60},
+    "applicability": {"source_scope":"lower kitchen depth guidance on printed page 173"},
+    "exceptions": ["Door and countertop thickness can vary by project and product."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":195,"printed_page":173,"region":{"x":0.05,"y":0.4,"width":0.9,"height":0.14},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0195-005",
+    "page_id": "PAGE-CPNC-2025-P0195",
+    "category": "kitchen_dimension",
+    "subject": "BACKSPLASH_AND_UPPER_CABINET",
+    "predicate": "source_gives_backplash_height_upper_height_and_depth_references",
+    "value": {"backsplash_height_cm":61,"upper_min_height_cm":60,"upper_ideal_height_cm":70,"upper_max_depth_cm":35,"dish_rack_min_depth_cm":30},
+    "applicability": {"source_scope":"upper kitchen furniture on printed page 173"},
+    "exceptions": ["The source says some dish racks require at least 30 cm; it recommends not exceeding 35 cm upper depth."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":195,"printed_page":173,"region":{"x":0.05,"y":0.54,"width":0.9,"height":0.14},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0195-006",
+    "page_id": "PAGE-CPNC-2025-P0195",
+    "category": "kitchen_modulation",
+    "subject": "FUNCTIONAL_ZONE_WIDTHS",
+    "predicate": "source_proposes_reference_widths_for_refrigeration_cooking_and_washing_zones",
+    "value": {"refrigeration_cm":100,"cooking_cm":61,"washing_cm":65},
+    "applicability": {"source_scope":"kitchen modulation on printed page 173"},
+    "exceptions": ["Presented as source modulation guidance rather than mandatory universal dimensions."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":195,"printed_page":173,"region":{"x":0.05,"y":0.69,"width":0.9,"height":0.27},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0195-007",
+    "page_id": "PAGE-CPNC-2025-P0195",
+    "category": "kitchen_storage",
+    "subject": "OPTIONAL_STORAGE_MODULES",
+    "predicate": "source_mentions_storage_drawer_and_optional_pantry_or_oven_tower_widths_when_space_allows",
+    "value": {"drawer_contents":["cubertero","cucharero","Ollero"],"pantry_cm":45,"oven_tower_cm":80},
+    "applicability": {"source_scope":"storage options in kitchen modulation on printed page 173"},
+    "exceptions": ["Optional modules depend on available space."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":195,"printed_page":173,"region":{"x":0.05,"y":0.69,"width":0.9,"height":0.27},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0195-008",
+    "page_id": "PAGE-CPNC-2025-P0195",
+    "category": "kitchen_modulation",
+    "subject": "MODULATION_EXAMPLE",
+    "predicate": "source_example_allocates_refrigeration_washing_and_cooking_within_2_80_m_and_identifies_50_cm_remaining_for_utensil_drawer",
+    "value": {"total_m":2.8,"refrigeration_cm":100,"after_refrigeration_cm":180,"washing_cm":65,"cooking_cm":65,"wash_plus_cook_cm":130,"remaining_cm":50},
+    "applicability": {"source_scope":"worked modulation example on printed page 173"},
+    "exceptions": ["This is an illustrative arithmetic example, not a universal module schedule."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":195,"printed_page":173,"region":{"x":0.05,"y":0.69,"width":0.9,"height":0.27},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  }
+]

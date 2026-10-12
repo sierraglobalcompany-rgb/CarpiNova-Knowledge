@@ -1,0 +1,30 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0032-001",
+  "page_id":"PAGE-CPNC-2025-P0032",
+  "type":"process_diagram",
+  "purpose":"Reconstruir la secuencia editorial de seis momentos que conecta la carpintería tradicional con la creación del programa Hágalo en Casa.",
+  "source":{"book_id":"cpnc-2025","pdf_page":32,"printed_page":10,"region":{"x":0.13,"y":0.04,"width":0.75,"height":0.93},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"panel-1","type":"timeline_panel","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.00,"y":0.00,"width":0.49,"height":0.31}},"description":"Carpintería tradicional antes del 2000: carpintero trabajando madera maciza con serrucho y troncos al fondo."},
+    {"id":"panel-2","type":"timeline_panel","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.51,"y":0.00,"width":0.49,"height":0.31}},"description":"Auge de la construcción y mobiliario masivo en 2003: trabajadores y edificios residenciales."},
+    {"id":"panel-3","type":"timeline_panel","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.00,"y":0.34,"width":0.49,"height":0.31}},"description":"Evolución hacia tableros aglomerados: personas revisando piezas y documentación en entorno de producción."},
+    {"id":"panel-4","type":"timeline_panel","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.51,"y":0.34,"width":0.49,"height":0.31}},"description":"Informalidad del gremio: interacción de cliente y prestador junto a un mueble pequeño."},
+    {"id":"panel-5","type":"timeline_panel","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.00,"y":0.68,"width":0.49,"height":0.32}},"description":"Decisión de enseñar carpintería: instructor hablando a un grupo con herramientas al fondo."},
+    {"id":"panel-6","type":"timeline_panel","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.51,"y":0.68,"width":0.49,"height":0.32}},"description":"Creación de Hágalo en Casa: estudiantes trabajando en sus propios proyectos en un taller."}
+  ],
+  "relationships":[
+    {"from":"panel-1","to":"panel-2","type":"precedes"},{"from":"panel-2","to":"panel-3","type":"precedes"},{"from":"panel-3","to":"panel-4","type":"precedes"},{"from":"panel-4","to":"panel-5","type":"precedes"},{"from":"panel-5","to":"panel-6","type":"precedes"}
+  ],
+  "measurements":[],
+  "annotations":[
+    {"target_entity_id":"panel-1","text":"Carpintería tradicional antes del 2000"},{"target_entity_id":"panel-2","text":"El auge de la construcción y el mobiliario masivo en 2003"},{"target_entity_id":"panel-3","text":"La evolución hacia los tableros aglomerados"},{"target_entity_id":"panel-4","text":"La informalidad del gremio"},{"target_entity_id":"panel-5","text":"La decisión de enseñar carpintería"},{"target_entity_id":"panel-6","text":"La creación del programa Hágalo en casa, con estudiantes trabajando en sus propios proyectos."}
+  ],
+  "camera":{"view":"front","projection":"orthographic"},
+  "visual_style":{"format":"historieta educativa","layout":"cuadrícula 2 columnas x 3 filas","panel_borders":"líneas oscuras","caption_style":"cajas gris oscuro con texto blanco","illustration":"personajes y ambientes simplificados con tonos cálidos"},
+  "educational_sequence":[
+    {"step":1,"show_entity_ids":["panel-1"],"instruction":"Presentar la carpintería tradicional."},{"step":2,"show_entity_ids":["panel-2"],"instruction":"Mostrar el aumento de demanda ligado a la construcción."},{"step":3,"show_entity_ids":["panel-3"],"instruction":"Introducir la transición a tableros aglomerados."},{"step":4,"show_entity_ids":["panel-4"],"instruction":"Mostrar el reto de la informalidad."},{"step":5,"show_entity_ids":["panel-5"],"instruction":"Mostrar la decisión de enseñar carpintería."},{"step":6,"show_entity_ids":["panel-6"],"instruction":"Cerrar con estudiantes desarrollando proyectos en Hágalo en Casa."}
+  ],
+  "reconstruction":{"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
+  "accessibility":{"summary":"Historieta de seis paneles que recorre carpintería tradicional, auge de construcción, tableros aglomerados, informalidad, decisión de enseñar y creación del programa Hágalo en Casa."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"El orden y los textos de los seis paneles son semántica obligatoria; personajes y ambientación pueden reinterpretarse."}
+}

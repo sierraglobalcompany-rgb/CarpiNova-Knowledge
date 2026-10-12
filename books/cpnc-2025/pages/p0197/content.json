@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0197-001",
+    "page_id": "PAGE-CPNC-2025-P0197",
+    "content_type": "reference",
+    "source_transcription": "MEDIDAS ESTÁNDAR EN COCINAS. Mueble alto. 30cm 35cm. 60cm. 2cm. Mesón. Mueble bajo. 60cm. 58cm. 78cm. 10cm. Rebanco. Espacio de tránsito.",
+    "normalized_text": "Lámina de referencia dimensional para una cocina en L. Señala 30-35 cm de profundidad del mueble alto, 60 cm de separación vertical hasta el mesón, 60 cm de profundidad general del plano de trabajo, 58 cm de profundidad del mueble bajo, 78 cm de altura del cuerpo bajo y 10 cm en el rebanco. También aparece una cota de 2 cm en el borde del mesón que se conserva solo como transcripción por no ser inequívoca en esta página.",
+    "learning_text": "Lee las cotas como un sistema relacionado: mueble alto menos profundo que el bajo, una separación vertical sobre el mesón y un rebanco inferior. Antes de fabricar, contrasta estas referencias con el levantamiento real y con los electrodomésticos del proyecto.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0197-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":197,"printed_page":175,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cocina","medidas-estandar","mueble-alto","mueble-bajo","meson","rebanco"]
+  }
+]

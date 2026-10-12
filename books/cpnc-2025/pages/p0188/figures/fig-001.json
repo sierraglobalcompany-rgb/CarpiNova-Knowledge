@@ -1,0 +1,41 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0188-001",
+  "page_id": "PAGE-CPNC-2025-P0188",
+  "type": "illustration",
+  "purpose": "Recrear la infografía que resume qué revisar durante la toma de medidas de un ambiente.",
+  "source": {"book_id":"cpnc-2025","pdf_page":188,"printed_page":166,"region":{"x":0.05,"y":0.38,"width":0.90,"height":0.38},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"person","type":"illustrated_person","description":"Carpintero ilustrado sosteniendo una cinta métrica.","geometry":{"precision":"approximate","bbox":{"x":0.02,"y":0.10,"width":0.30,"height":0.80}}},
+    {"id":"tape","type":"measuring_tape","description":"Cinta métrica amarilla desplegada junto al personaje.","geometry":{"precision":"approximate","bbox":{"x":0.20,"y":0.36,"width":0.12,"height":0.48}}},
+    {"id":"corner","type":"room_corner","description":"Esquina de ambiente con lavamanos, toma eléctrica y encuentro de muros.","geometry":{"precision":"approximate","bbox":{"x":0.80,"y":0.24,"width":0.18,"height":0.55}}},
+    {"id":"area-condition-icon","type":"measurement_icon","description":"Icono asociado a registrar el área y las condiciones.","geometry":{"precision":"approximate","bbox":{"x":0.43,"y":0.22,"width":0.08,"height":0.12}}},
+    {"id":"level-corner-icon","type":"corner_level_icon","description":"Icono asociado a verificar esquinas, nivel e inclinaciones.","geometry":{"precision":"approximate","bbox":{"x":0.43,"y":0.42,"width":0.08,"height":0.12}}},
+    {"id":"connection-icon","type":"connection_obstacle_icon","description":"Icono asociado a considerar conexiones y obstáculos.","geometry":{"precision":"approximate","bbox":{"x":0.43,"y":0.62,"width":0.08,"height":0.12}}},
+    {"id":"labels","type":"instruction_labels","description":"Tres rótulos principales y la frase ¡Medir bien es clave!.","geometry":{"precision":"approximate","bbox":{"x":0.53,"y":0.16,"width":0.34,"height":0.66}}}
+  ],
+  "relationships": [
+    {"from":"area-condition-icon","to":"labels","type":"supports_instruction"},
+    {"from":"level-corner-icon","to":"labels","type":"supports_instruction"},
+    {"from":"connection-icon","to":"labels","type":"supports_instruction"},
+    {"from":"person","to":"tape","type":"holds"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"labels","text":"Registrar el área y las condiciones · Verificar esquinas, nivel, inclinaciones · Considerar conexiones y obstáculos · ¡Medir bien es clave!"}
+  ],
+  "layers": [
+    {"id":"character","description":"Personaje y cinta métrica."},
+    {"id":"instruction-icons","description":"Tres iconos de verificación."},
+    {"id":"environment","description":"Esquina del ambiente con conexiones."},
+    {"id":"labels","description":"Título y recordatorios de toma de medidas."}
+  ],
+  "camera": {"view":"front","projection":"flat_page_reference"},
+  "visual_style": {"background":"light neutral","palette":"teal blue and yellow","illustration":"flat vector-like carpentry measurement infographic","labels":"bold teal text"},
+  "educational_sequence": [
+    {"step":1,"show_entity_ids":["person","tape","area-condition-icon"],"instruction":"Introducir el registro del área y sus condiciones."},
+    {"step":2,"show_entity_ids":["level-corner-icon","connection-icon","corner","labels"],"instruction":"Mostrar la verificación geométrica y de obstáculos o conexiones."}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Infografía de toma de medidas: carpintero con cinta métrica y recordatorios para registrar el área, verificar geometría y considerar conexiones u obstáculos."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La geometría de los elementos es aproximada; preservar el sentido didáctico y los tres recordatorios principales."}
+}

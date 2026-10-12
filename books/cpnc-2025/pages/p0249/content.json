@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0249-001",
+    "page_id": "PAGE-CPNC-2025-P0249",
+    "content_type": "example",
+    "source_transcription": "Tabla de registro de medidas\n\nQuiero contarles una anécdota.\nHace unos años, una chica que asistió a uno de mis cursos me envió una foto del proyecto terminado: un centro de entretenimiento. Me escribió:\n“Profe, quedó espectacular, pero hubo algo que me dejó un poco aburrida.”\nLe pregunté qué había pasado.\n—“¿Qué te dejó aburrida, Carolina?” —le dije.\n—“Profe, me tocó partir el tablón donde va el televisor en dos piezas. Me quedó con una línea de unión justo en el centro.”\n—“¿Y por qué pasó eso?”\n—“Porque era un tablón muy grande, no cabía en el ascensor y tampoco por las escaleras del edificio. Y vivo en un piso bastante alto.”\nEntonces le pregunté:\n—“¿Te acuerdas de la tabla de registro de medidas?”\n—“No, Profe... ¿cuál?”\nLe respondí:\n—“La que vimos en clase, la que está en las memorias del curso. Ve a la tabla y dime, ¿qué dice el punto número 1?”\n—“¡Claro, Profe! El punto número 1 dice: Accesos.”",
+    "normalized_text": "La anécdota muestra un problema de instalación causado por no comprobar los accesos: un tablón para un centro de entretenimiento resultó demasiado grande para el ascensor y las escaleras, por lo que tuvo que dividirse y quedó una unión visible. La fuente remite al punto número 1 de la tabla de registro de medidas: «Accesos».",
+    "learning_text": "Antes de cerrar dimensiones de una pieza, registra cómo llegará al lugar de instalación. La lección de la fuente es logística: el diseño debe considerar los accesos físicos disponibles para transportar las piezas.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0249-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":249,"printed_page":227,"region":{"x":0.05,"y":0.10,"width":0.90,"height":0.42},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["paso-5","tabla-de-registro-de-medidas","accesos","instalacion","logistica","ejemplo"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0249-002",
+    "page_id": "PAGE-CPNC-2025-P0249",
+    "content_type": "checklist",
+    "source_transcription": "La tabla de registro de medidas es fundamental cuando vayas a hacer una visita de cotización o cuando inicies tu propio proyecto de carpintería.\nEsta tabla contiene todas las anotaciones necesarias para tener en cuenta al momento de diseñar, despiezar e instalar un mueble.\nY cuando hablo de instalación, no me refiero solo al ensamble o a pegar el mueble al muro. También debes considerar:\n\nAccesos: ¿Cabrá por las puertas, el ascensor, las escaleras?\nTamaño de las piezas: ¿Es posible transportarlas en una sola unidad?\nConexiones eléctricas o de agua: ¿Hay puntos que afecten la instalación?\nGuardas o zócalos\nMolduras o terminaciones\nSistema constructivo del espacio:\n¿Pared de yeso?\n¿Muro tradicional?\n¿Cielo falso?\n¿Qué tipo de anclajes o taquetes se necesitan?\n\nEl registro de medidas es clave para que todo el proceso logístico, desde el diseño hasta la instalación final, salga bien.",
+    "normalized_text": "La tabla de registro de medidas debe recoger factores que afectan diseño, despiece, transporte e instalación: accesos; tamaño transportable de las piezas; conexiones eléctricas o de agua; guardas o zócalos; molduras o terminaciones; sistema constructivo del espacio —pared de yeso, muro tradicional o cielo falso—; y el tipo de anclajes o taquetes requeridos.",
+    "learning_text": "Usa el registro de medidas como una verificación logística previa al diseño final. No registres solo ancho, alto y fondo: documenta también accesos, restricciones de transporte, servicios, terminaciones y soporte constructivo porque condicionan el despiece y la instalación.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0249-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":249,"printed_page":227,"region":{"x":0.05,"y":0.51,"width":0.90,"height":0.39},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["paso-5","tabla-de-registro-de-medidas","accesos","transporte","conexiones","zocalos","molduras","sistema-constructivo","anclajes","instalacion"]
+  }
+]

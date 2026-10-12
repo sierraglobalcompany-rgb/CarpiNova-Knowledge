@@ -1,0 +1,7 @@
+{
+  "page_id":"PAGE-CPNC-2025-P0176",
+  "pdf_page":176,
+  "printed_page":154,
+  "inspection_status":"VISUALLY_VERIFIED",
+  "visuals":[{"inventory_id":"VIS-P0176-001","kind":"breakdown_to_material_consumption_flow","meaningful":true,"figure_id":"FIG-CPNC-2025-P0176-001","source_region":{"x":0.04,"y":0.46,"width":0.92,"height":0.49},"reason":"Diagrama de flujo que conecta despiece, optimización y consumo de materiales e ilustra el ejemplo de costos y rentabilidad."}]
+}

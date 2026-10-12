@@ -1,0 +1,18 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0067-001","page_id":"PAGE-CPNC-2025-P0067","type":"dimensioned_drawing","purpose":"Representar el paso 3: posicionamiento inicial de una corredera telescópica de 30 cm sobre el lateral del módulo.",
+  "source":{"book_id":"cpnc-2025","pdf_page":67,"printed_page":45,"region":{"x":0.08,"y":0.27,"width":0.83,"height":0.51},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"cabinet-shell","type":"nightstand_shell","geometry":{"primitive":"box_assembly","precision":"approximate"}},
+    {"id":"right-side","type":"side_panel","geometry":{"primitive":"panel","precision":"approximate"}},
+    {"id":"slide","type":"telescopic_slide","geometry":{"primitive":"linear_hardware","precision":"exact","dimensions":{"length_cm":30}}}
+  ],
+  "relationships":[{"from":"slide","to":"right-side","type":"mounted_on"}],
+  "measurements":["MEAS-CPNC-2025-P0067-001","MEAS-CPNC-2025-P0067-002","MEAS-CPNC-2025-P0067-003","MEAS-CPNC-2025-P0067-004"],
+  "annotations":[{"target_entity_id":"slide","text":"RIEL CORREDERA TELESCÓPICA 30CMS"},{"target_entity_id":"slide","text":"100 mm desde la parte superior hasta la línea/base de posicionamiento"},{"target_entity_id":"slide","text":"37 mm desde el borde frontal al primer tornillo"},{"target_entity_id":"slide","text":"El texto indica 64 mm para tornillos siguientes y simultáneamente llama al patrón 'sistema 37 y 32'; conflicto de fuente pendiente de validación."}],
+  "camera":{"view":"isometric","projection":"perspective"},
+  "visual_style":{"format":"dibujo técnico 3D","hardware":"corredera gris oscura sobre tablero claro","dimensions":"37 mm y 100 mm visibles"},
+  "educational_sequence":[{"step":3,"show_entity_ids":["cabinet-shell","right-side","slide"],"instruction":"Marcar una línea a 10 cm desde arriba, posicionar la base de la corredera y colocar el primer tornillo a 37 mm desde el frente; conservar 64 mm como dato fuente pendiente de validación para tornillos siguientes."}],
+  "reconstruction":{"preferred_renderer":"3d","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility":{"summary":"Vista isométrica del módulo con una corredera telescópica de 30 cm montada en el lateral derecho; la figura muestra cotas de 100 mm verticales y 37 mm desde el borde frontal."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"No reemplazar 64 mm por 32 mm en esta fase. La discrepancia entre valor escrito y nombre 'sistema 37 y 32' debe permanecer visible."}
+}

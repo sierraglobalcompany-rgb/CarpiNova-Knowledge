@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0215-001",
+    "page_id": "PAGE-CPNC-2025-P0215",
+    "content_type": "reference",
+    "source_transcription": "HERRAJES PARA CAMA. Las camas se arman con herrajes que se llaman CHAPETAS para camas. Vienen en 2 tamaños. Si la cama es muy alta se usa el grande. Con esto se unen las 4 esquinas de cama internamente.",
+    "normalized_text": "La fuente denomina chapetas a los herrajes usados para unir internamente las cuatro esquinas de la cama. Indica dos tamaños y recomienda el grande cuando la cama es muy alta.",
+    "learning_text": "Usa chapetas de cama para resolver la unión desmontable de las cuatro esquinas. Selecciona el tamaño del herraje de acuerdo con la altura de la cama, siguiendo la indicación del libro para camas altas.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0215-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":215,"printed_page":193,"region":{"x":0.05,"y":0.05,"width":0.9,"height":0.42},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cama","herrajes","chapetas","esquinas","ensamble"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0215-002",
+    "page_id": "PAGE-CPNC-2025-P0215",
+    "content_type": "warning",
+    "source_transcription": "Si se va realizar un trasteo y debe desarmarla ¡NO QUITES LOS TORNILLOS DE ENSAMBLE! Simplemente se desenrosca las tuercas y se desarma la cama. No se pueden quitar los tornillos de ensamble porque el agarre del aglomerado no será el mismo y quedará desajustada la cama.",
+    "normalized_text": "Para desmontar la cama durante un traslado, la fuente indica desenroscar las tuercas y conservar los tornillos de ensamble en el aglomerado, porque retirarlos reduciría el agarre al volver a montar.",
+    "learning_text": "Si necesitas desarmar la cama, libera las tuercas del herraje y evita extraer los tornillos fijados al aglomerado. Así se conserva mejor el anclaje original y se reduce el riesgo de que el mueble quede flojo al rearmarlo.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0215-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":215,"printed_page":193,"region":{"x":0.05,"y":0.39,"width":0.9,"height":0.38},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cama","desarme","trasteo","tornillos-ensamble","aglomerado"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0215-003",
+    "page_id": "PAGE-CPNC-2025-P0215",
+    "content_type": "reference",
+    "source_transcription": "Los esquineros metálicos se usan para instalar los largueros que sostienen los largueros.",
+    "normalized_text": "La fuente muestra esquineros metálicos como herrajes de apoyo para la instalación de largueros de la cama.",
+    "learning_text": "Identifica los esquineros metálicos como herrajes auxiliares del conjunto de largueros y conserva su ubicación según el esquema de la fuente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0215-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":215,"printed_page":193,"region":{"x":0.08,"y":0.74,"width":0.84,"height":0.21},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cama","esquineros-metalicos","largueros","herrajes"]
+  }
+]

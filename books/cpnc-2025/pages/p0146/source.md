@@ -1,0 +1,7 @@
+<!-- GENERATED FROM content.json; DO NOT EDIT DIRECTLY -->
+
+# Source transcription
+
+## CONTENT-CPNC-2025-P0146-001
+
+PASO 3. HÁGALO EN CASA. HERRAMIENTAS.

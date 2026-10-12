@@ -1,0 +1,71 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0164-001",
+    "page_id": "PAGE-CPNC-2025-P0164",
+    "content_type": "checklist",
+    "source_transcription": "LISTADO HERRAMIENTAS\nFlexometro\nLapiz\nAvellanador\nPunta estrella imantada\nGuía para marcar\nPrensa esquinera x 2\nBroca bisagra\nGuía para perforar bisagra\nCuchilla de cepillo\nMazo de goma\nJuego broca sierra\nJuego de broca espada\nPrensa click x 2\nPrensa sargento x 2\nEscuadra\nPega cianocrilato\nPegante pva d2 base agua\nPegante de contacto amarillo\nThinner\nBrocha pelo amarillo\nManilla imantada\nSet de lijas todos los granos\nMasillas para madera x 4\nBrocas madera y lamina 1/8 3/16 3/8",
+    "normalized_text": "Listado general de herramientas, consumibles y accesorios de la fuente. Se normalizan tildes solo en esta capa pedagógica; las cantidades y fracciones se conservan tal como aparecen, sin inferir unidades que la página no declara.",
+    "learning_text": "Usa este bloque como lista de preparación previa. Verifica cada herramienta o consumible antes de iniciar y conserva las cantidades indicadas por la fuente cuando aparecen.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0164-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 164,
+      "printed_page": 142,
+      "region": {
+        "x": 0.14,
+        "y": 0.08,
+        "width": 0.55,
+        "height": 0.48
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "herramientas",
+      "checklist",
+      "preparacion",
+      "consumibles",
+      "accesorios"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0164-002",
+    "page_id": "PAGE-CPNC-2025-P0164",
+    "content_type": "checklist",
+    "source_transcription": "INSTALACIÓN\nBrocas 1/8 muro x 6\nBrocas  x 2\nBrocas 3/16 x 2\nNivel\nMartillo\nPistola calafateo\nMango de sierra\nBisturi\nCinta aislante\nCinta enmascarar\nEspatula\nEstuco\nAlicate\nPela cable\nSet de formones x 4\nTijeras\nFalsa escuadra\nSet de llaves x 6\nLima\nGafas seguridad",
+    "normalized_text": "Lista de herramientas y materiales para instalación. La segunda línea de brocas aparece en la fuente como «Brocas  x 2» sin medida visible; se conserva esa ausencia y no se completa por inferencia.",
+    "learning_text": "Prepara este conjunto antes de la instalación. Trata «Brocas  x 2» como un dato incompleto de la fuente: confirma la medida por otra evidencia antes de usarlo como especificación técnica.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0164-002"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 164,
+      "printed_page": 142,
+      "region": {
+        "x": 0.14,
+        "y": 0.56,
+        "width": 0.55,
+        "height": 0.4
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "instalacion",
+      "herramientas",
+      "checklist",
+      "brocas",
+      "seguridad",
+      "fuente-incompleta"
+    ]
+  }
+]

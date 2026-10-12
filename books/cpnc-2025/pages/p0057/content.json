@@ -1,0 +1,30 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0057-001","page_id":"PAGE-CPNC-2025-P0057","content_type":"concept",
+    "source_transcription":"Por eso, es responsabilidad de los maestros ebanistas continuar compartiendo ese saber, mantener vivas esas prácticas.\n\nAunque ya no se desarrollen tanto a nivel comercial, siguen teniendo un enorme valor cultural, y es importante preservarlas como parte de nuestra identidad y herencia artesanal.",
+    "normalized_text":"El autor atribuye a los maestros ebanistas la responsabilidad de transmitir las prácticas tradicionales y conservarlas por su valor cultural y artesanal, incluso cuando tengan menor presencia comercial.",
+    "learning_text":"La evolución hacia tableros no implica abandonar la ebanistería. La fuente la presenta como un saber artesanal que debe seguir enseñándose y documentándose.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0057-001"],"source":{"book_id":"cpnc-2025","pdf_page":57,"printed_page":35,"region":{"x":0.04,"y":0.07,"width":0.92,"height":0.15},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["ebanisteria","preservacion","herencia-artesanal","conocimiento-tradicional"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0057-002","page_id":"PAGE-CPNC-2025-P0057","content_type":"concept",
+    "source_transcription":"La carpintería con tableros también trae consigo nuevos retos. Cada día, las tendencias nos empujan a crear muebles que ocupen menos espacio y que ofrezcan más funcionalidades. Esto nos exige implementar diferentes sistemas y herrajes que hagan posible el desarrollo de este tipo de mobiliario inteligente y adaptable.\n\nPor eso, no es correcto pensar que hoy en día es más fácil hacer carpintería solo porque trabajamos con tablero aglomerado. De hecho, los desafíos han cambiado... y en muchos casos, se han vuelto más complejos.",
+    "normalized_text":"El autor sostiene que trabajar con tableros introduce retos distintos: desarrollar muebles compactos, multifuncionales e inteligentes mediante sistemas y herrajes específicos. Por ello, no considera que la carpintería contemporánea sea necesariamente más sencilla.",
+    "learning_text":"Reducir etapas de preparación del material no elimina la complejidad del diseño. La fuente desplaza parte del reto hacia funcionalidad, sistemas, herrajes y adaptación a espacios reducidos.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0057-002"],"source":{"book_id":"cpnc-2025","pdf_page":57,"printed_page":35,"region":{"x":0.04,"y":0.25,"width":0.92,"height":0.22},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["tableros","mobiliario-inteligente","mobiliario-adaptable","herrajes","sistemas","multifuncional"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0057-003","page_id":"PAGE-CPNC-2025-P0057","content_type":"example",
+    "source_transcription":"Por ejemplo, desarrollar una cama que también funcione como escritorio, que se pliegue contra la pared y quede completamente oculta, no es tarea sencilla. Esto responde a una necesidad real: cada metro cuadrado de vivienda cuesta más, y los espacios habitacionales son cada vez más reducidos.",
+    "normalized_text":"Como ejemplo de mobiliario multifuncional, el autor plantea una cama que también funciona como escritorio y se pliega contra la pared hasta quedar oculta. Relaciona esta solución con el mayor costo del espacio y la reducción del tamaño de las viviendas.",
+    "learning_text":"El ejemplo muestra cómo una restricción espacial puede convertirse en requisito funcional: un mismo volumen debe cumplir más de una función y poder ocultarse o transformarse.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0057-003"],"source":{"book_id":"cpnc-2025","pdf_page":57,"printed_page":35,"region":{"x":0.04,"y":0.49,"width":0.92,"height":0.15},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["cama-plegable","escritorio","mobiliario-multifuncional","espacio-reducido"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0057-004","page_id":"PAGE-CPNC-2025-P0057","content_type":"reference",
+    "source_transcription":"Antes, los muebles se diseñaban para viviendas de entre 80 y 120 metros cuadrados. Hoy, en cambio, los muebles deben adaptarse a espacios de apenas 15 a 45 metros cuadrados.\n\nAsí que no es que el trabajo sea más fácil... el reto simplemente ha cambiado.",
+    "normalized_text":"La fuente compara viviendas de entre 80 y 120 m² en el pasado con espacios actuales de 15 a 45 m² y utiliza esa comparación para reforzar la necesidad de mobiliario adaptable. Estas cifras se conservan como afirmaciones del autor.",
+    "learning_text":"La lección es que el diseño debe responder al espacio disponible. Las bandas de 80–120 m² y 15–45 m² son datos del libro pendientes de validación externa y no se convierten en estándares dimensionales de CarpiNova.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0057-004"],"source":{"book_id":"cpnc-2025","pdf_page":57,"printed_page":35,"region":{"x":0.04,"y":0.67,"width":0.92,"height":0.16},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["vivienda","80-120-m2","15-45-m2","espacio-reducido","dato-por-validar"]
+  }
+]

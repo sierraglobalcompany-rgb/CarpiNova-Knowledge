@@ -1,0 +1,19 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0200-001",
+  "page_id": "PAGE-CPNC-2025-P0200",
+  "type": "dimensioned_drawing",
+  "purpose": "Recrear la referencia visual de modulación de cocina con cubierta, pozuelo, cajonera y nevera.",
+  "source": {"book_id":"cpnc-2025","pdf_page":200,"printed_page":178,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"cooktop","type":"cooktop","geometry":{"precision":"approximate"}},
+    {"id":"sink","type":"sink","geometry":{"precision":"approximate"}},
+    {"id":"drawer-module","type":"drawer_cabinet","geometry":{"precision":"approximate"}},
+    {"id":"refrigerator","type":"refrigerator","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"cooktop","to":"sink","type":"adjacent_in_source_example"},{"from":"drawer-module","to":"refrigerator","type":"adjacent_in_modulation_example"}],
+  "measurements": ["MEAS-CPNC-2025-P0200-001","MEAS-CPNC-2025-P0200-002","MEAS-CPNC-2025-P0200-003"],
+  "annotations": [{"target_entity_id":"cooktop","text":"Cubierta"},{"target_entity_id":"sink","text":"Pozuelo"},{"target_entity_id":"drawer-module","text":"Cajonera"},{"target_entity_id":"refrigerator","text":"Nevera"}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Esquema de distribución de cocina con módulos dimensionados para cubierta, cajonera y nevera."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Se preservan las cotas visibles; el segundo tramo de 0,65 m del diagrama no se asigna a un elemento específico porque su etiqueta no es inequívoca."}
+}

@@ -1,0 +1,11 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0011",
+  "pdf_page": 11,
+  "printed_page": null,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0011-001","kind":"material_reference_photos","meaningful":true,"source_region":{"x":0.13,"y":0.12,"width":0.62,"height":0.59},"exclusion_reason":"Las fotografías muestran ambientes etiquetados Sagano y Viena, pero no aportan geometría ni proceso técnico. Los nombres se preservan en ContentSpec y una regeneración libre podría falsear el aspecto exacto del acabado."},
+    {"inventory_id":"VIS-P0011-002","kind":"qr_reference","meaningful":true,"source_region":{"x":0.78,"y":0.13,"width":0.14,"height":0.15},"exclusion_reason":"El valor funcional del QR se preserva como URL decodificada en ContentSpec; no necesita FigureSpec."},
+    {"inventory_id":"DEC-P0011-001","kind":"brand_seal","meaningful":false,"reason":"Sello promocional y marca editorial."}
+  ]
+}

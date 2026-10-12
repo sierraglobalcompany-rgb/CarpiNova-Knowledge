@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0263-001",
+    "page_id": "PAGE-CPNC-2025-P0263",
+    "content_type": "checklist",
+    "source_transcription": "ANEXO 10. GUARDAESCOBA.\n\nGUARDAESCOBA\n\nMATERIALES ARMADO | *APLICA (REFERENCIA) NO APLICA (NA) | CANTIDAD PRODUCCION\nEnchape blanco-color (19,22,33,44mm)\nLámina blanco-color (15-18mm)\nPegante para canto\nTrapos limpieza-varsol-thiner\nVinipel-cartón\n\nMATERIALES INSTALACION | *APLICA (REFERENCIA) NO APLICA (NA) | CANTIDAD DESPACHO\nGuardaescoba\nEnchape (en caso de alguna reparación)\nMasilla resane-lija\nPegante para canto y Colbón\nPintura Resane\nPuntillas sin cabeza 1\"-3/4\"\nSilicona\nTapatornillos blanco-color\nTornillos 5/8\"-1\"-1 1/2\"-2\"-3\"\nTrapos limpieza-varsol-thiner\n\nHERRAMIENTAS Y EQUIPO | *APLICA (REFERENCIA) NO APLICA (NA) | CANTIDAD DESPACHO\nBisturí\nCaladora-Ruteadora-Rotomartillo-sierra circular-Ingleteadora\nCepillo canteador\nCinta de enmascarar y cinta aislante\nCostal para recoger sobrantes\nCuchilla para retestear el canto\nElementos de protección\nEscoba y recogedor\nEspátula y estuco plástico\nExtensión de energía\nFlexómetro, nivel, escuadra\nMartillo,lápiz, formón, Destornilladores, Alicate, pelador cables\nPistola de calafateo\nSegueta con marco\nTaladro para ensamblar e instalar (Puntas, brocas, avellanador)\n\n* En esta columna escribir la referencia que aplica. Sino aplica escribir NA.",
+    "normalized_text": "El Anexo 10 presenta una lista de chequeo para guardaescoba con tres bloques: materiales de armado, materiales de instalación y herramientas/equipo. El bloque de herramientas y equipo incluye explícitamente elementos de protección. Cada bloque incluye referencia o NA y cantidad de producción o despacho.",
+    "learning_text": "Usa esta lista para controlar el guardaescoba desde el armado hasta la instalación: confirma materiales, herramientas y cantidades, e incluye los elementos de protección listados en el bloque de herramientas y equipo. Registra la referencia aplicable o NA según la instrucción final.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0263-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":263,"printed_page":241,"region":{"x":0.08,"y":0.11,"width":0.84,"height":0.68},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["anexo-10", "lista-de-chequeo", "guardaescoba", "materiales", "instalacion", "herramientas", "equipo"]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0228-001",
+  "page_id": "PAGE-CPNC-2025-P0228",
+  "type": "mixed",
+  "purpose": "Recrear la infografía de referencias estándar para escaleras conservando literalmente las cifras y etiquetas visibles sin inferir unidades ausentes.",
+  "source": {"book_id":"cpnc-2025","pdf_page":228,"printed_page":206,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"stair-profile","type":"stair_side_profile","geometry":{"precision":"approximate"}},
+    {"id":"formula-box","type":"stair_formula_reference","geometry":{"precision":"approximate"}},
+    {"id":"low-traffic-pair","type":"tread_riser_reference_low_traffic","geometry":{"precision":"approximate"}},
+    {"id":"comfort-pair","type":"tread_riser_reference_maximum_comfort","geometry":{"precision":"approximate"}},
+    {"id":"exterior-pair","type":"tread_riser_reference_exterior","geometry":{"precision":"approximate"}},
+    {"id":"horizontal-step","type":"horizontal_step_length_reference","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [
+    {"from":"low-traffic-pair","to":"stair-profile","type":"annotates"},
+    {"from":"comfort-pair","to":"stair-profile","type":"annotates"},
+    {"from":"exterior-pair","to":"stair-profile","type":"annotates"},
+    {"from":"horizontal-step","to":"stair-profile","type":"annotates"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"formula-box","text":"La fuente imprime literalmente: 2 contrahuellas + 1 huella = 0.63cm; puede variar de 0.61 a 0.65"},
+    {"target_entity_id":"low-traffic-pair","text":"Huella 0.21; contrahuella 0.21; lugares poco transitados"},
+    {"target_entity_id":"comfort-pair","text":"Huella 0.29; contrahuella 0.17; máxima comodidad"},
+    {"target_entity_id":"exterior-pair","text":"Escaleras exteriores: huella 0.39; contrahuella 0.12; anotación superior pequeña no normalizada"},
+    {"target_entity_id":"horizontal-step","text":".63 Longitud Horizontal de un paso"}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Infografía con una escalera en perfil, fórmula de relación entre contrahuellas y huella y tres pares de referencias geométricas."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"No se normalizan MeasurementSpecs porque varias cotas carecen de unidad explícita y la fórmula imprime una unidad potencialmente inconsistente que debe preservarse sin corrección."}
+}

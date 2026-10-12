@@ -1,0 +1,19 @@
+<!-- GENERATED FROM content.json; DO NOT EDIT DIRECTLY -->
+
+# Source transcription
+
+## CONTENT-CPNC-2025-P0135-001
+
+SD 25 - MANUAL DE INSTALACIÓN. CANTIDAD DE PUERTAS 2P. ESPESOR DE PUERTA mm 15. DENTRO DEL VANO DV. PESO MAX. DE PUERTA Kg 25.
+
+## CONTENT-CPNC-2025-P0135-002
+
+Paso 1. Paso 2. Paso 3. Paso 4.
+
+## CONTENT-CPNC-2025-P0135-003
+
+COMPONENTES. TENER EN CUENTA.
+
+## CONTENT-CPNC-2025-P0135-004
+
+En el detalle inferior izquierdo se observa una llamada circular con el texto Ø 28.

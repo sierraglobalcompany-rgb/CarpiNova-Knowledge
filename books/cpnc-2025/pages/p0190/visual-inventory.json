@@ -1,0 +1,7 @@
+{
+  "page_id":"PAGE-CPNC-2025-P0190","pdf_page":190,"printed_page":168,"inspection_status":"VISUALLY_VERIFIED",
+  "visuals":[
+    {"inventory_id":"DEC-P0190-001","kind":"page_branding","meaningful":false,"source_region":{"x":0.05,"y":0.02,"width":0.9,"height":0.05},"reason":"Cabecera editorial repetida; no añade conocimiento técnico."},
+    {"inventory_id":"DEC-P0190-002","kind":"page_number","meaningful":false,"source_region":{"x":0.01,"y":0.96,"width":0.04,"height":0.02},"reason":"Número de página impresa; elemento editorial."}
+  ]
+}

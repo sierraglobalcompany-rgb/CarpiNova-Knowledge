@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0180",
+  "pdf_page": 180,
+  "printed_page": 158,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0180-001",
+      "kind": "breakdown_optimizer_input_form",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0180-001",
+      "source_region": {"x":0.08,"y":0.06,"width":0.88,"height":0.90},
+      "reason": "Formulario tabular con parámetros generales, doce filas Corte 1–12, columnas de dimensiones/giro/tapacantos/servicio especial y leyenda 0–2 para tapacanto."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0229-001",
+    "page_id": "PAGE-CPNC-2025-P0229",
+    "content_type": "reference",
+    "source_transcription": "Índice de recursos QR: ¿Cómo estructurar una cocina?; ¿Cómo hacer una cocina?; Cocina y bisagras; Sistema T en frontal de cocina; Medidas estándar de cocina; Sistema chaflan cocinas; Elementos fundamentales para realizar tu cocina; ¿Cómo cotizar una cocina?; ¿Cómo va estructurado un closet?; ¿Cómo hacer un closet?; Sistema corredizo SD Simple y doble; Sistema corredizo SD 50.",
+    "normalized_text": "La página funciona como índice visual de doce recursos QR relacionados con cocina y closet. Se conservan los títulos visibles de cada recurso, pero los destinos, URLs o payloads codificados en los QR no fueron decodificados ni verificados en esta extracción.",
+    "learning_text": "Usa los títulos como mapa temático de recursos complementarios sobre cocina y closet. No trates los QR recreados como enlaces funcionales: para enlazarlos en la aplicación será necesario decodificar y verificar sus destinos por separado contra la fuente original.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0229-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":229,"printed_page":207,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["qr","cocina","closet","indice-recursos","bisagras","sistemas-corredizos"]
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "batch_id": "BATCH-101",
+  "book_id": "cpnc-2025",
+  "purpose": "f1-glossary-e-f-g-h-definitions",
+  "pdf_pages": [
+    284,
+    285
+  ],
+  "status": "EXTRACTED"
+}

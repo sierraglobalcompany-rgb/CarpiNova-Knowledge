@@ -1,0 +1,38 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0058-001",
+  "page_id":"PAGE-CPNC-2025-P0058",
+  "type":"process_diagram",
+  "purpose":"Recrear la infografía educativa que resume la evolución desde la carpintería en madera sólida hacia tableros preelaborados y mobiliario más eficiente y multifuncional.",
+  "source":{"book_id":"cpnc-2025","pdf_page":58,"printed_page":36,"region":{"x":0.04,"y":0.04,"width":0.92,"height":0.92},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"title","type":"title","geometry":{"primitive":"text_block","precision":"approximate","bounding_box":{"x":0.02,"y":0.01,"width":0.96,"height":0.10}},"description":"Título LA EVOLUCIÓN DE LA CARPINTERÍA."},
+    {"id":"panel-1","type":"solid_wood_work_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.00,"y":0.11,"width":0.49,"height":0.41}},"description":"Dos carpinteros trabajando madera sólida en exterior; uno utiliza una sierra manual sobre una pieza de madera."},
+    {"id":"panel-2","type":"furniture_finishing_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.51,"y":0.11,"width":0.49,"height":0.41}},"description":"Carpintero realizando acabado o lijado sobre una mesa con herramienta eléctrica y producto de acabado al fondo."},
+    {"id":"panel-3","type":"preprocessed_board_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.00,"y":0.54,"width":0.49,"height":0.46}},"description":"Carpintero mostrando un tablero preelaborado; sobre la mesa aparecen tres representaciones circulares de diferentes estructuras de tablero. El panel enfatiza EFICIENCIA."},
+    {"id":"panel-4","type":"multifunctional_furniture_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.51,"y":0.54,"width":0.49,"height":0.46}},"description":"Dos personas observan un mueble plegable con cama o armario transformable; el panel está rotulado EFICIENCIA y contiene el texto armario inteligente plegable."}
+  ],
+  "relationships":[
+    {"from":"panel-1","to":"panel-2","type":"traditional_process_continues_with"},
+    {"from":"panel-2","to":"panel-3","type":"evolves_toward"},
+    {"from":"panel-3","to":"panel-4","type":"enables_more_functional_furniture"}
+  ],
+  "measurements":[],
+  "annotations":[
+    {"target_entity_id":"title","text":"LA EVOLUCIÓN DE LA CARPINTERÍA"},
+    {"target_entity_id":"panel-1","text":"TRABAJO EN MADERA SÓLIDA"},
+    {"target_entity_id":"panel-2","text":"MONTAJE Y ACABADO DE MUEBLES"},
+    {"target_entity_id":"panel-3","text":"USO DE TABLEROS PREELABORADOS / EFICIENCIA"},
+    {"target_entity_id":"panel-4","text":"EFICIENCIA / armario inteligente plegable"}
+  ],
+  "camera":{"view":"front","projection":"orthographic"},
+  "visual_style":{"format":"historieta educativa","layout":"título superior y cuadrícula 2 columnas x 2 filas","palette":"amarillo, naranja, azul, verde y tonos madera","linework":"contornos oscuros","caption_style":"títulos grandes en mayúsculas dentro de cada panel"},
+  "educational_sequence":[
+    {"step":1,"show_entity_ids":["panel-1"],"instruction":"Presentar el trabajo tradicional en madera sólida."},
+    {"step":2,"show_entity_ids":["panel-2"],"instruction":"Mostrar el tiempo adicional asociado al montaje y acabado de muebles."},
+    {"step":3,"show_entity_ids":["panel-3"],"instruction":"Introducir tableros preelaborados como respuesta de eficiencia."},
+    {"step":4,"show_entity_ids":["panel-4"],"instruction":"Relacionar esa evolución con mobiliario transformable y eficiente en el uso del espacio."}
+  ],
+  "reconstruction":{"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
+  "accessibility":{"summary":"Infografía de cuatro paneles: trabajo en madera sólida, montaje y acabado, uso de tableros preelaborados y un mueble plegable como ejemplo de eficiencia."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"Los títulos de panel y su orden son semántica obligatoria. El texto visible 'armario inteligente plegable' debe conservarse como parte de la fuente, aunque la representación puede reinterpretarse visualmente."}
+}

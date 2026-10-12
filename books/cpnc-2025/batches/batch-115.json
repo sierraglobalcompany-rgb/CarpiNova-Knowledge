@@ -1,0 +1,10 @@
+{
+  "batch_id": "BATCH-115",
+  "book_id": "cpnc-2025",
+  "purpose": "f1-recover-exact-source-pages-194-195-blank-and-standard-kitchen-furniture-dimensions",
+  "pdf_pages": [
+    194,
+    195
+  ],
+  "status": "EXTRACTED"
+}

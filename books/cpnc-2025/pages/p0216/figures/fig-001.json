@@ -1,0 +1,25 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0216-001",
+  "page_id": "PAGE-CPNC-2025-P0216",
+  "type": "illustration",
+  "purpose": "Recrear la portada visual del proyecto de cama abatible mostrando el mueble cerrado y la cama en posición de apertura.",
+  "source": {"book_id":"cpnc-2025","pdf_page":216,"printed_page":194,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"cabinet","type":"murphy_bed_cabinet","geometry":{"precision":"approximate"}},
+    {"id":"bed-platform","type":"folding_bed_platform","geometry":{"precision":"approximate"}},
+    {"id":"mattress","type":"mattress","geometry":{"precision":"approximate"}},
+    {"id":"tool-row","type":"construction_tools_reference","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [
+    {"from":"bed-platform","to":"cabinet","type":"pivots_from"},
+    {"from":"mattress","to":"bed-platform","type":"rests_on"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"cabinet","text":"Cama abatible"},
+    {"target_entity_id":"tool-row","text":"Inicio de las instrucciones de construcción"}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Ilustración introductoria de una cama abatible que se pliega dentro de un gabinete, acompañada por herramientas de construcción."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La página funciona como portada visual del proyecto; no contiene cotas."}
+}

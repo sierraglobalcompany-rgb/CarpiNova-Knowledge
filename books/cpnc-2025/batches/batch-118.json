@@ -1,0 +1,10 @@
+{
+  "batch_id": "BATCH-118",
+  "book_id": "cpnc-2025",
+  "purpose": "complete F1 exact-source recovery for PDF pages 213 and 223 / printed 191 and 201: beds, study/dining furniture and entertainment-center ergonomics",
+  "pdf_pages": [
+    213,
+    223
+  ],
+  "status": "EXTRACTED"
+}

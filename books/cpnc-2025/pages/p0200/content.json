@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0200-001",
+    "page_id": "PAGE-CPNC-2025-P0200",
+    "content_type": "concept",
+    "source_transcription": "2 ELECTRODOMESTICOS. lo siguiente más importante que ocupa espacio son los electrodomésticos, la cubierta, el horno. Normalmente los electrodomésticos son junto al pozuelo. Cubierta. Pozuelo. Medidas estándar 65cm.",
+    "normalized_text": "Después de considerar la nevera en la modulación, la fuente indica tener en cuenta los electrodomésticos que ocupan espacio, como la cubierta y el horno. La lámina sitúa la cubierta junto al pozuelo y muestra una medida estándar de 65 cm.",
+    "learning_text": "Al modular la cocina, reserva primero el espacio de los equipos principales y del pozuelo. Usa la cota de 65 cm como referencia del ejemplo del libro y comprueba siempre las dimensiones reales antes de fabricar.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0200-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":200,"printed_page":178,"region":{"x":0.05,"y":0.04,"width":0.90,"height":0.39},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cocina","modulacion","electrodomesticos","cubierta","pozuelo"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0200-002",
+    "page_id": "PAGE-CPNC-2025-P0200",
+    "content_type": "example",
+    "source_transcription": "3 CAJONERAS. En el espacio que queda luego de ubicar la nevera, la cubierta, el pozuelo nos queda un espacio libre de 0.50m. En ese espacio se pueden poner: basureros, condimientos. 0.65m Cubierta; 0.50m Cajonera; 0.65m; Nevera 1m. Así se vería una modulación de cocina. Esto ayudará a entender mejor la distribución de la cocina. Luego de esto es importante rayar (hacer un boceto) de cómo se verá la cocina.",
+    "normalized_text": "El ejemplo aprovecha un espacio libre de 0,50 m como cajonera para basureros o condimentos. El esquema de modulación muestra tramos de 0,65 m, 0,50 m, 0,65 m y 1 m para la nevera, y recomienda realizar después un boceto de la distribución.",
+    "learning_text": "Después de ubicar los elementos que consumen espacio, identifica el espacio restante y asígnalo a módulos útiles. Dibuja un boceto de la modulación antes de pasar al despiece para visualizar la distribución completa.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0200-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":200,"printed_page":178,"region":{"x":0.04,"y":0.39,"width":0.92,"height":0.57},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cocina","cajonera","modulacion","boceto","distribucion"]
+  }
+]

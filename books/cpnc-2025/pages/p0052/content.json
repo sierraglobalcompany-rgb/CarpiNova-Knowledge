@@ -1,0 +1,23 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0052-001","page_id":"PAGE-CPNC-2025-P0052","content_type":"concept",
+    "source_transcription":"pero no estoy de acuerdo con que sea informal.\nCuando un oficio se ejerce de manera informal, no hay control, ni ética, ni técnica, ni regulación. Y eso convertía la carpintería en un gremio al que los clientes le tenían miedo.\n¿Por qué?\nPorque muchos carpinteros hurtaban anticipos, dejaban trabajos tirados, no ofrecían garantías, demoraban cuatro o cinco meses para entregar un proyecto.\nTodo esto afectaba directamente mi negocio, porque yo necesitaba gente que ejecutara esos trabajos... y algunos —no todos— los hacían mal.",
+    "normalized_text":"El autor continúa su reflexión y distingue el aprendizaje empírico de la informalidad. Describe como problemas de la informalidad la falta de control, ética, técnica y regulación, además de anticipos perdidos, trabajos abandonados, ausencia de garantías y demoras prolongadas.",
+    "learning_text":"La fuente separa dos conceptos: aprender por experiencia puede ser válido, pero trabajar sin control, técnica, responsabilidad o garantías genera riesgos para el cliente y para quien coordina el proyecto.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0052-001"],"source":{"book_id":"cpnc-2025","pdf_page":52,"printed_page":30,"region":{"x":0.06,"y":0.08,"width":0.88,"height":0.23},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["informalidad","etica","tecnica","control","garantias"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0052-002","page_id":"PAGE-CPNC-2025-P0052","content_type":"example",
+    "source_transcription":"Por eso me tocaba ir personalmente a cada casa a resolver los problemas. Y fue ahí donde empecé a aprender carpintería de verdad:\nCuando me tocaba repetir un trabajo.\nCuando pasaba las noches o los fines de semana entregando proyectos abandonados.\nCuando corregía errores de otros.\nCuando asumía entregas atrasadas porque no tenía personal disponible.\nLlegué a un punto muy difícil. Me di cuenta de que ya no estaba disfrutando lo que hacía.\nNo disfrutaba vender carpintería.\nNo disfrutaba vender mobiliario.\nPorque cada proceso traía un problema.",
+    "normalized_text":"El autor describe cómo tuvo que resolver personalmente reprocesos, proyectos abandonados, errores de terceros y entregas atrasadas. Presenta estas experiencias como parte de su aprendizaje práctico de carpintería y como causa de desgaste con la operación de mobiliario.",
+    "learning_text":"Los errores operativos se convirtieron en aprendizaje práctico, pero también mostraron el costo de operar sin capacidad, controles y procesos suficientes.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0052-002"],"source":{"book_id":"cpnc-2025","pdf_page":52,"printed_page":30,"region":{"x":0.06,"y":0.33,"width":0.88,"height":0.29},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["reprocesos","errores","entregas-atrasadas","aprendizaje-empirico"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0052-003","page_id":"PAGE-CPNC-2025-P0052","content_type":"concept",
+    "source_transcription":"Y no digo que todo fuera culpa del personal. También era culpa mía, por el poco conocimiento técnico que tenía en ese momento del gremio. Por no entender cómo funcionaba realmente. Por desconocer cómo se comercializaba de forma adecuada.\nTodo eso lo aprendí a la fuerza, de forma empírica. Y fue esa misma experiencia la que me permitió dar el paso para no desarrollar la carpintería de forma informal, sino profesionalmente.",
+    "normalized_text":"El autor asume parte de la responsabilidad por los problemas debido a su limitado conocimiento técnico y comercial de la carpintería en esa etapa. Afirma que el aprendizaje empírico posterior lo llevó a buscar una práctica más profesional.",
+    "learning_text":"La conclusión de la historia no es rechazar el aprendizaje empírico, sino complementarlo con conocimiento técnico, proceso y responsabilidad profesional.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0052-003"],"source":{"book_id":"cpnc-2025","pdf_page":52,"printed_page":30,"region":{"x":0.06,"y":0.65,"width":0.88,"height":0.20},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["profesionalizacion","conocimiento-tecnico","aprendizaje-empirico","responsabilidad"]
+  }
+]

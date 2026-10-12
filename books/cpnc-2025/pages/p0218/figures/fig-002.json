@@ -1,0 +1,37 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0218-002",
+  "page_id": "PAGE-CPNC-2025-P0218",
+  "type": "exploded_view",
+  "purpose": "Recrear la disposición de las partes de la cama abatible antes del ensamble y mantener sus identificadores.",
+  "source": {"book_id":"cpnc-2025","pdf_page":218,"printed_page":196,"region":{"x":0.04,"y":0.49,"width":0.92,"height":0.47},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"A","type":"internal_bed_frame","geometry":{"precision":"approximate"}},
+    {"id":"B","type":"bed_frame_sides","geometry":{"precision":"approximate"}},
+    {"id":"C","type":"bed_frame_footboard","geometry":{"precision":"approximate"}},
+    {"id":"D","type":"bed_frame_headboard","geometry":{"precision":"approximate"}},
+    {"id":"E","type":"front_panel","geometry":{"precision":"approximate"}},
+    {"id":"F","type":"bed_header","geometry":{"precision":"approximate"}},
+    {"id":"G","type":"cabinet_vertical_sides","geometry":{"precision":"approximate"}},
+    {"id":"H","type":"cabinet_top","geometry":{"precision":"approximate"}},
+    {"id":"H1","type":"cabinet_rear_top","geometry":{"precision":"approximate"}},
+    {"id":"J","type":"mattress_support_mdf","geometry":{"precision":"approximate"}},
+    {"id":"Z","type":"plinths","geometry":{"precision":"approximate"}},
+    {"id":"wood-leg","type":"wood_leg","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [
+    {"from":"A","to":"B","type":"assembled_with"},
+    {"from":"J","to":"A","type":"supports_mattress_on"},
+    {"from":"G","to":"H","type":"forms_cabinet_with"},
+    {"from":"E","to":"A","type":"fronts"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"A","text":"Bastidor interno de la cama"},
+    {"target_entity_id":"G","text":"Laterales verticales del gabinete"},
+    {"target_entity_id":"J","text":"MDF soporte del colchón"},
+    {"target_entity_id":"wood-leg","text":"Pata de madera"}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Vista explotada previa al ensamble con piezas del marco de cama, gabinete, soporte del colchón y pata."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Los símbolos se mantienen para enlazarlos con la lista de corte de P0219."}
+}

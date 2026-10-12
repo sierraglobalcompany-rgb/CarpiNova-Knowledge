@@ -1,0 +1,46 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0122-001",
+    "page_id": "PAGE-CPNC-2025-P0122",
+    "content_type": "hardware",
+    "source_transcription": "PISTÓN HIDRÁULICO C/S - MANUAL DE INSTALACIÓN. ESPECIFICACIÓN. Ciclos: 30.000. Newtons / Capacidad de carga: 60 / 6KG; 80 / 8KG; 100 / 10KG.",
+    "normalized_text": "La ficha del pistón hidráulico C/S declara 30.000 ciclos y relaciona fuerza nominal con capacidad de carga: 60 N–6 kg, 80 N–8 kg y 100 N–10 kg.",
+    "learning_text": "La especificación presenta tres versiones del pistón: 60 N, 80 N y 100 N. En la ficha se asocian respectivamente con 6 kg, 8 kg y 10 kg, y se declara una vida de 30.000 ciclos.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0122-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":122,"printed_page":100,"region":{"x":0.05,"y":0.05,"width":0.9,"height":0.2},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["piston-hidraulico","cierre-suave","60-N","80-N","100-N","30000-ciclos"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0122-002",
+    "page_id": "PAGE-CPNC-2025-P0122",
+    "content_type": "procedure",
+    "source_transcription": "INSTALACIÓN CIERRE SUAVE. A Ubicación fija de la puerta: 69mm/10mm. B Ubicación fija del panel lateral: 257 2mm/290 2mm. C Ubicación fija de la profundidad del gabinete: 27.5/30.5mm. Vista Lateral: Apertura 90°. 102mm. 69(A). 90°. 290mm(B). 25mm. 257mm(B). Vista Frontal. Techo. Lateral de mueble. Puerta. 30.5mm (Side Panel: 18T). 27.5mm (Side Panel: 15T).",
+    "normalized_text": "La guía de cierre suave muestra una instalación con apertura de 90° y cotas visibles de 102, 69, 290, 25 y 257 mm. En vista frontal distingue 30,5 mm para panel lateral 18T y 27,5 mm para panel lateral 15T. El rótulo B contiene un símbolo/tolerancia que no se resuelve con suficiente fiabilidad en la extracción disponible.",
+    "learning_text": "Para recrear el montaje se deben conservar las posiciones A, B y C y las cotas impresas. El símbolo que acompaña a 257 y 290 mm queda pendiente de una lectura de mayor resolución y no debe convertirse en tolerancia estructurada todavía.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0122-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":122,"printed_page":100,"region":{"x":0.05,"y":0.23,"width":0.9,"height":0.39},"extraction":{"method":"visual","confidence":0.96,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["instalacion","cierre-suave","apertura-90","cotas","revision-simbolo"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0122-003",
+    "page_id": "PAGE-CPNC-2025-P0122",
+    "content_type": "table",
+    "source_transcription": "Ancho de la puerta (mm): 450, 600, 900, 1200. Altura de la puerta (mm): 400, 500, 600. Para 400 mm: 50N×2, 50N×2, 80N×2, 100N×2. Para 500 mm: 50N×2, 100N×2, 100N×2, 150N×2. Para 600 mm: 80N×2, 100N×2, 150N×2 y una celda final sin valor legible. 1. Elija la cantidad de producto adecuada para trabajar, de acuerdo con el peso, la altura y el ancho de la puerta. 2. La presión personalizada especial es aceptable, la capacidad máxima es de 200N. 3. Diferentes presiones de resortes de gas se combinan con diferentes fuerzas de amortiguación.",
+    "normalized_text": "La tabla de cierre suave cruza ancho y altura de puerta con pares de pistones de distinta fuerza. La fuente también indica elegir la cantidad según peso, altura y ancho, admite una capacidad personalizada máxima de 200 N y señala que distintas presiones se combinan con distintas fuerzas de amortiguación.",
+    "learning_text": "La selección del pistón se plantea como una tabla de referencia por tamaño de puerta y fuerza nominal. La última celda de la fila de 600 mm no se estructura porque no se distingue un valor fiable en la imagen disponible.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0122-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":122,"printed_page":100,"region":{"x":0.05,"y":0.43,"width":0.52,"height":0.28},"extraction":{"method":"visual","confidence":0.93,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["tabla-seleccion","ancho-puerta","altura-puerta","piston-par","200-N"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0122-004",
+    "page_id": "PAGE-CPNC-2025-P0122",
+    "content_type": "table",
+    "source_transcription": "TABLA DE REFERENCIA PARA INSTALACIÓN SIN CIERRE SUAVE. Apertura 75° / 90° / 110°. Altura de puerta mm: 300, 400, 500, 600 para cada ángulo. Peso Máximo Kg, 60 N: 75° = 1.9, 1.8, 1.2, 1.0; 90° = 1.8, 1.5, 1.2, 0.9; 110° = 1.6, 1.2, 1.1, 0.7. 80 N: 75° = 2.6, 2.2, 1.7, 1.3; 90° = 2.4, 2.0, 1.6, 1.2; 110° = 2.1, 1.7, 1.4, 1.0. 100 N: 75° = 3.3, 2.6, 2.2, 1.6; 90° = 3.0, 2.5, 2.0, 1.5; 110° = 2.6, 2.2, 1.7, 1.3.",
+    "normalized_text": "La tabla sin cierre suave relaciona fuerza del pistón (60, 80 y 100 N), ángulo de apertura (75°, 90° y 110°), altura de puerta (300–600 mm) y peso máximo indicado por la fuente.",
+    "learning_text": "Para una configuración sin cierre suave, la tabla debe consultarse por cuatro datos: fuerza nominal, ángulo de apertura, altura de la puerta y peso máximo de referencia. Los valores se conservan exactamente como aparecen en la ficha.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0122-004"],
+    "source": {"book_id":"cpnc-2025","pdf_page":122,"printed_page":100,"region":{"x":0.07,"y":0.72,"width":0.86,"height":0.19},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["sin-cierre-suave","tabla-referencia","75-grados","90-grados","110-grados","peso-maximo"]
+  }
+]

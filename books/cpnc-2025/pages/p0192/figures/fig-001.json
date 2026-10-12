@@ -1,0 +1,56 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0192-001",
+  "page_id": "PAGE-CPNC-2025-P0192",
+  "type": "form",
+  "purpose": "Recrear de forma determinista el formato de toma de medidas para levantamientos en obra.",
+  "source": {"book_id":"cpnc-2025","pdf_page":192,"printed_page":170,"region":{"x":0.06,"y":0.05,"width":0.90,"height":0.91},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {
+      "id": "header-fields",
+      "type": "form_section",
+      "geometry": {"precision":"approximate","primitive":"rectangle"},
+      "fields": ["FECHA","CLIENTE","DIRECCION","TELEFONO","LOGO"]
+    },
+    {
+      "id": "measurement-sketch",
+      "type": "drawing_area",
+      "geometry": {"precision":"approximate","primitive":"rectangle"},
+      "label": "ESQUEMA MEDIDAS",
+      "fields": ["NOMBRE"]
+    },
+    {
+      "id": "site-checklist",
+      "type": "checklist_section",
+      "geometry": {"precision":"approximate","primitive":"rectangle"},
+      "items": [
+        "1. ACCESOS",
+        "2. MATERIAL DE CIELOS, MUROS, PISO",
+        "3. MEDIDAS VANO",
+        "4. MEDIDAS DE BASES",
+        "5. UBICACIÓN PUNTOS ELECTRICOS, HIDROSANITARIOS",
+        "6. UBICACIONES BUITRONES, COLUMNAS, DESCOLGADOS",
+        "7. UBICACIÓN VENTANAS, PUERTAS",
+        "8. GUARDAESCOBAS",
+        "9. MOLDURAS-CURVAS",
+        "10. MEDIDA ENCHAPES",
+        "11. MEDIDAS ELECTRODOMESTICOS O REFERENCIAS",
+        "OBSERVACIONES"
+      ]
+    }
+  ],
+  "relationships": [
+    {"from":"header-fields","to":"measurement-sketch","type":"precedes"},
+    {"from":"measurement-sketch","to":"site-checklist","type":"precedes"}
+  ],
+  "measurements": [],
+  "annotations": [],
+  "layers": [
+    {"id":"header","description":"Datos de identificación del levantamiento."},
+    {"id":"sketch","description":"Área central grande para croquis y medidas."},
+    {"id":"checklist","description":"Líneas inferiores para condiciones y observaciones."}
+  ],
+  "visual_style": {"background":"white","lines":"black thin rules","labels":"uppercase compact sans-serif"},
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Formulario de levantamiento con datos del cliente, zona de croquis y once categorías de comprobación en obra."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar la jerarquía del formulario y los once ítems; la posición exacta puede escalarse proporcionalmente."}
+}

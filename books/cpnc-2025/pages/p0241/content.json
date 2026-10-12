@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0241-001",
+    "page_id": "PAGE-CPNC-2025-P0241",
+    "content_type": "formula",
+    "source_transcription": "Así, si un mueble requiere 3 tableros, se cotiza en $3.000.000 (incluyendo herrajes, tapacanto, instalación, etc.).\n\n4. Mano de obra\nEn todos los casos, la mano de obra se calcula como el 15% del valor comercial (ya sea por metro lineal o por consumo de tablero).\n\nEjemplos:\nSi cobras $850.000 por metro lineal de cocina el pago de mano de obra será el 15% de $850.000.\nSi cobras $3.000.000 por un mueble de 3 tableros consumidos, el pago de mano de obra será el 15% de $3.000.000\n\nEste valor se paga al colega o carpintero que realice el ensamble e instalación.",
+    "normalized_text": "La página concluye el ejemplo de consumo de tablero: tres tableros se cotizan en $3.000.000 incluyendo los elementos indicados por la fuente. Para la mano de obra propone calcular el 15% del valor comercial, tanto si la cotización se hizo por metro lineal como por tableros consumidos; ese valor se paga a quien realiza ensamble e instalación.",
+    "learning_text": "La fuente fija la mano de obra en 15% del valor comercial. Aplica ese porcentaje al valor de referencia usado en la cotización, sea por metro lineal o por consumo de tablero, y destínalo al ensamble e instalación.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0241-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":241,"printed_page":219,"region":{"x":0.05,"y":0.08,"width":0.90,"height":0.31},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["paso-5","cotizacion","consumo-de-tablero","mano-de-obra","15-por-ciento","ensamble","instalacion"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0241-002",
+    "page_id": "PAGE-CPNC-2025-P0241",
+    "content_type": "recommendation",
+    "source_transcription": "Conclusión\nTodo proyecto de carpintería está compuesto por tres elementos:\n1. Costo de los materiales\n2. Mano de obra\n3. Utilidad\n\nValora tu trabajo, estructura bien tus precios y recuerda que la formalidad te permite crecer como profesional.",
+    "normalized_text": "La conclusión resume el precio de un proyecto de carpintería en tres componentes: costo de materiales, mano de obra y utilidad. Cierra con una recomendación de valorar el trabajo, estructurar los precios y mantener formalidad profesional.",
+    "learning_text": "Al revisar una cotización, comprueba que contemple materiales, mano de obra y utilidad. Estructurar estos componentes de manera explícita ayuda a sostener una práctica profesional según el enfoque de la fuente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0241-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":241,"printed_page":219,"region":{"x":0.05,"y":0.40,"width":0.90,"height":0.19},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["paso-5","cotizacion","materiales","mano-de-obra","utilidad","formalidad","profesionalizacion"]
+  }
+]

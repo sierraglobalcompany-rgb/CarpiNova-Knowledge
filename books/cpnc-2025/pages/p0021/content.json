@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0021-001",
+    "page_id": "PAGE-CPNC-2025-P0021",
+    "content_type": "reference",
+    "source_transcription": "Dedicatoria\n\nEn ocasiones me avergüenzo de mi...\n\nEstas memorias van dedicadas a ese genero superior, que nos lleva años luz de ventaja, la naturaleza es perfecta; nunca un hombre hubiera aguantado un parto.\n\nPara mi esposa, mi mamá, mis hermanas, mi suegra, mis cuñadas y todas las mujeres que pertenecen a mi familia y sobre todo a todas las mujeres que hacen parte de la cultura hágalo en casa.",
+    "normalized_text": "Dedicatoria. En ocasiones me avergüenzo de mí... Estas memorias van dedicadas a ese género superior, que nos lleva años luz de ventaja; la naturaleza es perfecta; nunca un hombre hubiera aguantado un parto. Para mi esposa, mi mamá, mis hermanas, mi suegra, mis cuñadas y todas las mujeres que pertenecen a mi familia, y sobre todo a todas las mujeres que hacen parte de la cultura Hágalo en casa.",
+    "learning_text": "El autor dedica estas memorias a las mujeres de su familia y a las mujeres que forman parte de la cultura Hágalo en casa.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0021-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":21,"printed_page":null,"region":{"x":0.08,"y":0.36,"width":0.83,"height":0.28},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["dedicatoria","referencia-editorial"]
+  }
+]

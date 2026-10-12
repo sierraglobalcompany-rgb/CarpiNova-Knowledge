@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0270",
+  "pdf_page": 270,
+  "printed_page": 248,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0270-001",
+      "kind": "unit_cost_analysis_form",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0270-001",
+      "source_region": {"x":0.14,"y":0.19,"width":0.73,"height":0.75},
+      "reason": "Formato reutilizable de análisis unitario con secciones de costos, campos vacíos, subtotales, consolidado y cálculo de valor por metro lineal."
+    }
+  ]
+}

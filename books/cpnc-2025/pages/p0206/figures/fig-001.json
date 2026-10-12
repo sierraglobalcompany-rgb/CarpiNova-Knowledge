@@ -1,0 +1,19 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0206-001",
+  "page_id": "PAGE-CPNC-2025-P0206",
+  "type": "process_diagram",
+  "purpose": "Recrear las dos formas de soporte de entrepaños de clóset mostradas por la fuente.",
+  "source": {"book_id":"cpnc-2025","pdf_page":206,"printed_page":184,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"closet-side","type":"closet_side_panel","geometry":{"precision":"approximate"}},
+    {"id":"shelf","type":"shelf","geometry":{"precision":"approximate"}},
+    {"id":"support-strip","type":"same_color_support_strip","geometry":{"precision":"approximate"}},
+    {"id":"metal-bracket","type":"metal_corner_bracket","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"support-strip","to":"shelf","type":"supports"},{"from":"metal-bracket","to":"shelf","type":"alternative_supports"}],
+  "measurements": ["MEAS-CPNC-2025-P0206-001","MEAS-CPNC-2025-P0206-002","MEAS-CPNC-2025-P0206-003"],
+  "annotations": [{"target_entity_id":"shelf","text":"Largo 40 a 60 cm según la fuente"},{"target_entity_id":"support-strip","text":"Tira del mismo color; la fuente indica 3 cm"},{"target_entity_id":"metal-bracket","text":"Alternativa con esquinero metálico oculto"}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Diagrama de un entrepaño de clóset y dos alternativas de soporte: tira del color del mueble y esquinero metálico."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La cota de 3 cm se conserva sin asignarle orientación porque la fuente no la etiqueta explícitamente."}
+}

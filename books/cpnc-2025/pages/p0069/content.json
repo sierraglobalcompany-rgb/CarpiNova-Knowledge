@@ -1,0 +1,9 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0069-001","page_id":"PAGE-CPNC-2025-P0069","content_type":"procedure",
+    "source_transcription":"5\nProcedemos a enri[e]lar la gaveta en nuestro módulo de mesa de noche, vamos a traer las balineras de los rieles instalados en los laterales del cajón hacia adelante y encarrilamos nuestra gaveta, cuando la vamos ingresando esta no debe entrar forzada, debe entrar suave y debe hacer un sonido de clic, lo que nos asegura que quedó correctamente enrielado.",
+    "normalized_text":"Paso 5: insertar la gaveta en el módulo llevando hacia adelante las balineras de los rieles instalados en los laterales y encarrilando el cajón. Según la fuente, la gaveta debe entrar suavemente, sin forzar, y producir un clic al quedar correctamente enrielada.",
+    "learning_text":"El montaje del cajón se verifica cualitativamente: no debe requerir fuerza y el mecanismo debe enganchar con suavidad. El clic se usa en la fuente como señal de que quedó correctamente montado.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0069-001"],"source":{"book_id":"cpnc-2025","pdf_page":69,"printed_page":47,"region":{"x":0.08,"y":0.06,"width":0.84,"height":0.13},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["paso-5","gaveta","corredera-telescopica","enrielado","clic"]
+  }
+]

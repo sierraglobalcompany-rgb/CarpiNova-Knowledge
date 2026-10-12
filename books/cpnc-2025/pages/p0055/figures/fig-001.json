@@ -1,0 +1,36 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0055-001",
+  "page_id":"PAGE-CPNC-2025-P0055",
+  "type":"process_diagram",
+  "purpose":"Recrear la infografía que explica visualmente una definición amplia de carpintería y luego presenta el enfoque moderno del libro.",
+  "source":{"book_id":"cpnc-2025","pdf_page":55,"printed_page":33,"region":{"x":0.08,"y":0.04,"width":0.84,"height":0.91},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"panel-1","type":"definition_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.00,"y":0.00,"width":0.49,"height":0.49}},"description":"Carpintero con casco en un espacio construido en madera y un globo grande con la pregunta ¿QUÉ ES LA CARPINTERÍA?."},
+    {"id":"panel-2","type":"broad_carpentry_examples","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.51,"y":0.00,"width":0.49,"height":0.49}},"description":"Panel con casa y barco de madera, además de escenas menores de construcción y talla; encabezado Carpintería tambien es...."},
+    {"id":"panel-3","type":"modern_carpentry_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.00,"y":0.51,"width":0.49,"height":0.49}},"description":"Carpintero trabajando un gabinete en una cocina; rótulos Carpintería Moderna y Tablero aglomerado."},
+    {"id":"panel-4","type":"residential_commercial_furniture_scene","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.51,"y":0.51,"width":0.49,"height":0.49}},"description":"Carpintero junto a un mueble tipo gabinete; rótulo Pensada para hogares y locales y firma Hágalo en Casa."}
+  ],
+  "relationships":[
+    {"from":"panel-1","to":"panel-2","type":"expands_definition"},
+    {"from":"panel-2","to":"panel-3","type":"narrows_to_book_focus"},
+    {"from":"panel-3","to":"panel-4","type":"applies_to"}
+  ],
+  "measurements":[],
+  "annotations":[
+    {"target_entity_id":"panel-1","text":"¿QUÉ ES LA CARPINTERÍA?"},
+    {"target_entity_id":"panel-2","text":"Carpintería tambien es... / Construir un barco / Tallar madera"},
+    {"target_entity_id":"panel-3","text":"Carpintería Moderna / Tablero aglomerado"},
+    {"target_entity_id":"panel-4","text":"Pensada para hogares y locales / Hágalo en Casa."}
+  ],
+  "camera":{"view":"front","projection":"orthographic"},
+  "visual_style":{"format":"historieta educativa","layout":"cuadrícula 2 columnas x 2 filas","palette":"madera, crema, azul y verde","linework":"contornos oscuros","caption_style":"rótulos grandes dentro de cada panel"},
+  "educational_sequence":[
+    {"step":1,"show_entity_ids":["panel-1"],"instruction":"Plantear la pregunta sobre qué es carpintería."},
+    {"step":2,"show_entity_ids":["panel-2"],"instruction":"Ampliar el concepto con distintos trabajos en madera."},
+    {"step":3,"show_entity_ids":["panel-3"],"instruction":"Presentar el enfoque de carpintería moderna con tablero aglomerado."},
+    {"step":4,"show_entity_ids":["panel-4"],"instruction":"Relacionar ese enfoque con muebles para hogares y locales."}
+  ],
+  "reconstruction":{"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
+  "accessibility":{"summary":"Cuatro paneles: pregunta qué es la carpintería, ejemplos amplios de construcción y talla en madera, carpintería moderna con tablero aglomerado y mobiliario para hogares y locales."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"Los rótulos y la progresión conceptual deben conservarse. La ilustración puede reinterpretarse sin alterar la relación entre definición amplia y enfoque moderno."}
+}

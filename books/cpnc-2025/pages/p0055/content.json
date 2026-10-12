@@ -1,0 +1,9 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0055-001","page_id":"PAGE-CPNC-2025-P0055","content_type":"concept",
+    "source_transcription":"¿QUÉ ES LA CARPINTERÍA?\nCarpintería tambien es...\nConstruir un barco\nTallar madera\nCarpintería Moderna\nTablero aglomerado\nPensada para hogares y locales\nHágalo en Casa.",
+    "normalized_text":"La infografía amplía visualmente el concepto de carpintería con ejemplos como construir un barco y tallar madera, y luego muestra el enfoque del libro en carpintería moderna con tablero aglomerado para hogares y locales.",
+    "learning_text":"La imagen conecta dos ideas: la carpintería abarca muchas formas de trabajar la madera, y este libro se enfoca específicamente en mobiliario moderno y funcional para espacios residenciales y comerciales.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0055-001"],"source":{"book_id":"cpnc-2025","pdf_page":55,"printed_page":33,"region":{"x":0.08,"y":0.04,"width":0.84,"height":0.91},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["carpinteria","carpinteria-moderna","tablero-aglomerado","hogares","locales"]
+  }
+]

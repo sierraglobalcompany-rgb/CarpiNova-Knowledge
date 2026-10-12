@@ -1,0 +1,16 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0064-001","page_id":"PAGE-CPNC-2025-P0064","content_type":"table",
+    "source_transcription":"Descripción | Mat | Cant | Largo | Ancho | L1 | L2 | A1 | A2\nBASE | CH15 | 2 | 400 | 320 | D | - | D | D\nCORREAS | CH15 | 2 | 370 | 70 | D | - | - | -\nFONDO CAJON | CH15 | 1 | 312 | 270 | - | - | - | -\nFRONTALES CAJON | CH15 | 2 | 312 | 80 | D | - | - | -\nLATERALES | CH15 | 2 | 370 | 320 | D | - | - | -\nLATERALES CAJON | CH15 | 2 | 300 | 80 | D | - | - | -\nPUERTA - 2 PERFORACIONES | CH15 | 1 | 400 | 255 | D | D | D | D\nSISTEMA T | CH15 | 2 | 370 | 50 | D | - | - | -\nTAPA MDF | CO15 | 1 | 400 | 115 | - | - | - | -",
+    "normalized_text":"La tabla de despiece lista nueve tipos de pieza con material, cantidad, largo, ancho y cuatro columnas de tapacanto (L1, L2, A1, A2). La fila BASE registra cantidad 2 en esta página; p65 muestra BASE cantidad 1. La discrepancia se conserva sin reconciliar.",
+    "learning_text":"Usa esta tabla como registro fuente del despiece y de los cantos marcados con D. Antes de convertirla en una lista de corte ejecutable debe resolverse la discrepancia de cantidad de BASE entre p64 y p65.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0064-001"],"source":{"book_id":"cpnc-2025","pdf_page":64,"printed_page":42,"region":{"x":0.17,"y":0.43,"width":0.66,"height":0.34},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["despiece","tapacantos","mesa-de-noche","conflicto-base-cantidad"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0064-002","page_id":"PAGE-CPNC-2025-P0064","content_type":"hardware",
+    "source_transcription":"1 CORREDERA TELESCÓPICA 30CMS\n1 PAR DE BISAGRAS PARCHE 35MM\n30 TORNILLOS DE 1 ½ PULGADA X6\n3 TORNILLOS DE 1 PULGADA X6\nTORNILLO 5/8",
+    "normalized_text":"Herrajes y tornillería listados: una corredera telescópica de 30 cm, un par de bisagras parche de 35 mm, 30 tornillos de 1½ pulgada x6, tres tornillos de 1 pulgada x6 y tornillo de 5/8.",
+    "learning_text":"La lista identifica los herrajes principales y la tornillería que la fuente usa para el módulo de práctica. La línea 'TORNILLO 5/8' no indica cantidad en esta página.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0064-002"],"source":{"book_id":"cpnc-2025","pdf_page":64,"printed_page":42,"region":{"x":0.18,"y":0.79,"width":0.63,"height":0.16},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["corredera-telescopica","bisagra-parche","tornillos","30-cm","35-mm"]
+  }
+]

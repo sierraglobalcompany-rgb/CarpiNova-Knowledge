@@ -1,0 +1,10 @@
+{
+  "page_id":"PAGE-CPNC-2025-P0029",
+  "pdf_page":29,
+  "printed_page":7,
+  "inspection_status":"VISUALLY_VERIFIED",
+  "visuals":[
+    {"inventory_id":"VIS-P0029-001","kind":"carpintero_digital_infographic","meaningful":true,"figure_id":"FIG-CPNC-2025-P0029-001","source_region":{"x":0.01,"y":0.01,"width":0.98,"height":0.94},"reason":"Infografía reutilizable que resume visualmente el concepto Carpintero Digital y sus cinco pasos."},
+    {"inventory_id":"DEC-P0029-001","kind":"program_branding","meaningful":false,"reason":"Logotipo editorial Hágalo en Casa; no se necesita para reconstruir el contenido pedagógico."}
+  ]
+}

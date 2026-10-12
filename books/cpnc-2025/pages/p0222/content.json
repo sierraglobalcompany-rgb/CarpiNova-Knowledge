@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0222-001",
+    "page_id": "PAGE-CPNC-2025-P0222",
+    "content_type": "reference",
+    "source_transcription": "Posición de los herrajes en el vertical del gabinete. PIESA G. Los verticales del gabinete, derecho e izquierdo con material aglomerado o tríplex de 18 mm de espesor.",
+    "normalized_text": "La fuente ubica los herrajes sobre los dos verticales G del gabinete, construidos en aglomerado o tríplex de 18 mm. El gráfico muestra las referencias de posición de los herrajes sobre el vertical.",
+    "learning_text": "Antes de perforar, identifica el vertical G derecho o izquierdo y conserva la orientación del dibujo para ubicar cada herraje en la cara correspondiente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0222-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":222,"printed_page":200,"region":{"x":0.04,"y":0.03,"width":0.92,"height":0.43},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cama-abatible","gabinete","vertical-G","herrajes","aglomerado","triplex"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0222-002",
+    "page_id": "PAGE-CPNC-2025-P0222",
+    "content_type": "procedure",
+    "source_transcription": "TOPE MEDIA LUNA SUPERIOR. La medida de posición está indicada en el gráfico. Perforar un orificio con broca 8 mm y 12 mm de profundidad montar el tope con tornillo de ensamble #6 de 3/4”. PLATINA CON ROTULA. Perforar con broca forstner 16 mm, con una de 12mm. Verificar que la tuerca que sujeta la rótula en el orificio anterior. La platina se sujeta con 3 tuercas “T” y 2 tornillos plateados. NOTA: perforar para tuerca “T” pasantes, solo después de estar seguro de la posición de los gatos. PLATINA DE PIVOTE MACHO. Perforar 20 mm de diámetro y 12 mm de profundidad, insertar el eje del pivote del lado de la tuerca. Perforar dos orificios de la platina (los dos superiores) para atornillar con tuercas “T”. Usar dos tornillos plateados en la parte inferior. En la parte inferior trasera de los verticales “G” del gabinete puede cortar la sección que se necesite para ajustar el mueble contra la pared y por encima del guarda escobas.",
+    "normalized_text": "La fuente describe el montaje del tope media luna superior, la platina con rótula y la platina de pivote macho sobre el vertical G. Para el tope indica broca de 8 mm, 12 mm de profundidad y tornillo #6 de 3/4 de pulgada. Para la platina con rótula indica broca Forstner de 16 mm, tres tuercas T y dos tornillos plateados, y ordena dejar las perforaciones pasantes para tuerca T hasta confirmar la posición de los gatos. Para la platina de pivote macho indica un orificio de 20 mm de diámetro y 12 mm de profundidad, dos orificios superiores para tuercas T y dos tornillos plateados inferiores. La parte inferior trasera del vertical G puede recortarse para ajustar el gabinete por encima del guardaescobas.",
+    "learning_text": "Trabaja cada herraje por separado: marca su posición, perfora solo las cotas explícitas y verifica el mecanismo antes de hacer perforaciones pasantes para las tuercas T. Deja el recorte inferior del vertical para el ajuste final contra pared y guardaescobas.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0222-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":222,"printed_page":200,"region":{"x":0.04,"y":0.49,"width":0.92,"height":0.47},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cama-abatible","vertical-G","tope-media-luna","platina-rotula","pivote-macho","tuerca-T"]
+  }
+]

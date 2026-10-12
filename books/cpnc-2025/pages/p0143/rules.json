@@ -1,0 +1,8 @@
+[
+  {
+    "rule_id":"RULE-CPNC-2025-P0143-001","page_id":"PAGE-CPNC-2025-P0143","category":"floating_shelf","subject":"INVISIBLE_ROD_SUPPORT_SPACING","predicate":"source_recommends_two_supports_per_80_cm","value":{"supports":2,"span_cm":80},"applicability":{"source_scope":"first floating-shelf method on printed page 121"},"exceptions":["This is a book recommendation; hardware load rating, shelf depth, wall substrate and actual load are not quantified here."],"sources":[{"book_id":"cpnc-2025","pdf_page":143,"printed_page":121,"region":{"x":0.03,"y":0.07,"width":0.94,"height":0.30},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],"status":"CANDIDATE"
+  },
+  {
+    "rule_id":"RULE-CPNC-2025-P0143-002","page_id":"PAGE-CPNC-2025-P0143","category":"floating_shelf","subject":"HOLLOW_BOX_WITH_MULTIPURPOSE_SUPPORT","predicate":"source_second_method_builds_hollow_shelf_with_internal_rear_mounting_box","value":{"board_thickness_options_mm":[15,18],"perimeter_strip_approx_width_cm":5,"mount":"multipurpose interlocking support"},"applicability":{"source_scope":"second floating-shelf method on printed page 121"},"exceptions":["The 5 cm perimeter width is approximate in the source; no load capacity is given."],"sources":[{"book_id":"cpnc-2025","pdf_page":143,"printed_page":121,"region":{"x":0.03,"y":0.38,"width":0.94,"height":0.43},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}}],"status":"CANDIDATE"
+  }
+]

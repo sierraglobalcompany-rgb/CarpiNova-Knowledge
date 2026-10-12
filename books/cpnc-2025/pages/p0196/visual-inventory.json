@@ -1,0 +1,9 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0196",
+  "pdf_page": 196,
+  "printed_page": 174,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0196-001","kind":"dimensioned_kitchen_reference","meaningful":true,"figure_id":"FIG-CPNC-2025-P0196-001","source_region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"reason":"Lámina ilustrada a página completa con cotas de altura y circulación en cocina."}
+  ]
+}

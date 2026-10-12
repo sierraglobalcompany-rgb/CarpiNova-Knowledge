@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0221-001",
+    "page_id": "PAGE-CPNC-2025-P0221",
+    "content_type": "reference",
+    "source_transcription": "Posiciones de los Herrajes en el Lateral B del marco. Posición de pivote hembra y platina inferior con rotula para el gato (pistón). Soporte Pata de Madera.",
+    "normalized_text": "La vista superior identifica en el lateral B la zona del pivote hembra y la platina inferior con rótula para el pistón, además de la posición del soporte de la pata de madera.",
+    "learning_text": "Antes de perforar, reconoce qué herraje corresponde a cada zona del lateral B y orienta la pieza de forma coherente con el dibujo de la fuente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0221-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":221,"printed_page":199,"region":{"x":0.04,"y":0.03,"width":0.92,"height":0.43},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cama-abatible","lateral-B","herrajes","pivote","piston","pata"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0221-002",
+    "page_id": "PAGE-CPNC-2025-P0221",
+    "content_type": "procedure",
+    "source_transcription": "Perforaciones en el marco de la cama. LATERAL B de la cama, en aglomerado melamínico (18 mm) aquí es donde hay el mayor esfuerzo. MEDIDAS: Ø 25mm Diámetro de Perforación pasante; 23 cm desde borde de atrás; 4,8 cm desde borde superior hacia abajo. Perforación de platina pivote hembra en laterales ‘B’ del marco. Posición de la platina pivote hembra en la cara interna del lateral B. Perforar con broca espada o forstner 25 mm pasante, utilizar tornillos plateados para asegurar la platina.",
+    "normalized_text": "La perforación del pivote hembra se realiza en el lateral B de aglomerado melamínico de 18 mm. La fuente fija un orificio pasante de 25 mm, ubicado a 23 cm del borde trasero y 4.8 cm por debajo del borde superior; la platina queda en la cara interna. Para perforar indica broca espada o Forstner de 25 mm y tornillos plateados para fijación.",
+    "learning_text": "Marca primero las dos referencias desde los bordes, verifica la cara interna del lateral B y realiza la perforación pasante con el diámetro indicado. Después fija la platina con los tornillos señalados por la fuente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0221-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":221,"printed_page":199,"region":{"x":0.04,"y":0.49,"width":0.92,"height":0.47},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cama-abatible","lateral-B","perforacion","platina","pivote-hembra","forstner"]
+  }
+]

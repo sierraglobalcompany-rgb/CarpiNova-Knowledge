@@ -1,0 +1,10 @@
+{
+  "page_id":"PAGE-CPNC-2025-P0035",
+  "pdf_page":35,
+  "printed_page":13,
+  "inspection_status":"VISUALLY_VERIFIED",
+  "visuals":[
+    {"inventory_id":"VIS-P0035-001","kind":"learning_process_infographic","meaningful":true,"figure_id":"FIG-CPNC-2025-P0035-001","source_region":{"x":0.02,"y":0.02,"width":0.96,"height":0.92},"reason":"Historieta reutilizable de seis paneles que resume medición, diseño/acuerdo, especificaciones, errores de instalación, orden de trabajo y aprendizaje."},
+    {"inventory_id":"DEC-P0035-001","kind":"program_branding","meaningful":false,"reason":"Marca Hágalo en Casa dentro del panel final; no es necesaria para conservar la semántica educativa."}
+  ]
+}

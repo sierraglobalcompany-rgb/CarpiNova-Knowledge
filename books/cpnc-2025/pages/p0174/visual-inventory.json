@@ -1,0 +1,32 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0174",
+  "pdf_page": 174,
+  "printed_page": 152,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "DEC-P0174-001",
+      "kind": "page_branding",
+      "meaningful": false,
+      "source_region": {
+        "x": 0.06,
+        "y": 0.02,
+        "width": 0.88,
+        "height": 0.07
+      },
+      "reason": "Cabecera editorial repetida con marca Hágalo en casa, título del libro y regla roja; no añade conocimiento técnico."
+    },
+    {
+      "inventory_id": "DEC-P0174-002",
+      "kind": "page_number",
+      "meaningful": false,
+      "source_region": {
+        "x": 0.01,
+        "y": 0.95,
+        "width": 0.05,
+        "height": 0.03
+      },
+      "reason": "Número de página impresa; elemento editorial, no contenido técnico."
+    }
+  ]
+}

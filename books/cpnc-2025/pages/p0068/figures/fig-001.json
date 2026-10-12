@@ -1,0 +1,20 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0068-001","page_id":"PAGE-CPNC-2025-P0068","type":"assembly_sequence","purpose":"Representar el paso 4: armado de la gaveta y sus piezas principales.",
+  "source":{"book_id":"cpnc-2025","pdf_page":68,"printed_page":46,"region":{"x":0.13,"y":0.24,"width":0.73,"height":0.57},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"drawer-bottom","type":"drawer_bottom","geometry":{"primitive":"panel","precision":"exact","dimensions":{"length_mm":312,"width_mm":270}}},
+    {"id":"drawer-front","type":"drawer_front_internal","geometry":{"primitive":"panel","precision":"exact","dimensions":{"length_mm":312,"width_mm":80}}},
+    {"id":"drawer-back","type":"drawer_back","geometry":{"primitive":"panel","precision":"exact","dimensions":{"length_mm":312,"width_mm":80}}},
+    {"id":"drawer-left","type":"drawer_side","geometry":{"primitive":"panel","precision":"exact","dimensions":{"length_mm":300,"width_mm":80}}},
+    {"id":"drawer-right","type":"drawer_side","geometry":{"primitive":"panel","precision":"exact","dimensions":{"length_mm":300,"width_mm":80}}}
+  ],
+  "relationships":[{"from":"drawer-front","to":"drawer-bottom","type":"joined_to"},{"from":"drawer-back","to":"drawer-bottom","type":"joined_to"},{"from":"drawer-left","to":"drawer-bottom","type":"joined_to"},{"from":"drawer-right","to":"drawer-bottom","type":"joined_to"}],
+  "measurements":["MEAS-CPNC-2025-P0068-001","MEAS-CPNC-2025-P0068-002","MEAS-CPNC-2025-P0068-003","MEAS-CPNC-2025-P0068-004","MEAS-CPNC-2025-P0068-005","MEAS-CPNC-2025-P0068-006","MEAS-CPNC-2025-P0068-007"],
+  "annotations":[{"target_entity_id":"drawer-left","text":"300 mm"},{"target_entity_id":"drawer-bottom","text":"312×270 mm"},{"target_entity_id":"drawer-front","text":"312×80 mm"}],
+  "camera":{"view":"isometric","projection":"perspective"},
+  "visual_style":{"format":"dibujo técnico 3D","materials":"tablero claro","dimensions":"cotas en mm"},
+  "educational_sequence":[{"step":4,"show_entity_ids":["drawer-bottom","drawer-front","drawer-back","drawer-left","drawer-right"],"instruction":"Armar la gaveta y montar la parte delgada de la corredera a ras abajo y al frente según la fuente."}],
+  "reconstruction":{"preferred_renderer":"3d","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility":{"summary":"Gaveta rectangular formada por fondo 312×270 mm, frente/trasera 312×80 mm y laterales 300×80 mm."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"La regla de montaje a ras de la corredera proviene del texto; no se representa una separación adicional no indicada."}
+}

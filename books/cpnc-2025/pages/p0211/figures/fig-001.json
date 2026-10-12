@@ -1,0 +1,23 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0211-001",
+  "page_id": "PAGE-CPNC-2025-P0211",
+  "type": "process_diagram",
+  "purpose": "Recrear la secuencia de medición, perforación e identificación de una chapa de puerta mostrada por la fuente.",
+  "source": {"book_id":"cpnc-2025","pdf_page":211,"printed_page":189,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"door","type":"door_leaf","geometry":{"precision":"approximate"}},
+    {"id":"tape","type":"measuring_tape","geometry":{"precision":"approximate"}},
+    {"id":"pencil","type":"pencil","geometry":{"precision":"approximate"}},
+    {"id":"hole-saw","type":"hole_saw","geometry":{"precision":"approximate"}},
+    {"id":"spade-bit","type":"spade_bit","geometry":{"precision":"approximate"}},
+    {"id":"lockset","type":"door_lockset","geometry":{"precision":"approximate"}},
+    {"id":"knob","type":"knob","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"tape","to":"door","type":"marks_lock_position"},{"from":"hole-saw","to":"door","type":"drills_lock_opening"},{"from":"spade-bit","to":"door","type":"drills_edge_opening"},{"from":"knob","to":"lockset","type":"removable_for_installation"}],
+  "measurements": ["MEAS-CPNC-2025-P0211-001","MEAS-CPNC-2025-P0211-002","MEAS-CPNC-2025-P0211-003"],
+  "annotations": [{"target_entity_id":"door","text":"Marcar 95 cm desde el piso y 6 cm desde el canto"},{"target_entity_id":"hole-saw","text":"Broca sierra 54 mm"},{"target_entity_id":"spade-bit","text":"La fuente rotula broca espada 7/8 sin imprimir unidad"},{"target_entity_id":"lockset","text":"La parte de la llave va hacia el interior según la fuente"}],
+  "educational_sequence": [{"step":1,"action":"Medir y marcar la posición de la chapa"},{"step":2,"action":"Perforar con el juego de brocas para chapa"},{"step":3,"action":"Identificar la orientación de la chapa y desmontar la perilla para instalar"}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Secuencia en tres pasos para ubicar, perforar e instalar una chapa de puerta, con referencias de medida y herramientas."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Esta página indica 95 cm desde el piso, distinto de los 90 cm mostrados en P0208; ambas referencias se conservan por separado. La cota 7/8 queda textual porque la unidad no está impresa en la página."}
+}

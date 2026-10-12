@@ -1,0 +1,9 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0058-001","page_id":"PAGE-CPNC-2025-P0058","content_type":"concept",
+    "source_transcription":"LA EVOLUCIÓN DE LA CARPINTERÍA\nTRABAJO EN MADERA SÓLIDA\nMONTAJE Y ACABADO DE MUEBLES\nUSO DE TABLEROS PREELABORADOS\nEFICIENCIA\nEFICIENCIA\narmario inteligente plegable",
+    "normalized_text":"La infografía resume cuatro ideas: trabajo en madera sólida, montaje y acabado de muebles, uso de tableros preelaborados y eficiencia. El último panel muestra un ejemplo de mobiliario inteligente plegable.",
+    "learning_text":"La imagen presenta la evolución descrita en las páginas anteriores: del trabajo tradicional y los acabados manuales hacia tableros preelaborados y soluciones que buscan eficiencia y mayor funcionalidad espacial.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0058-001"],"source":{"book_id":"cpnc-2025","pdf_page":58,"printed_page":36,"region":{"x":0.04,"y":0.04,"width":0.92,"height":0.92},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["evolucion-carpinteria","madera-solida","tableros-preelaborados","eficiencia","mobiliario-plegable"]
+  }
+]

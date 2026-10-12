@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0224-001",
+    "page_id": "PAGE-CPNC-2025-P0224",
+    "content_type": "reference",
+    "source_transcription": "MEDIDAS ESTANDAR DE ESTUDIOS. DISEÑO DEL AMBIENTE. SIÉNTETE LIBRE DE HACER TU ESPACIO SEGÚN TUS NECESIDADES. 75cm (29.5–31.4 in). PROFUNDIDADES RECOMENDADAS 50–70cm (19–27 in). EJEMPLOS DE ESTUDIOS. Escritorio doble.",
+    "normalized_text": "La infografía presenta referencias para un espacio de estudio: indica 75 cm de altura y una profundidad recomendada de 50 a 70 cm. También muestra ejemplos de distribución, incluido un escritorio doble. Las equivalencias en pulgadas se conservan como aparecen en la fuente y no se recalculan.",
+    "learning_text": "Usa las medidas como referencias de diseño del espacio de estudio: comprueba primero la altura y reserva una profundidad dentro del intervalo indicado, adaptando la distribución a las necesidades del usuario.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0224-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":224,"printed_page":202,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["estudio","escritorio","medidas-estandar","profundidad","ergonomia","diseno"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0070-001","page_id":"PAGE-CPNC-2025-P0070","content_type":"procedure",
+    "source_transcription":"6\nProcedemos a instalar la puerta batiente en la parte inferior de nuestra mesa de noche, instalamos las bisagras en las perforaciones de bisagra que lleva la puerta, estas perforaciones, ojalá si adquieren el material lleguen ya realizadas; sino las pueden elaborar con una broca Forstner de 35 mm, la medida de perforación será 2.2 cm de los bordes y 8 o 10 cm de los extremos.\n\nLa bisagra tiene cuatro huecos, en la posición que va instalada adentro de la mesa de noche vamos a medir del borde de la base hacia adentro 37 mm y sobre esa línea van a ir los tornillos que van en los huecos ovalados de las bisagras, posicionamos los tornillos cuando ya tengamos la puerta nivelada respecto a los extremos, terminamos de poner los tornillos que van ubicados en las posiciones circulares.",
+    "normalized_text":"Paso 6: instalar la puerta batiente inferior. Si las perforaciones de bisagra no vienen realizadas, la fuente indica usar broca Forstner de 35 mm, ubicar la perforación a 2,2 cm del borde y a 8 o 10 cm de los extremos. Para fijar la bisagra al interior del mueble, se marca una línea a 37 mm desde el borde de la base hacia adentro; primero se usan los huecos ovalados para posicionar/nivelar y después se completan los tornillos en los huecos circulares.",
+    "learning_text":"La instalación separa dos operaciones: mecanizar/recibir las perforaciones de cazoleta en la puerta y fijar/ajustar la bisagra dentro del módulo. Los valores 8 o 10 cm se conservan como alternativas de la fuente, no como una única distancia validada.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0070-001"],"source":{"book_id":"cpnc-2025","pdf_page":70,"printed_page":48,"region":{"x":0.08,"y":0.06,"width":0.84,"height":0.24},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["paso-6","puerta-batiente","bisagra","Forstner-35-mm","2-2-cm","8-o-10-cm","37-mm"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0070-002","page_id":"PAGE-CPNC-2025-P0070","content_type":"table",
+    "source_transcription":"Descripción | Mat | Cant | Largo | Ancho | L1 | L2 | A1 | A2\nPUERTA - 2 PERFORACIONES | CH15 | 1 | 400 | 255 | D | D | D | D",
+    "normalized_text":"La tabla registra una PUERTA - 2 PERFORACIONES en CH15, cantidad 1, de 400×255 mm, con tapacanto D en los cuatro lados.",
+    "learning_text":"La puerta del módulo mide 400×255 mm y la fuente la especifica con dos perforaciones de bisagra y tapacanto en sus cuatro cantos.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0070-002"],"source":{"book_id":"cpnc-2025","pdf_page":70,"printed_page":48,"region":{"x":0.17,"y":0.80,"width":0.67,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["puerta","CH15","400x255-mm","dos-perforaciones","tapacantos"]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0261",
+  "pdf_page": 261,
+  "printed_page": 239,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0261-001",
+      "kind": "kitchen_checklist_table",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0261-001",
+      "source_region": {
+        "x": 0.11,
+        "y": 0.1,
+        "width": 0.78,
+        "height": 0.84
+      },
+      "reason": "Tabla-formulario reutilizable para controlar materiales de taller, materiales de instalación y herramientas/equipo en cocinas."
+    }
+  ]
+}

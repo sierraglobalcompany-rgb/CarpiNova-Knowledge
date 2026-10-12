@@ -1,0 +1,14 @@
+[
+  {
+    "rule_id": "RULE-CPNC-2025-P0180-001",
+    "page_id": "PAGE-CPNC-2025-P0180",
+    "category": "form_legend",
+    "subject": "EDGE_BAND_CODE",
+    "predicate": "form_legend_maps_numeric_codes_to_edge_band_categories",
+    "value": {"0":"Sin Tapacanto","1":"Delgado","2":"Grueso"},
+    "applicability": {"source_scope":"legend printed on page 158"},
+    "exceptions": ["These are form codes from the source, not physical thickness specifications. Actual edge-band thickness must be recorded or resolved separately."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":180,"printed_page":158,"region":{"x":0.66,"y":0.17,"width":0.30,"height":0.25},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  }
+]

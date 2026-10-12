@@ -1,0 +1,9 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0053-001","page_id":"PAGE-CPNC-2025-P0053","content_type":"concept",
+    "source_transcription":"Vendiendo empanadas\nEstampando camisetas\nInstalando soportes con mi tío Martín\nClases de carpintería desde casa durante la pandemia",
+    "normalized_text":"La infografía resume cuatro etapas de la historia narrada: venta de empanadas, estampación de camisetas, instalación de soportes con el tío Martín y clases de carpintería desde casa durante la pandemia.",
+    "learning_text":"La secuencia muestra cómo distintas experiencias —comercio, producción, instalación y enseñanza— se conectan en el camino que termina dando forma al proyecto de carpintería del autor.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0053-001"],"source":{"book_id":"cpnc-2025","pdf_page":53,"printed_page":31,"region":{"x":0.05,"y":0.17,"width":0.90,"height":0.68},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["historia-del-autor","empanadas","estampacion","instalacion","pandemia"]
+  }
+]

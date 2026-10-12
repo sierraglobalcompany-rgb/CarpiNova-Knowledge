@@ -1,0 +1,10 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0007",
+  "pdf_page": 7,
+  "printed_page": null,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"DEC-P0007-001","kind":"title_page_design","meaningful":false,"source_region":{"x":0.19,"y":0.36,"width":0.62,"height":0.2},"reason":"Composición editorial de la portadilla; el texto está preservado en ContentSpec y no requiere FigureSpec."},
+    {"inventory_id":"DEC-P0007-002","kind":"page_branding","meaningful":false,"source_region":{"x":0.05,"y":0.02,"width":0.9,"height":0.08},"reason":"Cabecera editorial repetida."}
+  ]
+}

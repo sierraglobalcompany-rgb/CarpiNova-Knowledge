@@ -1,0 +1,37 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0267-001",
+    "page_id": "PAGE-CPNC-2025-P0267",
+    "content_type": "form",
+    "source_transcription": "ANEXO 12. LISTA DE CHEQUEO ENTREGA COCINAS Y BAÑOS\n\nLISTADO CHEQUEO ENTREGA COCINAS Y BAÑOS\nLegnoArte S.A.S\n\nOBRA:\nFECHA DE REVISION:\n\nItem | ASPECTO A REVISAR | OK (✔ X) | OBSERVACIONES\n1 | Meson y muebles totalmente instalados\n2 | El meson no se encuentra rayado, partido y bien pegado.\n3 | El meson esta completamente horizontal, no tiene empozamientos.\n4 | Interior de los muebles de cocina completos segun especificaciones acordadas con el cliente (Basureros, condimientero, cubertero, esquina mágica, Alacena, Escurreplatos)\n5 | Los herrajes no estan rayados ni manchados.\n6 | Al cerrar las puertas deben ajustar suavemente, sin ruidos, sin golpear entre ellas, las luces entre puertas deben ser parejas de arriba hasta abajo.\n7 | La línea horizontal y vertical de las puertas debe coincidir.\n8 | Los cajones deben cerrar y abrir fácilmente. Las tapas de cajón deben estar niveladas, bien aseguradas (con tornillo y colbón). Al abrirlos no deben golpear con otra estructura del mueble.\n9 | La separación entre Tapas de cajón, debe ser pareja.\n10 | Manijas bien instaladas, niveladas y bien aseguradas.\n11 | Los entrepaños deben estar completamente horizontales, nivelados. La madera no debe estar pandeada.\n12 | La lámina, se observa sin rayones, manchas. (se hace supervisión visual).\n13 | Los madecantos se encuentran completos y bien pegados (se hace supervisión manual).\n14 | Los bordes deben estar bien terminados, al tacto se siente liso y no se observan detalles del corte de la lámina.\n15 | Las dilataciones (si aplica) estan niveladas, con un mismo espesor y pintura pareja.\n16 | Las bisagras y rieles tienen los tornillos completos.\n17 | Están instalados los tapatornillos, la carpintería está limpia, resanada y detallada\n18 | El área de trabajo está limpia (barrida y sin escombro).\n\nOBSERVACIONES:\n\nNOMBRE CARPINTERO\nNOMBRE QUIEN RECIBE",
+    "normalized_text": "El Anexo 12 es un formato de chequeo para entrega de cocinas y baños. Incluye obra y fecha de revisión; una tabla de 18 aspectos con columnas de OK y observaciones; un espacio amplio para observaciones generales; y líneas para nombre del carpintero y nombre de quien recibe. Los aspectos revisan mesón y muebles instalados, estado y nivel del mesón, equipamiento interior, herrajes, puertas, cajones, manijas, entrepaños, lámina, madecantos, bordes, dilataciones, bisagras y rieles, tapatornillos, limpieza y estado final del área de trabajo.",
+    "learning_text": "Usa este formulario como control final de entrega para cocinas y baños. Verifica los 18 puntos, marca el estado en la columna OK, documenta pendientes en observaciones y completa la revisión general antes de identificar al carpintero y a quien recibe. Mantén sin diligenciar los campos que correspondan a una entrega real.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0267-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 267,
+      "printed_page": 245,
+      "region": {
+        "x": 0.1,
+        "y": 0.13,
+        "width": 0.8,
+        "height": 0.77
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.98,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "anexo-12",
+      "lista-de-chequeo",
+      "entrega-cocinas",
+      "baños",
+      "formulario",
+      "control-de-calidad"
+    ]
+  }
+]

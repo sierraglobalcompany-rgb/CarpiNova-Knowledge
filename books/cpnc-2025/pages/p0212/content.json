@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0212-001",
+    "page_id": "PAGE-CPNC-2025-P0212",
+    "content_type": "procedure",
+    "source_transcription": "4. Pomo interior. Luego de haber sacado el pomo extraemos el tapaluz. Después inserto el pestillo en la puerta.",
+    "normalized_text": "En el paso 4, la fuente indica retirar el tapaluz después de sacar el pomo e insertar el pestillo en la puerta.",
+    "learning_text": "Continúa el montaje retirando el tapaluz únicamente después de desmontar el pomo y coloca el pestillo en la puerta siguiendo la orientación del conjunto.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0212-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":212,"printed_page":190,"region":{"x":0.14,"y":0.14,"width":0.75,"height":0.31},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["puerta","chapa","pomo","tapaluz","pestillo"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0212-002",
+    "page_id": "PAGE-CPNC-2025-P0212",
+    "content_type": "procedure",
+    "source_transcription": "5 POR ÚLTIMO. Instalamos los tornillos de seguridad del pomo interior y volvemos a poner el tapaluz de la chapa y por último ponemos el pomo.",
+    "normalized_text": "En el paso final, la fuente instala los tornillos de seguridad del pomo interior, vuelve a colocar el tapaluz de la chapa y termina reinstalando el pomo.",
+    "learning_text": "Finaliza el conjunto en el orden mostrado: fija los tornillos de seguridad del pomo interior, repone el tapaluz y coloca nuevamente el pomo.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0212-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":212,"printed_page":190,"region":{"x":0.14,"y":0.43,"width":0.75,"height":0.36},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["puerta","chapa","pomo-interior","tornillos-seguridad","tapaluz"]
+  }
+]

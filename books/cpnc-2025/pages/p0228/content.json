@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0228-001",
+    "page_id": "PAGE-CPNC-2025-P0228",
+    "content_type": "reference",
+    "source_transcription": "MEDIDAS ESTÁNDAR escaleras. Fórmula: 2 contrahuellas + 1 huella = 0.63cm. (Puede variar de 0.61 a 0.65). Huella 0.21, contrahuella 0.21, lugares poco transitados. Huella 0.29, contrahuella 0.17, máxima comodidad. Escaleras exteriores: huella 0.39, contrahuella 0.12; existe además una anotación superior pequeña cuya lectura no se normaliza. .63 Longitud Horizontal de un paso.",
+    "normalized_text": "La infografía presenta referencias geométricas para escaleras y conserva literalmente la fórmula impresa ‘2 contrahuellas + 1 huella = 0.63cm’ junto con el intervalo 0.61 a 0.65. También muestra pares de huella/contrahuella para lugares poco transitados, máxima comodidad y escaleras exteriores. Las unidades no impresas junto a las cotas decimales no se infieren ni se convierten en medidas normalizadas.",
+    "learning_text": "Usa esta lámina como referencia visual de proporciones de escalera, pero conserva las cifras exactamente como las imprime la fuente. Antes de llevarlas a un cálculo o diseño real, verifica la unidad y el contexto de cada cota, porque varias cifras aparecen sin unidad explícita y la fórmula imprime ‘0.63cm’ literalmente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0228-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":228,"printed_page":206,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["escaleras","huella","contrahuella","medidas-estandar","formula","proporciones"]
+  }
+]

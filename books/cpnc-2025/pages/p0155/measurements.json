@@ -1,0 +1,4 @@
+[
+  {"measurement_id":"MEAS-CPNC-2025-P0155-001","page_id":"PAGE-CPNC-2025-P0155","kind":"router_speed_range_lower","value":7000,"unit":"RPM","applies_to":"router rotational speed lower bound stated by source","status":"VISUALLY_VERIFIED","confidence":0.99,"source":{"book_id":"cpnc-2025","pdf_page":155,"printed_page":133,"region":{"x":0.03,"y":0.44,"width":0.55,"height":0.18},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}},
+  {"measurement_id":"MEAS-CPNC-2025-P0155-002","page_id":"PAGE-CPNC-2025-P0155","kind":"router_speed_range_upper","value":33000,"unit":"RPM","applies_to":"router rotational speed upper bound stated by source","status":"VISUALLY_VERIFIED","confidence":0.99,"source":{"book_id":"cpnc-2025","pdf_page":155,"printed_page":133,"region":{"x":0.03,"y":0.44,"width":0.55,"height":0.18},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}}
+]

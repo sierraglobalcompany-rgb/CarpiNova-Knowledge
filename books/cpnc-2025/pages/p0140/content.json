@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0140-001",
+    "page_id": "PAGE-CPNC-2025-P0140",
+    "content_type": "reference",
+    "source_transcription": "¡Si ya eres un experto... ahora serás un MAESTRO! INDUMA. Siempre en tu Casa! Con los herrajes INDUMA podrás hacer realidad tus muebles.",
+    "normalized_text": "Página publicitaria de INDUMA insertada en el libro. No contiene instrucciones, medidas ni especificaciones técnicas utilizables como conocimiento de carpintería.",
+    "learning_text": "Esta página se conserva para mantener la trazabilidad editorial del libro, pero no genera reglas técnicas ni pasos de aprendizaje.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0140-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 140,
+      "printed_page": 118,
+      "region": {
+        "x": 0.02,
+        "y": 0.02,
+        "width": 0.96,
+        "height": 0.96
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "publicidad",
+      "induma",
+      "editorial",
+      "no-tecnico"
+    ]
+  }
+]

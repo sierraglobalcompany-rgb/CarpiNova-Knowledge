@@ -1,0 +1,39 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0252-001",
+    "page_id": "PAGE-CPNC-2025-P0252",
+    "content_type": "procedure",
+    "source_transcription": "quien vende, no quien instala.\n\nCada ambiente debe tener su propia lista de chequeo, ya que no es lo mismo una cocina que un clóset o un centro de entretenimiento. A continuación, te compartiré ejemplos de listas específicas para cada caso.\n\n5. Encuesta de satisfacción\nNo tengas miedo de medir la satisfacción del cliente. Incluye preguntas como:\n¿Llegó el instalador a tiempo?\n¿Recibió el producto según lo acordado?\n¿La instalación fue limpia?\n¿Está conforme con el precio y el trato recibido?\n\nEsto te permitirá evaluar el desempeño de tus operarios y mejorar constantemente el servicio.\n\n6. Rastreo del proyecto\nIncluye un apartado donde se registre todo el proceso desde el anticipo hasta la entrega final.\nPor ejemplo:\nEl cliente paga el anticipo.\nAl día siguiente, se actualiza la orden indicando que el material fue comprado.\nSe adjunta la factura del proveedor.\n\nEsto genera confianza, especialmente en contratos de alto valor.\n\n7. Datos de los operarios\nEnvía con anticipación los nombres e identificaciones de las personas que van a entrar a la casa, oficina u obra.\nEsto le permite al cliente:\nSolicitar permisos de ingreso\nTener tranquilidad y control sobre quién accede a su propiedad\n\nConclusión\nLa orden de producción no es solo un documento técnico.\nEs un puente de confianza entre el carpintero y el cliente.\nEvita confusiones, malentendidos y ayuda a brindar una experiencia profesional.",
+    "normalized_text": "La página continúa la lista de componentes de una orden de producción. Aclara que la garantía del proyecto la asume quien vende, no quien instala; recomienda una lista de chequeo específica para cada tipo de ambiente; propone medir la satisfacción del cliente, rastrear el proyecto desde el anticipo hasta la entrega y comunicar con anticipación los datos de los operarios. Cierra definiendo la orden de producción como un puente de confianza que reduce confusiones y malentendidos.",
+    "learning_text": "Completa la orden de producción con controles de posventa y trazabilidad: adapta el check-list al tipo de ambiente, mide satisfacción, registra hitos y soportes del proyecto, y avisa quién ingresará a la propiedad. La finalidad es que vendedor, instalador y cliente tengan responsabilidades y expectativas documentadas.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0252-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 252,
+      "printed_page": 230,
+      "region": {
+        "x": 0.05,
+        "y": 0.1,
+        "width": 0.9,
+        "height": 0.7
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "paso-5",
+      "orden-de-produccion",
+      "encuesta-de-satisfaccion",
+      "rastreo-del-proyecto",
+      "operarios",
+      "check-list",
+      "cliente",
+      "garantia"
+    ]
+  }
+]

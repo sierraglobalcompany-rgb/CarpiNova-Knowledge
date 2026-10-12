@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0210-001",
+    "page_id": "PAGE-CPNC-2025-P0210",
+    "content_type": "procedure",
+    "source_transcription": "DESPIECE de PUERTAS. Empecemos por el VANO ¿Qué es? es el espacio que se deja en las construcciones en obra para ubicar las puertas. Se recomienda medir en varias partes y trabajamos con la medida menor, incluso quitarle 5mm a la medida. La ilustración del vano marca 209cm en ambos costados y 79cm en la base.",
+    "normalized_text": "La fuente define el vano como el espacio dejado en obra para ubicar la puerta. Recomienda medirlo en varios puntos, trabajar con la medida menor y contempla descontar 5 mm. El ejemplo ilustrado muestra 209 cm de alto y 79 cm de ancho.",
+    "learning_text": "Antes de despiezar una puerta, mide el vano en varios puntos y toma como referencia la menor lectura. Conserva el descuento de 5 mm como criterio indicado por esta fuente y verifica las condiciones reales de instalación.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0210-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":210,"printed_page":188,"region":{"x":0.05,"y":0.05,"width":0.90,"height":0.48},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["puertas","vano","medicion","despiece"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0210-002",
+    "page_id": "PAGE-CPNC-2025-P0210",
+    "content_type": "construction_pattern",
+    "source_transcription": "EL MARCO. Se sacan de la medida exacta de vano. Primero se le hace un servicio de colillado (cortes a 45°) para que se vea uniforme y estético. El marco se saca en MDP de 15mm de espesor.",
+    "normalized_text": "El marco se obtiene a partir de la medida del vano. La fuente indica colillado con cortes a 45° y especifica MDP de 15 mm de espesor para el marco.",
+    "learning_text": "Dimensiona el marco desde el vano medido, prepara las uniones a 45° como muestra la fuente y conserva 15 mm como espesor de referencia del MDP indicado.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0210-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":210,"printed_page":188,"region":{"x":0.05,"y":0.50,"width":0.90,"height":0.45},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["puertas","marco","colillado","mdp"]
+  }
+]

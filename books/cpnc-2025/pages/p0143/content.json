@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0143-001",
+    "page_id": "PAGE-CPNC-2025-P0143",
+    "content_type": "procedure",
+    "source_transcription": "Una vez hechas las perforaciones en la repisa, se procede a perforar el muro también, con broca de 3/8. Aunque la varilla tiene una parte roscada que se inserta en la pared, la verdadera fijación se logra gracias a la platina. Esta trae dos perforaciones adicionales que permiten fijarla firmemente al muro mediante tornillos. Se recomienda usar dos soportes invisibles por cada 80 centímetros de repisa. Ya con las platinas instaladas en el muro, solo resta insertar la repisa haciendo coincidir las varillas con las perforaciones traseras. La repisa quedará suspendida sin que se vea el sistema de fijación.",
+    "normalized_text": "Continuación de la primera forma: perforar también el muro con 3/8”, fijar la platina mediante sus tornillos y deslizar la repisa sobre las varillas. La fuente recomienda dos soportes invisibles por cada 80 cm de repisa.",
+    "learning_text": "Después de preparar la repisa, fija las platinas al muro y haz coincidir las varillas con los orificios traseros. La recomendación de 2 soportes por 80 cm pertenece a esta fuente y no sustituye el cálculo de carga del herraje real.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0143-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":143,"printed_page":121,"region":{"x":0.03,"y":0.07,"width":0.94,"height":0.30},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["repisa-flotante","soporte-invisible","broca-3-8","dos-soportes","80-cm"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0143-002",
+    "page_id": "PAGE-CPNC-2025-P0143",
+    "content_type": "procedure",
+    "source_transcription": "Segunda forma: repisa hueca con caja posterior. Esta alternativa también usa dos tableros de 15 mm o 18 mm, pero además se agregan piezas de aproximadamente 5 cm de ancho alrededor del perímetro, creando una estructura hueca en el centro. Al unir la parte superior e inferior con Súper Pega Infinita, y aplicar tapacanto en el contorno, obtenemos una repisa de triple espesor. Esta permite crear en su parte trasera una caja interna donde se pueden instalar soportes multiusos. Los soportes se fijan al muro, y las piezas contrarias se instalan en la parte interna de la repisa. Luego, simplemente se encajan. Este sistema es mucho más sencillo, ya que no requiere la misma precisión que los soportes invisibles.",
+    "normalized_text": "Segunda forma: fabricar una repisa hueca con dos tableros de 15 o 18 mm y piezas perimetrales de aproximadamente 5 cm de ancho. La caja posterior interna permite alojar las piezas de soportes multiusos que se encajan con las fijadas al muro.",
+    "learning_text": "La repisa hueca crea una caja posterior que oculta el soporte multiusos. Al no depender de varillas que deban coincidir con perforaciones profundas, la fuente la presenta como una opción menos exigente en precisión.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0143-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":143,"printed_page":121,"region":{"x":0.03,"y":0.38,"width":0.94,"height":0.43},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["repisa-hueca","caja-posterior","soporte-multiusos","15-mm","18-mm","5-cm"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0143-003",
+    "page_id": "PAGE-CPNC-2025-P0143",
+    "content_type": "reference",
+    "source_transcription": "Videos de apoyo a tu conocimiento. Crea repisas flotantes. Repisas flotantes en MDF.",
+    "normalized_text": "La página incluye dos códigos QR rotulados ‘Crea repisas flotantes’ y ‘Repisas flotantes en MDF’. El destino de los códigos no se decodificó en este lote.",
+    "learning_text": "Hay dos recursos externos de apoyo señalados por la fuente. Se conserva su título y procedencia sin asumir el contenido o vigencia de los enlaces.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0143-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":143,"printed_page":121,"region":{"x":0.24,"y":0.82,"width":0.60,"height":0.16},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["qr","video-apoyo","repisas-flotantes","mdf"]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0176-001",
+    "page_id":"PAGE-CPNC-2025-P0176",
+    "content_type":"reference",
+    "source_transcription":"cubrirlos para proteger la pieza y mejorar su apariencia. Los servicios especiales, por ejemplo, si la pieza requiere ranuras, perforaciones para bisagras u otros detalles. Con este listado completo, las piezas pueden enviarse a un optimizador, que explicaremos a continuación.",
+    "normalized_text":"La página comienza completando el punto de tapacantos de la página anterior y añade que el despiece debe registrar servicios especiales como ranuras o perforaciones para bisagras antes de enviarlo al optimizador.",
+    "learning_text":"Antes de optimizar, completa el despiece con tapacantos y mecanizados especiales. El optimizador recibe una lista de piezas ya definida, no sustituye esa preparación.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0176-001"],
+    "source":{"book_id":"cpnc-2025","pdf_page":176,"printed_page":154,"region":{"x":0.02,"y":0.04,"width":0.96,"height":0.18},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}},
+    "tags":["tapacanto","servicios-especiales","ranuras","bisagras","optimizador"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0176-002",
+    "page_id":"PAGE-CPNC-2025-P0176",
+    "content_type":"reference",
+    "source_transcription":"¿Qué es Optimizar? ¿Qué sucede después del despiece? Una vez tenemos listo el despiece o lista detallada de todas las piezas del mueble, el siguiente paso es pasarlo a un software que llamamos optimizador. Este programa se encarga de ubicar cada una de las piezas sobre el tablero general de manera que se aproveche el espacio lo mejor posible y también tiene en cuenta los tapacantos. Esta información es fundamental para calcular el costo total del proyecto.",
+    "normalized_text":"La optimización, según la fuente, organiza las piezas del despiece dentro de tableros generales buscando aprovechar mejor el material y considerando tapacantos. El resultado se usa como insumo para estimar consumo y costo.",
+    "learning_text":"El optimizador transforma una lista de piezas en una propuesta de aprovechamiento de tableros. Su función aquí es reducir desperdicio y cuantificar material; la calidad del resultado depende de que el despiece previo esté completo.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0176-002"],
+    "source":{"book_id":"cpnc-2025","pdf_page":176,"printed_page":154,"region":{"x":0.02,"y":0.20,"width":0.96,"height":0.25},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}},
+    "tags":["optimizacion","despiece","tablero","aprovechamiento","tapacanto","costos"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0176-003",
+    "page_id":"PAGE-CPNC-2025-P0176",
+    "content_type":"reference",
+    "source_transcription":"Por ejemplo, si el tablero general cuesta $50 y el optimizador nos dice que necesitamos 2 tableros, significa que el consumo de material es de $100 en tablero. También el software calcula cuántos metros de tapacanto necesitamos. Si cada metro cuesta $1 y necesitamos 50 metros, tendremos un gasto de $50. También nos dice cuántos tornillos, bisagras, rieles u otros herrajes necesitamos. Con todos estos datos podemos determinar el costo total de materiales y calcular la rentabilidad. La rentabilidad que sugiero al calcular el valor final del proyecto es dividir el costo total de materiales entre 0,4. Esto deja un margen de rentabilidad del 60% sobre el valor del proyecto.",
+    "normalized_text":"La fuente presenta un ejemplo de costeo: dos tableros de 50 unidades monetarias suman 100; 50 m de tapacanto a una unidad monetaria por metro suman 50. Después propone, como recomendación del autor, dividir el costo total de materiales entre 0,4 y lo describe como un margen de rentabilidad del 60% sobre el valor del proyecto.",
+    "learning_text":"Separa el cálculo de consumos del criterio comercial. El ejemplo de tableros y tapacanto muestra cómo llevar cantidades a costo; la división entre 0,4 es una recomendación de la fuente y no una regla universal de precios o margen.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0176-003"],
+    "source":{"book_id":"cpnc-2025","pdf_page":176,"printed_page":154,"region":{"x":0.02,"y":0.44,"width":0.96,"height":0.31},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags":["costeo","tableros","tapacanto","herrajes","rentabilidad","0.4","60-porciento"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0176-004",
+    "page_id":"PAGE-CPNC-2025-P0176",
+    "content_type":"reference",
+    "source_transcription":"¿Por qué es importante la optimización? No se trata solamente de saber cuánto material necesitamos, sino de hacer cortes inteligentes. Por ejemplo, el optimizador puede indicar que para un proyecto necesitamos un tablero completo y solo el 25% de un segundo tablero. Así podemos usar al máximo el material y guardar el sobrante para otro proyecto.",
+    "normalized_text":"La fuente relaciona la optimización con la distribución eficiente de cortes y con la posibilidad de conservar sobrantes útiles. El ejemplo menciona un tablero completo y 25% de un segundo tablero.",
+    "learning_text":"Evalúa el rendimiento del tablero, no solo el número bruto de tableros. Un sobrante identificado y conservado puede reutilizarse en otro trabajo.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0176-004"],
+    "source":{"book_id":"cpnc-2025","pdf_page":176,"printed_page":154,"region":{"x":0.02,"y":0.75,"width":0.96,"height":0.22},"extraction":{"method":"visual","confidence":0.96,"review_status":"VISUALLY_VERIFIED"}},
+    "tags":["optimizacion","desperdicio","sobrante","25-porciento","cortes"]
+  }
+]

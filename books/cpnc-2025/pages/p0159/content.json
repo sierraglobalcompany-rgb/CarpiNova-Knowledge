@@ -1,0 +1,46 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0159-001",
+    "page_id": "PAGE-CPNC-2025-P0159",
+    "content_type": "reference",
+    "source_transcription": "Corte longitudinal. Corte transversal.",
+    "normalized_text": "La página retoma visualmente los dos tipos de corte introducidos en la página anterior: longitudinal y transversal.",
+    "learning_text": "Usa estas dos referencias visuales para distinguir la orientación general de un corte longitudinal frente a uno transversal; la explicación operativa detallada está en la página anterior.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0159-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":159,"printed_page":137,"region":{"x":0.02,"y":0.08,"width":0.75,"height":0.29},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["corte-longitudinal","corte-transversal","sierra-circular"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0159-002",
+    "page_id": "PAGE-CPNC-2025-P0159",
+    "content_type": "procedure",
+    "source_transcription": "Circular de mano. La sierra circular de mano funciona de manera similar, pero en este caso la herramienta es la que se mueve. La pieza de madera debe estar firmemente fijada con prensas sobre una mesa. Luego, se traza la línea de corte con una regla, y sobre esta avanza el patín de la sierra circular. El principio de corte es el mismo que en la sierra de mesa, solo que se invierten los roles: la herramienta se mueve y la pieza está fija.",
+    "normalized_text": "La fuente explica que, con una sierra circular de mano, la pieza permanece fija y la herramienta se desplaza. Indica sujetar firmemente la madera con prensas, trazar la línea de corte con una regla y hacer avanzar el patín de la sierra sobre esa referencia.",
+    "learning_text": "En la sierra circular de mano cambia qué elemento se desplaza: fija bien la pieza y controla la trayectoria de la herramienta sobre una referencia de corte. La fuente contrasta este principio con la sierra de mesa, donde normalmente se mueve la pieza.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0159-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":159,"printed_page":137,"region":{"x":0.02,"y":0.41,"width":0.96,"height":0.22},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["sierra-circular-de-mano","prensas","linea-de-corte","patin","pieza-fija"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0159-003",
+    "page_id": "PAGE-CPNC-2025-P0159",
+    "content_type": "reference",
+    "source_transcription": "Ajustes de profundidad y ángulo. La sierra circular, ya sea de mesa o de mano, permite: Ajustar la altura del disco según el espesor del tablero. Inclinar el disco hasta 45 grados para realizar cortes angulados como: Corte a 45 o Corte Francés (También llamado chaflán).",
+    "normalized_text": "La fuente indica que las sierras circulares de mesa y de mano permiten ajustar la altura o profundidad efectiva del disco según el espesor del tablero e inclinar el disco hasta 45 grados para cortes angulados, incluido el corte a 45 o corte francés/chaflán.",
+    "learning_text": "Antes del corte, relaciona el ajuste del disco con el espesor de la pieza y con el ángulo que necesitas. El límite de 45 grados citado corresponde a esta fuente y no sustituye la especificación de cada máquina.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0159-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":159,"printed_page":137,"region":{"x":0.51,"y":0.60,"width":0.47,"height":0.18},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["profundidad","altura-disco","angulo","45-grados","chaflan","corte-frances"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0159-004",
+    "page_id": "PAGE-CPNC-2025-P0159",
+    "content_type": "reference",
+    "source_transcription": "Alimentación eléctrica. Ambos tipos de sierras pueden encontrarse en versión: Con cable. Inalámbrica, generalmente funcionando con dos baterías de 18V o 20V (equivalente a 36V en total), lo que da la potencia suficiente para cortes exigentes.",
+    "normalized_text": "La fuente menciona versiones con cable e inalámbricas para sierras circulares de mesa y de mano. Para las inalámbricas cita configuraciones con dos baterías de 18 V o 20 V y expresa una equivalencia de 36 V en total.",
+    "learning_text": "Distingue primero si la herramienta es con cable o a batería. Conserva los valores eléctricos como datos de esta fuente y verifica la configuración concreta del fabricante antes de seleccionar baterías o accesorios.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0159-004"],
+    "source": {"book_id":"cpnc-2025","pdf_page":159,"printed_page":137,"region":{"x":0.51,"y":0.77,"width":0.47,"height":0.20},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["alimentacion-electrica","con-cable","inalambrica","bateria","18v","20v","36v"]
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0198",
+  "pdf_page": 198,
+  "printed_page": 176,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0198-001","kind":"dimensioned_kitchen_components_reference","meaningful":true,"figure_id":"FIG-CPNC-2025-P0198-001","source_region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"reason":"Lámina a página completa que combina ilustraciones de mueble alto, mueble bajo y mesón con cotas y notas constructivas."}
+  ]
+}

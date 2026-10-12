@@ -1,0 +1,46 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0012-001",
+    "page_id": "PAGE-CPNC-2025-P0012",
+    "content_type": "material",
+    "source_transcription": "Innova en tus proyectos con Duralam\nTABLERO LAMINADO DE ALTA RESISTENCIA\nDuralam es la línea de tableros laminados de alta resistencia de Duratex, ideal para espacios de alto tráfico y uso intensivo. Su superficie laminada garantiza una mayor durabilidad y facilidad de mantenimiento, combinando estética y funcionalidad.",
+    "normalized_text": "Duralam es presentada como la línea de tableros laminados de alta resistencia de Duratex, orientada a espacios de alto tráfico y uso intensivo. La fuente atribuye a su superficie laminada mayor durabilidad y facilidad de mantenimiento.",
+    "learning_text": "Duralam es la línea de Duratex que la página presenta para usos exigentes y de alto tráfico. Según la fuente, busca combinar resistencia, mantenimiento sencillo, estética y funcionalidad.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0012-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":12,"printed_page":null,"region":{"x":0.05,"y":0.52,"width":0.42,"height":0.38},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["Duralam","tablero-laminado","alta-resistencia"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0012-002",
+    "page_id": "PAGE-CPNC-2025-P0012",
+    "content_type": "material",
+    "source_transcription": "¿Por qué elegir Duralam?\n• Alta resistencia a rayones, impactos y desgaste diario.\n• Fácil mantenimiento y limpieza, ideal para cualquier ambiente.\n• Diseños modernos y versátiles, con acabados que se adaptan a múltiples estilos.\n• Mobiliario para hogares, oficinas, comercios, restaurantes y hoteles.\n• Versión RH disponible, resistente a la humedad para proyectos exigentes.",
+    "normalized_text": "La página enumera como características de Duralam: resistencia a rayones, impactos y desgaste; facilidad de mantenimiento y limpieza; variedad de diseños y acabados; aplicaciones en distintos tipos de mobiliario; y disponibilidad de versión RH.",
+    "learning_text": "La fuente destaca cinco puntos: resistencia al uso diario, limpieza sencilla, variedad estética, uso en distintos espacios y una versión RH para humedad.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0012-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":12,"printed_page":null,"region":{"x":0.47,"y":0.52,"width":0.49,"height":0.39},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["Duralam","RH","resistencia","mantenimiento","aplicaciones"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0012-003",
+    "page_id": "PAGE-CPNC-2025-P0012",
+    "content_type": "reference",
+    "source_transcription": "Vienés",
+    "normalized_text": "El ambiente fotográfico está identificado como “Vienés”.",
+    "learning_text": "La página usa un ambiente interior etiquetado como Vienés como referencia visual del acabado.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0012-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":12,"printed_page":null,"region":{"x":0.05,"y":0.19,"width":0.93,"height":0.32},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["Vienés","referencia-visual"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0012-004",
+    "page_id": "PAGE-CPNC-2025-P0012",
+    "content_type": "reference",
+    "source_transcription": "Código QR sin rótulo textual adicional junto a la imagen de Duralam.",
+    "normalized_text": "Código QR asociado a la sección Duralam.",
+    "learning_text": "El QR de la página se decodificó como https://duratex.com.co/catalogo/ficha-tecnica-duralam-2/ . Se conserva como referencia externa; su contenido no se incorpora automáticamente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0012-004"],
+    "source": {"book_id":"cpnc-2025","pdf_page":12,"printed_page":null,"region":{"x":0.84,"y":0.2,"width":0.13,"height":0.13},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["QR","Duralam","ficha-técnica","referencia-externa"]
+  }
+]

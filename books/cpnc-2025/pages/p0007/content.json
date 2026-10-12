@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0007-001",
+    "page_id": "PAGE-CPNC-2025-P0007",
+    "content_type": "reference",
+    "source_transcription": "CARPINTERÍA PARA NO CARPINTER@S\nCAMILO CALLE",
+    "normalized_text": "Carpintería para no Carpinter@s — Camilo Calle.",
+    "learning_text": "Esta página de título presenta el nombre del libro y a su autor, Camilo Calle.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0007-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":7,"printed_page":null,"region":{"x":0.2,"y":0.38,"width":0.6,"height":0.16},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["título","autor","portadilla"]
+  }
+]

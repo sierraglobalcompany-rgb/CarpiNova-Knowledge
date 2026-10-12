@@ -1,0 +1,21 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0269",
+  "pdf_page": 269,
+  "printed_page": 247,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0269-001",
+      "kind": "budget_cash_flow_table",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0269-001",
+      "source_region": {
+        "x": 0.09,
+        "y": 0.16,
+        "width": 0.82,
+        "height": 0.78
+      },
+      "reason": "Tabla reutilizable de presupuesto y flujo de caja con cuatro semanas, ingresos, egresos, gastos operacionales, costos de producción y resumen mensual."
+    }
+  ]
+}

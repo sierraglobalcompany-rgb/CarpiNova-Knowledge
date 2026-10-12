@@ -1,0 +1,7 @@
+<!-- GENERATED FROM content.json; DO NOT EDIT DIRECTLY -->
+
+# Source transcription
+
+## CONTENT-CPNC-2025-P0045-001
+
+UN NUEVO COMIENZO

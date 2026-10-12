@@ -1,0 +1,14 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0272",
+  "pdf_page": 272,
+  "printed_page": 250,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "DEC-P0272-001",
+      "kind": "page_branding",
+      "meaningful": false,
+      "reason": "Página principalmente textual; la cabecera, línea editorial y numeración no añaden una figura educativa independiente."
+    }
+  ]
+}

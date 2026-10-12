@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0220-001",
+    "page_id": "PAGE-CPNC-2025-P0220",
+    "content_type": "reference",
+    "source_transcription": "Colchón de ancho 100 cm x largo 190 cm, altura máxima 36 cm y peso entre __ kg y __ kg. El dibujo rotula 190 cm, 100 cm y 31 cm.",
+    "normalized_text": "La fuente especifica un colchón de 100 cm de ancho por 190 cm de largo y declara 36 cm como altura máxima. El dibujo de la misma lámina muestra además una cota vertical de 31 cm. Los campos de peso están en blanco; la diferencia 36 cm/31 cm se conserva sin reconciliar.",
+    "learning_text": "Usa 100 × 190 cm como referencia de planta del colchón. Antes de decidir la altura admisible, verifica la discrepancia interna entre el texto de 36 cm y la cota gráfica de 31 cm; no inventes los pesos faltantes.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0220-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":220,"printed_page":198,"region":{"x":0.04,"y":0.03,"width":0.92,"height":0.42},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cama-abatible","colchon","medidas","conflicto-fuente"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0220-002",
+    "page_id": "PAGE-CPNC-2025-P0220",
+    "content_type": "procedure",
+    "source_transcription": "GUÍA PARA CONSTRUCCIÓN DE CAMA — Bastidor Interno de la Cama — PASO 1: Construir seis puntales (A2) para bastidor, agregar un cordón de pegante para madera (colbón), a lo largo de la cara interna. Asegúrese que los listones de madera estén iguales en las puntas y formando ‘L’ taladrar orificios aproximadamente cada 20 cm y luego atornillar tornillos de 1 ½” #6. Determinar las distancias para colocar los puntales, dividiendo en 4 partes iguales (equidistantes). Posicionar los puntales entre los laterales del bastidor (A1), repartido en distancias iguales.",
+    "normalized_text": "El paso 1 construye seis puntales A2 con pegante en la cara interna, forma una sección en L, perfora aproximadamente cada 20 cm y fija con tornillos #6 de 1 1/2 pulgada. Luego distribuye los puntales de forma equidistante entre los laterales A1, usando cuatro partes iguales como referencia de reparto.",
+    "learning_text": "Arma primero cada puntal A2 en L, mantén los extremos alineados, aplica el pegante y realiza las perforaciones a separación aproximada. Después marca el reparto equidistante antes de fijar los puntales entre los laterales A1.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0220-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":220,"printed_page":198,"region":{"x":0.04,"y":0.50,"width":0.92,"height":0.29},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cama-abatible","bastidor","paso-1","puntales","pegante","tornillos"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0220-003",
+    "page_id": "PAGE-CPNC-2025-P0220",
+    "content_type": "procedure",
+    "source_transcription": "PASO 2: Ensamblar los puntales (A2) entre los laterales del bastidor (A1) a distancias iguales. Perforar con broca de 1/8” a través del lateral y dentro de cada lado de la figura ‘L’ del puntal, luego atornillo con tornillo de ensamble #6 y 1 ½”. Figura en ‘L’ para tabique.",
+    "normalized_text": "El paso 2 ensambla los puntales A2 entre los laterales A1 a distancias iguales. La perforación indicada usa broca de 1/8 de pulgada a través del lateral y hacia cada lado de la sección en L, seguida por tornillo de ensamble #6 de 1 1/2 pulgada.",
+    "learning_text": "Con los puntales ya repartidos, perfora el lateral hacia cada lado de la pieza en L con la broca indicada y fija con el tornillo #6 especificado, manteniendo la distribución equidistante.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0220-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":220,"printed_page":198,"region":{"x":0.04,"y":0.77,"width":0.92,"height":0.19},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cama-abatible","bastidor","paso-2","broca","ensamble"]
+  }
+]

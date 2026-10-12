@@ -1,0 +1,16 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0071-001","page_id":"PAGE-CPNC-2025-P0071","content_type":"procedure",
+    "source_transcription":"7\nCon las piezas de 5cm*37cm vamos a realizar un ensamble entre ellas en forma de “T” con 2 tornillos de ensamble de 1\"1/2 a 10 cm de los extremos, esta la vamos a ensamblar en el frente de la mesa de noche exactamente debajo de las correderas telescópicas en posición de “T” invertida.",
+    "normalized_text":"Paso 7: unir dos piezas de 5×37 cm formando una T mediante dos tornillos de ensamble de 1½ pulgada ubicados a 10 cm de los extremos. El conjunto se instala en el frente de la mesa de noche, exactamente debajo de las correderas telescópicas, en posición de T invertida.",
+    "learning_text":"El sistema T se construye como un pequeño subconjunto de dos listones y luego se posiciona en el frente del módulo. La fuente fija tanto la geometría de las piezas como su orientación final invertida.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0071-001"],"source":{"book_id":"cpnc-2025","pdf_page":71,"printed_page":49,"region":{"x":0.08,"y":0.06,"width":0.84,"height":0.12},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["paso-7","sistema-T","T-invertida","370x50-mm","10-cm","tornillo-1-1-2"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0071-002","page_id":"PAGE-CPNC-2025-P0071","content_type":"table",
+    "source_transcription":"Descripción | Mat | Cant | Largo | Ancho | L1 | L2 | A1 | A2\nSISTEMA T | CH15 | 2 | 370 | 50 | D | - | - | -",
+    "normalized_text":"La tabla registra dos piezas SISTEMA T en CH15 de 370×50 mm, con tapacanto D en L1.",
+    "learning_text":"El sistema T utiliza dos piezas iguales de 370×50 mm según el despiece de la fuente.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0071-002"],"source":{"book_id":"cpnc-2025","pdf_page":71,"printed_page":49,"region":{"x":0.19,"y":0.77,"width":0.60,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["sistema-T","CH15","370x50-mm","tapacanto"]
+  }
+]

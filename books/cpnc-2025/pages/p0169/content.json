@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0169-001",
+    "page_id": "PAGE-CPNC-2025-P0169",
+    "content_type": "reference",
+    "source_transcription": "1 En 1 hora se puede pintar y barnizar. Tamaños 250 ml y 150 ml. MASILLA REPARADORA PARA GRIETAS Y ACABADOS EN MADERA. Colores: Masilla acrílica ligera, lista para usar, diseñada para reparar y rellenar grietas, agujeros Y fisuras en todo tipo de madera. Listo para utilizar. Secado rápido. No encoge. No se agrieta. No descuelga. Lijable y pintable. Nogal. Roble. Pino. Sapelly. Haya. Asesoría Personalizada.",
+    "normalized_text": "La página es una referencia publicitaria de una masilla acrílica ligera para reparación y acabado de madera. El anuncio indica que está lista para usar, la presenta para rellenar grietas, agujeros y fisuras, enumera claims de secado y comportamiento, ofrece colores Nogal, Roble, Pino, Sapelly y Haya, y muestra presentaciones de 250 ml y 150 ml. También afirma que puede pintarse y barnizarse en 1 hora.",
+    "learning_text": "Conserva los tamaños, colores y tiempo como datos anunciados por la fuente. No asumas que el tiempo de una hora o los demás claims aplican a cualquier condición de uso; verifica la ficha técnica vigente antes de incorporarlos a un procedimiento.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0169-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":169,"printed_page":147,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"text","confidence":0.99,"review_status":"EXTRACTED"}},
+    "tags": ["masilla","madera","reparacion","publicidad","acabado","colores"]
+  }
+]

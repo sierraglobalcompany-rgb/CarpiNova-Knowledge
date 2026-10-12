@@ -1,0 +1,16 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0062-001","page_id":"PAGE-CPNC-2025-P0062","content_type":"concept",
+    "source_transcription":"No es lo más importante pero vamos a empezar con nuestro primer ensamble, ya que quiero motivarlos a que se den cuenta de lo fácil que es desarrollar un proyecto de carpintería, con los métodos que vamos a ver a continuación podrán realizar ensambles de muebles como: cocinas, centro de entretenimiento, estudios, closet y muchos más proyectos.",
+    "normalized_text":"La sección introduce un primer ensamble como ejercicio base para aprender métodos que luego se aplicarán a cocinas, centros de entretenimiento, estudios, clósets y otros muebles.",
+    "learning_text":"El objetivo pedagógico es comenzar con un módulo pequeño y reutilizar las mismas habilidades de ensamble en proyectos de mayor escala.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0062-001"],"source":{"book_id":"cpnc-2025","pdf_page":62,"printed_page":40,"region":{"x":0.08,"y":0.06,"width":0.84,"height":0.13},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["primer-ensamble","aprendizaje","cocinas","centro-de-entretenimiento","closet"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0062-002","page_id":"PAGE-CPNC-2025-P0062","content_type":"procedure",
+    "source_transcription":"Les pido por favor que vean los videos de apoyo en los cuales les enseño las técnicas adecuadas de cada proceso, como lo es ensamblar 2 piezas prensadas, posicionar la guía de marcación, utilizar correctamente el avellanador, el taladro y saber cómo se instalan las bisagras y los rieles, de esta forma siguiendo el paso a paso que vamos a ver a continuación podrán lograr desarrollar su primer ensamble.",
+    "normalized_text":"El autor remite a videos de apoyo para técnicas de prensado de dos piezas, uso de guía de marcación, avellanador y taladro, e instalación de bisagras y rieles antes de seguir el paso a paso del ensamble.",
+    "learning_text":"Antes del montaje completo, la fuente recomienda dominar las operaciones básicas: sujetar piezas, marcar, avellanar, perforar e instalar herrajes.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0062-002"],"source":{"book_id":"cpnc-2025","pdf_page":62,"printed_page":40,"region":{"x":0.08,"y":0.17,"width":0.84,"height":0.12},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["prensado","guia-de-marcacion","avellanador","taladro","bisagras","rieles","videos-de-apoyo"]
+  }
+]

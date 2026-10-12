@@ -1,0 +1,13 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0035-001",
+    "page_id":"PAGE-CPNC-2025-P0035",
+    "content_type":"concept",
+    "source_transcription":"ORDEN DE TRABAJO\nAPRENDER A DESAPRENDER",
+    "normalized_text":"La infografía resume visualmente ideas de la sección: medir el espacio, acordar el proyecto, registrar especificaciones, evitar errores de instalación, trabajar con una orden de trabajo y aprender de los errores.",
+    "learning_text":"El proceso mejora cuando la información pasa de la visita al diseño y a una orden clara, y cuando los errores se usan para corregir prácticas en el siguiente proyecto.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0035-001"],
+    "source":{"book_id":"cpnc-2025","pdf_page":35,"printed_page":13,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.92},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags":["medicion","diseño","orden-de-trabajo","instalacion","aprender-a-desaprender"]
+  }
+]

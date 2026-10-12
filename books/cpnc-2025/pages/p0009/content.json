@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0009-001",
+    "page_id": "PAGE-CPNC-2025-P0009",
+    "content_type": "reference",
+    "source_transcription": "Carpintería para NO carpinteros\n¡Bienvenidos!\nPASO A PASO, SIN PRISA\nCURSO VIRTUAL\nHágalo en Casa\n4\n5.\n1.\n5.",
+    "normalized_text": "Carpintería para no carpinteros. Bienvenidos. Paso a paso, sin prisa. Curso virtual. Hágalo en Casa.",
+    "learning_text": "La ilustración presenta el recorrido inicial del libro: bienvenida, avance paso a paso, acceso al curso virtual, acompañamiento de Hágalo en Casa, consulta de material gráfico y recorrido por los pasos del método.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0009-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":9,"printed_page":null,"region":{"x":0.055,"y":0.025,"width":0.89,"height":0.95},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["introducción","recorrido","curso-virtual"]
+  }
+]

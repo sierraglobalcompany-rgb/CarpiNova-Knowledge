@@ -1,0 +1,9 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0212",
+  "pdf_page": 212,
+  "printed_page": 190,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0212-001","kind":"door_lock_final_installation_steps","meaningful":true,"figure_id":"FIG-CPNC-2025-P0212-001","source_region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"reason":"Continuación ilustrada de la secuencia de instalación de chapa, con pasos 4 y 5."}
+  ]
+}

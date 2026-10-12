@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0248",
+  "pdf_page": 248,
+  "printed_page": 226,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0248-001",
+      "kind": "quotation_visit_infographic",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0248-001",
+      "source_region": {"x":0.05,"y":0.03,"width":0.90,"height":0.94},
+      "reason": "Infografía educativa reutilizable que organiza cobro de visita, profesionalismo, asesoría y diseño/despiece mediante personajes, iconos y bloques de texto."
+    }
+  ]
+}

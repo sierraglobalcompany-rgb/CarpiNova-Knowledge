@@ -1,0 +1,30 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0025-001",
+  "page_id": "PAGE-CPNC-2025-P0025",
+  "type": "illustration",
+  "purpose": "Representar visualmente el grupo de apoyo asociado al libro mediante una interfaz de chat y su acceso por código QR.",
+  "source": {"book_id":"cpnc-2025","pdf_page":25,"printed_page":3,"region":{"x":0.05,"y":0.27,"width":0.84,"height":0.49},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"group-title","type":"title","geometry":{"primitive":"text_block","precision":"approximate","bounding_box":{"x":0.04,"y":0.02,"width":0.44,"height":0.08}},"description":"Título GRUPO DE APOYO."},
+    {"id":"phone","type":"smartphone_illustration","geometry":{"primitive":"rounded_rectangle","precision":"approximate","bounding_box":{"x":0.05,"y":0.12,"width":0.43,"height":0.8}},"description":"Teléfono ilustrado con una conversación grupal."},
+    {"id":"chat","type":"group_chat_interface","geometry":{"primitive":"interface_mockup","precision":"approximate","bounding_box":{"x":0.11,"y":0.2,"width":0.31,"height":0.58}},"description":"Interfaz de chat con varios participantes y burbujas de mensajes."},
+    {"id":"qr","type":"qr_code","geometry":{"primitive":"square","precision":"approximate","bounding_box":{"x":0.63,"y":0.51,"width":0.31,"height":0.38}},"description":"Código QR que dirige al grupo de apoyo de WhatsApp."}
+  ],
+  "relationships": [
+    {"from":"chat","to":"phone","type":"displayed_inside"},
+    {"from":"qr","to":"chat","type":"provides_access_to_group"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"group-title","text":"GRUPO DE APOYO"}
+  ],
+  "camera": {"view":"front","projection":"orthographic"},
+  "visual_style": {"format":"ilustración editorial","background":"crema","linework":"líneas oscuras","layout":"teléfono a la izquierda y QR a la derecha"},
+  "educational_sequence": [
+    {"step":1,"show_entity_ids":["phone","chat"],"instruction":"Mostrar que el recurso consiste en una comunidad de conversación y apoyo."},
+    {"step":2,"show_entity_ids":["qr"],"instruction":"Mostrar que el acceso al grupo se realiza mediante el código QR."}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
+  "accessibility": {"summary":"Ilustración de un teléfono con un chat grupal junto a un código QR de acceso al grupo de apoyo de WhatsApp."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Figura pedagógica y de onboarding; no contiene medidas ni información de fabricación."}
+}

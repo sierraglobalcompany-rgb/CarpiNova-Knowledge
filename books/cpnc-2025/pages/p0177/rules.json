@@ -1,0 +1,26 @@
+[
+  {
+    "rule_id":"RULE-CPNC-2025-P0177-001",
+    "page_id":"PAGE-CPNC-2025-P0177",
+    "category":"edge_banding",
+    "subject":"EDGE_BAND_RECORDING",
+    "predicate":"source_recommends_identifying_which_of_the_two_long_and_two_short_edges_require_edge_banding_in_the_breakdown",
+    "value":{"edge_groups":["2 long sides","2 short sides"]},
+    "applicability":{"source_scope":"edge-banding explanation on printed page 155"},
+    "exceptions":["Exact edge naming conventions may vary by software; preserve source labels when importing this content."],
+    "sources":[{"book_id":"cpnc-2025","pdf_page":177,"printed_page":155,"region":{"x":0.02,"y":0.47,"width":0.96,"height":0.27},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}}],
+    "status":"CANDIDATE"
+  },
+  {
+    "rule_id":"RULE-CPNC-2025-P0177-002",
+    "page_id":"PAGE-CPNC-2025-P0177",
+    "category":"edge_banding_source_recommendation",
+    "subject":"EDGE_BAND_THICKNESS_BY_VISIBILITY",
+    "predicate":"source_recommends_flexible_edge_band_for_structural_or_interior_parts_and_2_mm_rigid_edge_band_for_visible_fronts",
+    "value":{"structural_or_interior":"flexible","visible_fronts":"rigid 2 mm","visible_front_examples":["doors","kitchen fronts","desks"]},
+    "applicability":{"source_scope":"recommendation on printed page 155"},
+    "exceptions":["This is a recommendation from the source; project specifications, material systems and manufacturer guidance may require different edge banding."],
+    "sources":[{"book_id":"cpnc-2025","pdf_page":177,"printed_page":155,"region":{"x":0.02,"y":0.73,"width":0.96,"height":0.24},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}}],
+    "status":"CANDIDATE"
+  }
+]

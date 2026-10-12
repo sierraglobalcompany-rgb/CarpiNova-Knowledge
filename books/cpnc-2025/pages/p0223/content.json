@@ -1,0 +1,46 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0223-001",
+    "page_id": "PAGE-CPNC-2025-P0223",
+    "content_type": "dimension",
+    "source_transcription": "Estudios y comedores\n\nEn muebles de estudio:\nAltura: entre 75 cm y 78 cm\nProfundidad mínima: 60 cm (según normativas de seguridad laboral)\nAsientos: 45 cm de altura\nBordes: redondeados",
+    "normalized_text": "Para muebles de estudio, la fuente indica una altura entre 75 cm y 78 cm, una profundidad mínima de 60 cm, asientos de 45 cm de altura y bordes redondeados.",
+    "learning_text": "Usa estas cotas como referencias explícitas del libro y verifica la normativa aplicable, la ergonomía del usuario y el uso real antes de fabricar.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0223-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":223,"printed_page":201,"region":{"x":0.05,"y":0.10,"width":0.9,"height":0.16},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["estudio","ergonomia","altura","profundidad","asientos"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0223-002",
+    "page_id": "PAGE-CPNC-2025-P0223",
+    "content_type": "dimension",
+    "source_transcription": "En comedores:\nAltura de la mesa: 78 cm\nAltura del asiento: 45 cm",
+    "normalized_text": "Para comedores, la fuente indica 78 cm de altura para la mesa y 45 cm para el asiento.",
+    "learning_text": "Comprueba estas alturas con las sillas, el usuario y el diseño concreto antes de trasladarlas al proyecto.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0223-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":223,"printed_page":201,"region":{"x":0.05,"y":0.26,"width":0.9,"height":0.07},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["comedores","mesa","asiento","ergonomia"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0223-003",
+    "page_id": "PAGE-CPNC-2025-P0223",
+    "content_type": "recommendation",
+    "source_transcription": "Centros de entretenimiento\nPara evitar molestias en el cuello al ver televisión:\nSi ves TV desde un sofá, el centro de la pantalla debe quedar a 120 cm del piso.\nSi ves TV acostado, la base inferior del televisor debe quedar a 80 cm del piso.\n\nLa distancia entre el sofá o la cama y el televisor dependerá del tamaño (en pulgadas) del televisor.\nLos racks o soportes de televisión pueden ir anclados a la pared o a un panel de madera.\nSe fabrican con una medida estandarizada llamada VESA, que define la distancia entre los tornillos traseros del TV.",
+    "normalized_text": "La fuente propone alturas de referencia para el televisor según la postura de visualización, indica que la distancia de observación depende del tamaño del televisor y señala que los soportes pueden fijarse a pared o panel de madera y usan el estándar VESA para la separación de tornillos traseros.",
+    "learning_text": "Define la postura de visualización, el tamaño del televisor, el soporte real y el patrón VESA concreto antes de fijar posiciones o perforaciones.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0223-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":223,"printed_page":201,"region":{"x":0.05,"y":0.34,"width":0.9,"height":0.24},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["centro-entretenimiento","televisor","vesa","ergonomia","soportes"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0223-004",
+    "page_id": "PAGE-CPNC-2025-P0223",
+    "content_type": "recommendation",
+    "source_transcription": "Recomendación final\nSi se toman en cuenta todas estas medidas ergonómicas y funcionales, cualquier proyecto de mobiliario tendrá un resultado exitoso.",
+    "normalized_text": "La fuente cierra recomendando considerar conjuntamente las medidas ergonómicas y funcionales del capítulo para orientar el proyecto de mobiliario.",
+    "learning_text": "Usa la ergonomía y la función como criterios de comprobación del diseño, sin convertir la afirmación de éxito de la fuente en una garantía universal.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0223-004"],
+    "source": {"book_id":"cpnc-2025","pdf_page":223,"printed_page":201,"region":{"x":0.05,"y":0.58,"width":0.9,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["ergonomia","funcionalidad","recomendacion-final"]
+  }
+]

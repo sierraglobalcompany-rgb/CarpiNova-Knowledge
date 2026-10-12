@@ -1,0 +1,21 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0173",
+  "pdf_page": 173,
+  "printed_page": 151,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0173-001",
+      "kind": "section_title_graphic",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0173-001",
+      "source_region": {
+        "x": 0.06,
+        "y": 0.04,
+        "width": 0.88,
+        "height": 0.92
+      },
+      "reason": "Portada gráfica que identifica el Paso 4 y su tema: despiece y optimización."
+    }
+  ]
+}

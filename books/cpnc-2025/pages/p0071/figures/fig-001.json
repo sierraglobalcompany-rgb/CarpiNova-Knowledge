@@ -1,0 +1,14 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0071-001","page_id":"PAGE-CPNC-2025-P0071","type":"assembly_sequence","purpose":"Representar el paso 7: construcción del sistema T y montaje invertido debajo de las correderas telescópicas.",
+  "source":{"book_id":"cpnc-2025","pdf_page":71,"printed_page":49,"region":{"x":0.13,"y":0.17,"width":0.72,"height":0.68},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[{"id":"horizontal-part","type":"system_t_part","geometry":{"primitive":"panel","precision":"exact","dimensions":{"length_mm":370,"width_mm":50}}},{"id":"vertical-part","type":"system_t_part","geometry":{"primitive":"panel","precision":"exact","dimensions":{"length_mm":370,"width_mm":50}}},{"id":"cabinet-shell","type":"nightstand_shell","geometry":{"primitive":"box_assembly","precision":"approximate"}},{"id":"system-t","type":"inverted_t_assembly","geometry":{"primitive":"linear_assembly","precision":"approximate"}}],
+  "relationships":[{"from":"horizontal-part","to":"vertical-part","type":"joined_as_t"},{"from":"system-t","to":"cabinet-shell","type":"mounted_below_slides"}],
+  "measurements":["MEAS-CPNC-2025-P0071-001","MEAS-CPNC-2025-P0071-002","MEAS-CPNC-2025-P0071-003","MEAS-CPNC-2025-P0071-004"],
+  "annotations":[{"target_entity_id":"system-t","text":"Dos piezas 370×50 mm en T invertida"},{"target_entity_id":"system-t","text":"2 tornillos de 1½ pulgada a 10 cm de los extremos"}],
+  "camera":{"view":"isometric","projection":"perspective"},
+  "visual_style":{"format":"dibujo técnico 3D","materials":"tablero claro","dimensions":"370 y 50 mm visibles"},
+  "educational_sequence":[{"step":7,"show_entity_ids":["horizontal-part","vertical-part"],"instruction":"Formar la T con dos piezas iguales."},{"step":8,"show_entity_ids":["cabinet-shell","system-t"],"instruction":"Montar el conjunto en T invertida debajo de las correderas."}],
+  "reconstruction":{"preferred_renderer":"3d","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility":{"summary":"Dos piezas de 370×50 mm forman una T y luego se muestran instaladas de forma invertida en el frente del módulo."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"La posición 'exactamente debajo de las correderas' proviene del texto y debe mantenerse como referencia de fuente."}
+}

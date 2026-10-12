@@ -1,0 +1,33 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0045-001",
+  "page_id":"PAGE-CPNC-2025-P0045",
+  "type":"illustration",
+  "purpose":"Recrear la ilustración pedagógica sobre la transición a enseñanza remota y práctica de carpintería desde casa.",
+  "source":{"book_id":"cpnc-2025","pdf_page":45,"printed_page":23,"region":{"x":0.05,"y":0.15,"width":0.90,"height":0.74},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"title","type":"title","geometry":{"primitive":"text_block","precision":"approximate","bounding_box":{"x":0.02,"y":0.01,"width":0.96,"height":0.12}},"description":"Título UN NUEVO COMIENZO en una franja superior."},
+    {"id":"instructor","type":"remote_instructor","geometry":{"primitive":"illustration","precision":"approximate","bounding_box":{"x":0.06,"y":0.16,"width":0.48,"height":0.49}},"description":"Instructor con audífonos y micrófono frente a un computador portátil, saludando durante una clase remota."},
+    {"id":"video-screen","type":"video_call_screen","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.50,"y":0.20,"width":0.28,"height":0.25}},"description":"Pantalla con cuatro participantes conectados por videollamada."},
+    {"id":"tool-wall","type":"tool_display","geometry":{"primitive":"illustration","precision":"approximate","bounding_box":{"x":0.73,"y":0.15,"width":0.22,"height":0.25}},"description":"Panel con herramientas de carpintería, incluyendo martillo y serrucho."},
+    {"id":"student-1","type":"student","geometry":{"primitive":"illustration","precision":"approximate","bounding_box":{"x":0.05,"y":0.66,"width":0.27,"height":0.31}},"description":"Estudiante trabajando sobre una pieza de madera."},
+    {"id":"student-2","type":"student","geometry":{"primitive":"illustration","precision":"approximate","bounding_box":{"x":0.35,"y":0.64,"width":0.28,"height":0.34}},"description":"Estudiante usando un taladro sobre un pequeño mueble."},
+    {"id":"student-3","type":"student","geometry":{"primitive":"illustration","precision":"approximate","bounding_box":{"x":0.66,"y":0.66,"width":0.27,"height":0.31}},"description":"Estudiante siguiendo la clase con una tableta mientras participa en la práctica."}
+  ],
+  "relationships":[
+    {"from":"instructor","to":"video-screen","type":"teaches_through"},
+    {"from":"video-screen","to":"student-1","type":"connects_to"},
+    {"from":"video-screen","to":"student-2","type":"connects_to"},
+    {"from":"video-screen","to":"student-3","type":"connects_to"}
+  ],
+  "measurements":[],
+  "annotations":[{"target_entity_id":"title","text":"UN NUEVO COMIENZO"}],
+  "camera":{"view":"front","projection":"orthographic"},
+  "visual_style":{"format":"ilustración educativa","background":"taller doméstico","palette":"marrón, naranja y crema","composition":"instructor arriba y estudiantes practicando abajo"},
+  "educational_sequence":[
+    {"step":1,"show_entity_ids":["title","instructor","video-screen"],"instruction":"Presentar el cambio hacia una clase remota."},
+    {"step":2,"show_entity_ids":["tool-wall","student-1","student-2","student-3"],"instruction":"Mostrar que el aprendizaje remoto se acompaña con práctica y herramientas físicas."}
+  ],
+  "reconstruction":{"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
+  "accessibility":{"summary":"Instructor con audífonos enseña por computador a participantes en videollamada, mientras tres estudiantes practican carpintería con herramientas y dispositivos."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"El título y la relación instructor-remoto-práctica son semántica obligatoria; personajes y mobiliario pueden reinterpretarse."}
+}

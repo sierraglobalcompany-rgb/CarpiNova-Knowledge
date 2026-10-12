@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0014-001",
+    "page_id": "PAGE-CPNC-2025-P0014",
+    "content_type": "reference",
+    "source_transcription": "¡CARPINTERO, ESTE CLUB ES PARA TI!\nClub Duratex es una comunidad exclusiva para carpinteros donde puedes disfrutar de increíbles beneficios por tus compras de producto Duratex.",
+    "normalized_text": "Club Duratex se presenta como una comunidad para carpinteros con beneficios asociados a compras de productos Duratex.",
+    "learning_text": "Esta página describe Club Duratex como una comunidad de beneficios para carpinteros vinculada a compras de la marca.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0014-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":14,"printed_page":null,"region":{"x":0.02,"y":0.02,"width":0.43,"height":0.23},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["Club-Duratex","comunidad","carpinteros"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0014-002",
+    "page_id": "PAGE-CPNC-2025-P0014",
+    "content_type": "reference",
+    "source_transcription": "Beneficios de ser parte del club\n• Canjea premios increíbles por tus compras\n• 1.000 Duracoins de bienvenida al registrarte\n• Formación certificada para profesionalizar tu oficio",
+    "normalized_text": "Beneficios indicados por la página: canje de premios por compras, 1.000 Duracoins de bienvenida al registrarse y formación certificada.",
+    "learning_text": "La fuente enumera tres beneficios del club: premios por compras, 1.000 Duracoins de bienvenida y formación certificada.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0014-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":14,"printed_page":null,"region":{"x":0.02,"y":0.24,"width":0.42,"height":0.22},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["Club-Duratex","beneficios","Duracoins","formación"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0014-003",
+    "page_id": "PAGE-CPNC-2025-P0014",
+    "content_type": "reference",
+    "source_transcription": "¿Ya eres parte de Club Duratex? ¡Descúbrelo y únete ahora!\nMás información:",
+    "normalized_text": "La página invita a conocer y unirse a Club Duratex mediante un código QR.",
+    "learning_text": "El QR de “Más información” se decodificó como https://linktr.ee/ClubDuratex . Se conserva como referencia externa; su contenido no se incorpora automáticamente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0014-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":14,"printed_page":null,"region":{"x":0.03,"y":0.48,"width":0.42,"height":0.31},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["Club-Duratex","QR","referencia-externa"]
+  }
+]

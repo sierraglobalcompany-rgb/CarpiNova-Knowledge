@@ -1,0 +1,10 @@
+{
+  "batch_id": "BATCH-100",
+  "book_id": "cpnc-2025",
+  "purpose": "f1-glossary-d-e-definitions",
+  "pdf_pages": [
+    282,
+    283
+  ],
+  "status": "EXTRACTED"
+}

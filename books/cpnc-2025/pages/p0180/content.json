@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0180-001",
+    "page_id": "PAGE-CPNC-2025-P0180",
+    "content_type": "form",
+    "source_transcription": "Proyecto. (cm/mm). Medida tablero. Ancho corte. Nombre corte mínimo. Ancho disco corte. Espesor. Alto tablero. Cantidad. Lado 1. Lado 2. Girar. Tapacanto L1. Tapacanto L1. Tapacanto L2. Tapacanto L2. Servicio Especial. Corte 12. Corte 11. Corte 10. Corte 9. Corte 8. Corte 7. Corte 6. Corte 5. Corte 4. Corte 3. Corte 2. Corte 1. Tapacanto: 0 Sin Tapacanto. Tapacanto: 1 Delgado. Tapacanto: 2 Grueso.",
+    "normalized_text": "La página es un formulario para registrar un proyecto, parámetros del tablero y del corte, hasta doce líneas de piezas, cantidad, Lado 1, Lado 2, giro, cuatro columnas de tapacanto —dos rotuladas L1 y dos rotuladas L2— y un Servicio Especial. Incluye la leyenda de códigos de tapacanto 0, 1 y 2.",
+    "learning_text": "Usa el formulario como estructura de captura del despiece: configura primero el tablero/corte y luego registra cada pieza con dimensiones, orientación, tapacantos y servicio especial. Conserva las cuatro columnas de tapacanto tal como aparecen en la fuente; no las renombres por inferencia.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0180-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":180,"printed_page":158,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["formulario","despiece","tapacanto","servicio-especial","girar","corte","tablero"]
+  }
+]

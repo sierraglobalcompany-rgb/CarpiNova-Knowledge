@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0126-001",
+    "page_id": "PAGE-CPNC-2025-P0126",
+    "content_type": "hardware",
+    "source_transcription": "Locero o escurridor en acero inoxidable. Los loceros o escurridores de acero inoxidable son ideales para instalar en los muebles altos de los gabinetes de cocina. Estos escurridores se consiguen para módulos de 40 hasta 100 centímetros, en incrementos de 10 cm; 40, 50, 60, 70, 80, 90 y 100 cm. Esto significa que el módulo debe medir externamente alguna de estas dimensiones estándar. Internamente, debe ser un poco menor. Por ejemplo, si deseas instalar un escurridor para un módulo de 80 cm, el mueble debe tener una medida exterior de 80 cm, pero su interior debe medir aproximadamente 77 cm, ya que el escurridor tiene un sistema de expansión: se contrae para insertarse y luego se expande para encajar en las perforaciones laterales del mueble.",
+    "normalized_text": "Los loceros o escurridores de acero inoxidable se instalan en muebles altos de cocina. La fuente presenta módulos estándar de 40 a 100 cm, cada 10 cm, y explica que la medida interior es menor que la exterior; como ejemplo, un módulo exterior de 80 cm tendría aproximadamente 77 cm interiores. El herraje se contrae para insertarse y después se expande hacia los laterales.",
+    "learning_text": "El tamaño comercial del escurridor se relaciona con el ancho exterior del módulo. Antes de comprarlo, conviene comprobar también el ancho interior real, porque los costados del mueble reducen el espacio disponible.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0126-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":126,"printed_page":104,"region":{"x":0.06,"y":0.1,"width":0.88,"height":0.34},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["locero","escurridor","acero-inoxidable","mueble-alto","40-100-cm","sistema-expansion"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0126-002",
+    "page_id": "PAGE-CPNC-2025-P0126",
+    "content_type": "procedure",
+    "source_transcription": "Estas perforaciones se deben realizar con una broca para madera de 3/8\" (9.5 mm). Se recomienda marcar la profundidad en la broca con cinta o marcador, para evitar atravesar completamente la pared del mueble durante la perforación.",
+    "normalized_text": "Las perforaciones laterales se realizan con una broca para madera de 3/8\" (9,5 mm). La fuente recomienda marcar en la broca la profundidad de perforación para no atravesar el costado del mueble.",
+    "learning_text": "Marca previamente la profundidad útil sobre la broca. Esa referencia visual ayuda a detener la perforación antes de atravesar el costado del gabinete.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0126-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":126,"printed_page":104,"region":{"x":0.06,"y":0.43,"width":0.88,"height":0.16},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["broca-madera","3-8-pulgada","9-5-mm","profundidad-perforacion","costado-mueble"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0126-003",
+    "page_id": "PAGE-CPNC-2025-P0126",
+    "content_type": "dimension",
+    "source_transcription": "Profundidad mínima: 30 cm. Altura mínima: 60 cm, ideal: 70 cm. Con estas dimensiones, el escurridor de acero inoxidable funcionará correctamente y se integrará de manera segura y estética al mueble.",
+    "normalized_text": "El gráfico indica una profundidad mínima de 30 cm, una altura mínima de 60 cm y una altura ideal de 70 cm para el módulo que recibe el escurridor.",
+    "learning_text": "Antes de instalar el escurridor revisa tres cosas: ancho compatible, al menos 30 cm de profundidad y al menos 60 cm de altura; la fuente señala 70 cm como altura ideal.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0126-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":126,"printed_page":104,"region":{"x":0.06,"y":0.59,"width":0.88,"height":0.32},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["profundidad-minima","30-cm","altura-minima","60-cm","altura-ideal","70-cm"]
+  }
+]

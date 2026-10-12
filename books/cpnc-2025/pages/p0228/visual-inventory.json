@@ -1,0 +1,9 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0228",
+  "pdf_page": 228,
+  "printed_page": 206,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0228-001","kind":"stair_standard_measurements_infographic","meaningful":true,"figure_id":"FIG-CPNC-2025-P0228-001","source_region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"reason":"Infografía con esquema lateral de escalera, fórmula y pares de huella/contrahuella para distintos contextos."}
+  ]
+}

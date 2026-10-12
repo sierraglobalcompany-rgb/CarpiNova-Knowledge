@@ -1,0 +1,16 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0073-001","page_id":"PAGE-CPNC-2025-P0073","content_type":"procedure",
+    "source_transcription":"8\nFinalmente vamos a instalar el frontal de la gaveta, el cual se debe medir de los bordes del mueble hasta la gaveta en los laterales y de la tapa superior hasta la gaveta, para proceder a realizar esta marcación en nuestra tapa frontal desenrielamos el cajón del riel y lo posicionamos en esta marca.\n\nEl ensamble se realiza con tornillo de 1\", el cual no permite que al agarrar las 2 piezas de 15mm vaya a traspasarlas y así no se dañe nuestro frontal, otra técnica de instalación es utilizar pegantes instantáneos con el cajón mirando hacia arriba aplicando el pegante instantáneo sobre la gaveta, posicionamos nuestra tapa frontal, esperamos que seque y finalmente ingresamos los tornillos por la parte de adentro de la gaveta. ( 2 tornillos 1\")",
+    "normalized_text":"La página vuelve a estar numerada como paso 8. Indica medir las separaciones laterales entre el mueble y la gaveta y la separación desde la tapa superior, transferir esas referencias al frente, desenrielar el cajón y posicionar la tapa frontal. La fijación principal usa dos tornillos de 1 pulgada desde el interior; como alternativa de posicionamiento se menciona pegante instantáneo antes de atornillar.",
+    "learning_text":"El frente de gaveta se posiciona a partir de las holguras reales del mueble, no solo por una cota fija. La fuente repite el número 8 usado en p72; CarpiNova conserva esa numeración editorial sin corregirla.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0073-001"],"source":{"book_id":"cpnc-2025","pdf_page":73,"printed_page":51,"region":{"x":0.08,"y":0.06,"width":0.84,"height":0.23},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["paso-8-duplicado","frente-gaveta","tornillo-1-pulgada","pegante-instantaneo","holguras"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0073-002","page_id":"PAGE-CPNC-2025-P0073","content_type":"table",
+    "source_transcription":"Descripción | Mat | Cant | Largo | Ancho | L1 | L2 | A1 | A2\nTAPA MDF | CO15 | 1 | 400 | 115 | - | - | - | -",
+    "normalized_text":"La tabla registra una TAPA MDF material CO15, cantidad 1, de 400×115 mm, sin tapacantos marcados en L1/L2/A1/A2.",
+    "learning_text":"La pieza que funciona como frente de gaveta se registra en el despiece como TAPA MDF de 400×115 mm.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0073-002"],"source":{"book_id":"cpnc-2025","pdf_page":73,"printed_page":51,"region":{"x":0.19,"y":0.76,"width":0.61,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["TAPA-MDF","CO15","400x115-mm","frente-gaveta"]
+  }
+]

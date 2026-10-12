@@ -1,0 +1,10 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0220",
+  "pdf_page": 220,
+  "printed_page": 198,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0220-001","kind":"mattress_dimension_reference","meaningful":true,"figure_id":"FIG-CPNC-2025-P0220-001","source_region":{"x":0.04,"y":0.03,"width":0.92,"height":0.42},"reason":"Ilustración dimensionada del colchón con cotas visibles."},
+    {"inventory_id":"VIS-P0220-002","kind":"internal_frame_steps_1_2","meaningful":true,"figure_id":"FIG-CPNC-2025-P0220-002","source_region":{"x":0.04,"y":0.50,"width":0.92,"height":0.46},"reason":"Secuencia ilustrada de construcción y montaje de puntales A2 entre laterales A1."}
+  ]
+}

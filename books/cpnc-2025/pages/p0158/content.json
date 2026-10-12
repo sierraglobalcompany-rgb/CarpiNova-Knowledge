@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0158-001",
+    "page_id": "PAGE-CPNC-2025-P0158",
+    "content_type": "warning",
+    "source_transcription": "Uso seguro de la sierra circular de mesa. Al usar esta herramienta es crucial mantener la seguridad: Nunca acerques la mano a menos de 5 cm del disco. Al ingresar la pieza, escuádrala contra la guía con una mano y empuja con la otra. Una vez la pieza comience a hacer contacto con el disco, continúa el empuje usando la guía de empuje plástica, sin mover la mano que mantiene la escuadra inicial. Uno de los accidentes más comunes es la llamada “patada” o retroceso (también conocido como kickback). Este ocurre cuando se retira el separador de corte, una platina ubicada detrás del disco. Sin este separador, las dos mitades del corte pueden cerrarse detrás del disco y hacer que la pieza rebote violentamente hacia el operario. También es peligroso quitar la guarda o protector del disco, ya que este evita el contacto accidental con la hoja y ayuda a contener posibles rebotes. Nunca retires los elementos de seguridad de la herramienta. Están diseñados para protegerte, no para estorbar.",
+    "normalized_text": "La fuente indica mantener la mano al menos a 5 cm del disco, escuadrar la pieza contra la guía y continuar el empuje con un empujador cuando la pieza entra en contacto con el disco. Advierte sobre el retroceso o kickback y señala que no deben retirarse el separador de corte ni la guarda del disco.",
+    "learning_text": "La seguridad depende de conservar distancia de la hoja y mantener instalados los elementos de protección. La fuente destaca el empujador, el separador y la guarda como ayudas para reducir la exposición de las manos y el riesgo de retroceso.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0158-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":158,"printed_page":136,"region":{"x":0.02,"y":0.08,"width":0.96,"height":0.4},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["sierra-de-mesa","seguridad","empujador","separador","guarda","kickback","retroceso"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0158-002",
+    "page_id": "PAGE-CPNC-2025-P0158",
+    "content_type": "procedure",
+    "source_transcription": "Verificación y tipos de corte. Antes de cortar, asegúrate de que la pieza esté escuadrada en el borde que apoya contra la guía. Si ese borde no está recto, el corte no será preciso. Incluso al mover la guía a una nueva medida, es recomendable verificar la escuadra con una escuadra metálica o falsa escuadra. Con la sierra circular puedes realizar dos tipos de corte: 1. Corte longitudinal: Se realiza a lo largo de la beta o del lado largo de la pieza. Se apoya la pieza completamente contra la guía. 2. Corte transversal: Se hace con la ayuda de una guía de inglete. El disco atraviesa el ancho (lado corto) de la tabla. No se debe apoyar contra la guía lateral, ya que esto puede generar un aprisionamiento entre el disco y la pieza, provocando un rebote peligroso.",
+    "normalized_text": "La fuente recomienda comprobar que el borde apoyado contra la guía esté recto y escuadrado. Distingue el corte longitudinal, realizado a lo largo de la veta o del lado largo con apoyo contra la guía, del corte transversal, realizado con guía de inglete y sin apoyar la pieza contra la guía lateral para evitar aprisionamiento y retroceso.",
+    "learning_text": "Antes de cortar, verifica que la referencia de la pieza esté recta y escuadrada. Para un corte longitudinal la pieza se guía a lo largo; para un corte transversal la fuente indica usar la guía de inglete y evitar atrapar la pieza entre el disco y la guía lateral.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0158-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":158,"printed_page":136,"region":{"x":0.02,"y":0.47,"width":0.96,"height":0.5},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["escuadra","corte-longitudinal","corte-transversal","guia","guia-de-inglete","retroceso"]
+  }
+]

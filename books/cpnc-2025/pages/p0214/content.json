@@ -1,0 +1,101 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0214-001",
+    "page_id": "PAGE-CPNC-2025-P0214",
+    "content_type": "reference",
+    "source_transcription": "MEDIDAS ESTÁNDAR PARA CAMA. Las camas y las cabeceras son lo más rentable que hay en carpintería. Veamos qué debemos tener en cuenta: TAMAÑO DE LAS CAMAS: Lo que define el tamaño de la cama es el tamaño del colchón. Las medidas del colchón pueden ser de 90cm, 140cm, 160cm, 180cm de ancho y de largo 190cm, también puede ser de 200x200cm. La medida de nochero es libre.",
+    "normalized_text": "La fuente toma el colchón como referencia para definir el tamaño de la cama. Menciona anchos de 90, 140, 160 y 180 cm con largo de 190 cm, además de la opción 200 × 200 cm; el tamaño del nochero queda libre.",
+    "learning_text": "Dimensiona la cama a partir del colchón real. Usa las medidas listadas por la fuente como referencias comerciales y deja el nochero condicionado al espacio y al diseño, porque el libro no fija una medida única.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0214-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 214,
+      "printed_page": 192,
+      "region": {
+        "x": 0.05,
+        "y": 0.05,
+        "width": 0.9,
+        "height": 0.48
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "cama",
+      "colchon",
+      "medidas-estandar",
+      "nochero"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0214-002",
+    "page_id": "PAGE-CPNC-2025-P0214",
+    "content_type": "construction_pattern",
+    "source_transcription": "ALTURA DE LA CAMA: La altura de la cama como tal no tienen medidas estándar. Sin embargo es importante lograr que el colchón quede a la misma altura de los nocheros.",
+    "normalized_text": "La fuente no fija una altura estándar para la cama, pero recomienda que la superficie del colchón quede a la misma altura que los nocheros.",
+    "learning_text": "Define la altura final de la cama junto con el espesor del colchón y la altura de los nocheros, buscando que ambas superficies terminen alineadas.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0214-002"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 214,
+      "printed_page": 192,
+      "region": {
+        "x": 0.05,
+        "y": 0.49,
+        "width": 0.9,
+        "height": 0.22
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "cama",
+      "altura",
+      "colchon",
+      "nocheros"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0214-003",
+    "page_id": "PAGE-CPNC-2025-P0214",
+    "content_type": "reference",
+    "source_transcription": "ESPESOR DE LA CAMA. Las camas se recomienda hacerlas de un calibre mínimo 30mm. Se puede ordenar servicios de sanduche para que tenga mayor calibre.",
+    "normalized_text": "La fuente recomienda un calibre mínimo de 30 mm para las piezas de la cama y menciona el servicio de sanduche como forma de obtener un mayor espesor.",
+    "learning_text": "Toma 30 mm como mínimo recomendado por esta fuente para el calibre de la cama. Si el tablero disponible es más delgado, el libro propone aumentar el calibre mediante un servicio de sanduche.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0214-003"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 214,
+      "printed_page": 192,
+      "region": {
+        "x": 0.05,
+        "y": 0.7,
+        "width": 0.9,
+        "height": 0.25
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "cama",
+      "espesor",
+      "calibre",
+      "sanduche"
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0206-001",
+    "page_id": "PAGE-CPNC-2025-P0206",
+    "content_type": "reference",
+    "source_transcription": "ENTREPAÑOS PARA CLOSET. Su largo es entre 40cm y 60 cm. Para instalarlos no es bueno poner tornillos por fuera del lateral, porque se quedan viendo y el tapatornillos no es tan estético a la vista.",
+    "normalized_text": "La fuente muestra para los entrepaños de clóset un largo entre 40 y 60 cm. Desaconseja fijarlos con tornillos visibles desde el exterior del lateral por razones estéticas.",
+    "learning_text": "Dimensiona el entrepaño dentro del rango mostrado por la fuente y planifica una fijación que no deje tornillos visibles en la cara exterior del lateral.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0206-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":206,"printed_page":184,"region":{"x":0.05,"y":0.05,"width":0.90,"height":0.38},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["closet","entrepanos","largo","fijacion","acabado"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0206-002",
+    "page_id": "PAGE-CPNC-2025-P0206",
+    "content_type": "procedure",
+    "source_transcription": "Hay 2 formas para instalar entrepaños. Colocando tiras del mismo color para que sostenga el entrepaño. Se pueden hacer de 3cm. Los entrepaños también pueden ser sostenidos por esquineros metálicos si las repisas no son muy altas para que no se vean. Repisa.",
+    "normalized_text": "La fuente presenta dos formas de sostener los entrepaños: tiras del mismo color del mueble, para las que indica una dimensión de 3 cm, o esquineros metálicos ubicados de modo que no queden visibles cuando la altura de la repisa lo permite.",
+    "learning_text": "Elige el soporte según el acabado que buscas: una tira del color del mueble o un esquinero metálico oculto. Conserva la cota de 3 cm como referencia de la tira tal como aparece en la fuente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0206-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":206,"printed_page":184,"region":{"x":0.05,"y":0.36,"width":0.90,"height":0.58},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["closet","entrepanos","tiras-soporte","esquineros-metalicos","instalacion"]
+  }
+]

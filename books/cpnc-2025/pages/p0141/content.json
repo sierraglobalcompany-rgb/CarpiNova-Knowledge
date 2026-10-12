@@ -1,0 +1,133 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0141-001",
+    "page_id": "PAGE-CPNC-2025-P0141",
+    "content_type": "concept",
+    "source_transcription": "Métodos de instalación de muebles a muro. Existen cuatro formas comunes de anclar muebles flotantes al muro. A continuación, explico cada una de ellas:",
+    "normalized_text": "La fuente anuncia cuatro formas comunes de anclar muebles flotantes al muro. En esta página solo se desarrollan los métodos numerados 1, 2 y 3; el cuarto método no se describe aquí.",
+    "learning_text": "Esta página abre una secuencia de métodos de fijación. Aprende los tres que sí aparecen aquí y deja el cuarto pendiente hasta su continuación en la fuente.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0141-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 141,
+      "printed_page": 119,
+      "region": {
+        "x": 0.03,
+        "y": 0.08,
+        "width": 0.93,
+        "height": 0.12
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "instalacion-muro",
+      "mueble-flotante",
+      "secuencia-incompleta"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0141-002",
+    "page_id": "PAGE-CPNC-2025-P0141",
+    "content_type": "procedure",
+    "source_transcription": "1. Anclaje directo con amarre trasero. Una de las formas más tradicionales es incorporar un amarre trasero en la estructura del mueble. Por ejemplo, los muebles bajos de cocina se construyen con un piso, laterales, un amarre delantero y un amarre trasero, que suele ser una tira de madera de aproximadamente 10 cm de alto por el largo del mueble. Este sistema también se aplica a otros tipos de muebles flotantes como mesas de noche, archivadores, muebles para televisor o muebles de baño. En estos casos, el amarre trasero puede ir tanto en la parte superior como en la inferior del mueble. Para fijarlos al muro, se perfora el amarre trasero (superior e inferior) con una broca para madera, luego se perfora el muro y se introduce un tornillo que atraviese el amarre y se ancle firmemente en la pared. Este método deja el mueble completamente fijo y estable.",
+    "normalized_text": "Método 1: incorporar un amarre trasero de madera al mueble, perforar el amarre y el muro, y fijar mediante un tornillo que atraviesa el amarre y se ancla a la pared. La fuente indica aproximadamente 10 cm de alto para la tira trasera del ejemplo.",
+    "learning_text": "En el anclaje directo, el mueble incorpora una pieza trasera estructural. La fijación atraviesa esa pieza y llega al muro; la fuente usa una tira de unos 10 cm de alto como ejemplo.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0141-002"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 141,
+      "printed_page": 119,
+      "region": {
+        "x": 0.03,
+        "y": 0.18,
+        "width": 0.93,
+        "height": 0.34
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.98,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "amarre-trasero",
+      "anclaje-directo",
+      "mueble-flotante",
+      "10-cm"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0141-003",
+    "page_id": "PAGE-CPNC-2025-P0141",
+    "content_type": "procedure",
+    "source_transcription": "2. Amarre trasero con corte a 45 (sistema chaflán o Francés). Este sistema es una variante del anterior. En lugar de un amarre recto, se utiliza un amarre trasero con corte a 45 grados, conocido como chaflán o sistema Francés. Es común en muebles altos de cocina. En este caso, al mueble se le coloca un fondo, y detrás de ese fondo se instala el amarre con el corte a 45. La pieza complementaria, que resulta del mismo corte, se fija al muro. Al instalar el mueble, ambas piezas se encajan, permitiendo un anclaje sólido, oculto y removible.",
+    "normalized_text": "Método 2: sistema chaflán o francés con dos piezas complementarias provenientes de un corte a 45°. Una queda en el mueble y la otra en el muro; al encajar permiten una fijación oculta y removible según la fuente.",
+    "learning_text": "El sistema francés divide un amarre con corte a 45° en dos piezas que se enganchan entre sí: una en el mueble y otra en el muro.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0141-003"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 141,
+      "printed_page": 119,
+      "region": {
+        "x": 0.03,
+        "y": 0.52,
+        "width": 0.58,
+        "height": 0.29
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "chaflan",
+      "sistema-frances",
+      "45-grados",
+      "removible"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0141-004",
+    "page_id": "PAGE-CPNC-2025-P0141",
+    "content_type": "hardware",
+    "source_transcription": "3. Soporte multiusos (herraje metálico). Otra alternativa es utilizar herrajes como el soporte multiusos. Este sistema es similar al sistema Francés, pero está fabricado en metal y tiene un diseño dentado para encajar firmemente. Consta de dos piezas: una se fija en la parte trasera del mueble y la otra en el muro. Al montar el mueble, ambas piezas se enganchan, permitiendo una instalación segura, rápida y desmontable. Existen versiones para distintas cargas y tamaños.",
+    "normalized_text": "Método 3: soporte multiusos metálico de dos piezas con encaje dentado. Una pieza se fija al mueble y otra al muro; la fuente lo presenta como solución desmontable y disponible en versiones para distintas cargas y tamaños.",
+    "learning_text": "El soporte multiusos reemplaza el amarre de madera por dos piezas metálicas que se enganchan. No asumas una capacidad concreta: esta página no especifica el modelo ni la carga.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0141-004"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 141,
+      "printed_page": 119,
+      "region": {
+        "x": 0.52,
+        "y": 0.66,
+        "width": 0.44,
+        "height": 0.29
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.98,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "soporte-multiusos",
+      "herraje-metalico",
+      "induma",
+      "desmontable"
+    ]
+  }
+]

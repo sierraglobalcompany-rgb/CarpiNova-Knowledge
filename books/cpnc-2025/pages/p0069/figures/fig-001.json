@@ -1,0 +1,14 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0069-001","page_id":"PAGE-CPNC-2025-P0069","type":"assembly_sequence","purpose":"Representar el paso 5: inserción de la gaveta ensamblada en el módulo mediante correderas telescópicas.",
+  "source":{"book_id":"cpnc-2025","pdf_page":69,"printed_page":47,"region":{"x":0.18,"y":0.21,"width":0.64,"height":0.52},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[{"id":"cabinet-shell","type":"nightstand_shell","geometry":{"primitive":"box_assembly","precision":"approximate"}},{"id":"drawer","type":"drawer_assembly","geometry":{"primitive":"box_assembly","precision":"approximate"}}],
+  "relationships":[{"from":"drawer","to":"cabinet-shell","type":"slides_into"}],
+  "measurements":[],
+  "annotations":[{"target_entity_id":"drawer","text":"Debe entrar suave y sin forzar; la fuente usa un clic como señal de enrielado correcto."}],
+  "camera":{"view":"isometric","projection":"perspective"},
+  "visual_style":{"format":"dibujo técnico 3D","materials":"tablero claro"},
+  "educational_sequence":[{"step":5,"show_entity_ids":["cabinet-shell","drawer"],"instruction":"Llevar las balineras hacia adelante e insertar la gaveta suavemente hasta el enganche indicado por la fuente."}],
+  "reconstruction":{"preferred_renderer":"3d","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility":{"summary":"Mesa de noche abierta con la gaveta superior ya insertada en el módulo."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"La verificación de suavidad/clic proviene del texto y permanece como regla candidata."}
+}

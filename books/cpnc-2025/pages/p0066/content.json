@@ -1,0 +1,16 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0066-001","page_id":"PAGE-CPNC-2025-P0066","content_type":"procedure",
+    "source_transcription":"2\nYa tenemos la base ensamblada de los laterales, ahora vamos a proceder a ensamblar los tiras traseros o correas de amarre; como el nombre lo dice cumple la función de amarrar el módulo, darle escuadra y estabilidad.\nRepetimos los mismos pasos, prensamos, marcamos la unión de 2 tornillos de ensamble de 1\"1/2 en cada uno de los lados; como la pieza tiene tan poco ancho debemos poner los tornillos a 1.5 cm de los bordes en cada ensamble, de esta forma cada correa llevará cuatro tornillos de ensamble de 1\"1/2.",
+    "normalized_text":"Paso 2: instalar las tiras traseras o correas de amarre, cuya función según la fuente es amarrar el módulo, darle escuadra y estabilidad. Cada extremo se prensa y se fija con dos tornillos de ensamble de 1½ pulgada; por el ancho reducido de la pieza, los tornillos se colocan a 1,5 cm de los bordes. Cada correa usa cuatro tornillos en total.",
+    "learning_text":"Las correas traseras estabilizan el módulo. La fuente repite el ciclo de prensar, marcar y atornillar, pero añade una restricción de posición: separar los tornillos 1,5 cm de los bordes de la correa.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0066-001"],"source":{"book_id":"cpnc-2025","pdf_page":66,"printed_page":44,"region":{"x":0.08,"y":0.06,"width":0.84,"height":0.17},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["paso-2","correas-de-amarre","escuadra","estabilidad","tornillos","1-5-cm"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0066-002","page_id":"PAGE-CPNC-2025-P0066","content_type":"table",
+    "source_transcription":"Descripción | Mat | Cant | Largo | Ancho | L1 | L2 | A1 | A2\nCORREAS | CH15 | 2 | 370 | 70 | D | - | - | -",
+    "normalized_text":"La tabla del paso 2 registra dos CORREAS CH15 de 370×70 mm, con tapacanto D en L1.",
+    "learning_text":"El paso utiliza dos correas iguales de 370×70 mm. La tabla conserva además la indicación de tapacanto en L1.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0066-002"],"source":{"book_id":"cpnc-2025","pdf_page":66,"printed_page":44,"region":{"x":0.25,"y":0.69,"width":0.51,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["tabla","correas","CH15","370x70-mm","tapacanto"]
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0191-001",
+    "page_id": "PAGE-CPNC-2025-P0191",
+    "content_type": "reference",
+    "source_transcription": "Tabla del albañil para escuadras 90°. Medidas especiales con el teorema de Pitágoras: x1: 30 x 40 = 50; x2: 60 x 80 = 100; x3: 90 x 120 = 150; x4: 120 x 160 = 200; x5: 150 x 200 = 250; x6: 180 x 240 = 300; x7: 210 x 280 = 350; x8: 240 x 320 = 400; x9: 270 x 360 = 450; x10: 300 x 400 = 500.",
+    "normalized_text": "La página presenta una tabla basada en la proporción 3-4-5 y sus múltiplos para comprobar escuadras de 90 grados. Cada fila conserva la relación entre dos catetos y la diagonal correspondiente.",
+    "learning_text": "Para verificar una escuadra de 90°, puedes usar cualquiera de los múltiplos 3-4-5 de la tabla. Mantén la misma unidad en las tres medidas y comprueba que la diagonal coincida con el valor indicado.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0191-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":191,"printed_page":169,"region":{"x":0.08,"y":0.10,"width":0.84,"height":0.82},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["escuadra","90-grados","pitagoras","3-4-5","medicion","tabla"]
+  }
+]

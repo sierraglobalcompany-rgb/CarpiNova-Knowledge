@@ -1,0 +1,18 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0210-001",
+  "page_id": "PAGE-CPNC-2025-P0210",
+  "type": "mixed",
+  "purpose": "Recrear la referencia de medición del vano y preparación del marco para puerta mostrada por la fuente.",
+  "source": {"book_id":"cpnc-2025","pdf_page":210,"printed_page":188,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"opening","type":"door_opening","geometry":{"precision":"approximate"}},
+    {"id":"tape","type":"measuring_tape","geometry":{"precision":"approximate"}},
+    {"id":"frame","type":"door_frame","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"tape","to":"opening","type":"measures"},{"from":"frame","to":"opening","type":"dimensioned_from"}],
+  "measurements": ["MEAS-CPNC-2025-P0210-001","MEAS-CPNC-2025-P0210-002","MEAS-CPNC-2025-P0210-003","MEAS-CPNC-2025-P0210-004","MEAS-CPNC-2025-P0210-005"],
+  "annotations": [{"target_entity_id":"opening","text":"Ejemplo visual: 209 cm de alto y 79 cm de ancho"},{"target_entity_id":"opening","text":"Medir en varias partes y trabajar con la medida menor"},{"target_entity_id":"frame","text":"Colillado: cortes a 45°"},{"target_entity_id":"frame","text":"MDP de 15 mm según la fuente"}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Lámina de despiece de puertas con un vano acotado, cinta métrica y marco de tres piezas con cortes de colillado."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Las cotas 209 × 79 cm pertenecen al ejemplo dibujado; el descuento de 5 mm se conserva como recomendación propia de la fuente."}
+}

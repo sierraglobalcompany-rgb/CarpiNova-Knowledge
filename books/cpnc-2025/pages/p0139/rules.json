@@ -1,0 +1,62 @@
+[
+  {
+    "rule_id": "RULE-CPNC-2025-P0139-001",
+    "page_id": "PAGE-CPNC-2025-P0139",
+    "category": "anchor_selection",
+    "subject": "DRYWALL",
+    "predicate": "use_rear_expanding_anchor_and_consider_panel_capacity",
+    "value": true,
+    "applicability": {"wall": "panel yeso (drywall)", "source_scope": "book recommendation"},
+    "exceptions": [],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":139,"printed_page":117,"region":{"x":0.03,"y":0.08,"width":0.92,"height":0.22},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0139-002",
+    "page_id": "PAGE-CPNC-2025-P0139",
+    "category": "anchor_selection",
+    "subject": "POURED_CONCRETE",
+    "predicate": "expansion_anchor_expands_in_solid_support",
+    "value": true,
+    "applicability": {"wall": "concreto vaciado", "source_scope": "book explanation"},
+    "exceptions": [],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":139,"printed_page":117,"region":{"x":0.03,"y":0.31,"width":0.55,"height":0.22},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0139-003",
+    "page_id": "PAGE-CPNC-2025-P0139",
+    "category": "anchor_selection",
+    "subject": "WOOD_CONSTRUCTION",
+    "predicate": "screw_can_fix_directly_without_anchor",
+    "value": true,
+    "applicability": {"wall": "madera", "source_scope": "book explanation"},
+    "exceptions": [],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":139,"printed_page":117,"region":{"x":0.34,"y":0.46,"width":0.61,"height":0.13},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0139-004",
+    "page_id": "PAGE-CPNC-2025-P0139",
+    "category": "direct_fixing",
+    "subject": "MASONRY_DIRECT_SCREW_ALTERNATIVE",
+    "predicate": "source_recommends_pilot_hole_and_direct_screw",
+    "value": {"pilot_hole_in":0.125,"screw_gauge":8,"screw_length_in":2},
+    "applicability": {"source_scope": "alternative method stated by the book; not validated as universal engineering guidance"},
+    "exceptions": ["Load capacity and substrate condition are not quantified on this page."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":139,"printed_page":117,"region":{"x":0.03,"y":0.57,"width":0.93,"height":0.19},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0139-005",
+    "page_id": "PAGE-CPNC-2025-P0139",
+    "category": "direct_fixing",
+    "subject": "WALL_TYPE_SCREW_REFERENCE",
+    "predicate": "source_callout_differentiates_screw_gauge_by_wall",
+    "value": {"poured_concrete":{"screw_gauge":6,"length_in":2},"traditional_wall":{"screw_gauge":8,"length_in":2},"pilot_hole_in":0.125},
+    "applicability": {"source_scope": "lower-right source callout"},
+    "exceptions": ["This callout is preserved separately from the page's broader #8 recommendation."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":139,"printed_page":117,"region":{"x":0.57,"y":0.64,"width":0.39,"height":0.28},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  }
+]

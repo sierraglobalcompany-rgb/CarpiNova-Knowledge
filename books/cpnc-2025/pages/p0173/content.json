@@ -1,0 +1,36 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0173-001",
+    "page_id": "PAGE-CPNC-2025-P0173",
+    "content_type": "reference",
+    "source_transcription": "PASO 4\nDESPIECE &\nOPTIMIZACIÓN\nHÁGALO EN CASA",
+    "normalized_text": "Paso 4 — Despiece y optimización. Hágalo en casa.",
+    "learning_text": "Esta página introduce visualmente el Paso 4, dedicado al despiece y la optimización. Funciona como portada de sección y no establece por sí sola una regla técnica.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0173-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 173,
+      "printed_page": 151,
+      "region": {
+        "x": 0.06,
+        "y": 0.04,
+        "width": 0.88,
+        "height": 0.92
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "paso-4",
+      "despiece",
+      "optimizacion",
+      "hagalo-en-casa",
+      "portada-seccion"
+    ]
+  }
+]

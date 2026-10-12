@@ -1,0 +1,15 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0187",
+  "pdf_page": 187,
+  "printed_page": 165,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0187-001",
+      "kind": "certification_qr_grid",
+      "meaningful": true,
+      "source_region": {"x":0.05,"y":0.30,"width":0.90,"height":0.56},
+      "exclusion_reason": "La cuadrícula contiene ocho códigos QR asociados a Clase 1–8. Los payloads no fueron decodificados de forma fiable; recrearlos sin esos datos podría generar enlaces incorrectos. Se conserva la estructura visible en ContentSpec, no un FigureSpec regenerable."
+    }
+  ]
+}

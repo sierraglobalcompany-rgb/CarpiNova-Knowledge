@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0218-001",
+    "page_id": "PAGE-CPNC-2025-P0218",
+    "content_type": "reference",
+    "source_transcription": "Medidas externas del mueble. VISTA FRONTAL CAMA CERRADA. VISTA LATERAL CAMA ABIERTA.",
+    "normalized_text": "La lámina presenta una vista frontal con la cama cerrada y una vista lateral con la cama abierta para comunicar las dimensiones externas del mueble. Las cotas pequeñas del dibujo se conservan en la referencia visual, pero no se normalizan como medidas en este lote porque su lectura no es suficientemente inequívoca.",
+    "learning_text": "Usa las dos vistas para comprender el volumen ocupado por el mueble cerrado y por la cama desplegada. Antes de fabricar, verifica directamente en la fuente las cotas gráficas pequeñas.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0218-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":218,"printed_page":196,"region":{"x":0.04,"y":0.03,"width":0.92,"height":0.43},"extraction":{"method":"visual","confidence":0.92,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cama-abatible","medidas-externas","vista-frontal","vista-lateral"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0218-002",
+    "page_id": "PAGE-CPNC-2025-P0218",
+    "content_type": "reference",
+    "source_transcription": "PARTES ANTES DEL ENSAMBLE. A Bastidor interno de la cama. B Laterales del marco cama. C Piecero del marco. D Cabecero del marco. E Panel frontal del marco. F Cabezal de la cama. G Laterales verticales del gabinete. H Tapa superior gabinete. H1 Tapa posterior gabinete. J MDF soporte del colchón. Z Zócalos. Pata de madera.",
+    "normalized_text": "La vista explotada previa al ensamble identifica por letras el bastidor interno, laterales, piecero, cabecero, panel frontal, cabezal, laterales del gabinete, tapas, soporte de colchón, zócalos y pata de madera.",
+    "learning_text": "Etiqueta las piezas antes de ensamblar y conserva los símbolos de la fuente, porque esos mismos identificadores enlazan con la lista de corte de la página siguiente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0218-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":218,"printed_page":196,"region":{"x":0.04,"y":0.49,"width":0.92,"height":0.47},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cama-abatible","despiece","preensamble","gabinete","marco-cama"]
+  }
+]

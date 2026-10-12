@@ -1,0 +1,57 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0034-001",
+    "page_id":"PAGE-CPNC-2025-P0034",
+    "content_type":"recommendation",
+    "source_transcription":"y perseverante. Creamos un outlet para vender lo que se devolvía. Afortunadamente, la carpintería es rentable, pero eso no justifica la molestia de los clientes. ¿Quién quiere esperar dos meses por un mueble que llega con las medidas equivocadas? Nadie.\n\nPor eso insisto en dos pilares fundamentales:\n\n1. El registro claro y detallado de las medidas.\n2. La orden de producción completa y técnica.\nDe estos dos elementos depende el éxito del proyecto, la satisfacción del cliente y la rentabilidad del negocio.",
+    "normalized_text":"El autor resume dos pilares del proceso: un registro claro y detallado de las medidas y una orden de producción completa y técnica. Los relaciona con el resultado del proyecto, la satisfacción del cliente y la rentabilidad.",
+    "learning_text":"Dos documentos concentran información crítica: el levantamiento de medidas y la orden de producción. El primero describe el espacio; el segundo convierte esa información en instrucciones claras para fabricar e instalar.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0034-001"],
+    "source":{"book_id":"cpnc-2025","pdf_page":34,"printed_page":12,"region":{"x":0.06,"y":0.08,"width":0.88,"height":0.22},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags":["medidas","orden-de-produccion","proceso","cliente","rentabilidad"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0034-002",
+    "page_id":"PAGE-CPNC-2025-P0034",
+    "content_type":"example",
+    "source_transcription":"Les comparto una anécdota más. A veces visitaba a clientes recurrentes, y al ver los muebles que ya les habíamos entregado, me preguntaba sorprendido: “¿Usted por qué recibió eso así?”. Cables por fuera, cajones pegados, puertas desajustadas... Me daba rabia y vergüenza. Recuerdo una clienta a la que los cajones no le abrían bien. Me dijo con toda la calma: “No se preocupe, el instalador me dijo que con el tiempo eso se aflojaba”. ¡Obviamente no es así! El riel debe ir perfectamente escuadrado para que funcione bien. A ese instalador, que aún es mi amigo, le sigo echando en cara eso.",
+    "normalized_text":"El autor describe fallas de instalación —cables expuestos, cajones pegados y puertas desajustadas— y usa el caso de un cajón para enfatizar que el riel debe quedar correctamente escuadrado, no esperar que el problema se corrija con el uso.",
+    "learning_text":"Un error de instalación no debe normalizarse. Si un cajón no abre correctamente, hay que revisar la geometría y el montaje; el mecanismo debe instalarse de forma adecuada desde el principio.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0034-002"],
+    "source":{"book_id":"cpnc-2025","pdf_page":34,"printed_page":12,"region":{"x":0.06,"y":0.32,"width":0.88,"height":0.18},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags":["instalacion","cajones","rieles","escuadra","calidad"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0034-003",
+    "page_id":"PAGE-CPNC-2025-P0034",
+    "content_type":"concept",
+    "source_transcription":"La clave es que el proceso sea transparente, que el cliente tenga confianza, y uno también. Cuando hay claridad, hay tranquilidad.",
+    "normalized_text":"El autor presenta la transparencia y la claridad del proceso como base para la confianza entre cliente y proveedor.",
+    "learning_text":"Un proceso documentado no solo evita errores: también permite que ambas partes sepan qué se acordó y qué ocurrirá después.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0034-003"],
+    "source":{"book_id":"cpnc-2025","pdf_page":34,"printed_page":12,"region":{"x":0.06,"y":0.52,"width":0.88,"height":0.07},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags":["transparencia","cliente","confianza","proceso"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0034-004",
+    "page_id":"PAGE-CPNC-2025-P0034",
+    "content_type":"concept",
+    "source_transcription":"En conclusión, la informalidad es lo que más daño le hace al oficio. Tener control del proceso genera excelencia, profesionalismo y resultados correctos —incluyendo la ganancia que esperamos.",
+    "normalized_text":"El autor contrapone la informalidad con el control del proceso y relaciona este último con profesionalismo, resultados correctos y rentabilidad.",
+    "learning_text":"Controlar el proceso significa trabajar con información, pasos y responsabilidades claras. Esa disciplina ayuda a repetir buenos resultados y reducir reprocesos.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0034-004"],
+    "source":{"book_id":"cpnc-2025","pdf_page":34,"printed_page":12,"region":{"x":0.06,"y":0.61,"width":0.88,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags":["control-del-proceso","profesionalismo","calidad","rentabilidad"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0034-005",
+    "page_id":"PAGE-CPNC-2025-P0034",
+    "content_type":"recommendation",
+    "source_transcription":"Pero lo más valioso de todo esto es aprender a desaprender. Mi invitación es esa: desaprendan las malas costumbres, suelten los vicios del pasado y aprendan de las experiencias. Solo así podrán enseñar, avanzar y disfrutar este oficio. Yo lo hice. Y si hoy volviera a vender mobiliario, con lo que sé ahora, no tendría los problemas que tuve en el pasado.",
+    "normalized_text":"El autor invita a revisar hábitos anteriores, abandonar prácticas que generan problemas y aprender de la experiencia para mejorar el oficio.",
+    "learning_text":"“Aprender a desaprender” significa detectar prácticas que producen errores, reemplazarlas por procesos mejores y conservar lo aprendido para el siguiente proyecto.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0034-005"],
+    "source":{"book_id":"cpnc-2025","pdf_page":34,"printed_page":12,"region":{"x":0.06,"y":0.71,"width":0.88,"height":0.15},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags":["aprender-a-desaprender","mejora-continua","experiencia"]
+  }
+]

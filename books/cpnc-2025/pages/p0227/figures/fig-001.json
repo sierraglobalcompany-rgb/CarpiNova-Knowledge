@@ -1,0 +1,30 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0227-001",
+  "page_id": "PAGE-CPNC-2025-P0227",
+  "type": "mixed",
+  "purpose": "Recrear las fijaciones del soporte de T.V. al tablón y el sistema de chaflán mostrado por la fuente.",
+  "source": {"book_id":"cpnc-2025","pdf_page":227,"printed_page":205,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"particleboard","type":"particleboard_panel","geometry":{"precision":"approximate"}},
+    {"id":"tv-bracket","type":"tv_wall_mount_bracket","geometry":{"precision":"approximate"}},
+    {"id":"direct-screw","type":"direct_fastener","geometry":{"precision":"approximate"}},
+    {"id":"through-bolt","type":"through_fastener_with_washer","geometry":{"precision":"approximate"}},
+    {"id":"wall-cleat","type":"wall_chamfer_piece","geometry":{"precision":"approximate"}},
+    {"id":"board-cleat","type":"board_chamfer_piece","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [
+    {"from":"tv-bracket","to":"particleboard","type":"fastened_to"},
+    {"from":"direct-screw","to":"particleboard","type":"fastens"},
+    {"from":"through-bolt","to":"particleboard","type":"passes_through"},
+    {"from":"wall-cleat","to":"board-cleat","type":"interlocks_with"}
+  ],
+  "measurements": ["MEAS-CPNC-2025-P0227-001","MEAS-CPNC-2025-P0227-002","MEAS-CPNC-2025-P0227-003"],
+  "annotations": [
+    {"target_entity_id":"direct-screw","text":"1 pulgada x8 según la fuente"},
+    {"target_entity_id":"through-bolt","text":"Pasante, asegurado atrás con arandela"},
+    {"target_entity_id":"wall-cleat","text":"Sistema de chaflán: dos piezas con corte de 45°"}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Tablón de aglomerado con soporte de T.V., dos alternativas de fijación y un encaje de dos piezas a 45 grados entre pared y tablero."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La cifra de 120 kgf se conserva como afirmación de la fuente; no se extrapola a una capacidad estructural general ni a configuraciones no mostradas."}
+}

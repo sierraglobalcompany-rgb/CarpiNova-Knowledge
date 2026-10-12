@@ -1,0 +1,16 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0068-001","page_id":"PAGE-CPNC-2025-P0068","content_type":"procedure",
+    "source_transcription":"4\nEn este paso vamos a armar la gaveta, para proceder a instalarle la otra parte de las correderas telescópicas, una de las partes de la corredera se instaló en el paso anterior en los laterales del mueble, la otra parte (la parte delgada) será instalada en la base de nuestra gaveta a ras en la parte de abajo y a ras al frente.\nLa gaveta consta de laterales, tapa frontal, tapa trasera y una base.\nVamos a ensamblarla con tornillo de 1\"1/2, uno en cada uno de los extremos y la base de nuestra gaveta también llevará un solo tornillo en la mitad de cada uno de los lados.",
+    "normalized_text":"Paso 4: armar la gaveta e instalar en ella la parte delgada de la corredera telescópica, a ras por la parte inferior y a ras con el frente. La gaveta se compone de dos laterales, frente, trasera y fondo/base. La fuente indica tornillos de 1½ pulgada y un tornillo centrado en cada lado para fijar el fondo/base.",
+    "learning_text":"Este paso construye el cajón como un subconjunto independiente y prepara la segunda mitad de las correderas. La referencia crítica de montaje del riel es quedar a ras abajo y a ras al frente de la gaveta.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0068-001"],"source":{"book_id":"cpnc-2025","pdf_page":68,"printed_page":46,"region":{"x":0.08,"y":0.06,"width":0.84,"height":0.18},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["paso-4","gaveta","corredera-telescopica","a-ras","tornillos"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0068-002","page_id":"PAGE-CPNC-2025-P0068","content_type":"table",
+    "source_transcription":"Descripción | Mat | Cant | Largo | Ancho | L1 | L2 | A1 | A2\nFONDO CAJON | CH15 | 1 | 312 | 270 | - | - | - | -\nFRONTALES CAJON | CH15 | 2 | 312 | 80 | D | - | - | -\nLATERALES CAJON | CH15 | 2 | 300 | 80 | D | - | - | -",
+    "normalized_text":"El despiece parcial de la gaveta contiene un fondo CH15 de 312×270 mm, dos frontales CH15 de 312×80 mm y dos laterales CH15 de 300×80 mm. Frontales y laterales tienen tapacanto D en L1.",
+    "learning_text":"La gaveta se forma con cinco piezas: fondo, dos piezas frontal/trasera y dos laterales. La tabla conserva las dimensiones y los cantos indicados por la fuente.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0068-002"],"source":{"book_id":"cpnc-2025","pdf_page":68,"printed_page":46,"region":{"x":0.18,"y":0.63,"width":0.64,"height":0.14},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["despiece-gaveta","fondo-cajon","frontales-cajon","laterales-cajon","CH15"]
+  }
+]

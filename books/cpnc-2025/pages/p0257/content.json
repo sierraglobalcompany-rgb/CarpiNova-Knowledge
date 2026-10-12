@@ -1,0 +1,40 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0257-001",
+    "page_id": "PAGE-CPNC-2025-P0257",
+    "content_type": "form",
+    "source_transcription": "PROGRAMACION OBRAS\n\nDESPIECE — D\nCORTE Y ENCHAPE — C\nARMADO — A\nINSTALACION — I\nENTREGA — E\n\nLOGO\n\nMES:\nNOMBRE DE LA OBRA\nL M M J V S D\nL M M J V S D\nL M M J V S D\nL M M J V S D\n\nOBRA 1:\nOBRA 2:\nOBRA 3:\nOBRA 4:\nOBRA 5:\nOBRA 6:\n\nOBSERVACIONES: Diligenciar primero la FECHA DE ENTREGA pactada con el cliente, se definen los otros tiempos y se van diligenciando de adelante para atrás y se identifica la fecha límite para iniciar producción.",
+    "normalized_text": "Formulario de programación de obras con una leyenda de cinco etapas —despiece (D), corte y enchape (C), armado (A), instalación (I) y entrega (E)—, un espacio para logo, campo de mes, seis filas de obra y una cuadrícula de cuatro secuencias semanales L-M-M-J-V-S-D. La observación indica diligenciar primero la fecha de entrega acordada con el cliente, definir los demás tiempos hacia atrás e identificar la fecha límite para iniciar producción.",
+    "learning_text": "Programa cada obra empezando por la fecha de entrega pactada y retrocede en el calendario para ubicar instalación, armado, corte y enchape y despiece. Usa los códigos D, C, A, I y E de la propia plantilla y registra hasta seis obras en la cuadrícula mensual. La fuente muestra cuatro secuencias semanales; no se amplía el formato por inferencia.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0257-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 257,
+      "printed_page": 235,
+      "region": {
+        "x": 0.03,
+        "y": 0.04,
+        "width": 0.94,
+        "height": 0.92
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "paso-5",
+      "programacion-obras",
+      "cronograma",
+      "despiece",
+      "corte-y-enchape",
+      "armado",
+      "instalacion",
+      "entrega",
+      "formulario"
+    ]
+  }
+]

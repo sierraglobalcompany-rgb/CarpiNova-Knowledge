@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0125",
+  "pdf_page": 125,
+  "printed_page": 103,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0125-001",
+      "kind": "handle_and_gola_alternatives",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0125-001",
+      "source_region": {"x": 0.02, "y": 0.08, "width": 0.94, "height": 0.87},
+      "reason": "La página compara perfil Gola, Gola en madera y seis soluciones de apertura; la composición visual es necesaria para un módulo didáctico regenerable."
+    }
+  ]
+}

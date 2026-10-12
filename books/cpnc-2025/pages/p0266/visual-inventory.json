@@ -1,0 +1,21 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0266",
+  "pdf_page": 266,
+  "printed_page": 244,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0266-001",
+      "kind": "closet_vestier_entertainment_delivery_checklist_form",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0266-001",
+      "source_region": {
+        "x": 0.1,
+        "y": 0.13,
+        "width": 0.8,
+        "height": 0.77
+      },
+      "reason": "Formulario reutilizable de entrega de clóset, vestier y muebles de entretenimiento con campos, lista de 16 revisiones, casilla OK, observaciones y nombres de responsables."
+    }
+  ]
+}

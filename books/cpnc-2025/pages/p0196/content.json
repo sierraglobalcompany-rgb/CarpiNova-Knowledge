@@ -1,0 +1,13 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0196-001",
+    "page_id": "PAGE-CPNC-2025-P0196",
+    "content_type": "reference",
+    "source_transcription": "MEDIDAS PARA TENER EN CUENTA DE LA COCINA. 80-90cm (31.4-35.4in); 25cm; 60 cm; 85-95cm (33.4-37.4in); 100-120cm (39.7-47.2in). Rebanco. Isla. Espacio de transito. Mueble Bajo. Recuerda que todas las medidas son estandar.",
+    "normalized_text": "Referencia gráfica de medidas estándar de cocina. La lámina muestra 80-90 cm entre la superficie de la isla y la luminaria colgante, 60 cm entre el mesón y el mueble alto, 85-95 cm de altura de trabajo y 100-120 cm de espacio de tránsito entre frentes. También aparece una cota de 25 cm junto al rebanco, cuyo significado geométrico exacto no se estructura como medición por no ser suficientemente inequívoco en la imagen.",
+    "learning_text": "Usa estas cotas como referencias iniciales de distribución, no como sustituto de una medición real del espacio. Conserva suficiente separación para tránsito y verifica alturas y distancias según el proyecto antes de fabricar.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0196-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":196,"printed_page":174,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cocina","medidas-estandar","isla","mueble-alto","mueble-bajo","transito"]
+  }
+]

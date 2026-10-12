@@ -1,0 +1,38 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0230-001",
+    "page_id": "PAGE-CPNC-2025-P0230",
+    "content_type": "reference",
+    "source_transcription": "Índice de recursos QR: Entrepaños de closet; Cachetero de closet; ¿Cómo instalar un centro de TV?; Repisas flotantes; Puertas; Puertas entamboradas; Camas; Camas.",
+    "normalized_text": "La página funciona como índice visual de ocho recursos QR relacionados con closet, centro de TV, repisas, puertas y camas. Se conservan los títulos visibles tal como aparecen, incluidos dos códigos distintos titulados “Camas”; los destinos, URLs o payloads codificados en los QR no fueron decodificados ni verificados en esta extracción.",
+    "learning_text": "Usa los títulos como mapa temático de recursos complementarios sobre closet, centro de TV, repisas, puertas y camas. Los dos recursos rotulados “Camas” se mantienen como elementos distintos porque así aparecen en la fuente. No trates los QR recreados como enlaces funcionales hasta decodificar y verificar sus destinos contra la fuente original.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0230-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 230,
+      "printed_page": 208,
+      "region": {
+        "x": 0.02,
+        "y": 0.02,
+        "width": 0.96,
+        "height": 0.96
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "qr",
+      "closet",
+      "centro-tv",
+      "repisas",
+      "puertas",
+      "camas",
+      "indice-recursos"
+    ]
+  }
+]

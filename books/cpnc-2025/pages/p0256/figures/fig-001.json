@@ -1,0 +1,56 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0256-001",
+  "page_id": "PAGE-CPNC-2025-P0256",
+  "type": "process_diagram",
+  "purpose": "Recrear la infografía de entrega del proyecto preservando sus cuatro acciones, textos visibles e ilustraciones de apoyo.",
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 256,
+    "printed_page": 234,
+    "region": {
+      "x": 0.04,
+      "y": 0.05,
+      "width": 0.92,
+      "height": 0.9
+    },
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
+  "entities": [
+    {"id":"title","type":"title_block","geometry":{"primitive":"text","precision":"approximate","bounding_box":{"x":0.08,"y":0.05,"width":0.84,"height":0.12}},"description":"Título ¿Cómo se entrega un proyecto de carpintería?"},
+    {"id":"manual","type":"manual_use_block","geometry":{"primitive":"text_and_illustration","precision":"approximate","bounding_box":{"x":0.06,"y":0.18,"width":0.42,"height":0.30}},"description":"1 Entrega con manual de uso; ilustración de manual con texto MANUAL DE USO y Limpiar con producto adecuado."},
+    {"id":"photo","type":"photo_social_block","geometry":{"primitive":"text_and_illustration","precision":"approximate","bounding_box":{"x":0.52,"y":0.18,"width":0.42,"height":0.30}},"description":"2 Registro fotográfico y para redes sociales; persona fotografiando el proyecto junto al cliente."},
+    {"id":"warranty","type":"warranty_after_sales_block","geometry":{"primitive":"text_and_illustration","precision":"approximate","bounding_box":{"x":0.06,"y":0.50,"width":0.42,"height":0.28}},"description":"3 Carta de garantía y servicio posventa; carta con GARANTÍA 1 AÑO y calendario JUN."},
+    {"id":"alerts","type":"follow_up_alerts_block","geometry":{"primitive":"text_and_illustration","precision":"approximate","bounding_box":{"x":0.52,"y":0.50,"width":0.42,"height":0.28}},"description":"4 Programa alertas para seguimiento; calendario y tabla con Fecha y Tipo..."},
+    {"id":"summary","type":"summary_block","geometry":{"primitive":"text","precision":"approximate","bounding_box":{"x":0.08,"y":0.82,"width":0.84,"height":0.10}},"description":"Entrega un manual, registro visual, carta de garantía y ofrece servicio posventa."}
+  ],
+  "relationships": [
+    {"from":"title","to":"manual","type":"introduces"},
+    {"from":"manual","to":"photo","type":"sequence"},
+    {"from":"photo","to":"warranty","type":"sequence"},
+    {"from":"warranty","to":"alerts","type":"sequence"},
+    {"from":"alerts","to":"summary","type":"summarized_by"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"manual","text":"1 Entrega con manual de uso"},
+    {"target_entity_id":"photo","text":"2 Registro fotográfico y para redes sociales"},
+    {"target_entity_id":"warranty","text":"3 Carta de garantía y servicio posventa"},
+    {"target_entity_id":"alerts","text":"4 Programa alertas para seguimiento"},
+    {"target_entity_id":"summary","text":"Entrega un manual, registro visual, carta de garantía y ofrece servicio posventa"}
+  ],
+  "camera": {"view":"front","projection":"orthographic"},
+  "visual_style": {"format":"infografía educativa","layout":"cuatro bloques numerados en cuadrícula 2x2","palette":"beige con acentos naranja, azul, amarillo y turquesa","linework":"ilustración vectorial de contorno oscuro","caption_style":"títulos negros grandes con numeración circular"},
+  "educational_sequence": [
+    {"step":1,"show_entity_ids":["title","manual"],"instruction":"Presentar la entrega con manual de uso."},
+    {"step":2,"show_entity_ids":["photo"],"instruction":"Registrar visualmente el proyecto y su entrega."},
+    {"step":3,"show_entity_ids":["warranty"],"instruction":"Formalizar garantía y servicio posventa."},
+    {"step":4,"show_entity_ids":["alerts","summary"],"instruction":"Programar seguimiento y cerrar con el resumen visual."}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
+  "accessibility": {"summary":"Infografía con cuatro acciones para entregar un proyecto de carpintería: manual de uso, registro fotográfico y para redes, garantía con posventa y alertas de seguimiento."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar los cuatro bloques y el texto final. No inventar texto pequeño ilegible dentro de las ilustraciones."}
+}

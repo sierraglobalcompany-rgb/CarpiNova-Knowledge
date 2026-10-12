@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0119-001",
+    "page_id": "PAGE-CPNC-2025-P0119",
+    "content_type": "hardware",
+    "source_transcription": "Bisagras Omega. Otro tipo de bisagra muy utilizado en la carpintería es la bisagra para puertas de paso, como las de habitaciones, baños, entradas principales de residencias o locales comerciales. Estas puertas funcionan con un sistema abatible que se ancla o ensambla al marco. La unión entre el ala de la puerta y el marco se realiza mediante un herraje llamado bisagra. Tradicionalmente, se usaban las llamadas bisagras de nudo, que requerían hacer una caja en el canto de la puerta para que quedaran a ras. Esto permitía que, al cerrar la puerta, la bisagra no sobresaliera y quedara totalmente alineada. Sin embargo, hoy en día se consiguen versiones modernas de este herraje conocidas como bisagras Omega o bisagras mariposa. Estas tienen la particularidad de que, al cerrar la puerta, una hoja de la bisagra se oculta dentro de la otra, eliminando la necesidad de realizar cajas en la puerta.",
+    "normalized_text": "La fuente presenta la bisagra Omega o mariposa como una alternativa moderna para puertas abatibles. A diferencia de la bisagra de nudo descrita, sus hojas se superponen al cerrar y la fuente indica que evita realizar cajas en el canto de la puerta.",
+    "learning_text": "La diferencia principal que enseña la página es el montaje: la bisagra tradicional descrita requiere rebaje o caja para quedar a ras; la Omega busca cerrar con una hoja alojándose dentro de la otra y simplificar ese trabajo.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0119-001"],
+    "source": {"book_id": "cpnc-2025", "pdf_page": 119, "printed_page": 97, "region": {"x": 0.02, "y": 0.1, "width": 0.94, "height": 0.48}, "extraction": {"method": "visual", "confidence": 0.98, "review_status": "VISUALLY_VERIFIED"}},
+    "tags": ["bisagra-omega", "bisagra-mariposa", "puerta-abatible", "bisagra-de-nudo"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0119-002",
+    "page_id": "PAGE-CPNC-2025-P0119",
+    "content_type": "recommendation",
+    "source_transcription": "Es muy importante tener en cuenta el peso de la puerta al elegir el tipo y la cantidad de bisagras. Por ejemplo, una puerta entamborada —hecha con un bastidor interno y recubierta con láminas delgadas de tablero aglomerado de 4 mm o 5,5 mm— es más liviana y puede funcionar correctamente con tres bisagras: una arriba, una en el medio y una abajo. En cambio, una puerta sólida o maciza hecha con tablero aglomerado de 36 mm de espesor (medida estandarizada para puertas batientes) puede llegar a pesar alrededor de 40 kilos. Este tipo de puerta requiere el uso de cuatro bisagras: dos en la parte superior, una en el centro y una en la parte inferior.",
+    "normalized_text": "La fuente relaciona el peso y la construcción de la puerta con la cantidad de bisagras. Da como ejemplos una puerta entamborada con recubrimientos de 4 o 5,5 mm y tres bisagras, y una puerta maciza de aglomerado de 36 mm, alrededor de 40 kg, con cuatro bisagras.",
+    "learning_text": "La cantidad de bisagras no se debe decidir solo por tamaño visual: el libro propone considerar peso y construcción. Sus ejemplos quedan como recomendaciones candidatas hasta una validación técnica posterior.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0119-002"],
+    "source": {"book_id": "cpnc-2025", "pdf_page": 119, "printed_page": 97, "region": {"x": 0.02, "y": 0.56, "width": 0.94, "height": 0.23}, "extraction": {"method": "visual", "confidence": 0.99, "review_status": "VISUALLY_VERIFIED"}},
+    "tags": ["peso-puerta", "cantidad-bisagras", "puerta-entamborada", "puerta-maciza"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0119-003",
+    "page_id": "PAGE-CPNC-2025-P0119",
+    "content_type": "recommendation",
+    "source_transcription": "La instalación de las bisagras se recomienda a 10 cm de los extremos superior e inferior, y una justo en el centro. Existen bisagras en diferentes calidades, materiales y acabados. Lo ideal es optar por bisagras con recubrimiento antioxidante, disponibles también en diversas tonalidades y colores para adaptarse al diseño del mueble o la puerta.",
+    "normalized_text": "La fuente recomienda ubicar bisagras a 10 cm de los extremos superior e inferior y una en el centro, y aconseja preferir recubrimiento antioxidante. También señala variaciones de calidad, material, acabado y color.",
+    "learning_text": "La página propone dos criterios adicionales: distribuir las bisagras con referencias repetibles y escoger un acabado adecuado al ambiente y al diseño. Estas recomendaciones se mantienen como candidatas, no como norma universal.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0119-003"],
+    "source": {"book_id": "cpnc-2025", "pdf_page": 119, "printed_page": 97, "region": {"x": 0.02, "y": 0.8, "width": 0.94, "height": 0.16}, "extraction": {"method": "visual", "confidence": 0.98, "review_status": "VISUALLY_VERIFIED"}},
+    "tags": ["instalacion-bisagra", "10-cm", "centro", "antioxidante"]
+  }
+]

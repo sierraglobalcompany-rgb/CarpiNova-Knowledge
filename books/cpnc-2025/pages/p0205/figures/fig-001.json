@@ -1,0 +1,18 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0205-001",
+  "page_id": "PAGE-CPNC-2025-P0205",
+  "type": "dimensioned_drawing",
+  "purpose": "Recrear las referencias dimensionales de profundidad, altura y configuración de puertas corredizas del clóset.",
+  "source": {"book_id":"cpnc-2025","pdf_page":205,"printed_page":183,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"closet-body","type":"closet","geometry":{"precision":"approximate"}},
+    {"id":"hanger","type":"clothes_hanger","geometry":{"precision":"approximate"}},
+    {"id":"sliding-doors","type":"sliding_doors","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [{"from":"hanger","to":"closet-body","type":"defines_internal_clearance_reference"},{"from":"sliding-doors","to":"closet-body","type":"requires_external_clearance"}],
+  "measurements": ["MEAS-CPNC-2025-P0205-001","MEAS-CPNC-2025-P0205-002","MEAS-CPNC-2025-P0205-003","MEAS-CPNC-2025-P0205-004","MEAS-CPNC-2025-P0205-005","MEAS-CPNC-2025-P0205-006"],
+  "annotations": [{"target_entity_id":"closet-body","text":"Profundidad interna 45 a 50 cm"},{"target_entity_id":"closet-body","text":"Altura 230 a 243 cm"},{"target_entity_id":"closet-body","text":"Medida externa 60 cm"},{"target_entity_id":"sliding-doors","text":"Hasta 2 m de ancho: 2 puertas según la fuente"}],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Lámina de medidas estándar de clóset con gancho, cuerpo del mueble y referencia de puertas corredizas."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Las medidas y el umbral de 2 m se conservan como referencias declaradas por la fuente; no se extrapolan a otros sistemas de herrajes."}
+}

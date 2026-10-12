@@ -1,0 +1,70 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0157-001",
+    "page_id": "PAGE-CPNC-2025-P0157",
+    "content_type": "concept",
+    "source_transcription": "La sierra circular: de mesa y manual. Las sierras circulares pueden encontrarse en dos versiones: de mesa (estacionaria) y manual (de mano). Ambas cumplen la misma función: cortar madera mediante un disco rotativo, pero difieren en el modo de operación. En la sierra circular de mesa, la herramienta está fija y manipulamos la tabla. En la sierra circular de mano, la tabla permanece fija y manipulamos la herramienta con la mano. Ambas funcionan con discos de corte, que vienen en distintos diámetros, tipos de dientes y materiales específicos.",
+    "normalized_text": "La fuente compara dos versiones de sierra circular: de mesa, donde la máquina permanece fija y se desplaza la pieza, y manual, donde la pieza permanece fija y se desplaza la herramienta. Ambas cortan mediante un disco rotativo.",
+    "learning_text": "La diferencia principal está en qué se mueve durante el corte: en la sierra de mesa mueves la pieza; en la sierra manual mueves la herramienta. En ambos casos, el corte lo realiza un disco rotativo.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0157-001"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 157,
+      "printed_page": 135,
+      "region": {
+        "x": 0.02,
+        "y": 0.57,
+        "width": 0.96,
+        "height": 0.22
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "sierra-circular",
+      "sierra-de-mesa",
+      "sierra-manual",
+      "disco-de-corte"
+    ]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0157-002",
+    "page_id": "PAGE-CPNC-2025-P0157",
+    "content_type": "reference",
+    "source_transcription": "Tipos de discos. Los discos de corte varían según su propósito: Discos para madera sólida. Discos para aglomerado. Discos para melamina u otros materiales laminados. Discos especializados para cortes a contrapelo (en sentido contrario a la beta). También se diferencian por la cantidad de dientes: a mayor cantidad, cortes más finos.",
+    "normalized_text": "La fuente clasifica los discos por material o propósito: madera sólida, aglomerado, melamina u otros laminados y cortes a contrapelo. También relaciona una mayor cantidad de dientes con un corte más fino.",
+    "learning_text": "El disco se elige según el material y el tipo de corte. La fuente también indica que, dentro de esta referencia, una mayor cantidad de dientes se asocia con un acabado de corte más fino.",
+    "derived_from_content_ids": [
+      "CONTENT-CPNC-2025-P0157-002"
+    ],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 157,
+      "printed_page": 135,
+      "region": {
+        "x": 0.02,
+        "y": 0.77,
+        "width": 0.96,
+        "height": 0.2
+      },
+      "extraction": {
+        "method": "visual",
+        "confidence": 0.99,
+        "review_status": "VISUALLY_VERIFIED"
+      }
+    },
+    "tags": [
+      "discos",
+      "madera-solida",
+      "aglomerado",
+      "melamina",
+      "contrapelo",
+      "dientes"
+    ]
+  }
+]

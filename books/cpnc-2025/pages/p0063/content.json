@@ -1,0 +1,37 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0063-001","page_id":"PAGE-CPNC-2025-P0063","content_type":"construction_pattern",
+    "source_transcription":"Objetivo\nRealizar el armado de una mesa de noche, la cual está elaborada en tablero aglomerado de espesor de 15 mm laminado, esta consta de un cajón de riel o gaveta, con riel telescópico en la parte superior y de una puerta batiente en la parte inferior; debemos adquirir las habilidades de unir piezas y de instalar herrajes, como las bisagras y las correderas telescópicas; en la parte trasera nuestra mesa de noche llevará 2 correas de amarre, las cuales cumplen la función de dar escuadra al mueble y tener el propósito mediante ellas de ser anclado el mueble de forma flotante a un muro; en la parte frontal de nuestra mesa tendremos un sistema llamado “T” invertida o sistema gola, el cual nos permite no tener que utilizar jaladeras o manijas ya que mediante este sistema ingresamos los dedos y abrimos la puerta en el módulo inferior o abrimos la gaveta en el módulo superior.",
+    "normalized_text":"El módulo de práctica es una mesa de noche en tablero aglomerado laminado de 15 mm. Integra una gaveta superior con corredera telescópica, una puerta batiente inferior, dos correas traseras de amarre para escuadra/estabilidad y posible anclaje flotante, y un frente con sistema “T” invertida o gola para abrir sin manijas.",
+    "learning_text":"Este ejercicio concentra varias habilidades en un solo mueble: unir paneles, instalar correderas y bisagras, estabilizar el módulo con correas y resolver una apertura sin jaladera. La descripción se conserva como patrón constructivo de la fuente, todavía no como especificación ejecutable validada.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0063-001"],"source":{"book_id":"cpnc-2025","pdf_page":63,"printed_page":41,"region":{"x":0.08,"y":0.05,"width":0.84,"height":0.27},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["mesa-de-noche","15-mm","gaveta","corredera-telescopica","puerta-batiente","correas-de-amarre","sistema-T","gola"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0063-002","page_id":"PAGE-CPNC-2025-P0063","content_type":"checklist",
+    "source_transcription":"Materiales\nNecesitaremos las siguientes herramientas eléctricas inalámbricas y herramientas manuales:\nTaladro de rotación\n2 prensas esquineras\nGuía de marcación\nlápiz\nflexómetro\npunta estrella o cruz PH 2\nbroca avellanadora\nescuadra\nmesa de trabajo.",
+    "normalized_text":"Herramientas listadas por la fuente: taladro de rotación, dos prensas esquineras, guía de marcación, lápiz, flexómetro, punta estrella/cruz PH2, broca avellanadora, escuadra y mesa de trabajo.",
+    "learning_text":"Antes de iniciar, reúne las herramientas de sujeción, marcado, medición, perforación y atornillado que la fuente usa durante el paso a paso.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0063-002"],"source":{"book_id":"cpnc-2025","pdf_page":63,"printed_page":41,"region":{"x":0.08,"y":0.33,"width":0.60,"height":0.19},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["herramientas","taladro","prensas-esquineras","guia-de-marcacion","flexometro","PH2","avellanador","escuadra"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0063-003","page_id":"PAGE-CPNC-2025-P0063","content_type":"dimension",
+    "source_transcription":"Identifiquemos el módulo de práctica es una mesa de noche, de medidas 40*40*32 cm.",
+    "normalized_text":"La fuente identifica el módulo de práctica como una mesa de noche de 40×40×32 cm. No etiqueta explícitamente qué valor corresponde a ancho, alto y fondo en esta frase.",
+    "learning_text":"Conserva las tres medidas tal como aparecen y evita asignar ejes por suposición; las páginas siguientes aportan cotas de las piezas que permiten contextualizarlas.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0063-003"],"source":{"book_id":"cpnc-2025","pdf_page":63,"printed_page":41,"region":{"x":0.09,"y":0.52,"width":0.78,"height":0.05},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["mesa-de-noche","40x40x32-cm","dimension"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0063-004","page_id":"PAGE-CPNC-2025-P0063","content_type":"procedure",
+    "source_transcription":"Anexo la lista del despiece con sus medidas y ubicación de los tapacantos, este módulo si estás en Colombia lo puedes adquirir con envío disponible en el siguiente QR en otros países te puedes dirigir a un distribuidor de tableros aglomerados y con las medidas te lo pueden entregar cortado, aproximadamente tiene un consumo de 1/4 de tablero aglomerado en espesor de 15 mm.\n\nComo pueden ver el primer paso es identificar que las medidas del despiece coincidan con las medidas recibidas de nuestro distribuidor de tableros, para proceder al ensamble de cada una de las piezas de nuestra mesa de noche.",
+    "normalized_text":"La fuente indica que el despiece incluye medidas y ubicación de tapacantos. Para obtener las piezas propone adquirir el módulo en Colombia o llevar las medidas a un distribuidor de tableros para corte. Estima un consumo de 1/4 de tablero aglomerado de 15 mm y define como primer control verificar que las piezas recibidas coincidan con el despiece antes de ensamblar.",
+    "learning_text":"Antes de montar, compara cada pieza cortada con el despiece. Esa verificación evita empezar un ensamble con medidas o tapacantos distintos de lo especificado.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0063-004"],"source":{"book_id":"cpnc-2025","pdf_page":63,"printed_page":41,"region":{"x":0.08,"y":0.56,"width":0.84,"height":0.18},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["despiece","tapacantos","distribuidor","verificacion","cuarto-de-tablero"]
+  },
+  {
+    "content_id":"CONTENT-CPNC-2025-P0063-005","page_id":"PAGE-CPNC-2025-P0063","content_type":"reference",
+    "source_transcription":"Adquiere el módulo de practica y kit de ensamble en este QR.\nTienda virtual\n**Aplica sólo para Colombia**",
+    "normalized_text":"La página incluye un QR comercial para adquirir el módulo de práctica y kit de ensamble; indica que aplica solo para Colombia. El QR decodifica a https://wa.me/573154667314.",
+    "learning_text":"Referencia comercial de la fuente; no forma parte de las reglas de fabricación ni se ingiere contenido externo automáticamente.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0063-005"],"source":{"book_id":"cpnc-2025","pdf_page":63,"printed_page":41,"region":{"x":0.19,"y":0.73,"width":0.62,"height":0.20},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["QR","tienda-virtual","Colombia","kit-de-ensamble"]
+  }
+]

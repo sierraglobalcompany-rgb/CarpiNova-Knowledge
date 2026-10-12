@@ -1,0 +1,37 @@
+[
+  {
+    "rule_id": "RULE-CPNC-2025-P0201-001",
+    "page_id": "PAGE-CPNC-2025-P0201",
+    "category": "construction",
+    "subject": "chaflán de anclaje del mueble alto",
+    "predicate": "la fuente lo define como un corte a 45 grados para anclar el mueble alto al muro",
+    "value": 45,
+    "unit": "degrees",
+    "applicability": {"furniture":"mueble alto de cocina"},
+    "exceptions": [],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":201,"printed_page":179,"region":{"x":0.07,"y":0.63,"width":0.48,"height":0.18},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0201-002",
+    "page_id": "PAGE-CPNC-2025-P0201",
+    "category": "construction",
+    "subject": "mueble bajo de cocina",
+    "predicate": "según la fuente no lleva fondo por temas de humedad",
+    "applicability": {"furniture":"mueble bajo de cocina"},
+    "exceptions": [],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":201,"printed_page":179,"region":{"x":0.55,"y":0.67,"width":0.40,"height":0.27},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0201-003",
+    "page_id": "PAGE-CPNC-2025-P0201",
+    "category": "construction",
+    "subject": "mueble alto de cocina",
+    "predicate": "según la fuente sí lleva fondo",
+    "applicability": {"furniture":"mueble alto de cocina"},
+    "exceptions": [],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":201,"printed_page":179,"region":{"x":0.55,"y":0.67,"width":0.40,"height":0.27},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0199-001",
+    "page_id": "PAGE-CPNC-2025-P0199",
+    "content_type": "definition",
+    "source_transcription": "DESPIECE de COCINA. luego de haber entendido las partes de la cocina debemos modular para continuar con el despiece. ¿QUÉ ES MODULAR? saber qué me cabe en el espacio destinado de acuerdo a todo lo que debo.",
+    "normalized_text": "La página introduce la modulación como el paso previo al despiece: determinar qué elementos caben dentro del espacio disponible considerando lo que debe incluir la cocina.",
+    "learning_text": "Antes de despiece, define la modulación del espacio: identifica los elementos que deben entrar y descuenta el espacio que ocupa cada uno.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0199-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":199,"printed_page":177,"region":{"x":0.03,"y":0.02,"width":0.94,"height":0.40},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cocina","despiece","modulacion","distribucion"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0199-002",
+    "page_id": "PAGE-CPNC-2025-P0199",
+    "content_type": "recommendation",
+    "source_transcription": "1 NEVERA. Para modular, el primer elemento a tener en cuenta es la nevera, ya que es lo primero que me resta espacio en la cocina. Debo proceder a medir. Si tengo una nevera que me ocupa 80cm simplemente puedo restar 80cm. SE RECOMIENDA siempre dejar 1metro para la nevera, ya que está la posibilidad siempre de un cambio de nevera.",
+    "normalized_text": "Para iniciar la modulación, la fuente propone medir primero la nevera y descontar su ancho del espacio de cocina. Usa 80 cm como ejemplo de ancho ocupado y recomienda reservar 1 m para permitir un posible cambio de nevera.",
+    "learning_text": "Mide la nevera al comenzar la modulación y descuenta su espacio. La recomendación del libro es reservar un módulo de 1 m para mantener margen ante un futuro cambio de equipo.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0199-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":199,"printed_page":177,"region":{"x":0.04,"y":0.35,"width":0.92,"height":0.61},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["cocina","modulacion","nevera","medicion","reserva"]
+  }
+]

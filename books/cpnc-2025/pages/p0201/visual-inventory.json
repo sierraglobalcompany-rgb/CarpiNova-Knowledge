@@ -1,0 +1,9 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0201",
+  "pdf_page": 201,
+  "printed_page": 179,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {"inventory_id":"VIS-P0201-001","kind":"kitchen_base_component_dimension_table","meaningful":true,"figure_id":"FIG-CPNC-2025-P0201-001","source_region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"reason":"Lámina a página completa con esquema de base o piso, tabla de medidas de piezas y notas de chaflán, parales y fondo."}
+  ]
+}

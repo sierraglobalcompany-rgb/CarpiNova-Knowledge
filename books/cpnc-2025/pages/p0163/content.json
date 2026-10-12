@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0163-001",
+    "page_id": "PAGE-CPNC-2025-P0163",
+    "content_type": "reference",
+    "source_transcription": "del vano y se instalan molduras o espumas expansivas para cubrir las luces sobrantes.",
+    "normalized_text": "La página comienza con un fragmento que continúa una explicación previa: se mencionan molduras o espumas expansivas para cubrir luces sobrantes del vano. El inicio de la oración está en una página anterior no disponible en la fuente renderizada actual.",
+    "learning_text": "Conserva este fragmento como continuidad de fuente, sin completar el contexto faltante. Solo puede afirmarse que la página menciona molduras o espumas expansivas para cubrir luces sobrantes del vano.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0163-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":163,"printed_page":141,"region":{"x":0.02,"y":0.07,"width":0.96,"height":0.08},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["vano","molduras","espuma-expansiva","luces-sobrantes","continuidad"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0163-002",
+    "page_id": "PAGE-CPNC-2025-P0163",
+    "content_type": "reference",
+    "source_transcription": "Escuadra Rafter. Escuadra combinada. Escuadra carpintero. Nivel de burbuja.",
+    "normalized_text": "La página presenta referencias visuales de una escuadra Rafter, una escuadra combinada, una escuadra de carpintero y un nivel de burbuja.",
+    "learning_text": "Identifica estas herramientas de trazado, comprobación de escuadra y nivelación por su forma general y por los rótulos de la fuente.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0163-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":163,"printed_page":141,"region":{"x":0.02,"y":0.15,"width":0.96,"height":0.60},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["escuadra-rafter","escuadra-combinada","escuadra-carpintero","nivel-de-burbuja"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0163-003",
+    "page_id": "PAGE-CPNC-2025-P0163",
+    "content_type": "reference",
+    "source_transcription": "Conclusión. Puede que esta sea una de las partes más complejas de la carpintería, pero si contamos con herramientas como la escuadra, la escuadra combinada, la falsa escuadra y el nivel, será mucho más sencillo detectar y resolver las irregularidades antes de hacer el despiece y los cortes. La precisión en esta etapa es lo que garantiza muebles bien instalados, funcionales y estéticamente correctos.",
+    "normalized_text": "La conclusión recomienda apoyarse en escuadras, falsa escuadra y nivel para detectar y resolver irregularidades antes del despiece y los cortes, y relaciona la precisión de esta etapa con una instalación correcta, funcional y estéticamente adecuada.",
+    "learning_text": "Antes de definir el despiece y ejecutar los cortes, verifica escuadra, nivel e irregularidades del espacio. La fuente presenta esta revisión previa como una etapa clave para que el mueble quede bien instalado y funcional.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0163-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":163,"printed_page":141,"region":{"x":0.02,"y":0.77,"width":0.96,"height":0.20},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["conclusion","escuadra","falsa-escuadra","nivel","precision","despiece","cortes","instalacion"]
+  }
+]

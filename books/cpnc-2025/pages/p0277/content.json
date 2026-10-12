@@ -1,0 +1,19 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0277-001",
+    "page_id": "PAGE-CPNC-2025-P0277",
+    "content_type": "reference",
+    "source_transcription": "GLOSARIO\nPARA QUE APRENDAS MÁS DE CARPINTERÍA",
+    "normalized_text": "Glosario — Para que aprendas más de carpintería.",
+    "learning_text": "Esta página abre la sección de glosario de la edición 2025. Introduce las definiciones que comienzan en la página siguiente y no contiene por sí misma una definición técnica.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0277-001"],
+    "source": {
+      "book_id": "cpnc-2025",
+      "pdf_page": 277,
+      "printed_page": 255,
+      "region": {"x": 0.0, "y": 0.0, "width": 1.0, "height": 1.0},
+      "extraction": {"method": "visual", "confidence": 0.99, "review_status": "VISUALLY_VERIFIED"}
+    },
+    "tags": ["glosario", "referencia", "terminologia", "portada"]
+  }
+]

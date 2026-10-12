@@ -1,0 +1,41 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0230-001",
+  "page_id": "PAGE-CPNC-2025-P0230",
+  "type": "mixed",
+  "purpose": "Recrear la estructura visual del índice de ocho recursos QR sin fabricar códigos QR funcionales ni destinos no verificados.",
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 230,
+    "printed_page": 208,
+    "region": {
+      "x": 0.02,
+      "y": 0.02,
+      "width": 0.96,
+      "height": 0.96
+    },
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
+  "entities": [
+    {"id":"qr-01","type":"qr_resource_placeholder","label":"Entrepaños de closet","geometry":{"precision":"approximate"}},
+    {"id":"qr-02","type":"qr_resource_placeholder","label":"Cachetero de closet","geometry":{"precision":"approximate"}},
+    {"id":"qr-03","type":"qr_resource_placeholder","label":"¿Cómo instalar un centro de TV?","geometry":{"precision":"approximate"}},
+    {"id":"qr-04","type":"qr_resource_placeholder","label":"Repisas flotantes","geometry":{"precision":"approximate"}},
+    {"id":"qr-05","type":"qr_resource_placeholder","label":"Puertas","geometry":{"precision":"approximate"}},
+    {"id":"qr-06","type":"qr_resource_placeholder","label":"Puertas entamboradas","geometry":{"precision":"approximate"}},
+    {"id":"qr-07","type":"qr_resource_placeholder","label":"Camas","geometry":{"precision":"approximate"}},
+    {"id":"qr-08","type":"qr_resource_placeholder","label":"Camas","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"qr-01","text":"Los patrones QR y sus payloads no fueron decodificados; recrear solo como marcador visual no funcional."},
+    {"target_entity_id":"qr-07","text":"La fuente muestra dos códigos QR distintos con la misma etiqueta “Camas”; conservar ambos sin inferir que sean equivalentes."}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Cuadrícula de ocho recursos QR titulados sobre closet, centro de TV, repisas, puertas y camas; dos recursos llevan la etiqueta Camas."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"No generar QR funcionales hasta decodificar y verificar cada payload contra la fuente exacta. Preservar los dos recursos distintos titulados “Camas”."}
+}

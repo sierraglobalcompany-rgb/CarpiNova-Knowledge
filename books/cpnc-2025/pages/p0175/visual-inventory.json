@@ -1,0 +1,7 @@
+{
+  "page_id":"PAGE-CPNC-2025-P0175",
+  "pdf_page":175,
+  "printed_page":153,
+  "inspection_status":"VISUALLY_VERIFIED",
+  "visuals":[{"inventory_id":"VIS-P0175-001","kind":"breakdown_explanation_diagram","meaningful":true,"figure_id":"FIG-CPNC-2025-P0175-001","source_region":{"x":0.02,"y":0.08,"width":0.96,"height":0.88},"reason":"Diagrama educativo que relaciona tablero general, piezas identificadas y un módulo de ejemplo para explicar el despiece."}]
+}

@@ -1,0 +1,25 @@
+{
+  "figure_id": "FIG-CPNC-2025-P0218-001",
+  "page_id": "PAGE-CPNC-2025-P0218",
+  "type": "dimensioned_drawing",
+  "purpose": "Recrear las vistas externas de la cama abatible cerrada y abierta sin inventar cotas que no sean inequívocamente legibles.",
+  "source": {"book_id":"cpnc-2025","pdf_page":218,"printed_page":196,"region":{"x":0.04,"y":0.03,"width":0.92,"height":0.43},"extraction":{"method":"visual","confidence":0.92,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"closed-front-view","type":"murphy_bed_closed_front_view","geometry":{"precision":"approximate"}},
+    {"id":"open-side-view","type":"murphy_bed_open_side_view","geometry":{"precision":"approximate"}},
+    {"id":"dimension-lines","type":"source_dimension_lines","geometry":{"precision":"approximate"}}
+  ],
+  "relationships": [
+    {"from":"dimension-lines","to":"closed-front-view","type":"dimensions"},
+    {"from":"dimension-lines","to":"open-side-view","type":"dimensions"}
+  ],
+  "measurements": [],
+  "annotations": [
+    {"target_entity_id":"closed-front-view","text":"Vista frontal cama cerrada"},
+    {"target_entity_id":"open-side-view","text":"Vista lateral cama abierta"},
+    {"target_entity_id":"dimension-lines","text":"Conservar las cotas gráficas de la fuente; no normalizarlas sin lectura inequívoca"}
+  ],
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility": {"summary":"Dos dibujos ortogonales muestran el mueble cerrado y la cama abatible desplegada con líneas de cota."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"La composición y las vistas son claras; algunas cifras pequeñas no se trasladan a measurements.json para evitar inferencias."}
+}

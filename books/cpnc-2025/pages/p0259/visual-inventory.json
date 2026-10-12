@@ -1,0 +1,16 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0259",
+  "pdf_page": 259,
+  "printed_page": 237,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0259-001",
+      "kind": "door_checklist_table",
+      "meaningful": true,
+      "figure_id": "FIG-CPNC-2025-P0259-001",
+      "source_region": {"x": 0.12, "y": 0.10, "width": 0.76, "height": 0.80},
+      "reason": "Tabla-formulario reutilizable con tres bloques de control para materiales de taller, materiales de instalación y herramientas/equipo, cada uno con columnas de aplicación/referencia y cantidad."
+    }
+  ]
+}

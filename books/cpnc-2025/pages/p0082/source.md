@@ -1,0 +1,9 @@
+<!-- GENERATED FROM content.json; DO NOT EDIT DIRECTLY -->
+
+# Source transcription
+
+## CONTENT-CPNC-2025-P0082-001
+
+PASO 1
+HÁGALO EN CASA
+MATERIALES

@@ -1,0 +1,18 @@
+{
+  "figure_id":"FIG-CPNC-2025-P0066-001","page_id":"PAGE-CPNC-2025-P0066","type":"assembly_sequence","purpose":"Representar el paso 2: instalación de dos correas traseras de amarre para dar escuadra y estabilidad al módulo.",
+  "source":{"book_id":"cpnc-2025","pdf_page":66,"printed_page":44,"region":{"x":0.17,"y":0.25,"width":0.67,"height":0.58},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities":[
+    {"id":"cabinet-shell","type":"nightstand_shell","geometry":{"primitive":"box_assembly","precision":"approximate"}},
+    {"id":"upper-strap","type":"rear_strap","geometry":{"primitive":"panel","precision":"exact","dimensions":{"length_mm":370,"width_mm":70}}},
+    {"id":"lower-strap","type":"rear_strap","geometry":{"primitive":"panel","precision":"exact","dimensions":{"length_mm":370,"width_mm":70}}}
+  ],
+  "relationships":[{"from":"upper-strap","to":"cabinet-shell","type":"stabilizes"},{"from":"lower-strap","to":"cabinet-shell","type":"stabilizes"}],
+  "measurements":["MEAS-CPNC-2025-P0066-001","MEAS-CPNC-2025-P0066-002","MEAS-CPNC-2025-P0066-003","MEAS-CPNC-2025-P0066-004"],
+  "annotations":[{"target_entity_id":"upper-strap","text":"Correa 370×70 mm"},{"target_entity_id":"lower-strap","text":"Correa 370×70 mm"},{"target_entity_id":"upper-strap","text":"2 tornillos de 1½ por extremo; fuente indica 1,5 cm desde bordes."}],
+  "camera":{"view":"isometric","projection":"perspective"},
+  "visual_style":{"format":"dibujo técnico 3D","materials":"tablero claro","dimensions":"cotas lineales en mm"},
+  "educational_sequence":[{"step":2,"show_entity_ids":["cabinet-shell","upper-strap","lower-strap"],"instruction":"Prensar, marcar y fijar cada correa con dos tornillos por extremo, colocados según la fuente a 1,5 cm de los bordes."}],
+  "reconstruction":{"preferred_renderer":"3d","deterministic_required":true,"generative_image_allowed":false},
+  "accessibility":{"summary":"Módulo abierto con dos correas horizontales traseras, superior e inferior, ambas de 370×70 mm."},
+  "review":{"status":"VISUALLY_VERIFIED","notes":"Las cotas 370 y 70 mm son explícitas. La separación de tornillos de 1,5 cm proviene del texto y queda como regla candidata."}
+}

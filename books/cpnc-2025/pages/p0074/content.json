@@ -1,0 +1,9 @@
+[
+  {
+    "content_id":"CONTENT-CPNC-2025-P0074-001","page_id":"PAGE-CPNC-2025-P0074","content_type":"concept",
+    "source_transcription":"Felicitaciones has logrado realizar tu primer proyecto, ensamblar esta mesa de noche tiene los mismos conceptos básicos que ensamblar una cocina, un clóset o cualquier tipo de mueble realizado en tableros aglomerados para carpintería arquitectónica moderna funcional de los hogares y oficinas.\n\nAhora te voy a dar unos consejos para que desarrolles el paso a paso de tu primer proyecto.",
+    "normalized_text":"El autor cierra el ejercicio de la mesa de noche indicando que sus conceptos básicos de ensamble sirven como introducción a muebles mayores en tablero aglomerado, como cocinas y clósets, y anuncia un método paso a paso para iniciar un proyecto propio.",
+    "learning_text":"La mesa de noche funciona como proyecto de práctica. El siguiente bloque cambia de escala: pasa del ensamble de un mueble pequeño al proceso completo para planear y ejecutar un proyecto de carpintería.",
+    "derived_from_content_ids":["CONTENT-CPNC-2025-P0074-001"],"source":{"book_id":"cpnc-2025","pdf_page":74,"printed_page":52,"region":{"x":0.08,"y":0.08,"width":0.84,"height":0.16},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},"tags":["primer-proyecto","mesa-de-noche","ensamble","transicion"]
+  }
+]

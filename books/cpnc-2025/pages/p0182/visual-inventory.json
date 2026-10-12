@@ -1,0 +1,15 @@
+{
+  "page_id": "PAGE-CPNC-2025-P0182",
+  "pdf_page": 182,
+  "printed_page": 160,
+  "inspection_status": "VISUALLY_VERIFIED",
+  "visuals": [
+    {
+      "inventory_id": "VIS-P0182-001",
+      "kind": "advertisement",
+      "meaningful": true,
+      "source_region": {"x":0.0,"y":0.0,"width":1.0,"height":1.0},
+      "exclusion_reason": "Página publicitaria con fotografías de producto, lista de materiales, logotipo y QR. El contenido comercial se preserva como ContentSpec; recrear el arte publicitario no aporta conocimiento técnico reutilizable."
+    }
+  ]
+}
