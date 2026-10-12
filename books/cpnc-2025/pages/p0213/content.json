@@ -1,0 +1,35 @@
+[
+  {
+    "content_id": "CONTENT-CPNC-2025-P0213-001",
+    "page_id": "PAGE-CPNC-2025-P0213",
+    "content_type": "dimension",
+    "source_transcription": "Camas\nLas medidas de cama dependen del colchón, que generalmente tiene un largo de 1.90 m.\nLos anchos más comunes son:\n0.80 m\n0.90 m\n1.00 m\n1.20 m\n1.40 m\n1.60 m\n1.80 m",
+    "normalized_text": "La fuente indica que las medidas de la cama dependen del colchón, cuyo largo generalmente es de 1.90 m, y enumera como anchos comunes 0.80 m, 0.90 m, 1.00 m, 1.20 m, 1.40 m, 1.60 m y 1.80 m.",
+    "learning_text": "Define primero el colchón y usa sus dimensiones reales como referencia para la cama. Los valores del libro son referencias explícitas de la fuente y no sustituyen la comprobación del colchón concreto.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0213-001"],
+    "source": {"book_id":"cpnc-2025","pdf_page":213,"printed_page":191,"region":{"x":0.05,"y":0.10,"width":0.9,"height":0.19},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["camas","colchon","medidas","ancho","largo"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0213-002",
+    "page_id": "PAGE-CPNC-2025-P0213",
+    "content_type": "construction_pattern",
+    "source_transcription": "La estructura interna de la cama (llamada armillas) debe construirse para que el colchón encaje perfectamente.",
+    "normalized_text": "La fuente denomina armillas a la estructura interna de la cama e indica que debe construirse para que el colchón encaje correctamente.",
+    "learning_text": "Dimensiona la estructura interna a partir del colchón real y comprueba el encaje antes de cerrar o terminar la cama.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0213-002"],
+    "source": {"book_id":"cpnc-2025","pdf_page":213,"printed_page":191,"region":{"x":0.05,"y":0.30,"width":0.9,"height":0.05},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["camas","armillas","estructura-interna","encaje"]
+  },
+  {
+    "content_id": "CONTENT-CPNC-2025-P0213-003",
+    "page_id": "PAGE-CPNC-2025-P0213",
+    "content_type": "construction_pattern",
+    "source_transcription": "Estas armillas se refuerzan lateralmente para soportar el tendido de tablas o láminas sobre las cuales se apoya el colchón.",
+    "normalized_text": "La fuente indica reforzar lateralmente las armillas para que soporten las tablas o láminas que reciben el colchón.",
+    "learning_text": "Considera el soporte lateral de la estructura interna como parte del camino de carga del colchón y de las tablas o láminas de apoyo.",
+    "derived_from_content_ids": ["CONTENT-CPNC-2025-P0213-003"],
+    "source": {"book_id":"cpnc-2025","pdf_page":213,"printed_page":191,"region":{"x":0.05,"y":0.34,"width":0.9,"height":0.05},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+    "tags": ["camas","armillas","refuerzo-lateral","soporte"]
+  }
+]

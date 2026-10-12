@@ -1,0 +1,50 @@
+[
+  {
+    "rule_id": "RULE-CPNC-2025-P0213-001",
+    "page_id": "PAGE-CPNC-2025-P0213",
+    "category": "bed_dimension",
+    "subject": "BED_SIZE_BY_MATTRESS",
+    "predicate": "source_states_bed_dimensions_depend_on_mattress_and_general_length",
+    "value": {"depends_on":"mattress","general_length_m":1.9},
+    "applicability": {"source_scope":"bed sizing guidance on printed page 191"},
+    "exceptions": ["The source says the mattress generally has this length; verify the actual mattress before fabrication."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":213,"printed_page":191,"region":{"x":0.05,"y":0.10,"width":0.9,"height":0.19},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0213-002",
+    "page_id": "PAGE-CPNC-2025-P0213",
+    "category": "bed_dimension",
+    "subject": "COMMON_BED_WIDTHS",
+    "predicate": "source_lists_common_bed_widths",
+    "value": {"widths_m":[0.8,0.9,1.0,1.2,1.4,1.6,1.8]},
+    "applicability": {"source_scope":"common bed widths on printed page 191"},
+    "exceptions": ["Listed as common widths, not an exhaustive or mandatory set."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":213,"printed_page":191,"region":{"x":0.05,"y":0.10,"width":0.9,"height":0.19},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0213-003",
+    "page_id": "PAGE-CPNC-2025-P0213",
+    "category": "bed_construction",
+    "subject": "ARMILLA_MATTRESS_FIT",
+    "predicate": "source_requires_internal_bed_structure_to_fit_mattress",
+    "value": {"internal_structure":"armillas","fit":"mattress"},
+    "applicability": {"source_scope":"internal bed structure guidance on printed page 191"},
+    "exceptions": ["The source does not specify a numeric clearance; fit must be verified against the actual mattress."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":213,"printed_page":191,"region":{"x":0.05,"y":0.30,"width":0.9,"height":0.05},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  },
+  {
+    "rule_id": "RULE-CPNC-2025-P0213-004",
+    "page_id": "PAGE-CPNC-2025-P0213",
+    "category": "bed_construction",
+    "subject": "ARMILLA_LATERAL_REINFORCEMENT",
+    "predicate": "source_requires_lateral_reinforcement_to_support_slats_or_sheets",
+    "value": {"reinforcement":"lateral","supports":["tablas","láminas"],"load":"mattress"},
+    "applicability": {"source_scope":"internal bed support guidance on printed page 191"},
+    "exceptions": ["The source does not specify member sizes, material grades or structural load calculations."],
+    "sources": [{"book_id":"cpnc-2025","pdf_page":213,"printed_page":191,"region":{"x":0.05,"y":0.34,"width":0.9,"height":0.05},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}}],
+    "status": "CANDIDATE"
+  }
+]
