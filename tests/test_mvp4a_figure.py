@@ -79,6 +79,48 @@ def test_p0113_layers_resolve_locally_and_visible_annotations_have_placement() -
     assert cross_section["geometry"]["precision"] == "unknown"
 
 
+def test_p0113_keeps_minimum_telescopic_and_clearance_structure() -> None:
+    figure = _read_json(FIGURE_PATH)
+    entities = {entity["id"]: entity for entity in figure["entities"]}
+    layers = {layer["id"]: layer for layer in figure["layers"]}
+
+    for entity_id in ("slide-inner-profile", "slide-middle-profile"):
+        geometry = entities[entity_id]["geometry"]
+        assert geometry["primitive"] == "polyline"
+        assert geometry["precision"] == "approximate"
+        assert len(geometry["points"]) >= 5
+
+    for entity_id in ("slide-section-left", "slide-section-right"):
+        geometry = entities[entity_id]["geometry"]
+        assert geometry["primitive"] == "rect"
+        assert geometry["precision"] == "approximate"
+
+    assert {
+        "slide-section-left",
+        "slide-section-right",
+    }.issubset(layers["layer-cross-section"]["entity_ids"])
+    assert {
+        "slide-inner-profile",
+        "slide-middle-profile",
+    }.issubset(layers["layer-slide"]["entity_ids"])
+
+    clearance_annotations = [
+        annotation
+        for annotation in figure["annotations"]
+        if annotation.get("measurement_id")
+        in {
+            "MEAS-CPNC-2025-P0113-009",
+            "MEAS-CPNC-2025-P0113-010",
+            "MEAS-CPNC-2025-P0113-011",
+        }
+    ]
+    assert len(clearance_annotations) == 3
+    assert all(
+        annotation.get("entity_id") == "telescopic-slide"
+        for annotation in clearance_annotations
+    )
+
+
 def test_p0113_renderable_figure_keeps_repository_valid() -> None:
     report = validate_repository(ROOT)
     assert report["valid"] is True, report["errors"]
