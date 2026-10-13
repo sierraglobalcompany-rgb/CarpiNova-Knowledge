@@ -116,8 +116,15 @@ jobs:
 
               await lessonLink.click();
               await page.waitForURL(`**/lecciones/${lessonId}`);
-              if ((await page.getByRole('heading', { level: 1 }).count()) !== 1) throw new Error(`${vp.name}: lesson must have exactly one h1`);
-              if ((await page.getByRole('heading', { level: 1 }).textContent())?.trim() !== lessonTitle) throw new Error(`${vp.name}: lesson h1 mismatch`);
+              const h1 = page.getByRole('heading', { level: 1 });
+              const h1Count = await h1.count();
+              if (h1Count !== 1) throw new Error(`${vp.name}: lesson must have exactly one h1; got ${h1Count}`);
+              const h1Text = (await h1.textContent()) ?? '';
+              console.log(`${vp.name}: rendered h1 = ${JSON.stringify(h1Text)}; expected = ${JSON.stringify(lessonTitle)}`);
+              console.log(`${vp.name}: rendered h1 codepoints = ${JSON.stringify([...h1Text].map((ch) => ch.codePointAt(0)))}`);
+              await page.screenshot({ path: `/tmp/carpinova-mvp3-visual/${vp.name}-lesson.png`, fullPage: true });
+              if (h1Text.trim() !== lessonTitle) throw new Error(`${vp.name}: lesson h1 mismatch: ${JSON.stringify(h1Text.trim())}`);
+
               const stepCount = await page.locator('.lesson-page__steps > li').count();
               if (stepCount !== 5) throw new Error(`${vp.name}: expected 5 steps, got ${stepCount}`);
               if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)) throw new Error(`${vp.name}: horizontal overflow on lesson`);
@@ -130,7 +137,6 @@ jobs:
                 return { outlineStyle: style.outlineStyle, outlineWidth: style.outlineWidth, outlineColor: style.outlineColor };
               });
               if (focusStyle.outlineStyle === 'none' || focusStyle.outlineWidth === '0px') throw new Error(`${vp.name}: essential content link has no visible focus outline`);
-              await page.screenshot({ path: `/tmp/carpinova-mvp3-visual/${vp.name}-lesson.png`, fullPage: true });
 
               await firstContentLink.click();
               await page.waitForURL('**/contenido/**');
@@ -146,6 +152,7 @@ jobs:
 
               results.push({
                 viewport: vp,
+                rendered_h1: h1Text,
                 page_identity: 'PASS',
                 home_lesson_discovery: 'PASS',
                 horizontal_overflow: 'PASS',
@@ -176,9 +183,10 @@ jobs:
           cat /tmp/carpinova-mvp3-visual/audit.json
 
       - name: Upload visual evidence
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: carpinova-mvp3-visual-audit
           path: /tmp/carpinova-mvp3-visual
-          if-no-files-found: error
+          if-no-files-found: warn
           retention-days: 7
