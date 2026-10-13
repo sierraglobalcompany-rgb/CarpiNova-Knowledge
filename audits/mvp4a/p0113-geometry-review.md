@@ -2,192 +2,310 @@
 
 Fecha: 2026-10-13
 
-Estado: **SOURCE_GATE_UNRESOLVED — NO GEOMETRY MUTATION ALLOWED**
+Estado: **SOURCE_GATE_RESOLVED — GEOMETRY REVIEW COMPLETE**
 
-## Objetivo del gate
+## Fuente canónica verificada
 
-Antes de derivar coordenadas para `FIG-CPNC-2025-P0113-001`, el plan MVP4A exige demostrar que la inspección visual se realiza sobre la fuente canónica exacta:
+Archivo adjuntado directamente al runtime:
 
 ```text
-PDF = libros_1751553390342_Carpintería para no Carpinteros Versión 2025.pdf
+libros_1751553390342_Carpintería para no Carpinteros Versión 2025(2).pdf
+```
+
+Verificación independiente sobre bytes reales:
+
+```text
+size = 339051027 bytes
 SHA-256 = 318ceb94569608bfe062e3e50c7032edee79febf06102f7eec760769a6dfd90c
-physical page = 113
+page_count = 295
 ```
 
-El release histórico `docs/releases/1.0.0.md` fija además:
+Coincide exactamente con la identidad de fuente fijada por Knowledge 1.0.0.
+
+Página inspeccionada:
 
 ```text
-source_page_count = 295
+physical/pdf page = 113
+printed page = 91
 ```
 
-## Fuente visible disponible en este entorno
+La página muestra la sección `Rieles o correderas para muebles`, el render grande de una corredera telescópica, el inset superior izquierdo de sección cajón/mueble y las notas manuscritas de holgura 1.3/1.4/1.5 cm por riel.
 
-Se localizaron dos copias en el Project/Library:
+Resultado del gate:
 
 ```text
-libros_1751553390342_Carpintería para no Carpinteros Versión 2025.pdf
-libros_1751553390342_Carpintería para no Carpinteros Versión 2025(1).pdf
+MVP4A_TASK3_SOURCE_GATE = PASS
 ```
 
-Ambas tienen tamaño registrado de `339051027` bytes.
+## Marco geométrico
 
-En ambas, la página accesible como PDF page 113 muestra:
-
-- printed page `91`;
-- encabezado de instalación de bisagras;
-- sección `Rieles o correderas para muebles`;
-- el render grande de una corredera telescópica;
-- un inset superior izquierdo de sección cajón/mueble;
-- notas manuscritas de holgura para riel liviano, pesado y push/cierre suave.
-
-Esto coincide visualmente con el FigureSpec canónico existente:
+Se conserva el FigureSpec canónico:
 
 ```text
 figure_id = FIG-CPNC-2025-P0113-001
 page_id = PAGE-CPNC-2025-P0113
-pdf_page = 113
-printed_page = 91
 source.region = x 0.0605 / y 0.577 / width 0.88 / height 0.3815
 ```
 
-## Bloqueo principal
-
-El lector de Project/Library reporta para ambas copias visibles:
+Todas las coordenadas siguientes son locales a ese `source.region`, normalizadas en `0.0..1.0`:
 
 ```text
-total_pages = 294
+(0,0) = esquina superior izquierda del crop de figura
+x aumenta hacia la derecha
+y aumenta hacia abajo
 ```
 
-pero el release canónico histórico fija:
+El crop de QA renderizado desde la fuente exacta se inspeccionó a alta resolución. Las coordenadas son deliberadamente `approximate`; sirven para reconstrucción/composición visual y NO convierten posiciones gráficas en cotas técnicas.
+
+## Entidades revisadas
+
+### `telescopic-slide`
+
+Evidencia visible:
+la corredera telescópica domina el cuerpo central del crop, en perspectiva desde la parte inferior izquierda hacia la superior derecha.
+
+Primitive:
+`polyline`
+
+Precision:
+`approximate`
+
+Puntos normalizados de silueta simplificada:
+
+```json
+[
+  {"x": 0.106, "y": 0.399},
+  {"x": 0.826, "y": 0.168},
+  {"x": 0.904, "y": 0.202},
+  {"x": 0.894, "y": 0.282},
+  {"x": 0.246, "y": 0.668},
+  {"x": 0.109, "y": 0.651},
+  {"x": 0.106, "y": 0.399}
+]
+```
+
+Razón:
+el contorno exterior general es directamente visible. No se codifican perforaciones, rieles internos ni radios como geometría exacta porque las primitivas MVP4A son intencionalmente mínimas.
+
+### `drawer`
+
+Evidencia visible:
+rectángulo gris central dentro del inset superior izquierdo, rotulado como `Exterior del cajón`.
+
+Primitive:
+`rect`
+
+Precision:
+`approximate`
+
+Bounds:
+
+```json
+{"x": 0.059, "y": 0.119, "width": 0.207, "height": 0.090}
+```
+
+Razón:
+los límites exteriores del cajón son visibles en el inset, pero el corte central quebrado hace que la forma completa sea una simplificación.
+
+### `cabinet-left`
+
+Evidencia visible:
+lateral vertical izquierdo del mueble en el inset.
+
+Primitive:
+`rect`
+
+Precision:
+`approximate`
+
+Bounds:
+
+```json
+{"x": 0.022, "y": 0.119, "width": 0.034, "height": 0.105}
+```
+
+### `cabinet-right`
+
+Evidencia visible:
+lateral vertical derecho del mueble en el inset.
+
+Primitive:
+`rect`
+
+Precision:
+`approximate`
+
+Bounds:
+
+```json
+{"x": 0.286, "y": 0.118, "width": 0.032, "height": 0.105}
+```
+
+### `cross-section`
+
+Evidencia visible:
+recuadro/inset superior izquierdo que agrupa cajón, laterales y las referencias `Interior del mueble` / `Exterior del cajón`.
+
+Primitive:
+`rect`
+
+Precision:
+`unknown`
+
+Bounds de ubicación/composición:
+
+```json
+{"x": 0.000, "y": 0.025, "width": 0.345, "height": 0.255}
+```
+
+Razón:
+la posición del inset sí es visible y puede componerse; se conserva `precision = unknown` porque el FigureSpec histórico no demuestra geometría técnica interna suficiente para elevar su precisión.
+
+## Anotaciones revisadas
+
+Se asignan IDs estables solo porque serán miembros de `layers`.
+
+### `ann-clearance-light`
+
+Texto:
+`Riel liviano 1.3cm por riel`
+
+Measurement:
+`MEAS-CPNC-2025-P0113-009`
+
+Placement:
+
+```json
+{"x": 0.405, "y": 0.620, "precision": "approximate"}
+```
+
+### `ann-clearance-heavy`
+
+Texto:
+`Riel pesado 1.4cm por riel`
+
+Measurement:
+`MEAS-CPNC-2025-P0113-010`
+
+Placement:
+
+```json
+{"x": 0.405, "y": 0.675, "precision": "approximate"}
+```
+
+### `ann-clearance-soft-close`
+
+Texto:
+`Riel push o cierre suave 1.5cm por riel`
+
+Measurement:
+`MEAS-CPNC-2025-P0113-011`
+
+Placement:
+
+```json
+{"x": 0.405, "y": 0.728, "precision": "approximate"}
+```
+
+### `ann-interior-cabinet`
+
+Texto:
+`Interior del mueble`
+
+Entity:
+`cross-section`
+
+Placement:
+
+```json
+{"x": 0.104, "y": 0.061, "precision": "approximate"}
+```
+
+### `ann-exterior-drawer`
+
+Texto:
+`Exterior del cajón`
+
+Entity:
+`cross-section`
+
+Placement:
+
+```json
+{"x": 0.105, "y": 0.101, "precision": "approximate"}
+```
+
+## Layers propuestos
+
+### `layer-cross-section` — order 0
 
 ```text
-source_page_count = 295
+entities:
+- cross-section
+- drawer
+- cabinet-left
+- cabinet-right
+
+annotations:
+- ann-interior-cabinet
+- ann-exterior-drawer
 ```
 
-Además, las dos copias de 339 MB no tienen una ruta de bytes autorizada para materialización en el contenedor. Los intentos directos de `raw_file` sobre ambas fueron rechazados por el sistema de archivos del Project/Library.
-
-Por tanto, en este entorno NO es posible ejecutar un SHA-256 independiente sobre los bytes de esas copias y demostrar que corresponden exactamente al hash canónico:
+### `layer-slide` — order 1
 
 ```text
-318ceb94569608bfe062e3e50c7032edee79febf06102f7eec760769a6dfd90c
+entities:
+- telescopic-slide
 ```
 
-La coincidencia de nombre + página + contenido visual es evidencia útil, pero NO sustituye el gate criptográfico exigido por el plan.
-
-## Copia alternativa auditada y descartada
-
-También se localizó:
+### `layer-clearance-notes` — order 2
 
 ```text
-LibroFinal.pdf
+annotations:
+- ann-clearance-light
+- ann-clearance-heavy
+- ann-clearance-soft-close
 ```
 
-Esta copia sí permitió materialización de bytes y verificación independiente.
+## Camera
 
-Resultado real:
+El contrato usa el viewport normalizado completo:
+
+```json
+{
+  "coordinate_space": "normalized_figure",
+  "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+}
+```
+
+## Medidas canónicas preservadas
+
+Se verificó que `measurements.json` conserva:
 
 ```text
-size = 62755194 bytes
-SHA-256 = dbff03699899e3946c8af714f8f6fb9dbda78e582785dee95b303373870b15cb
-page_count = 256
+MEAS-CPNC-2025-P0113-009 = 13 mm, VISUALLY_VERIFIED
+MEAS-CPNC-2025-P0113-010 = 14 mm, VISUALLY_VERIFIED
+MEAS-CPNC-2025-P0113-011 = 15 mm, VISUALLY_VERIFIED
 ```
 
-Comparado con la fuente canónica esperada:
+MVP4A no cambia sus valores, IDs ni autoridad.
 
-```text
-expected SHA-256 = 318ceb94569608bfe062e3e50c7032edee79febf06102f7eec760769a6dfd90c
-expected page_count = 295
-```
+## Guardrails de no invención
 
-Conclusión:
+Este review NO afirma:
 
-```text
-LibroFinal.pdf != canonical source
-```
+- medidas físicas derivadas desde coordenadas gráficas;
+- radios/espesores exactos de la corredera;
+- posición exacta de perforaciones;
+- proporciones mecánicas exactas;
+- geometría interna exacta del cross-section.
 
-Se descarta como fuente para derivar geometría MVP4A.
-
-## Reintento después del checkpoint inicial
-
-Tras una nueva orden `continua`, se repitió el gate sin asumir que el bloqueo previo seguía vigente:
-
-1. no apareció un PDF nuevo en la superficie de archivos del hilo actual;
-2. se revisó Library;
-3. se identificó y materializó `LibroFinal.pdf`;
-4. se calculó SHA-256 y page count;
-5. se descartó por no coincidir;
-6. se reintentó materializar ambas copias de 339 MB;
-7. ambas siguieron rechazadas por falta de acceso a bytes crudos.
-
-Por tanto el bloqueo queda reafirmado con evidencia adicional y no por simple arrastre de estado histórico.
-
-## Decisión fail-closed
-
-Aplicando:
-
-```text
-UNRESOLVED > INVENTED
-```
-
-se detiene Task 3 antes de derivar coordenadas.
-
-No se autoriza en este estado:
-
-- asignar `render_contract` a la figura canónica;
-- añadir `camera` render-ready;
-- añadir geometrías `rect`, `line` o `polyline` a P0113;
-- asignar placements a annotations;
-- crear layers reales;
-- fijar coordenadas normalizadas;
-- crear tests de regresión con coordenadas;
-- promover `unknown` a `approximate` por inferencia.
-
-## Estado de la figura
-
-`books/cpnc-2025/pages/p0113/figures/fig-001.json` permanece sin modificación durante este gate.
-
-Sus entidades continúan con el estado histórico:
-
-- `telescopic-slide` — `approximate`, sin primitive/coordinates;
-- `drawer` — `approximate`, sin primitive/coordinates;
-- `cabinet-left` — `approximate`, sin primitive/coordinates;
-- `cabinet-right` — `approximate`, sin primitive/coordinates;
-- `cross-section` — `unknown`, sin primitive/coordinates;
-- `layers = []`;
-- `camera = {}`;
-- no `render_contract` todavía.
-
-## Qué desbloquea Task 3
-
-Hace falta una de estas dos evidencias:
-
-1. disponer en el runtime de los bytes del PDF fuente exacto y calcular:
-
-```text
-SHA-256 = 318ceb94569608bfe062e3e50c7032edee79febf06102f7eec760769a6dfd90c
-```
-
-O:
-
-2. una fuente de almacenamiento autorizada que entregue los bytes y permita verificar el mismo hash antes de inspeccionar/derivar coordenadas.
-
-Una vez satisfecho ese gate, la revisión debe registrar por cada entity/annotation:
-
-```text
-id
-source evidence observed
-primitive
-normalized coordinates
-precision
-reason the value is demonstrable from source
-```
-
-solo entonces se permite continuar con RED/GREEN de `tests/test_mvp4a_figure.py` y la mutación de `fig-001.json`.
+Los valores de posición son reconstrucción visual aproximada sustentada en el crop de la fuente exacta.
 
 ## Resultado
 
 ```text
-MVP4A_TASK3_SOURCE_GATE = UNRESOLVED
-GEOMETRY_MUTATION = BLOCKED
-CANONICAL_FIGURE_CHANGED = NO
+SOURCE_GATE = PASS
+GEOMETRY_REVIEW = COMPLETE
+CANONICAL_FIGURE_MUTATION = AUTHORIZED_FOR_TASK3_GREEN
 ```
