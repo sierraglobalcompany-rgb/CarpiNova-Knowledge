@@ -1,0 +1,123 @@
+name: MVP4A Task7 Final Audit
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: 3175fbe0e5a99834ef98b93b92f3fafaede13ae3
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - uses: astral-sh/setup-uv@v10.3.0
+      - name: Install dependencies
+        run: uv sync --all-groups
+      - name: Fresh full QA
+        run: |
+          uv run pytest -q
+          uv run ruff check .
+          uv run python -m carpinova_knowledge validate --root .
+          uv run python -m carpinova_knowledge report-pilot --root . --batch batch-000-pilot
+      - name: Build BOOK twice
+        run: |
+          rm -rf /tmp/mvp4a-book-a /tmp/mvp4a-book-b
+          uv run python -m carpinova_knowledge build-book-dist --root . --book-id cpnc-2025 --out /tmp/mvp4a-book-a
+          uv run python -m carpinova_knowledge build-book-dist --root . --book-id cpnc-2025 --out /tmp/mvp4a-book-b
+      - name: Verify deterministic BOOK and distributed render
+        run: |
+          uv run python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+          from carpinova_knowledge.render_figure import render_normalized_2d_svg
+
+          root = Path('.')
+          a = Path('/tmp/mvp4a-book-a')
+          b = Path('/tmp/mvp4a-book-b')
+          names = ('knowledge.bundle.json', 'figures.bundle.json', 'lessons.bundle.json', 'manifest.json')
+          hashes = {}
+          for name in names:
+              data_a = (a / name).read_bytes()
+              data_b = (b / name).read_bytes()
+              assert data_a == data_b, f'non-deterministic output: {name}'
+              hashes[name] = hashlib.sha256(data_a).hexdigest()
+
+          manifest = json.loads((a / 'manifest.json').read_text(encoding='utf-8'))
+          assert manifest['scope'] == 'BOOK'
+          assert manifest['book_id'] == 'cpnc-2025'
+          assert manifest['knowledge_version'] == '1.1.0'
+          assert manifest['source_manifest_sha256'] == '318ceb94569608bfe062e3e50c7032edee79febf06102f7eec760769a6dfd90c'
+          assert manifest['source_page_count'] == 295
+          assert manifest['excluded_page_count'] == 43
+          assert manifest['counts']['pages'] == 252
+
+          figures = json.loads((a / 'figures.bundle.json').read_text(encoding='utf-8'))
+          matches = [f for f in figures['figures'] if f.get('figure_id') == 'FIG-CPNC-2025-P0113-001']
+          assert len(matches) == 1
+          distributed = matches[0]
+          assert distributed['source']['pdf_page'] == 113
+          assert distributed['source']['printed_page'] == 91
+          assert distributed['reconstruction']['render_contract'] == 'normalized-2d-v1'
+          assert distributed['camera']['coordinate_space'] == 'normalized_figure'
+          assert distributed['camera']['viewport'] == {'x': 0.0, 'y': 0.0, 'width': 1.0, 'height': 1.0}
+          assert distributed['layers']
+          assert set(distributed['measurements']) == {
+              'MEAS-CPNC-2025-P0113-009',
+              'MEAS-CPNC-2025-P0113-010',
+              'MEAS-CPNC-2025-P0113-011',
+          }
+          assert all('placement' in ann for ann in distributed['annotations'])
+          entity_ids = {entity['id'] for entity in distributed['entities']}
+          for required in {
+              'telescopic-slide', 'slide-inner-profile', 'slide-middle-profile',
+              'slide-section-left', 'slide-section-right', 'drawer',
+              'cabinet-left', 'cabinet-right', 'cross-section'
+          }:
+              assert required in entity_ids
+
+          canonical = json.loads((root / 'books/cpnc-2025/pages/p0113/figures/fig-001.json').read_text(encoding='utf-8'))
+          canonical_svg = render_normalized_2d_svg(canonical)
+          distributed_svg = render_normalized_2d_svg(distributed)
+          assert distributed_svg == canonical_svg
+          svg_sha = hashlib.sha256(distributed_svg.encode('utf-8')).hexdigest()
+          assert svg_sha == '7aaed9b446f0192e5eea1aaae22a29403b1275e11e96ffbcf3e134d99c825e43'
+
+          summary = {
+              'candidate_head': '3175fbe0e5a99834ef98b93b92f3fafaede13ae3',
+              'manifest': {
+                  'scope': manifest['scope'],
+                  'book_id': manifest['book_id'],
+                  'knowledge_version': manifest['knowledge_version'],
+                  'source_manifest_sha256': manifest['source_manifest_sha256'],
+                  'source_page_count': manifest['source_page_count'],
+                  'excluded_page_count': manifest['excluded_page_count'],
+                  'counts': manifest['counts'],
+              },
+              'bundle_sha256': hashes,
+              'distributed_figure_count': len(matches),
+              'render_contract': distributed['reconstruction']['render_contract'],
+              'rendered_svg_sha256': svg_sha,
+              'distributed_vs_canonical_svg': 'BYTE_IDENTICAL',
+          }
+          Path('/tmp/mvp4a-task7-summary.json').write_text(
+              json.dumps(summary, ensure_ascii=False, indent=2, sort_keys=True) + '\n',
+              encoding='utf-8',
+          )
+          print(json.dumps(summary, ensure_ascii=False, sort_keys=True))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mvp4a-task7-final-audit
+          path: |
+            /tmp/mvp4a-task7-summary.json
+            /tmp/mvp4a-book-a/*.json
+          if-no-files-found: error
