@@ -68,13 +68,16 @@ def test_cli_build_book_dist_builds_full_f1_bundle(tmp_path: Path) -> None:
     assert manifest["knowledge_version"] == "1.0.0"
 
 
-def test_ci_pushes_validate_main_and_f1() -> None:
+def test_ci_post_1_0_contract_uses_current_actions_and_no_stale_f1_pushes() -> None:
     root = Path(__file__).resolve().parents[1]
     workflow = (root / ".github" / "workflows" / "knowledge-qa.yml").read_text(
         encoding="utf-8"
     )
 
     assert "      - main\n" in workflow
-    assert "      - 'feat/knowledge-f1*'\n" in workflow
-    assert "      - 'knowledge/f1-*'\n" in workflow
+    assert "feat/knowledge-f1" not in workflow
+    assert "knowledge/f1-" not in workflow
     assert "  pull_request:\n    branches:\n      - main\n" in workflow
+    assert "uses: actions/checkout@v7" in workflow
+    assert "uses: actions/setup-python@v7" in workflow
+    assert "uses: astral-sh/setup-uv@v10" in workflow
