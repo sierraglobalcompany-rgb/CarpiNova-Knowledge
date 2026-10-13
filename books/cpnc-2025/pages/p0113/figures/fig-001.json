@@ -24,35 +24,53 @@
       "id": "telescopic-slide",
       "type": "drawer_slide",
       "geometry": {
-        "precision": "approximate"
+        "primitive": "polyline",
+        "precision": "approximate",
+        "points": [
+          {"x": 0.106, "y": 0.399},
+          {"x": 0.826, "y": 0.168},
+          {"x": 0.904, "y": 0.202},
+          {"x": 0.894, "y": 0.282},
+          {"x": 0.246, "y": 0.668},
+          {"x": 0.109, "y": 0.651},
+          {"x": 0.106, "y": 0.399}
+        ]
       }
     },
     {
       "id": "drawer",
       "type": "drawer",
       "geometry": {
-        "precision": "approximate"
+        "primitive": "rect",
+        "precision": "approximate",
+        "bounds": {"x": 0.059, "y": 0.119, "width": 0.207, "height": 0.09}
       }
     },
     {
       "id": "cabinet-left",
       "type": "cabinet_side",
       "geometry": {
-        "precision": "approximate"
+        "primitive": "rect",
+        "precision": "approximate",
+        "bounds": {"x": 0.022, "y": 0.119, "width": 0.034, "height": 0.105}
       }
     },
     {
       "id": "cabinet-right",
       "type": "cabinet_side",
       "geometry": {
-        "precision": "approximate"
+        "primitive": "rect",
+        "precision": "approximate",
+        "bounds": {"x": 0.286, "y": 0.118, "width": 0.032, "height": 0.105}
       }
     },
     {
       "id": "cross-section",
       "type": "inset_cross_section",
       "geometry": {
-        "precision": "unknown"
+        "primitive": "rect",
+        "precision": "unknown",
+        "bounds": {"x": 0.0, "y": 0.025, "width": 0.345, "height": 0.255}
       }
     }
   ],
@@ -80,28 +98,58 @@
   ],
   "annotations": [
     {
+      "id": "ann-clearance-light",
       "text": "Riel liviano 1.3cm por riel",
-      "measurement_id": "MEAS-CPNC-2025-P0113-009"
+      "measurement_id": "MEAS-CPNC-2025-P0113-009",
+      "placement": {"x": 0.405, "y": 0.62, "precision": "approximate"}
     },
     {
+      "id": "ann-clearance-heavy",
       "text": "Riel pesado 1.4cm por riel",
-      "measurement_id": "MEAS-CPNC-2025-P0113-010"
+      "measurement_id": "MEAS-CPNC-2025-P0113-010",
+      "placement": {"x": 0.405, "y": 0.675, "precision": "approximate"}
     },
     {
+      "id": "ann-clearance-soft-close",
       "text": "Riel push o cierre suave 1.5cm por riel",
-      "measurement_id": "MEAS-CPNC-2025-P0113-011"
+      "measurement_id": "MEAS-CPNC-2025-P0113-011",
+      "placement": {"x": 0.405, "y": 0.728, "precision": "approximate"}
     },
     {
+      "id": "ann-interior-cabinet",
       "text": "Interior del mueble",
-      "entity_id": "cross-section"
+      "entity_id": "cross-section",
+      "placement": {"x": 0.104, "y": 0.061, "precision": "approximate"}
     },
     {
+      "id": "ann-exterior-drawer",
       "text": "Exterior del cajón",
-      "entity_id": "cross-section"
+      "entity_id": "cross-section",
+      "placement": {"x": 0.105, "y": 0.101, "precision": "approximate"}
     }
   ],
-  "layers": [],
-  "camera": {},
+  "layers": [
+    {
+      "id": "layer-cross-section",
+      "order": 0,
+      "entity_ids": ["cross-section", "drawer", "cabinet-left", "cabinet-right"],
+      "annotation_ids": ["ann-interior-cabinet", "ann-exterior-drawer"]
+    },
+    {
+      "id": "layer-slide",
+      "order": 1,
+      "entity_ids": ["telescopic-slide"]
+    },
+    {
+      "id": "layer-clearance-notes",
+      "order": 2,
+      "annotation_ids": ["ann-clearance-light", "ann-clearance-heavy", "ann-clearance-soft-close"]
+    }
+  ],
+  "camera": {
+    "coordinate_space": "normalized_figure",
+    "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+  },
   "visual_style": {
     "source_style": "technical_render_plus_handwritten_notes"
   },
@@ -132,13 +180,14 @@
   "reconstruction": {
     "preferred_renderer": "hybrid",
     "deterministic_required": true,
-    "generative_image_allowed": false
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
   },
   "accessibility": {
     "summary": "Render de una corredera telescópica con un esquema de sección del cajón y notas manuscritas de holgura lateral por tipo de riel."
   },
   "review": {
     "status": "VISUALLY_VERIFIED",
-    "notes": "Inventario visual realizado sobre render de la página fuente."
+    "notes": "Geometría normalizada aproximada derivada de la página fuente canónica verificada por SHA-256; ver audits/mvp4a/p0113-geometry-review.md."
   }
 }
