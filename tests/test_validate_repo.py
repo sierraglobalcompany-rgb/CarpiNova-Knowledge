@@ -161,3 +161,114 @@ def test_page_map_rejects_duplicate_verified_printed_page(tmp_path: Path) -> Non
     page_map["pages"].append(duplicate)
     _write(path, page_map)
     assert "duplicate_verified_printed_page" in _codes(validate_repository(tmp_path))
+
+
+def _render_ready_figure(page_dir: Path) -> tuple[Path, dict]:
+    path = page_dir / "figures" / "fig-001.json"
+    figure = json.loads(path.read_text(encoding="utf-8"))
+    figure["reconstruction"]["render_contract"] = "normalized-2d-v1"
+    figure["camera"] = {
+        "coordinate_space": "normalized_figure",
+        "viewport": {"x": 0.0, "y": 0.0, "width": 1.0, "height": 1.0},
+    }
+    figure["entities"][0]["geometry"] = {
+        "primitive": "rect",
+        "precision": "approximate",
+        "bounds": {"x": 0.1, "y": 0.2, "width": 0.4, "height": 0.2},
+    }
+    figure["annotations"] = [
+        {
+            "id": "ann-panel-1",
+            "entity_id": "panel-1",
+            "measurement_id": "MEAS-CPNC-2025-P0091-001",
+            "text": "Panel",
+            "placement": {"x": 0.2, "y": 0.15, "precision": "approximate"},
+        }
+    ]
+    figure["layers"] = [
+        {
+            "id": "base",
+            "order": 0,
+            "entity_ids": ["panel-1"],
+            "annotation_ids": ["ann-panel-1"],
+        }
+    ]
+    _write(path, figure)
+    return path, figure
+
+
+def test_valid_render_contract_repository_has_zero_errors(tmp_path: Path) -> None:
+    page_dir = _valid_repo(tmp_path)
+    _render_ready_figure(page_dir)
+    report = validate_repository(tmp_path)
+    assert report["valid"] is True
+    assert report["errors"] == []
+
+
+def test_render_contract_unknown_layer_entity_is_reported(tmp_path: Path) -> None:
+    page_dir = _valid_repo(tmp_path)
+    path, figure = _render_ready_figure(page_dir)
+    figure["layers"][0]["entity_ids"] = ["missing-panel"]
+    _write(path, figure)
+    assert "render_contract_unknown_layer_entity" in _codes(validate_repository(tmp_path))
+
+
+def test_render_contract_unknown_layer_annotation_is_reported(tmp_path: Path) -> None:
+    page_dir = _valid_repo(tmp_path)
+    path, figure = _render_ready_figure(page_dir)
+    figure["layers"][0]["annotation_ids"] = ["missing-annotation"]
+    _write(path, figure)
+    assert "render_contract_unknown_layer_annotation" in _codes(validate_repository(tmp_path))
+
+
+def test_render_contract_duplicate_annotation_id_is_reported(tmp_path: Path) -> None:
+    page_dir = _valid_repo(tmp_path)
+    path, figure = _render_ready_figure(page_dir)
+    figure["annotations"].append(copy.deepcopy(figure["annotations"][0]))
+    _write(path, figure)
+    assert "render_contract_duplicate_annotation_id" in _codes(validate_repository(tmp_path))
+
+
+def test_render_contract_visible_annotation_requires_placement(tmp_path: Path) -> None:
+    page_dir = _valid_repo(tmp_path)
+    path, figure = _render_ready_figure(page_dir)
+    figure["annotations"][0].pop("placement")
+    _write(path, figure)
+    assert "render_contract_visible_annotation_missing_placement" in _codes(validate_repository(tmp_path))
+
+
+def test_render_contract_layer_member_cannot_repeat_across_layers(tmp_path: Path) -> None:
+    page_dir = _valid_repo(tmp_path)
+    path, figure = _render_ready_figure(page_dir)
+    figure["layers"].append({"id": "duplicate", "order": 1, "entity_ids": ["panel-1"]})
+    _write(path, figure)
+    assert "render_contract_duplicate_layer_member" in _codes(validate_repository(tmp_path))
+
+
+def test_render_contract_annotation_measurement_reference_must_resolve(tmp_path: Path) -> None:
+    page_dir = _valid_repo(tmp_path)
+    path, figure = _render_ready_figure(page_dir)
+    figure["annotations"][0]["measurement_id"] = "MEAS-CPNC-2025-P0091-999"
+    _write(path, figure)
+    assert "unresolved_reference" in _codes(validate_repository(tmp_path))
+
+
+def test_render_contract_annotation_entity_reference_must_resolve(tmp_path: Path) -> None:
+    page_dir = _valid_repo(tmp_path)
+    path, figure = _render_ready_figure(page_dir)
+    figure["annotations"][0]["entity_id"] = "missing-panel"
+    _write(path, figure)
+    assert "unresolved_reference" in _codes(validate_repository(tmp_path))
+
+
+def test_render_contract_rect_bounds_must_fit_viewport(tmp_path: Path) -> None:
+    page_dir = _valid_repo(tmp_path)
+    path, figure = _render_ready_figure(page_dir)
+    figure["entities"][0]["geometry"]["bounds"] = {
+        "x": 0.8,
+        "y": 0.2,
+        "width": 0.4,
+        "height": 0.2,
+    }
+    _write(path, figure)
+    assert "render_contract_bounds_out_of_view" in _codes(validate_repository(tmp_path))
