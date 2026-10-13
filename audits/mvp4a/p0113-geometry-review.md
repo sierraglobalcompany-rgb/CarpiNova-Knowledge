@@ -29,6 +29,8 @@ libros_1751553390342_Carpintería para no Carpinteros Versión 2025.pdf
 libros_1751553390342_Carpintería para no Carpinteros Versión 2025(1).pdf
 ```
 
+Ambas tienen tamaño registrado de `339051027` bytes.
+
 En ambas, la página accesible como PDF page 113 muestra:
 
 - printed page `91`;
@@ -48,7 +50,7 @@ printed_page = 91
 source.region = x 0.0605 / y 0.577 / width 0.88 / height 0.3815
 ```
 
-## Bloqueo
+## Bloqueo principal
 
 El lector de Project/Library reporta para ambas copias visibles:
 
@@ -62,15 +64,62 @@ pero el release canónico histórico fija:
 source_page_count = 295
 ```
 
-Además, las copias visibles no tienen una ruta de bytes autorizada para materialización en el contenedor. El intento de `raw_file` fue rechazado por el sistema de archivos del Project/Library.
+Además, las dos copias de 339 MB no tienen una ruta de bytes autorizada para materialización en el contenedor. Los intentos directos de `raw_file` sobre ambas fueron rechazados por el sistema de archivos del Project/Library.
 
-Por tanto, en este entorno NO es posible ejecutar un SHA-256 independiente sobre los bytes de la copia visual y demostrar que corresponde exactamente al hash canónico:
+Por tanto, en este entorno NO es posible ejecutar un SHA-256 independiente sobre los bytes de esas copias y demostrar que corresponden exactamente al hash canónico:
 
 ```text
 318ceb94569608bfe062e3e50c7032edee79febf06102f7eec760769a6dfd90c
 ```
 
 La coincidencia de nombre + página + contenido visual es evidencia útil, pero NO sustituye el gate criptográfico exigido por el plan.
+
+## Copia alternativa auditada y descartada
+
+También se localizó:
+
+```text
+LibroFinal.pdf
+```
+
+Esta copia sí permitió materialización de bytes y verificación independiente.
+
+Resultado real:
+
+```text
+size = 62755194 bytes
+SHA-256 = dbff03699899e3946c8af714f8f6fb9dbda78e582785dee95b303373870b15cb
+page_count = 256
+```
+
+Comparado con la fuente canónica esperada:
+
+```text
+expected SHA-256 = 318ceb94569608bfe062e3e50c7032edee79febf06102f7eec760769a6dfd90c
+expected page_count = 295
+```
+
+Conclusión:
+
+```text
+LibroFinal.pdf != canonical source
+```
+
+Se descarta como fuente para derivar geometría MVP4A.
+
+## Reintento después del checkpoint inicial
+
+Tras una nueva orden `continua`, se repitió el gate sin asumir que el bloqueo previo seguía vigente:
+
+1. no apareció un PDF nuevo en la superficie de archivos del hilo actual;
+2. se revisó Library;
+3. se identificó y materializó `LibroFinal.pdf`;
+4. se calculó SHA-256 y page count;
+5. se descartó por no coincidir;
+6. se reintentó materializar ambas copias de 339 MB;
+7. ambas siguieron rechazadas por falta de acceso a bytes crudos.
+
+Por tanto el bloqueo queda reafirmado con evidencia adicional y no por simple arrastre de estado histórico.
 
 ## Decisión fail-closed
 
