@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-      - 'feat/knowledge-f1*'
-      - 'knowledge/f1-*'
   pull_request:
     branches:
       - main
@@ -18,15 +16,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python 3.12
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
       - name: Set up uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v10.3.0
         with:
           enable-cache: true
 
