@@ -110,26 +110,28 @@ jobs:
               if ((await page.title()) !== 'CarpiNova') throw new Error(`${vp.name}: unexpected title`);
               await page.getByRole('heading', { level: 1, name: 'Aprende carpintería desde cero' }).waitFor();
               const lessonLink = page.getByRole('link', { name: lessonTitle });
+              await lessonLink.waitFor();
               if (!(await lessonLink.isVisible())) throw new Error(`${vp.name}: lesson link not visible on home`);
               if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)) throw new Error(`${vp.name}: horizontal overflow on home`);
               await page.screenshot({ path: `/tmp/carpinova-mvp3-visual/${vp.name}-home.png`, fullPage: true });
 
               await lessonLink.click();
               await page.waitForURL(`**/lecciones/${lessonId}`);
+              const expectedLessonH1 = page.getByRole('heading', { level: 1, name: lessonTitle });
+              await expectedLessonH1.waitFor();
               const h1 = page.getByRole('heading', { level: 1 });
               const h1Count = await h1.count();
               if (h1Count !== 1) throw new Error(`${vp.name}: lesson must have exactly one h1; got ${h1Count}`);
               const h1Text = (await h1.textContent()) ?? '';
-              console.log(`${vp.name}: rendered h1 = ${JSON.stringify(h1Text)}; expected = ${JSON.stringify(lessonTitle)}`);
-              console.log(`${vp.name}: rendered h1 codepoints = ${JSON.stringify([...h1Text].map((ch) => ch.codePointAt(0)))}`);
-              await page.screenshot({ path: `/tmp/carpinova-mvp3-visual/${vp.name}-lesson.png`, fullPage: true });
               if (h1Text.trim() !== lessonTitle) throw new Error(`${vp.name}: lesson h1 mismatch: ${JSON.stringify(h1Text.trim())}`);
+              await page.screenshot({ path: `/tmp/carpinova-mvp3-visual/${vp.name}-lesson.png`, fullPage: true });
 
               const stepCount = await page.locator('.lesson-page__steps > li').count();
               if (stepCount !== 5) throw new Error(`${vp.name}: expected 5 steps, got ${stepCount}`);
               if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)) throw new Error(`${vp.name}: horizontal overflow on lesson`);
 
               const firstContentLink = page.getByRole('link', { name: 'Ver contenido' }).first();
+              await firstContentLink.waitFor();
               if (!(await firstContentLink.isVisible())) throw new Error(`${vp.name}: first content link not visible`);
               await firstContentLink.focus();
               const focusStyle = await firstContentLink.evaluate((el) => {
@@ -141,13 +143,14 @@ jobs:
               await firstContentLink.click();
               await page.waitForURL('**/contenido/**');
               const backLink = page.getByRole('link', { name: 'Volver a la lección' });
+              await backLink.waitFor();
               if (!(await backLink.isVisible())) throw new Error(`${vp.name}: semantic return link missing`);
               if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)) throw new Error(`${vp.name}: horizontal overflow on content`);
               await page.screenshot({ path: `/tmp/carpinova-mvp3-visual/${vp.name}-content.png`, fullPage: true });
 
               await backLink.click();
               await page.waitForURL(`**/lecciones/${lessonId}`);
-              if (!(await page.getByRole('heading', { level: 1, name: lessonTitle }).isVisible())) throw new Error(`${vp.name}: return to lesson failed`);
+              await page.getByRole('heading', { level: 1, name: lessonTitle }).waitFor();
               if (consoleErrors.length) throw new Error(`${vp.name}: console/page errors: ${consoleErrors.join(' | ')}`);
 
               results.push({
