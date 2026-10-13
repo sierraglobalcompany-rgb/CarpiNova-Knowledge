@@ -124,7 +124,6 @@ jobs:
               if (h1Count !== 1) throw new Error(`${vp.name}: lesson must have exactly one h1; got ${h1Count}`);
               const h1Text = (await h1.textContent()) ?? '';
               if (h1Text.trim() !== lessonTitle) throw new Error(`${vp.name}: lesson h1 mismatch: ${JSON.stringify(h1Text.trim())}`);
-              await page.screenshot({ path: `/tmp/carpinova-mvp3-visual/${vp.name}-lesson.png`, fullPage: true });
 
               const stepCount = await page.locator('.lesson-page__steps > li').count();
               if (stepCount !== 5) throw new Error(`${vp.name}: expected 5 steps, got ${stepCount}`);
@@ -133,12 +132,19 @@ jobs:
               const firstContentLink = page.getByRole('link', { name: 'Ver contenido' }).first();
               await firstContentLink.waitFor();
               if (!(await firstContentLink.isVisible())) throw new Error(`${vp.name}: first content link not visible`);
-              await firstContentLink.focus();
+
+              await page.keyboard.press('Tab');
+              const firstKeyboardTarget = await page.evaluate(() => document.activeElement?.textContent?.trim() ?? '');
+              if (firstKeyboardTarget !== 'Volver al inicio') throw new Error(`${vp.name}: first keyboard target mismatch: ${JSON.stringify(firstKeyboardTarget)}`);
+              await page.keyboard.press('Tab');
+              const contentHasFocus = await firstContentLink.evaluate((el) => el === document.activeElement);
+              if (!contentHasFocus) throw new Error(`${vp.name}: second keyboard target is not first content link`);
               const focusStyle = await firstContentLink.evaluate((el) => {
                 const style = getComputedStyle(el);
                 return { outlineStyle: style.outlineStyle, outlineWidth: style.outlineWidth, outlineColor: style.outlineColor };
               });
-              if (focusStyle.outlineStyle === 'none' || focusStyle.outlineWidth === '0px') throw new Error(`${vp.name}: essential content link has no visible focus outline`);
+              if (focusStyle.outlineStyle === 'none' || focusStyle.outlineWidth === '0px') throw new Error(`${vp.name}: keyboard-focused content link has no visible focus outline`);
+              await page.screenshot({ path: `/tmp/carpinova-mvp3-visual/${vp.name}-lesson-focus.png`, fullPage: true });
 
               await firstContentLink.click();
               await page.waitForURL('**/contenido/**');
@@ -161,7 +167,7 @@ jobs:
                 horizontal_overflow: 'PASS',
                 one_h1: 'PASS',
                 five_steps_dom_order: 'PASS',
-                essential_link_visible: 'PASS',
+                keyboard_order: ['Volver al inicio', 'Ver contenido'],
                 focus_outline: focusStyle,
                 lesson_to_content: 'PASS',
                 content_to_lesson: 'PASS',
