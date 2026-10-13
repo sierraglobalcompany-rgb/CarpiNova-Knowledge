@@ -38,6 +38,38 @@
       }
     },
     {
+      "id": "slide-inner-profile",
+      "type": "drawer_slide_profile",
+      "geometry": {
+        "primitive": "polyline",
+        "precision": "approximate",
+        "points": [
+          {"x": 0.143, "y": 0.458},
+          {"x": 0.421, "y": 0.368},
+          {"x": 0.421, "y": 0.505},
+          {"x": 0.146, "y": 0.590},
+          {"x": 0.143, "y": 0.458}
+        ]
+      }
+    },
+    {
+      "id": "slide-middle-profile",
+      "type": "drawer_slide_profile",
+      "geometry": {
+        "primitive": "polyline",
+        "precision": "approximate",
+        "points": [
+          {"x": 0.329, "y": 0.356},
+          {"x": 0.772, "y": 0.190},
+          {"x": 0.842, "y": 0.171},
+          {"x": 0.836, "y": 0.322},
+          {"x": 0.438, "y": 0.472},
+          {"x": 0.329, "y": 0.463},
+          {"x": 0.329, "y": 0.356}
+        ]
+      }
+    },
+    {
       "id": "drawer",
       "type": "drawer",
       "geometry": {
@@ -62,6 +94,24 @@
         "primitive": "rect",
         "precision": "approximate",
         "bounds": {"x": 0.286, "y": 0.118, "width": 0.032, "height": 0.105}
+      }
+    },
+    {
+      "id": "slide-section-left",
+      "type": "drawer_slide_section",
+      "geometry": {
+        "primitive": "rect",
+        "precision": "approximate",
+        "bounds": {"x": 0.046, "y": 0.124, "width": 0.013, "height": 0.096}
+      }
+    },
+    {
+      "id": "slide-section-right",
+      "type": "drawer_slide_section",
+      "geometry": {
+        "primitive": "rect",
+        "precision": "approximate",
+        "bounds": {"x": 0.267, "y": 0.123, "width": 0.016, "height": 0.098}
       }
     },
     {
@@ -101,18 +151,21 @@
       "id": "ann-clearance-light",
       "text": "Riel liviano 1.3cm por riel",
       "measurement_id": "MEAS-CPNC-2025-P0113-009",
+      "entity_id": "telescopic-slide",
       "placement": {"x": 0.405, "y": 0.62, "precision": "approximate"}
     },
     {
       "id": "ann-clearance-heavy",
       "text": "Riel pesado 1.4cm por riel",
       "measurement_id": "MEAS-CPNC-2025-P0113-010",
+      "entity_id": "telescopic-slide",
       "placement": {"x": 0.405, "y": 0.675, "precision": "approximate"}
     },
     {
       "id": "ann-clearance-soft-close",
       "text": "Riel push o cierre suave 1.5cm por riel",
       "measurement_id": "MEAS-CPNC-2025-P0113-011",
+      "entity_id": "telescopic-slide",
       "placement": {"x": 0.405, "y": 0.728, "precision": "approximate"}
     },
     {
@@ -132,13 +185,20 @@
     {
       "id": "layer-cross-section",
       "order": 0,
-      "entity_ids": ["cross-section", "drawer", "cabinet-left", "cabinet-right"],
+      "entity_ids": [
+        "cross-section",
+        "drawer",
+        "cabinet-left",
+        "cabinet-right",
+        "slide-section-left",
+        "slide-section-right"
+      ],
       "annotation_ids": ["ann-interior-cabinet", "ann-exterior-drawer"]
     },
     {
       "id": "layer-slide",
       "order": 1,
-      "entity_ids": ["telescopic-slide"]
+      "entity_ids": ["telescopic-slide", "slide-inner-profile", "slide-middle-profile"]
     },
     {
       "id": "layer-clearance-notes",
@@ -188,6 +248,6 @@
   },
   "review": {
     "status": "VISUALLY_VERIFIED",
-    "notes": "Geometría normalizada aproximada derivada de la página fuente canónica verificada por SHA-256; ver audits/mvp4a/p0113-geometry-review.md."
+    "notes": "Geometría normalizada aproximada derivada de la página fuente canónica verificada por SHA-256 y corregida tras el visual gate; ver audits/mvp4a/p0113-geometry-review.md."
   }
 }
