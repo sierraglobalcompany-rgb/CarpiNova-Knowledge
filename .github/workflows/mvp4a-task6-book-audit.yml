@@ -1,0 +1,62 @@
+name: MVP4A Task6 BOOK Audit
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/mvp4a-task6-book-audit.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: 3175fbe0e5a99834ef98b93b92f3fafaede13ae3
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@v10.3.0
+      - run: uv sync --all-groups
+      - name: Build exact BOOK candidate
+        run: |
+          uv run python -m carpinova_knowledge build-book-dist --root . --book-id cpnc-2025 --out /tmp/mvp4a-book
+      - name: Verify candidate contract
+        run: |
+          uv run python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          out = Path('/tmp/mvp4a-book')
+          manifest = json.loads((out / 'manifest.json').read_text(encoding='utf-8'))
+          figures = json.loads((out / 'figures.bundle.json').read_text(encoding='utf-8'))
+          matches = [f for f in figures['figures'] if f['figure_id'] == 'FIG-CPNC-2025-P0113-001']
+          assert manifest['scope'] == 'BOOK'
+          assert manifest['book_id'] == 'cpnc-2025'
+          assert manifest['knowledge_version'] == '1.1.0'
+          assert manifest['source_manifest_sha256'] == '318ceb94569608bfe062e3e50c7032edee79febf06102f7eec760769a6dfd90c'
+          assert manifest['source_page_count'] == 295
+          assert manifest['excluded_page_count'] == 43
+          assert manifest['counts']['pages'] == 252
+          assert len(matches) == 1
+          figure = matches[0]
+          assert figure['reconstruction']['render_contract'] == 'normalized-2d-v1'
+          assert figure['camera']['coordinate_space'] == 'normalized_figure'
+          assert figure['layers']
+          assert set(figure['measurements']) == {
+              'MEAS-CPNC-2025-P0113-009',
+              'MEAS-CPNC-2025-P0113-010',
+              'MEAS-CPNC-2025-P0113-011',
+          }
+          print(json.dumps(manifest, ensure_ascii=False, sort_keys=True))
+          for name in ('knowledge.bundle.json', 'figures.bundle.json', 'lessons.bundle.json', 'manifest.json'):
+              print(name, hashlib.sha256((out / name).read_bytes()).hexdigest())
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mvp4a-task6-book-candidate
+          path: /tmp/mvp4a-book/*.json
+          if-no-files-found: error
