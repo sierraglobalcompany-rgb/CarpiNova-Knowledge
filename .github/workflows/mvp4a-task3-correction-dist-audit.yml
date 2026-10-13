@@ -1,0 +1,36 @@
+name: MVP4A Task3 Correction Dist Audit
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/mvp4a-task3-correction-dist-audit.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: 1d9a7e0fd5a861b399fdba1f2114196e9ec29e18
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@v10.3.0
+      - run: uv sync --all-groups
+      - name: Build exact pilot distribution
+        run: |
+          uv run python - <<'PY'
+          from pathlib import Path
+          from carpinova_knowledge.build_dist import build_distribution
+          out = Path('/tmp/mvp4a-task3-correction-pilot')
+          manifest = build_distribution(Path('.'), 'batch-000-pilot', out)
+          print(manifest)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mvp4a-task3-correction-pilot-dist
+          path: /tmp/mvp4a-task3-correction-pilot/*.json
+          if-no-files-found: error
