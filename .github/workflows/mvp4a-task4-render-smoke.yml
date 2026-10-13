@@ -1,0 +1,37 @@
+name: MVP4A Task4 Render Smoke
+
+on:
+  pull_request:
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - uses: astral-sh/setup-uv@v10.3.0
+      - run: uv sync --all-groups
+      - name: Render real P0113 figure
+        run: |
+          mkdir -p work/mvp4a
+          uv run python - <<'PY'
+          import json
+          from pathlib import Path
+          from carpinova_knowledge.render_figure import render_normalized_2d_svg
+
+          source = Path('books/cpnc-2025/pages/p0113/figures/fig-001.json')
+          figure = json.loads(source.read_text(encoding='utf-8'))
+          svg = render_normalized_2d_svg(figure)
+          out = Path('work/mvp4a/p0113.svg')
+          out.write_text(svg, encoding='utf-8')
+          print(f'figure_id={figure["figure_id"]}')
+          print(f'svg_bytes={len(svg.encode("utf-8"))}')
+          PY
+          test -s work/mvp4a/p0113.svg
+          grep -q '<svg' work/mvp4a/p0113.svg
+          grep -q 'data-layer-id="layer-cross-section"' work/mvp4a/p0113.svg
+          grep -q 'data-layer-id="layer-slide"' work/mvp4a/p0113.svg
+          grep -q 'data-layer-id="layer-clearance-notes"' work/mvp4a/p0113.svg
+          sha256sum work/mvp4a/p0113.svg
