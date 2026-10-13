@@ -1,0 +1,184 @@
+name: MVP3 Visual Audit
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  visual-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout canonical CarpiNova-Knowledge
+        uses: actions/checkout@v7
+        with:
+          path: CarpiNova-Knowledge
+
+      - name: Checkout CarpiNova-PC MVP3 HEAD
+        uses: actions/checkout@v7
+        with:
+          repository: sierraglobalcompany-rgb/CarpiNova-PC
+          ref: e1988ded413921c4e9d008fd9b770eddccdba26b
+          path: CarpiNova-PC
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v10.3.0
+        with:
+          enable-cache: true
+
+      - name: Install Knowledge dependencies
+        working-directory: CarpiNova-Knowledge
+        run: uv sync --all-groups
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: CarpiNova-PC/package-lock.json
+
+      - name: Install PC dependencies
+        working-directory: CarpiNova-PC
+        run: npm ci
+
+      - name: Prepare canonical Knowledge 1.0 through PC
+        working-directory: CarpiNova-PC
+        run: npm run knowledge:prepare -- --knowledge-root ../CarpiNova-Knowledge
+
+      - name: Build PC
+        working-directory: CarpiNova-PC
+        run: npm run build
+
+      - name: Install Playwright Chromium for temporary audit
+        working-directory: CarpiNova-PC
+        run: |
+          npm install --no-save --package-lock=false @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+
+      - name: Start preview server
+        working-directory: CarpiNova-PC
+        run: |
+          npm run preview -- --host 127.0.0.1 --port 4173 > /tmp/carpinova-preview.log 2>&1 &
+          echo $! > /tmp/carpinova-preview.pid
+          for i in {1..30}; do
+            if curl -fsS http://127.0.0.1:4173/ >/dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat /tmp/carpinova-preview.log
+          exit 1
+
+      - name: Run responsive visual audit
+        working-directory: CarpiNova-PC
+        run: |
+          mkdir -p /tmp/carpinova-mvp3-visual
+          cat > .tmp-mvp3-visual-audit.mjs <<'NODE'
+          import { chromium } from '@playwright/test';
+          import { writeFile } from 'node:fs/promises';
+
+          const lessonId = 'LESSON-SLIDES-X-2X-PILOT';
+          const lessonTitle = 'Calcular e instalar correderas con X y 2X';
+          const base = 'http://127.0.0.1:4173';
+          const viewports = [
+            { name: 'desktop-1440', width: 1440, height: 1000 },
+            { name: 'tablet-768', width: 768, height: 1024 },
+            { name: 'mobile-390', width: 390, height: 844 },
+          ];
+          const results = [];
+          const browser = await chromium.launch();
+
+          try {
+            for (const vp of viewports) {
+              const context = await browser.newContext({ viewport: { width: vp.width, height: vp.height } });
+              const page = await context.newPage();
+              const consoleErrors = [];
+              page.on('console', (msg) => {
+                if (msg.type() === 'error') consoleErrors.push(msg.text());
+              });
+              page.on('pageerror', (error) => consoleErrors.push(`pageerror: ${error.message}`));
+
+              await page.goto(base, { waitUntil: 'networkidle' });
+              if ((await page.title()) !== 'CarpiNova') throw new Error(`${vp.name}: unexpected title`);
+              await page.getByRole('heading', { level: 1, name: 'Aprende carpintería desde cero' }).waitFor();
+              const lessonLink = page.getByRole('link', { name: lessonTitle });
+              if (!(await lessonLink.isVisible())) throw new Error(`${vp.name}: lesson link not visible on home`);
+              if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)) throw new Error(`${vp.name}: horizontal overflow on home`);
+              await page.screenshot({ path: `/tmp/carpinova-mvp3-visual/${vp.name}-home.png`, fullPage: true });
+
+              await lessonLink.click();
+              await page.waitForURL(`**/lecciones/${lessonId}`);
+              if ((await page.getByRole('heading', { level: 1 }).count()) !== 1) throw new Error(`${vp.name}: lesson must have exactly one h1`);
+              if ((await page.getByRole('heading', { level: 1 }).textContent())?.trim() !== lessonTitle) throw new Error(`${vp.name}: lesson h1 mismatch`);
+              const stepCount = await page.locator('.lesson-page__steps > li').count();
+              if (stepCount !== 5) throw new Error(`${vp.name}: expected 5 steps, got ${stepCount}`);
+              if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)) throw new Error(`${vp.name}: horizontal overflow on lesson`);
+
+              const firstContentLink = page.getByRole('link', { name: 'Ver contenido' }).first();
+              if (!(await firstContentLink.isVisible())) throw new Error(`${vp.name}: first content link not visible`);
+              await firstContentLink.focus();
+              const focusStyle = await firstContentLink.evaluate((el) => {
+                const style = getComputedStyle(el);
+                return { outlineStyle: style.outlineStyle, outlineWidth: style.outlineWidth, outlineColor: style.outlineColor };
+              });
+              if (focusStyle.outlineStyle === 'none' || focusStyle.outlineWidth === '0px') throw new Error(`${vp.name}: essential content link has no visible focus outline`);
+              await page.screenshot({ path: `/tmp/carpinova-mvp3-visual/${vp.name}-lesson.png`, fullPage: true });
+
+              await firstContentLink.click();
+              await page.waitForURL('**/contenido/**');
+              const backLink = page.getByRole('link', { name: 'Volver a la lección' });
+              if (!(await backLink.isVisible())) throw new Error(`${vp.name}: semantic return link missing`);
+              if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)) throw new Error(`${vp.name}: horizontal overflow on content`);
+              await page.screenshot({ path: `/tmp/carpinova-mvp3-visual/${vp.name}-content.png`, fullPage: true });
+
+              await backLink.click();
+              await page.waitForURL(`**/lecciones/${lessonId}`);
+              if (!(await page.getByRole('heading', { level: 1, name: lessonTitle }).isVisible())) throw new Error(`${vp.name}: return to lesson failed`);
+              if (consoleErrors.length) throw new Error(`${vp.name}: console/page errors: ${consoleErrors.join(' | ')}`);
+
+              results.push({
+                viewport: vp,
+                page_identity: 'PASS',
+                home_lesson_discovery: 'PASS',
+                horizontal_overflow: 'PASS',
+                one_h1: 'PASS',
+                five_steps_dom_order: 'PASS',
+                essential_link_visible: 'PASS',
+                focus_outline: focusStyle,
+                lesson_to_content: 'PASS',
+                content_to_lesson: 'PASS',
+                console_errors: [],
+              });
+              await context.close();
+            }
+
+            await writeFile('/tmp/carpinova-mvp3-visual/audit.json', JSON.stringify({
+              pc_sha: 'e1988ded413921c4e9d008fd9b770eddccdba26b',
+              knowledge_sha: 'a47119aba3d4711c1ac69f33f7d236d9bc20bb78',
+              lesson_id: lessonId,
+              result: 'PASS',
+              viewports: results,
+            }, null, 2));
+          } finally {
+            await browser.close();
+          }
+          NODE
+          node .tmp-mvp3-visual-audit.mjs
+          rm .tmp-mvp3-visual-audit.mjs
+          cat /tmp/carpinova-mvp3-visual/audit.json
+
+      - name: Upload visual evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: carpinova-mvp3-visual-audit
+          path: /tmp/carpinova-mvp3-visual
+          if-no-files-found: error
+          retention-days: 7
