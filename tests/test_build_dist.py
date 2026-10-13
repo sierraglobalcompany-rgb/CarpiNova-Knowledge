@@ -94,6 +94,7 @@ def test_build_book_distribution_is_deterministic_and_covers_f1(tmp_path: Path) 
         assert _sha(out_a / name) == _sha(out_b / name)
 
     knowledge = json.loads((out_a / "knowledge.bundle.json").read_text(encoding="utf-8"))
+    figures = json.loads((out_a / "figures.bundle.json").read_text(encoding="utf-8"))
     page_ids = {page["page_id"] for page in knowledge["pages"]}
     excluded_page_ids = {
         f"PAGE-CPNC-2025-P{page:04d}" for page in USEFUL_BOOK_EXCLUDED_PDF_PAGES
@@ -109,12 +110,52 @@ def test_build_book_distribution_is_deterministic_and_covers_f1(tmp_path: Path) 
 
     assert manifest_a["scope"] == "BOOK"
     assert manifest_a["book_id"] == "cpnc-2025"
-    assert manifest_a["knowledge_version"] == "1.0.0"
+    assert manifest_a["knowledge_version"] == "1.1.0"
     assert manifest_a["source_manifest_sha256"] == "318ceb94569608bfe062e3e50c7032edee79febf06102f7eec760769a6dfd90c"
     assert manifest_a["source_page_count"] == 295
     assert manifest_a["excluded_page_count"] == len(USEFUL_BOOK_EXCLUDED_PDF_PAGES)
     assert manifest_a["counts"]["pages"] == 295 - len(USEFUL_BOOK_EXCLUDED_PDF_PAGES)
     assert manifest_a == manifest_b
+
+    matches = [
+        figure
+        for figure in figures["figures"]
+        if figure["figure_id"] == "FIG-CPNC-2025-P0113-001"
+    ]
+    assert len(matches) == 1
+    figure = matches[0]
+    assert figure["page_id"] == "PAGE-CPNC-2025-P0113"
+    assert figure["source"]["pdf_page"] == 113
+    assert figure["source"]["printed_page"] == 91
+    assert figure["reconstruction"]["render_contract"] == "normalized-2d-v1"
+    assert figure["camera"]["coordinate_space"] == "normalized_figure"
+    assert figure["camera"]["viewport"] == {"x": 0, "y": 0, "width": 1, "height": 1}
+    assert figure["layers"]
+
+    entities = {entity["id"]: entity for entity in figure["entities"]}
+    assert entities["telescopic-slide"]["geometry"]["primitive"] == "polyline"
+    assert entities["slide-inner-profile"]["geometry"]["primitive"] == "polyline"
+    assert entities["slide-middle-profile"]["geometry"]["primitive"] == "polyline"
+    assert entities["slide-section-left"]["geometry"]["primitive"] == "rect"
+    assert entities["slide-section-right"]["geometry"]["primitive"] == "rect"
+
+    expected_measurements = {
+        "MEAS-CPNC-2025-P0113-009",
+        "MEAS-CPNC-2025-P0113-010",
+        "MEAS-CPNC-2025-P0113-011",
+    }
+    assert set(figure["measurements"]) == expected_measurements
+    annotations_by_measurement = {
+        annotation["measurement_id"]: annotation
+        for annotation in figure["annotations"]
+        if annotation.get("measurement_id")
+    }
+    assert set(annotations_by_measurement) == expected_measurements
+    for annotation in annotations_by_measurement.values():
+        assert annotation["entity_id"] == "telescopic-slide"
+        assert annotation["placement"]["precision"] == "approximate"
+        assert 0 <= annotation["placement"]["x"] <= 1
+        assert 0 <= annotation["placement"]["y"] <= 1
 
     combined = b"".join((out_a / name).read_bytes() for name in expected_files)
     assert b"/mnt/" not in combined
