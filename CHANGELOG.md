@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.0 — 2026-10-14
+
+- Promoted the full-book technical contract to Knowledge `1.2.0` without changing canonical source identity, the `295` physical-page count, the `43` explicit exclusions, or the source SHA-256.
+- Added four strict source-backed lesson interaction types: `highlight`, `highlight_measurements`, `identify_parts` and `guided_sequence`.
+- Added fail-closed validation for nested interaction references: entity and measurement targets must resolve, source/guided content must belong to the same lesson step, guided measurements must resolve and guided sequence order must be unique.
+- Preserved Knowledge as the source of truth; CarpiNova-PC explicitly accepts `1.0.0`, `1.1.0` and `1.2.0`, while unsupported future versions such as `1.3.0` remain fail-closed.
+- Added source-backed render-ready `FIG-CPNC-2025-P0112-001` to `main` using the existing `normalized-2d-v1` renderer contract; `FIG-CPNC-2025-P0113-001` remains preserved.
+- Deferred `FIG-CPNC-2025-P0121-001` instead of fabricating unresolved dimensions or expanding renderer/schema architecture solely to make the figure pass.
+- Preserved KISS scope: no generic interaction engine, second renderer, 3D/WebGL stack, backend, database, AI subsystem, renderer registry, plugin framework or Cell implementation.
+
 ## 1.1.0 — 2026-10-14
 
 - Prepared the full-book Knowledge `1.1.0` release candidate without changing canonical source identity, page counts, exclusions, or source SHA-256.
