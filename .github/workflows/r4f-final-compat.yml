@@ -1,0 +1,103 @@
+name: R4F exact compatibility
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  compatibility:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      KNOWLEDGE_SHA: d3e6da1b48bee747fcd5257dba990ac7ce76425b
+      PC_SHA: 5e2675419333af84ae4a0832262631de1c3cf1f5
+    steps:
+      - name: Checkout exact Knowledge candidate
+        uses: actions/checkout@v7
+        with:
+          repository: sierraglobalcompany-rgb/CarpiNova-Knowledge
+          ref: ${{ env.KNOWLEDGE_SHA }}
+          path: knowledge
+
+      - name: Checkout exact PC candidate
+        uses: actions/checkout@v7
+        with:
+          repository: sierraglobalcompany-rgb/CarpiNova-PC
+          ref: ${{ env.PC_SHA }}
+          path: pc
+
+      - name: Verify immutable inputs
+        run: |
+          test "$(git -C knowledge rev-parse HEAD)" = "$KNOWLEDGE_SHA"
+          test "$(git -C pc rev-parse HEAD)" = "$PC_SHA"
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v10.3.0
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: pc/package-lock.json
+
+      - name: Install Knowledge dependencies
+        working-directory: knowledge
+        run: uv sync --all-groups
+
+      - name: Validate exact Knowledge candidate
+        working-directory: knowledge
+        run: uv run python -m carpinova_knowledge validate --root .
+
+      - name: Install PC dependencies
+        working-directory: pc
+        run: npm ci
+
+      - name: Prepare exact Knowledge 1.2 candidate
+        working-directory: pc
+        run: node scripts/prepare-knowledge.mjs --knowledge-root ../knowledge
+
+      - name: Verify installed Knowledge 1.2 contracts
+        working-directory: pc
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from 'node:fs/promises';
+          const manifest = JSON.parse(await readFile('generated/knowledge/manifest.json', 'utf8'));
+          const lessons = JSON.parse(await readFile('generated/knowledge/lessons.bundle.json', 'utf8'));
+          if (manifest.knowledge_version !== '1.2.0') throw new Error(`expected Knowledge 1.2.0, got ${manifest.knowledge_version}`);
+          const lesson = lessons.lessons.find((item) => item.lesson_id === 'LESSON-SLIDES-X-2X-PILOT');
+          if (!lesson) throw new Error('pilot lesson missing');
+          const identify = lesson.steps.find((step) => step.order === 4)?.interaction;
+          const guided = lesson.steps.find((step) => step.order === 5)?.interaction;
+          if (identify?.type !== 'identify_parts' || identify.parts?.length !== 2) throw new Error('identify_parts contract missing');
+          if (guided?.type !== 'guided_sequence' || guided.sequence?.length !== 3) throw new Error('guided_sequence contract missing');
+          console.log(JSON.stringify({
+            knowledge_version: manifest.knowledge_version,
+            identify_parts: identify.parts.length,
+            guided_sequence: guided.sequence.length,
+          }));
+          NODE
+
+      - name: Run PC tests
+        working-directory: pc
+        run: npm test
+
+      - name: Typecheck PC
+        working-directory: pc
+        run: npm run typecheck
+
+      - name: Build PC
+        working-directory: pc
+        run: npm run build
+
+      - name: Audit PC dependencies
+        working-directory: pc
+        run: npm audit --audit-level=high
