@@ -1,0 +1,96 @@
+name: R5A Post-Merge PC Compatibility
+
+on:
+  pull_request:
+
+jobs:
+  compatibility:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact merged Knowledge main
+        uses: actions/checkout@v7
+        with:
+          repository: sierraglobalcompany-rgb/CarpiNova-Knowledge
+          ref: d12407a55550552a72bfefc351322697e82f2707
+          path: knowledge
+
+      - name: Checkout exact PC main
+        uses: actions/checkout@v7
+        with:
+          repository: sierraglobalcompany-rgb/CarpiNova-PC
+          ref: 8996b9b874119de007347f10f003dbeea8aaf742
+          path: pc
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v10.3.0
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: pc/package-lock.json
+
+      - name: Install Knowledge dependencies
+        working-directory: knowledge
+        run: uv sync --all-groups
+
+      - name: Install PC dependencies
+        working-directory: pc
+        run: npm ci
+
+      - name: Prepare exact merged Knowledge
+        working-directory: pc
+        run: node scripts/prepare-knowledge.mjs --knowledge-root ../knowledge
+
+      - name: Verify installed P0112 render contract
+        working-directory: pc
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from 'node:fs/promises';
+          const manifest = JSON.parse(await readFile('generated/knowledge/manifest.json', 'utf8'));
+          const figuresBundle = JSON.parse(await readFile('generated/knowledge/figures.bundle.json', 'utf8'));
+          if (manifest.knowledge_version !== '1.2.0') throw new Error(`expected Knowledge 1.2.0, got ${manifest.knowledge_version}`);
+          const figure = figuresBundle.figures.find((item) => item.figure_id === 'FIG-CPNC-2025-P0112-001');
+          if (!figure) throw new Error('P0112 figure missing');
+          if (figure.reconstruction?.render_contract !== 'normalized-2d-v1') throw new Error('P0112 render contract missing');
+          if (figure.reconstruction?.deterministic_required !== true) throw new Error('P0112 must remain deterministic');
+          if (figure.reconstruction?.generative_image_allowed !== false) throw new Error('P0112 must remain non-generative');
+          if (figure.entities?.length !== 9) throw new Error(`expected 9 P0112 entities, got ${figure.entities?.length}`);
+          const supported = new Set(['rect', 'line', 'polyline']);
+          if (!figure.entities.every((entity) => supported.has(entity.geometry?.primitive))) throw new Error('P0112 has unsupported or missing primitive');
+          const labels = new Set(figure.annotations?.map((annotation) => annotation.text));
+          for (const label of ['Recta', 'Cobertura total', 'Semi-recta', 'Cobertura parcial', 'Curva', 'Embebida']) {
+            if (!labels.has(label)) throw new Error(`P0112 label missing: ${label}`);
+          }
+          if (figure.layers?.length !== 4) throw new Error(`expected 4 P0112 layers, got ${figure.layers?.length}`);
+          console.log(JSON.stringify({
+            knowledge_version: manifest.knowledge_version,
+            figure_id: figure.figure_id,
+            render_contract: figure.reconstruction.render_contract,
+            entities: figure.entities.length,
+            annotations: figure.annotations.length,
+            layers: figure.layers.length,
+          }));
+          NODE
+
+      - name: Run PC tests
+        working-directory: pc
+        run: npm test
+
+      - name: Typecheck
+        working-directory: pc
+        run: npm run typecheck
+
+      - name: Build
+        working-directory: pc
+        run: npm run build
+
+      - name: Audit dependencies
+        working-directory: pc
+        run: npm audit
