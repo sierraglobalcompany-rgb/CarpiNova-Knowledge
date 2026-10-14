@@ -272,3 +272,134 @@ def test_render_contract_rect_bounds_must_fit_viewport(tmp_path: Path) -> None:
     }
     _write(path, figure)
     assert "render_contract_bounds_out_of_view" in _codes(validate_repository(tmp_path))
+
+
+def _lesson_path(root: Path) -> Path:
+    return root / "lessons" / "pilot" / "lesson.json"
+
+
+def test_highlight_interaction_target_must_exist_in_step_figure(tmp_path: Path) -> None:
+    page_dir = _valid_repo(tmp_path)
+    _render_ready_figure(page_dir)
+    path = _lesson_path(tmp_path)
+    lesson = json.loads(path.read_text(encoding="utf-8"))
+    lesson["steps"][0]["figure_ids"] = ["FIG-CPNC-2025-P0091-001"]
+    lesson["steps"][0]["interaction"] = {
+        "type": "highlight",
+        "target_entity_ids": ["missing-panel"],
+    }
+    _write(path, lesson)
+    assert "interaction_unresolved_entity_target" in _codes(validate_repository(tmp_path))
+
+
+def test_measurement_highlight_must_belong_to_step_figure(tmp_path: Path) -> None:
+    page_dir = _valid_repo(tmp_path)
+    _render_ready_figure(page_dir)
+    measurements_path = page_dir / "measurements.json"
+    measurements = json.loads(measurements_path.read_text(encoding="utf-8"))
+    second = copy.deepcopy(measurements[0])
+    second["measurement_id"] = "MEAS-CPNC-2025-P0091-002"
+    measurements.append(second)
+    _write(measurements_path, measurements)
+
+    path = _lesson_path(tmp_path)
+    lesson = json.loads(path.read_text(encoding="utf-8"))
+    lesson["steps"][0]["figure_ids"] = ["FIG-CPNC-2025-P0091-001"]
+    lesson["steps"][0]["interaction"] = {
+        "type": "highlight_measurements",
+        "measurement_ids": ["MEAS-CPNC-2025-P0091-002"],
+    }
+    _write(path, lesson)
+    assert "interaction_unresolved_measurement_target" in _codes(validate_repository(tmp_path))
+
+
+def test_identify_parts_source_content_must_belong_to_step(tmp_path: Path) -> None:
+    page_dir = _valid_repo(tmp_path)
+    content_path = page_dir / "content.json"
+    content = json.loads(content_path.read_text(encoding="utf-8"))
+    second = copy.deepcopy(content[0])
+    second["content_id"] = "CONTENT-CPNC-2025-P0091-002"
+    second["derived_from_content_ids"] = [second["content_id"]]
+    content.append(second)
+    _write(content_path, content)
+    render_page_docs(page_dir)
+
+    path = _lesson_path(tmp_path)
+    lesson = json.loads(path.read_text(encoding="utf-8"))
+    lesson["source_content_ids"].append(second["content_id"])
+    lesson["steps"][0]["interaction"] = {
+        "type": "identify_parts",
+        "source_content_id": second["content_id"],
+        "parts": [{"label": "Parte", "installation_location": "Ubicación"}],
+    }
+    _write(path, lesson)
+    assert "interaction_source_content_not_in_step" in _codes(validate_repository(tmp_path))
+
+
+def test_guided_sequence_content_must_belong_to_step(tmp_path: Path) -> None:
+    page_dir = _valid_repo(tmp_path)
+    content_path = page_dir / "content.json"
+    content = json.loads(content_path.read_text(encoding="utf-8"))
+    second = copy.deepcopy(content[0])
+    second["content_id"] = "CONTENT-CPNC-2025-P0091-002"
+    second["derived_from_content_ids"] = [second["content_id"]]
+    content.append(second)
+    _write(content_path, content)
+    render_page_docs(page_dir)
+
+    path = _lesson_path(tmp_path)
+    lesson = json.loads(path.read_text(encoding="utf-8"))
+    lesson["source_content_ids"].append(second["content_id"])
+    lesson["steps"][0]["interaction"] = {
+        "type": "guided_sequence",
+        "sequence": [
+            {
+                "order": 1,
+                "content_id": second["content_id"],
+                "measurement_ids": ["MEAS-CPNC-2025-P0091-001"],
+            }
+        ],
+    }
+    _write(path, lesson)
+    assert "interaction_sequence_content_not_in_step" in _codes(validate_repository(tmp_path))
+
+
+def test_guided_sequence_measurement_reference_must_resolve(tmp_path: Path) -> None:
+    _valid_repo(tmp_path)
+    path = _lesson_path(tmp_path)
+    lesson = json.loads(path.read_text(encoding="utf-8"))
+    lesson["steps"][0]["interaction"] = {
+        "type": "guided_sequence",
+        "sequence": [
+            {
+                "order": 1,
+                "content_id": "CONTENT-CPNC-2025-P0091-001",
+                "measurement_ids": ["MEAS-CPNC-2025-P0091-999"],
+            }
+        ],
+    }
+    _write(path, lesson)
+    assert "unresolved_reference" in _codes(validate_repository(tmp_path))
+
+
+def test_guided_sequence_order_must_be_unique(tmp_path: Path) -> None:
+    _valid_repo(tmp_path)
+    path = _lesson_path(tmp_path)
+    lesson = json.loads(path.read_text(encoding="utf-8"))
+    lesson["steps"][0]["interaction"] = {
+        "type": "guided_sequence",
+        "sequence": [
+            {
+                "order": 1,
+                "content_id": "CONTENT-CPNC-2025-P0091-001",
+                "measurement_ids": ["MEAS-CPNC-2025-P0091-001"],
+            },
+            {
+                "order": 1,
+                "content_id": "CONTENT-CPNC-2025-P0091-001",
+                "measurement_ids": ["MEAS-CPNC-2025-P0091-001"],
+            },
+        ],
+    }
+    _write(path, lesson)
+    assert "interaction_duplicate_sequence_order" in _codes(validate_repository(tmp_path))
