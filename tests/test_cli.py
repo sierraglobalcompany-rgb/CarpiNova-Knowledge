@@ -65,7 +65,7 @@ def test_cli_build_book_dist_builds_full_f1_bundle(tmp_path: Path) -> None:
     assert manifest["source_page_count"] == 295
     assert manifest["excluded_page_count"] == 43
     assert manifest["counts"]["pages"] == 252
-    assert manifest["knowledge_version"] == "1.1.0"
+    assert manifest["knowledge_version"] == "1.2.0"
 
 
 def test_ci_post_1_0_contract_uses_current_actions_and_no_stale_f1_pushes() -> None:
