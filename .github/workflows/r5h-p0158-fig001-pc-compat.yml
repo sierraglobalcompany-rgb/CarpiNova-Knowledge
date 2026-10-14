@@ -3,35 +3,28 @@ name: R5H P0158 FIG001 PC Compatibility
 on:
   pull_request:
 
-permissions:
-  contents: read
-
 jobs:
   compatibility:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
-    env:
-      KNOWLEDGE_SHA: 02d68bb619100e3c3d225f1ce474b32c4d006193
-      PC_SHA: 8996b9b874119de007347f10f003dbeea8aaf742
     steps:
       - name: Checkout exact Knowledge candidate
         uses: actions/checkout@v7
         with:
           repository: sierraglobalcompany-rgb/CarpiNova-Knowledge
-          ref: ${{ env.KNOWLEDGE_SHA }}
+          ref: 02d68bb619100e3c3d225f1ce474b32c4d006193
           path: knowledge
 
       - name: Checkout exact PC main
         uses: actions/checkout@v7
         with:
           repository: sierraglobalcompany-rgb/CarpiNova-PC
-          ref: ${{ env.PC_SHA }}
+          ref: 8996b9b874119de007347f10f003dbeea8aaf742
           path: pc
 
       - name: Verify immutable inputs
         run: |
-          test "$(git -C knowledge rev-parse HEAD)" = "$KNOWLEDGE_SHA"
-          test "$(git -C pc rev-parse HEAD)" = "$PC_SHA"
+          test "$(git -C knowledge rev-parse HEAD)" = "02d68bb619100e3c3d225f1ce474b32c4d006193"
+          test "$(git -C pc rev-parse HEAD)" = "8996b9b874119de007347f10f003dbeea8aaf742"
 
       - name: Set up Python 3.12
         uses: actions/setup-python@v7
@@ -67,33 +60,24 @@ jobs:
           import { readFile } from 'node:fs/promises';
           const manifest = JSON.parse(await readFile('generated/knowledge/manifest.json', 'utf8'));
           const figuresBundle = JSON.parse(await readFile('generated/knowledge/figures.bundle.json', 'utf8'));
-          if (manifest.knowledge_version !== '1.2.0') throw new Error(`expected Knowledge 1.2.0, got ${manifest.knowledge_version}`);
+          if (manifest.knowledge_version !== '1.2.0') throw new Error('unexpected Knowledge version');
           const figure = figuresBundle.figures.find((item) => item.figure_id === 'FIG-CPNC-2025-P0158-001');
           if (!figure) throw new Error('P0158 FIG001 missing');
           if (figure.reconstruction?.render_contract !== 'normalized-2d-v1') throw new Error('P0158 FIG001 render contract missing');
           if (figure.reconstruction?.deterministic_required !== true) throw new Error('P0158 FIG001 must remain deterministic');
           if (figure.reconstruction?.generative_image_allowed !== false) throw new Error('P0158 FIG001 must remain non-generative');
           const expectedEntityIds = ['table-saw','workpiece','push-stick','blade-guard','splitter'];
-          if (JSON.stringify(figure.entities?.map((entity) => entity.id)) !== JSON.stringify(expectedEntityIds)) throw new Error(`unexpected P0158 FIG001 entity ids: ${JSON.stringify(figure.entities?.map((entity) => entity.id))}`);
+          if (JSON.stringify(figure.entities?.map((entity) => entity.id)) !== JSON.stringify(expectedEntityIds)) throw new Error('unexpected P0158 FIG001 entity ids');
           if (!figure.entities.every((entity) => entity.geometry?.primitive === 'rect' && entity.geometry?.precision === 'approximate')) throw new Error('P0158 FIG001 geometry contract mismatch');
-          if (figure.annotations?.length !== 2) throw new Error(`expected 2 P0158 FIG001 annotations, got ${figure.annotations?.length}`);
+          if (figure.annotations?.length !== 2) throw new Error('unexpected P0158 FIG001 annotation count');
           if (!figure.annotations.every((annotation) => annotation.id && annotation.placement?.precision === 'approximate')) throw new Error('P0158 FIG001 annotation id/placement missing');
-          const expectedMeasurements = ['MEAS-CPNC-2025-P0158-001'];
-          if (JSON.stringify(figure.measurements) !== JSON.stringify(expectedMeasurements)) throw new Error(`unexpected P0158 FIG001 measurements: ${JSON.stringify(figure.measurements)}`);
-          if (figure.layers?.length !== 3) throw new Error(`expected 3 P0158 FIG001 layers, got ${figure.layers?.length}`);
+          if (JSON.stringify(figure.measurements) !== JSON.stringify(['MEAS-CPNC-2025-P0158-001'])) throw new Error('unexpected P0158 FIG001 measurements');
+          if (figure.layers?.length !== 3) throw new Error('unexpected P0158 FIG001 layer count');
           const entityRefs = figure.layers.flatMap((layer) => layer.entity_ids ?? []);
           const annotationRefs = figure.layers.flatMap((layer) => layer.annotation_ids ?? []);
-          if (entityRefs.length !== 5 || new Set(entityRefs).size !== 5) throw new Error(`P0158 FIG001 entity layer refs must be unique: ${JSON.stringify(entityRefs)}`);
-          if (annotationRefs.length !== 2 || new Set(annotationRefs).size !== 2) throw new Error(`P0158 FIG001 annotation layer refs must be unique: ${JSON.stringify(annotationRefs)}`);
-          console.log(JSON.stringify({
-            knowledge_version: manifest.knowledge_version,
-            figure_id: figure.figure_id,
-            render_contract: figure.reconstruction.render_contract,
-            entities: figure.entities.length,
-            annotations: figure.annotations.length,
-            measurements: figure.measurements.length,
-            layers: figure.layers.length,
-          }));
+          if (entityRefs.length !== 5 || new Set(entityRefs).size !== 5) throw new Error('P0158 FIG001 entity layer refs must be unique');
+          if (annotationRefs.length !== 2 || new Set(annotationRefs).size !== 2) throw new Error('P0158 FIG001 annotation layer refs must be unique');
+          console.log(JSON.stringify({knowledge_version: manifest.knowledge_version, figure_id: figure.figure_id, render_contract: figure.reconstruction.render_contract, entities: figure.entities.length, annotations: figure.annotations.length, measurements: figure.measurements.length, layers: figure.layers.length}));
           NODE
 
       - name: Run PC tests
