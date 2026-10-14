@@ -5,6 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LESSON_PATH = ROOT / "lessons" / "pilot" / "slides-x-2x.json"
+LESSON_SCHEMA_PATH = ROOT / "schemas" / "lesson.schema.json"
 
 
 def _steps_by_order() -> dict[int, dict]:
@@ -57,3 +58,17 @@ def test_guided_sequence_contract_uses_canonical_content_and_measurement_ids() -
             },
         ],
     }
+
+
+def test_lesson_schema_closes_the_four_current_interaction_contracts() -> None:
+    schema = json.loads(LESSON_SCHEMA_PATH.read_text(encoding="utf-8"))
+    interaction = schema["properties"]["steps"]["items"]["properties"]["interaction"]
+
+    assert interaction["oneOf"]
+    assert {variant["properties"]["type"]["const"] for variant in interaction["oneOf"]} == {
+        "highlight",
+        "highlight_measurements",
+        "identify_parts",
+        "guided_sequence",
+    }
+    assert all(variant["additionalProperties"] is False for variant in interaction["oneOf"])
