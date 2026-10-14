@@ -6,7 +6,7 @@ The source book PDF is intentionally kept outside Git. The repository stores tra
 
 ## Full-book version
 
-Current full-book Knowledge version on `main`: `1.1.0`.
+Current full-book Knowledge version on `main`: `1.2.0`.
 
 Canonical source: `cpnc-2025`, `295` physical pages, SHA-256:
 
@@ -18,7 +18,9 @@ The exclusions are explicit in `books/cpnc-2025/distribution.json`; they do not 
 
 Known source conflicts and safe `UNRESOLVED` items remain explicit instead of being reconciled by inference. No distributed RuleSpec is `EXECUTABLE` fabrication authority.
 
-Knowledge `1.1.0` adds the opt-in `normalized-2d-v1` render contract only to `FIG-CPNC-2025-P0113-001`. Legacy FigureSpec records remain valid and do not require migration.
+Knowledge `1.2.0` adds source-backed lesson interactions with strict schemas and fail-closed reference validation while preserving the opt-in `normalized-2d-v1` render contract. On current `main`, `FIG-CPNC-2025-P0113-001` and `FIG-CPNC-2025-P0112-001` are render-ready under that existing contract. Legacy FigureSpec records remain valid and do not require migration.
+
+`FIG-CPNC-2025-P0121-001` was reviewed for promotion but intentionally deferred: its unresolved dimension semantics cannot be represented source-faithfully by the current normalized contract without schema/renderer expansion or invented geometry.
 
 ## Reproduce the full-book bundle
 
@@ -27,7 +29,7 @@ From the repository root:
 ```bash
 uv sync --all-groups
 uv run python -m carpinova_knowledge validate --root .
-uv run python -m carpinova_knowledge build-book-dist --root . --book-id cpnc-2025 --out work/knowledge-1.1.0
+uv run python -m carpinova_knowledge build-book-dist --root . --book-id cpnc-2025 --out work/knowledge-1.2.0
 ```
 
 The build produces four deterministic consumer artifacts:
@@ -37,12 +39,13 @@ The build produces four deterministic consumer artifacts:
 - `lessons.bundle.json`
 - `manifest.json`
 
-`manifest.json` identifies `scope=BOOK`, `book_id=cpnc-2025`, `knowledge_version=1.1.0`, the canonical source SHA-256, `source_page_count=295`, the explicit exclusion count, record counts and hashes of the generated bundle files.
+`manifest.json` identifies `scope=BOOK`, `book_id=cpnc-2025`, `knowledge_version=1.2.0`, the canonical source SHA-256, `source_page_count=295`, the explicit exclusion count, record counts and hashes of the generated bundle files.
 
 `work/` is local scratch space and is not committed. The source PDF is also excluded from Git. Generated bundles are reproducible artifacts, not source-of-truth inputs.
 
 ## Release evidence
 
+- Knowledge 1.2 release record: `docs/releases/1.2.0.md`
 - Knowledge 1.1 final review: `docs/releases/1.1.0-review.md`
 - Knowledge 1.1 release record: `docs/releases/1.1.0.md`
 - Knowledge 1.0 final review: `docs/releases/1.0.0-review.md`
