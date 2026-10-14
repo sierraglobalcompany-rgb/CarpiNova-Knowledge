@@ -52,6 +52,7 @@ def test_p0158_fig001_declares_existing_normalized_render_contract() -> None:
 
 def test_p0158_fig001_keeps_only_source_backed_safety_entities_renderable() -> None:
     figure = _figure()
+    assert len(figure["entities"]) == len(EXPECTED_BOUNDS)
     entities = {entity["id"]: entity for entity in figure["entities"]}
 
     assert set(entities) == set(EXPECTED_BOUNDS)
@@ -88,6 +89,7 @@ def test_p0158_fig001_preserves_safety_measurement_annotations_and_layers() -> N
         ("push-stick", "Se usa el empujador"),
         ("blade-guard", "No se retira la guarda, ni el separador de corte"),
     }
+    assert len(figure["annotations"]) == len(expected_annotations)
     assert {
         (annotation["target_entity_id"], annotation["text"])
         for annotation in figure["annotations"]
@@ -102,21 +104,23 @@ def test_p0158_fig001_preserves_safety_measurement_annotations_and_layers() -> N
         assert placement["precision"] == "approximate"
         assert 0 <= placement["x"] <= 1
         assert 0 <= placement["y"] <= 1
-    assert len(annotation_ids) == 2
+    assert len(annotation_ids) == len(figure["annotations"])
 
     entity_ids = set(EXPECTED_BOUNDS)
-    referenced_entities: set[str] = set()
-    referenced_annotations: set[str] = set()
+    referenced_entities: list[str] = []
+    referenced_annotations: list[str] = []
     orders: list[int] = []
     for layer in figure["layers"]:
         assert "description" not in layer
         orders.append(layer["order"])
-        referenced_entities.update(layer.get("entity_ids", []))
-        referenced_annotations.update(layer.get("annotation_ids", []))
+        referenced_entities.extend(layer.get("entity_ids", []))
+        referenced_annotations.extend(layer.get("annotation_ids", []))
 
     assert orders == sorted(orders)
-    assert referenced_entities == entity_ids
-    assert referenced_annotations == annotation_ids
+    assert set(referenced_entities) == entity_ids
+    assert len(referenced_entities) == len(entity_ids)
+    assert set(referenced_annotations) == annotation_ids
+    assert len(referenced_annotations) == len(annotation_ids)
 
 
 def test_p0158_fig001_renders_byte_deterministically_and_repository_stays_valid() -> None:
@@ -127,7 +131,9 @@ def test_p0158_fig001_renders_byte_deterministically_and_repository_stays_valid(
 
     assert first == second
     for entity_id in EXPECTED_BOUNDS:
-        assert f'data-entity-id="{entity_id}"' in first
+        assert first.count(f'data-entity-id="{entity_id}"') == 1
+    for annotation in figure["annotations"]:
+        assert first.count(f'data-annotation-id="{annotation["id"]}"') == 1
     assert "Se usa el empujador" in first
     assert "No se retira la guarda, ni el separador de corte" in first
 
