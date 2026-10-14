@@ -61,8 +61,133 @@
             "uniqueItems": true
           },
           "interaction": {
-            "type": "object",
-            "additionalProperties": true
+            "oneOf": [
+              {
+                "type": "object",
+                "required": [
+                  "type",
+                  "target_entity_ids"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "const": "highlight"
+                  },
+                  "target_entity_ids": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "uniqueItems": true
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "required": [
+                  "type",
+                  "measurement_ids"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "const": "highlight_measurements"
+                  },
+                  "measurement_ids": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/measurementId"
+                    },
+                    "uniqueItems": true
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "required": [
+                  "type",
+                  "source_content_id",
+                  "parts"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "const": "identify_parts"
+                  },
+                  "source_content_id": {
+                    "$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/contentId"
+                  },
+                  "parts": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "label",
+                        "installation_location"
+                      ],
+                      "additionalProperties": false,
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "installation_location": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "required": [
+                  "type",
+                  "sequence"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "const": "guided_sequence"
+                  },
+                  "sequence": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "order",
+                        "content_id",
+                        "measurement_ids"
+                      ],
+                      "additionalProperties": false,
+                      "properties": {
+                        "order": {
+                          "type": "integer",
+                          "minimum": 1
+                        },
+                        "content_id": {
+                          "$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/contentId"
+                        },
+                        "measurement_ids": {
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/measurementId"
+                          },
+                          "uniqueItems": true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           }
         }
       }
