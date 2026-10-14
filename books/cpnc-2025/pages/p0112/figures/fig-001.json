@@ -24,63 +24,102 @@
       "id": "straight-hinge",
       "type": "cup_hinge",
       "geometry": {
-        "precision": "approximate"
+        "primitive": "polyline",
+        "precision": "approximate",
+        "points": [
+          {"x": 0.13, "y": 0.42},
+          {"x": 0.16, "y": 0.4},
+          {"x": 0.18, "y": 0.42},
+          {"x": 0.18, "y": 0.48},
+          {"x": 0.21, "y": 0.52},
+          {"x": 0.23, "y": 0.55}
+        ]
       }
     },
     {
       "id": "half-overlay-hinge",
       "type": "cup_hinge",
       "geometry": {
-        "precision": "approximate"
+        "primitive": "polyline",
+        "precision": "approximate",
+        "points": [
+          {"x": 0.46, "y": 0.42},
+          {"x": 0.49, "y": 0.4},
+          {"x": 0.51, "y": 0.42},
+          {"x": 0.51, "y": 0.47},
+          {"x": 0.54, "y": 0.5},
+          {"x": 0.55, "y": 0.55}
+        ]
       }
     },
     {
       "id": "inset-hinge",
       "type": "cup_hinge",
       "geometry": {
-        "precision": "approximate"
+        "primitive": "polyline",
+        "precision": "approximate",
+        "points": [
+          {"x": 0.79, "y": 0.42},
+          {"x": 0.82, "y": 0.4},
+          {"x": 0.84, "y": 0.42},
+          {"x": 0.84, "y": 0.46},
+          {"x": 0.87, "y": 0.49},
+          {"x": 0.88, "y": 0.55}
+        ]
       }
     },
     {
       "id": "side-straight",
       "type": "cabinet_side",
       "geometry": {
-        "precision": "approximate"
+        "primitive": "rect",
+        "precision": "approximate",
+        "bounds": {"x": 0.12, "y": 0.36, "width": 0.04, "height": 0.23}
       }
     },
     {
       "id": "door-straight",
       "type": "door",
       "geometry": {
-        "precision": "approximate"
+        "primitive": "rect",
+        "precision": "approximate",
+        "bounds": {"x": 0.1, "y": 0.55, "width": 0.22, "height": 0.045}
       }
     },
     {
       "id": "side-half",
       "type": "cabinet_side",
       "geometry": {
-        "precision": "approximate"
+        "primitive": "rect",
+        "precision": "approximate",
+        "bounds": {"x": 0.45, "y": 0.36, "width": 0.04, "height": 0.23}
       }
     },
     {
       "id": "door-half",
       "type": "door",
       "geometry": {
-        "precision": "approximate"
+        "primitive": "rect",
+        "precision": "approximate",
+        "bounds": {"x": 0.465, "y": 0.55, "width": 0.195, "height": 0.045}
       }
     },
     {
       "id": "side-inset",
       "type": "cabinet_side",
       "geometry": {
-        "precision": "approximate"
+        "primitive": "rect",
+        "precision": "approximate",
+        "bounds": {"x": 0.78, "y": 0.36, "width": 0.04, "height": 0.23}
       }
     },
     {
       "id": "door-inset",
       "type": "door",
       "geometry": {
-        "precision": "approximate"
+        "primitive": "rect",
+        "precision": "approximate",
+        "bounds": {"x": 0.82, "y": 0.55, "width": 0.15, "height": 0.045}
       }
     }
   ],
@@ -104,32 +143,75 @@
   "measurements": [],
   "annotations": [
     {
+      "id": "ann-straight-title",
       "text": "Recta",
-      "entity_id": "straight-hinge"
+      "entity_id": "straight-hinge",
+      "placement": {"x": 0.13, "y": 0.1, "precision": "approximate"}
     },
     {
+      "id": "ann-straight-coverage",
       "text": "Cobertura total",
-      "entity_id": "door-straight"
+      "entity_id": "door-straight",
+      "placement": {"x": 0.08, "y": 0.66, "precision": "approximate"}
     },
     {
+      "id": "ann-half-title",
       "text": "Semi-recta",
-      "entity_id": "half-overlay-hinge"
+      "entity_id": "half-overlay-hinge",
+      "placement": {"x": 0.43, "y": 0.1, "precision": "approximate"}
     },
     {
+      "id": "ann-half-coverage",
       "text": "Cobertura parcial",
-      "entity_id": "door-half"
+      "entity_id": "door-half",
+      "placement": {"x": 0.4, "y": 0.66, "precision": "approximate"}
     },
     {
+      "id": "ann-inset-title",
       "text": "Curva",
-      "entity_id": "inset-hinge"
+      "entity_id": "inset-hinge",
+      "placement": {"x": 0.8, "y": 0.1, "precision": "approximate"}
     },
     {
+      "id": "ann-inset-coverage",
       "text": "Embebida",
-      "entity_id": "door-inset"
+      "entity_id": "door-inset",
+      "placement": {"x": 0.8, "y": 0.66, "precision": "approximate"}
     }
   ],
-  "layers": [],
-  "camera": {},
+  "layers": [
+    {
+      "id": "layer-sides",
+      "order": 10,
+      "entity_ids": ["side-straight", "side-half", "side-inset"]
+    },
+    {
+      "id": "layer-doors",
+      "order": 20,
+      "entity_ids": ["door-straight", "door-half", "door-inset"]
+    },
+    {
+      "id": "layer-hinges",
+      "order": 30,
+      "entity_ids": ["straight-hinge", "half-overlay-hinge", "inset-hinge"]
+    },
+    {
+      "id": "layer-labels",
+      "order": 40,
+      "annotation_ids": [
+        "ann-straight-title",
+        "ann-straight-coverage",
+        "ann-half-title",
+        "ann-half-coverage",
+        "ann-inset-title",
+        "ann-inset-coverage"
+      ]
+    }
+  ],
+  "camera": {
+    "coordinate_space": "normalized_figure",
+    "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+  },
   "visual_style": {
     "source_style": "hand_drawn_black_line",
     "layout": "three_columns"
@@ -166,13 +248,14 @@
   "reconstruction": {
     "preferred_renderer": "svg",
     "deterministic_required": true,
-    "generative_image_allowed": false
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
   },
   "accessibility": {
     "summary": "Tres columnas comparan bisagra recta, semirrecta y curva y la posición resultante de la puerta respecto al lateral."
   },
   "review": {
     "status": "VISUALLY_VERIFIED",
-    "notes": "Inventario visual realizado sobre render de la página fuente."
+    "notes": "Geometría normalizada aproximada revisada contra la página fuente; reconstrucción pedagógica simplificada de las relaciones de cobertura, no calco métrico."
   }
 }
