@@ -1,0 +1,42 @@
+name: R5A Refresh Pilot Audit
+
+on:
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout audit branch
+        uses: actions/checkout@v7
+        with:
+          ref: audit/r5a-refresh-pilot-20261014
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v10.3.0
+
+      - name: Install dependencies
+        run: uv sync --all-groups
+
+      - name: Regenerate pilot distribution
+        run: uv run python -m carpinova_knowledge build-dist --root . --batch batch-000-pilot --out dist/pilot
+
+      - name: Commit exact derived artifacts when changed
+        run: |
+          if git diff --quiet -- dist/pilot; then
+            echo "pilot distribution already fresh"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/pilot
+          git commit -m "chore(r5a): refresh pilot distribution"
+          git push origin HEAD:audit/r5a-refresh-pilot-20261014
