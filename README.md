@@ -6,7 +6,7 @@ The source book PDF is intentionally kept outside Git. The repository stores tra
 
 ## Full-book version
 
-Current full-book Knowledge candidate version: `1.1.0` on the release branch. The published `main` release remains `1.0.0` until the candidate is explicitly merged.
+Current full-book Knowledge version on `main`: `1.1.0`.
 
 Canonical source: `cpnc-2025`, `295` physical pages, SHA-256:
 
@@ -37,14 +37,14 @@ The build produces four deterministic consumer artifacts:
 - `lessons.bundle.json`
 - `manifest.json`
 
-For this candidate, `manifest.json` identifies `scope=BOOK`, `book_id=cpnc-2025`, `knowledge_version=1.1.0`, the canonical source SHA-256, `source_page_count=295`, the explicit exclusion count, record counts and hashes of the generated bundle files.
+`manifest.json` identifies `scope=BOOK`, `book_id=cpnc-2025`, `knowledge_version=1.1.0`, the canonical source SHA-256, `source_page_count=295`, the explicit exclusion count, record counts and hashes of the generated bundle files.
 
 `work/` is local scratch space and is not committed. The source PDF is also excluded from Git. Generated bundles are reproducible artifacts, not source-of-truth inputs.
 
 ## Release evidence
 
-- Knowledge 1.1 candidate review: `docs/releases/1.1.0-review.md`
-- Knowledge 1.1 stable release record: `docs/releases/1.1.0.md`
+- Knowledge 1.1 final review: `docs/releases/1.1.0-review.md`
+- Knowledge 1.1 release record: `docs/releases/1.1.0.md`
 - Knowledge 1.0 final review: `docs/releases/1.0.0-review.md`
 - Knowledge 1.0 release record: `docs/releases/1.0.0.md`
 - Historical RC record: `docs/releases/1.0.0-rc.1.md`
