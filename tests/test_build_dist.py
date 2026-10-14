@@ -110,7 +110,7 @@ def test_build_book_distribution_is_deterministic_and_covers_f1(tmp_path: Path) 
 
     assert manifest_a["scope"] == "BOOK"
     assert manifest_a["book_id"] == "cpnc-2025"
-    assert manifest_a["knowledge_version"] == "1.1.0"
+    assert manifest_a["knowledge_version"] == "1.2.0"
     assert manifest_a["source_manifest_sha256"] == "318ceb94569608bfe062e3e50c7032edee79febf06102f7eec760769a6dfd90c"
     assert manifest_a["source_page_count"] == 295
     assert manifest_a["excluded_page_count"] == len(USEFUL_BOOK_EXCLUDED_PDF_PAGES)

@@ -9,7 +9,7 @@ from .validate_repo import validate_repository
 
 SCHEMA_VERSION = "0.1.0"
 KNOWLEDGE_VERSION = "0.1.0"
-BOOK_KNOWLEDGE_VERSION = "1.1.0"
+BOOK_KNOWLEDGE_VERSION = "1.2.0"
 
 
 def _load(path: Path) -> Any:

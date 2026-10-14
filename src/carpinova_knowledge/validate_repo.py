@@ -177,6 +177,7 @@ def validate_repository(root: Path) -> dict[str, Any]:
     errors: list[dict[str, Any]] = []
     ids: dict[str, Path] = {}
     refs: list[tuple[str, Path, str | None, str]] = []
+    figure_interaction_targets: dict[str, tuple[bool, set[str], set[str]]] = {}
 
     page_maps: dict[str, dict[int, dict[str, Any]]] = {}
     for path in root.glob("books/*/page-map.json"):
@@ -293,6 +294,22 @@ def validate_repository(root: Path) -> dict[str, Any]:
                 reconstruction = record.get("reconstruction") or {}
                 if reconstruction.get("deterministic_required") and reconstruction.get("preferred_renderer") == "image" and reconstruction.get("generative_image_allowed"):
                     _error(errors, "deterministic_figure_generative_only", path, oid, "deterministic figure cannot rely only on generative image rendering")
+                if oid:
+                    entity_ids = {
+                        entity.get("id")
+                        for entity in record.get("entities", [])
+                        if isinstance(entity, dict) and entity.get("id")
+                    }
+                    measurement_ids = {
+                        annotation.get("measurement_id")
+                        for annotation in record.get("annotations", [])
+                        if isinstance(annotation, dict) and annotation.get("measurement_id")
+                    }
+                    figure_interaction_targets[oid] = (
+                        reconstruction.get("render_contract") == "normalized-2d-v1",
+                        entity_ids,
+                        measurement_ids,
+                    )
                 _validate_render_contract(record, path, errors, refs)
                 for ref in record.get("measurements", []):
                     refs.append((ref, path, oid, "measurements"))
@@ -321,10 +338,95 @@ def validate_repository(root: Path) -> dict[str, Any]:
         for ref in lesson.get("source_content_ids", []):
             refs.append((ref, path, oid, "source_content_ids"))
         for step in lesson.get("steps", []):
-            for ref in step.get("content_ids", []):
+            step_content_ids = set(step.get("content_ids", []))
+            step_figure_ids = list(step.get("figure_ids", []))
+            for ref in step_content_ids:
                 refs.append((ref, path, oid, "steps.content_ids"))
-            for ref in step.get("figure_ids", []):
+            for ref in step_figure_ids:
                 refs.append((ref, path, oid, "steps.figure_ids"))
+
+            interaction = step.get("interaction")
+            if not isinstance(interaction, dict):
+                continue
+
+            interaction_type = interaction.get("type")
+            allowed_entities: set[str] = set()
+            allowed_measurements: set[str] = set()
+            for figure_id in step_figure_ids:
+                figure_targets = figure_interaction_targets.get(figure_id)
+                if figure_targets is None:
+                    continue
+                render_ready, entity_ids, measurement_ids = figure_targets
+                if render_ready:
+                    allowed_entities.update(entity_ids)
+                    allowed_measurements.update(measurement_ids)
+
+            if interaction_type == "highlight":
+                for target in interaction.get("target_entity_ids", []):
+                    if target not in allowed_entities:
+                        _error(
+                            errors,
+                            "interaction_unresolved_entity_target",
+                            path,
+                            oid,
+                            f"interaction target {target} does not resolve in a render-ready step figure",
+                            "steps.interaction.target_entity_ids",
+                        )
+            elif interaction_type == "highlight_measurements":
+                for ref in interaction.get("measurement_ids", []):
+                    refs.append((ref, path, oid, "steps.interaction.measurement_ids"))
+                    if ref not in allowed_measurements:
+                        _error(
+                            errors,
+                            "interaction_unresolved_measurement_target",
+                            path,
+                            oid,
+                            f"interaction measurement {ref} does not resolve in a render-ready step figure",
+                            "steps.interaction.measurement_ids",
+                        )
+            elif interaction_type == "identify_parts":
+                source_content_id = interaction.get("source_content_id")
+                if source_content_id:
+                    refs.append((source_content_id, path, oid, "steps.interaction.source_content_id"))
+                    if source_content_id not in step_content_ids:
+                        _error(
+                            errors,
+                            "interaction_source_content_not_in_step",
+                            path,
+                            oid,
+                            f"interaction source content {source_content_id} is not part of the lesson step",
+                            "steps.interaction.source_content_id",
+                        )
+            elif interaction_type == "guided_sequence":
+                seen_orders: set[int] = set()
+                for item in interaction.get("sequence", []):
+                    order = item.get("order")
+                    if order in seen_orders:
+                        _error(
+                            errors,
+                            "interaction_duplicate_sequence_order",
+                            path,
+                            oid,
+                            f"guided sequence order {order} is duplicated",
+                            "steps.interaction.sequence.order",
+                        )
+                    elif isinstance(order, int):
+                        seen_orders.add(order)
+
+                    content_id = item.get("content_id")
+                    if content_id:
+                        refs.append((content_id, path, oid, "steps.interaction.sequence.content_id"))
+                        if content_id not in step_content_ids:
+                            _error(
+                                errors,
+                                "interaction_sequence_content_not_in_step",
+                                path,
+                                oid,
+                                f"guided sequence content {content_id} is not part of the lesson step",
+                                "steps.interaction.sequence.content_id",
+                            )
+                    for ref in item.get("measurement_ids", []):
+                        refs.append((ref, path, oid, "steps.interaction.sequence.measurement_ids"))
 
     for ref, path, oid, field in refs:
         if ref not in ids:

@@ -62,7 +62,18 @@
         "FIG-CPNC-2025-P0113-001"
       ],
       "interaction": {
-        "type": "identify_parts"
+        "type": "identify_parts",
+        "source_content_id": "CONTENT-CPNC-2025-P0115-003",
+        "parts": [
+          {
+            "label": "Parte delgada",
+            "installation_location": "lateral de la gaveta"
+          },
+          {
+            "label": "Parte gruesa",
+            "installation_location": "costado interno del mueble"
+          }
+        ]
       }
     },
     {
@@ -77,7 +88,31 @@
         "FIG-CPNC-2025-P0113-001"
       ],
       "interaction": {
-        "type": "guided_sequence"
+        "type": "guided_sequence",
+        "sequence": [
+          {
+            "order": 1,
+            "content_id": "CONTENT-CPNC-2025-P0115-004",
+            "measurement_ids": [
+              "MEAS-CPNC-2025-P0115-007",
+              "MEAS-CPNC-2025-P0115-008"
+            ]
+          },
+          {
+            "order": 2,
+            "content_id": "CONTENT-CPNC-2025-P0116-001",
+            "measurement_ids": [
+              "MEAS-CPNC-2025-P0116-001"
+            ]
+          },
+          {
+            "order": 3,
+            "content_id": "CONTENT-CPNC-2025-P0116-002",
+            "measurement_ids": [
+              "MEAS-CPNC-2025-P0116-002"
+            ]
+          }
+        ]
       }
     }
   ]
