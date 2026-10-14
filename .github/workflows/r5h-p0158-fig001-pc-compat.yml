@@ -2,6 +2,7 @@ name: R5H P0158 FIG001 PC Compatibility
 
 on:
   pull_request:
+    types: [opened, synchronize, reopened, edited]
 
 jobs:
   compatibility:
