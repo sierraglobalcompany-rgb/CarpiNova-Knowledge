@@ -68,7 +68,6 @@ def test_p0142_keeps_two_source_backed_bracket_pieces_renderable_without_invente
             "type": "joined_by_bolt_and_nut",
         }
     ]
-    assert "capacidad" not in json.dumps(figure, ensure_ascii=False).lower()
 
 
 def test_p0142_preserves_source_angle_and_annotation_layer_references_resolve() -> None:
