@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.0 — 2026-10-14
+
+- Prepared the full-book Knowledge `1.1.0` release candidate without changing canonical source identity, page counts, exclusions, or source SHA-256.
+- Added the opt-in `normalized-2d-v1` render contract only for `FIG-CPNC-2025-P0113-001`; the remaining FigureSpec records stay legacy-compatible and require no migration.
+- Preserved KISS scope: one deterministic native 2D figure contract, no 3D/WebGL engine, renderer registry, plugin architecture, new runtime dependency, or new permanent workflow.
+- Kept the book bundle deterministic at `976` content records, `643` measurements, `250` rules, `138` figures, `1` lesson and `0` taxonomy records.
+- Verified CarpiNova-PC dual-version compatibility with real Knowledge `1.0.0` and candidate `1.1.0` bundles; PC accepts both versions and renders the P0113 support figure once when the new contract is present.
+- Preserved safe `UNRESOLVED` and source-conflict handling; `1.1.0` does not elevate inferred or external facts into the canonical book.
+
 ## 1.0.0 — 2026-10-12
 
 - Completed canonical structured coverage for all `295` physical pages of `cpnc-2025` and preserved the exact source fingerprint `318ceb94569608bfe062e3e50c7032edee79febf06102f7eec760769a6dfd90c` without committing the PDF.

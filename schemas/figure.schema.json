@@ -4,6 +4,49 @@
   "type": "object",
   "required": ["figure_id", "page_id", "type", "purpose", "source", "entities", "relationships", "measurements", "annotations", "reconstruction"],
   "additionalProperties": false,
+  "$defs": {
+    "normalizedPoint": {
+      "type": "object",
+      "required": ["x", "y"],
+      "additionalProperties": false,
+      "properties": {
+        "x": {"type": "number", "minimum": 0, "maximum": 1},
+        "y": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "normalizedBounds": {
+      "type": "object",
+      "required": ["x", "y", "width", "height"],
+      "additionalProperties": false,
+      "properties": {
+        "x": {"type": "number", "minimum": 0, "maximum": 1},
+        "y": {"type": "number", "minimum": 0, "maximum": 1},
+        "width": {"type": "number", "exclusiveMinimum": 0, "maximum": 1},
+        "height": {"type": "number", "exclusiveMinimum": 0, "maximum": 1}
+      }
+    },
+    "fullViewport": {
+      "type": "object",
+      "required": ["x", "y", "width", "height"],
+      "additionalProperties": false,
+      "properties": {
+        "x": {"const": 0},
+        "y": {"const": 0},
+        "width": {"const": 1},
+        "height": {"const": 1}
+      }
+    },
+    "placement": {
+      "type": "object",
+      "required": ["x", "y", "precision"],
+      "additionalProperties": false,
+      "properties": {
+        "x": {"type": "number", "minimum": 0, "maximum": 1},
+        "y": {"type": "number", "minimum": 0, "maximum": 1},
+        "precision": {"enum": ["exact", "approximate", "unknown"]}
+      }
+    }
+  },
   "properties": {
     "figure_id": {"$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/figureId"},
     "page_id": {"$ref": "https://carpinova.local/schemas/common.schema.json#/$defs/pageId"},
@@ -52,10 +95,118 @@
       "properties": {
         "preferred_renderer": {"enum": ["svg", "html", "3d", "image", "hybrid"]},
         "deterministic_required": {"type": "boolean"},
-        "generative_image_allowed": {"type": "boolean"}
+        "generative_image_allowed": {"type": "boolean"},
+        "render_contract": {"enum": ["normalized-2d-v1"]}
       }
     },
     "accessibility": {"type": "object"},
     "review": {"type": "object"}
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "reconstruction": {
+            "properties": {"render_contract": {"const": "normalized-2d-v1"}},
+            "required": ["render_contract"]
+          }
+        },
+        "required": ["reconstruction"]
+      },
+      "then": {
+        "required": ["camera", "layers"],
+        "properties": {
+          "camera": {
+            "type": "object",
+            "required": ["coordinate_space", "viewport"],
+            "additionalProperties": false,
+            "properties": {
+              "coordinate_space": {"const": "normalized_figure"},
+              "viewport": {"$ref": "#/$defs/fullViewport"}
+            }
+          },
+          "entities": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "geometry": {
+                  "oneOf": [
+                    {
+                      "required": ["primitive", "bounds"],
+                      "properties": {
+                        "primitive": {"const": "rect"},
+                        "bounds": {"$ref": "#/$defs/normalizedBounds"}
+                      }
+                    },
+                    {
+                      "required": ["primitive", "points"],
+                      "properties": {
+                        "primitive": {"const": "line"},
+                        "points": {
+                          "type": "array",
+                          "minItems": 2,
+                          "maxItems": 2,
+                          "items": {"$ref": "#/$defs/normalizedPoint"}
+                        }
+                      }
+                    },
+                    {
+                      "required": ["primitive", "points"],
+                      "properties": {
+                        "primitive": {"const": "polyline"},
+                        "points": {
+                          "type": "array",
+                          "minItems": 2,
+                          "items": {"$ref": "#/$defs/normalizedPoint"}
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "annotations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "placement": {"$ref": "#/$defs/placement"}
+              }
+            }
+          },
+          "layers": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["id", "order"],
+              "additionalProperties": false,
+              "properties": {
+                "id": {"type": "string", "minLength": 1},
+                "order": {"type": "integer"},
+                "entity_ids": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {"type": "string", "minLength": 1}
+                },
+                "annotation_ids": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {"type": "string", "minLength": 1}
+                }
+              },
+              "anyOf": [
+                {"required": ["entity_ids"]},
+                {"required": ["annotation_ids"]}
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
 }

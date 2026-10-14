@@ -42,6 +42,136 @@ def _iter_sources(kind: str, record: dict[str, Any]) -> Iterable[dict[str, Any]]
                 yield source
 
 
+def _validate_render_contract(
+    record: dict[str, Any],
+    path: Path,
+    errors: list[dict[str, Any]],
+    refs: list[tuple[str, Path, str | None, str]],
+) -> None:
+    reconstruction = record.get("reconstruction") or {}
+    if reconstruction.get("render_contract") != "normalized-2d-v1":
+        return
+
+    oid = record.get("figure_id")
+    entities = [item for item in record.get("entities", []) if isinstance(item, dict)]
+    annotations = [item for item in record.get("annotations", []) if isinstance(item, dict)]
+    layers = [item for item in record.get("layers", []) if isinstance(item, dict)]
+
+    entity_ids = {item.get("id") for item in entities if item.get("id")}
+    annotation_ids: set[str] = set()
+    for annotation in annotations:
+        annotation_id = annotation.get("id")
+        if not annotation_id:
+            continue
+        if annotation_id in annotation_ids:
+            _error(
+                errors,
+                "render_contract_duplicate_annotation_id",
+                path,
+                oid,
+                f"annotation id {annotation_id} is duplicated",
+                "annotations.id",
+            )
+        annotation_ids.add(annotation_id)
+
+    visible_annotation_ids: set[str] = set()
+    layer_members: set[tuple[str, str]] = set()
+    for layer in layers:
+        for entity_id in layer.get("entity_ids", []):
+            if entity_id not in entity_ids:
+                _error(
+                    errors,
+                    "render_contract_unknown_layer_entity",
+                    path,
+                    oid,
+                    f"layer references unknown entity {entity_id}",
+                    "layers.entity_ids",
+                )
+            member = ("entity", entity_id)
+            if member in layer_members:
+                _error(
+                    errors,
+                    "render_contract_duplicate_layer_member",
+                    path,
+                    oid,
+                    f"entity {entity_id} appears in more than one layer",
+                    "layers.entity_ids",
+                )
+            layer_members.add(member)
+
+        for annotation_id in layer.get("annotation_ids", []):
+            if annotation_id not in annotation_ids:
+                _error(
+                    errors,
+                    "render_contract_unknown_layer_annotation",
+                    path,
+                    oid,
+                    f"layer references unknown annotation {annotation_id}",
+                    "layers.annotation_ids",
+                )
+            visible_annotation_ids.add(annotation_id)
+            member = ("annotation", annotation_id)
+            if member in layer_members:
+                _error(
+                    errors,
+                    "render_contract_duplicate_layer_member",
+                    path,
+                    oid,
+                    f"annotation {annotation_id} appears in more than one layer",
+                    "layers.annotation_ids",
+                )
+            layer_members.add(member)
+
+    for annotation in annotations:
+        annotation_id = annotation.get("id")
+        if annotation_id in visible_annotation_ids and not isinstance(annotation.get("placement"), dict):
+            _error(
+                errors,
+                "render_contract_visible_annotation_missing_placement",
+                path,
+                oid,
+                f"visible annotation {annotation_id} requires placement",
+                "annotations.placement",
+            )
+
+        entity_id = annotation.get("entity_id")
+        if entity_id and entity_id not in entity_ids:
+            _error(
+                errors,
+                "unresolved_reference",
+                path,
+                oid,
+                f"reference {entity_id} does not resolve",
+                "annotations.entity_id",
+            )
+
+        measurement_id = annotation.get("measurement_id")
+        if measurement_id:
+            refs.append((measurement_id, path, oid, "annotations.measurement_id"))
+
+    for entity in entities:
+        geometry = entity.get("geometry") or {}
+        if geometry.get("primitive") != "rect" or not isinstance(geometry.get("bounds"), dict):
+            continue
+        bounds = geometry["bounds"]
+        try:
+            x = float(bounds["x"])
+            y = float(bounds["y"])
+            width = float(bounds["width"])
+            height = float(bounds["height"])
+        except (KeyError, TypeError, ValueError):
+            continue
+        if x + width > 1 or y + height > 1:
+            _error(
+                errors,
+                "render_contract_bounds_out_of_view",
+                path,
+                oid,
+                f"rect entity {entity.get('id')} leaves normalized viewport",
+                "entities.geometry.bounds",
+            )
+
+
 def validate_repository(root: Path) -> dict[str, Any]:
     root = Path(root)
     errors: list[dict[str, Any]] = []
@@ -163,6 +293,7 @@ def validate_repository(root: Path) -> dict[str, Any]:
                 reconstruction = record.get("reconstruction") or {}
                 if reconstruction.get("deterministic_required") and reconstruction.get("preferred_renderer") == "image" and reconstruction.get("generative_image_allowed"):
                     _error(errors, "deterministic_figure_generative_only", path, oid, "deterministic figure cannot rely only on generative image rendering")
+                _validate_render_contract(record, path, errors, refs)
                 for ref in record.get("measurements", []):
                     refs.append((ref, path, oid, "measurements"))
 
