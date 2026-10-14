@@ -1,0 +1,97 @@
+name: R5G P0143 FIG001 PC Compatibility
+
+on:
+  pull_request:
+
+jobs:
+  compatibility:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact Knowledge candidate
+        uses: actions/checkout@v7
+        with:
+          repository: sierraglobalcompany-rgb/CarpiNova-Knowledge
+          ref: 974ec2969278eab7e7f82613550673aa8217d134
+          path: knowledge
+
+      - name: Checkout exact PC main
+        uses: actions/checkout@v7
+        with:
+          repository: sierraglobalcompany-rgb/CarpiNova-PC
+          ref: 8996b9b874119de007347f10f003dbeea8aaf742
+          path: pc
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v10.3.0
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: pc/package-lock.json
+
+      - name: Install Knowledge dependencies
+        working-directory: knowledge
+        run: uv sync --all-groups
+
+      - name: Install PC dependencies
+        working-directory: pc
+        run: npm ci
+
+      - name: Prepare exact candidate Knowledge
+        working-directory: pc
+        run: node scripts/prepare-knowledge.mjs --knowledge-root ../knowledge
+
+      - name: Verify installed P0143 FIG001 render contract
+        working-directory: pc
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from 'node:fs/promises';
+          const manifest = JSON.parse(await readFile('generated/knowledge/manifest.json', 'utf8'));
+          const figuresBundle = JSON.parse(await readFile('generated/knowledge/figures.bundle.json', 'utf8'));
+          if (manifest.knowledge_version !== '1.2.0') throw new Error(`expected Knowledge 1.2.0, got ${manifest.knowledge_version}`);
+          const figure = figuresBundle.figures.find((item) => item.figure_id === 'FIG-CPNC-2025-P0143-001');
+          if (!figure) throw new Error('P0143 FIG001 missing');
+          if (figure.reconstruction?.render_contract !== 'normalized-2d-v1') throw new Error('P0143 FIG001 render contract missing');
+          if (figure.reconstruction?.deterministic_required !== true) throw new Error('P0143 FIG001 must remain deterministic');
+          if (figure.reconstruction?.generative_image_allowed !== false) throw new Error('P0143 FIG001 must remain non-generative');
+          if (figure.entities?.length !== 4) throw new Error(`expected 4 P0143 FIG001 entities, got ${figure.entities?.length}`);
+          const supported = new Set(['rect', 'line', 'polyline']);
+          if (!figure.entities.every((entity) => supported.has(entity.geometry?.primitive))) throw new Error('P0143 FIG001 has unsupported or missing primitive');
+          if (figure.annotations?.length !== 1) throw new Error(`expected 1 P0143 FIG001 annotation, got ${figure.annotations?.length}`);
+          if (!figure.annotations.every((annotation) => annotation.id && annotation.placement)) throw new Error('P0143 FIG001 annotation id/placement missing');
+          const expectedMeasurements = ['MEAS-CPNC-2025-P0143-004','MEAS-CPNC-2025-P0143-005','MEAS-CPNC-2025-P0143-006'];
+          if (JSON.stringify(figure.measurements) !== JSON.stringify(expectedMeasurements)) throw new Error(`unexpected P0143 FIG001 measurements: ${JSON.stringify(figure.measurements)}`);
+          if (figure.layers?.length !== 4) throw new Error(`expected 4 P0143 FIG001 layers, got ${figure.layers?.length}`);
+          console.log(JSON.stringify({
+            knowledge_version: manifest.knowledge_version,
+            figure_id: figure.figure_id,
+            render_contract: figure.reconstruction.render_contract,
+            entities: figure.entities.length,
+            annotations: figure.annotations.length,
+            measurements: figure.measurements.length,
+            layers: figure.layers.length,
+          }));
+          NODE
+
+      - name: Run PC tests
+        working-directory: pc
+        run: npm test
+
+      - name: Typecheck
+        working-directory: pc
+        run: npm run typecheck
+
+      - name: Build
+        working-directory: pc
+        run: npm run build
+
+      - name: Audit dependencies
+        working-directory: pc
+        run: npm audit
