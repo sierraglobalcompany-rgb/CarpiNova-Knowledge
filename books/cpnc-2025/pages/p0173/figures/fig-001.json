@@ -26,7 +26,8 @@
       "description": "Panel rectangular beige cálido, con textura suave tipo papel envejecido y márgenes beige planos arriba y abajo.",
       "geometry": {
         "precision": "approximate",
-        "bbox": {
+        "primitive": "rect",
+        "bounds": {
           "x": 0.06,
           "y": 0.04,
           "width": 0.88,
@@ -40,7 +41,8 @@
       "description": "Texto negro «PASO 4» en mayúsculas, ubicado sobre la parte derecha del título principal.",
       "geometry": {
         "precision": "approximate",
-        "bbox": {
+        "primitive": "rect",
+        "bounds": {
           "x": 0.55,
           "y": 0.18,
           "width": 0.27,
@@ -54,7 +56,8 @@
       "description": "Palabra «DESPIECE» en letras mayúsculas muy grandes azul grisáceo oscuro con contorno negro; un ampersand negro aparece a su derecha.",
       "geometry": {
         "precision": "approximate",
-        "bbox": {
+        "primitive": "rect",
+        "bounds": {
           "x": 0.1,
           "y": 0.24,
           "width": 0.8,
@@ -68,7 +71,8 @@
       "description": "Texto «OPTIMIZACIÓN» en mayúsculas negras, centrado debajo de DESPIECE, con una línea horizontal azul grisácea debajo.",
       "geometry": {
         "precision": "approximate",
-        "bbox": {
+        "primitive": "rect",
+        "bounds": {
           "x": 0.19,
           "y": 0.42,
           "width": 0.68,
@@ -82,7 +86,8 @@
       "description": "Ratón de computador de color ocre/naranja con contorno negro y cable curvo ascendente, ubicado en la zona inferior izquierda.",
       "geometry": {
         "precision": "approximate",
-        "bbox": {
+        "primitive": "rect",
+        "bounds": {
           "x": 0.08,
           "y": 0.45,
           "width": 0.19,
@@ -96,7 +101,8 @@
       "description": "Texto negro «HÁGALO EN CASA» en dos líneas, centrado en la mitad inferior del panel, con una línea horizontal azul grisácea debajo.",
       "geometry": {
         "precision": "approximate",
-        "bbox": {
+        "primitive": "rect",
+        "bounds": {
           "x": 0.31,
           "y": 0.57,
           "width": 0.42,
@@ -130,39 +136,88 @@
   "measurements": [],
   "annotations": [
     {
+      "id": "ann-step-label",
       "target_entity_id": "step-label",
-      "text": "PASO 4"
+      "text": "PASO 4",
+      "placement": {
+        "x": 0.685,
+        "y": 0.215,
+        "precision": "approximate"
+      }
     },
     {
+      "id": "ann-main-title",
       "target_entity_id": "main-title",
-      "text": "DESPIECE &"
+      "text": "DESPIECE &",
+      "placement": {
+        "x": 0.5,
+        "y": 0.33,
+        "precision": "approximate"
+      }
     },
     {
+      "id": "ann-optimization-title",
       "target_entity_id": "optimization-title",
-      "text": "OPTIMIZACIÓN"
+      "text": "OPTIMIZACIÓN",
+      "placement": {
+        "x": 0.53,
+        "y": 0.485,
+        "precision": "approximate"
+      }
     },
     {
+      "id": "ann-brand-text",
       "target_entity_id": "brand-text",
-      "text": "HÁGALO EN CASA"
+      "text": "HÁGALO EN CASA",
+      "placement": {
+        "x": 0.52,
+        "y": 0.655,
+        "precision": "approximate"
+      }
     }
   ],
   "layers": [
     {
       "id": "background",
-      "description": "Panel beige y textura de papel."
+      "order": 10,
+      "entity_ids": [
+        "poster-field"
+      ]
     },
     {
       "id": "titles",
-      "description": "PASO 4, DESPIECE &, OPTIMIZACIÓN y líneas decorativas."
+      "order": 20,
+      "entity_ids": [
+        "step-label",
+        "main-title",
+        "optimization-title"
+      ],
+      "annotation_ids": [
+        "ann-step-label",
+        "ann-main-title",
+        "ann-optimization-title"
+      ]
     },
     {
       "id": "lower-graphic",
-      "description": "Ratón de computador y texto HÁGALO EN CASA."
+      "order": 30,
+      "entity_ids": [
+        "mouse-icon",
+        "brand-text"
+      ],
+      "annotation_ids": [
+        "ann-brand-text"
+      ]
     }
   ],
   "camera": {
-    "view": "front",
-    "projection": "flat_page_reference"
+    "coordinate_space": "normalized_figure",
+    "viewport": {
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    }
   },
   "visual_style": {
     "background": "warm beige paper texture",
@@ -193,7 +248,8 @@
   "reconstruction": {
     "preferred_renderer": "svg",
     "deterministic_required": true,
-    "generative_image_allowed": false
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
   },
   "accessibility": {
     "summary": "Portada beige del Paso 4 con el título grande «Despiece & Optimización», un ratón de computador y el texto «Hágalo en casa»."
