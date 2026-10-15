@@ -1,25 +1,171 @@
 {
-  "figure_id":"FIG-CPNC-2025-P0177-001",
-  "page_id":"PAGE-CPNC-2025-P0177",
-  "type":"technical_diagram",
-  "purpose":"Recrear la referencia visual de los cuatro bordes de una pieza y su relación con la especificación de tapacanto.",
-  "source":{"book_id":"cpnc-2025","pdf_page":177,"printed_page":155,"region":{"x":0.03,"y":0.46,"width":0.94,"height":0.48},"extraction":{"method":"visual","confidence":0.97,"review_status":"VISUALLY_VERIFIED"}},
-  "entities":[
-    {"id":"board-piece","type":"rectangular_board_piece","description":"Pieza rectangular vista en planta con cuatro bordes identificables.","geometry":{"precision":"approximate","bbox":{"x":0.15,"y":0.16,"width":0.55,"height":0.46}}},
-    {"id":"long-edge-1","type":"long_edge","description":"Primer borde de largo.","geometry":{"precision":"approximate","bbox":{"x":0.15,"y":0.16,"width":0.55,"height":0.03}}},
-    {"id":"long-edge-2","type":"long_edge","description":"Segundo borde de largo.","geometry":{"precision":"approximate","bbox":{"x":0.15,"y":0.59,"width":0.55,"height":0.03}}},
-    {"id":"short-edge-1","type":"short_edge","description":"Primer borde de ancho o corto.","geometry":{"precision":"approximate","bbox":{"x":0.15,"y":0.16,"width":0.03,"height":0.46}}},
-    {"id":"short-edge-2","type":"short_edge","description":"Segundo borde de ancho o corto.","geometry":{"precision":"approximate","bbox":{"x":0.67,"y":0.16,"width":0.03,"height":0.46}}},
-    {"id":"edge-band-types","type":"edge_band_thickness_reference","description":"Referencia a tapacanto flexible 0.45 mm, semi-rígido 1/1.5 mm y rígido 2 mm.","geometry":{"precision":"approximate","bbox":{"x":0.05,"y":0.70,"width":0.9,"height":0.24}}}
+  "figure_id": "FIG-CPNC-2025-P0177-001",
+  "page_id": "PAGE-CPNC-2025-P0177",
+  "type": "technical_diagram",
+  "purpose": "Recrear la referencia visual de los cuatro bordes de una pieza y su relación con la especificación de tapacanto.",
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 177,
+    "printed_page": 155,
+    "region": {"x": 0.03, "y": 0.46, "width": 0.94, "height": 0.48},
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.97,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
+  "entities": [
+    {
+      "id": "board-piece",
+      "type": "rectangular_board_piece",
+      "description": "Pieza rectangular vista en planta con cuatro bordes identificables.",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.15, "y": 0.16, "width": 0.55, "height": 0.46}
+      }
+    },
+    {
+      "id": "long-edge-1",
+      "type": "long_edge",
+      "description": "Primer borde de largo.",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.15, "y": 0.16, "width": 0.55, "height": 0.03}
+      }
+    },
+    {
+      "id": "long-edge-2",
+      "type": "long_edge",
+      "description": "Segundo borde de largo.",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.15, "y": 0.59, "width": 0.55, "height": 0.03}
+      }
+    },
+    {
+      "id": "short-edge-1",
+      "type": "short_edge",
+      "description": "Primer borde de ancho o corto.",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.15, "y": 0.16, "width": 0.03, "height": 0.46}
+      }
+    },
+    {
+      "id": "short-edge-2",
+      "type": "short_edge",
+      "description": "Segundo borde de ancho o corto.",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.67, "y": 0.16, "width": 0.03, "height": 0.46}
+      }
+    },
+    {
+      "id": "edge-band-types",
+      "type": "edge_band_thickness_reference",
+      "description": "Referencia a tapacanto flexible 0.45 mm, semi-rígido 1/1.5 mm y rígido 2 mm.",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.05, "y": 0.70, "width": 0.90, "height": 0.24}
+      }
+    }
   ],
-  "relationships":[{"from":"long-edge-1","to":"board-piece","type":"edge_of"},{"from":"long-edge-2","to":"board-piece","type":"edge_of"},{"from":"short-edge-1","to":"board-piece","type":"edge_of"},{"from":"short-edge-2","to":"board-piece","type":"edge_of"},{"from":"edge-band-types","to":"board-piece","type":"can_be_applied_to_edges_of"}],
-  "measurements":["MEAS-CPNC-2025-P0177-001","MEAS-CPNC-2025-P0177-002","MEAS-CPNC-2025-P0177-003","MEAS-CPNC-2025-P0177-004","MEAS-CPNC-2025-P0177-005","MEAS-CPNC-2025-P0177-006"],
-  "annotations":[{"target_entity_id":"long-edge-1","text":"LARGO"},{"target_entity_id":"short-edge-1","text":"ANCHO"},{"target_entity_id":"edge-band-types","text":"0.45 mm · 1 mm · 1.5 mm · 2 mm"}],
-  "layers":[{"id":"piece","description":"Pieza rectangular y sus cuatro bordes."},{"id":"edge-labels","description":"Identificación largo/ancho."},{"id":"band-types","description":"Espesores de tapacanto citados por la fuente."}],
-  "camera":{"view":"top","projection":"orthographic_reference"},
-  "visual_style":{"background":"white","illustration":"simple woodworking dimension diagram","labels":"dark text with colored edge emphasis"},
-  "educational_sequence":[{"step":1,"show_entity_ids":["board-piece","long-edge-1","long-edge-2","short-edge-1","short-edge-2"],"instruction":"Mostrar los cuatro bordes y distinguir largos de cortos."},{"step":2,"show_entity_ids":["edge-band-types"],"instruction":"Relacionar los bordes con los espesores de tapacanto citados por la fuente."}],
-  "reconstruction":{"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility":{"summary":"Pieza rectangular con dos lados largos, dos cortos y referencia de espesores de tapacanto."},
-  "review":{"status":"VISUALLY_VERIFIED","notes":"El ejemplo gráfico contiene cotas adicionales; no reconstruir pequeñas cotas dudosas. Las medidas canónicas se limitan a las extraídas en measurements.json."}
+  "relationships": [
+    {"from": "long-edge-1", "to": "board-piece", "type": "edge_of"},
+    {"from": "long-edge-2", "to": "board-piece", "type": "edge_of"},
+    {"from": "short-edge-1", "to": "board-piece", "type": "edge_of"},
+    {"from": "short-edge-2", "to": "board-piece", "type": "edge_of"},
+    {
+      "from": "edge-band-types",
+      "to": "board-piece",
+      "type": "can_be_applied_to_edges_of"
+    }
+  ],
+  "measurements": [
+    "MEAS-CPNC-2025-P0177-001",
+    "MEAS-CPNC-2025-P0177-002",
+    "MEAS-CPNC-2025-P0177-003",
+    "MEAS-CPNC-2025-P0177-004",
+    "MEAS-CPNC-2025-P0177-005",
+    "MEAS-CPNC-2025-P0177-006"
+  ],
+  "annotations": [
+    {
+      "id": "ann-long-edge-1",
+      "target_entity_id": "long-edge-1",
+      "text": "LARGO",
+      "placement": {"x": 0.425, "y": 0.13, "precision": "approximate"}
+    },
+    {
+      "id": "ann-short-edge-1",
+      "target_entity_id": "short-edge-1",
+      "text": "ANCHO",
+      "placement": {"x": 0.12, "y": 0.39, "precision": "approximate"}
+    },
+    {
+      "id": "ann-edge-band-types",
+      "target_entity_id": "edge-band-types",
+      "text": "0.45 mm · 1 mm · 1.5 mm · 2 mm",
+      "placement": {"x": 0.50, "y": 0.82, "precision": "approximate"}
+    }
+  ],
+  "layers": [
+    {
+      "id": "piece",
+      "order": 10,
+      "entity_ids": ["board-piece"]
+    },
+    {
+      "id": "edge-labels",
+      "order": 20,
+      "entity_ids": ["long-edge-1", "long-edge-2", "short-edge-1", "short-edge-2"],
+      "annotation_ids": ["ann-long-edge-1", "ann-short-edge-1"]
+    },
+    {
+      "id": "band-types",
+      "order": 30,
+      "entity_ids": ["edge-band-types"],
+      "annotation_ids": ["ann-edge-band-types"]
+    }
+  ],
+  "camera": {
+    "coordinate_space": "normalized_figure",
+    "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+  },
+  "visual_style": {
+    "background": "white",
+    "illustration": "simple woodworking dimension diagram",
+    "labels": "dark text with colored edge emphasis"
+  },
+  "educational_sequence": [
+    {
+      "step": 1,
+      "show_entity_ids": ["board-piece", "long-edge-1", "long-edge-2", "short-edge-1", "short-edge-2"],
+      "instruction": "Mostrar los cuatro bordes y distinguir largos de cortos."
+    },
+    {
+      "step": 2,
+      "show_entity_ids": ["edge-band-types"],
+      "instruction": "Relacionar los bordes con los espesores de tapacanto citados por la fuente."
+    }
+  ],
+  "reconstruction": {
+    "preferred_renderer": "svg",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
+  },
+  "accessibility": {
+    "summary": "Pieza rectangular con dos lados largos, dos cortos y referencia de espesores de tapacanto."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "El ejemplo gráfico contiene cotas adicionales; no reconstruir pequeñas cotas dudosas. Las medidas canónicas se limitan a las extraídas en measurements.json."
+  }
 }
