@@ -1,0 +1,97 @@
+name: R5H P0158 FIG001 PC Compatibility
+
+on:
+  pull_request:
+
+jobs:
+  compatibility:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact Knowledge candidate
+        uses: actions/checkout@v7
+        with:
+          repository: sierraglobalcompany-rgb/CarpiNova-Knowledge
+          ref: 02d68bb619100e3c3d225f1ce474b32c4d006193
+          path: knowledge
+
+      - name: Checkout exact PC main
+        uses: actions/checkout@v7
+        with:
+          repository: sierraglobalcompany-rgb/CarpiNova-PC
+          ref: 8996b9b874119de007347f10f003dbeea8aaf742
+          path: pc
+
+      - name: Verify immutable inputs
+        run: |
+          test "$(git -C knowledge rev-parse HEAD)" = "02d68bb619100e3c3d225f1ce474b32c4d006193"
+          test "$(git -C pc rev-parse HEAD)" = "8996b9b874119de007347f10f003dbeea8aaf742"
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v10.3.0
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: pc/package-lock.json
+
+      - name: Install Knowledge dependencies
+        working-directory: knowledge
+        run: uv sync --all-groups
+
+      - name: Install PC dependencies
+        working-directory: pc
+        run: npm ci
+
+      - name: Prepare exact candidate Knowledge
+        working-directory: pc
+        run: node scripts/prepare-knowledge.mjs --knowledge-root ../knowledge
+
+      - name: Verify installed P0158 FIG001 render contract
+        working-directory: pc
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from 'node:fs/promises';
+          const manifest = JSON.parse(await readFile('generated/knowledge/manifest.json', 'utf8'));
+          const figuresBundle = JSON.parse(await readFile('generated/knowledge/figures.bundle.json', 'utf8'));
+          if (manifest.knowledge_version !== '1.2.0') throw new Error('unexpected Knowledge version');
+          const figure = figuresBundle.figures.find((item) => item.figure_id === 'FIG-CPNC-2025-P0158-001');
+          if (!figure) throw new Error('P0158 FIG001 missing');
+          if (figure.reconstruction?.render_contract !== 'normalized-2d-v1') throw new Error('P0158 FIG001 render contract missing');
+          if (figure.reconstruction?.deterministic_required !== true) throw new Error('P0158 FIG001 must remain deterministic');
+          if (figure.reconstruction?.generative_image_allowed !== false) throw new Error('P0158 FIG001 must remain non-generative');
+          const expectedEntityIds = ['table-saw','workpiece','push-stick','blade-guard','splitter'];
+          if (JSON.stringify(figure.entities?.map((entity) => entity.id)) !== JSON.stringify(expectedEntityIds)) throw new Error('unexpected P0158 FIG001 entity ids');
+          if (!figure.entities.every((entity) => entity.geometry?.primitive === 'rect' && entity.geometry?.precision === 'approximate')) throw new Error('P0158 FIG001 geometry contract mismatch');
+          if (figure.annotations?.length !== 2) throw new Error('unexpected P0158 FIG001 annotation count');
+          if (!figure.annotations.every((annotation) => annotation.id && annotation.placement?.precision === 'approximate')) throw new Error('P0158 FIG001 annotation id/placement missing');
+          if (JSON.stringify(figure.measurements) !== JSON.stringify(['MEAS-CPNC-2025-P0158-001'])) throw new Error('unexpected P0158 FIG001 measurements');
+          if (figure.layers?.length !== 3) throw new Error('unexpected P0158 FIG001 layer count');
+          const entityRefs = figure.layers.flatMap((layer) => layer.entity_ids ?? []);
+          const annotationRefs = figure.layers.flatMap((layer) => layer.annotation_ids ?? []);
+          if (entityRefs.length !== 5 || new Set(entityRefs).size !== 5) throw new Error('P0158 FIG001 entity layer refs must be unique');
+          if (annotationRefs.length !== 2 || new Set(annotationRefs).size !== 2) throw new Error('P0158 FIG001 annotation layer refs must be unique');
+          console.log(JSON.stringify({knowledge_version: manifest.knowledge_version, figure_id: figure.figure_id, render_contract: figure.reconstruction.render_contract, entities: figure.entities.length, annotations: figure.annotations.length, measurements: figure.measurements.length, layers: figure.layers.length}));
+          NODE
+
+      - name: Run PC tests
+        working-directory: pc
+        run: npm test
+
+      - name: Typecheck
+        working-directory: pc
+        run: npm run typecheck
+
+      - name: Build
+        working-directory: pc
+        run: npm run build
+
+      - name: Audit dependencies
+        working-directory: pc
+        run: npm audit
