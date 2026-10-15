@@ -5,17 +5,23 @@
   "purpose":"Recrear la comparación visual entre un corte longitudinal y un corte transversal mostrada al inicio de la página.",
   "source":{"book_id":"cpnc-2025","pdf_page":159,"printed_page":137,"region":{"x":0.02,"y":0.08,"width":0.75,"height":0.29},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
   "entities":[
-    {"id":"longitudinal-scene","type":"cut_example","description":"Escena superior rotulada 'Corte longitudinal'.","geometry":{"precision":"approximate","bbox":{"x":0.00,"y":0.00,"width":1.00,"height":0.46}}},
-    {"id":"transverse-scene","type":"cut_example","description":"Escena inferior rotulada 'Corte transversal'.","geometry":{"precision":"approximate","bbox":{"x":0.00,"y":0.52,"width":1.00,"height":0.46}}}
+    {"id":"longitudinal-scene","type":"cut_example","description":"Escena superior rotulada 'Corte longitudinal'.","geometry":{"precision":"approximate","primitive":"rect","bounds":{"x":0.00,"y":0.00,"width":1.00,"height":0.46}}},
+    {"id":"transverse-scene","type":"cut_example","description":"Escena inferior rotulada 'Corte transversal'.","geometry":{"precision":"approximate","primitive":"rect","bounds":{"x":0.00,"y":0.52,"width":1.00,"height":0.46}}}
   ],
   "relationships":[{"from":"longitudinal-scene","to":"transverse-scene","type":"compared_with"}],
   "measurements":[],
-  "annotations":[{"target_entity_id":"longitudinal-scene","text":"Corte longitudinal"},{"target_entity_id":"transverse-scene","text":"Corte transversal"}],
-  "layers":[{"id":"longitudinal","description":"Escena y rótulo del corte longitudinal."},{"id":"transverse","description":"Escena y rótulo del corte transversal."}],
-  "camera":{"view":"instructional_reference","projection":"editorial_comparison"},
+  "annotations":[
+    {"id":"ann-longitudinal","target_entity_id":"longitudinal-scene","text":"Corte longitudinal","placement":{"x":0.52,"y":0.23,"precision":"approximate"}},
+    {"id":"ann-transverse","target_entity_id":"transverse-scene","text":"Corte transversal","placement":{"x":0.52,"y":0.75,"precision":"approximate"}}
+  ],
+  "layers":[
+    {"id":"comparison-scenes","order":10,"entity_ids":["longitudinal-scene","transverse-scene"]},
+    {"id":"labels","order":20,"annotation_ids":["ann-longitudinal","ann-transverse"]}
+  ],
+  "camera":{"coordinate_space":"normalized_figure","viewport":{"x":0,"y":0,"width":1,"height":1}},
   "visual_style":{"background":"white","illustration":"instructional cutting examples","labels":"dark blue boxes with white text"},
   "educational_sequence":[{"step":1,"show_entity_ids":["longitudinal-scene"],"instruction":"Identificar la referencia visual del corte longitudinal."},{"step":2,"show_entity_ids":["transverse-scene"],"instruction":"Compararla con la referencia visual del corte transversal."}],
-  "reconstruction":{"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
+  "reconstruction":{"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false,"render_contract":"normalized-2d-v1"},
   "accessibility":{"summary":"Dos escenas de corte rotuladas: longitudinal arriba y transversal abajo."},
   "review":{"status":"VISUALLY_VERIFIED","notes":"La página presenta estas escenas como continuación visual; no se infieren medidas ni geometrías de corte no rotuladas."}
 }
