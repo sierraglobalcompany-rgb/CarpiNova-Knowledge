@@ -26,8 +26,8 @@
       "description": "Regla amarilla rectangular con escala imperial en la zona superior y escala métrica en la inferior.",
       "geometry": {
         "precision": "approximate",
-        "primitive": "rectangle",
-        "bbox": {
+        "primitive": "rect",
+        "bounds": {
           "x": 0.12,
           "y": 0.08,
           "width": 0.78,
@@ -41,7 +41,8 @@
       "description": "Escala superior con subdivisiones fraccionarias de pulgada y rótulo 'in'.",
       "geometry": {
         "precision": "approximate",
-        "bbox": {
+        "primitive": "rect",
+        "bounds": {
           "x": 0.15,
           "y": 0.08,
           "width": 0.75,
@@ -55,7 +56,8 @@
       "description": "Escala inferior con marcas métricas y rótulo 'cm'.",
       "geometry": {
         "precision": "approximate",
-        "bbox": {
+        "primitive": "rect",
+        "bounds": {
           "x": 0.15,
           "y": 0.5,
           "width": 0.75,
@@ -69,7 +71,8 @@
       "description": "Lista lateral de fracciones: 1/8, 1/4, 5/16, 3/8, 1/2, 5/8, 3/4, 7/8 y 1 pulgada.",
       "geometry": {
         "precision": "approximate",
-        "bbox": {
+        "primitive": "rect",
+        "bounds": {
           "x": 0.0,
           "y": 0.05,
           "width": 0.22,
@@ -93,31 +96,65 @@
   "measurements": [],
   "annotations": [
     {
+      "id": "ann-imperial-unit",
       "target_entity_id": "imperial-scale",
-      "text": "in"
+      "text": "in",
+      "placement": {
+        "x": 0.84,
+        "y": 0.22,
+        "precision": "approximate"
+      }
     },
     {
+      "id": "ann-metric-unit",
       "target_entity_id": "metric-scale",
-      "text": "cm"
+      "text": "cm",
+      "placement": {
+        "x": 0.84,
+        "y": 0.69,
+        "precision": "approximate"
+      }
     },
     {
+      "id": "ann-fractions",
       "target_entity_id": "fraction-list",
-      "text": "1/8”, 1/4”, 5/16”, 3/8”, 1/2”, 5/8”, 3/4”, 7/8”, 1”"
+      "text": "1/8”, 1/4”, 5/16”, 3/8”, 1/2”, 5/8”, 3/4”, 7/8”, 1”",
+      "placement": {
+        "x": 0.02,
+        "y": 0.5,
+        "precision": "approximate"
+      }
     }
   ],
   "layers": [
     {
-      "id": "ruler",
-      "description": "Cuerpo de regla y marcas de ambas escalas."
+      "id": "ruler-reference",
+      "order": 10,
+      "entity_ids": [
+        "ruler-body",
+        "imperial-scale",
+        "metric-scale",
+        "fraction-list"
+      ]
     },
     {
       "id": "labels",
-      "description": "Rótulos y lista de fracciones visibles en la fuente."
+      "order": 20,
+      "annotation_ids": [
+        "ann-imperial-unit",
+        "ann-metric-unit",
+        "ann-fractions"
+      ]
     }
   ],
   "camera": {
-    "view": "orthographic_reference",
-    "projection": "instructional_reference"
+    "coordinate_space": "normalized_figure",
+    "viewport": {
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    }
   },
   "visual_style": {
     "background": "white page",
@@ -145,7 +182,8 @@
   "reconstruction": {
     "preferred_renderer": "svg",
     "deterministic_required": true,
-    "generative_image_allowed": false
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
   },
   "accessibility": {
     "summary": "Regla de doble escala con fracciones usuales de pulgada y referencias en pulgadas y centímetros."
