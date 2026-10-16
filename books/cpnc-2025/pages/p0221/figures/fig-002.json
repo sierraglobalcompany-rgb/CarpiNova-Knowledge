@@ -5,10 +5,55 @@
   "purpose": "Recrear la perforación del pivote hembra en el lateral B con sus cotas y orientación hacia la cara interna.",
   "source": {"book_id":"cpnc-2025","pdf_page":221,"printed_page":199,"region":{"x":0.04,"y":0.49,"width":0.92,"height":0.47},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
   "entities": [
-    {"id":"lateral-B","type":"melamine_particleboard_side_B","geometry":{"precision":"approximate"}},
-    {"id":"through-hole","type":"female_pivot_through_hole","geometry":{"precision":"approximate"}},
-    {"id":"female-pivot-plate","type":"female_pivot_plate","geometry":{"precision":"approximate"}},
-    {"id":"internal-face","type":"internal_face_of_side_B","geometry":{"precision":"approximate"}}
+    {
+      "id": "lateral-B",
+      "type": "melamine_particleboard_side_B",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.12, "y": 0.30, "width": 0.68, "height": 0.28}
+      }
+    },
+    {
+      "id": "through-hole",
+      "type": "female_pivot_through_hole",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "polyline",
+        "points": [
+          {"x": 0.33, "y": 0.42},
+          {"x": 0.36, "y": 0.43},
+          {"x": 0.38, "y": 0.46},
+          {"x": 0.36, "y": 0.49},
+          {"x": 0.33, "y": 0.50},
+          {"x": 0.30, "y": 0.49},
+          {"x": 0.28, "y": 0.46},
+          {"x": 0.30, "y": 0.43},
+          {"x": 0.33, "y": 0.42}
+        ]
+      }
+    },
+    {
+      "id": "female-pivot-plate",
+      "type": "female_pivot_plate",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.26, "y": 0.39, "width": 0.14, "height": 0.14}
+      }
+    },
+    {
+      "id": "internal-face",
+      "type": "internal_face_of_side_B",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "line",
+        "points": [
+          {"x": 0.12, "y": 0.58},
+          {"x": 0.80, "y": 0.58}
+        ]
+      }
+    }
   ],
   "relationships": [
     {"from":"through-hole","to":"lateral-B","type":"passes_through"},
@@ -16,11 +61,52 @@
   ],
   "measurements": ["MEAS-CPNC-2025-P0221-001","MEAS-CPNC-2025-P0221-002","MEAS-CPNC-2025-P0221-003","MEAS-CPNC-2025-P0221-004"],
   "annotations": [
-    {"target_entity_id":"through-hole","text":"Ø 25 mm pasante; 23 cm desde borde trasero; 4.8 cm desde borde superior"},
-    {"target_entity_id":"female-pivot-plate","text":"Asegurar con tornillos plateados"},
-    {"target_entity_id":"internal-face","text":"La platina pivote hembra queda en la cara interna del lateral B"}
+    {
+      "id": "ann-through-hole",
+      "target_entity_id": "through-hole",
+      "text": "Ø 25 mm pasante; 23 cm desde borde trasero; 4.8 cm desde borde superior",
+      "placement": {"x": 0.08, "y": 0.70, "precision": "approximate"}
+    },
+    {
+      "id": "ann-female-pivot-plate",
+      "target_entity_id": "female-pivot-plate",
+      "text": "Asegurar con tornillos plateados",
+      "placement": {"x": 0.08, "y": 0.77, "precision": "approximate"}
+    },
+    {
+      "id": "ann-internal-face",
+      "target_entity_id": "internal-face",
+      "text": "La platina pivote hembra queda en la cara interna del lateral B",
+      "placement": {"x": 0.08, "y": 0.84, "precision": "approximate"}
+    }
   ],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility": {"summary":"Detalle ampliado del lateral B con orificio pasante de 25 mm y referencias desde borde trasero y superior."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"Cotas y herramienta de perforación tomadas directamente de la fuente."}
+  "layers": [
+    {
+      "id": "geometry",
+      "order": 10,
+      "entity_ids": ["lateral-B", "through-hole", "female-pivot-plate", "internal-face"]
+    },
+    {
+      "id": "labels",
+      "order": 20,
+      "annotation_ids": ["ann-through-hole", "ann-female-pivot-plate", "ann-internal-face"]
+    }
+  ],
+  "camera": {
+    "coordinate_space": "normalized_figure",
+    "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+  },
+  "reconstruction": {
+    "preferred_renderer": "svg",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
+  },
+  "accessibility": {
+    "summary": "Representación educativa simplificada del lateral B, su cara interna, la platina y la perforación. Las mediciones 18 mm, 25 mm, 23 cm y 4.8 cm provienen de la fuente; la geometría normalizada no codifica escala física."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Cotas y herramienta de perforación tomadas directamente de la fuente. La geometría normalizada es aproximada y pedagógica: no codifica escala física. Las mediciones 18 mm, 25 mm, 23 cm y 4.8 cm se preservan desde la fuente y no se infieren de posiciones, proporciones, ángulos o tolerancias del dibujo."
+  }
 }
