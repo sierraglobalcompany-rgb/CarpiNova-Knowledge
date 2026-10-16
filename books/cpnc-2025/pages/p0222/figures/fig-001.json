@@ -3,26 +3,110 @@
   "page_id": "PAGE-CPNC-2025-P0222",
   "type": "technical_diagram",
   "purpose": "Recrear la posición relativa de los herrajes sobre el vertical G del gabinete de la cama abatible.",
-  "source": {"book_id":"cpnc-2025","pdf_page":222,"printed_page":200,"region":{"x":0.04,"y":0.03,"width":0.92,"height":0.43},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 222,
+    "printed_page": 200,
+    "region": {"x": 0.04, "y": 0.03, "width": 0.92, "height": 0.43},
+    "extraction": {"method": "visual", "confidence": 0.99, "review_status": "VISUALLY_VERIFIED"}
+  },
   "entities": [
-    {"id":"vertical-G","type":"cabinet_vertical_G","geometry":{"precision":"approximate"}},
-    {"id":"upper-half-moon-stop","type":"upper_half_moon_stop","geometry":{"precision":"approximate"}},
-    {"id":"ball-joint-plate","type":"ball_joint_plate","geometry":{"precision":"approximate"}},
-    {"id":"male-pivot-plate","type":"male_pivot_plate","geometry":{"precision":"approximate"}}
+    {
+      "id": "vertical-G",
+      "type": "cabinet_vertical_G",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.36, "y": 0.12, "width": 0.28, "height": 0.72}
+      }
+    },
+    {
+      "id": "upper-half-moon-stop",
+      "type": "upper_half_moon_stop",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.43, "y": 0.20, "width": 0.10, "height": 0.08}
+      }
+    },
+    {
+      "id": "ball-joint-plate",
+      "type": "ball_joint_plate",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.42, "y": 0.48, "width": 0.12, "height": 0.09}
+      }
+    },
+    {
+      "id": "male-pivot-plate",
+      "type": "male_pivot_plate",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.42, "y": 0.68, "width": 0.12, "height": 0.09}
+      }
+    }
   ],
   "relationships": [
-    {"from":"upper-half-moon-stop","to":"vertical-G","type":"mounted_on"},
-    {"from":"ball-joint-plate","to":"vertical-G","type":"mounted_on"},
-    {"from":"male-pivot-plate","to":"vertical-G","type":"mounted_on"}
+    {"from": "upper-half-moon-stop", "to": "vertical-G", "type": "mounted_on"},
+    {"from": "ball-joint-plate", "to": "vertical-G", "type": "mounted_on"},
+    {"from": "male-pivot-plate", "to": "vertical-G", "type": "mounted_on"}
   ],
   "measurements": ["MEAS-CPNC-2025-P0222-001"],
   "annotations": [
-    {"target_entity_id":"vertical-G","text":"Vertical derecho o izquierdo en aglomerado o tríplex de 18 mm"},
-    {"target_entity_id":"upper-half-moon-stop","text":"Tope media luna superior"},
-    {"target_entity_id":"ball-joint-plate","text":"Platina con rótula"},
-    {"target_entity_id":"male-pivot-plate","text":"Platina de pivote macho"}
+    {
+      "id": "ann-vertical-G",
+      "target_entity_id": "vertical-G",
+      "text": "Vertical derecho o izquierdo en aglomerado o tríplex de 18 mm",
+      "placement": {"x": 0.08, "y": 0.10, "precision": "approximate"}
+    },
+    {
+      "id": "ann-upper-half-moon-stop",
+      "target_entity_id": "upper-half-moon-stop",
+      "text": "Tope media luna superior",
+      "placement": {"x": 0.68, "y": 0.16, "precision": "approximate"}
+    },
+    {
+      "id": "ann-ball-joint-plate",
+      "target_entity_id": "ball-joint-plate",
+      "text": "Platina con rótula",
+      "placement": {"x": 0.68, "y": 0.48, "precision": "approximate"}
+    },
+    {
+      "id": "ann-male-pivot-plate",
+      "target_entity_id": "male-pivot-plate",
+      "text": "Platina de pivote macho",
+      "placement": {"x": 0.68, "y": 0.70, "precision": "approximate"}
+    }
   ],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility": {"summary":"Vertical G del gabinete con tres posiciones de herrajes señaladas y una ampliación de la zona superior."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"El gráfico muestra las cifras 18.4 y 76.7 sin unidad explícita recuperable; no se normalizan como medidas."}
+  "reconstruction": {
+    "preferred_renderer": "svg",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
+  },
+  "camera": {
+    "coordinate_space": "normalized_figure",
+    "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+  },
+  "layers": [
+    {
+      "id": "geometry",
+      "order": 10,
+      "entity_ids": ["vertical-G", "upper-half-moon-stop", "ball-joint-plate", "male-pivot-plate"]
+    },
+    {
+      "id": "labels",
+      "order": 20,
+      "annotation_ids": ["ann-vertical-G", "ann-upper-half-moon-stop", "ann-ball-joint-plate", "ann-male-pivot-plate"]
+    }
+  ],
+  "accessibility": {
+    "summary": "Representación educativa simplificada y no métrica de la posición relativa de tres herrajes sobre el vertical G; no es un dibujo de fabricación ni codifica escala física."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "La geometría normalizada es aproximada, pedagógica y no métrica; no es un dibujo de fabricación ni debe interpretarse como escala, distancia, proporción o tolerancia física. El gráfico muestra las cifras 18.4 y 76.7 sin unidad explícita recuperable; permanecen sin resolver y no se normalizan como medidas."
+  }
 }
