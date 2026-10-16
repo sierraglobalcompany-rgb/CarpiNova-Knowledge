@@ -18,9 +18,17 @@ The exclusions are explicit in `books/cpnc-2025/distribution.json`; they do not 
 
 Known source conflicts and safe `UNRESOLVED` items remain explicit instead of being reconciled by inference. No distributed RuleSpec is `EXECUTABLE` fabrication authority.
 
-Knowledge `1.2.0` adds source-backed lesson interactions with strict schemas and fail-closed reference validation while preserving the opt-in `normalized-2d-v1` render contract. On current `main`, `FIG-CPNC-2025-P0113-001` and `FIG-CPNC-2025-P0112-001` are render-ready under that existing contract. Legacy FigureSpec records remain valid and do not require migration.
+Knowledge `1.2.0` adds source-backed lesson interactions with strict schemas and fail-closed reference validation while preserving the opt-in `normalized-2d-v1` render contract.
 
-`FIG-CPNC-2025-P0121-001` was reviewed for promotion but intentionally deferred: its unresolved dimension semantics cannot be represented source-faithfully by the current normalized contract without schema/renderer expansion or invented geometry.
+A FigureSpec is render-ready only when its canonical record explicitly declares:
+
+```text
+reconstruction.render_contract = normalized-2d-v1
+```
+
+That capability is opt-in per figure. Legacy FigureSpec records remain valid and do not require migration. Do not use a manually maintained README list as the inventory of render-ready figures; discover them from the canonical FigureSpec records or from the generated `figures.bundle.json`.
+
+Figures whose source semantics cannot be represented faithfully by the current contract remain deferred rather than having geometry or dimensions invented.
 
 ## Reproduce the full-book bundle
 
@@ -54,6 +62,7 @@ The build produces four deterministic consumer artifacts:
 
 ## Governance
 
+- Agent guardrails: `AGENTS.md`
 - Editorial transformations: `docs/editorial-policy.md`
 - Technical validation: `docs/validation-policy.md`
 - Visual reconstruction: `docs/visual-spec-policy.md`
