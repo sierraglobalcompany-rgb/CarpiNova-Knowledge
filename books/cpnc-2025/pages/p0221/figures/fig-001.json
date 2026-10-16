@@ -5,23 +5,79 @@
   "purpose": "Recrear la posición relativa de los herrajes principales sobre el lateral B del marco de cama.",
   "source": {"book_id":"cpnc-2025","pdf_page":221,"printed_page":199,"region":{"x":0.04,"y":0.03,"width":0.92,"height":0.43},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
   "entities": [
-    {"id":"lateral-B","type":"bed_frame_side_B","geometry":{"precision":"approximate"}},
-    {"id":"female-pivot","type":"female_pivot","geometry":{"precision":"approximate"}},
-    {"id":"lower-gas-plate","type":"lower_ball_joint_plate_for_gas_spring","geometry":{"precision":"approximate"}},
-    {"id":"wood-leg-support","type":"wood_leg_support","geometry":{"precision":"approximate"}}
+    {
+      "id":"lateral-B",
+      "type":"bed_frame_side_B",
+      "geometry":{
+        "precision":"approximate",
+        "primitive":"polyline",
+        "points":[
+          {"x":0.08,"y":0.18},
+          {"x":0.92,"y":0.18},
+          {"x":0.88,"y":0.78},
+          {"x":0.12,"y":0.78},
+          {"x":0.08,"y":0.18}
+        ]
+      }
+    },
+    {
+      "id":"female-pivot",
+      "type":"female_pivot",
+      "geometry":{"precision":"approximate","primitive":"rect","bounds":{"x":0.18,"y":0.28,"width":0.10,"height":0.10}}
+    },
+    {
+      "id":"lower-gas-plate",
+      "type":"lower_ball_joint_plate_for_gas_spring",
+      "geometry":{"precision":"approximate","primitive":"rect","bounds":{"x":0.48,"y":0.55,"width":0.12,"height":0.10}}
+    },
+    {
+      "id":"wood-leg-support",
+      "type":"wood_leg_support",
+      "geometry":{"precision":"approximate","primitive":"rect","bounds":{"x":0.72,"y":0.30,"width":0.12,"height":0.12}}
+    }
   ],
-  "relationships": [
+  "relationships":[
     {"from":"female-pivot","to":"lateral-B","type":"mounted_on"},
     {"from":"lower-gas-plate","to":"lateral-B","type":"mounted_on"},
     {"from":"wood-leg-support","to":"lateral-B","type":"positioned_on"}
   ],
-  "measurements": [],
-  "annotations": [
-    {"target_entity_id":"female-pivot","text":"Posición de pivote hembra"},
-    {"target_entity_id":"lower-gas-plate","text":"Platina inferior con rótula para el gato (pistón)"},
-    {"target_entity_id":"wood-leg-support","text":"Soporte pata de madera"}
+  "measurements":[],
+  "annotations":[
+    {
+      "id":"ann-female-pivot",
+      "target_entity_id":"female-pivot",
+      "text":"Posición de pivote hembra",
+      "placement":{"x":0.10,"y":0.12,"precision":"approximate"}
+    },
+    {
+      "id":"ann-lower-gas-plate",
+      "target_entity_id":"lower-gas-plate",
+      "text":"Platina inferior con rótula para el gato (pistón)",
+      "placement":{"x":0.34,"y":0.90,"precision":"approximate"}
+    },
+    {
+      "id":"ann-wood-leg-support",
+      "target_entity_id":"wood-leg-support",
+      "text":"Soporte pata de madera",
+      "placement":{"x":0.64,"y":0.12,"precision":"approximate"}
+    }
   ],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility": {"summary":"Marco de cama en perspectiva con tres zonas de herraje señaladas sobre el lateral B."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"La lámina superior comunica posición relativa, no cotas numéricas."}
+  "reconstruction":{
+    "preferred_renderer":"svg",
+    "deterministic_required":true,
+    "generative_image_allowed":false,
+    "render_contract":"normalized-2d-v1"
+  },
+  "camera":{"coordinate_space":"normalized_figure","viewport":{"x":0,"y":0,"width":1,"height":1}},
+  "layers":[
+    {"id":"geometry","order":10,"entity_ids":["lateral-B","female-pivot","lower-gas-plate","wood-leg-support"]},
+    {"id":"labels","order":20,"annotation_ids":["ann-female-pivot","ann-lower-gas-plate","ann-wood-leg-support"]}
+  ],
+  "accessibility":{
+    "summary":"Representación educativa simplificada y no métrica de la posición relativa de tres zonas de herraje sobre el lateral B; no es un dibujo de fabricación ni codifica escala física."
+  },
+  "review":{
+    "status":"VISUALLY_VERIFIED",
+    "notes":"La lámina superior comunica posición relativa únicamente. La geometría normalizada es pedagógica y no métrica; no es un dibujo de fabricación y no debe interpretarse como escala física, distancia, proporción, ángulo o tolerancia."
+  }
 }
