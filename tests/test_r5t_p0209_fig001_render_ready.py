@@ -181,7 +181,9 @@ def test_p0209_fig001_renders_deterministically_and_repository_stays_valid() -> 
 
     assert svg_first == svg_second
     assert svg_first.startswith("<svg")
-    assert "FIG-CPNC-2025-P0209-001" in svg_first
+    assert 'data-layer-id="geometry"' in svg_first
+    assert 'data-entity-id="frame"' in svg_first
+    assert 'data-annotation-id="ann-trim-width"' in svg_first
 
     validation = validate_repository(ROOT)
     assert validation["valid"] is True
