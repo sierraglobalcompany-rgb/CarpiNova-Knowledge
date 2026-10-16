@@ -3,17 +3,113 @@
   "page_id": "PAGE-CPNC-2025-P0208",
   "type": "dimensioned_drawing",
   "purpose": "Recrear la referencia de una hoja de puerta entamborada y la ubicación estándar de la chapa.",
-  "source": {"book_id":"cpnc-2025","pdf_page":208,"printed_page":186,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 208,
+    "printed_page": 186,
+    "region": {"x": 0.0, "y": 0.0, "width": 1.0, "height": 1.0},
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
   "entities": [
-    {"id":"door-leaf","type":"door_leaf","geometry":{"precision":"approximate"}},
-    {"id":"internal-frame","type":"internal_batten_frame","geometry":{"precision":"approximate"}},
-    {"id":"door-skin","type":"door_skin_sheet","geometry":{"precision":"approximate"}},
-    {"id":"lock","type":"door_lock","geometry":{"precision":"approximate"}}
+    {
+      "id": "door-leaf",
+      "type": "door_leaf",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.28, "y": 0.12, "width": 0.40, "height": 0.72}
+      }
+    },
+    {
+      "id": "internal-frame",
+      "type": "internal_batten_frame",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.34, "y": 0.18, "width": 0.28, "height": 0.60}
+      }
+    },
+    {
+      "id": "door-skin",
+      "type": "door_skin_sheet",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.26, "y": 0.10, "width": 0.44, "height": 0.76}
+      }
+    },
+    {
+      "id": "lock",
+      "type": "door_lock",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "polyline",
+        "points": [
+          {"x": 0.58, "y": 0.52},
+          {"x": 0.62, "y": 0.52},
+          {"x": 0.66, "y": 0.52},
+          {"x": 0.62, "y": 0.55}
+        ]
+      }
+    }
   ],
-  "relationships": [{"from":"internal-frame","to":"door-leaf","type":"inside"},{"from":"door-skin","to":"internal-frame","type":"covers"},{"from":"lock","to":"door-leaf","type":"installed_on"}],
-  "measurements": ["MEAS-CPNC-2025-P0208-001","MEAS-CPNC-2025-P0208-002","MEAS-CPNC-2025-P0208-003","MEAS-CPNC-2025-P0208-004","MEAS-CPNC-2025-P0208-005"],
-  "annotations": [{"target_entity_id":"door-leaf","text":"Espesor puerta estándar 36 mm"},{"target_entity_id":"lock","text":"90 cm desde piso; 6 cm desde canto"}],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility": {"summary":"Esquema de una hoja de puerta con bastidor interno, caras de lámina y cotas para espesor total y ubicación de chapa."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"Se conservan 4 mm y 5.5 mm como opciones de espesor de lámina y 36 mm como espesor total indicado por la fuente."}
+  "relationships": [
+    {"from": "internal-frame", "to": "door-leaf", "type": "inside"},
+    {"from": "door-skin", "to": "internal-frame", "type": "covers"},
+    {"from": "lock", "to": "door-leaf", "type": "installed_on"}
+  ],
+  "measurements": [
+    "MEAS-CPNC-2025-P0208-001",
+    "MEAS-CPNC-2025-P0208-002",
+    "MEAS-CPNC-2025-P0208-003",
+    "MEAS-CPNC-2025-P0208-004",
+    "MEAS-CPNC-2025-P0208-005"
+  ],
+  "annotations": [
+    {
+      "id": "ann-door-thickness",
+      "target_entity_id": "door-leaf",
+      "text": "Espesor puerta estándar 36 mm",
+      "placement": {"x": 0.18, "y": 0.08, "precision": "approximate"}
+    },
+    {
+      "id": "ann-lock-position",
+      "target_entity_id": "lock",
+      "text": "90 cm desde piso; 6 cm desde canto",
+      "placement": {"x": 0.48, "y": 0.92, "precision": "approximate"}
+    }
+  ],
+  "layers": [
+    {
+      "id": "geometry",
+      "order": 10,
+      "entity_ids": ["door-leaf", "internal-frame", "door-skin", "lock"]
+    },
+    {
+      "id": "labels",
+      "order": 20,
+      "annotation_ids": ["ann-door-thickness", "ann-lock-position"]
+    }
+  ],
+  "camera": {
+    "coordinate_space": "normalized_figure",
+    "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+  },
+  "reconstruction": {
+    "preferred_renderer": "svg",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
+  },
+  "accessibility": {
+    "summary": "Diagrama simplificado de una hoja de puerta entamborada, su bastidor interno conceptual, las caras de lámina y la ubicación de la chapa."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Se conservan 4 mm y 5.5 mm como opciones de espesor de lámina, 36 mm como espesor total indicado por la fuente y las referencias de 90 cm desde el piso y 6 cm desde el canto para la chapa. La geometría normalizada es una aproximación pedagógica y no codifica escala física. El bastidor interno está respaldado por el texto fuente, pero su representación es conceptual porque la ilustración original no muestra un corte abierto del interior de la puerta."
+  }
 }
