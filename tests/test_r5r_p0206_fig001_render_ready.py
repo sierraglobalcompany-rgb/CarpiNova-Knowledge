@@ -94,6 +94,7 @@ def test_p0206_fig001_preserves_source_semantics_without_metric_inference() -> N
     for entity_id, expected_primitive in EXPECTED_PRIMITIVES.items():
         geometry = entities[entity_id]["geometry"]
         assert geometry["precision"] == "approximate"
+        assert "primitive" in geometry
         assert geometry["primitive"] == expected_primitive
         assert "dimensions" not in geometry
         assert "bbox" not in geometry
