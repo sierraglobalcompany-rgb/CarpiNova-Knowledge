@@ -3,16 +3,135 @@
   "page_id": "PAGE-CPNC-2025-P0205",
   "type": "dimensioned_drawing",
   "purpose": "Recrear las referencias dimensionales de profundidad, altura y configuración de puertas corredizas del clóset.",
-  "source": {"book_id":"cpnc-2025","pdf_page":205,"printed_page":183,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 205,
+    "printed_page": 183,
+    "region": {"x": 0.0, "y": 0.0, "width": 1.0, "height": 1.0},
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
   "entities": [
-    {"id":"closet-body","type":"closet","geometry":{"precision":"approximate"}},
-    {"id":"hanger","type":"clothes_hanger","geometry":{"precision":"approximate"}},
-    {"id":"sliding-doors","type":"sliding_doors","geometry":{"precision":"approximate"}}
+    {
+      "id": "closet-body",
+      "type": "closet",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.22, "y": 0.14, "width": 0.56, "height": 0.72}
+      }
+    },
+    {
+      "id": "hanger",
+      "type": "clothes_hanger",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "polyline",
+        "points": [
+          {"x": 0.39, "y": 0.42},
+          {"x": 0.50, "y": 0.32},
+          {"x": 0.61, "y": 0.42},
+          {"x": 0.39, "y": 0.42}
+        ]
+      }
+    },
+    {
+      "id": "sliding-doors",
+      "type": "sliding_doors",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "polyline",
+        "points": [
+          {"x": 0.31, "y": 0.21},
+          {"x": 0.50, "y": 0.21},
+          {"x": 0.50, "y": 0.79},
+          {"x": 0.69, "y": 0.79},
+          {"x": 0.69, "y": 0.21}
+        ]
+      }
+    }
   ],
-  "relationships": [{"from":"hanger","to":"closet-body","type":"defines_internal_clearance_reference"},{"from":"sliding-doors","to":"closet-body","type":"requires_external_clearance"}],
-  "measurements": ["MEAS-CPNC-2025-P0205-001","MEAS-CPNC-2025-P0205-002","MEAS-CPNC-2025-P0205-003","MEAS-CPNC-2025-P0205-004","MEAS-CPNC-2025-P0205-005","MEAS-CPNC-2025-P0205-006"],
-  "annotations": [{"target_entity_id":"closet-body","text":"Profundidad interna 45 a 50 cm"},{"target_entity_id":"closet-body","text":"Altura 230 a 243 cm"},{"target_entity_id":"closet-body","text":"Medida externa 60 cm"},{"target_entity_id":"sliding-doors","text":"Hasta 2 m de ancho: 2 puertas según la fuente"}],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility": {"summary":"Lámina de medidas estándar de clóset con gancho, cuerpo del mueble y referencia de puertas corredizas."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"Las medidas y el umbral de 2 m se conservan como referencias declaradas por la fuente; no se extrapolan a otros sistemas de herrajes."}
+  "relationships": [
+    {
+      "from": "hanger",
+      "to": "closet-body",
+      "type": "defines_internal_clearance_reference"
+    },
+    {
+      "from": "sliding-doors",
+      "to": "closet-body",
+      "type": "requires_external_clearance"
+    }
+  ],
+  "measurements": [
+    "MEAS-CPNC-2025-P0205-001",
+    "MEAS-CPNC-2025-P0205-002",
+    "MEAS-CPNC-2025-P0205-003",
+    "MEAS-CPNC-2025-P0205-004",
+    "MEAS-CPNC-2025-P0205-005",
+    "MEAS-CPNC-2025-P0205-006"
+  ],
+  "annotations": [
+    {
+      "id": "ann-internal-depth",
+      "target_entity_id": "closet-body",
+      "text": "Profundidad interna 45 a 50 cm",
+      "placement": {"x": 0.06, "y": 0.12, "precision": "approximate"}
+    },
+    {
+      "id": "ann-height",
+      "target_entity_id": "closet-body",
+      "text": "Altura 230 a 243 cm",
+      "placement": {"x": 0.06, "y": 0.22, "precision": "approximate"}
+    },
+    {
+      "id": "ann-external-depth",
+      "target_entity_id": "closet-body",
+      "text": "Medida externa 60 cm",
+      "placement": {"x": 0.06, "y": 0.32, "precision": "approximate"}
+    },
+    {
+      "id": "ann-two-doors",
+      "target_entity_id": "sliding-doors",
+      "text": "Hasta 2 m de ancho: 2 puertas según la fuente",
+      "placement": {"x": 0.51, "y": 0.90, "precision": "approximate"}
+    }
+  ],
+  "layers": [
+    {
+      "id": "geometry",
+      "order": 10,
+      "entity_ids": ["closet-body", "hanger", "sliding-doors"]
+    },
+    {
+      "id": "labels",
+      "order": 20,
+      "annotation_ids": [
+        "ann-internal-depth",
+        "ann-height",
+        "ann-external-depth",
+        "ann-two-doors"
+      ]
+    }
+  ],
+  "camera": {
+    "coordinate_space": "normalized_figure",
+    "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+  },
+  "reconstruction": {
+    "preferred_renderer": "svg",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
+  },
+  "accessibility": {
+    "summary": "Lámina simplificada de medidas estándar de clóset con gancho, cuerpo del mueble y referencia de puertas corredizas, acompañada por las seis medidas canónicas de la página."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Las medidas y el umbral de 2 m se conservan como referencias declaradas por la fuente; no se extrapolan a otros sistemas de herrajes. La geometría normalizada es una aproximación pedagógica de la composición observada y no codifica escala física ni líneas de cota métricas."
+  }
 }
