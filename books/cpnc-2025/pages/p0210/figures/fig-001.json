@@ -3,16 +3,125 @@
   "page_id": "PAGE-CPNC-2025-P0210",
   "type": "mixed",
   "purpose": "Recrear la referencia de medición del vano y preparación del marco para puerta mostrada por la fuente.",
-  "source": {"book_id":"cpnc-2025","pdf_page":210,"printed_page":188,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 210,
+    "printed_page": 188,
+    "region": {"x": 0.0, "y": 0.0, "width": 1.0, "height": 1.0},
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
   "entities": [
-    {"id":"opening","type":"door_opening","geometry":{"precision":"approximate"}},
-    {"id":"tape","type":"measuring_tape","geometry":{"precision":"approximate"}},
-    {"id":"frame","type":"door_frame","geometry":{"precision":"approximate"}}
+    {
+      "id": "opening",
+      "type": "door_opening",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.12, "y": 0.18, "width": 0.32, "height": 0.60}
+      }
+    },
+    {
+      "id": "tape",
+      "type": "measuring_tape",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "polyline",
+        "points": [
+          {"x": 0.48, "y": 0.18},
+          {"x": 0.48, "y": 0.78},
+          {"x": 0.44, "y": 0.78},
+          {"x": 0.44, "y": 0.82}
+        ]
+      }
+    },
+    {
+      "id": "frame",
+      "type": "door_frame",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "polyline",
+        "points": [
+          {"x": 0.62, "y": 0.76},
+          {"x": 0.62, "y": 0.22},
+          {"x": 0.88, "y": 0.22},
+          {"x": 0.88, "y": 0.76}
+        ]
+      }
+    }
   ],
-  "relationships": [{"from":"tape","to":"opening","type":"measures"},{"from":"frame","to":"opening","type":"dimensioned_from"}],
-  "measurements": ["MEAS-CPNC-2025-P0210-001","MEAS-CPNC-2025-P0210-002","MEAS-CPNC-2025-P0210-003","MEAS-CPNC-2025-P0210-004","MEAS-CPNC-2025-P0210-005"],
-  "annotations": [{"target_entity_id":"opening","text":"Ejemplo visual: 209 cm de alto y 79 cm de ancho"},{"target_entity_id":"opening","text":"Medir en varias partes y trabajar con la medida menor"},{"target_entity_id":"frame","text":"Colillado: cortes a 45°"},{"target_entity_id":"frame","text":"MDP de 15 mm según la fuente"}],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility": {"summary":"Lámina de despiece de puertas con un vano acotado, cinta métrica y marco de tres piezas con cortes de colillado."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"Las cotas 209 × 79 cm pertenecen al ejemplo dibujado; el descuento de 5 mm se conserva como recomendación propia de la fuente."}
+  "relationships": [
+    {"from": "tape", "to": "opening", "type": "measures"},
+    {"from": "frame", "to": "opening", "type": "dimensioned_from"}
+  ],
+  "measurements": [
+    "MEAS-CPNC-2025-P0210-001",
+    "MEAS-CPNC-2025-P0210-002",
+    "MEAS-CPNC-2025-P0210-003",
+    "MEAS-CPNC-2025-P0210-004",
+    "MEAS-CPNC-2025-P0210-005"
+  ],
+  "annotations": [
+    {
+      "id": "ann-opening-example",
+      "target_entity_id": "opening",
+      "text": "Ejemplo visual: 209 cm de alto y 79 cm de ancho",
+      "placement": {"x": 0.08, "y": 0.10, "precision": "approximate"}
+    },
+    {
+      "id": "ann-measure-minimum",
+      "target_entity_id": "opening",
+      "text": "Medir en varias partes y trabajar con la medida menor",
+      "placement": {"x": 0.08, "y": 0.88, "precision": "approximate"}
+    },
+    {
+      "id": "ann-frame-miter",
+      "target_entity_id": "frame",
+      "text": "Colillado: cortes a 45°",
+      "placement": {"x": 0.58, "y": 0.12, "precision": "approximate"}
+    },
+    {
+      "id": "ann-frame-material",
+      "target_entity_id": "frame",
+      "text": "MDP de 15 mm según la fuente",
+      "placement": {"x": 0.58, "y": 0.86, "precision": "approximate"}
+    }
+  ],
+  "layers": [
+    {
+      "id": "geometry",
+      "order": 10,
+      "entity_ids": ["opening", "tape", "frame"]
+    },
+    {
+      "id": "labels",
+      "order": 20,
+      "annotation_ids": [
+        "ann-opening-example",
+        "ann-measure-minimum",
+        "ann-frame-miter",
+        "ann-frame-material"
+      ]
+    }
+  ],
+  "camera": {
+    "coordinate_space": "normalized_figure",
+    "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+  },
+  "reconstruction": {
+    "preferred_renderer": "svg",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
+  },
+  "accessibility": {
+    "summary": "Diagrama simplificado y no métrico del ejemplo de medición de un vano, una cinta métrica y un marco de puerta con colillado."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Se preservan las cotas 209 × 79 cm como dimensiones del ejemplo ilustrado, no como estándar universal. El descuento de 5 mm se conserva como recomendación expresada por la fuente. También se preservan el colillado a 45° y el MDP de 15 mm para el marco. La geometría normalizada es una aproximación pedagógica y no codifica escala física."
+  }
 }
