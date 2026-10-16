@@ -3,17 +3,128 @@
   "page_id": "PAGE-CPNC-2025-P0209",
   "type": "dimensioned_drawing",
   "purpose": "Recrear la referencia del marco de puerta, la carga y la moldura o tapaluz.",
-  "source": {"book_id":"cpnc-2025","pdf_page":209,"printed_page":187,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 209,
+    "printed_page": 187,
+    "region": {"x": 0.0, "y": 0.0, "width": 1.0, "height": 1.0},
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
   "entities": [
-    {"id":"frame","type":"door_frame","geometry":{"precision":"approximate"}},
-    {"id":"stop","type":"door_frame_stop_carga","geometry":{"precision":"approximate"}},
-    {"id":"trim","type":"door_trim_tapaluz","geometry":{"precision":"approximate"}},
-    {"id":"door-leaf","type":"door_leaf","geometry":{"precision":"approximate"}}
+    {
+      "id": "frame",
+      "type": "door_frame",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "polyline",
+        "points": [
+          {"x": 0.22, "y": 0.18},
+          {"x": 0.22, "y": 0.80},
+          {"x": 0.68, "y": 0.80},
+          {"x": 0.68, "y": 0.18},
+          {"x": 0.22, "y": 0.18}
+        ]
+      }
+    },
+    {
+      "id": "stop",
+      "type": "door_frame_stop_carga",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.60, "y": 0.26, "width": 0.06, "height": 0.46}
+      }
+    },
+    {
+      "id": "trim",
+      "type": "door_trim_tapaluz",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "polyline",
+        "points": [
+          {"x": 0.16, "y": 0.12},
+          {"x": 0.16, "y": 0.86},
+          {"x": 0.74, "y": 0.86},
+          {"x": 0.74, "y": 0.12},
+          {"x": 0.16, "y": 0.12}
+        ]
+      }
+    },
+    {
+      "id": "door-leaf",
+      "type": "door_leaf",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.30, "y": 0.24, "width": 0.30, "height": 0.52}
+      }
+    }
   ],
-  "relationships": [{"from":"stop","to":"frame","type":"part_of"},{"from":"trim","to":"frame","type":"covers_perimeter_gap"},{"from":"door-leaf","to":"stop","type":"closes_against"}],
-  "measurements": ["MEAS-CPNC-2025-P0209-001","MEAS-CPNC-2025-P0209-002","MEAS-CPNC-2025-P0209-003","MEAS-CPNC-2025-P0209-004","MEAS-CPNC-2025-P0209-005","MEAS-CPNC-2025-P0209-006","MEAS-CPNC-2025-P0209-007"],
-  "annotations": [{"target_entity_id":"frame","text":"Anchos listados: 8, 10, 12 o 14 cm"},{"target_entity_id":"stop","text":"Carga: 4 cm"},{"target_entity_id":"trim","text":"Moldura/tapaluz: normalmente 3 cm"}],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility": {"summary":"Esquema de marco de puerta con hoja, carga y moldura, acompañado por anchos y relaciones de armado."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"La reducción de 4 cm del servicio de sanduche se conserva como relación dimensional expresada por la fuente."}
+  "relationships": [
+    {"from": "stop", "to": "frame", "type": "part_of"},
+    {"from": "trim", "to": "frame", "type": "covers_perimeter_gap"},
+    {"from": "door-leaf", "to": "stop", "type": "closes_against"}
+  ],
+  "measurements": [
+    "MEAS-CPNC-2025-P0209-001",
+    "MEAS-CPNC-2025-P0209-002",
+    "MEAS-CPNC-2025-P0209-003",
+    "MEAS-CPNC-2025-P0209-004",
+    "MEAS-CPNC-2025-P0209-005",
+    "MEAS-CPNC-2025-P0209-006",
+    "MEAS-CPNC-2025-P0209-007"
+  ],
+  "annotations": [
+    {
+      "id": "ann-frame-widths",
+      "target_entity_id": "frame",
+      "text": "Anchos listados: 8, 10, 12 o 14 cm",
+      "placement": {"x": 0.18, "y": 0.08, "precision": "approximate"}
+    },
+    {
+      "id": "ann-stop-width",
+      "target_entity_id": "stop",
+      "text": "Carga: 4 cm",
+      "placement": {"x": 0.64, "y": 0.50, "precision": "approximate"}
+    },
+    {
+      "id": "ann-trim-width",
+      "target_entity_id": "trim",
+      "text": "Moldura/tapaluz: normalmente 3 cm",
+      "placement": {"x": 0.20, "y": 0.93, "precision": "approximate"}
+    }
+  ],
+  "layers": [
+    {
+      "id": "geometry",
+      "order": 10,
+      "entity_ids": ["frame", "stop", "trim", "door-leaf"]
+    },
+    {
+      "id": "labels",
+      "order": 20,
+      "annotation_ids": ["ann-frame-widths", "ann-stop-width", "ann-trim-width"]
+    }
+  ],
+  "camera": {
+    "coordinate_space": "normalized_figure",
+    "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+  },
+  "reconstruction": {
+    "preferred_renderer": "svg",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
+  },
+  "accessibility": {
+    "summary": "Diagrama simplificado y no métrico de un marco de puerta con hoja, carga y moldura o tapaluz."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Se conservan los anchos de marco 8, 10, 12 y 14 cm, la carga de 4 cm, la reducción de 4 cm del servicio de sanduche y la referencia habitual de 3 cm para la moldura o tapaluz. La geometría normalizada es una aproximación pedagógica y no codifica escala física. La fuente de P0209 menciona una hoja de 36 mm, pero ese valor ya tiene MeasurementSpec canónico en P0208 y no se duplica como medición local de esta figura."
+  }
 }
