@@ -28,6 +28,61 @@ EXPECTED_SOURCE_PAGES = {
     "p0250": (250, 228),
 }
 
+EXPECTED_ANNOTATION_TARGETS = {
+    "p0235": [
+        "selling-carpentry",
+        "problems",
+        "customer-service",
+        "after-sales",
+        "technical-knowledge",
+        "professional-outcome",
+    ],
+    "p0237": [
+        "title",
+        "carpenter-location",
+        "step-1",
+        "visit-present",
+        "step-2",
+        "price-catalog-first",
+        "step-5",
+    ],
+    "p0242": [
+        "title",
+        "method-1",
+        "percentages",
+        "method-2",
+        "method-3",
+        "method-4",
+        "bottom-elements",
+    ],
+    "p0245": [
+        "title",
+        "accounts",
+        "publish",
+        "advertising",
+        "quality",
+        "process",
+        "closing",
+    ],
+    "p0248": [
+        "title",
+        "charge-visit",
+        "professional",
+        "advise",
+        "design",
+        "repeated-guidance",
+    ],
+    "p0250": [
+        "title",
+        "access",
+        "piece-size",
+        "connections",
+        "baseboards",
+        "moldings",
+        "anchors",
+    ],
+}
+
 
 def _figure(page: str) -> dict:
     return json.loads(FIGURES[page].read_text(encoding="utf-8"))
@@ -53,6 +108,9 @@ def test_batch_preserves_source_identity_and_existing_semantics(page: str) -> No
     assert figure["entities"]
     assert figure["annotations"]
     assert figure["educational_sequence"]
+    assert [annotation["target_entity_id"] for annotation in figure["annotations"]] == (
+        EXPECTED_ANNOTATION_TARGETS[page]
+    )
 
 
 @pytest.mark.parametrize("page", FIGURES)
@@ -84,9 +142,10 @@ def test_batch_uses_existing_normalized_contract_without_new_primitives(page: st
         assert bounds["y"] + bounds["height"] <= 1
 
     annotations = figure["annotations"]
-    assert [annotation["target_entity_id"] for annotation in annotations] == entity_ids
+    annotation_targets = EXPECTED_ANNOTATION_TARGETS[page]
+    assert [annotation["target_entity_id"] for annotation in annotations] == annotation_targets
     assert [annotation["id"] for annotation in annotations] == [
-        _annotation_id(entity_id) for entity_id in entity_ids
+        _annotation_id(entity_id) for entity_id in annotation_targets
     ]
     for annotation in annotations:
         placement = annotation["placement"]
@@ -99,7 +158,9 @@ def test_batch_uses_existing_normalized_contract_without_new_primitives(page: st
         {
             "id": "labels",
             "order": 20,
-            "annotation_ids": [_annotation_id(entity_id) for entity_id in entity_ids],
+            "annotation_ids": [
+                _annotation_id(entity_id) for entity_id in annotation_targets
+            ],
         },
     ]
 
@@ -121,7 +182,8 @@ def test_batch_renders_deterministically(page: str) -> None:
     assert 'data-layer-id="labels"' in first
     for entity in figure["entities"]:
         assert f'data-entity-id="{entity["id"]}"' in first
-        assert f'data-annotation-id="{_annotation_id(entity["id"])}"' in first
+    for target_entity_id in EXPECTED_ANNOTATION_TARGETS[page]:
+        assert f'data-annotation-id="{_annotation_id(target_entity_id)}"' in first
 
 
 def test_batch_preserves_known_source_irregularities_without_completion() -> None:
