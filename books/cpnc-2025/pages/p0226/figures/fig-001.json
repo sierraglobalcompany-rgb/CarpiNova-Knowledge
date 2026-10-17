@@ -3,28 +3,123 @@
   "page_id": "PAGE-CPNC-2025-P0226",
   "type": "mixed",
   "purpose": "Recrear la infografía de configuración e instalación de un centro de T.V. sin dimensiones estándar de modulación o largo.",
-  "source": {"book_id":"cpnc-2025","pdf_page":226,"printed_page":204,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 226,
+    "printed_page": 204,
+    "region": {"x": 0.02, "y": 0.02, "width": 0.96, "height": 0.96},
+    "extraction": {"method": "visual", "confidence": 0.98, "review_status": "VISUALLY_VERIFIED"}
+  },
   "entities": [
-    {"id":"tv-board","type":"tv_support_board","geometry":{"precision":"approximate"}},
-    {"id":"upper-cabinet","type":"entertainment_center_upper_module","geometry":{"precision":"approximate"}},
-    {"id":"tv","type":"television","geometry":{"precision":"approximate"}},
-    {"id":"cable-holes","type":"connection_holes","geometry":{"precision":"approximate"}},
-    {"id":"electrical-box","type":"electrical_box","geometry":{"precision":"approximate"}},
-    {"id":"cleat","type":"chamfer_cleat","geometry":{"precision":"approximate"}}
+    {
+      "id": "tv-board",
+      "type": "tv_support_board",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.18, "y": 0.18, "width": 0.64, "height": 0.62}
+      }
+    },
+    {
+      "id": "upper-cabinet",
+      "type": "entertainment_center_upper_module",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.20, "y": 0.08, "width": 0.60, "height": 0.14}
+      }
+    },
+    {
+      "id": "tv",
+      "type": "television",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.30, "y": 0.30, "width": 0.40, "height": 0.30}
+      }
+    },
+    {
+      "id": "cable-holes",
+      "type": "connection_holes",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.38, "y": 0.62, "width": 0.08, "height": 0.06}
+      }
+    },
+    {
+      "id": "electrical-box",
+      "type": "electrical_box",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.64, "y": 0.56, "width": 0.10, "height": 0.10}
+      }
+    },
+    {
+      "id": "cleat",
+      "type": "chamfer_cleat",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.28, "y": 0.12, "width": 0.44, "height": 0.05}
+      }
+    }
   ],
   "relationships": [
-    {"from":"tv","to":"tv-board","type":"mounted_on"},
-    {"from":"cable-holes","to":"tv-board","type":"passes_through"},
-    {"from":"electrical-box","to":"tv-board","type":"relocated_into"},
-    {"from":"cleat","to":"upper-cabinet","type":"supports"}
+    {"from": "tv", "to": "tv-board", "type": "mounted_on"},
+    {"from": "cable-holes", "to": "tv-board", "type": "passes_through"},
+    {"from": "electrical-box", "to": "tv-board", "type": "relocated_into"},
+    {"from": "cleat", "to": "upper-cabinet", "type": "supports"}
   ],
   "measurements": [],
   "annotations": [
-    {"target_entity_id":"tv-board","text":"El tablón recibe el peso del T.V. y opcionalmente alguna repisa"},
-    {"target_entity_id":"cable-holes","text":"Conexiones mediante perforaciones hechas con broca"},
-    {"target_entity_id":"electrical-box","text":"Caja eléctrica trasladada del muro al mueble"}
+    {
+      "id": "ann-tv-board",
+      "target_entity_id": "tv-board",
+      "text": "El tablón recibe el peso del T.V. y opcionalmente alguna repisa",
+      "placement": {"x": 0.06, "y": 0.20, "precision": "approximate"}
+    },
+    {
+      "id": "ann-cable-holes",
+      "target_entity_id": "cable-holes",
+      "text": "Conexiones mediante perforaciones hechas con broca",
+      "placement": {"x": 0.06, "y": 0.68, "precision": "approximate"}
+    },
+    {
+      "id": "ann-electrical-box",
+      "target_entity_id": "electrical-box",
+      "text": "Caja eléctrica trasladada del muro al mueble",
+      "placement": {"x": 0.72, "y": 0.58, "precision": "approximate"}
+    }
   ],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility": {"summary":"Centro de T.V. ilustrado con tablón de soporte, módulo superior, paso de cables y caja eléctrica integrada al mueble."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"Se conserva la afirmación de la fuente de que modulación y largo no tienen medida estándar; no se añaden cotas inferidas."}
+  "reconstruction": {
+    "preferred_renderer": "svg",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
+  },
+  "camera": {
+    "coordinate_space": "normalized_figure",
+    "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+  },
+  "layers": [
+    {
+      "id": "geometry",
+      "order": 10,
+      "entity_ids": ["tv-board", "upper-cabinet", "tv", "cable-holes", "electrical-box", "cleat"]
+    },
+    {
+      "id": "labels",
+      "order": 20,
+      "annotation_ids": ["ann-tv-board", "ann-cable-holes", "ann-electrical-box"]
+    }
+  ],
+  "accessibility": {
+    "summary": "Representación educativa simplificada de zonas relativas de configuración e instalación del centro de T.V.; la geometría es no métrica y no está a escala. No es un dibujo de fabricación ni una certificación estructural o de capacidad de carga. La fuente indica que no existe una medida estándar de modulación o largo y que la ubicación del mobiliario acompañante depende de la necesidad del usuario."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Las coordenadas normalizadas son aproximadas y solo describen zonas relativas para visualización pedagógica; no representan medidas físicas. La fuente no define modulación o largo estándar. El tablón recibe el T.V. y opcionalmente una repisa únicamente como afirmación contextual de la fuente, sin convertirla en capacidad de carga verificada. La ubicación del mobiliario acompañante depende de la necesidad del usuario."
+  }
 }
