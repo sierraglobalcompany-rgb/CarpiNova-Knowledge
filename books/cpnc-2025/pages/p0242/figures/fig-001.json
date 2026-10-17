@@ -5,14 +5,14 @@
   "purpose": "Recrear la infografía de métodos de cotización para carpintería conservando los textos, porcentajes, divisores, iconos y frases incompletas visibles en la fuente.",
   "source": {"book_id":"cpnc-2025","pdf_page":242,"printed_page":220,"region":{"x":0.05,"y":0.02,"width":0.90,"height":0.96},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
   "entities": [
-    {"id":"title","type":"title_block","geometry":{"primitive":"text","precision":"approximate","bounding_box":{"x":0.10,"y":0.02,"width":0.80,"height":0.14}},"description":"Título grande ¿Cómo cotizar un trabajo de carpintería?"},
-    {"id":"method-1","type":"material_consumption_method","geometry":{"primitive":"icon_and_text","precision":"approximate","bounding_box":{"x":0.10,"y":0.19,"width":0.80,"height":0.22}},"description":"Calculadora y bloque 1. Consumo de material con divisor 0.4 y porcentajes visibles."},
-    {"id":"percentages","type":"cost_distribution","geometry":{"primitive":"text_group","precision":"approximate","bounding_box":{"x":0.31,"y":0.29,"width":0.58,"height":0.12}},"description":"Distribución visible: Insumos 40%, Mano de obra 15%, Administración, Imprevistos y Utilidades 45%, con una repetición adicional del rótulo de administración/imprevistos/utilidades."},
-    {"id":"method-2","type":"linear_meter_method","geometry":{"primitive":"icon_and_text","precision":"approximate","bounding_box":{"x":0.10,"y":0.42,"width":0.80,"height":0.15}},"description":"Cinta métrica y bloque 2. Por metro lineal con divisores 0,6 / 0,5 / 0,4."},
-    {"id":"method-3","type":"board_consumption_method","geometry":{"primitive":"icon_and_text","precision":"approximate","bounding_box":{"x":0.10,"y":0.58,"width":0.80,"height":0.14}},"description":"Tableros y dinero junto al bloque 3. Consumo de tableros; la frase termina en «Calcular el costo por tablero y dividir»."},
-    {"id":"method-4","type":"labor_method","geometry":{"primitive":"icon_and_text","precision":"approximate","bounding_box":{"x":0.10,"y":0.73,"width":0.55,"height":0.16}},"description":"Herramientas y dinero junto al bloque 4. Mano de obra, indicada como 15 % del valor comercial."},
-    {"id":"carpenter","type":"carpenter_character","geometry":{"primitive":"illustration","precision":"approximate","bounding_box":{"x":0.62,"y":0.72,"width":0.30,"height":0.20}},"description":"Personaje ilustrado de carpintero con destornillador."},
-    {"id":"bottom-elements","type":"three_elements_footer","geometry":{"primitive":"text_and_icons","precision":"approximate","bounding_box":{"x":0.08,"y":0.91,"width":0.58,"height":0.07}},"description":"Pie «Todo trabajo de carpintería cuenta con tres elementos:» seguido por iconos de tableros, herramientas y dinero."}
+    {"id":"title","type":"title_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.10,"y":0.02,"width":0.80,"height":0.14}},"description":"Título grande ¿Cómo cotizar un trabajo de carpintería?"},
+    {"id":"method-1","type":"material_consumption_method","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.10,"y":0.19,"width":0.80,"height":0.22}},"description":"Calculadora y bloque 1. Consumo de material con divisor 0.4 y porcentajes visibles."},
+    {"id":"percentages","type":"cost_distribution","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.31,"y":0.29,"width":0.58,"height":0.12}},"description":"Distribución visible: Insumos 40%, Mano de obra 15%, Administración, Imprevistos y Utilidades 45%, con una repetición adicional del rótulo de administración/imprevistos/utilidades."},
+    {"id":"method-2","type":"linear_meter_method","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.10,"y":0.42,"width":0.80,"height":0.15}},"description":"Cinta métrica y bloque 2. Por metro lineal con divisores 0,6 / 0,5 / 0,4."},
+    {"id":"method-3","type":"board_consumption_method","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.10,"y":0.58,"width":0.80,"height":0.14}},"description":"Tableros y dinero junto al bloque 3. Consumo de tableros; la frase termina en «Calcular el costo por tablero y dividir»."},
+    {"id":"method-4","type":"labor_method","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.10,"y":0.73,"width":0.55,"height":0.16}},"description":"Herramientas y dinero junto al bloque 4. Mano de obra, indicada como 15 % del valor comercial."},
+    {"id":"carpenter","type":"carpenter_character","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.62,"y":0.72,"width":0.30,"height":0.20}},"description":"Personaje ilustrado de carpintero con destornillador."},
+    {"id":"bottom-elements","type":"three_elements_footer","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.08,"y":0.91,"width":0.58,"height":0.07}},"description":"Pie «Todo trabajo de carpintería cuenta con tres elementos:» seguido por iconos de tableros, herramientas y dinero."}
   ],
   "relationships": [
     {"from":"title","to":"method-1","type":"introduces"},
@@ -23,23 +23,27 @@
   ],
   "measurements": [],
   "annotations": [
-    {"target_entity_id":"title","text":"¿Cómo cotizar un trabajo de carpintería?"},
-    {"target_entity_id":"method-1","text":"1. Consumo de material / dividir por 0.4 si se desea una rentabilidad del 60 %"},
-    {"target_entity_id":"percentages","text":"Insumos 40% / Mano de obra 15% / Administración, Imprevistos y Utilidades 45%"},
-    {"target_entity_id":"method-2","text":"2. Por metro lineal / Dividir por 0,6 / 0,5/ 0,4 según la rentabilidad deseada"},
-    {"target_entity_id":"method-3","text":"3. Consumo de tableros / Calcular el costo por tablero y dividir"},
-    {"target_entity_id":"method-4","text":"4. Mano de obra / Corresponde al 15 % del valor comercial"},
-    {"target_entity_id":"bottom-elements","text":"Todo trabajo de carpintería cuenta con tres elementos:"}
+    {"id":"ann-title","target_entity_id":"title","text":"¿Cómo cotizar un trabajo de carpintería?","placement":{"x":0.10,"y":0.02,"precision":"approximate"}},
+    {"id":"ann-method-1","target_entity_id":"method-1","text":"1. Consumo de material / dividir por 0.4 si se desea una rentabilidad del 60 %","placement":{"x":0.10,"y":0.19,"precision":"approximate"}},
+    {"id":"ann-percentages","target_entity_id":"percentages","text":"Insumos 40% / Mano de obra 15% / Administración, Imprevistos y Utilidades 45%","placement":{"x":0.31,"y":0.29,"precision":"approximate"}},
+    {"id":"ann-method-2","target_entity_id":"method-2","text":"2. Por metro lineal / Dividir por 0,6 / 0,5/ 0,4 según la rentabilidad deseada","placement":{"x":0.10,"y":0.42,"precision":"approximate"}},
+    {"id":"ann-method-3","target_entity_id":"method-3","text":"3. Consumo de tableros / Calcular el costo por tablero y dividir","placement":{"x":0.10,"y":0.58,"precision":"approximate"}},
+    {"id":"ann-method-4","target_entity_id":"method-4","text":"4. Mano de obra / Corresponde al 15 % del valor comercial","placement":{"x":0.10,"y":0.73,"precision":"approximate"}},
+    {"id":"ann-bottom-elements","target_entity_id":"bottom-elements","text":"Todo trabajo de carpintería cuenta con tres elementos:","placement":{"x":0.08,"y":0.91,"precision":"approximate"}}
   ],
-  "camera":{"view":"front","projection":"orthographic"},
-  "visual_style":{"format":"infografía educativa","layout":"vertical","palette":"naranja, crema y marrón","linework":"iconos ilustrados con contorno oscuro","caption_style":"títulos grandes, numeración y bloques breves"},
+  "camera": {"coordinate_space":"normalized_figure","viewport":{"x":0,"y":0,"width":1,"height":1}},
+  "layers": [
+    {"id":"geometry","order":10,"entity_ids":["title","method-1","percentages","method-2","method-3","method-4","carpenter","bottom-elements"]},
+    {"id":"labels","order":20,"annotation_ids":["ann-title","ann-method-1","ann-percentages","ann-method-2","ann-method-3","ann-method-4","ann-bottom-elements"]}
+  ],
+  "visual_style": {"format":"infografía educativa","layout":"vertical","palette":"naranja, crema y marrón","linework":"iconos ilustrados con contorno oscuro","caption_style":"títulos grandes, numeración y bloques breves"},
   "educational_sequence": [
     {"step":1,"show_entity_ids":["title","method-1","percentages"],"instruction":"Presentar el método por consumo de material y la distribución porcentual visible."},
     {"step":2,"show_entity_ids":["method-2"],"instruction":"Presentar el método por metro lineal y los divisores visibles."},
     {"step":3,"show_entity_ids":["method-3"],"instruction":"Presentar el método por consumo de tableros sin completar la frase final más allá de lo visible."},
     {"step":4,"show_entity_ids":["method-4","carpenter","bottom-elements"],"instruction":"Presentar mano de obra y el cierre visual de los tres elementos."}
   ],
-  "reconstruction":{"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
-  "accessibility":{"summary":"Infografía vertical con cuatro formas de referencia para cotizar carpintería: consumo de material, metro lineal, consumo de tableros y mano de obra; incluye porcentajes, divisores e iconos de calculadora, cinta, tableros, herramientas y carpintero."},
-  "review":{"status":"VISUALLY_VERIFIED","notes":"Preservar la repetición visible del rótulo «Administración,Imprevistos y Utilidades» y la frase incompleta «Calcular el costo por tablero y dividir»; no completar por inferencia."}
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false,"render_contract":"normalized-2d-v1"},
+  "accessibility": {"summary":"Infografía vertical con cuatro formas de referencia para cotizar carpintería: consumo de material, metro lineal, consumo de tableros y mano de obra; incluye porcentajes y divisores visibles de la fuente. La reconstrucción usa zonas semánticas no métricas y no a escala."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar la repetición visible del rótulo «Administración,Imprevistos y Utilidades» y la frase incompleta «Calcular el costo por tablero y dividir»; no completar por inferencia. Los porcentajes y divisores son texto de la fuente, no fórmulas universales ni MeasurementSpecs. Zonas normalizadas no métricas y no a escala."}
 }
