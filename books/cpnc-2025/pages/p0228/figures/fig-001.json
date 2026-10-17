@@ -3,30 +3,135 @@
   "page_id": "PAGE-CPNC-2025-P0228",
   "type": "mixed",
   "purpose": "Recrear la infografía de referencias estándar para escaleras conservando literalmente las cifras y etiquetas visibles sin inferir unidades ausentes.",
-  "source": {"book_id":"cpnc-2025","pdf_page":228,"printed_page":206,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.98,"review_status":"VISUALLY_VERIFIED"}},
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 228,
+    "printed_page": 206,
+    "region": {"x": 0.02, "y": 0.02, "width": 0.96, "height": 0.96},
+    "extraction": {"method": "visual", "confidence": 0.98, "review_status": "VISUALLY_VERIFIED"}
+  },
   "entities": [
-    {"id":"stair-profile","type":"stair_side_profile","geometry":{"precision":"approximate"}},
-    {"id":"formula-box","type":"stair_formula_reference","geometry":{"precision":"approximate"}},
-    {"id":"low-traffic-pair","type":"tread_riser_reference_low_traffic","geometry":{"precision":"approximate"}},
-    {"id":"comfort-pair","type":"tread_riser_reference_maximum_comfort","geometry":{"precision":"approximate"}},
-    {"id":"exterior-pair","type":"tread_riser_reference_exterior","geometry":{"precision":"approximate"}},
-    {"id":"horizontal-step","type":"horizontal_step_length_reference","geometry":{"precision":"approximate"}}
+    {
+      "id": "stair-profile",
+      "type": "stair_side_profile",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.08, "y": 0.20, "width": 0.48, "height": 0.48}
+      }
+    },
+    {
+      "id": "formula-box",
+      "type": "stair_formula_reference",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.60, "y": 0.08, "width": 0.32, "height": 0.16}
+      }
+    },
+    {
+      "id": "low-traffic-pair",
+      "type": "tread_riser_reference_low_traffic",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.62, "y": 0.30, "width": 0.30, "height": 0.12}
+      }
+    },
+    {
+      "id": "comfort-pair",
+      "type": "tread_riser_reference_maximum_comfort",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.62, "y": 0.48, "width": 0.30, "height": 0.12}
+      }
+    },
+    {
+      "id": "exterior-pair",
+      "type": "tread_riser_reference_exterior",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.62, "y": 0.66, "width": 0.30, "height": 0.14}
+      }
+    },
+    {
+      "id": "horizontal-step",
+      "type": "horizontal_step_length_reference",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.16, "y": 0.76, "width": 0.38, "height": 0.12}
+      }
+    }
   ],
   "relationships": [
-    {"from":"low-traffic-pair","to":"stair-profile","type":"annotates"},
-    {"from":"comfort-pair","to":"stair-profile","type":"annotates"},
-    {"from":"exterior-pair","to":"stair-profile","type":"annotates"},
-    {"from":"horizontal-step","to":"stair-profile","type":"annotates"}
+    {"from": "low-traffic-pair", "to": "stair-profile", "type": "annotates"},
+    {"from": "comfort-pair", "to": "stair-profile", "type": "annotates"},
+    {"from": "exterior-pair", "to": "stair-profile", "type": "annotates"},
+    {"from": "horizontal-step", "to": "stair-profile", "type": "annotates"}
   ],
   "measurements": [],
   "annotations": [
-    {"target_entity_id":"formula-box","text":"La fuente imprime literalmente: 2 contrahuellas + 1 huella = 0.63cm; puede variar de 0.61 a 0.65"},
-    {"target_entity_id":"low-traffic-pair","text":"Huella 0.21; contrahuella 0.21; lugares poco transitados"},
-    {"target_entity_id":"comfort-pair","text":"Huella 0.29; contrahuella 0.17; máxima comodidad"},
-    {"target_entity_id":"exterior-pair","text":"Escaleras exteriores: huella 0.39; contrahuella 0.12; anotación superior pequeña no normalizada"},
-    {"target_entity_id":"horizontal-step","text":".63 Longitud Horizontal de un paso"}
+    {
+      "id": "ann-formula-box",
+      "target_entity_id": "formula-box",
+      "text": "La fuente imprime literalmente: 2 contrahuellas + 1 huella = 0.63cm; puede variar de 0.61 a 0.65",
+      "placement": {"x": 0.60, "y": 0.04, "precision": "approximate"}
+    },
+    {
+      "id": "ann-low-traffic-pair",
+      "target_entity_id": "low-traffic-pair",
+      "text": "Huella 0.21; contrahuella 0.21; lugares poco transitados",
+      "placement": {"x": 0.62, "y": 0.26, "precision": "approximate"}
+    },
+    {
+      "id": "ann-comfort-pair",
+      "target_entity_id": "comfort-pair",
+      "text": "Huella 0.29; contrahuella 0.17; máxima comodidad",
+      "placement": {"x": 0.62, "y": 0.44, "precision": "approximate"}
+    },
+    {
+      "id": "ann-exterior-pair",
+      "target_entity_id": "exterior-pair",
+      "text": "Escaleras exteriores: huella 0.39; contrahuella 0.12; anotación superior pequeña no normalizada",
+      "placement": {"x": 0.62, "y": 0.62, "precision": "approximate"}
+    },
+    {
+      "id": "ann-horizontal-step",
+      "target_entity_id": "horizontal-step",
+      "text": ".63 Longitud Horizontal de un paso",
+      "placement": {"x": 0.16, "y": 0.72, "precision": "approximate"}
+    }
   ],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility": {"summary":"Infografía con una escalera en perfil, fórmula de relación entre contrahuellas y huella y tres pares de referencias geométricas."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"No se normalizan MeasurementSpecs porque varias cotas carecen de unidad explícita y la fórmula imprime una unidad potencialmente inconsistente que debe preservarse sin corrección."}
+  "reconstruction": {
+    "preferred_renderer": "svg",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
+  },
+  "camera": {
+    "coordinate_space": "normalized_figure",
+    "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+  },
+  "layers": [
+    {
+      "id": "geometry",
+      "order": 10,
+      "entity_ids": ["stair-profile", "formula-box", "low-traffic-pair", "comfort-pair", "exterior-pair", "horizontal-step"]
+    },
+    {
+      "id": "labels",
+      "order": 20,
+      "annotation_ids": ["ann-formula-box", "ann-low-traffic-pair", "ann-comfort-pair", "ann-exterior-pair", "ann-horizontal-step"]
+    }
+  ],
+  "accessibility": {
+    "summary": "Representación pedagógica simplificada de la infografía de referencias para escaleras mostrada por la fuente. La geometría normalizada es no métrica y no está a escala. La fórmula impresa 2 contrahuellas + 1 huella = 0.63cm se conserva literalmente, sin corregir su unidad, y las demás cifras permanecen como referencias textuales cuando la fuente no fija unidades explícitas. CarpiNova no presenta estas referencias como código o norma de construcción, cálculo de escalera, diseño estructural, certificación de seguridad, plano de fabricación ni plantilla de obra. La anotación superior pequeña de la referencia exterior permanece sin normalizar porque su lectura no está resuelta."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Las coordenadas y rectángulos son zonas semánticas aproximadas, no perfiles literales de peldaños ni dimensiones físicas. Se conserva exactamente el texto fuente 0.63cm y no se asignan unidades a 0.61, 0.65, 0.21, 0.29, 0.17, 0.39, 0.12 o .63. No se derivan pendiente, relación huella/contrahuella, número de peldaños, altura total, desarrollo total, cumplimiento normativo, seguridad estructural ni cálculo constructivo. La anotación superior pequeña de la referencia exterior permanece sin resolver en vez de inventarse. No se importan valores ni afirmaciones de páginas vecinas."
+  }
 }
