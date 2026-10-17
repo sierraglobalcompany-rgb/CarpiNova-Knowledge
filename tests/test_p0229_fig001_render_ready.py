@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import itertools
 import json
 from pathlib import Path
 
@@ -181,7 +182,7 @@ def test_p0229_fig001_uses_only_normalized_approximate_rect_zones_in_source_grid
         assert x_positions == sorted(x_positions)
         assert len(set(x_positions)) == 3
 
-    for upper_row, lower_row in zip(rows, rows[1:], strict=False):
+    for upper_row, lower_row in itertools.pairwise(rows):
         upper_y = [
             entities[entity_id]["geometry"]["bounds"]["y"] for entity_id in upper_row
         ]
