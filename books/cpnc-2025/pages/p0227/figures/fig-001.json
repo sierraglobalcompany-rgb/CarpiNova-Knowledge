@@ -3,28 +3,127 @@
   "page_id": "PAGE-CPNC-2025-P0227",
   "type": "mixed",
   "purpose": "Recrear las fijaciones del soporte de T.V. al tablón y el sistema de chaflán mostrado por la fuente.",
-  "source": {"book_id":"cpnc-2025","pdf_page":227,"printed_page":205,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 227,
+    "printed_page": 205,
+    "region": {"x": 0.02, "y": 0.02, "width": 0.96, "height": 0.96},
+    "extraction": {"method": "visual", "confidence": 0.99, "review_status": "VISUALLY_VERIFIED"}
+  },
   "entities": [
-    {"id":"particleboard","type":"particleboard_panel","geometry":{"precision":"approximate"}},
-    {"id":"tv-bracket","type":"tv_wall_mount_bracket","geometry":{"precision":"approximate"}},
-    {"id":"direct-screw","type":"direct_fastener","geometry":{"precision":"approximate"}},
-    {"id":"through-bolt","type":"through_fastener_with_washer","geometry":{"precision":"approximate"}},
-    {"id":"wall-cleat","type":"wall_chamfer_piece","geometry":{"precision":"approximate"}},
-    {"id":"board-cleat","type":"board_chamfer_piece","geometry":{"precision":"approximate"}}
+    {
+      "id": "particleboard",
+      "type": "particleboard_panel",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.08, "y": 0.18, "width": 0.48, "height": 0.46}
+      }
+    },
+    {
+      "id": "tv-bracket",
+      "type": "tv_wall_mount_bracket",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.20, "y": 0.28, "width": 0.22, "height": 0.18}
+      }
+    },
+    {
+      "id": "direct-screw",
+      "type": "direct_fastener",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.12, "y": 0.12, "width": 0.12, "height": 0.12}
+      }
+    },
+    {
+      "id": "through-bolt",
+      "type": "through_fastener_with_washer",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.46, "y": 0.24, "width": 0.10, "height": 0.22}
+      }
+    },
+    {
+      "id": "wall-cleat",
+      "type": "wall_chamfer_piece",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.64, "y": 0.22, "width": 0.14, "height": 0.24}
+      }
+    },
+    {
+      "id": "board-cleat",
+      "type": "board_chamfer_piece",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.76, "y": 0.34, "width": 0.14, "height": 0.24}
+      }
+    }
   ],
   "relationships": [
-    {"from":"tv-bracket","to":"particleboard","type":"fastened_to"},
-    {"from":"direct-screw","to":"particleboard","type":"fastens"},
-    {"from":"through-bolt","to":"particleboard","type":"passes_through"},
-    {"from":"wall-cleat","to":"board-cleat","type":"interlocks_with"}
+    {"from": "tv-bracket", "to": "particleboard", "type": "fastened_to"},
+    {"from": "direct-screw", "to": "particleboard", "type": "fastens"},
+    {"from": "through-bolt", "to": "particleboard", "type": "passes_through"},
+    {"from": "wall-cleat", "to": "board-cleat", "type": "interlocks_with"}
   ],
-  "measurements": ["MEAS-CPNC-2025-P0227-001","MEAS-CPNC-2025-P0227-002","MEAS-CPNC-2025-P0227-003"],
+  "measurements": [
+    "MEAS-CPNC-2025-P0227-001",
+    "MEAS-CPNC-2025-P0227-002",
+    "MEAS-CPNC-2025-P0227-003"
+  ],
   "annotations": [
-    {"target_entity_id":"direct-screw","text":"1 pulgada x8 según la fuente"},
-    {"target_entity_id":"through-bolt","text":"Pasante, asegurado atrás con arandela"},
-    {"target_entity_id":"wall-cleat","text":"Sistema de chaflán: dos piezas con corte de 45°"}
+    {
+      "id": "ann-direct-screw",
+      "target_entity_id": "direct-screw",
+      "text": "1 pulgada x8 según la fuente",
+      "placement": {"x": 0.08, "y": 0.07, "precision": "approximate"}
+    },
+    {
+      "id": "ann-through-bolt",
+      "target_entity_id": "through-bolt",
+      "text": "Pasante, asegurado atrás con arandela",
+      "placement": {"x": 0.43, "y": 0.14, "precision": "approximate"}
+    },
+    {
+      "id": "ann-wall-cleat",
+      "target_entity_id": "wall-cleat",
+      "text": "Sistema de chaflán: dos piezas con corte de 45°",
+      "placement": {"x": 0.62, "y": 0.12, "precision": "approximate"}
+    }
   ],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility": {"summary":"Tablón de aglomerado con soporte de T.V., dos alternativas de fijación y un encaje de dos piezas a 45 grados entre pared y tablero."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"La cifra de 120 kgf se conserva como afirmación de la fuente; no se extrapola a una capacidad estructural general ni a configuraciones no mostradas."}
+  "reconstruction": {
+    "preferred_renderer": "svg",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
+  },
+  "camera": {
+    "coordinate_space": "normalized_figure",
+    "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+  },
+  "layers": [
+    {
+      "id": "geometry",
+      "order": 10,
+      "entity_ids": ["particleboard", "tv-bracket", "direct-screw", "through-bolt", "wall-cleat", "board-cleat"]
+    },
+    {
+      "id": "labels",
+      "order": 20,
+      "annotation_ids": ["ann-direct-screw", "ann-through-bolt", "ann-wall-cleat"]
+    }
+  ],
+  "accessibility": {
+    "summary": "Representación pedagógica simplificada de las fijaciones del soporte de T.V. al tablón y del sistema de chaflán de dos piezas mostrado por la fuente. La geometría normalizada es no métrica y no está a escala. La referencia de 120 kgf se conserva únicamente como afirmación de la fuente sobre la extracción de un solo tornillo del aglomerado en el contexto ilustrado; CarpiNova no la verifica ni certifica como carga segura, capacidad del soporte de T.V. o capacidad estructural. Las referencias 1 pulgada x8 y 45° se conservan en el contexto descrito por la fuente y no se presentan como especificaciones universales. No es un diseño estructural, cálculo de carga segura, especificación de anclaje o soporte, certificación de tablero o pared, plano de fabricación ni plantilla de perforación."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "La cifra de 120 kgf se conserva como afirmación de la fuente; no se extrapola a una capacidad estructural general, carga segura, capacidad certificada del soporte de T.V. ni a configuraciones no mostradas. Las coordenadas son aproximadas y representan solamente zonas semánticas relativas, no perfiles literales del tornillo, arandela, soporte, tablón o piezas de chaflán. El corte de 45° permanece como medida y etiqueta respaldada por la fuente, no como geometría literal del rectángulo normalizado. No se establecen espesor o grado del tablero, modelo del soporte, material o rosca del tornillo más allá del texto fuente, arandela, número de fijaciones, factores de seguridad, cargas dinámicas, calidad de instalación ni requisitos locales. No se importan valores ni afirmaciones de páginas vecinas."
+  }
 }
