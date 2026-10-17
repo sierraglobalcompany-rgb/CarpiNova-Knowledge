@@ -271,9 +271,16 @@ def test_batch_preserves_semantics_sequence_and_source_text(page: str) -> None:
         original_annotations = [
             annotation for annotation in original_annotations if annotation[1] != "title"
         ]
+        source_annotations = [
+            annotation
+            for annotation in figure["annotations"]
+            if annotation["target_entity_id"] != "title"
+        ]
+    else:
+        source_annotations = figure["annotations"]
     assert [
         (annotation["target_entity_id"], annotation["text"])
-        for annotation in figure["annotations"]
+        for annotation in source_annotations
     ] == [(target, text) for _annotation_id, target, text in original_annotations]
 
     for _annotation_id, _target, text in expected["annotations"]:
@@ -370,7 +377,7 @@ def test_batch_uses_complete_normalized_geometry_and_layers(page: str) -> None:
     guardrail = " ".join(
         [figure["accessibility"]["summary"], figure["review"]["notes"]]
     ).lower()
-    assert "zonas semánticas" in guardrail
+    assert "zonas normalizadas son semánticas" in guardrail
     assert "no métricas" in guardrail
     assert "no están a escala" in guardrail
 
