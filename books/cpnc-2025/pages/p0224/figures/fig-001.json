@@ -3,26 +3,117 @@
   "page_id": "PAGE-CPNC-2025-P0224",
   "type": "mixed",
   "purpose": "Recrear la infografía de medidas estándar de estudios con sus referencias de altura, profundidad y ejemplos de distribución.",
-  "source": {"book_id":"cpnc-2025","pdf_page":224,"printed_page":202,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 224,
+    "printed_page": 202,
+    "region": {"x": 0.02, "y": 0.02, "width": 0.96, "height": 0.96},
+    "extraction": {"method": "visual", "confidence": 0.99, "review_status": "VISUALLY_VERIFIED"}
+  },
   "entities": [
-    {"id":"desk","type":"study_desk","geometry":{"precision":"approximate"}},
-    {"id":"chair","type":"office_chair","geometry":{"precision":"approximate"}},
-    {"id":"height-arrow","type":"desk_height_dimension","geometry":{"precision":"approximate"}},
-    {"id":"depth-arrow","type":"recommended_depth_dimension","geometry":{"precision":"approximate"}},
-    {"id":"study-examples","type":"study_layout_examples","geometry":{"precision":"approximate"}}
+    {
+      "id": "desk",
+      "type": "study_desk",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.24, "y": 0.34, "width": 0.52, "height": 0.18}
+      }
+    },
+    {
+      "id": "chair",
+      "type": "office_chair",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.40, "y": 0.60, "width": 0.20, "height": 0.20}
+      }
+    },
+    {
+      "id": "height-arrow",
+      "type": "desk_height_dimension",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.12, "y": 0.32, "width": 0.08, "height": 0.38}
+      }
+    },
+    {
+      "id": "depth-arrow",
+      "type": "recommended_depth_dimension",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.28, "y": 0.20, "width": 0.44, "height": 0.08}
+      }
+    },
+    {
+      "id": "study-examples",
+      "type": "study_layout_examples",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.68, "y": 0.62, "width": 0.24, "height": 0.22}
+      }
+    }
   ],
   "relationships": [
-    {"from":"height-arrow","to":"desk","type":"dimensions"},
-    {"from":"depth-arrow","to":"desk","type":"dimensions"},
-    {"from":"chair","to":"desk","type":"used_with"}
+    {"from": "height-arrow", "to": "desk", "type": "dimensions"},
+    {"from": "depth-arrow", "to": "desk", "type": "dimensions"},
+    {"from": "chair", "to": "desk", "type": "used_with"}
   ],
-  "measurements": ["MEAS-CPNC-2025-P0224-001","MEAS-CPNC-2025-P0224-002","MEAS-CPNC-2025-P0224-003"],
+  "measurements": [
+    "MEAS-CPNC-2025-P0224-001",
+    "MEAS-CPNC-2025-P0224-002",
+    "MEAS-CPNC-2025-P0224-003"
+  ],
   "annotations": [
-    {"target_entity_id":"height-arrow","text":"75 cm; la fuente también imprime (29.5–31.4 in)"},
-    {"target_entity_id":"depth-arrow","text":"50–70 cm; la fuente también imprime (19–27 in)"},
-    {"target_entity_id":"study-examples","text":"Ejemplos de estudios, incluido escritorio doble"}
+    {
+      "id": "ann-height-arrow",
+      "target_entity_id": "height-arrow",
+      "text": "75 cm; la fuente también imprime (29.5–31.4 in)",
+      "placement": {"x": 0.05, "y": 0.28, "precision": "approximate"}
+    },
+    {
+      "id": "ann-depth-arrow",
+      "target_entity_id": "depth-arrow",
+      "text": "50–70 cm; la fuente también imprime (19–27 in)",
+      "placement": {"x": 0.28, "y": 0.10, "precision": "approximate"}
+    },
+    {
+      "id": "ann-study-examples",
+      "target_entity_id": "study-examples",
+      "text": "Ejemplos de estudios, incluido escritorio doble",
+      "placement": {"x": 0.64, "y": 0.56, "precision": "approximate"}
+    }
   ],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility": {"summary":"Infografía de un escritorio con silla que indica 75 cm de altura, profundidad recomendada de 50 a 70 cm y ejemplos de estudios."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"Las equivalencias en pulgadas se conservan como texto de fuente; no se corrigen ni se convierten en medidas normalizadas."}
+  "reconstruction": {
+    "preferred_renderer": "svg",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
+  },
+  "camera": {
+    "coordinate_space": "normalized_figure",
+    "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+  },
+  "layers": [
+    {
+      "id": "geometry",
+      "order": 10,
+      "entity_ids": ["desk", "chair", "height-arrow", "depth-arrow", "study-examples"]
+    },
+    {
+      "id": "labels",
+      "order": 20,
+      "annotation_ids": ["ann-height-arrow", "ann-depth-arrow", "ann-study-examples"]
+    }
+  ],
+  "accessibility": {
+    "summary": "Representación pedagógica simplificada de la infografía de estudio de la fuente: 75 cm como altura indicada y 50–70 cm como profundidad recomendada en ese contexto, además de ejemplos de estudios. La geometría normalizada es no métrica y no está a escala. CarpiNova conserva estas referencias en su contexto de escritorio/estudio y no las certifica como una regla universal ergonómica, médica, arquitectónica, de accesibilidad o de fabricación. Las cadenas de pulgadas impresas por la fuente se conservan literalmente y no se recalculan. No es un plano de fabricación, un plano de recinto, una especificación de despejes ni una certificación de puesto de trabajo."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Las coordenadas son aproximadas y representan únicamente zonas semánticas relativas para visualización pedagógica; no expresan medidas físicas, proporciones de mobiliario, ángulos, distancias ni reglas de salud o ergonomía. Los valores 75 cm, 50 cm y 70 cm permanecen como referencias canónicas de la fuente en el contexto de estudio/escritorio. Las equivalencias impresas (29.5–31.4 in) y (19–27 in) se preservan como texto de fuente, no se corrigen, recalculan ni convierten en medidas normalizadas. No se importan valores ni afirmaciones de páginas vecinas."
+  }
 }
