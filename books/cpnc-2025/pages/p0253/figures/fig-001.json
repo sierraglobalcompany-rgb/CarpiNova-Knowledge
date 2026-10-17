@@ -20,15 +20,15 @@
     }
   },
   "entities": [
-    {"id":"title","type":"title_block","geometry":{"primitive":"text","precision":"approximate","bounding_box":{"x":0.08,"y":0.07,"width":0.84,"height":0.12}},"description":"Título ¿PARA QUÉ SIRVE LA ORDEN DE PRODUCCIÓN?."},
-    {"id":"environment-design","type":"before_after_design_block","geometry":{"primitive":"illustration_and_text","precision":"approximate","bounding_box":{"x":0.08,"y":0.20,"width":0.47,"height":0.23}},"description":"Bloque DISEÑO DEL AMBIENTE con representación ANTES y DESPUÉS de un centro de entretenimiento."},
-    {"id":"materials-list","type":"materials_block","geometry":{"primitive":"illustration_and_text","precision":"approximate","bounding_box":{"x":0.58,"y":0.20,"width":0.34,"height":0.20}},"description":"Bloque LISTA DE MATERIALES con tablero, tornillería y adhesivo."},
-    {"id":"installation-left","type":"installation_observations_block","geometry":{"primitive":"illustration_and_text","precision":"approximate","bounding_box":{"x":0.09,"y":0.43,"width":0.43,"height":0.20}},"description":"Primer bloque visible OBSERVACIONES Y CARACTERÍSTICAS DE INSTALACIÓN con módulo, adhesivo y elementos de fijación."},
-    {"id":"installation-right","type":"installation_observations_block","geometry":{"primitive":"illustration_and_text","precision":"approximate","bounding_box":{"x":0.55,"y":0.41,"width":0.38,"height":0.23}},"description":"Segundo bloque visible OBSERVACIONES Y CARACTERÍSTICAS DE INSTALACIÓN con MURO y distintos anclajes."},
-    {"id":"delivery-checklist","type":"delivery_checklist_block","geometry":{"primitive":"illustration_and_text","precision":"approximate","bounding_box":{"x":0.08,"y":0.64,"width":0.44,"height":0.27}},"description":"Bloque LISTA DE CHEQUEO DE ENTREGA con carpeta ANTICIPO, documento AVANCES, lista de chequeo e identificación."},
-    {"id":"satisfaction","type":"satisfaction_survey_block","geometry":{"primitive":"illustration_and_text","precision":"approximate","bounding_box":{"x":0.53,"y":0.64,"width":0.39,"height":0.18}},"description":"Bloque ENCUESTA DE SATISFACCIÓN con PUNTUALIDAD, LIMPIEZA e INSTALACIÓN."},
-    {"id":"operators","type":"operators_data_block","geometry":{"primitive":"text","precision":"approximate","bounding_box":{"x":0.57,"y":0.81,"width":0.32,"height":0.08}},"description":"Rótulo DATOS DE LOS OPERARIOS."},
-    {"id":"conclusion","type":"conclusion_text","geometry":{"primitive":"text","precision":"approximate","bounding_box":{"x":0.53,"y":0.88,"width":0.40,"height":0.08}},"description":"Texto final: La orden de producción evita confusiones y garantiza una experiencia profesional."}
+    {"id":"title","type":"title_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.08,"y":0.07,"width":0.84,"height":0.12}},"description":"Título ¿PARA QUÉ SIRVE LA ORDEN DE PRODUCCIÓN?."},
+    {"id":"environment-design","type":"before_after_design_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.08,"y":0.2,"width":0.47,"height":0.23}},"description":"Bloque DISEÑO DEL AMBIENTE con representación ANTES y DESPUÉS de un centro de entretenimiento."},
+    {"id":"materials-list","type":"materials_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.58,"y":0.2,"width":0.34,"height":0.2}},"description":"Bloque LISTA DE MATERIALES con tablero, tornillería y adhesivo."},
+    {"id":"installation-left","type":"installation_observations_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.09,"y":0.43,"width":0.43,"height":0.2}},"description":"Primer bloque visible OBSERVACIONES Y CARACTERÍSTICAS DE INSTALACIÓN con módulo, adhesivo y elementos de fijación."},
+    {"id":"installation-right","type":"installation_observations_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.55,"y":0.41,"width":0.38,"height":0.23}},"description":"Segundo bloque visible OBSERVACIONES Y CARACTERÍSTICAS DE INSTALACIÓN con MURO y distintos anclajes."},
+    {"id":"delivery-checklist","type":"delivery_checklist_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.08,"y":0.64,"width":0.44,"height":0.27}},"description":"Bloque LISTA DE CHEQUEO DE ENTREGA con carpeta ANTICIPO, documento AVANCES, lista de chequeo e identificación."},
+    {"id":"satisfaction","type":"satisfaction_survey_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.53,"y":0.64,"width":0.39,"height":0.18}},"description":"Bloque ENCUESTA DE SATISFACCIÓN con PUNTUALIDAD, LIMPIEZA e INSTALACIÓN."},
+    {"id":"operators","type":"operators_data_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.57,"y":0.81,"width":0.32,"height":0.08}},"description":"Rótulo DATOS DE LOS OPERARIOS."},
+    {"id":"conclusion","type":"conclusion_text","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.53,"y":0.88,"width":0.4,"height":0.08}},"description":"Texto final: La orden de producción evita confusiones y garantiza una experiencia profesional."}
   ],
   "relationships": [
     {"from":"title","to":"environment-design","type":"introduces"},
@@ -42,17 +42,21 @@
   ],
   "measurements": [],
   "annotations": [
-    {"target_entity_id":"title","text":"¿PARA QUÉ SIRVE LA ORDEN DE PRODUCCIÓN?"},
-    {"target_entity_id":"environment-design","text":"DISEÑO DEL AMBIENTE / ANTES / DESPUÉS"},
-    {"target_entity_id":"materials-list","text":"LISTA DE MATERIALES"},
-    {"target_entity_id":"installation-left","text":"OBSERVACIONES Y CARACTERÍSTICAS DE INSTALACIÓN"},
-    {"target_entity_id":"installation-right","text":"OBSERVACIONES Y CARACTERÍSTICAS DE INSTALACIÓN / MURO"},
-    {"target_entity_id":"delivery-checklist","text":"LISTA DE CHEQUEO DE ENTREGA / ANTICIPO / AVANCES"},
-    {"target_entity_id":"satisfaction","text":"ENCUESTA DE SATISFACCIÓN / PUNTUALIDAD / LIMPIEZA / INSTALACIÓN"},
-    {"target_entity_id":"operators","text":"DATOS DE LOS OPERARIOS"},
-    {"target_entity_id":"conclusion","text":"La orden de producción evita confusiones y garantiza una experiencia profesional."}
+    {"id":"ann-title","target_entity_id":"title","text":"¿PARA QUÉ SIRVE LA ORDEN DE PRODUCCIÓN?","placement":{"x":0.08,"y":0.09,"precision":"approximate"}},
+    {"id":"ann-environment-design","target_entity_id":"environment-design","text":"DISEÑO DEL AMBIENTE / ANTES / DESPUÉS","placement":{"x":0.08,"y":0.23,"precision":"approximate"}},
+    {"id":"ann-materials-list","target_entity_id":"materials-list","text":"LISTA DE MATERIALES","placement":{"x":0.58,"y":0.23,"precision":"approximate"}},
+    {"id":"ann-installation-left","target_entity_id":"installation-left","text":"OBSERVACIONES Y CARACTERÍSTICAS DE INSTALACIÓN","placement":{"x":0.09,"y":0.46,"precision":"approximate"}},
+    {"id":"ann-installation-right","target_entity_id":"installation-right","text":"OBSERVACIONES Y CARACTERÍSTICAS DE INSTALACIÓN / MURO","placement":{"x":0.38,"y":0.5,"precision":"approximate"}},
+    {"id":"ann-delivery-checklist","target_entity_id":"delivery-checklist","text":"LISTA DE CHEQUEO DE ENTREGA / ANTICIPO / AVANCES","placement":{"x":0.08,"y":0.69,"precision":"approximate"}},
+    {"id":"ann-satisfaction","target_entity_id":"satisfaction","text":"ENCUESTA DE SATISFACCIÓN / PUNTUALIDAD / LIMPIEZA / INSTALACIÓN","placement":{"x":0.32,"y":0.75,"precision":"approximate"}},
+    {"id":"ann-operators","target_entity_id":"operators","text":"DATOS DE LOS OPERARIOS","placement":{"x":0.57,"y":0.84,"precision":"approximate"}},
+    {"id":"ann-conclusion","target_entity_id":"conclusion","text":"La orden de producción evita confusiones y garantiza una experiencia profesional.","placement":{"x":0.08,"y":0.93,"precision":"approximate"}}
   ],
-  "camera": {"view":"front","projection":"orthographic"},
+  "camera": {"coordinate_space":"normalized_figure","viewport":{"x":0,"y":0,"width":1,"height":1}},
+  "layers": [
+    {"id":"geometry","order":10,"entity_ids":["title","environment-design","materials-list","installation-left","installation-right","delivery-checklist","satisfaction","operators","conclusion"]},
+    {"id":"labels","order":20,"annotation_ids":["ann-title","ann-environment-design","ann-materials-list","ann-installation-left","ann-installation-right","ann-delivery-checklist","ann-satisfaction","ann-operators","ann-conclusion"]}
+  ],
   "visual_style": {"format":"infografía educativa","layout":"rejilla de bloques ilustrados","palette":"azul, beige, gris, negro y blanco","linework":"ilustración vectorial de contorno oscuro","caption_style":"encabezados mayúsculos grandes"},
   "educational_sequence": [
     {"step":1,"show_entity_ids":["title","environment-design","materials-list"],"instruction":"Presentar el propósito de la orden de producción y sus bloques de diseño y materiales."},
@@ -60,7 +64,7 @@
     {"step":3,"show_entity_ids":["delivery-checklist","satisfaction"],"instruction":"Mostrar controles de entrega, avances y satisfacción del cliente."},
     {"step":4,"show_entity_ids":["operators","conclusion"],"instruction":"Cerrar con los datos de operarios y el mensaje de reducción de confusiones y profesionalismo."}
   ],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
-  "accessibility": {"summary":"Infografía sobre la orden de producción: diseño del ambiente, materiales, observaciones de instalación, lista de chequeo de entrega, encuesta de satisfacción y datos de operarios. El encabezado de observaciones y características de instalación aparece dos veces."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar la duplicación visible del encabezado «OBSERVACIONES Y CARACTERÍSTICAS DE INSTALACIÓN»; no deduplicar ni reinterpretar por inferencia."}
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false,"render_contract":"normalized-2d-v1"},
+  "accessibility": {"summary":"Infografía sobre la orden de producción: diseño del ambiente, materiales, observaciones de instalación, lista de chequeo de entrega, encuesta de satisfacción y datos de operarios. El encabezado de observaciones y características de instalación aparece dos veces. Las zonas normalizadas son semánticas, no métricas y no están a escala; no representan medidas de fabricación."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar la duplicación visible del encabezado «OBSERVACIONES Y CARACTERÍSTICAS DE INSTALACIÓN»; no deduplicar ni reinterpretar por inferencia. Las zonas normalizadas son semánticas, no métricas y no están a escala; no representan medidas de fabricación."}
 }
