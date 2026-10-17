@@ -1,116 +1,137 @@
 # CarpiNova Knowledge — Agent Instructions
 
-These are durable repository guardrails for ChatGPT, Codex, Copilot, and other agents. They do not replace live GitHub state, exact-head CI, the canonical source, or the current recovery handoff.
+These are durable repository guardrails for ChatGPT, Codex, Copilot, and other agents. They are intentionally compact. Live GitHub state and canonical source evidence remain authoritative for current facts.
 
-## Authority
+## Authority and recovery
 
 When facts conflict, use this precedence:
 
-1. live GitHub state, exact HEAD files, exact-head CI and published agent/Codex delta;
-2. canonical source-backed Knowledge records;
-3. current approved contract/checkpoint;
-4. current handoff/audit document;
-5. historical documents or memory.
+1. live GitHub state: exact `main`, branch/PR heads, compare, CI, reviews and open issues;
+2. canonical source-backed Knowledge records for carpentry facts and provenance;
+3. these durable `AGENTS.md` rules;
+4. the active issue/PR contract or checkpoint for the current work item;
+5. `README.md` and current release records;
+6. historical documents, old checkpoints or memory.
 
-`CarpiNova-Knowledge` is the canonical structured source of truth. Consumers must not silently reinterpret, complete, or correct canonical records.
+A new chat/session must recover state from the repositories, not from memory: read `AGENTS.md`, `README.md`, fresh `main`, open issues/PRs, exact diffs and exact-head CI before continuing.
 
-## Master laws
+`CarpiNova-Knowledge` is the canonical structured source of truth. Consumers must not silently reinterpret, complete or correct canonical records.
 
-### KISS — smallest correct solution
+## The four master laws
+
+These four laws apply to every change. They are not optional review notes.
+
+### 1. KISS — smallest correct path
 
 Apply this order:
 
 `CORRECTO -> SIMPLE -> EFICIENTE -> OPTIMIZADO -> EFICAZ -> ESTABLE -> MANTENIBLE -> RAPIDO -> ESCALAR SOLO SI HACE FALTA`
 
-Prefer `A -> B` when it solves the problem correctly. Do not add frameworks, plugin systems, parallel renderers, generic helpers, schema expansion, backend services, or abstractions for hypothetical future needs.
+Prefer `A -> B` when it solves the problem correctly. Do not add frameworks, plugin systems, parallel renderers, generic helpers, schema expansion, backend services, compatibility layers, workflows or abstractions for hypothetical future needs.
 
-### Anti-noise
+A safeguard that costs more complexity than the risk it controls must be simplified. Repetition of audit ceremony is also complexity.
+
+### 2. Anti-noise — keep only useful truth
 
 Evaluate changes in this order:
 
 `DELETE? -> SIMPLIFY? -> REUSE? -> MERGE? -> OPTIMIZE? -> EXTEND? -> ADD?`
 
-Deletion requires evidence. Before deleting, check references, consumers, tests, workflows, provenance, unique historical evidence, reproducibility, rollback, and forensic value. If safety is not demonstrated, prefer `REVIEW` over `DELETE`.
+Do not accumulate stale docs, duplicate truth, copied plans, temporary workflows, obsolete branches, historical experiments or unrelated files.
 
-Do not carry stale docs, duplicate truth, temporary workflows, historical experiments, or unrelated files into a product PR.
+Deletion still requires evidence. Before deleting, check references, consumers, tests, workflows, provenance, reproducibility, rollback and unique forensic value. If safety is not demonstrated, classify `REVIEW` instead of guessing.
 
-### Anti-patch / root cause
+Git history is the default historical archive. Routine execution history does not need another committed Markdown copy.
+
+### 3. Anti-patch — root cause before fix
 
 Use this sequence:
 
 `OBSERVE -> REPRODUCE -> ISOLATE -> SOURCE AUDIT -> ROOT CAUSE -> REAL RED -> MINIMAL FIX -> REMOVE OBSOLETE WORKAROUND -> GREEN -> REGRESSION -> CONSUMER`
 
-Do not stack exceptions, flags, fallbacks, helpers, special cases, or figure-ID branches to force a green result.
+Do not stack exceptions, flags, fallbacks, helpers, compatibility hacks, figure-ID branches or special cases to force green.
 
-If the root cause cannot be stated in one clear sentence, stop before fixing.
+If the root cause cannot be stated clearly, stop before changing production behavior.
+
+### 4. Design law — clear, consistent, accessible, source-faithful
+
+Apply this order to user-visible/rendered behavior:
+
+`APPROVED DIRECTION -> TOKENS/CONTRACT -> HIERARCHY -> COMPONENTS -> STATES -> RESPONSIVE -> ACCESSIBILITY -> POLISH`
+
+Design must never become a second source of truth. A better-looking reconstruction may not invent dimensions, labels, relationships, geometry, URLs, QR payloads, capacities, tolerances or technical authority.
+
+Normalized geometry is presentation geometry, never a physical measurement.
+
+The external UI/UX Pro Max project (`nextlevelbuilder/ui-ux-pro-max-skill`) is an advisory design reference only. Reuse relevant principles; do **not** vendor its CLI, databases, search engine, framework or architecture into CarpiNova unless a separate demonstrated need is approved.
+
+The approved CarpiNova product mockup is the visual authority in `CarpiNova-PC`; Knowledge supplies source-faithful data/contracts, not UI aesthetics.
 
 ## Source fidelity
 
 - `SOURCE TRUTH > CANONICAL KNOWLEDGE > CONTRACT > TEST > IMPLEMENTATION`.
 - `UNRESOLVED > INVENTED`.
 - Preserve exact-source provenance page by page.
-- Never create manufacturing authority, dimensions, geometry, labels, relationships, capacities, angles, or tolerances that the source does not support.
-- Normalized coordinates are presentation geometry, not physical measurements.
-- Do not infer mm/cm/inches from bounds, proportions, placements, screenshots, OCR uncertainty, or neighboring figures.
-- Do not import measurements from another figure on the same page unless the canonical relationship explicitly supports it.
+- Never create manufacturing authority, dimensions, geometry, labels, relationships, capacities, angles or tolerances unsupported by the source.
+- Do not infer mm/cm/inches from bounds, proportions, placements, screenshots, OCR uncertainty or neighboring figures.
+- Do not import values from another figure/page unless the canonical relationship explicitly supports it.
 - Do not edit `books/cpnc-2025/distribution.json` merely to make a candidate eligible.
-- Distribution eligibility is a gate before RED/TDD work.
+- Distribution eligibility is checked before implementation.
 
 ## Figure contract
 
 - `normalized-2d-v1` is opt-in per FigureSpec through `reconstruction.render_contract`.
-- Legacy FigureSpec records remain valid without migration.
+- Legacy FigureSpec records remain valid without forced migration.
 - Reuse the existing contract when it fits source-faithfully.
-- Existing normalized primitives are `rect`, `line`, and `polyline`; annotations provide text.
-- A new primitive, schema field, renderer capability, or contract version requires a separate SOURCE/CONTRACT gate first.
+- Existing normalized primitives are `rect`, `line` and `polyline`; annotations provide text.
+- A new primitive, schema field, renderer capability or contract version requires a separate contract decision because it changes architecture.
 - Defer a figure rather than invent geometry or inflate schema/renderer for convenience.
-- Do not bump the Knowledge version merely because more existing figures become render-ready.
-- Every layer reference must be deterministic; entities and annotations must not be silently duplicated or omitted.
-- JSON semantic equality is more important than textual key order unless order is explicitly part of the contract.
+- Do not bump Knowledge version merely because more existing figures become render-ready.
+- Layer references must be deterministic; entities and annotations must not be silently duplicated or omitted.
 
-## Ten-pass audit before implementation
+## Default delivery flow — KISS batches
 
-Apply these ten checks to code, docs, prompts, and merge gates:
+Routine work using existing contracts follows:
 
-1. **Identity** — repo, owner, `main`, branch, PR, exact head, version.
-2. **Micro-objective** — one cause only; split independent work.
-3. **Source truth** — page, figure, text, inventory, measurements, relationships, annotations, provenance.
-4. **Contract fit / distribution** — `REUSE`, `EXTEND`, or `DEFER`; verify distribution eligibility before RED.
-5. **KISS** — remove unnecessary layers, helpers, primitives, frameworks, workflows, and side effects.
-6. **Anti-noise** — classify files as `NEEDED`, `RELATED_BUT_NOT_NEEDED`, or `UNRELATED`; only `NEEDED` enters the PR.
-7. **Anti-patch** — confirm root cause, not an exception.
-8. **TDD / QA** — real RED, correct failure, minimal GREEN, focal tests, full suite, lint/validator.
-9. **Consumer / regression** — real generated bundle and semantic assertions when consumer-visible behavior changes.
-10. **Governance** — fresh main/head/compare/CI/reviews/mergeability, expected-head merge, postmerge QA, cleanup, checkpoint.
+`SOURCE BATCH -> CONTRACT/DISTRIBUTION CHECK -> TDD IMPLEMENT -> KNOWLEDGE QA -> PC REAL-BUNDLE PROOF IF CONSUMER-VISIBLE -> MERGE -> POSTMERGE SMOKE -> CHECKPOINT/CLOSE`
 
-A material contradiction at any pass means `STOP` and re-audit; do not compensate with more architecture.
+Rules:
 
-## Change discipline
+- Prefer a cohesive batch of roughly 10–20 pages when source semantics and the same existing contract allow it. Reduce batch size when ambiguity or a new contract boundary appears.
+- One PR means one cohesive cause/batch, not necessarily one figure.
+- Routine figures using the existing contract do **not** require a temporary PC branch/workflow/PR per figure.
+- Do not create artificial STOP gates between every mechanical substep.
+- If an active issue explicitly freezes a next gate, honor that checkpoint; otherwise continue through the normal flow until the next material decision, failure or merge boundary.
 
-Before mutating:
+Use the older extended forensic sequence only when justified by one of these conditions:
 
-1. read fresh `main`;
-2. inspect open PRs/issues and any published Codex/agent delta;
-3. inspect exact branch/PR head and compare against `main`;
-4. freeze one micro-objective;
-5. identify allowed and forbidden files;
-6. define RED/GREEN evidence and STOP condition.
+- new schema/primitive/renderer/interaction/version/distribution behavior;
+- destructive migration or compatibility removal;
+- ambiguous or conflicting source truth;
+- unexplained CI/regression failure;
+- security-sensitive behavior;
+- a cross-repository change whose consumer impact is not already covered by the reusable proof path.
 
-Keep one PR to one cause. Do not mix product R5 work with README/governance cleanup.
+## Ten-pass audit
 
-Do not treat handoff SHAs, branch names, synthetic merge refs, historical green CI, or “Codex done” as future merge leases.
+Run these ten passes before implementation/merge; record only material findings, not ceremonial prose:
 
-## R5 figure-slice sequence
+1. **Identity** — repo, owner, exact `main`, branch/PR head, version.
+2. **Objective/batch** — one cohesive cause; split unrelated work.
+3. **Source truth** — page/figure/text/provenance/measurements/relationships/annotations.
+4. **Contract/distribution** — reuse, extend or defer; verify eligibility.
+5. **KISS** — remove unnecessary layers, helpers, workflows and side effects.
+6. **Anti-noise** — only files needed for the cause enter the PR; identify removable residue separately.
+7. **Anti-patch** — verify root cause and remove superseded workaround when safe.
+8. **Design fit** — for user-visible/render-ready changes, preserve source fidelity and consumer design constraints; mark `N/A` for data-only work.
+9. **QA/consumer** — real RED when behavior changes, minimal GREEN, full QA, and real-bundle proof when consumer-visible.
+10. **Governance/continuity** — fresh compare/CI/reviews/mergeability, expected-head merge, postmerge smoke and durable live-state checkpoint.
 
-Default sequence:
+A material contradiction means stop and re-audit; do not compensate by adding architecture.
 
-`SOURCE/DISCOVERY -> DISTRIBUTION -> CONTRACT FIT -> KISS/ANTI-NOISE -> FREEZE -> CHECKPOINT/STOP -> RED -> CHECKPOINT/STOP -> GREEN -> KNOWLEDGE QA -> CHECKPOINT/STOP -> PC PREMERGE PROOF -> CLEANUP ZERO DELTA -> MERGE READINESS -> EXPECTED-HEAD MERGE -> POSTMERGE KNOWLEDGE QA -> PC FULL-STATE PROOF -> CLEANUP ZERO DELTA -> FINAL CHECKPOINT -> CLOSED`
+## Required Knowledge QA
 
-One execution should advance only the currently frozen gate unless a larger scope was explicitly authorized. Do not chain the next slice automatically.
-
-## Required verification
-
-Run Knowledge QA before declaring a Knowledge change ready:
+Before declaring a Knowledge change ready:
 
 ```bash
 uv sync --all-groups
@@ -120,45 +141,52 @@ uv run python -m carpinova_knowledge validate --root .
 uv run python -m carpinova_knowledge report-pilot --root . --batch batch-000-pilot
 ```
 
-If a change affects consumer-visible bundles or FigureSpec behavior, also require consumer compatibility evidence against the intended exact `CarpiNova-PC` head using the real generated Knowledge bundle.
+For consumer-visible bundle/FigureSpec behavior, use the permanent exact-SHA consumer proof in `CarpiNova-PC` with the real generated bundle. Synthetic fixtures alone are insufficient, but page-specific consumer workflows should not be duplicated when Knowledge tests already own the semantics.
 
-A synthetic fixture alone is not sufficient consumer proof.
+## Documentation and continuity without noise
 
-## Temporary audit hygiene
+Use each surface for one purpose:
 
-Temporary consumer-proof workflows/branches are audit tools, not product.
+- `AGENTS.md`: durable laws and operating rules.
+- `README.md`: stable architecture, commands and recovery path.
+- GitHub issue/PR: current work, exact SHAs, decisions, checkpoints and blockers.
+- Git history: historical execution detail.
+- `docs/releases/`: durable release evidence.
+- policy docs: only rules that genuinely need a dedicated long-lived document.
 
-After evidence capture:
+Do **not** add routine gate/checkpoint files, copied chat handoffs, duplicate specs/plans, local verification diaries or the same document to both repositories. A final release/audit artifact is allowed only when it has unique durable value.
 
-- close the temporary PR without merge;
-- reset the temporary branch only with force-with-lease and a known expected SHA;
-- compare against the intended PC main;
-- require `ahead=0`, `behind=0`, `files=[]`.
+If a chat ends, the next session must be able to continue from live GitHub without a private conversation transcript.
 
-Never force `main`.
+## Branch and temporary-artifact hygiene
 
-## Merge and closure
+- Keep only active work branches plus branches with demonstrated rollback/forensic value.
+- After merge/closure, audit obsolete branches and delete only when their commits are safely represented by `main`/Git history.
+- Temporary consumer-proof branches/workflows are exceptional; prefer the permanent reusable PC workflow.
+- Never force `main`.
+- Never leave a temporary branch with product delta after a proof.
 
-Immediately before merge, re-read fresh `main`, PR head, compare, exact-head CI, review threads, scope, and mergeability. Merge with expected-head protection.
+## Merge discipline
 
-`MERGED != CLOSED` until postmerge Knowledge QA, required PC full-state proof, temporary cleanup, and durable checkpoint are complete.
+Immediately before merge, fresh-read `main`, PR head, compare, exact-head CI, reviews, scope and mergeability. Use expected-head protection where supported.
+
+After merge, verify the new exact `main` and the normal postmerge workflow/smoke. Do not repeat full forensic consumer proof unless the merged tree or consumer head materially differs from what was already proven.
 
 ## Stop conditions
 
-Stop and classify instead of improvising when any of these is true:
+Stop and classify instead of improvising when:
 
-- `main` moved and the delta was not audited;
-- overlapping Codex/agent work is unknown;
+- `main` moved and the relevant delta is unknown;
+- overlapping agent/Codex work is unknown;
 - source semantics are ambiguous;
-- the candidate is excluded from distribution;
+- a candidate is excluded from distribution;
 - a test requires invented truth;
-- source-faithful rendering needs a new primitive/schema/renderer contract without a gate;
+- source-faithful support requires a new schema/primitive/renderer contract without an explicit decision;
 - PC would need duplicated canonical truth or a source-specific special case;
 - an unrelated file appears in the delta;
-- CI failure is unexplained or the runner executed no steps;
-- a temporary branch cannot return to zero delta;
+- CI failure is unexplained;
 - merge head changed;
-- docs/governance and product are mixed;
-- a version bump appears without an explicit release decision.
+- product and unrelated governance cleanup are mixed;
+- a version bump or compatibility removal appears without an explicit decision.
 
-No merge is authorized merely because a branch looks correct. Evidence and the current approved gate control execution.
+Evidence controls execution. Complexity is never a substitute for certainty.
