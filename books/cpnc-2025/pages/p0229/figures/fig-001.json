@@ -3,27 +3,130 @@
   "page_id": "PAGE-CPNC-2025-P0229",
   "type": "mixed",
   "purpose": "Recrear la estructura visual del índice de recursos QR de cocina y closet sin fabricar códigos QR funcionales ni destinos no verificados.",
-  "source": {"book_id":"cpnc-2025","pdf_page":229,"printed_page":207,"region":{"x":0.02,"y":0.02,"width":0.96,"height":0.96},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 229,
+    "printed_page": 207,
+    "region": {"x": 0.02, "y": 0.02, "width": 0.96, "height": 0.96},
+    "extraction": {"method": "visual", "confidence": 0.99, "review_status": "VISUALLY_VERIFIED"}
+  },
   "entities": [
-    {"id":"qr-01","type":"qr_resource_placeholder","label":"¿Cómo estructurar una cocina?","geometry":{"precision":"approximate"}},
-    {"id":"qr-02","type":"qr_resource_placeholder","label":"¿Cómo hacer una cocina?","geometry":{"precision":"approximate"}},
-    {"id":"qr-03","type":"qr_resource_placeholder","label":"Cocina y bisagras","geometry":{"precision":"approximate"}},
-    {"id":"qr-04","type":"qr_resource_placeholder","label":"Sistema T en frontal de cocina","geometry":{"precision":"approximate"}},
-    {"id":"qr-05","type":"qr_resource_placeholder","label":"Medidas estándar de cocina","geometry":{"precision":"approximate"}},
-    {"id":"qr-06","type":"qr_resource_placeholder","label":"Sistema chaflan cocinas","geometry":{"precision":"approximate"}},
-    {"id":"qr-07","type":"qr_resource_placeholder","label":"Elementos fundamentales para realizar tu cocina","geometry":{"precision":"approximate"}},
-    {"id":"qr-08","type":"qr_resource_placeholder","label":"¿Cómo cotizar una cocina?","geometry":{"precision":"approximate"}},
-    {"id":"qr-09","type":"qr_resource_placeholder","label":"¿Cómo va estructurado un closet?","geometry":{"precision":"approximate"}},
-    {"id":"qr-10","type":"qr_resource_placeholder","label":"¿Cómo hacer un closet?","geometry":{"precision":"approximate"}},
-    {"id":"qr-11","type":"qr_resource_placeholder","label":"Sistema corredizo SD Simple y doble","geometry":{"precision":"approximate"}},
-    {"id":"qr-12","type":"qr_resource_placeholder","label":"Sistema corredizo SD 50","geometry":{"precision":"approximate"}}
+    {
+      "id": "qr-01",
+      "type": "qr_resource_placeholder",
+      "label": "¿Cómo estructurar una cocina?",
+      "geometry": {"precision": "approximate", "primitive": "rect", "bounds": {"x": 0.06, "y": 0.06, "width": 0.24, "height": 0.14}}
+    },
+    {
+      "id": "qr-02",
+      "type": "qr_resource_placeholder",
+      "label": "¿Cómo hacer una cocina?",
+      "geometry": {"precision": "approximate", "primitive": "rect", "bounds": {"x": 0.38, "y": 0.06, "width": 0.24, "height": 0.14}}
+    },
+    {
+      "id": "qr-03",
+      "type": "qr_resource_placeholder",
+      "label": "Cocina y bisagras",
+      "geometry": {"precision": "approximate", "primitive": "rect", "bounds": {"x": 0.70, "y": 0.06, "width": 0.24, "height": 0.14}}
+    },
+    {
+      "id": "qr-04",
+      "type": "qr_resource_placeholder",
+      "label": "Sistema T en frontal de cocina",
+      "geometry": {"precision": "approximate", "primitive": "rect", "bounds": {"x": 0.06, "y": 0.29, "width": 0.24, "height": 0.14}}
+    },
+    {
+      "id": "qr-05",
+      "type": "qr_resource_placeholder",
+      "label": "Medidas estándar de cocina",
+      "geometry": {"precision": "approximate", "primitive": "rect", "bounds": {"x": 0.38, "y": 0.29, "width": 0.24, "height": 0.14}}
+    },
+    {
+      "id": "qr-06",
+      "type": "qr_resource_placeholder",
+      "label": "Sistema chaflan cocinas",
+      "geometry": {"precision": "approximate", "primitive": "rect", "bounds": {"x": 0.70, "y": 0.29, "width": 0.24, "height": 0.14}}
+    },
+    {
+      "id": "qr-07",
+      "type": "qr_resource_placeholder",
+      "label": "Elementos fundamentales para realizar tu cocina",
+      "geometry": {"precision": "approximate", "primitive": "rect", "bounds": {"x": 0.06, "y": 0.52, "width": 0.24, "height": 0.14}}
+    },
+    {
+      "id": "qr-08",
+      "type": "qr_resource_placeholder",
+      "label": "¿Cómo cotizar una cocina?",
+      "geometry": {"precision": "approximate", "primitive": "rect", "bounds": {"x": 0.38, "y": 0.52, "width": 0.24, "height": 0.14}}
+    },
+    {
+      "id": "qr-09",
+      "type": "qr_resource_placeholder",
+      "label": "¿Cómo va estructurado un closet?",
+      "geometry": {"precision": "approximate", "primitive": "rect", "bounds": {"x": 0.70, "y": 0.52, "width": 0.24, "height": 0.14}}
+    },
+    {
+      "id": "qr-10",
+      "type": "qr_resource_placeholder",
+      "label": "¿Cómo hacer un closet?",
+      "geometry": {"precision": "approximate", "primitive": "rect", "bounds": {"x": 0.06, "y": 0.75, "width": 0.24, "height": 0.14}}
+    },
+    {
+      "id": "qr-11",
+      "type": "qr_resource_placeholder",
+      "label": "Sistema corredizo SD Simple y doble",
+      "geometry": {"precision": "approximate", "primitive": "rect", "bounds": {"x": 0.38, "y": 0.75, "width": 0.24, "height": 0.14}}
+    },
+    {
+      "id": "qr-12",
+      "type": "qr_resource_placeholder",
+      "label": "Sistema corredizo SD 50",
+      "geometry": {"precision": "approximate", "primitive": "rect", "bounds": {"x": 0.70, "y": 0.75, "width": 0.24, "height": 0.14}}
+    }
   ],
   "relationships": [],
   "measurements": [],
   "annotations": [
-    {"target_entity_id":"qr-01","text":"Los patrones QR y sus payloads no fueron decodificados; recrear solo como marcador visual no funcional."}
+    {"id": "ann-qr-01-title", "target_entity_id": "qr-01", "text": "¿Cómo estructurar una cocina?", "placement": {"x": 0.06, "y": 0.21, "precision": "approximate"}},
+    {"id": "ann-qr-02-title", "target_entity_id": "qr-02", "text": "¿Cómo hacer una cocina?", "placement": {"x": 0.38, "y": 0.21, "precision": "approximate"}},
+    {"id": "ann-qr-03-title", "target_entity_id": "qr-03", "text": "Cocina y bisagras", "placement": {"x": 0.70, "y": 0.21, "precision": "approximate"}},
+    {"id": "ann-qr-04-title", "target_entity_id": "qr-04", "text": "Sistema T en frontal de cocina", "placement": {"x": 0.06, "y": 0.44, "precision": "approximate"}},
+    {"id": "ann-qr-05-title", "target_entity_id": "qr-05", "text": "Medidas estándar de cocina", "placement": {"x": 0.38, "y": 0.44, "precision": "approximate"}},
+    {"id": "ann-qr-06-title", "target_entity_id": "qr-06", "text": "Sistema chaflan cocinas", "placement": {"x": 0.70, "y": 0.44, "precision": "approximate"}},
+    {"id": "ann-qr-07-title", "target_entity_id": "qr-07", "text": "Elementos fundamentales para realizar tu cocina", "placement": {"x": 0.06, "y": 0.67, "precision": "approximate"}},
+    {"id": "ann-qr-08-title", "target_entity_id": "qr-08", "text": "¿Cómo cotizar una cocina?", "placement": {"x": 0.38, "y": 0.67, "precision": "approximate"}},
+    {"id": "ann-qr-09-title", "target_entity_id": "qr-09", "text": "¿Cómo va estructurado un closet?", "placement": {"x": 0.70, "y": 0.67, "precision": "approximate"}},
+    {"id": "ann-qr-10-title", "target_entity_id": "qr-10", "text": "¿Cómo hacer un closet?", "placement": {"x": 0.06, "y": 0.90, "precision": "approximate"}},
+    {"id": "ann-qr-11-title", "target_entity_id": "qr-11", "text": "Sistema corredizo SD Simple y doble", "placement": {"x": 0.38, "y": 0.90, "precision": "approximate"}},
+    {"id": "ann-qr-12-title", "target_entity_id": "qr-12", "text": "Sistema corredizo SD 50", "placement": {"x": 0.70, "y": 0.90, "precision": "approximate"}}
   ],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility": {"summary":"Cuadrícula de doce recursos QR titulados sobre cocina, herrajes, cotización, closet y sistemas corredizos."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"No se debe generar ningún QR funcional hasta decodificar y verificar cada payload contra la fuente exacta."}
+  "reconstruction": {
+    "preferred_renderer": "svg",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
+  },
+  "camera": {
+    "coordinate_space": "normalized_figure",
+    "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+  },
+  "layers": [
+    {
+      "id": "geometry",
+      "order": 10,
+      "entity_ids": ["qr-01", "qr-02", "qr-03", "qr-04", "qr-05", "qr-06", "qr-07", "qr-08", "qr-09", "qr-10", "qr-11", "qr-12"]
+    },
+    {
+      "id": "labels",
+      "order": 20,
+      "annotation_ids": ["ann-qr-01-title", "ann-qr-02-title", "ann-qr-03-title", "ann-qr-04-title", "ann-qr-05-title", "ann-qr-06-title", "ann-qr-07-title", "ann-qr-08-title", "ann-qr-09-title", "ann-qr-10-title", "ann-qr-11-title", "ann-qr-12-title"]
+    }
+  ],
+  "accessibility": {
+    "summary": "Representación pedagógica simplificada del índice de doce recursos QR mostrado por la fuente. Los rectángulos normalizados son marcadores semánticos no funcionales, no códigos QR, y la geometría es no métrica y no está a escala. Los títulos visibles se conservan literalmente. Los payloads y destinos codificados no fueron decodificados ni verificados, por lo que CarpiNova no presenta ningún marcador como enlace funcional ni como evidencia de un destino externo."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Las zonas rectangulares representan únicamente las doce celdas del índice en orden visual de tres columnas por cuatro filas; no reproducen módulos, patrones de búsqueda ni datos codificados de QR. Los payloads, URLs y destinos permanecen sin decodificar y sin verificar. No se debe generar ningún QR funcional ni inferir un destino a partir de la apariencia visual. Las coordenadas son aproximadas, no métricas y no están a escala. No se importan títulos ni contenido de páginas vecinas."
+  }
 }
