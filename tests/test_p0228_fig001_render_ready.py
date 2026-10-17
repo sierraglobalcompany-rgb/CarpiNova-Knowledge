@@ -31,15 +31,19 @@ EXPECTED_RELATIONSHIPS = [
 EXPECTED_LABELS = [
     (
         "formula-box",
-        "La fuente imprime literalmente: 2 contrahuellas + 1 huella = 0.63cm; "
-        "puede variar de 0.61 a 0.65",
+        (
+            "La fuente imprime literalmente: 2 contrahuellas + 1 huella = 0.63cm; "
+            "puede variar de 0.61 a 0.65"
+        ),
     ),
     ("low-traffic-pair", "Huella 0.21; contrahuella 0.21; lugares poco transitados"),
     ("comfort-pair", "Huella 0.29; contrahuella 0.17; máxima comodidad"),
     (
         "exterior-pair",
-        "Escaleras exteriores: huella 0.39; contrahuella 0.12; "
-        "anotación superior pequeña no normalizada",
+        (
+            "Escaleras exteriores: huella 0.39; contrahuella 0.12; "
+            "anotación superior pequeña no normalizada"
+        ),
     ),
     ("horizontal-step", ".63 Longitud Horizontal de un paso"),
 ]
