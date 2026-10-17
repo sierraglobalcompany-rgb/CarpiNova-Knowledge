@@ -128,7 +128,7 @@
     }
   ],
   "accessibility": {
-    "summary": "Representación pedagógica simplificada de la infografía de referencias para escaleras mostrada por la fuente. La geometría normalizada es no métrica y no está a escala. La fórmula impresa 2 contrahuellas + 1 huella = 0.63cm se conserva literalmente, sin corregir su unidad, y las demás cifras permanecen como referencias textuales cuando la fuente no fija unidades explícitas. CarpiNova no presenta estas referencias como código o norma de construcción, cálculo de escalera, diseño estructural, certificación de seguridad, plano de fabricación ni plantilla de obra. La anotación superior pequeña de la referencia exterior permanece sin normalizar porque su lectura no está resuelta."
+    "summary": "Representación pedagógica simplificada de la infografía de referencias para escaleras mostrada por la fuente. La geometría normalizada es no métrica y no está a escala. La fórmula impresa 2 contrahuellas + 1 huella = 0.63cm se conserva literalmente, sin corregir su unidad, y las demás cifras permanecen como referencias textuales cuando la fuente no fija unidades explícitas. CarpiNova no presenta estas referencias como código o norma de construcción, ni para calcular escaleras, diseño estructural, certificación de seguridad, plano de fabricación o plantilla de obra. La anotación superior pequeña de la referencia exterior permanece sin normalizar porque su lectura no está resuelta."
   },
   "review": {
     "status": "VISUALLY_VERIFIED",
