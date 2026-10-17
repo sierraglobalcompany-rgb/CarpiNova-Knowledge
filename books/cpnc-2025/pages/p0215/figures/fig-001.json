@@ -3,35 +3,138 @@
   "page_id": "PAGE-CPNC-2025-P0215",
   "type": "assembly_sequence",
   "purpose": "Recrear los herrajes de cama mostrados: chapetas, tornillos con tuercas y esquineros metálicos.",
-  "source": {"book_id":"cpnc-2025","pdf_page":215,"printed_page":193,"region":{"x":0.0,"y":0.0,"width":1.0,"height":1.0},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 215,
+    "printed_page": 193,
+    "region": {"x": 0.0, "y": 0.0, "width": 1.0, "height": 1.0},
+    "extraction": {"method": "visual", "confidence": 0.99, "review_status": "VISUALLY_VERIFIED"}
+  },
   "entities": [
-    {"id":"chapeta-small","type":"bed_connector_plate_small","geometry":{"precision":"approximate"}},
-    {"id":"chapeta-large","type":"bed_connector_plate_large","geometry":{"precision":"approximate"}},
-    {"id":"bed-corner","type":"bed_internal_corner","geometry":{"precision":"approximate"}},
-    {"id":"assembly-screw","type":"assembly_screw","geometry":{"precision":"approximate"}},
-    {"id":"nut","type":"nut","geometry":{"precision":"approximate"}},
-    {"id":"metal-corner","type":"metal_corner_bracket","geometry":{"precision":"approximate"}},
-    {"id":"rail","type":"bed_rail","geometry":{"precision":"approximate"}}
+    {
+      "id": "chapeta-small",
+      "type": "bed_connector_plate_small",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.10, "y": 0.20, "width": 0.14, "height": 0.16}
+      }
+    },
+    {
+      "id": "chapeta-large",
+      "type": "bed_connector_plate_large",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.28, "y": 0.16, "width": 0.18, "height": 0.22}
+      }
+    },
+    {
+      "id": "bed-corner",
+      "type": "bed_internal_corner",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.48, "y": 0.18, "width": 0.16, "height": 0.28}
+      }
+    },
+    {
+      "id": "assembly-screw",
+      "type": "assembly_screw",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.56, "y": 0.52, "width": 0.08, "height": 0.18}
+      }
+    },
+    {
+      "id": "nut",
+      "type": "nut",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.68, "y": 0.58, "width": 0.08, "height": 0.10}
+      }
+    },
+    {
+      "id": "metal-corner",
+      "type": "metal_corner_bracket",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.26, "y": 0.68, "width": 0.16, "height": 0.16}
+      }
+    },
+    {
+      "id": "rail",
+      "type": "bed_rail",
+      "geometry": {
+        "precision": "approximate",
+        "primitive": "rect",
+        "bounds": {"x": 0.46, "y": 0.74, "width": 0.38, "height": 0.10}
+      }
+    }
   ],
   "relationships": [
-    {"from":"chapeta-small","to":"bed-corner","type":"joins_corner"},
-    {"from":"chapeta-large","to":"bed-corner","type":"joins_corner_for_tall_bed"},
-    {"from":"nut","to":"assembly-screw","type":"unscrewed_for_disassembly"},
-    {"from":"assembly-screw","to":"bed-corner","type":"remains_anchored"},
-    {"from":"metal-corner","to":"rail","type":"supports_installation"}
+    {"from": "chapeta-small", "to": "bed-corner", "type": "joins_corner"},
+    {"from": "chapeta-large", "to": "bed-corner", "type": "joins_corner_for_tall_bed"},
+    {"from": "nut", "to": "assembly-screw", "type": "unscrewed_for_disassembly"},
+    {"from": "assembly-screw", "to": "bed-corner", "type": "remains_anchored"},
+    {"from": "metal-corner", "to": "rail", "type": "supports_installation"}
   ],
   "measurements": [],
   "annotations": [
-    {"target_entity_id":"chapeta-large","text":"La fuente indica usar la grande si la cama es muy alta"},
-    {"target_entity_id":"assembly-screw","text":"No retirar del aglomerado durante un traslado"},
-    {"target_entity_id":"nut","text":"Desenroscar la tuerca para desarmar"}
+    {
+      "id": "ann-chapeta-large",
+      "target_entity_id": "chapeta-large",
+      "text": "La fuente indica usar la grande si la cama es muy alta",
+      "placement": {"x": 0.05, "y": 0.08, "precision": "approximate"}
+    },
+    {
+      "id": "ann-assembly-screw",
+      "target_entity_id": "assembly-screw",
+      "text": "No retirar del aglomerado durante un traslado",
+      "placement": {"x": 0.48, "y": 0.48, "precision": "approximate"}
+    },
+    {
+      "id": "ann-nut",
+      "target_entity_id": "nut",
+      "text": "Desenroscar la tuerca para desarmar",
+      "placement": {"x": 0.68, "y": 0.52, "precision": "approximate"}
+    }
   ],
   "educational_sequence": [
-    {"step":1,"action":"Unir internamente las cuatro esquinas con chapetas"},
-    {"step":2,"action":"Para desmontar, desenroscar tuercas sin retirar los tornillos de ensamble"},
-    {"step":3,"action":"Usar esquineros metálicos para la instalación de largueros"}
+    {"step": 1, "action": "Unir internamente las cuatro esquinas con chapetas"},
+    {"step": 2, "action": "Para desmontar, desenroscar tuercas sin retirar los tornillos de ensamble"},
+    {"step": 3, "action": "Usar esquineros metálicos para la instalación de largueros"}
   ],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility": {"summary":"Secuencia visual de herrajes para cama, con chapetas de dos tamaños, unión de esquinas y desmontaje conservando los tornillos anclados."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"La frase final de la fuente sobre largueros se conserva en content.json y la figura solo representa el uso visible del esquinero."}
+  "reconstruction": {
+    "preferred_renderer": "svg",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "normalized-2d-v1"
+  },
+  "camera": {
+    "coordinate_space": "normalized_figure",
+    "viewport": {"x": 0, "y": 0, "width": 1, "height": 1}
+  },
+  "layers": [
+    {
+      "id": "geometry",
+      "order": 10,
+      "entity_ids": ["chapeta-small", "chapeta-large", "bed-corner", "assembly-screw", "nut", "metal-corner", "rail"]
+    },
+    {
+      "id": "labels",
+      "order": 20,
+      "annotation_ids": ["ann-chapeta-large", "ann-assembly-screw", "ann-nut"]
+    }
+  ],
+  "accessibility": {
+    "summary": "Representación pedagógica simplificada de los herrajes de cama y de las relaciones de armado y desmontaje descritas por la fuente. La geometría normalizada es no métrica y no está a escala; no es un dibujo de fabricación, plantilla de perforación, especificación de herrajes, diseño estructural ni certificación de carga. Las categorías pequeño, grande y cama muy alta son cualitativas y no definen umbrales dimensionales."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Las coordenadas son aproximadas y representan únicamente zonas semánticas relativas para visualización pedagógica, no siluetas ni medidas físicas de los herrajes. La indicación de no retirar los tornillos de ensamble se conserva como una afirmación de la fuente para el contexto descrito de desmontaje de una cama de aglomerado, no como una regla universal. La frase original repetida sobre largueros permanece en la transcripción fuente; esta figura solo conserva el significado normalizado de apoyo a la instalación de largueros. No se importan medidas ni especificaciones de páginas vecinas."
+  }
 }
