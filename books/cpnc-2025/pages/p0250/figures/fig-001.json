@@ -3,30 +3,15 @@
   "page_id": "PAGE-CPNC-2025-P0250",
   "type": "process_diagram",
   "purpose": "Recrear la infografía de la tabla de registro de medidas preservando sus seis categorías, textos visibles e iconografía de apoyo.",
-  "source": {
-    "book_id": "cpnc-2025",
-    "pdf_page": 250,
-    "printed_page": 228,
-    "region": {
-      "x": 0.05,
-      "y": 0.02,
-      "width": 0.9,
-      "height": 0.96
-    },
-    "extraction": {
-      "method": "visual",
-      "confidence": 0.99,
-      "review_status": "VISUALLY_VERIFIED"
-    }
-  },
+  "source": {"book_id":"cpnc-2025","pdf_page":250,"printed_page":228,"region":{"x":0.05,"y":0.02,"width":0.90,"height":0.96},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
   "entities": [
-    {"id":"title","type":"title_block","geometry":{"primitive":"text","precision":"approximate","bounding_box":{"x":0.18,"y":0.02,"width":0.64,"height":0.13}},"description":"Título TABLA DE REGISTRO DE MEDIDAS."},
-    {"id":"access","type":"access_block","geometry":{"primitive":"text","precision":"approximate","bounding_box":{"x":0.18,"y":0.17,"width":0.36,"height":0.13}},"description":"ACCESOS: Puertas, ascensores, escaleras."},
-    {"id":"piece-size","type":"transport_block","geometry":{"primitive":"text_and_furniture_illustration","precision":"approximate","bounding_box":{"x":0.51,"y":0.28,"width":0.38,"height":0.23}},"description":"TAMAÑO DE PIEZAS: Dimensiones máximas para transporte."},
-    {"id":"connections","type":"utilities_block","geometry":{"primitive":"text_and_measurement_illustration","precision":"approximate","bounding_box":{"x":0.16,"y":0.35,"width":0.33,"height":0.18}},"description":"CONEXIONES: Eléctricas, de agua."},
-    {"id":"baseboards","type":"interference_block","geometry":{"primitive":"text_and_utility_icons","precision":"approximate","bounding_box":{"x":0.51,"y":0.52,"width":0.38,"height":0.20}},"description":"GUARDAS O ZÓCALOS: Interferencias en piso o pared."},
-    {"id":"moldings","type":"molding_block","geometry":{"primitive":"text_and_corner_illustration","precision":"approximate","bounding_box":{"x":0.16,"y":0.58,"width":0.35,"height":0.19}},"description":"MOLDURAS: Espacios decorativos o estructurales."},
-    {"id":"anchors","type":"anchor_block","geometry":{"primitive":"text_and_anchor_icons","precision":"approximate","bounding_box":{"x":0.16,"y":0.79,"width":0.72,"height":0.18}},"description":"TIPO DE ANCLAJES: Según tipo de muro: drywall, concreto, cielo falso."}
+    {"id":"title","type":"title_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.18,"y":0.02,"width":0.64,"height":0.13}},"description":"Título TABLA DE REGISTRO DE MEDIDAS."},
+    {"id":"access","type":"access_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.18,"y":0.17,"width":0.36,"height":0.13}},"description":"ACCESOS: Puertas, ascensores, escaleras."},
+    {"id":"piece-size","type":"transport_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.51,"y":0.28,"width":0.38,"height":0.23}},"description":"TAMAÑO DE PIEZAS: Dimensiones máximas para transporte."},
+    {"id":"connections","type":"utilities_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.16,"y":0.35,"width":0.33,"height":0.18}},"description":"CONEXIONES: Eléctricas, de agua."},
+    {"id":"baseboards","type":"interference_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.51,"y":0.52,"width":0.38,"height":0.20}},"description":"GUARDAS O ZÓCALOS: Interferencias en piso o pared."},
+    {"id":"moldings","type":"molding_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.16,"y":0.58,"width":0.35,"height":0.19}},"description":"MOLDURAS: Espacios decorativos o estructurales."},
+    {"id":"anchors","type":"anchor_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.16,"y":0.79,"width":0.72,"height":0.18}},"description":"TIPO DE ANCLAJES: Según tipo de muro: drywall, concreto, cielo falso."}
   ],
   "relationships": [
     {"from":"title","to":"access","type":"introduces"},
@@ -38,15 +23,19 @@
   ],
   "measurements": [],
   "annotations": [
-    {"target_entity_id":"title","text":"TABLA DE REGISTRO DE MEDIDAS"},
-    {"target_entity_id":"access","text":"ACCESOS / Puertas, ascensores, escaleras"},
-    {"target_entity_id":"piece-size","text":"TAMAÑO DE PIEZAS / Dimensiones máximas para transporte"},
-    {"target_entity_id":"connections","text":"CONEXIONES / Eléctricas, de agua"},
-    {"target_entity_id":"baseboards","text":"GUARDAS O ZÓCALOS / Interferencias en piso o pared"},
-    {"target_entity_id":"moldings","text":"MOLDURAS / Espacios decorativos o estructurales"},
-    {"target_entity_id":"anchors","text":"TIPO DE ANCLAJES / Según tipo de muro: drywall, concreto, cielo falso"}
+    {"id":"ann-title","target_entity_id":"title","text":"TABLA DE REGISTRO DE MEDIDAS","placement":{"x":0.18,"y":0.02,"precision":"approximate"}},
+    {"id":"ann-access","target_entity_id":"access","text":"ACCESOS / Puertas, ascensores, escaleras","placement":{"x":0.18,"y":0.17,"precision":"approximate"}},
+    {"id":"ann-piece-size","target_entity_id":"piece-size","text":"TAMAÑO DE PIEZAS / Dimensiones máximas para transporte","placement":{"x":0.51,"y":0.28,"precision":"approximate"}},
+    {"id":"ann-connections","target_entity_id":"connections","text":"CONEXIONES / Eléctricas, de agua","placement":{"x":0.16,"y":0.35,"precision":"approximate"}},
+    {"id":"ann-baseboards","target_entity_id":"baseboards","text":"GUARDAS O ZÓCALOS / Interferencias en piso o pared","placement":{"x":0.51,"y":0.52,"precision":"approximate"}},
+    {"id":"ann-moldings","target_entity_id":"moldings","text":"MOLDURAS / Espacios decorativos o estructurales","placement":{"x":0.16,"y":0.58,"precision":"approximate"}},
+    {"id":"ann-anchors","target_entity_id":"anchors","text":"TIPO DE ANCLAJES / Según tipo de muro: drywall, concreto, cielo falso","placement":{"x":0.16,"y":0.79,"precision":"approximate"}}
   ],
-  "camera": {"view":"front","projection":"orthographic"},
+  "camera": {"coordinate_space":"normalized_figure","viewport":{"x":0,"y":0,"width":1,"height":1}},
+  "layers": [
+    {"id":"geometry","order":10,"entity_ids":["title","access","piece-size","connections","baseboards","moldings","anchors"]},
+    {"id":"labels","order":20,"annotation_ids":["ann-title","ann-access","ann-piece-size","ann-connections","ann-baseboards","ann-moldings","ann-anchors"]}
+  ],
   "visual_style": {"format":"infografía educativa","layout":"vertical en bloques alternos","palette":"beige, marrón, naranja y azul","linework":"ilustración vectorial de contorno oscuro","caption_style":"encabezados grandes con texto explicativo"},
   "educational_sequence": [
     {"step":1,"show_entity_ids":["title","access"],"instruction":"Introducir la tabla y verificar las rutas de acceso."},
@@ -54,7 +43,7 @@
     {"step":3,"show_entity_ids":["baseboards","moldings"],"instruction":"Registrar interferencias de zócalos y molduras."},
     {"step":4,"show_entity_ids":["anchors"],"instruction":"Definir el tipo de anclajes según el soporte indicado por la fuente."}
   ],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
-  "accessibility": {"summary":"Infografía de registro de medidas con seis controles: accesos, tamaño de piezas, conexiones, guardas o zócalos, molduras y tipo de anclajes."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar las seis categorías y sus textos visibles. No añadir dimensiones numéricas ni tipos de muro que no aparecen en esta página."}
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false,"render_contract":"normalized-2d-v1"},
+  "accessibility": {"summary":"Infografía de registro de medidas con seis controles: accesos, tamaño de piezas, conexiones, guardas o zócalos, molduras y tipo de anclajes. La reconstrucción usa zonas semánticas no métricas y no a escala."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar exactamente las seis categorías y sus textos visibles. No añadir dimensiones numéricas, capacidades, holguras ni autoridad estructural que no aparezcan en esta página. Las zonas normalizadas son semánticas, no métricas y no a escala."}
 }
