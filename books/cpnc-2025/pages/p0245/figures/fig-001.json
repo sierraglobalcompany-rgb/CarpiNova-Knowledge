@@ -1,19 +1,19 @@
 {
-  "figure_id":"FIG-CPNC-2025-P0245-001",
-  "page_id":"PAGE-CPNC-2025-P0245",
-  "type":"process_diagram",
-  "purpose":"Recrear la infografía que resume cómo captar clientes con las redes sociales, conservando sus cinco bloques de acción, textos e iconografía principal.",
-  "source":{"book_id":"cpnc-2025","pdf_page":245,"printed_page":223,"region":{"x":0.07,"y":0.03,"width":0.86,"height":0.94},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
-  "entities":[
-    {"id":"title","type":"title_block","geometry":{"primitive":"text","precision":"approximate","bounding_box":{"x":0.10,"y":0.03,"width":0.78,"height":0.12}},"description":"Título grande: Cómo captar clientes con las redes sociales."},
-    {"id":"accounts","type":"social_accounts_step","geometry":{"primitive":"icon_and_text","precision":"approximate","bounding_box":{"x":0.10,"y":0.17,"width":0.80,"height":0.16}},"description":"Teléfono con iconos de Instagram y Facebook junto al bloque Abrir cuentas en redes sociales principales y la referencia a Instagram, Facebook y TikTok."},
-    {"id":"publish","type":"content_publication_step","geometry":{"primitive":"icons_and_text","precision":"approximate","bounding_box":{"x":0.10,"y":0.34,"width":0.80,"height":0.16}},"description":"Icono de cuadrícula de contenido con reproducción y lápiz, más megáfono y símbolos monetarios, junto al bloque Publicar contenido relevante y constante."},
-    {"id":"advertising","type":"paid_advertising_step","geometry":{"primitive":"icon_and_text","precision":"approximate","bounding_box":{"x":0.11,"y":0.50,"width":0.78,"height":0.12}},"description":"Mano pulsando una estrella junto al bloque Invertir en pauta publicitaria y la indicación de escoger reels con buen alcance y pagar pauta segmentada."},
-    {"id":"quality","type":"quality_content_step","geometry":{"primitive":"icon_and_text","precision":"approximate","bounding_box":{"x":0.11,"y":0.64,"width":0.78,"height":0.12}},"description":"Teléfono con símbolo de reproducción y marca de verificación junto al bloque Crear contenido de calidad."},
-    {"id":"process","type":"show_process_step","geometry":{"primitive":"text","precision":"approximate","bounding_box":{"x":0.34,"y":0.77,"width":0.55,"height":0.10}},"description":"Bloque Muestra el paso a paso y Documenta el proceso completo del proyecto."},
-    {"id":"closing","type":"closing_message","geometry":{"primitive":"text","precision":"approximate","bounding_box":{"x":0.12,"y":0.89,"width":0.74,"height":0.07}},"description":"Mensaje final: Es hora de perder el miedo a exponerse y pagar pauta."}
+  "figure_id": "FIG-CPNC-2025-P0245-001",
+  "page_id": "PAGE-CPNC-2025-P0245",
+  "type": "process_diagram",
+  "purpose": "Recrear la infografía que resume cómo captar clientes con las redes sociales, conservando sus cinco bloques de acción, textos e iconografía principal.",
+  "source": {"book_id":"cpnc-2025","pdf_page":245,"printed_page":223,"region":{"x":0.07,"y":0.03,"width":0.86,"height":0.94},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "entities": [
+    {"id":"title","type":"title_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.10,"y":0.03,"width":0.78,"height":0.12}},"description":"Título grande: Cómo captar clientes con las redes sociales."},
+    {"id":"accounts","type":"social_accounts_step","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.10,"y":0.17,"width":0.80,"height":0.16}},"description":"Teléfono con iconos de Instagram y Facebook junto al bloque Abrir cuentas en redes sociales principales y la referencia a Instagram, Facebook y TikTok."},
+    {"id":"publish","type":"content_publication_step","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.10,"y":0.34,"width":0.80,"height":0.16}},"description":"Icono de cuadrícula de contenido con reproducción y lápiz, más megáfono y símbolos monetarios, junto al bloque Publicar contenido relevante y constante."},
+    {"id":"advertising","type":"paid_advertising_step","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.11,"y":0.50,"width":0.78,"height":0.12}},"description":"Mano pulsando una estrella junto al bloque Invertir en pauta publicitaria y la indicación de escoger reels con buen alcance y pagar pauta segmentada."},
+    {"id":"quality","type":"quality_content_step","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.11,"y":0.64,"width":0.78,"height":0.12}},"description":"Teléfono con símbolo de reproducción y marca de verificación junto al bloque Crear contenido de calidad."},
+    {"id":"process","type":"show_process_step","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.34,"y":0.77,"width":0.55,"height":0.10}},"description":"Bloque Muestra el paso a paso y Documenta el proceso completo del proyecto."},
+    {"id":"closing","type":"closing_message","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.12,"y":0.89,"width":0.74,"height":0.07}},"description":"Mensaje final: Es hora de perder el miedo a exponerse y pagar pauta."}
   ],
-  "relationships":[
+  "relationships": [
     {"from":"title","to":"accounts","type":"introduces"},
     {"from":"accounts","to":"publish","type":"visually_followed_by"},
     {"from":"publish","to":"advertising","type":"visually_followed_by"},
@@ -21,26 +21,30 @@
     {"from":"quality","to":"process","type":"visually_followed_by"},
     {"from":"process","to":"closing","type":"visually_followed_by"}
   ],
-  "measurements":[],
-  "annotations":[
-    {"target_entity_id":"title","text":"Cómo captar clientes con las redes sociales"},
-    {"target_entity_id":"accounts","text":"Abrir cuentas en redes sociales principales / Crea perfiles en plataformas como Instagram, Facebook y TikTok."},
-    {"target_entity_id":"publish","text":"Publicar contenido relevante y constante / Sube fotos, videos, entrevistas con clientes, grabaciones en vivo, etc."},
-    {"target_entity_id":"advertising","text":"Invertir en pauta publicitaria / Escoge reels con buen alcance y págales pauta segmentada"},
-    {"target_entity_id":"quality","text":"Crear contenido de calidad / Usa plataformas de edición y realiza tomas estables"},
-    {"target_entity_id":"process","text":"Muestra el paso a paso / Documenta el proceso completo del proyecto"},
-    {"target_entity_id":"closing","text":"Es hora de perder el miedo a exponerse y pagar pauta"}
+  "measurements": [],
+  "annotations": [
+    {"id":"ann-title","target_entity_id":"title","text":"Cómo captar clientes con las redes sociales","placement":{"x":0.10,"y":0.03,"precision":"approximate"}},
+    {"id":"ann-accounts","target_entity_id":"accounts","text":"Abrir cuentas en redes sociales principales / Crea perfiles en plataformas como Instagram, Facebook y TikTok.","placement":{"x":0.10,"y":0.17,"precision":"approximate"}},
+    {"id":"ann-publish","target_entity_id":"publish","text":"Publicar contenido relevante y constante / Sube fotos, videos, entrevistas con clientes, grabaciones en vivo, etc.","placement":{"x":0.10,"y":0.34,"precision":"approximate"}},
+    {"id":"ann-advertising","target_entity_id":"advertising","text":"Invertir en pauta publicitaria / Escoge reels con buen alcance y págales pauta segmentada","placement":{"x":0.11,"y":0.50,"precision":"approximate"}},
+    {"id":"ann-quality","target_entity_id":"quality","text":"Crear contenido de calidad / Usa plataformas de edición y realiza tomas estables","placement":{"x":0.11,"y":0.64,"precision":"approximate"}},
+    {"id":"ann-process","target_entity_id":"process","text":"Muestra el paso a paso / Documenta el proceso completo del proyecto","placement":{"x":0.34,"y":0.77,"precision":"approximate"}},
+    {"id":"ann-closing","target_entity_id":"closing","text":"Es hora de perder el miedo a exponerse y pagar pauta","placement":{"x":0.12,"y":0.89,"precision":"approximate"}}
   ],
-  "camera":{"view":"front","projection":"orthographic"},
-  "visual_style":{"format":"infografía educativa","layout":"vertical","palette":"beige, azul y azul oscuro","linework":"iconos planos con contorno oscuro","caption_style":"títulos en negrita y texto explicativo por bloques"},
-  "educational_sequence":[
+  "camera": {"coordinate_space":"normalized_figure","viewport":{"x":0,"y":0,"width":1,"height":1}},
+  "layers": [
+    {"id":"geometry","order":10,"entity_ids":["title","accounts","publish","advertising","quality","process","closing"]},
+    {"id":"labels","order":20,"annotation_ids":["ann-title","ann-accounts","ann-publish","ann-advertising","ann-quality","ann-process","ann-closing"]}
+  ],
+  "visual_style": {"format":"infografía educativa","layout":"vertical","palette":"beige, azul y azul oscuro","linework":"iconos planos con contorno oscuro","caption_style":"títulos en negrita y texto explicativo por bloques"},
+  "educational_sequence": [
     {"step":1,"show_entity_ids":["title","accounts"],"instruction":"Presentar la apertura de cuentas en redes sociales principales."},
     {"step":2,"show_entity_ids":["publish"],"instruction":"Mostrar la publicación constante de contenido relevante."},
     {"step":3,"show_entity_ids":["advertising"],"instruction":"Mostrar la inversión en pauta publicitaria segmentada."},
     {"step":4,"show_entity_ids":["quality"],"instruction":"Mostrar la creación de contenido de calidad con edición y tomas estables."},
     {"step":5,"show_entity_ids":["process","closing"],"instruction":"Cerrar mostrando el paso a paso del proyecto y el mensaje final sobre exponerse y pagar pauta."}
   ],
-  "reconstruction":{"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
-  "accessibility":{"summary":"Infografía vertical que resume cinco acciones para captar clientes con redes sociales: abrir cuentas, publicar contenido, invertir en pauta, crear contenido de calidad y mostrar el proceso del proyecto."},
-  "review":{"status":"VISUALLY_VERIFIED","notes":"Reconstrucción basada únicamente en los elementos y textos visibles de la página 245 del PDF 2025."}
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false,"render_contract":"normalized-2d-v1"},
+  "accessibility": {"summary":"Infografía vertical que resume cinco acciones para captar clientes con redes sociales: abrir cuentas, publicar contenido, invertir en pauta, crear contenido de calidad y mostrar el proceso del proyecto. La reconstrucción usa zonas semánticas no métricas y no a escala."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Conservar los cinco bloques, sus textos y los nombres de plataformas exactamente como contenido fuente. No convertirlos en enlaces externos ni avales. Las zonas normalizadas son semánticas, no métricas y no a escala."}
 }
