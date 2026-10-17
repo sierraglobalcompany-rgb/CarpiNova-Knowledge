@@ -5,12 +5,12 @@
   "purpose": "Recrear la infografía sobre cómo realizar una visita de cotización preservando sus bloques, textos visibles y la repetición final de dos viñetas.",
   "source": {"book_id":"cpnc-2025","pdf_page":248,"printed_page":226,"region":{"x":0.05,"y":0.03,"width":0.90,"height":0.94},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
   "entities": [
-    {"id":"title","type":"title_block","geometry":{"primitive":"text","precision":"approximate","bounding_box":{"x":0.13,"y":0.03,"width":0.73,"height":0.13}},"description":"Título CÓMO SE REALIZA UNA VISITA DE COTIZACIÓN."},
-    {"id":"charge-visit","type":"pricing_block","geometry":{"primitive":"text_and_handshake_illustration","precision":"approximate","bounding_box":{"x":0.10,"y":0.16,"width":0.78,"height":0.20}},"description":"Bloque COBRA LA VISITA con redención del valor si obtiene el contrato e ilustración de acuerdo entre carpintero y cliente."},
-    {"id":"professional","type":"professionalism_block","geometry":{"primitive":"text_icons_and_person","precision":"approximate","bounding_box":{"x":0.10,"y":0.37,"width":0.78,"height":0.20}},"description":"Bloque SÉ PUNTUAL Y PROFESIONAL con buena presentación, flexómetro, libreta y lápiz."},
-    {"id":"advise","type":"advice_block","geometry":{"primitive":"text_and_measurement_illustration","precision":"approximate","bounding_box":{"x":0.10,"y":0.58,"width":0.39,"height":0.25}},"description":"Bloque ASESORA CON CLARIDAD con evitar tecnicismos, explicar qué ofreces y mostrar opciones."},
-    {"id":"design","type":"design_and_cutlist_block","geometry":{"primitive":"text_and_furniture_sketch","precision":"approximate","bounding_box":{"x":0.51,"y":0.58,"width":0.38,"height":0.25}},"description":"Bloque DISEÑA Y DESPIEZA con previsualización del mueble y dibujo de dimensiones en la pared."},
-    {"id":"repeated-guidance","type":"repeated_source_text","geometry":{"primitive":"bullet_text","precision":"approximate","bounding_box":{"x":0.51,"y":0.84,"width":0.38,"height":0.13}},"description":"Repetición visible de las viñetas Permite previsualizar el mueble y Dibuja sus dimensiones en la pared."}
+    {"id":"title","type":"title_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.13,"y":0.03,"width":0.73,"height":0.13}},"description":"Título CÓMO SE REALIZA UNA VISITA DE COTIZACIÓN."},
+    {"id":"charge-visit","type":"pricing_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.10,"y":0.16,"width":0.78,"height":0.20}},"description":"Bloque COBRA LA VISITA con redención del valor si obtiene el contrato e ilustración de acuerdo entre carpintero y cliente."},
+    {"id":"professional","type":"professionalism_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.10,"y":0.37,"width":0.78,"height":0.20}},"description":"Bloque SÉ PUNTUAL Y PROFESIONAL con buena presentación, flexómetro, libreta y lápiz."},
+    {"id":"advise","type":"advice_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.10,"y":0.58,"width":0.39,"height":0.25}},"description":"Bloque ASESORA CON CLARIDAD con evitar tecnicismos, explicar qué ofreces y mostrar opciones."},
+    {"id":"design","type":"design_and_cutlist_block","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.51,"y":0.58,"width":0.38,"height":0.25}},"description":"Bloque DISEÑA Y DESPIEZA con previsualización del mueble y dibujo de dimensiones en la pared."},
+    {"id":"repeated-guidance","type":"repeated_source_text","geometry":{"primitive":"rect","precision":"approximate","bounds":{"x":0.51,"y":0.84,"width":0.38,"height":0.13}},"description":"Repetición visible de las viñetas Permite previsualizar el mueble y Dibuja sus dimensiones en la pared."}
   ],
   "relationships": [
     {"from":"title","to":"charge-visit","type":"introduces"},
@@ -21,14 +21,18 @@
   ],
   "measurements": [],
   "annotations": [
-    {"target_entity_id":"title","text":"CÓMO SE REALIZA UNA VISITA DE COTIZACIÓN"},
-    {"target_entity_id":"charge-visit","text":"COBRA LA VISITA / Ofrece redención del valor si obtiene el contrato"},
-    {"target_entity_id":"professional","text":"SÉ PUNTUAL Y PROFESIONAL / Buena presentación / Flexómetro / Libreta y lápiz"},
-    {"target_entity_id":"advise","text":"ASESORA CON CLARIDAD / Evita tecnicismos / Explica qué ofreces / Muestra opciones"},
-    {"target_entity_id":"design","text":"DISEÑA Y DESPIEZA / Permite previsualizar el mueble / Dibuja sus dimensiones en la pared"},
-    {"target_entity_id":"repeated-guidance","text":"Permite previsualizar el mueble / Dibuja sus dimensiones en la pared"}
+    {"id":"ann-title","target_entity_id":"title","text":"CÓMO SE REALIZA UNA VISITA DE COTIZACIÓN","placement":{"x":0.13,"y":0.03,"precision":"approximate"}},
+    {"id":"ann-charge-visit","target_entity_id":"charge-visit","text":"COBRA LA VISITA / Ofrece redención del valor si obtiene el contrato","placement":{"x":0.10,"y":0.16,"precision":"approximate"}},
+    {"id":"ann-professional","target_entity_id":"professional","text":"SÉ PUNTUAL Y PROFESIONAL / Buena presentación / Flexómetro / Libreta y lápiz","placement":{"x":0.10,"y":0.37,"precision":"approximate"}},
+    {"id":"ann-advise","target_entity_id":"advise","text":"ASESORA CON CLARIDAD / Evita tecnicismos / Explica qué ofreces / Muestra opciones","placement":{"x":0.10,"y":0.58,"precision":"approximate"}},
+    {"id":"ann-design","target_entity_id":"design","text":"DISEÑA Y DESPIEZA / Permite previsualizar el mueble / Dibuja sus dimensiones en la pared","placement":{"x":0.51,"y":0.58,"precision":"approximate"}},
+    {"id":"ann-repeated-guidance","target_entity_id":"repeated-guidance","text":"Permite previsualizar el mueble / Dibuja sus dimensiones en la pared","placement":{"x":0.51,"y":0.84,"precision":"approximate"}}
   ],
-  "camera": {"view":"front","projection":"orthographic"},
+  "camera": {"coordinate_space":"normalized_figure","viewport":{"x":0,"y":0,"width":1,"height":1}},
+  "layers": [
+    {"id":"geometry","order":10,"entity_ids":["title","charge-visit","professional","advise","design","repeated-guidance"]},
+    {"id":"labels","order":20,"annotation_ids":["ann-title","ann-charge-visit","ann-professional","ann-advise","ann-design","ann-repeated-guidance"]}
+  ],
   "visual_style": {"format":"infografía educativa","layout":"vertical por bloques","palette":"beige, negro, amarillo y azul","linework":"ilustración vectorial de contorno oscuro","caption_style":"encabezados grandes y viñetas"},
   "educational_sequence": [
     {"step":1,"show_entity_ids":["title","charge-visit"],"instruction":"Introducir la visita y la política de cobro/redención indicada por la fuente."},
@@ -36,7 +40,7 @@
     {"step":3,"show_entity_ids":["advise"],"instruction":"Mostrar la asesoría clara y las opciones ofrecidas al cliente."},
     {"step":4,"show_entity_ids":["design","repeated-guidance"],"instruction":"Mostrar diseño/despiece y conservar la repetición final exactamente como evidencia visual de la fuente."}
   ],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":false,"generative_image_allowed":true},
-  "accessibility": {"summary":"Infografía sobre visita de cotización: cobrar la visita, ser puntual y profesional, asesorar con claridad y diseñar/despiezar. Las dos viñetas de previsualización y dimensiones aparecen repetidas al final."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar la repetición visible de «Permite previsualizar el mueble» y «Dibuja sus dimensiones en la pared». No deduplicar ni inventar un encabezado para el bloque repetido."}
+  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false,"render_contract":"normalized-2d-v1"},
+  "accessibility": {"summary":"Infografía sobre visita de cotización: cobrar la visita, ser puntual y profesional, asesorar con claridad y diseñar/despiezar. Las dos viñetas de previsualización y dimensiones aparecen repetidas al final. La reconstrucción usa zonas semánticas no métricas y no a escala."},
+  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar la repetición visible de «Permite previsualizar el mueble» y «Dibuja sus dimensiones en la pared». No deduplicar ni inventar un encabezado para el bloque repetido. Las zonas normalizadas son semánticas, no métricas y no a escala."}
 }
