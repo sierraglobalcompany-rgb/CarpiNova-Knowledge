@@ -4,6 +4,8 @@ import copy
 import json
 from pathlib import Path
 
+import pytest
+
 from carpinova_knowledge.render_docs import render_page_docs
 from carpinova_knowledge.validate_repo import validate_repository
 
@@ -403,3 +405,161 @@ def test_guided_sequence_order_must_be_unique(tmp_path: Path) -> None:
     }
     _write(path, lesson)
     assert "interaction_duplicate_sequence_order" in _codes(validate_repository(tmp_path))
+
+
+def _semantic_table_ready_figure(tmp_path: Path) -> tuple[Path, dict]:
+    page_dir = _valid_repo(tmp_path)
+    path = page_dir / "figures" / "fig-001.json"
+    figure = json.loads(path.read_text(encoding="utf-8"))
+    figure["type"] = "table"
+    section = figure["entities"][0]
+    section.update(
+        {
+            "type": "checklist_section",
+            "headers": ["Artículo", "Aplica", "Cantidad"],
+            "rows": [["Bisagra", "", ""]],
+        }
+    )
+    figure["reconstruction"] = {
+        "preferred_renderer": "html",
+        "deterministic_required": True,
+        "generative_image_allowed": False,
+        "render_contract": "semantic-table-v1",
+    }
+    _write(path, figure)
+    return path, figure
+
+
+def test_semantic_table_v1_accepts_three_columns_and_blank_cells(tmp_path: Path) -> None:
+    _semantic_table_ready_figure(tmp_path)
+    report = validate_repository(tmp_path)
+    assert report["valid"] is True
+    assert report["errors"] == []
+
+
+@pytest.mark.parametrize("row", [["Bisagra", ""], ["Bisagra", "", "", "extra"]])
+def test_semantic_table_row_width_must_match_headers(tmp_path: Path, row: list[str]) -> None:
+    path, figure = _semantic_table_ready_figure(tmp_path)
+    figure["entities"][0]["rows"] = [row]
+    _write(path, figure)
+    assert "semantic_table_row_width_mismatch" in _codes(validate_repository(tmp_path))
+
+
+@pytest.mark.parametrize(
+    "mutation",
+    ["missing-headers", "empty-header", "rows-not-matrix", "null-cell"],
+)
+def test_semantic_table_schema_rejects_malformed_section(tmp_path: Path, mutation: str) -> None:
+    path, figure = _semantic_table_ready_figure(tmp_path)
+    section = figure["entities"][0]
+    if mutation == "missing-headers":
+        section.pop("headers")
+    elif mutation == "empty-header":
+        section["headers"] = ["Artículo", "", "Cantidad"]
+    elif mutation == "rows-not-matrix":
+        section["rows"] = ["Bisagra"]
+    elif mutation == "null-cell":
+        section["rows"] = [["Bisagra", None, ""]]
+    _write(path, figure)
+    assert "schema_error" in _codes(validate_repository(tmp_path))
+
+
+def test_semantic_table_rejects_duplicate_entity_ids(tmp_path: Path) -> None:
+    path, figure = _semantic_table_ready_figure(tmp_path)
+    figure["entities"].append(copy.deepcopy(figure["entities"][0]))
+    _write(path, figure)
+    assert "semantic_table_duplicate_entity_id" in _codes(validate_repository(tmp_path))
+
+
+@pytest.mark.parametrize(
+    ("field", "value", "expected_code"),
+    [
+        ("render_contract", "semantic-table-v2", "schema_error"),
+        ("preferred_renderer", "svg", "semantic_table_incoherent_preferred_renderer"),
+    ],
+)
+def test_semantic_table_rejects_invalid_contract_configuration(
+    tmp_path: Path, field: str, value: str, expected_code: str
+) -> None:
+    path, figure = _semantic_table_ready_figure(tmp_path)
+    figure["reconstruction"][field] = value
+    _write(path, figure)
+    assert expected_code in _codes(validate_repository(tmp_path))
+
+
+def test_semantic_table_requires_table_figure_type(tmp_path: Path) -> None:
+    path, figure = _semantic_table_ready_figure(tmp_path)
+    figure["type"] = "technical_diagram"
+    _write(path, figure)
+    assert "semantic_table_incoherent_figure_type" in _codes(validate_repository(tmp_path))
+
+
+@pytest.mark.parametrize(
+    ("field", "value", "expected_code"),
+    [
+        ("deterministic_required", False, "semantic_table_must_be_deterministic"),
+        ("generative_image_allowed", True, "semantic_table_generative_image_disallowed"),
+    ],
+)
+def test_semantic_table_requires_deterministic_non_generative_rendering(
+    tmp_path: Path, field: str, value: bool, expected_code: str
+) -> None:
+    path, figure = _semantic_table_ready_figure(tmp_path)
+    figure["reconstruction"][field] = value
+    _write(path, figure)
+    assert expected_code in _codes(validate_repository(tmp_path))
+
+
+def test_semantic_table_requires_at_least_one_checklist_section(tmp_path: Path) -> None:
+    path, figure = _semantic_table_ready_figure(tmp_path)
+    figure["entities"][0]["type"] = "title_block"
+    figure["entities"][0].pop("headers")
+    figure["entities"][0].pop("rows")
+    _write(path, figure)
+    assert "semantic_table_missing_section" in _codes(validate_repository(tmp_path))
+
+
+def test_p0259_semantic_table_matches_canonical_transcription_order_and_blanks() -> None:
+    repo_root = Path(__file__).resolve().parents[1]
+    page_dir = repo_root / "books" / "cpnc-2025" / "pages" / "p0259"
+    figure = json.loads((page_dir / "figures" / "fig-001.json").read_text(encoding="utf-8"))
+    content = json.loads((page_dir / "content.json").read_text(encoding="utf-8"))[0]
+    source_lines = content["source_transcription"].splitlines()
+    source_tables: list[tuple[list[str], list[str]]] = []
+    for index, line in enumerate(source_lines):
+        headers = line.split(" | ")
+        if len(headers) != 3:
+            continue
+        rows: list[str] = []
+        for row in source_lines[index + 1 :]:
+            if not row or " | " in row:
+                break
+            rows.append(row)
+        source_tables.append((headers, rows))
+
+    sections = [entity for entity in figure["entities"] if entity.get("type") == "checklist_section"]
+    assert [entity["id"] for entity in figure["entities"]] == [
+        "title",
+        "workshop-materials",
+        "site-materials",
+        "tools-equipment",
+        "footnote",
+    ]
+    assert figure["reconstruction"].get("render_contract") == "semantic-table-v1"
+    assert content["content_id"] == "CONTENT-CPNC-2025-P0259-001"
+    assert content["page_id"] == figure["page_id"] == "PAGE-CPNC-2025-P0259"
+    assert figure["source"]["pdf_page"] == 259
+    assert figure["source"]["printed_page"] == 237
+    assert len(sections) == len(source_tables) == 3
+
+    for section, (source_headers, source_rows) in zip(sections, source_tables, strict=True):
+        assert section["headers"] == source_headers
+        assert section["rows"] == [[row, "", ""] for row in source_rows]
+
+    rows = [row for section in sections for row in section["rows"]]
+    assert [len(section["rows"]) for section in sections] == [12, 16, 18]
+    assert len(rows) == 46
+    assert sum(len(row) for row in rows) == 138
+    assert sum(value == "" for row in rows for value in row) == 92
+    assert figure["entities"][0]["text"] == source_lines[0]
+    assert figure["entities"][-1]["text"] == source_lines[-1]
