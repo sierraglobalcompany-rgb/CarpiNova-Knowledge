@@ -42,6 +42,60 @@ def _iter_sources(kind: str, record: dict[str, Any]) -> Iterable[dict[str, Any]]
                 yield source
 
 
+def _validate_semantic_table(
+    record: dict[str, Any],
+    path: Path,
+    errors: list[dict[str, Any]],
+) -> None:
+    reconstruction = record.get("reconstruction")
+    if not isinstance(reconstruction, dict) or reconstruction.get("render_contract") != "semantic-table-v1":
+        return
+
+    oid = record.get("figure_id")
+    if record.get("type") != "table":
+        _error(errors, "semantic_table_incoherent_figure_type", path, oid, "semantic-table-v1 requires type=table", "type")
+    if reconstruction.get("preferred_renderer") != "html":
+        _error(errors, "semantic_table_incoherent_preferred_renderer", path, oid, "semantic-table-v1 requires preferred_renderer=html", "reconstruction.preferred_renderer")
+    if reconstruction.get("deterministic_required") is not True:
+        _error(errors, "semantic_table_must_be_deterministic", path, oid, "semantic-table-v1 requires deterministic_required=true", "reconstruction.deterministic_required")
+    if reconstruction.get("generative_image_allowed") is not False:
+        _error(errors, "semantic_table_generative_image_disallowed", path, oid, "semantic-table-v1 requires generative_image_allowed=false", "reconstruction.generative_image_allowed")
+
+    raw_entities = record.get("entities")
+    if not isinstance(raw_entities, list):
+        return
+    entities = [entity for entity in raw_entities if isinstance(entity, dict)]
+    seen_ids: set[str] = set()
+    for entity in entities:
+        entity_id = entity.get("id")
+        if not isinstance(entity_id, str) or not entity_id:
+            continue
+        if entity_id in seen_ids:
+            _error(errors, "semantic_table_duplicate_entity_id", path, oid, f"entity id {entity_id} is duplicated", "entities.id")
+        seen_ids.add(entity_id)
+
+    sections = [entity for entity in entities if entity.get("type") == "checklist_section"]
+    if not sections:
+        _error(errors, "semantic_table_missing_section", path, oid, "semantic-table-v1 requires at least one checklist_section", "entities")
+    for section in sections:
+        headers = section.get("headers")
+        if not isinstance(headers, list) or not headers or any(not isinstance(header, str) or not header for header in headers):
+            continue
+        rows = section.get("rows")
+        if not isinstance(rows, list):
+            continue
+        for row_number, row in enumerate(rows, start=1):
+            if isinstance(row, list) and len(row) != len(headers):
+                _error(
+                    errors,
+                    "semantic_table_row_width_mismatch",
+                    path,
+                    oid,
+                    f"checklist_section {section.get('id')} row {row_number} has {len(row)} cells; expected {len(headers)}",
+                    "entities.rows",
+                )
+
+
 def _validate_render_contract(
     record: dict[str, Any],
     path: Path,
@@ -310,6 +364,7 @@ def validate_repository(root: Path) -> dict[str, Any]:
                         entity_ids,
                         measurement_ids,
                     )
+                _validate_semantic_table(record, path, errors)
                 _validate_render_contract(record, path, errors, refs)
                 for ref in record.get("measurements", []):
                     refs.append((ref, path, oid, "measurements"))

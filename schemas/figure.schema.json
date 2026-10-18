@@ -96,7 +96,7 @@
         "preferred_renderer": {"enum": ["svg", "html", "3d", "image", "hybrid"]},
         "deterministic_required": {"type": "boolean"},
         "generative_image_allowed": {"type": "boolean"},
-        "render_contract": {"enum": ["normalized-2d-v1"]}
+        "render_contract": {"enum": ["normalized-2d-v1", "semantic-table-v1"]}
       }
     },
     "accessibility": {"type": "object"},
@@ -202,6 +202,58 @@
               "anyOf": [
                 {"required": ["entity_ids"]},
                 {"required": ["annotation_ids"]}
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "reconstruction": {
+            "properties": {"render_contract": {"const": "semantic-table-v1"}},
+            "required": ["render_contract"]
+          }
+        },
+        "required": ["reconstruction"]
+      },
+      "then": {
+        "properties": {
+          "type": {"const": "table"},
+          "reconstruction": {
+            "properties": {
+              "preferred_renderer": {"const": "html"},
+              "deterministic_required": {"const": true},
+              "generative_image_allowed": {"const": false}
+            }
+          },
+          "entities": {
+            "items": {
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {"type": {"const": "checklist_section"}},
+                    "required": ["type"]
+                  },
+                  "then": {
+                    "required": ["headers", "rows"],
+                    "properties": {
+                      "headers": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {"type": "string", "minLength": 1}
+                      },
+                      "rows": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {"type": "string"}
+                        }
+                      }
+                    }
+                  }
+                }
               ]
             }
           }
