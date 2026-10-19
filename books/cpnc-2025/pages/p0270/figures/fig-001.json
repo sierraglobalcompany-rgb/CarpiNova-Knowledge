@@ -3,41 +3,453 @@
   "page_id": "PAGE-CPNC-2025-P0270",
   "type": "form",
   "purpose": "Recrear de forma determinista el formulario del Anexo 14 para análisis unitario, preservando secciones, unidades, campos vacíos, subtotales y resumen de costos.",
-  "source": {"book_id":"cpnc-2025","pdf_page":270,"printed_page":248,"region":{"x":0.14,"y":0.19,"width":0.73,"height":0.75},"extraction":{"method":"visual","confidence":0.99,"review_status":"VISUALLY_VERIFIED"}},
+  "source": {
+    "book_id": "cpnc-2025",
+    "pdf_page": 270,
+    "printed_page": 248,
+    "region": {
+      "x": 0.14,
+      "y": 0.19,
+      "width": 0.73,
+      "height": 0.75
+    },
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
+  },
   "entities": [
-    {"id":"anexo-title","type":"title_block","geometry":{"primitive":"text","precision":"approximate"},"text":"ANEXO 14. ANALISIS UNITARIO"},
-    {"id":"example-title","type":"form_title","geometry":{"primitive":"text","precision":"approximate"},"text":"EJEMPLO:CLOSET ALCOBAS 1,80ML"},
-    {"id":"headers","type":"column_headers","geometry":{"primitive":"table_header","precision":"approximate"},"headers":["","UNID","CANT","VR. UNIT","VR. TOTAL"]},
-    {"id":"sheet","type":"costing_sections","geometry":{"primitive":"table_rows","precision":"approximate"},"sections":[
-      {"heading":"LAMINA Y ENCHAPE","rows":[["LAMINA RH 15MM","UNID","","",""],["ENCHAPE DE 19MM","ML","","",""],["SUBTOTAL","","","","$ -"]]},
-      {"heading":"HERRAJES","rows":[["FLANCHES","UNID","","",""],["MANIJAS","UNID","","",""],["RIEL FULL EXTENSION 45CM","UNID","","",""],["SISTEMA CORREDERA","UNID","","",""],["SISTEMA RIEL DUCLOSET","UNID","","",""],["TUBO","UNID","","",""],["SUBTOTAL","","","","$ -"]]},
-      {"heading":"FERRETERIA","rows":[["PUNTILLA","CJ","","",""],["TAPATORNILLO","UNID","","",""],["TORNILLOS No.6 DE 1\"","UNID","","",""],["TORNILLOS No.6 DE 1\" 1/2","UNID","","",""],["TORNILLOS No.6 DE 2\"","UNID","","",""],["TORNILLOS No.8 DE 3\"","UNID","","",""],["ZUNCHO","UNID","","",""],["PEGANTE","ML","","",""],["VINIPEL","UNID","","",""],["SUBTOTAL","","","","$ -"]]},
-      {"heading":"HERRAMIENTA","rows":[["AFILADA DE DISCOS Y COSTO DISCO","UNID","","",""],["SUBTOTAL","","","","$ -"]]},
-      {"heading":"MANO DE OBRA","rows":[["ARMADO E INSTALACION","UNID","","",""],["DETALLADO","UNID","","",""],["SUBTOTAL","","","","$ -"]]}
-    ]},
-    {"id":"summary","type":"cost_summary","geometry":{"primitive":"table_rows","precision":"approximate"},"rows":[["TOTAL COSTO DIRECTO","$ -"],["ADMON","$ -"],["UTILIDAD","$ -"],["TRANSPORTE","$ -"],["TOTAL","$ -"]]},
-    {"id":"linear-meter","type":"linear_meter_summary","geometry":{"primitive":"table_rows","precision":"approximate"},"rows":[["ML","1,8"],["DIVIDO EL TOTAL POR LOS ML, EN ESTE EJEMPLO 1,8M",""],["VALOR/ML","$ -"]]}
+    {
+      "id": "anexo-title",
+      "type": "sheet_title",
+      "geometry": {
+        "primitive": "text",
+        "precision": "approximate"
+      },
+      "text": "ANEXO 14. ANALISIS UNITARIO"
+    },
+    {
+      "id": "example-title",
+      "type": "sheet_text",
+      "geometry": {
+        "primitive": "text",
+        "precision": "approximate"
+      },
+      "role": "subtitle",
+      "text": "EJEMPLO:CLOSET ALCOBAS 1,80ML"
+    },
+    {
+      "id": "sheet",
+      "type": "sheet_table",
+      "geometry": {
+        "primitive": "table_rows",
+        "precision": "approximate"
+      },
+      "caption": "EJEMPLO:CLOSET ALCOBAS 1,80ML",
+      "headers": [
+        "",
+        "UNID",
+        "CANT",
+        "VR. UNIT",
+        "VR. TOTAL"
+      ],
+      "sections": [
+        {
+          "id": "cost-section-1",
+          "heading": "LAMINA Y ENCHAPE",
+          "rows": [
+            [
+              "LAMINA RH 15MM",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "ENCHAPE DE 19MM",
+              "ML",
+              "",
+              "",
+              ""
+            ],
+            [
+              "SUBTOTAL",
+              "",
+              "",
+              "",
+              "$ -"
+            ]
+          ],
+          "merged_cells": [
+            {
+              "row": 2,
+              "start_column": 0,
+              "colspan": 4
+            }
+          ]
+        },
+        {
+          "id": "cost-section-2",
+          "heading": "HERRAJES",
+          "rows": [
+            [
+              "FLANCHES",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "MANIJAS",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "RIEL FULL EXTENSION 45CM",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "SISTEMA CORREDERA",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "SISTEMA RIEL DUCLOSET",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "TUBO",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "SUBTOTAL",
+              "",
+              "",
+              "",
+              "$ -"
+            ]
+          ],
+          "merged_cells": [
+            {
+              "row": 6,
+              "start_column": 0,
+              "colspan": 4
+            }
+          ]
+        },
+        {
+          "id": "cost-section-3",
+          "heading": "FERRETERIA",
+          "rows": [
+            [
+              "PUNTILLA",
+              "CJ",
+              "",
+              "",
+              ""
+            ],
+            [
+              "TAPATORNILLO",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "TORNILLOS No.6 DE 1\"",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "TORNILLOS No.6 DE 1\" 1/2",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "TORNILLOS No.6 DE 2\"",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "TORNILLOS No.8 DE 3\"",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "ZUNCHO",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "PEGANTE",
+              "ML",
+              "",
+              "",
+              ""
+            ],
+            [
+              "VINIPEL",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "SUBTOTAL",
+              "",
+              "",
+              "",
+              "$ -"
+            ]
+          ],
+          "merged_cells": [
+            {
+              "row": 9,
+              "start_column": 0,
+              "colspan": 4
+            }
+          ]
+        },
+        {
+          "id": "cost-section-4",
+          "heading": "HERRAMIENTA",
+          "rows": [
+            [
+              "AFILADA DE DISCOS Y COSTO DISCO",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "SUBTOTAL",
+              "",
+              "",
+              "",
+              "$ -"
+            ]
+          ],
+          "merged_cells": [
+            {
+              "row": 1,
+              "start_column": 0,
+              "colspan": 4
+            }
+          ]
+        },
+        {
+          "id": "cost-section-5",
+          "heading": "MANO DE OBRA",
+          "rows": [
+            [
+              "ARMADO E INSTALACION",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "DETALLADO",
+              "UNID",
+              "",
+              "",
+              ""
+            ],
+            [
+              "SUBTOTAL",
+              "",
+              "",
+              "",
+              "$ -"
+            ]
+          ],
+          "merged_cells": [
+            {
+              "row": 2,
+              "start_column": 0,
+              "colspan": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "sheet_table",
+      "geometry": {
+        "primitive": "table_rows",
+        "precision": "approximate"
+      },
+      "caption": "TOTAL COSTO DIRECTO",
+      "headers": [
+        "",
+        ""
+      ],
+      "sections": [
+        {
+          "id": "cost-summary-rows",
+          "heading": "",
+          "rows": [
+            [
+              "TOTAL COSTO DIRECTO",
+              "$ -"
+            ],
+            [
+              "ADMON",
+              "$ -"
+            ],
+            [
+              "UTILIDAD",
+              "$ -"
+            ],
+            [
+              "TRANSPORTE",
+              "$ -"
+            ],
+            [
+              "TOTAL",
+              "$ -"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "linear-meter",
+      "type": "sheet_table",
+      "geometry": {
+        "primitive": "table_rows",
+        "precision": "approximate"
+      },
+      "caption": "VALOR/ML",
+      "headers": [
+        "",
+        ""
+      ],
+      "sections": [
+        {
+          "id": "linear-meter-rows",
+          "heading": "",
+          "rows": [
+            [
+              "ML",
+              "1,8"
+            ],
+            [
+              "DIVIDO EL TOTAL POR LOS ML, EN ESTE EJEMPLO 1,8M",
+              ""
+            ],
+            [
+              "VALOR/ML",
+              "$ -"
+            ]
+          ]
+        }
+      ]
+    }
   ],
   "relationships": [
-    {"from":"anexo-title","to":"example-title","type":"introduces"},
-    {"from":"example-title","to":"headers","type":"followed_by"},
-    {"from":"headers","to":"sheet","type":"structures"},
-    {"from":"sheet","to":"summary","type":"summarized_by"},
-    {"from":"summary","to":"linear-meter","type":"followed_by"}
+    {
+      "from": "anexo-title",
+      "to": "example-title",
+      "type": "introduces"
+    },
+    {
+      "from": "example-title",
+      "to": "sheet",
+      "type": "followed_by"
+    },
+    {
+      "from": "sheet",
+      "to": "summary",
+      "type": "summarized_by"
+    },
+    {
+      "from": "summary",
+      "to": "linear-meter",
+      "type": "followed_by"
+    }
   ],
   "measurements": [],
   "annotations": [
-    {"target_entity_id":"headers","text":"La primera columna no tiene rótulo visible en el original; no añadir DESCRIPCION."},
-    {"target_entity_id":"sheet","text":"Los campos de cantidad, valor unitario y valor total permanecen vacíos; los subtotales muestran $ -."}
+    {
+      "target_entity_id": "sheet",
+      "text": "La primera columna no tiene rótulo visible en el original; no añadir DESCRIPCION."
+    },
+    {
+      "target_entity_id": "sheet",
+      "text": "Los campos de cantidad, valor unitario y valor total permanecen vacíos; los subtotales muestran $ -."
+    }
   ],
-  "camera": {"view":"front","projection":"orthographic"},
-  "visual_style": {"format":"formulario tabular","layout":"tabla principal por secciones y resumen inferior","palette":"blanco, negro, gris y amarillo","linework":"rejilla rectangular","caption_style":"encabezados en mayúsculas"},
+  "camera": {
+    "view": "front",
+    "projection": "orthographic"
+  },
+  "visual_style": {
+    "format": "formulario tabular",
+    "layout": "tabla principal por secciones y resumen inferior",
+    "palette": "blanco, negro, gris y amarillo",
+    "linework": "rejilla rectangular",
+    "caption_style": "encabezados en mayúsculas"
+  },
   "educational_sequence": [
-    {"step":1,"show_entity_ids":["headers","sheet"],"instruction":"Registrar cada componente por sección usando unidad, cantidad, valor unitario y valor total."},
-    {"step":2,"show_entity_ids":["summary"],"instruction":"Consolidar costo directo, administración, utilidad, transporte y total."},
-    {"step":3,"show_entity_ids":["linear-meter"],"instruction":"Relacionar el total con los metros lineales del ejemplo para obtener el valor por ML."}
+    {
+      "step": 1,
+      "show_entity_ids": [
+        "sheet"
+      ],
+      "instruction": "Registrar cada componente por sección usando unidad, cantidad, valor unitario y valor total."
+    },
+    {
+      "step": 2,
+      "show_entity_ids": [
+        "summary"
+      ],
+      "instruction": "Consolidar costo directo, administración, utilidad, transporte y total."
+    },
+    {
+      "step": 3,
+      "show_entity_ids": [
+        "linear-meter"
+      ],
+      "instruction": "Relacionar el total con los metros lineales del ejemplo para obtener el valor por ML."
+    }
   ],
-  "reconstruction": {"preferred_renderer":"html","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility": {"summary":"Formulario de análisis unitario para un clóset de 1,80 ml, con materiales, herrajes, ferretería, herramienta, mano de obra y resumen de costos."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"Mantener literalmente rótulos y errores del original. No inventar encabezado para la primera columna ni valores en campos vacíos."}
+  "reconstruction": {
+    "preferred_renderer": "html",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "semantic-sheet-v1"
+  },
+  "accessibility": {
+    "summary": "Formulario de análisis unitario para un clóset de 1,80 ml, con materiales, herrajes, ferretería, herramienta, mano de obra y resumen de costos."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Mantener literalmente rótulos y errores del original. No inventar encabezado para la primera columna ni valores en campos vacíos."
+  }
 }
