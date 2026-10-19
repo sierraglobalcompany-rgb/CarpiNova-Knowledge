@@ -129,6 +129,113 @@ def _validate_semantic_form(
                     _error(errors, "semantic_form_row_width_mismatch", path, record.get("figure_id"), f"Row {index + 1} must contain {len(headers)} cells", "entities.rows")
 
 
+def _validate_semantic_sheet(
+    record: dict[str, Any], path: Path, errors: list[dict[str, Any]],
+) -> None:
+    reconstruction = record.get("reconstruction")
+    if not isinstance(reconstruction, dict) or reconstruction.get("render_contract") != "semantic-sheet-v1":
+        return
+
+    oid = record.get("figure_id")
+    if record.get("type") not in {"form", "table"}:
+        _error(errors, "semantic_sheet_incoherent_figure_type", path, oid, "semantic-sheet-v1 requires type=form or type=table", "type")
+    if reconstruction.get("preferred_renderer") != "html":
+        _error(errors, "semantic_sheet_incoherent_preferred_renderer", path, oid, "semantic-sheet-v1 requires preferred_renderer=html", "reconstruction.preferred_renderer")
+    if reconstruction.get("deterministic_required") is not True:
+        _error(errors, "semantic_sheet_must_be_deterministic", path, oid, "semantic-sheet-v1 requires deterministic_required=true", "reconstruction.deterministic_required")
+    if reconstruction.get("generative_image_allowed") is not False:
+        _error(errors, "semantic_sheet_generative_image_disallowed", path, oid, "semantic-sheet-v1 requires generative_image_allowed=false", "reconstruction.generative_image_allowed")
+
+    entities = record.get("entities")
+    if not isinstance(entities, list):
+        return
+    seen_ids: set[str] = set()
+    titles = 0
+    tables = 0
+    for entity in entities:
+        if not isinstance(entity, dict):
+            continue
+        entity_id = entity.get("id")
+        if isinstance(entity_id, str):
+            if entity_id in seen_ids:
+                _error(errors, "semantic_sheet_duplicate_entity_id", path, oid, f"Duplicate sheet entity id: {entity_id}", "entities.id")
+            seen_ids.add(entity_id)
+        if entity.get("type") == "sheet_title":
+            titles += 1
+        if entity.get("type") != "sheet_table":
+            continue
+        tables += 1
+        headers = entity.get("headers")
+        sections = entity.get("sections")
+        if not isinstance(headers, list) or not headers or any(not isinstance(header, str) for header in headers):
+            continue
+        if not isinstance(sections, list):
+            continue
+
+        groups = entity.get("column_groups", [])
+        covered_columns: list[int] = []
+        groups_valid = True
+        for group in groups if isinstance(groups, list) else []:
+            if not isinstance(group, dict):
+                groups_valid = False
+                continue
+            start = group.get("start_column")
+            span = group.get("span")
+            if not isinstance(start, int) or not isinstance(span, int) or start < 1 or span < 1 or start + span > len(headers):
+                _error(errors, "semantic_sheet_column_group_out_of_bounds", path, oid, f"Column group in {entity.get('id')} is outside its {len(headers)} columns", "entities.column_groups")
+                groups_valid = False
+                continue
+            columns = list(range(start, start + span))
+            if any(column in covered_columns for column in columns):
+                _error(errors, "semantic_sheet_column_group_overlap", path, oid, f"Column groups overlap in {entity.get('id')}", "entities.column_groups")
+                groups_valid = False
+            covered_columns.extend(columns)
+        if groups and groups_valid and sorted(covered_columns) != list(range(1, len(headers))):
+            _error(errors, "semantic_sheet_column_groups_incomplete", path, oid, f"Column groups in {entity.get('id')} must cover every non-row-header column once", "entities.column_groups")
+
+        for section in sections:
+            if not isinstance(section, dict):
+                continue
+            section_id = section.get("id")
+            if isinstance(section_id, str):
+                if section_id in seen_ids:
+                    _error(errors, "semantic_sheet_duplicate_entity_id", path, oid, f"Duplicate sheet entity id: {section_id}", "entities.sections.id")
+                seen_ids.add(section_id)
+            rows = section.get("rows")
+            if not isinstance(rows, list):
+                continue
+            row_merges: dict[int, list[tuple[int, int]]] = {}
+            for merge in section.get("merged_cells", []):
+                if not isinstance(merge, dict):
+                    continue
+                row_index = merge.get("row")
+                start = merge.get("start_column")
+                span = merge.get("colspan")
+                if not isinstance(row_index, int) or not isinstance(start, int) or not isinstance(span, int) or row_index >= len(rows) or start + span > len(headers):
+                    _error(errors, "semantic_sheet_merge_out_of_bounds", path, oid, f"Merged cell in section {section_id} is outside its table", "entities.sections.merged_cells")
+                    continue
+                row_merges.setdefault(row_index, []).append((start, span))
+            for row_index, row in enumerate(rows):
+                if not isinstance(row, list):
+                    continue
+                if len(row) != len(headers):
+                    _error(errors, "semantic_sheet_row_width_mismatch", path, oid, f"Table {entity.get('id')} section {section_id} row {row_index + 1} has {len(row)} cells; expected {len(headers)}", "entities.sections.rows")
+                    continue
+                occupied: set[int] = set()
+                for start, span in row_merges.get(row_index, []):
+                    merged_columns = set(range(start, start + span))
+                    if occupied & merged_columns:
+                        _error(errors, "semantic_sheet_merge_overlap", path, oid, f"Merged cells overlap in section {section_id} row {row_index + 1}", "entities.sections.merged_cells")
+                    occupied |= merged_columns
+                    if any(row[column] != "" for column in range(start + 1, start + span)):
+                        _error(errors, "semantic_sheet_merge_discards_source_cell", path, oid, f"Cells covered by a merge must be blank in section {section_id} row {row_index + 1}", "entities.sections.merged_cells")
+
+    if titles != 1:
+        _error(errors, "semantic_sheet_title_count", path, oid, "semantic-sheet-v1 requires exactly one sheet_title", "entities")
+    if tables == 0:
+        _error(errors, "semantic_sheet_missing_table", path, oid, "semantic-sheet-v1 requires at least one sheet_table", "entities")
+
+
 def _validate_render_contract(
     record: dict[str, Any],
     path: Path,
@@ -399,6 +506,7 @@ def validate_repository(root: Path) -> dict[str, Any]:
                     )
                 _validate_semantic_table(record, path, errors)
                 _validate_semantic_form(record, path, errors)
+                _validate_semantic_sheet(record, path, errors)
                 _validate_render_contract(record, path, errors, refs)
                 for ref in record.get("measurements", []):
                     refs.append((ref, path, oid, "measurements"))

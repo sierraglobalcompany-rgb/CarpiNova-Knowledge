@@ -96,7 +96,7 @@
         "preferred_renderer": {"enum": ["svg", "html", "3d", "image", "hybrid"]},
         "deterministic_required": {"type": "boolean"},
         "generative_image_allowed": {"type": "boolean"},
-        "render_contract": {"enum": ["normalized-2d-v1", "semantic-table-v1", "semantic-form-v1"]}
+        "render_contract": {"enum": ["normalized-2d-v1", "semantic-table-v1", "semantic-form-v1", "semantic-sheet-v1"]}
       }
     },
     "accessibility": {"type": "object"},
@@ -436,5 +436,170 @@
         }
       }
     }
-  ]
+,
+    {
+      "if": {
+        "properties": {
+          "reconstruction": {
+            "properties": {"render_contract": {"const": "semantic-sheet-v1"}},
+            "required": ["render_contract"]
+          }
+        },
+        "required": ["reconstruction"]
+      },
+      "then": {
+        "properties": {
+          "type": {"enum": ["form", "table"]},
+          "reconstruction": {
+            "properties": {
+              "preferred_renderer": {"const": "html"},
+              "deterministic_required": {"const": true},
+              "generative_image_allowed": {"const": false}
+            }
+          },
+          "entities": {
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "required": ["id", "type", "geometry"],
+              "additionalProperties": false,
+              "properties": {
+                "id": {"type": "string", "minLength": 1},
+                "type": {"enum": ["sheet_title", "sheet_text", "sheet_field", "sheet_legend", "sheet_table"]},
+                "geometry": {
+                  "type": "object",
+                  "required": ["precision"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "primitive": {"type": ["string", "null"]},
+                    "precision": {"enum": ["exact", "approximate", "unknown"]}
+                  }
+                },
+                "text": {"type": "string", "pattern": "\\S"},
+                "role": {"enum": ["subtitle", "placeholder", "instruction"]},
+                "label": {"type": "string", "pattern": "\\S"},
+                "value": {"type": "string"},
+                "entries": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "required": ["label", "code", "color"],
+                    "additionalProperties": false,
+                    "properties": {
+                      "label": {"type": "string", "pattern": "\\S"},
+                      "code": {"type": "string", "pattern": "\\S"},
+                      "color": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"}
+                    }
+                  }
+                },
+                "caption": {"type": "string", "pattern": "\\S"},
+                "headers": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {"type": "string"}
+                },
+                "column_groups": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "required": ["label", "start_column", "span"],
+                    "additionalProperties": false,
+                    "properties": {
+                      "label": {"type": "string"},
+                      "start_column": {"type": "integer", "minimum": 1},
+                      "span": {"type": "integer", "minimum": 1}
+                    }
+                  }
+                },
+                "sections": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "required": ["id", "heading", "rows"],
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {"type": "string", "minLength": 1},
+                      "heading": {"type": "string"},
+                      "rows": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "array",
+                          "items": {"type": "string"}
+                        }
+                      },
+                      "merged_cells": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "required": ["row", "start_column", "colspan"],
+                          "additionalProperties": false,
+                          "properties": {
+                            "row": {"type": "integer", "minimum": 0},
+                            "start_column": {"type": "integer", "minimum": 0},
+                            "colspan": {"type": "integer", "minimum": 2}
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "allOf": [
+                {
+                  "if": {"properties": {"type": {"const": "sheet_title"}}, "required": ["type"]},
+                  "then": {"required": ["text"]}
+                },
+                {
+                  "if": {"properties": {"type": {"const": "sheet_text"}}, "required": ["type"]},
+                  "then": {"required": ["role", "text"]}
+                },
+                {
+                  "if": {"properties": {"type": {"const": "sheet_field"}}, "required": ["type"]},
+                  "then": {"required": ["label", "value"]}
+                },
+                {
+                  "if": {"properties": {"type": {"const": "sheet_legend"}}, "required": ["type"]},
+                  "then": {"required": ["entries"]}
+                },
+                {
+                  "if": {"properties": {"type": {"const": "sheet_table"}}, "required": ["type"]},
+                  "then": {"required": ["caption", "headers", "sections"]}
+                }
+              ],
+              "oneOf": [
+                {
+                  "required": ["id", "type", "geometry", "text"],
+                  "additionalProperties": false,
+                  "properties": {"id": {}, "type": {"const": "sheet_title"}, "geometry": {}, "text": {}}
+                },
+                {
+                  "required": ["id", "type", "geometry", "role", "text"],
+                  "additionalProperties": false,
+                  "properties": {"id": {}, "type": {"const": "sheet_text"}, "geometry": {}, "role": {}, "text": {}}
+                },
+                {
+                  "required": ["id", "type", "geometry", "label", "value"],
+                  "additionalProperties": false,
+                  "properties": {"id": {}, "type": {"const": "sheet_field"}, "geometry": {}, "label": {}, "value": {}}
+                },
+                {
+                  "required": ["id", "type", "geometry", "entries"],
+                  "additionalProperties": false,
+                  "properties": {"id": {}, "type": {"const": "sheet_legend"}, "geometry": {}, "entries": {}}
+                },
+                {
+                  "required": ["id", "type", "geometry", "caption", "headers", "sections"],
+                  "additionalProperties": false,
+                  "properties": {"id": {}, "type": {"const": "sheet_table"}, "geometry": {}, "caption": {}, "headers": {}, "column_groups": {}, "sections": {}}
+                }
+              ]
+            }
+          }
+        }
+      }
+    }  ]
 }

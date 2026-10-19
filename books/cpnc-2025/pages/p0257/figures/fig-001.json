@@ -20,31 +20,415 @@
     }
   },
   "entities": [
-    {"id":"title","type":"title_block","geometry":{"primitive":"text","precision":"approximate","bounding_box":{"x":0.04,"y":0.03,"width":0.92,"height":0.05}},"description":"Encabezado PROGRAMACION OBRAS."},
-    {"id":"legend","type":"stage_legend","geometry":{"primitive":"table","precision":"approximate","bounding_box":{"x":0.04,"y":0.10,"width":0.26,"height":0.17}},"description":"Leyenda: DESPIECE D, CORTE Y ENCHAPE C, ARMADO A, INSTALACION I, ENTREGA E, con celdas de color."},
-    {"id":"logo","type":"logo_placeholder","geometry":{"primitive":"rectangle","precision":"approximate","bounding_box":{"x":0.61,"y":0.10,"width":0.31,"height":0.17}},"description":"Recuadro LOGO."},
-    {"id":"schedule","type":"calendar_grid","geometry":{"primitive":"table","precision":"approximate","bounding_box":{"x":0.04,"y":0.31,"width":0.92,"height":0.51}},"description":"Campo MES, columna NOMBRE DE LA OBRA, cuatro secuencias L M M J V S D y filas OBRA 1 a OBRA 6."},
-    {"id":"observations","type":"instruction_block","geometry":{"primitive":"text_box","precision":"approximate","bounding_box":{"x":0.04,"y":0.86,"width":0.92,"height":0.07}},"description":"Observación para diligenciar primero la FECHA DE ENTREGA y planificar hacia atrás hasta la fecha límite de inicio de producción."}
+    {
+      "id": "title",
+      "type": "sheet_title",
+      "geometry": {
+        "primitive": "text",
+        "precision": "approximate"
+      },
+      "text": "PROGRAMACION OBRAS"
+    },
+    {
+      "id": "legend",
+      "type": "sheet_legend",
+      "geometry": {
+        "primitive": "table",
+        "precision": "approximate"
+      },
+      "entries": [
+        {
+          "label": "DESPIECE",
+          "code": "D",
+          "color": "#00B0F0"
+        },
+        {
+          "label": "CORTE Y ENCHAPE",
+          "code": "C",
+          "color": "#FFFF00"
+        },
+        {
+          "label": "ARMADO",
+          "code": "A",
+          "color": "#92D050"
+        },
+        {
+          "label": "INSTALACION",
+          "code": "I",
+          "color": "#FF00FF"
+        },
+        {
+          "label": "ENTREGA",
+          "code": "E",
+          "color": "#FF0000"
+        }
+      ]
+    },
+    {
+      "id": "logo",
+      "type": "sheet_text",
+      "geometry": {
+        "primitive": "rectangle",
+        "precision": "approximate"
+      },
+      "role": "placeholder",
+      "text": "LOGO"
+    },
+    {
+      "id": "month-field",
+      "type": "sheet_field",
+      "geometry": {
+        "primitive": "table",
+        "precision": "approximate"
+      },
+      "label": "MES:",
+      "value": ""
+    },
+    {
+      "id": "schedule",
+      "type": "sheet_table",
+      "geometry": {
+        "primitive": "table",
+        "precision": "approximate"
+      },
+      "caption": "PROGRAMACION OBRAS",
+      "headers": [
+        "NOMBRE DE LA OBRA",
+        "L",
+        "M",
+        "M",
+        "J",
+        "V",
+        "S",
+        "D",
+        "L",
+        "M",
+        "M",
+        "J",
+        "V",
+        "S",
+        "D",
+        "L",
+        "M",
+        "M",
+        "J",
+        "V",
+        "S",
+        "D",
+        "L",
+        "M",
+        "M",
+        "J",
+        "V",
+        "S",
+        "D"
+      ],
+      "column_groups": [
+        {
+          "label": "",
+          "start_column": 1,
+          "span": 7
+        },
+        {
+          "label": "",
+          "start_column": 8,
+          "span": 7
+        },
+        {
+          "label": "",
+          "start_column": 15,
+          "span": 7
+        },
+        {
+          "label": "",
+          "start_column": 22,
+          "span": 7
+        }
+      ],
+      "sections": [
+        {
+          "id": "schedule-rows",
+          "heading": "",
+          "rows": [
+            [
+              "OBRA 1:",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "OBRA 2:",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "OBRA 3:",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "OBRA 4:",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "OBRA 5:",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "OBRA 6:",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "observations",
+      "type": "sheet_text",
+      "geometry": {
+        "primitive": "text_box",
+        "precision": "approximate"
+      },
+      "role": "instruction",
+      "text": "Diligenciar primero la FECHA DE ENTREGA pactada con el cliente, se definen los otros tiempos y se van diligenciando de adelante para atrás y se identifica la fecha límite para iniciar producción."
+    }
   ],
   "relationships": [
-    {"from":"legend","to":"schedule","type":"provides_codes_for"},
-    {"from":"logo","to":"schedule","type":"document_header_for"},
-    {"from":"observations","to":"schedule","type":"instructs_how_to_fill"}
+    {
+      "from": "legend",
+      "to": "schedule",
+      "type": "provides_codes_for"
+    },
+    {
+      "from": "logo",
+      "to": "schedule",
+      "type": "document_header_for"
+    },
+    {
+      "from": "observations",
+      "to": "schedule",
+      "type": "instructs_how_to_fill"
+    }
   ],
   "measurements": [],
   "annotations": [
-    {"target_entity_id":"legend","text":"DESPIECE D / CORTE Y ENCHAPE C / ARMADO A / INSTALACION I / ENTREGA E"},
-    {"target_entity_id":"schedule","text":"MES / NOMBRE DE LA OBRA / cuatro secuencias L M M J V S D / OBRA 1 a OBRA 6"},
-    {"target_entity_id":"observations","text":"Diligenciar primero la FECHA DE ENTREGA pactada con el cliente, se definen los otros tiempos y se van diligenciando de adelante para atrás y se identifica la fecha límite para iniciar producción."}
+    {
+      "target_entity_id": "legend",
+      "text": "DESPIECE D / CORTE Y ENCHAPE C / ARMADO A / INSTALACION I / ENTREGA E"
+    },
+    {
+      "target_entity_id": "schedule",
+      "text": "MES / NOMBRE DE LA OBRA / cuatro secuencias L M M J V S D / OBRA 1 a OBRA 6"
+    },
+    {
+      "target_entity_id": "observations",
+      "text": "Diligenciar primero la FECHA DE ENTREGA pactada con el cliente, se definen los otros tiempos y se van diligenciando de adelante para atrás y se identifica la fecha límite para iniciar producción."
+    }
   ],
-  "camera": {"view":"front","projection":"orthographic"},
-  "visual_style": {"format":"formulario técnico","layout":"horizontal con leyenda superior y cuadrícula de programación","palette":"blanco y negro con cinco celdas de color para las etapas","linework":"retícula rectangular","caption_style":"mayúsculas y etiquetas en negrita"},
+  "camera": {
+    "view": "front",
+    "projection": "orthographic"
+  },
+  "visual_style": {
+    "format": "formulario técnico",
+    "layout": "horizontal con leyenda superior y cuadrícula de programación",
+    "palette": "blanco y negro con cinco celdas de color para las etapas",
+    "linework": "retícula rectangular",
+    "caption_style": "mayúsculas y etiquetas en negrita"
+  },
   "educational_sequence": [
-    {"step":1,"show_entity_ids":["legend","logo"],"instruction":"Identificar los códigos de etapa y el encabezado de la plantilla."},
-    {"step":2,"show_entity_ids":["schedule"],"instruction":"Registrar mes y nombres de las obras en la cuadrícula."},
-    {"step":3,"show_entity_ids":["observations"],"instruction":"Planificar de la fecha de entrega hacia atrás hasta identificar el inicio de producción."}
+    {
+      "step": 1,
+      "show_entity_ids": [
+        "legend",
+        "logo"
+      ],
+      "instruction": "Identificar los códigos de etapa y el encabezado de la plantilla."
+    },
+    {
+      "step": 2,
+      "show_entity_ids": [
+        "schedule"
+      ],
+      "instruction": "Registrar mes y nombres de las obras en la cuadrícula."
+    },
+    {
+      "step": 3,
+      "show_entity_ids": [
+        "observations"
+      ],
+      "instruction": "Planificar de la fecha de entrega hacia atrás hasta identificar el inicio de producción."
+    }
   ],
-  "reconstruction": {"preferred_renderer":"svg","deterministic_required":true,"generative_image_allowed":false},
-  "accessibility": {"summary":"Formulario de programación de obras con códigos D, C, A, I y E, cuatro semanas de lunes a domingo, seis obras y una instrucción para planificar hacia atrás desde la fecha de entrega."},
-  "review": {"status":"VISUALLY_VERIFIED","notes":"Preservar exactamente cuatro secuencias semanales y seis filas de obra. No agregar días, filas ni etapas que no aparecen en la fuente."}
+  "reconstruction": {
+    "preferred_renderer": "html",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "semantic-sheet-v1"
+  },
+  "accessibility": {
+    "summary": "Formulario de programación de obras con códigos D, C, A, I y E, cuatro semanas de lunes a domingo, seis obras y una instrucción para planificar hacia atrás desde la fecha de entrega."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Preservar exactamente cuatro secuencias semanales y seis filas de obra. No agregar días, filas ni etapas que no aparecen en la fuente."
+  }
 }

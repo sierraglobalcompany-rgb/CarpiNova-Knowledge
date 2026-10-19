@@ -7,77 +7,551 @@
     "book_id": "cpnc-2025",
     "pdf_page": 269,
     "printed_page": 247,
-    "region": {"x": 0.09, "y": 0.16, "width": 0.82, "height": 0.78},
-    "extraction": {"method": "visual", "confidence": 0.99, "review_status": "VISUALLY_VERIFIED"}
+    "region": {
+      "x": 0.09,
+      "y": 0.16,
+      "width": 0.82,
+      "height": 0.78
+    },
+    "extraction": {
+      "method": "visual",
+      "confidence": 0.99,
+      "review_status": "VISUALLY_VERIFIED"
+    }
   },
   "entities": [
-    {"id": "title", "type": "title_block", "geometry": {"primitive": "text", "precision": "approximate"}, "text": "ANEXO 13. PRESUPUESTO Y FLUJO DE CAJA."},
-    {"id": "weekly-header", "type": "weekly_columns", "geometry": {"primitive": "table_header", "precision": "approximate"}, "weeks": ["SEMANA 1", "SEMANA 2", "SEMANA 3", "SEMANA 4"], "subcolumns": ["INGRESOS", "EGRESOS"]},
-    {"id": "sales", "type": "sales_section", "geometry": {"primitive": "table_rows", "precision": "approximate"}, "heading": "VENTAS", "rows": [
-      ["PROYECCION VENTAS", "$ 3.200.000", "", "$ 6.000.000", "", "$ 1.500.000", "", "$ 1.500.000", ""],
-      ["ENTREGAS SEGÚN PROGRAMACION", "$ 800.000", "", "$ 500.000", "", "$ 700.000", "", "$ 1.500.000", ""],
-      ["TOTAL VENTAS", "$ 4.000.000", "", "$ 6.500.000", "", "$ 2.200.000", "", "$ 3.000.000", ""]
-    ]},
-    {"id": "operating-expenses", "type": "operating_expenses_section", "geometry": {"primitive": "table_rows", "precision": "approximate"}, "heading": "GASTOS OPERACIONALES (COSTOS FIJOS)", "rows": [
-      ["AGUA TALLER", "", "$ 120.000", "", "", "", "", "", ""],
-      ["ARRIENDO TALLER", "", "", "", "$ 800.000", "", "", "", ""],
-      ["ASEO", "", "$ 40.000", "", "", "", "$ 40.000", "", ""],
-      ["BANCO (4 X 1000, TRANSFERENCIAS)", "", "$ 50.000", "", "$ 50.000", "", "$ 50.000", "", "$ 50.000"],
-      ["CAFETERIA, PAPELERIA", "", "$ 30.000", "", "$ 30.000", "", "$ 30.000", "", "$ 30.000"],
-      ["CELULAR", "", "", "", "", "", "$ 60.000", "", ""],
-      ["DOTACION Y ELEMENTOS SEGURIDAD", "", "$ 80.000", "", "", "", "", "", ""],
-      ["ENERGIA TALLER", "", "", "", "", "", "", "", "$ 250.000"],
-      ["GASOLINA", "", "$ 25.000", "", "$ 25.000", "", "$ 25.000", "", "$ 25.000"],
-      ["GASTOS LEGALES (PROVISION MENSUAL)", "", "", "", "", "", "", "", "$ 100.000"],
-      ["IMPUESTOS", "", "", "", "$ 250.000", "", "", "", ""],
-      ["INTERNET TALLER", "", "", "", "$ 120.000", "", "", "", ""],
-      ["MANTENIMIENTO Y REPARACIONES", "", "$ 80.000", "", "$ 80.000", "", "$ 80.000", "", "$ 80.000"],
-      ["HONORARIOS", "", "", "", "$ 700.000", "", "", "", "$ 700.000"],
-      ["PUBLICIDAD Y MERCADEO", "", "$ 80.000", "", "", "", "$ 80.000", "", ""],
-      ["SEGURIDAD SOCIAL", "", "$ 560.000", "", "", "", "", "", ""],
-      ["SERVICIOS CONTADOR", "", "$ 250.000", "", "", "", "", "", ""],
-      ["OTROS", "", "", "", "$ 100.000", "", "", "", "$ 100.000"],
-      ["TOTAL GASTOS OPERACIONALES", "", "$ 1.315.000", "", "$ 2.155.000", "", "$ 365.000", "", "$ 1.335.000"]
-    ]},
-    {"id": "production-costs", "type": "production_costs_section", "geometry": {"primitive": "table_rows", "precision": "approximate"}, "heading": "COSTO DE LA VENTA (PRODUCCION)", "rows": [
-      ["COMPRAS MATERIALES (APROX 40% VENTA)", "", "$ 1.280.000", "", "$ 2.400.000", "", "$ 600.000", "", "$ 600.000"],
-      ["COMPRA EQUIPO", "", "$ 150.000", "", "", "", "$ 150.000", "", ""],
-      ["ALIMENTACION OBRA", "", "$ 40.000", "", "$ 40.000", "", "$ 40.000", "", "$ 40.000"],
-      ["HERRAMIENTAS (BROCA, DISCO)", "", "$ 25.000", "", "$ 25.000", "", "$ 25.000", "", "$ 25.000"],
-      ["MANO DE OBRA ARMADO - INSTALACION (APROX 20% VENTAS)", "", "$ 640.000", "", "$ 1.200.000", "", "$ 300.000", "", "$ 300.000"],
-      ["TRANSPORTE DE MATERIAL", "", "$ 150.000", "", "$ 150.000", "", "$ 150.000", "", "$ 150.000"],
-      ["OTROS", "", "$ 200.000", "", "$ 200.000", "", "$ 200.000", "", "$ 200.000"],
-      ["TOTAL COSTOS DE PRODUCCION", "", "$ 2.485.000", "", "$ 4.015.000", "", "$ 1.465.000", "", "$ 1.315.000"]
-    ]},
-    {"id": "weekly-totals", "type": "weekly_totals", "geometry": {"primitive": "table_rows", "precision": "approximate"}, "rows": [
-      ["TOTAL INGRESOS", "$ 4.000.000", "", "$ 6.500.000", "", "$ 2.200.000", "", "$ 3.000.000", ""],
-      ["TOTAL EGRESOS", "", "$ 3.800.000", "", "$ 6.170.000", "", "$ 1.830.000", "", "$ 2.650.000"]
-    ]},
-    {"id": "monthly-summary", "type": "monthly_summary", "geometry": {"primitive": "table_rows", "precision": "approximate"}, "rows": [
-      ["TOTAL VENTAS MENSUALES", "$ 15.700.000", "100%"],
-      ["TOTAL GASTOS OPERACIÓN", "$ 5.170.000", "33%"],
-      ["TOTAL COSTOS", "$ 9.280.000", "59%"],
-      ["UTILIDAD", "$ 1.250.000", "8%"]
-    ]}
+    {
+      "id": "title",
+      "type": "sheet_title",
+      "geometry": {
+        "primitive": "text",
+        "precision": "approximate"
+      },
+      "text": "ANEXO 13. PRESUPUESTO Y FLUJO DE CAJA."
+    },
+    {
+      "id": "weekly-grid",
+      "type": "sheet_table",
+      "geometry": {
+        "primitive": "table_header",
+        "precision": "approximate"
+      },
+      "caption": "ANEXO 13. PRESUPUESTO Y FLUJO DE CAJA.",
+      "headers": [
+        "",
+        "INGRESOS",
+        "EGRESOS",
+        "INGRESOS",
+        "EGRESOS",
+        "INGRESOS",
+        "EGRESOS",
+        "INGRESOS",
+        "EGRESOS"
+      ],
+      "column_groups": [
+        {
+          "label": "SEMANA 1",
+          "start_column": 1,
+          "span": 2
+        },
+        {
+          "label": "SEMANA 2",
+          "start_column": 3,
+          "span": 2
+        },
+        {
+          "label": "SEMANA 3",
+          "start_column": 5,
+          "span": 2
+        },
+        {
+          "label": "SEMANA 4",
+          "start_column": 7,
+          "span": 2
+        }
+      ],
+      "sections": [
+        {
+          "id": "sales",
+          "heading": "VENTAS",
+          "rows": [
+            [
+              "PROYECCION VENTAS",
+              "$ 3.200.000",
+              "",
+              "$ 6.000.000",
+              "",
+              "$ 1.500.000",
+              "",
+              "$ 1.500.000",
+              ""
+            ],
+            [
+              "ENTREGAS SEGÚN PROGRAMACION",
+              "$ 800.000",
+              "",
+              "$ 500.000",
+              "",
+              "$ 700.000",
+              "",
+              "$ 1.500.000",
+              ""
+            ],
+            [
+              "TOTAL VENTAS",
+              "$ 4.000.000",
+              "",
+              "$ 6.500.000",
+              "",
+              "$ 2.200.000",
+              "",
+              "$ 3.000.000",
+              ""
+            ]
+          ]
+        },
+        {
+          "id": "operating-expenses",
+          "heading": "GASTOS OPERACIONALES (COSTOS FIJOS)",
+          "rows": [
+            [
+              "AGUA TALLER",
+              "",
+              "$ 120.000",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "ARRIENDO TALLER",
+              "",
+              "",
+              "",
+              "$ 800.000",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "ASEO",
+              "",
+              "$ 40.000",
+              "",
+              "",
+              "",
+              "$ 40.000",
+              "",
+              ""
+            ],
+            [
+              "BANCO (4 X 1000, TRANSFERENCIAS)",
+              "",
+              "$ 50.000",
+              "",
+              "$ 50.000",
+              "",
+              "$ 50.000",
+              "",
+              "$ 50.000"
+            ],
+            [
+              "CAFETERIA, PAPELERIA",
+              "",
+              "$ 30.000",
+              "",
+              "$ 30.000",
+              "",
+              "$ 30.000",
+              "",
+              "$ 30.000"
+            ],
+            [
+              "CELULAR",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "$ 60.000",
+              "",
+              ""
+            ],
+            [
+              "DOTACION Y ELEMENTOS SEGURIDAD",
+              "",
+              "$ 80.000",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "ENERGIA TALLER",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "$ 250.000"
+            ],
+            [
+              "GASOLINA",
+              "",
+              "$ 25.000",
+              "",
+              "$ 25.000",
+              "",
+              "$ 25.000",
+              "",
+              "$ 25.000"
+            ],
+            [
+              "GASTOS LEGALES (PROVISION MENSUAL)",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "$ 100.000"
+            ],
+            [
+              "IMPUESTOS",
+              "",
+              "",
+              "",
+              "$ 250.000",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "INTERNET TALLER",
+              "",
+              "",
+              "",
+              "$ 120.000",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "MANTENIMIENTO Y REPARACIONES",
+              "",
+              "$ 80.000",
+              "",
+              "$ 80.000",
+              "",
+              "$ 80.000",
+              "",
+              "$ 80.000"
+            ],
+            [
+              "HONORARIOS",
+              "",
+              "",
+              "",
+              "$ 700.000",
+              "",
+              "",
+              "",
+              "$ 700.000"
+            ],
+            [
+              "PUBLICIDAD Y MERCADEO",
+              "",
+              "$ 80.000",
+              "",
+              "",
+              "",
+              "$ 80.000",
+              "",
+              ""
+            ],
+            [
+              "SEGURIDAD SOCIAL",
+              "",
+              "$ 560.000",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "SERVICIOS CONTADOR",
+              "",
+              "$ 250.000",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "OTROS",
+              "",
+              "",
+              "",
+              "$ 100.000",
+              "",
+              "",
+              "",
+              "$ 100.000"
+            ],
+            [
+              "TOTAL GASTOS OPERACIONALES",
+              "",
+              "$ 1.315.000",
+              "",
+              "$ 2.155.000",
+              "",
+              "$ 365.000",
+              "",
+              "$ 1.335.000"
+            ]
+          ]
+        },
+        {
+          "id": "production-costs",
+          "heading": "COSTO DE LA VENTA (PRODUCCION)",
+          "rows": [
+            [
+              "COMPRAS MATERIALES (APROX 40% VENTA)",
+              "",
+              "$ 1.280.000",
+              "",
+              "$ 2.400.000",
+              "",
+              "$ 600.000",
+              "",
+              "$ 600.000"
+            ],
+            [
+              "COMPRA EQUIPO",
+              "",
+              "$ 150.000",
+              "",
+              "",
+              "",
+              "$ 150.000",
+              "",
+              ""
+            ],
+            [
+              "ALIMENTACION OBRA",
+              "",
+              "$ 40.000",
+              "",
+              "$ 40.000",
+              "",
+              "$ 40.000",
+              "",
+              "$ 40.000"
+            ],
+            [
+              "HERRAMIENTAS (BROCA, DISCO)",
+              "",
+              "$ 25.000",
+              "",
+              "$ 25.000",
+              "",
+              "$ 25.000",
+              "",
+              "$ 25.000"
+            ],
+            [
+              "MANO DE OBRA ARMADO - INSTALACION (APROX 20% VENTAS)",
+              "",
+              "$ 640.000",
+              "",
+              "$ 1.200.000",
+              "",
+              "$ 300.000",
+              "",
+              "$ 300.000"
+            ],
+            [
+              "TRANSPORTE DE MATERIAL",
+              "",
+              "$ 150.000",
+              "",
+              "$ 150.000",
+              "",
+              "$ 150.000",
+              "",
+              "$ 150.000"
+            ],
+            [
+              "OTROS",
+              "",
+              "$ 200.000",
+              "",
+              "$ 200.000",
+              "",
+              "$ 200.000",
+              "",
+              "$ 200.000"
+            ],
+            [
+              "TOTAL COSTOS DE PRODUCCION",
+              "",
+              "$ 2.485.000",
+              "",
+              "$ 4.015.000",
+              "",
+              "$ 1.465.000",
+              "",
+              "$ 1.315.000"
+            ]
+          ]
+        },
+        {
+          "id": "weekly-totals",
+          "heading": "",
+          "rows": [
+            [
+              "TOTAL INGRESOS",
+              "$ 4.000.000",
+              "",
+              "$ 6.500.000",
+              "",
+              "$ 2.200.000",
+              "",
+              "$ 3.000.000",
+              ""
+            ],
+            [
+              "TOTAL EGRESOS",
+              "",
+              "$ 3.800.000",
+              "",
+              "$ 6.170.000",
+              "",
+              "$ 1.830.000",
+              "",
+              "$ 2.650.000"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monthly-summary",
+      "type": "sheet_table",
+      "geometry": {
+        "primitive": "table_rows",
+        "precision": "approximate"
+      },
+      "caption": "TOTAL VENTAS MENSUALES",
+      "headers": [
+        "",
+        "",
+        ""
+      ],
+      "sections": [
+        {
+          "id": "monthly-rows",
+          "heading": "",
+          "rows": [
+            [
+              "TOTAL VENTAS MENSUALES",
+              "$ 15.700.000",
+              "100%"
+            ],
+            [
+              "TOTAL GASTOS OPERACIÓN",
+              "$ 5.170.000",
+              "33%"
+            ],
+            [
+              "TOTAL COSTOS",
+              "$ 9.280.000",
+              "59%"
+            ],
+            [
+              "UTILIDAD",
+              "$ 1.250.000",
+              "8%"
+            ]
+          ]
+        }
+      ]
+    }
   ],
   "relationships": [
-    {"from": "title", "to": "weekly-header", "type": "introduces"},
-    {"from": "weekly-header", "to": "sales", "type": "structures"},
-    {"from": "sales", "to": "operating-expenses", "type": "followed_by"},
-    {"from": "operating-expenses", "to": "production-costs", "type": "followed_by"},
-    {"from": "production-costs", "to": "weekly-totals", "type": "followed_by"},
-    {"from": "weekly-totals", "to": "monthly-summary", "type": "summarized_by"}
+    {
+      "from": "title",
+      "to": "weekly-grid",
+      "type": "introduces"
+    },
+    {
+      "from": "weekly-grid",
+      "to": "monthly-summary",
+      "type": "summarized_by"
+    }
   ],
   "measurements": [],
   "annotations": [],
-  "camera": {"view": "front", "projection": "orthographic"},
-  "visual_style": {"format": "tabla financiera", "layout": "cuatro semanas con pares de columnas INGRESOS/EGRESOS y resumen mensual inferior", "palette": "blanco, negro y gris", "linework": "rejilla rectangular fina", "caption_style": "encabezados en mayúsculas"},
+  "camera": {
+    "view": "front",
+    "projection": "orthographic"
+  },
+  "visual_style": {
+    "format": "tabla financiera",
+    "layout": "cuatro semanas con pares de columnas INGRESOS/EGRESOS y resumen mensual inferior",
+    "palette": "blanco, negro y gris",
+    "linework": "rejilla rectangular fina",
+    "caption_style": "encabezados en mayúsculas"
+  },
   "educational_sequence": [
-    {"step": 1, "show_entity_ids": ["sales"], "instruction": "Registrar proyección de ventas y entregas según programación por semana."},
-    {"step": 2, "show_entity_ids": ["operating-expenses", "production-costs"], "instruction": "Distribuir gastos operacionales y costos de producción en las semanas correspondientes."},
-    {"step": 3, "show_entity_ids": ["weekly-totals", "monthly-summary"], "instruction": "Comparar ingresos y egresos semanales y revisar ventas, gastos, costos y utilidad del mes."}
+    {
+      "step": 1,
+      "show_entity_ids": [
+        "weekly-grid"
+      ],
+      "instruction": "Registrar proyección de ventas y entregas según programación por semana."
+    },
+    {
+      "step": 2,
+      "show_entity_ids": [
+        "weekly-grid"
+      ],
+      "instruction": "Distribuir gastos operacionales y costos de producción en las semanas correspondientes."
+    },
+    {
+      "step": 3,
+      "show_entity_ids": [
+        "weekly-grid",
+        "monthly-summary"
+      ],
+      "instruction": "Comparar ingresos y egresos semanales y revisar ventas, gastos, costos y utilidad del mes."
+    }
   ],
-  "reconstruction": {"preferred_renderer": "html", "deterministic_required": true, "generative_image_allowed": false},
-  "accessibility": {"summary": "Tabla de presupuesto y flujo de caja de cuatro semanas con ventas, gastos operacionales, costos de producción, totales semanales y resumen mensual."},
-  "review": {"status": "VISUALLY_VERIFIED", "notes": "Preservar literalmente rótulos, valores, porcentajes y celdas vacías del ejemplo. No convertir celdas vacías en ceros ni inferir valores adicionales."}
+  "reconstruction": {
+    "preferred_renderer": "html",
+    "deterministic_required": true,
+    "generative_image_allowed": false,
+    "render_contract": "semantic-sheet-v1"
+  },
+  "accessibility": {
+    "summary": "Tabla de presupuesto y flujo de caja de cuatro semanas con ventas, gastos operacionales, costos de producción, totales semanales y resumen mensual."
+  },
+  "review": {
+    "status": "VISUALLY_VERIFIED",
+    "notes": "Preservar literalmente rótulos, valores, porcentajes y celdas vacías del ejemplo. No convertir celdas vacías en ceros ni inferir valores adicionales."
+  }
 }
