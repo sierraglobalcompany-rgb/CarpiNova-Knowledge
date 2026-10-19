@@ -75,6 +75,9 @@ def _validate_semantic_table(
         seen_ids.add(entity_id)
 
     sections = [entity for entity in entities if entity.get("type") == "checklist_section"]
+    for text_type in ("title_block", "table_title", "instruction_note"):
+        if sum(entity.get("type") == text_type for entity in entities) > 1:
+            _error(errors, "semantic_table_duplicate_text_entity", path, oid, f"semantic-table-v1 allows at most one {text_type}", "entities")
     if not sections:
         _error(errors, "semantic_table_missing_section", path, oid, "semantic-table-v1 requires at least one checklist_section", "entities")
     for section in sections:

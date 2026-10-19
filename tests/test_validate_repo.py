@@ -563,3 +563,61 @@ def test_p0259_semantic_table_matches_canonical_transcription_order_and_blanks()
     assert sum(value == "" for row in rows for value in row) == 92
     assert figure["entities"][0]["text"] == source_lines[0]
     assert figure["entities"][-1]["text"] == source_lines[-1]
+
+
+@pytest.mark.parametrize("text", [None, "", "   "])
+def test_semantic_table_title_requires_nonblank_text(tmp_path: Path, text: str | None) -> None:
+    path, figure = _semantic_table_ready_figure(tmp_path)
+    figure["entities"].append({"id": "table-title", "type": "table_title", "geometry": {"precision": "approximate"}, "text": text})
+    _write(path, figure)
+    assert "schema_error" in _codes(validate_repository(tmp_path))
+
+
+def test_semantic_table_rejects_duplicate_table_titles(tmp_path: Path) -> None:
+    path, figure = _semantic_table_ready_figure(tmp_path)
+    for number in range(2):
+        figure["entities"].append({"id": f"table-title-{number}", "type": "table_title", "geometry": {"precision": "approximate"}, "text": "Lista"})
+    _write(path, figure)
+    assert "semantic_table_duplicate_text_entity" in _codes(validate_repository(tmp_path))
+
+
+@pytest.mark.parametrize(("number", "counts"), [(260, [16, 24, 18]), (261, [18, 20, 18]), (262, [16, 16, 18]), (263, [6, 10, 15])])
+def test_materials_batch_matches_audited_pdf_and_canonical_text(number: int, counts: list[int]) -> None:
+    root = Path(__file__).resolve().parents[1]
+    page = root / f"books/cpnc-2025/pages/p{number:04}"
+    figure = json.loads((page / "figures/fig-001.json").read_text(encoding="utf-8"))
+    content = json.loads((page / "content.json").read_text(encoding="utf-8"))
+    excluded = json.loads((root / "books/cpnc-2025/distribution.json").read_text(encoding="utf-8"))["exclude_pdf_pages"]
+    assert number not in excluded
+    assert len(content) == 1
+    assert content[0]["page_id"] == figure["page_id"]
+    assert figure["source"]["pdf_page"] == number
+    assert figure["source"]["printed_page"] == number - 22
+    assert figure["reconstruction"].get("render_contract") == "semantic-table-v1"
+    source_lines = content[0]["source_transcription"].splitlines()
+    expected = []
+    for index, line in enumerate(source_lines):
+        if " | " not in line:
+            continue
+        rows = []
+        for text in source_lines[index + 1:]:
+            if not text:
+                break
+            rows.append([text, "", ""])
+        expected.append((line.split(" | "), rows))
+    if number == 261:
+        rows = expected[0][1]
+        row_index = next(i for i, row in enumerate(rows) if row[0] == "Herrajes especiales")
+        description = rows[row_index + 1][0].replace("mágica, ", "mágica,\n").replace("cajon gembox", "cajon\ngembox")
+        rows[row_index:row_index + 2] = [["Herrajes especiales\n" + description, "", ""]]
+    if number == 263:
+        # The PDF grid has one fully blank source row after Vinipel-cartón.
+        expected[0][1].append(["", "", ""])
+    sections = [e for e in figure["entities"] if e["type"] == "checklist_section"]
+    assert [len(e["rows"]) for e in sections] == counts
+    for section, (headers, rows) in zip(sections, expected, strict=True):
+        assert section["headers"] == headers
+        assert section["rows"] == rows
+    assert [e["text"] for e in figure["entities"] if e["type"] == "table_title"] == [source_lines[2]]
+    note = next(e["text"] for e in figure["entities"] if e["type"] == "instruction_note")
+    assert note == "\n".join(line for line in source_lines if line.startswith(("* ", "** ")))

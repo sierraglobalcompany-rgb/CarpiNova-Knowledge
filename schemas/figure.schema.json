@@ -230,7 +230,20 @@
           },
           "entities": {
             "items": {
+              "properties": {
+                "type": {"enum": ["title_block", "table_title", "checklist_section", "instruction_note"]}
+              },
               "allOf": [
+                {
+                  "if": {
+                    "properties": {"type": {"enum": ["title_block", "table_title", "instruction_note"]}},
+                    "required": ["type"]
+                  },
+                  "then": {
+                    "required": ["text"],
+                    "properties": {"text": {"type": "string", "pattern": "\\S"}}
+                  }
+                },
                 {
                   "if": {
                     "properties": {"type": {"const": "checklist_section"}},
