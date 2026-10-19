@@ -99,6 +99,36 @@ def _validate_semantic_table(
                 )
 
 
+
+def _validate_semantic_form(
+    record: dict[str, Any], path: Path, errors: list[dict[str, Any]],
+) -> None:
+    reconstruction = record.get("reconstruction")
+    if not isinstance(reconstruction, dict) or reconstruction.get("render_contract") != "semantic-form-v1":
+        return
+    # The schema owns types, flags and source order; these cross-field rules
+    # cannot be expressed with JSON Schema's uniqueItems or fixed row lengths.
+    entities = record.get("entities")
+    if not isinstance(entities, list):
+        return
+    seen: set[str] = set()
+    for entity in entities:
+        if not isinstance(entity, dict):
+            continue
+        entity_id = entity.get("id")
+        if isinstance(entity_id, str):
+            if entity_id in seen:
+                _error(errors, "semantic_form_duplicate_entity_id", path, record.get("figure_id"), f"Duplicate entity id: {entity_id}", "entities.id")
+            seen.add(entity_id)
+        if entity.get("type") != "checklist_table":
+            continue
+        headers, rows = entity.get("headers"), entity.get("rows")
+        if isinstance(headers, list) and isinstance(rows, list):
+            for index, row in enumerate(rows):
+                if isinstance(row, list) and len(row) != len(headers):
+                    _error(errors, "semantic_form_row_width_mismatch", path, record.get("figure_id"), f"Row {index + 1} must contain {len(headers)} cells", "entities.rows")
+
+
 def _validate_render_contract(
     record: dict[str, Any],
     path: Path,
@@ -368,6 +398,7 @@ def validate_repository(root: Path) -> dict[str, Any]:
                         measurement_ids,
                     )
                 _validate_semantic_table(record, path, errors)
+                _validate_semantic_form(record, path, errors)
                 _validate_render_contract(record, path, errors, refs)
                 for ref in record.get("measurements", []):
                     refs.append((ref, path, oid, "measurements"))
