@@ -621,3 +621,69 @@ def test_materials_batch_matches_audited_pdf_and_canonical_text(number: int, cou
     assert [e["text"] for e in figure["entities"] if e["type"] == "table_title"] == [source_lines[2]]
     note = next(e["text"] for e in figure["entities"] if e["type"] == "instruction_note")
     assert note == "\n".join(line for line in source_lines if line.startswith(("* ", "** ")))
+
+def _semantic_form_fixture() -> dict:
+    path = Path(__file__).resolve().parents[1] / "books/cpnc-2025/pages/p0265/figures/fig-001.json"
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+@pytest.mark.parametrize(("number", "count", "annex"), [(265, 14, 11), (266, 16, 12), (267, 18, 12)])
+def test_delivery_forms_preserve_source(number: int, count: int, annex: int) -> None:
+    root = Path(__file__).resolve().parents[1]
+    page = root / f"books/cpnc-2025/pages/p{number:04}"
+    figure = json.loads((page / "figures/fig-001.json").read_text(encoding="utf-8"))
+    content = json.loads((page / "content.json").read_text(encoding="utf-8"))
+    assert len(content) == 1
+    assert figure["page_id"] == content[0]["page_id"]
+    assert figure["source"]["pdf_page"] == number
+    assert figure["source"]["printed_page"] == number - 22
+    assert number not in json.loads((root / "books/cpnc-2025/distribution.json").read_text())["exclude_pdf_pages"]
+    assert figure["reconstruction"]["render_contract"] == "semantic-form-v1"
+    entities = figure["entities"]
+    assert [e["type"] for e in entities] == ["title_block", "form_title", "brand_mark", "form_fields", "checklist_table", "multiline_field", "signature_lines"]
+    source = content[0]["source_transcription"].splitlines()
+    rows = [line for line in source if line.split(" | ", 1)[0].isdigit()]
+    assert len(rows) == count
+    assert entities[4]["rows"] == [[*line.split(" | ", 1), "", ""] for line in rows]
+    assert entities[4]["headers"] == ["Item", "ASPECTO A REVISAR", "OK (✔ X)", "OBSERVACIONES"]
+    assert sum(cell == "" for row in entities[4]["rows"] for cell in row) == count * 2
+    assert entities[0]["text"] == source[0]
+    assert entities[0]["text"].startswith(f"ANEXO {annex}.")
+    assert entities[1]["text"] == source[2]
+    assert entities[2]["text"] == "LegnoArte S.A.S"
+    assert entities[3]["fields"] == ["OBRA:", "FECHA DE REVISION:"]
+    assert entities[5]["label"] == "OBSERVACIONES:"
+    assert entities[6]["labels"] == ["NOMBRE CARPINTERO", "NOMBRE QUIEN RECIBE"]
+    assert len(figure["annotations"]) == 2
+
+
+def test_semantic_form_accepts_blank_matrix_and_labels() -> None:
+    from carpinova_knowledge.schema_loader import validate_instance
+    assert not validate_instance("figure", _semantic_form_fixture())
+
+
+@pytest.mark.parametrize("mutation", ["type", "renderer", "deterministic", "generative", "missing", "order", "duplicate", "headers", "matrix", "width", "null", "number", "text", "fields", "label", "signatures"])
+def test_semantic_form_rejects_malformed_contract(mutation: str) -> None:
+    from carpinova_knowledge.schema_loader import validate_instance
+    from carpinova_knowledge.validate_repo import _validate_semantic_form
+    figure = _semantic_form_fixture()
+    entities = figure["entities"]
+    if mutation == "type": figure["type"] = "table"
+    elif mutation == "renderer": figure["reconstruction"]["preferred_renderer"] = "svg"
+    elif mutation == "deterministic": figure["reconstruction"]["deterministic_required"] = False
+    elif mutation == "generative": figure["reconstruction"]["generative_image_allowed"] = True
+    elif mutation == "missing": entities.pop()
+    elif mutation == "order": entities.reverse()
+    elif mutation == "duplicate": entities[1]["id"] = entities[0]["id"]
+    elif mutation == "headers": entities[4]["headers"][0] = "   "
+    elif mutation == "matrix": entities[4]["rows"] = ["1 | test"]
+    elif mutation == "width": entities[4]["rows"][0].pop()
+    elif mutation == "null": entities[4]["rows"][0][2] = None
+    elif mutation == "number": entities[4]["rows"][0][2] = 0
+    elif mutation == "text": entities[2]["text"] = "  "
+    elif mutation == "fields": entities[3]["fields"] = []
+    elif mutation == "label": entities[5]["label"] = None
+    elif mutation == "signatures": entities[6]["labels"] = [""]
+    errors = []
+    _validate_semantic_form(figure, Path("figure.json"), errors)
+    assert validate_instance("figure", figure) or errors
