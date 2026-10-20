@@ -106,6 +106,15 @@ def test_build_book_distribution_is_deterministic_and_covers_f1(tmp_path: Path) 
     assert "PAGE-CPNC-2025-P0093" in page_ids
     assert "PAGE-CPNC-2025-P0165" in page_ids
     assert "PAGE-CPNC-2025-P0175" in page_ids
+    # p0192 must survive the *existing* complete-book build, preserving
+    # both the site-survey wording and the original page provenance.
+    p0192 = [entry for entry in knowledge["content"]
+             if entry["content_id"] == "CONTENT-CPNC-2025-P0192-001"]
+    assert len(p0192) == 1
+    survey = p0192[0]
+    assert (survey["source"]["pdf_page"], survey["source"]["printed_page"]) == (192, 170)
+    assert "ubicación de puntos eléctricos e hidrosanitarios" in survey["normalized_text"]
+    assert "UBICACIÓN PUNTOS ELECTRICOS, HIDROSANITARIOS" in survey["source_transcription"]
     assert all(rule["status"] != "EXECUTABLE" for rule in knowledge["rules"])
 
     assert manifest_a["scope"] == "BOOK"
