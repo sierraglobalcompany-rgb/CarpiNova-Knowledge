@@ -28,7 +28,7 @@ def test_p0192_source_and_normalization_retains_electric_and_hydrosanitary_point
     assert "UBICACIÓN PUNTOS ELECTRICOS, HIDROSANITARIOS" in data["source_transcription"]
     assert "ubicación de puntos eléctricos e hidrosanitarios" in data["normalized_text"]
     assert "puntos eléctricos e hidrosanitarios" in data["learning_text"]
-    assert "levantamiento" in data["normalized_text"]
+    assert "toma de medidas en obra" in data["normalized_text"]
     # Survey instructions cannot authorize a solution for an unmeasured kitchen.
     assert "recort" not in data["normalized_text"].lower()
     assert "perfor" not in data["normalized_text"].lower()
