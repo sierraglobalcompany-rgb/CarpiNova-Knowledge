@@ -34,6 +34,49 @@ jobs:
       - name: Run tests
         run: uv run pytest -q
 
+      # Temporary pinned PC consumer proof (remove after archiving green run).
+      # CarpiNova-PC is checked out detached at its reviewed immutable main SHA.
+      - name: Install Node for one-time PC consumer proof
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+
+      - name: Temporary pinned PC consumer proof
+        shell: bash
+        run: |
+          set -euo pipefail
+          PC_SHA=8996b9b874119de007347f10f003dbeea8aaf742
+          PC_DIR="$RUNNER_TEMP/CarpiNova-PC"
+          git clone --quiet --filter=blob:none https://github.com/sierraglobalcompany-rgb/CarpiNova-PC.git "$PC_DIR"
+          git -C "$PC_DIR" checkout --quiet --detach "$PC_SHA"
+          test "$(git -C "$PC_DIR" rev-parse HEAD)" = "$PC_SHA"
+          cd "$PC_DIR"
+          npm ci --no-audit --no-fund
+          npm test
+          npm run typecheck
+          npm run build
+          node scripts/prepare-knowledge.mjs --knowledge-root "$GITHUB_WORKSPACE"
+          node --input-type=module <<'JS'
+          import { readFileSync } from "node:fs";
+          import { verifyArtifactHashes } from "./scripts/prepare-knowledge.mjs";
+          const dir = "./generated/knowledge";
+          const manifest = JSON.parse(readFileSync(dir + "/manifest.json", "utf8"));
+          await verifyArtifactHashes(dir,manifest);
+          const bundle = JSON.parse(readFileSync(dir + "/knowledge.bundle.json", "utf8"));
+          const entry = bundle.content.filter(x=>x.content_id==="CONTENT-CPNC-2025-P0192-001");
+          if (entry.length!==1) throw Error("p0192 ID missing or duplicated");
+          if (!entry[0].normalized_text.includes("ubicación de puntos eléctricos e hidrosanitarios")) {
+            throw Error("p0192 hydrosanitary wording missing in PC consumer bundle");
+          }
+          if (entry[0].source.pdf_page!==192 || entry[0].source.printed_page!==170) {
+            throw Error("p0192 wrong page provenance");
+          }
+          if (manifest.knowledge_version!=="1.2.0" || manifest.source_page_count!==295) {
+            throw Error("unexpected Knowledge contract");
+          }
+          console.log("PC_REAL_P0192_CONSUMER=PASS; PC_SHA=8996b9b874119de007347f10f003dbeea8aaf742; FABRICATION=NOT_AUTHORIZED");
+          JS
+
       - name: Run Ruff
         run: uv run ruff check .
 
