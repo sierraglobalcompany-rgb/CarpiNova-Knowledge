@@ -36,7 +36,10 @@ def test_actual_pilot_reports_go_with_expected_coverage() -> None:
     assert report["counts"]["figures_total"] == 6
     assert report["counts"]["measurements_by_status"]["VISUALLY_VERIFIED"] == 48
     assert report["counts"]["rule_candidates"] == 36
-    assert report["counts"]["lessons"] == 1
+    # This is a global inventory count, not a fixed F0-only lesson count.
+    lesson_files = sorted(ROOT.glob("lessons/**/*.json"))
+    assert any(path.stem == "slides-x-2x" for path in lesson_files)
+    assert report["counts"]["lessons"] == len(lesson_files)
     assert report["reconstruction_audit"]["all_pass"] is True
 
 

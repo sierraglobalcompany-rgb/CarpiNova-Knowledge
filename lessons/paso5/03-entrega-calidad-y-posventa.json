@@ -1,0 +1,55 @@
+{
+  "lesson_id": "LESSON-PASO5-03-ENTREGA-POSVENTA",
+  "title": "03 · Verificar la entrega y organizar la posventa",
+  "source_content_ids": [
+    "CONTENT-CPNC-2025-P0254-001",
+    "CONTENT-CPNC-2025-P0255-001",
+    "CONTENT-CPNC-2025-P0256-001",
+    "CONTENT-CPNC-2025-P0264-001",
+    "CONTENT-CPNC-2025-P0265-001",
+    "CONTENT-CPNC-2025-P0266-001",
+    "CONTENT-CPNC-2025-P0267-001"
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "title": "Preparar manual de uso, documentación y seguimiento",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0254-001",
+        "CONTENT-CPNC-2025-P0255-001",
+        "CONTENT-CPNC-2025-P0256-001"
+      ],
+      "figure_ids": [
+        "FIG-CPNC-2025-P0256-001"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Realizar revisión de calidad y documentar pendientes",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0264-001"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Comprobar los puntos de entrega de puertas",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0265-001"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Revisar la entrega de clósets, vestieres y muebles de TV",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0266-001"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Revisar la entrega de cocinas y muebles de baño",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0267-001"
+      ]
+    }
+  ]
+}
