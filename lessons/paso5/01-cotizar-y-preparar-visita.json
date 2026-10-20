@@ -1,0 +1,110 @@
+{
+  "lesson_id": "LESSON-PASO5-01-COTIZAR-VISITA",
+  "title": "01 · Cotizar y preparar una visita",
+  "source_content_ids": [
+    "CONTENT-CPNC-2025-P0235-001",
+    "CONTENT-CPNC-2025-P0236-001",
+    "CONTENT-CPNC-2025-P0237-001",
+    "CONTENT-CPNC-2025-P0238-001",
+    "CONTENT-CPNC-2025-P0238-002",
+    "CONTENT-CPNC-2025-P0239-001",
+    "CONTENT-CPNC-2025-P0239-002",
+    "CONTENT-CPNC-2025-P0240-001",
+    "CONTENT-CPNC-2025-P0240-002",
+    "CONTENT-CPNC-2025-P0241-001",
+    "CONTENT-CPNC-2025-P0241-002",
+    "CONTENT-CPNC-2025-P0242-001",
+    "CONTENT-CPNC-2025-P0243-001",
+    "CONTENT-CPNC-2025-P0244-001",
+    "CONTENT-CPNC-2025-P0245-001",
+    "CONTENT-CPNC-2025-P0246-001",
+    "CONTENT-CPNC-2025-P0247-001",
+    "CONTENT-CPNC-2025-P0248-001",
+    "CONTENT-CPNC-2025-P0249-001",
+    "CONTENT-CPNC-2025-P0249-002",
+    "CONTENT-CPNC-2025-P0250-001"
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "title": "Atender al cliente y comprender el proyecto",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0235-001"
+      ],
+      "figure_ids": [
+        "FIG-CPNC-2025-P0235-001"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Conocer proveedores y reunir referencias de materiales",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0236-001",
+        "CONTENT-CPNC-2025-P0237-001"
+      ],
+      "figure_ids": [
+        "FIG-CPNC-2025-P0237-001"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Definir el alcance del trabajo y los métodos de cotización",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0238-001",
+        "CONTENT-CPNC-2025-P0238-002",
+        "CONTENT-CPNC-2025-P0239-001",
+        "CONTENT-CPNC-2025-P0239-002"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Comparar consumo de materiales, metro lineal y mano de obra",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0240-001",
+        "CONTENT-CPNC-2025-P0240-002",
+        "CONTENT-CPNC-2025-P0241-001",
+        "CONTENT-CPNC-2025-P0241-002",
+        "CONTENT-CPNC-2025-P0242-001"
+      ],
+      "figure_ids": [
+        "FIG-CPNC-2025-P0242-001"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Presentar proyectos y captar clientes",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0243-001",
+        "CONTENT-CPNC-2025-P0244-001",
+        "CONTENT-CPNC-2025-P0245-001"
+      ],
+      "figure_ids": [
+        "FIG-CPNC-2025-P0245-001"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Preparar la asesoría y la visita de cotización",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0246-001",
+        "CONTENT-CPNC-2025-P0247-001",
+        "CONTENT-CPNC-2025-P0248-001"
+      ],
+      "figure_ids": [
+        "FIG-CPNC-2025-P0248-001"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Registrar accesos, condiciones y medidas del sitio",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0249-001",
+        "CONTENT-CPNC-2025-P0249-002",
+        "CONTENT-CPNC-2025-P0250-001"
+      ],
+      "figure_ids": [
+        "FIG-CPNC-2025-P0250-001"
+      ]
+    }
+  ]
+}
