@@ -1,0 +1,61 @@
+{
+  "lesson_id": "LESSON-PASO5-02-ORGANIZAR-PRODUCCION",
+  "title": "02 · Organizar y programar la producción",
+  "source_content_ids": [
+    "CONTENT-CPNC-2025-P0251-001",
+    "CONTENT-CPNC-2025-P0252-001",
+    "CONTENT-CPNC-2025-P0253-001",
+    "CONTENT-CPNC-2025-P0257-001",
+    "CONTENT-CPNC-2025-P0258-001",
+    "CONTENT-CPNC-2025-P0259-001",
+    "CONTENT-CPNC-2025-P0260-001",
+    "CONTENT-CPNC-2025-P0261-001",
+    "CONTENT-CPNC-2025-P0262-001",
+    "CONTENT-CPNC-2025-P0263-001"
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "title": "Documentar diseño, materiales y orden de producción",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0251-001",
+        "CONTENT-CPNC-2025-P0252-001",
+        "CONTENT-CPNC-2025-P0253-001"
+      ],
+      "figure_ids": [
+        "FIG-CPNC-2025-P0253-001"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Programar el trabajo desde la fecha de entrega",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0257-001"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Preparar la revisión de materiales y herramientas",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0258-001"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Revisar listas de puertas, clósets y vestieres",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0259-001",
+        "CONTENT-CPNC-2025-P0260-001"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Revisar listas de cocinas, baños y guardaescobas",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0261-001",
+        "CONTENT-CPNC-2025-P0262-001",
+        "CONTENT-CPNC-2025-P0263-001"
+      ]
+    }
+  ]
+}

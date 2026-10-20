@@ -1,0 +1,34 @@
+{
+  "lesson_id": "LESSON-PASO5-04-PRESUPUESTO-COSTOS",
+  "title": "04 · Comprender presupuesto, flujo de caja y costos",
+  "source_content_ids": [
+    "CONTENT-CPNC-2025-P0268-001",
+    "CONTENT-CPNC-2025-P0269-001",
+    "CONTENT-CPNC-2025-P0270-001",
+    "CONTENT-CPNC-2025-P0270-002"
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "title": "Distinguir ventas, gastos y costos del taller",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0268-001"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Leer el presupuesto y flujo de caja por semanas",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0269-001"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Revisar los costos unitarios y su formato de análisis",
+      "content_ids": [
+        "CONTENT-CPNC-2025-P0270-001",
+        "CONTENT-CPNC-2025-P0270-002"
+      ]
+    }
+  ]
+}
