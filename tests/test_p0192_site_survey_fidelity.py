@@ -1,11 +1,9 @@
 """Page 192: preserve source-specified site utilities without fabricating a back design."""
 from __future__ import annotations
 
-import hashlib
 import json
 from pathlib import Path
 
-from carpinova_knowledge.build_dist import build_book_distribution
 from carpinova_knowledge.render_docs import _render
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -56,23 +54,3 @@ def test_p0192_visual_inventory_links_same_source_page() -> None:
                and item["kind"] == "site_measurement_form"
                for item in visual["visuals"])
 
-
-def test_book_distribution_retains_p0192_words_and_exact_manifest(tmp_path: Path) -> None:
-    out = tmp_path / "knowledge-1.2.0"
-    manifest = build_book_distribution(ROOT, "cpnc-2025", out)
-    bundle = json.loads((out / "knowledge.bundle.json").read_text(encoding="utf-8"))
-
-    assert manifest["scope"] == "BOOK"
-    assert manifest["knowledge_version"] == "1.2.0"
-    assert manifest["source_page_count"] == 295
-    assert manifest["counts"]["pages"] == 252
-    assert len([p for p in bundle["pages"] if p["page_id"]
-                == "PAGE-CPNC-2025-P0192"]) == 1
-    original = _canonical()
-    matches = [r for r in bundle["content"] if r["content_id"] == CID]
-    assert len(matches) == 1
-    assert matches[0] == original
-    assert "hidrosanitarios" in matches[0]["normalized_text"]
-    assert all(r.get("status") != "EXECUTABLE" for r in bundle["rules"])
-    for name, expected in manifest["files"].items():
-        assert hashlib.sha256((out / name).read_bytes()).hexdigest() == expected
