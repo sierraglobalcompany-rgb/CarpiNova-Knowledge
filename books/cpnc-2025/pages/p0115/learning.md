@@ -12,7 +12,7 @@ Ejemplo: un mueble tiene 60 cm interiores y tres gavetas de 18 cm. Las gavetas o
 
 ## CONTENT-CPNC-2025-P0115-003
 
-Antes de instalar, separa la corredera. Identifica qué parte va con la gaveta y cuál queda fija en el mueble.
+Antes de instalar, identifica si la corredera tiene pestaña de liberación. Solo si el fabricante indica que el modelo permite separarse, acciona el liberador y distingue la parte delgada (gaveta) del conjunto que queda en el mueble. Si no tiene liberador, no fuerces la separación y sigue las instrucciones del modelo.
 
 ## CONTENT-CPNC-2025-P0115-004
 

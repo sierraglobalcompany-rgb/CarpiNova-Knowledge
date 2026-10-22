@@ -67,8 +67,8 @@
     "page_id": "PAGE-CPNC-2025-P0115",
     "content_type": "procedure",
     "source_transcription": "Las correderas telescópicas se componen de dos cuerpos. Al presionar la pestaña negra que traen, podemos separarlas: - La parte delgada se instala en el lateral de la gaveta. - La parte gruesa se instala en el costado interno del mueble.",
-    "normalized_text": "La corredera telescópica puede separarse en dos cuerpos usando su pestaña negra: la pieza delgada va en la gaveta y la pieza gruesa en el costado interno del mueble.",
-    "learning_text": "Antes de instalar, separa la corredera. Identifica qué parte va con la gaveta y cuál queda fija en el mueble.",
+    "normalized_text": "El libro describe una corredera telescópica con pestaña negra de liberación: al accionarla, la parte delgada se separa del conjunto exterior y se instala en el lateral de la gaveta; el conjunto exterior queda en el costado interno del mueble.",
+    "learning_text": "Antes de instalar, identifica si la corredera tiene pestaña de liberación. Solo si el fabricante indica que el modelo permite separarse, acciona el liberador y distingue la parte delgada (gaveta) del conjunto que queda en el mueble. Si no tiene liberador, no fuerces la separación y sigue las instrucciones del modelo.",
     "derived_from_content_ids": [
       "CONTENT-CPNC-2025-P0115-003"
     ],

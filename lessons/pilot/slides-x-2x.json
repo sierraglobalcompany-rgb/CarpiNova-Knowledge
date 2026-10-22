@@ -54,7 +54,7 @@
     },
     {
       "order": 4,
-      "title": "Separar las dos partes del riel",
+      "title": "Identificar partes y separar solo si el modelo lo permite",
       "content_ids": [
         "CONTENT-CPNC-2025-P0115-003"
       ],
