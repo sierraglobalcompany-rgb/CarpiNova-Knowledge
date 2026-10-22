@@ -72,3 +72,14 @@ def test_lesson_schema_closes_the_four_current_interaction_contracts() -> None:
         "guided_sequence",
     }
     assert all(variant["additionalProperties"] is False for variant in interaction["oneOf"])
+
+
+def test_disconnect_instruction_is_model_conditional_in_lesson_and_learning_text() -> None:
+    step = _steps_by_order()[4]
+    page = json.loads((ROOT / "books" / "cpnc-2025" / "pages" / "p0115" / "content.json").read_text(encoding="utf-8"))
+    record = next(item for item in page if item["content_id"] == "CONTENT-CPNC-2025-P0115-003")
+
+    assert "solo si el modelo lo permite" in step["title"].lower()
+    assert "solo si el fabricante" in record["learning_text"].lower()
+    assert "no fuerces la separación" in record["learning_text"].lower()
+    assert "pestaña negra" in record["source_transcription"].lower()
