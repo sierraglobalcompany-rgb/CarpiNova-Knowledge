@@ -12,7 +12,7 @@ Para calcular X: resta a la altura interna la suma de alturas de gavetas y divid
 
 ## CONTENT-CPNC-2025-P0115-003
 
-La corredera telescópica puede separarse en dos cuerpos usando su pestaña negra: la pieza delgada va en la gaveta y la pieza gruesa en el costado interno del mueble.
+El libro describe una corredera telescópica con pestaña negra de liberación: al accionarla, la parte delgada se separa del conjunto exterior y se instala en el lateral de la gaveta; el conjunto exterior queda en el costado interno del mueble.
 
 ## CONTENT-CPNC-2025-P0115-004
 

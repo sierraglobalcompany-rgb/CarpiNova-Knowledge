@@ -82,4 +82,5 @@ def test_disconnect_instruction_is_model_conditional_in_lesson_and_learning_text
     assert "solo si el modelo lo permite" in step["title"].lower()
     assert "solo si el fabricante" in record["learning_text"].lower()
     assert "no fuerces la separación" in record["learning_text"].lower()
+    assert record["normalized_text"].startswith("El libro describe una corredera telescópica con pestaña negra")
     assert "pestaña negra" in record["source_transcription"].lower()
